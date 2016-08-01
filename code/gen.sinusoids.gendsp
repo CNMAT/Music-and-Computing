@@ -1,0 +1,116 @@
+{
+	"patcher" : 	{
+		"fileversion" : 1,
+		"appversion" : 		{
+			"major" : 7,
+			"minor" : 2,
+			"revision" : 4,
+			"architecture" : "x64",
+			"modernui" : 1
+		}
+,
+		"rect" : [ 297.0, 79.0, 766.0, 754.0 ],
+		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
+		"bglocked" : 0,
+		"openinpresentation" : 0,
+		"default_fontsize" : 12.0,
+		"default_fontface" : 0,
+		"default_fontname" : "Arial",
+		"gridonopen" : 1,
+		"gridsize" : [ 15.0, 15.0 ],
+		"gridsnaponopen" : 1,
+		"objectsnaponopen" : 1,
+		"statusbarvisible" : 2,
+		"toolbarvisible" : 1,
+		"lefttoolbarpinned" : 0,
+		"toptoolbarpinned" : 0,
+		"righttoolbarpinned" : 0,
+		"bottomtoolbarpinned" : 0,
+		"toolbars_unpinned_last_save" : 0,
+		"tallnewobj" : 0,
+		"boxanimatetime" : 200,
+		"enablehscroll" : 1,
+		"enablevscroll" : 1,
+		"devicewidth" : 0.0,
+		"description" : "",
+		"digest" : "",
+		"tags" : "",
+		"style" : "",
+		"subpatcher_template" : "",
+		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 56.0, 53.0, 117.0, 22.0 ],
+					"style" : "",
+					"text" : "param interp_ms 10"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"code" : "Buffer ampbuf();\r\nBuffer incrbuf();\r\nData PC(512);\r\nData Prev_Amp(512); //not updated when interpolating\r\nData Interp_PC(512);\r\n\r\ninterpSamps = round(mstosamps(in1));\r\n\r\nsize = dim(ampbuf);\r\n\r\nw = 0;\r\nfor(i=0; i<size; i+=1)\r\n{\r\n\ta = peek(ampbuf, i, 0, channels=1);\r\n\tprev_a = peek(Prev_Amp, i, 0, channels=1);\r\n\r\n\tia = a;\r\n\tif( a != prev_a )\r\n\t{\r\n\t\tintrp = peek(Interp_PC, i, 0, channels=1);\r\n\t\tinterp_ph = intrp / interpSamps;\r\n\t\tia = prev_a + ((a - prev_a) * interp_ph);\r\n\t\t\r\n\t\tif( interp_ph < 1.0 )\r\n\t\t{\r\n\t\t\tpoke( Interp_PC, intrp+1, i, 0, 0);\r\n\t\t} else {\r\n\t\t\tpoke( Prev_Amp, a, i, 0, 0);\r\n\t\t\tpoke( Interp_PC, 0, i, 0, 0);\r\n\t\t}\r\n\t}\r\n\t\r\n\tpc = peek(PC, i, 0, channels=1);\r\n\tincr = peek(incrbuf, i, 0, channels=1);\r\n    p = pc + incr;\r\n\tw += ia * cos(p * TWOPI); \r\n\r\n\tpoke( PC, p, i, 0, 0);\r\n\t\r\n}\r\n\r\nout1 = w;",
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-5",
+					"maxclass" : "codebox",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 56.0, 94.0, 562.0, 595.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 56.0, 12.0, 30.0, 22.0 ],
+					"style" : "",
+					"text" : "in 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 56.0, 697.0, 37.0, 22.0 ],
+					"style" : "",
+					"text" : "out 1"
+				}
+
+			}
+ ],
+		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
+ ]
+	}
+
+}
