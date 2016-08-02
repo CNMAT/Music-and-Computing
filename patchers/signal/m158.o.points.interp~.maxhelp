@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 4.0, 45.0, 1215.0, 740.0 ],
+		"rect" : [ 100.0, 100.0, 1215.0, 740.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -43,7 +43,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 639.5, 348.0, 109.0, 20.0 ],
-					"presentation_rect" : [ 659.0, 332.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "OSC pass through"
 				}
@@ -56,7 +55,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 389.0, 379.0, 85.0, 20.0 ],
-					"presentation_rect" : [ 512.0, 378.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "relative phase"
 				}
@@ -69,7 +67,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 467.0, 333.0, 39.0, 20.0 ],
-					"presentation_rect" : [ 561.0, 404.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "index"
 				}
@@ -99,7 +96,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 229.0, 464.0, 85.0, 20.0 ],
-					"presentation_rect" : [ 235.0, 536.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "relative phase"
 				}
@@ -136,7 +132,6 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 652.5, 494.0, 263.0, 91.0 ],
-					"presentation_rect" : [ 783.5, 487.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -149,8 +144,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 652.5, 449.0, 268.0, 35.0 ],
-					"presentation_rect" : [ 662.5, 497.0, 0.0, 0.0 ],
+					"patching_rect" : [ 652.5, 449.0, 270.0, 35.0 ],
 					"style" : "",
 					"text" : "m158.o.points.interp~ /bpf/mod/y /bpf/mod/curve @interp 0"
 				}
@@ -343,7 +337,7 @@
 ,
 					"style" : "",
 					"text" : "pattrstorage @outputmode 1 @notifymode 1",
-					"varname" : "u191002058"
+					"varname" : "u815002579"
 				}
 
 			}
@@ -403,7 +397,7 @@
 					"destination" : [ "obj-2", 2 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 633.0, 389.0, 911.0, 389.0 ],
+					"midpoints" : [ 633.0, 389.0, 913.0, 389.0 ],
 					"source" : [ "obj-1", 2 ]
 				}
 
@@ -413,7 +407,7 @@
 					"destination" : [ "obj-2", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 508.5, 433.0, 786.5, 433.0 ],
+					"midpoints" : [ 508.5, 433.0, 787.5, 433.0 ],
 					"source" : [ "obj-1", 1 ]
 				}
 
