@@ -38,6 +38,47 @@
 		"subpatcher_template" : "no-menus",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "scope~",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 497.5, 517.0, 130.0, 130.0 ],
+					"presentation_rect" : [ 485.0, 521.0, 0.0, 0.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontsize" : 12.0,
+					"id" : "obj-12",
+					"linecount" : 10,
+					"maxclass" : "o.display",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 669.5, 504.0, 308.0, 156.0 ],
+					"text" : "/gui/bpf/mod : [1000., 0., 1., 0., 0., 0, 0., 537.234, 0.6, 0, 0.8, 617.021, 0.146667, 0, 0., 707.447, 0.96, 0, 0., 1000., 0., 0, 0.6, \"curve\"],\n/gui/time : 2016-08-02T18:35:09.177387Z,\n/bpf/mod/x : [0., 0.537234, 0.617021, 0.707447, 1.],\n/bpf/mod/y : [0., 0.6, 0.146667, 0.96, 0.],\n/bpf/mod/curve : [0., 0.8, 0., 0., 0.6]",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "" ],
+					"patching_rect" : [ 497.5, 444.0, 268.0, 22.0 ],
+					"style" : "",
+					"text" : "m158.o.points.interp~ /bpf/mod/y /bpf/mod/curve"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-9",
 					"maxclass" : "scope~",
 					"numinlets" : 2,
@@ -81,7 +122,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 583.5, 401.0, 56.0, 22.0 ],
+					"patching_rect" : [ 646.5, 388.0, 56.0, 22.0 ],
 					"sig" : 0.0,
 					"style" : ""
 				}
@@ -134,7 +175,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 307.0, 65.0, 91.0, 22.0 ],
-					"restore" : [ 1000.0, 0.0, 1.0, 0.0, 0.0, 0, 537.234043, 0.6, 0, 617.021277, 0.146667, 0, 707.446809, 0.96, 0, 1000.0, 0.0, 0, "linear" ],
+					"restore" : [ 1000.0, 0.0, 1.0, 0.0, 0.0, 0, 0.0, 537.234043, 0.6, 0, 0.8, 617.021277, 0.146667, 0, 0.0, 707.446809, 0.96, 0, 0.0, 1000.0, 0.0, 0, 0.6, "curve" ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0
 					}
@@ -147,9 +188,10 @@
 			}
 , 			{
 				"box" : 				{
-					"addpoints" : [ 0.0, 0.0, 0, 537.234043, 0.6, 0, 617.021277, 0.146667, 0, 707.446809, 0.96, 0, 1000.0, 0.0, 0 ],
+					"addpoints_with_curve" : [ 0.0, 0.0, 0, 0.0, 537.234043, 0.6, 0, 0.8, 617.021277, 0.146667, 0, 0.0, 707.446809, 0.96, 0, 0.0, 1000.0, 0.0, 0, 0.6 ],
 					"id" : "obj-21",
 					"maxclass" : "function",
+					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "float", "", "", "bang" ],
@@ -227,7 +269,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "" ],
-					"patching_rect" : [ 497.5, 347.0, 191.0, 22.0 ],
+					"patching_rect" : [ 497.5, 347.0, 268.0, 22.0 ],
 					"style" : "",
 					"text" : "m158.o.points.lookup~ /bpf/mod/x"
 				}
@@ -235,6 +277,33 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 2 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
 					"disabled" : 0,
@@ -249,6 +318,24 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-10", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-10", 0 ]
 				}
 
 			}
@@ -377,6 +464,18 @@
 				"name" : "o.gather.select.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gatherers",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "m158.o.points.interp~.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "point.interp.gendsp",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/code",
+				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
