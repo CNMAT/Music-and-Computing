@@ -38,6 +38,19 @@
 		"subpatcher_template" : "no-menus",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-29",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 728.0, 407.0, 42.0, 22.0 ],
+					"style" : "",
+					"text" : "zl.thin"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-28",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -56,7 +69,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 728.0, 410.0, 147.0, 22.0 ],
+					"patching_rect" : [ 728.0, 444.0, 147.0, 22.0 ],
 					"style" : "",
 					"text" : "o.pack /duplicate/address"
 				}
@@ -69,7 +82,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 728.0, 373.0, 53.0, 22.0 ],
+					"patching_rect" : [ 728.0, 377.0, 53.0, 22.0 ],
 					"style" : "",
 					"text" : "zl.group"
 				}
@@ -2997,7 +3010,6 @@
 					}
 ,
 					"patching_rect" : [ 717.0, 117.0, 58.0, 22.0 ],
-					"presentation_rect" : [ 717.0, 117.0, 0.0, 0.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -4411,7 +4423,6 @@
 									"numoutlets" : 5,
 									"outlettype" : [ "", "", "", "", "" ],
 									"patching_rect" : [ 30.5, 346.5, 87.0, 35.0 ],
-									"presentation_rect" : [ 6.5, 328.5, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "regexp (») @substitute ::"
 								}
@@ -4428,7 +4439,6 @@
 									"numoutlets" : 5,
 									"outlettype" : [ "", "", "", "", "" ],
 									"patching_rect" : [ 30.5, 301.0, 87.0, 35.0 ],
-									"presentation_rect" : [ 6.5, 283.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "regexp (_) @substitute ["
 								}
@@ -4445,7 +4455,6 @@
 									"numoutlets" : 5,
 									"outlettype" : [ "", "", "", "", "" ],
 									"patching_rect" : [ 30.5, 251.0, 87.0, 35.0 ],
-									"presentation_rect" : [ 6.5, 233.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "regexp (_») @substitute ]»"
 								}
@@ -4685,7 +4694,6 @@
 									}
 ,
 									"patching_rect" : [ 101.0, 199.0, 65.0, 22.0 ],
-									"presentation_rect" : [ 100.5, 199.0, 0.0, 0.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -4933,7 +4941,6 @@
 									}
 ,
 									"patching_rect" : [ 348.5, 185.0, 65.0, 22.0 ],
-									"presentation_rect" : [ 494.0, 231.0, 0.0, 0.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -7386,7 +7393,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-64", 0 ],
+					"destination" : [ "obj-29", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-25", 0 ]
@@ -7426,6 +7433,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-28", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-64", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-29", 0 ]
 				}
 
 			}
@@ -7573,7 +7589,51 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "pattr-to-OSC.maxpat",
+				"bootpath" : "~/Documents/dev-lib/CNMAT-MMJ-Depot/patchers/data_transformation",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.collect.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.atomize.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.pack.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.var.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.display.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.prepend.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.route.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.timetag.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.union.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
