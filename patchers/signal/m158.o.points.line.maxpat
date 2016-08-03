@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 63.0, 104.0, 640.0, 480.0 ],
+		"rect" : [ 492.0, 104.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -69,7 +69,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 50.0, 396.0, 30.0, 30.0 ],
+					"patching_rect" : [ 50.0, 408.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -81,7 +81,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 50.0, 344.0, 250.0, 22.0 ],
+					"patching_rect" : [ 50.0, 360.0, 250.0, 22.0 ],
 					"style" : "",
 					"text" : "o.union"
 				}
@@ -110,7 +110,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 50.0, 272.0, 229.0, 32.0 ],
-					"text" : "/out/rampval = /vector/average",
+					"text" : "/out/line = /vector/average",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -135,7 +135,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 50.0, 210.0, 250.0, 22.0 ],
+					"patching_rect" : [ 50.0, 205.0, 250.0, 22.0 ],
 					"style" : "",
 					"text" : "m158.o.points.interp~ /y"
 				}
@@ -148,7 +148,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "" ],
-					"patching_rect" : [ 50.0, 178.0, 250.0, 22.0 ],
+					"patching_rect" : [ 50.0, 174.0, 250.0, 22.0 ],
 					"style" : "",
 					"text" : "m158.o.points.lookup~ /x"
 				}

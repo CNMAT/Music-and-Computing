@@ -64,7 +64,7 @@
 			}
 , 			{
 				"box" : 				{
-					"code" : "History prev_idx, prev_phase;\r\nBuffer points(\"#0-xyc0\");\r\npoints_len = dim(points);\r\nmax_idx = points_len-1;\r\nidx = prev_idx;\r\nphase = prev_phase;\r\n\r\n// if x position changes, check position and adjust index if necessary\r\nif( change(in1) ) {\r\n\tx0 = peek(points, clip(idx, 0, max_idx), 0, channels=1);\r\n\tx1 = peek(points, clip(idx+1, 0, max_idx), 0, channels=1);\r\n\r\n\tif( in1 < x0 ){\r\n\t\twhile( in1 < x0 && idx > 0 ){\r\n\t\t\tidx -= 1;\r\n\t\t\tx0 = peek(points, clip(idx, 0, max_idx), 0, channels=1);\r\n\t\t}\r\n\t\t\r\n\t\tif( in1 < x0 && idx <= 0 )\r\n\t\t\tx1 = x0;\r\n\t\telse\r\n\t\t\tx1 = peek(points, clip(idx+1, 0, max_idx), 0, channels=1);\r\n\r\n\t} else if( in1 > x1 )\t{\r\n\t\twhile( in1 > x1 && idx < points_len ){\r\n\t\t\tidx += 1;\r\n\t\t\tx1 = peek(points, clip(idx+1, 0, max_idx), 0, channels=1);\r\n\t\t}\r\n\t\t\r\n\t\tif( in1 > x1 && idx >= points_len ) \r\n\t\t\tx0 = x1;\r\n\t\telse\r\n\t\t\tx0 = peek(points, clip(idx, 0, max_idx), 0, channels=1);\r\n\t}\r\n\t\r\n\tphase = scale(in1, x0, x1, 0, 1);\r\n\r\n}\r\nout1 = phase;\r\nout2 = idx;\r\n\r\nprev_idx = clip(idx, 0, max_idx);\r\nprev_v = v;",
+					"code" : "History prev_idx, prev_phase;\r\nBuffer points(\"#0-xyc0\");\r\npoints_len = dim(points);\r\nmax_idx = points_len-1;\r\nidx = prev_idx;\r\nphase = prev_phase;\r\n\r\n// if x position changes, check position and adjust index if necessary\r\nif( change(in1) ) {\r\n\tx0 = peek(points, clip(idx, 0, max_idx), 0, channels=1);\r\n\tx1 = peek(points, clip(idx+1, 0, max_idx), 0, channels=1);\r\n\r\n\tif( in1 < x0 ){\r\n\t\twhile( in1 < x0 && idx > 0 ){\r\n\t\t\tidx -= 1;\r\n\t\t\tx0 = peek(points, clip(idx, 0, max_idx), 0, channels=1);\r\n\t\t}\r\n\t\t\r\n\t\tif( in1 < x0 && idx <= 0 )\r\n\t\t\tx1 = x0;\r\n\t\telse\r\n\t\t\tx1 = peek(points, clip(idx+1, 0, max_idx), 0, channels=1);\r\n\r\n\t} else if( in1 > x1 )\t{\r\n\t\twhile( in1 > x1 && idx < points_len ){\r\n\t\t\tidx += 1;\r\n\t\t\tx1 = peek(points, clip(idx+1, 0, max_idx), 0, channels=1);\r\n\t\t}\r\n\t\t\r\n\t\tif( in1 > x1 && idx >= points_len ) \r\n\t\t\tx0 = x1;\r\n\t\telse\r\n\t\t\tx0 = peek(points, clip(idx, 0, max_idx), 0, channels=1);\r\n\t}\r\n\t\r\n\tphase = scale(in1, x0, x1, 0, 1);\r\n\r\n}\r\nout1 = phase;\r\nout2 = idx;\r\n\r\nprev_idx = clip(idx, 0, max_idx);\r\nprev_phase = phase;",
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -119,8 +119,7 @@
 				}
 
 			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
