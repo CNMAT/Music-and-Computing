@@ -43,7 +43,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 229.0, 6290.0, 50.0, 22.0 ],
+					"patching_rect" : [ 225.5, 6280.0, 50.0, 22.0 ],
 					"style" : "",
 					"text" : "symbol"
 				}
@@ -86,10 +86,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 45.0, 6205.5, 268.0, 35.0 ],
-					"presentation_rect" : [ 497.0, 5639.5, 0.0, 0.0 ],
+					"patching_rect" : [ 45.0, 6205.5, 273.0, 35.0 ],
 					"style" : "",
-					"text" : "\"l\" stands for list, but pretty much all data types can be sent through as well"
+					"text" : "\"l\" stands for list, but all other data types can be sent through as well"
 				}
 
 			}
@@ -133,7 +132,6 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 70.5, 6279.0, 50.0, 22.0 ],
-					"presentation_rect" : [ 410.0, 5601.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
