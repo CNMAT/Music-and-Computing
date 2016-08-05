@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 342.0, 79.0, 753.0, 531.0 ],
+		"rect" : [ 100.0, 100.0, 753.0, 531.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -53,7 +53,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"rect" : [ 63.0, 104.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -165,11 +165,11 @@
 									"id" : "obj-1",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 3,
-									"outlettype" : [ "signal", "signal", "signal" ],
+									"numoutlets" : 4,
+									"outlettype" : [ "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 50.0, 100.0, 88.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.phasor~"
+									"text" : "m158.o.ramp~"
 								}
 
 							}
@@ -181,7 +181,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 44.0, 40.0, 30.0, 30.0 ],
+									"patching_rect" : [ 50.0, 40.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -369,7 +369,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 347.0, 123.0, 344.0, 20.0 ],
-					"presentation_rect" : [ 370.0, 106.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "<< here /ms is used as the millisecond value for m158.phasor~"
 				}
@@ -486,7 +485,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.phasor~.maxpat",
+				"name" : "m158.o.ramp~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1
@@ -537,6 +536,10 @@
 			}
 , 			{
 				"name" : "o.display.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.if.mxo",
 				"type" : "iLaX"
 			}
 , 			{

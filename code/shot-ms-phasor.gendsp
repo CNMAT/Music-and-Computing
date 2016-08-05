@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 3,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -89,7 +89,7 @@
 			}
 , 			{
 				"box" : 				{
-					"code" : "History busy(0); //i.e. false if count >= durSamps\nHistory count(0);\r\nHistory durSamps(0);\r\nParam phasecycle(0);\r\n\r\nreset = in2;\r\n\r\ndelegate = 0;\r\n\r\nif( phasecycle )\r\n{\r\n\tdurSamps = mstosamps(in1);\r\n\tif( busy == 0 )\r\n\t\tcount = 0;\r\n}\r\nelse\r\n{\r\n\tif( (busy == 0 || reset > 0) && in1 > 0 )\r\n\t{\r\n\t\tdurSamps = mstosamps(in1);\r\n\t\tcount = 0;\r\n\t}\r\n\telse\r\n\t\tdelegate = in1;\r\n}\r\n\r\nbusy = count < durSamps;\r\n\r\nout1 = clip(count / durSamps, 0, 1);\r\nout2 = busy;\r\nout3 = delegate;\r\n\r\ncount = count + 1;",
+					"code" : "History busy(0); //i.e. false if count >= durSamps\nHistory count(0);\r\nHistory durSamps(0);\r\nParam phasecycle(0);\r\nParam hzmode(0);\r\n\r\nreset = in2;\r\nms = (hzmode == 0) ? in1 : (1000. / in1);\r\n\r\ndelegate = 0;\r\n\r\nif( phasecycle )\r\n{\r\n\tdurSamps = mstosamps(ms);\r\n\tif( busy == 0 )\r\n\t\tcount = 0;\r\n}\r\nelse\r\n{\r\n\tif( (busy == 0 || reset > 0) && ms > 0 )\r\n\t{\r\n\t\tdurSamps = mstosamps(ms);\r\n\t\tcount = 0;\r\n\t}\r\n\telse\r\n\t\tdelegate = ms;\r\n}\r\n\r\nbusy = count < durSamps;\r\n\r\nout1 = clip(count / durSamps, 0, 1);\r\nout2 = busy;\r\nout3 = delegate;\r\n\r\ncount = count + 1;",
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
