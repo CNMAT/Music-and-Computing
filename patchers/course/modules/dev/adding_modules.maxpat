@@ -43,7 +43,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 387.0, 377.0, 295.0, 20.0 ],
-					"presentation_rect" : [ 389.0, 377.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "Save lessons in the package /extras/Music-158 folder."
 				}
@@ -67,7 +66,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 12.0, 365.0, 249.0, 20.0 ],
+					"patching_rect" : [ 12.0, 374.0, 249.0, 20.0 ],
 					"style" : "",
 					"text" : "Size the patcher window to fit the largest tab."
 				}
@@ -76,13 +75,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-13",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 12.0, 328.0, 334.0, 33.0 ],
+					"patching_rect" : [ 12.0, 318.0, 360.0, 47.0 ],
 					"style" : "",
-					"text" : "Try to keep the number of tabs down to what can be displayed in the window (use shorter names if needed)."
+					"text" : "Try to keep the number of tabs down to what can be displayed in the window (use shorter names if needed). Also note that if you have too many tabs, you may not be able to hide the root patcher."
 				}
 
 			}
@@ -129,7 +128,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 12.0, 288.0, 334.0, 33.0 ],
+					"patching_rect" : [ 12.0, 278.0, 334.0, 33.0 ],
 					"style" : "",
 					"text" : "The first tab should show the title for the lesson, and give an overview of what's included"
 				}
@@ -190,7 +189,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 12.0, 233.0, 254.0, 47.0 ],
+					"patching_rect" : [ 12.0, 223.0, 254.0, 47.0 ],
 					"style" : "",
 					"text" : "Tabs appear in left to right order based on left to right order of subpatchers in the patch, or top to bottom if all subpatchers are aligned."
 				}
