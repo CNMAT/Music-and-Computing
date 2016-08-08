@@ -36,9 +36,22 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "Default Max 7",
-		"showrootpatcherontab" : 0,
-		"showontab" : 0,
+		"showontab" : 1,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 33.0, 137.0, 166.0, 20.0 ],
+					"presentation_rect" : [ 673.0, 150.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "ADD SOUND SOMEWHERE",
+					"textcolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-31",
 					"maxclass" : "newobj",
@@ -4712,7 +4725,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 267.0, 105.0, 1041.0, 776.0 ],
+						"rect" : [ 0.0, 26.0, 1041.0, 776.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -5367,7 +5380,7 @@
 		"lines" : [  ],
 		"dependency_cache" : [ 			{
 				"name" : "adding_modules.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/course/modules/dev",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/course/modules/instructors",
 				"type" : "JSON",
 				"implicit" : 1
 			}
