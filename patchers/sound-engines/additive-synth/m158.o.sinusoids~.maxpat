@@ -86,13 +86,13 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-28",
-									"linecount" : 26,
+									"linecount" : 25,
 									"maxclass" : "o.expr.codebox",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 50.0, 101.0, 482.0, 372.0 ],
-									"text" : "if( bound(/midi) && /midi != -1 && bound(/amp),\n  progn(\n    /count ??= 0,\n    /count = (/count+1) % 2,\n\n    /hzlist/setbuf = /unique+\"-hz\"+/count,\n    /hzlist/setlen = length(/midi),\n    /hzlist/fill = mtof(/midi) / /sr,\n\n    /amplist/setbuf = /unique+\"-amp\"+/count,\n    /amplist/setlen = length(/amp),\n\n    if( /hzlist/setlen > /amplist/setlen,\n      progn(\n        /amplist/fill = nfill( /hzlist/setlen, first(/amp)),\n        /amplist/setlen = /hzlist/setlen\n      ),\n      /amplist/fill = /amp\n    ),\n\n    /done = \"bang\"\n\n# normalize\n#    /amplist/fill = /amps / max(/amps)\n  )\n)",
+									"patching_rect" : [ 50.0, 102.0, 532.0, 358.0 ],
+									"text" : "if( (( bound(/midi) && /midi != -1) || bound(/hz)) && bound(/amp),\n  progn(\n    /count ??= 0,\n    /count = (/count+1) % 2,\n\n    /_hz = bound(/hz) ? /hz : mtof(/midi),\n\n    /hzlist/setbuf = /unique+\"-hz\"+/count,\n    /hzlist/setlen = length(/_hz),\n    /hzlist/fill = float32(/_hz) / /sr,\n\n    /amplist/setbuf = /unique+\"-amp\"+/count,\n    /amplist/setlen = length(/amp),\n\n    if( /hzlist/setlen > /amplist/setlen,\n      progn(\n        /amplist/fill = nfill( /hzlist/setlen, first(/amp)),\n        /amplist/setlen = /hzlist/setlen\n      ),\n      /amplist/fill = /amp\n    ),\n\n    /done = \"bang\"\n  )\n)",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -117,7 +117,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 491.0, 30.0, 30.0 ],
+									"patching_rect" : [ 50.0, 526.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -161,13 +161,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-5",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 91.0, 208.0, 111.0, 33.0 ],
+					"patching_rect" : [ 91.0, 208.0, 111.0, 47.0 ],
 					"style" : "",
-					"text" : "/midi\n/amp"
+					"text" : "/midi\n/hz\n/amp"
 				}
 
 			}
@@ -294,13 +294,14 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-3",
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 515.0, 62.0, 22.0 ],
+									"patching_rect" : [ 50.0, 515.0, 62.0, 35.0 ],
 									"style" : "",
-									"text" : "#0-amp0"
+									"text" : "1036-amp0"
 								}
 
 							}
@@ -357,11 +358,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-7",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "jit_matrix", "jit_matrix", "" ],
-									"patching_rect" : [ 165.0, 398.5, 115.0, 22.0 ],
+									"patching_rect" : [ 165.0, 398.5, 115.0, 35.0 ],
 									"style" : "",
 									"text" : "jit.buffer~ #0-harm0"
 								}
@@ -370,11 +372,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-4",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "jit_matrix", "" ],
-									"patching_rect" : [ 165.0, 285.5, 165.0, 22.0 ],
+									"patching_rect" : [ 165.0, 285.5, 165.0, 35.0 ],
 									"style" : "",
 									"text" : "jit.matrix #0-tmp 1 float32 1 1"
 								}
@@ -383,11 +386,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-6",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 165.0, 238.5, 75.0, 22.0 ],
+									"patching_rect" : [ 165.0, 238.5, 75.0, 35.0 ],
 									"style" : "",
 									"text" : "jit.fill #0-tmp"
 								}
@@ -755,14 +759,13 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-5",
-									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 188.0, 528.5, 618.0, 35.0 ],
 									"style" : "",
-									"text" : "0.003096 0.000726 0.004355 0.018569 0.014376 0.009385 0.001437 0.000791 0.000337 0.003672 0.000791 0.00017 0.00017 0.00017"
+									"text" : "0.005933 0.006285 0.006659 0.007055"
 								}
 
 							}
@@ -775,7 +778,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 515.0, 62.0, 22.0 ],
 									"style" : "",
-									"text" : "#0-hz0"
+									"text" : "1036-hz0"
 								}
 
 							}
@@ -832,6 +835,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-7",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -845,6 +849,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-4",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
@@ -858,6 +863,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-6",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
@@ -1145,7 +1151,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 472.0, 127.0, 29.5, 22.0 ],
+					"patching_rect" : [ 472.0, 127.0, 35.5, 22.0 ],
 					"style" : "",
 					"text" : "#0"
 				}
@@ -1557,38 +1563,6 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "gen.sinusoids.gendsp",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158_A_B_Dev/A/patches/sound-engines",
-				"type" : "gDSP",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.route.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.union.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.pack.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.intersection.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.compose.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.expr.codebox.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0,
 		"bgfillcolor_type" : "gradient",
 		"bgfillcolor_color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 		"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
