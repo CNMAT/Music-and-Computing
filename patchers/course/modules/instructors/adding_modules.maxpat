@@ -5,7 +5,7 @@
 			"major" : 7,
 			"minor" : 2,
 			"revision" : 4,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
@@ -227,9 +227,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 12.0, 34.0, 360.0, 181.0 ],
+					"patching_rect" : [ 12.0, 34.0, 355.0, 181.0 ],
 					"style" : "",
-					"text" : "To add a new module to the lesson, add a subpatcher or abstraction to the root patcher, and make sure that \"show on parent tab\" is enabled in the patcher inspector.\n\nIf students are expected to edit the patch, the module should be a subpatcher, not abstraction.\n\nTo add a module as a subpatcher that was saved as an abstraction: \n1) add the abstration to this patcher, \n2) de-encapsulate, and re-encapusulate as a subpatcher, \n3) go inside the subpatcher, and cmd-i to set patcher inspector and enable \"show on parent tab\""
+					"text" : "To add a new module to the lesson, add a subpatcher or abstraction to the root patcher, and make sure that \"Show on Parent Patcher Tab\" is enabled in the patcher inspector.\n\nIf students are expected to edit the patch, the module should be a subpatcher, not abstraction.\n\nTo add a module as a subpatcher that was saved as an abstraction: \n1) add the abstration to this patcher, \n2) de-encapsulate, and re-encapusulate as a subpatcher, \n3) go inside the subpatcher, and cmd-i to set patcher inspector and enable \"show on parent tab\""
 				}
 
 			}
