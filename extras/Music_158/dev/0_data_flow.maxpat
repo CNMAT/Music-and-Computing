@@ -4906,7 +4906,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1088.0, 761.0 ],
+						"rect" : [ 157.0, 105.0, 1088.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -4938,12 +4938,28 @@
 								"box" : 								{
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
+									"id" : "obj-4",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 36.0, 42.0, 389.0, 34.0 ],
+									"presentation_rect" : [ 241.0, 30.0, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "Max's main window is called a \"patch\", which can be edited and used to create sounds and control pretty much anything you can imagine."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
 									"id" : "obj-44",
 									"linecount" : 4,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 472.0, 569.0, 345.0, 62.0 ],
+									"patching_rect" : [ 463.0, 617.0, 345.0, 62.0 ],
 									"style" : "",
 									"text" : "Lock the patch, and use your mouse to interact with the GUI objects... You can also interact with objects from an unlocked patch, by holding down ⌘ (or Ctrl on Windows) while clicking on GUI objects."
 								}
@@ -4958,7 +4974,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 37.0, 524.0, 107.0, 26.0 ],
+									"patching_rect" : [ 36.0, 544.0, 107.0, 26.0 ],
 									"style" : "",
 									"text" : "GUI Objects:"
 								}
@@ -4973,7 +4989,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 37.0, 398.0, 98.0, 26.0 ],
+									"patching_rect" : [ 36.0, 410.0, 98.0, 26.0 ],
 									"style" : "",
 									"text" : "Max / MSP:"
 								}
@@ -4988,7 +5004,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 37.0, 220.0, 65.0, 26.0 ],
+									"patching_rect" : [ 36.0, 243.0, 65.0, 26.0 ],
 									"style" : "",
 									"text" : "Basics:"
 								}
@@ -5002,7 +5018,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 187.0, 685.0, 165.0, 20.0 ],
+									"patching_rect" : [ 186.0, 697.0, 165.0, 20.0 ],
 									"style" : "",
 									"text" : "Message (m)"
 								}
@@ -5016,7 +5032,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 187.0, 645.0, 165.0, 20.0 ],
+									"patching_rect" : [ 186.0, 657.0, 165.0, 20.0 ],
 									"style" : "",
 									"text" : "Floating-point number box (f)"
 								}
@@ -5030,7 +5046,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 187.0, 605.0, 165.0, 20.0 ],
+									"patching_rect" : [ 186.0, 617.0, 165.0, 20.0 ],
 									"style" : "",
 									"text" : "Integer number box (i)"
 								}
@@ -5044,7 +5060,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 187.0, 569.0, 165.0, 20.0 ],
+									"patching_rect" : [ 186.0, 581.0, 165.0, 20.0 ],
 									"style" : "",
 									"text" : "Button (aka \"bang\") (b)"
 								}
@@ -5059,7 +5075,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 37.0, 685.0, 36.0, 22.0 ],
+									"patching_rect" : [ 36.0, 697.0, 36.0, 22.0 ],
 									"style" : "",
 									"text" : "hello"
 								}
@@ -5076,7 +5092,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 37.0, 645.0, 50.0, 22.0 ],
+									"patching_rect" : [ 36.0, 657.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -5091,7 +5107,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 37.0, 605.0, 50.0, 22.0 ],
+									"patching_rect" : [ 36.0, 617.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -5103,7 +5119,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 37.0, 569.0, 20.0, 20.0 ],
+									"patching_rect" : [ 36.0, 581.0, 20.0, 20.0 ],
 									"style" : ""
 								}
 
@@ -5117,7 +5133,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 37.0, 485.5, 46.0, 22.0 ],
+									"patching_rect" : [ 36.0, 495.0, 46.0, 22.0 ],
 									"style" : "",
 									"text" : "cycle~"
 								}
@@ -5132,7 +5148,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 37.0, 445.0, 38.0, 22.0 ],
+									"patching_rect" : [ 36.0, 457.0, 38.0, 22.0 ],
 									"style" : "",
 									"text" : "cycle"
 								}
@@ -5146,7 +5162,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 187.0, 358.0, 165.0, 20.0 ],
+									"patching_rect" : [ 186.0, 370.0, 165.0, 20.0 ],
 									"style" : "",
 									"text" : "comment box (c)"
 								}
@@ -5161,7 +5177,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 37.0, 358.0, 120.0, 20.0 ],
+									"patching_rect" : [ 36.0, 370.0, 120.0, 20.0 ],
 									"style" : "",
 									"text" : "(comment)"
 								}
@@ -5175,7 +5191,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 187.0, 316.0, 165.0, 20.0 ],
+									"patching_rect" : [ 186.0, 328.0, 165.0, 20.0 ],
 									"style" : "",
 									"text" : "message box (m)"
 								}
@@ -5190,7 +5206,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 37.0, 316.0, 50.0, 22.0 ],
+									"patching_rect" : [ 36.0, 328.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -5204,7 +5220,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 37.0, 271.0, 100.0, 22.0 ],
+									"patching_rect" : [ 36.0, 283.0, 100.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -5217,7 +5233,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 187.0, 483.0, 214.0, 20.0 ],
+									"patching_rect" : [ 186.0, 495.0, 214.0, 20.0 ],
 									"style" : "",
 									"text" : "MSP (audio) object - note the tilde! (~)"
 								}
@@ -5231,7 +5247,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 187.0, 445.0, 165.0, 20.0 ],
+									"patching_rect" : [ 186.0, 457.0, 165.0, 20.0 ],
 									"style" : "",
 									"text" : "Max object"
 								}
@@ -5245,7 +5261,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 187.0, 271.0, 165.0, 20.0 ],
+									"patching_rect" : [ 186.0, 283.0, 165.0, 20.0 ],
 									"style" : "",
 									"text" : "object box (n)"
 								}
@@ -5261,7 +5277,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 457.0, 89.0, 25.0, 92.0 ],
+									"patching_rect" : [ 456.0, 101.0, 25.0, 92.0 ],
 									"style" : "",
 									"text" : "n\nm\ni\nf\nb\nt"
 								}
@@ -5276,7 +5292,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 457.0, 77.0, 332.0, 104.0 ],
+									"patching_rect" : [ 456.0, 89.0, 332.0, 104.0 ],
 									"style" : "",
 									"text" : "For this lesson, use the following keyboard shortcuts:\n      to create a new object\n      to create a new message\n      to create a number box for an integer\n      to create a number box for a floating-point number\n      to create a button\n      to create a toggle"
 								}
@@ -5291,7 +5307,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_matrix" ],
-									"patching_rect" : [ 133.0, 119.0, 20.0, 20.0 ],
+									"patching_rect" : [ 132.0, 145.0, 20.0, 20.0 ],
 									"pic" : "lock2.png"
 								}
 
@@ -5305,7 +5321,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_matrix" ],
-									"patching_rect" : [ 172.0, 119.0, 20.0, 20.0 ],
+									"patching_rect" : [ 171.0, 145.0, 20.0, 20.0 ],
 									"pic" : "lock.png"
 								}
 
@@ -5320,7 +5336,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 37.0, 59.0, 374.0, 149.0 ],
+									"patching_rect" : [ 36.0, 85.0, 374.0, 149.0 ],
 									"style" : "",
 									"text" : "To enter EDIT MODE, either:\n\n     * Use the ⌘-E (Ctrl-E on Windows) keyboard shortcut\n     * ⌘-click on the white space in the patch\n     * Toggle the         to         in the lower-left corner\n     * Right-click and select \"Edit\" from the menu\n\nOnce in EDIT MODE, you can create objects and connect them with patch cords. A LOCKED PATCH allows you to interact with objects.",
 									"textcolor" : [ 0.0, 0.0, 0.501961, 1.0 ]
@@ -5329,16 +5345,16 @@
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 1,
+									"fontface" : 3,
 									"fontname" : "Helvetica Neue",
-									"fontsize" : 20.0,
+									"fontsize" : 18.0,
 									"id" : "obj-23",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 37.0, 20.0, 154.0, 30.0 ],
+									"patching_rect" : [ 18.0, 10.0, 101.0, 28.0 ],
 									"style" : "",
-									"text" : "Max Essentials"
+									"text" : "Hello Max!"
 								}
 
 							}
@@ -5432,7 +5448,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 157.0, 105.0, 1088.0, 761.0 ],
+						"rect" : [ 0.0, 26.0, 1088.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,

@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 0,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 397.0, 45.0, 1042.0, 855.0 ],
+		"rect" : [ 219.0, 45.0, 978.0, 777.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,11 +38,77 @@
 		"subpatcher_template" : "no-menus",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 18.0,
+					"id" : "obj-20",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 459.0, 26.0, 147.0, 27.0 ],
+					"presentation_rect" : [ 450.0, 45.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "m158.o.biquad~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "spectroscope~",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 70.0, 457.0, 300.0, 100.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 288.0, 598.0, 33.0, 22.0 ],
+					"presentation_rect" : [ 137.0, 590.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "stop"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 288.0, 565.0, 74.0, 22.0 ],
+					"style" : "",
+					"text" : "startwindow"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 384.0, 629.0, 37.0, 22.0 ],
+					"style" : "",
+					"text" : "dac~"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-12",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 298.0, 191.0, 33.0, 20.0 ],
+					"patching_rect" : [ 305.714294, 264.0, 33.0, 20.0 ],
 					"style" : "",
 					"text" : "type"
 				}
@@ -54,7 +120,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 229.214294, 118.0, 23.0, 20.0 ],
+					"patching_rect" : [ 242.214294, 192.0, 23.0, 20.0 ],
 					"style" : "",
 					"text" : "Q"
 				}
@@ -66,7 +132,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 165.214294, 118.0, 23.0, 20.0 ],
+					"patching_rect" : [ 178.214294, 192.0, 23.0, 20.0 ],
 					"style" : "",
 					"text" : "dB"
 				}
@@ -78,7 +144,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 81.214294, 118.0, 23.0, 20.0 ],
+					"patching_rect" : [ 94.214294, 192.0, 23.0, 20.0 ],
 					"style" : "",
 					"text" : "hz"
 				}
@@ -90,7 +156,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 85.714294, 319.0, 205.0, 20.0 ],
+					"patching_rect" : [ 176.214294, 400.0, 205.0, 20.0 ],
 					"style" : "",
 					"text" : "double click to see filter response >>"
 				}
@@ -111,7 +177,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 439.0, 310.5, 267.0, 35.0 ],
+					"patching_rect" : [ 525.0, 393.5, 267.0, 35.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -124,7 +190,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 240.714294, 190.0, 50.0, 22.0 ],
+					"patching_rect" : [ 253.714294, 264.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -141,7 +207,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 0,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -338,7 +404,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 389.0, 246.0, 69.0, 22.0 ],
+					"patching_rect" : [ 475.0, 329.0, 69.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -359,7 +425,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 389.0, 159.0, 60.0, 22.0 ],
+					"patching_rect" : [ 475.0, 242.0, 60.0, 22.0 ],
 					"style" : "",
 					"text" : "loadbang"
 				}
@@ -372,7 +438,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 64.714294, 263.0, 100.0, 22.0 ],
+					"patching_rect" : [ 77.714294, 337.0, 100.0, 22.0 ],
 					"style" : "",
 					"text" : "o.prepend /filter"
 				}
@@ -384,7 +450,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 433.0, 86.0, 355.0, 20.0 ],
+					"patching_rect" : [ 519.0, 169.0, 355.0, 20.0 ],
 					"style" : "",
 					"text" : "/hz /dB and /Q accept single values or line~ envelopes"
 				}
@@ -396,7 +462,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 433.0, 113.0, 355.0, 20.0 ],
+					"patching_rect" : [ 519.0, 196.0, 355.0, 20.0 ],
 					"style" : "",
 					"text" : "/type can be index number, line~ sequence, or name of filter type"
 				}
@@ -405,12 +471,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-41",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 401.0, 645.5, 431.0, 20.0 ],
+					"patching_rect" : [ 459.0, 106.5, 411.0, 33.0 ],
 					"style" : "",
-					"text" : "very close to the Max biquad~, but internally checks for NaN for extra stability"
+					"text" : "very close to the Max biquad~, but internally checks for NaN, denormals, and uses internal limiting for extra stability."
 				}
 
 			}
@@ -421,7 +488,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 401.0, 609.0, 411.0, 33.0 ],
+					"patching_rect" : [ 459.0, 70.0, 411.0, 33.0 ],
 					"style" : "",
 					"text" : "biquad with coefficents from robert bristow-johnson's Audio EQ Cookbook:  http://www.musicdsp.org/files/Audio-EQ-Cookbook.txt"
 				}
@@ -434,7 +501,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 542.0, 149.0, 190.0, 141.0 ],
+					"patching_rect" : [ 628.0, 232.0, 190.0, 141.0 ],
 					"style" : "",
 					"text" : "possible /type values:\n0 lowpass\n1 highpass\n2 bandpass (constant skirt gain)\n3 bandpass (constant peak gain)\n4 notch\n5 allpass\n6 peakingEQ\n7 lowshelf\n8 highshelf"
 				}
@@ -448,7 +515,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 298.0, 369.0, 22.0, 140.0 ],
+					"patching_rect" : [ 384.0, 447.0, 22.0, 140.0 ],
 					"style" : ""
 				}
 
@@ -463,8 +530,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 389.0, 491.0, 472.0, 116.0 ],
-					"text" : "/filter/type : \"peakingEQ\",\n/filter/hz : \"frequency\",\n/filter/dB : \"gain in dB\",\n/filter/Q : \"Q\",\n/filter/typelist : [\"lowpass\", \"highpass\", \"bp_const_skirt\", \"bp_const_peak\", \"notch\", \"allpass\", \"peakingEQ\", \"lowshelf\", \"highshelf\"]",
+					"patching_rect" : [ 475.0, 574.0, 472.0, 116.0 ],
+					"text" : "/filter/type : \"highshelf\",\n/filter/hz : \"frequency\",\n/filter/dB : \"gain in dB\",\n/filter/Q : \"Q\",\n/filter/typelist : [\"lowpass\", \"highpass\", \"bp_const_skirt\", \"bp_const_peak\", \"notch\", \"allpass\", \"peakingEQ\", \"lowshelf\", \"highshelf\"]",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -476,7 +543,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 298.0, 255.0, 46.0, 22.0 ],
+					"patching_rect" : [ 384.0, 338.0, 46.0, 22.0 ],
 					"style" : "",
 					"text" : "noise~"
 				}
@@ -489,9 +556,9 @@
 					"numinlets" : 6,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "FullPacket" ],
-					"patching_rect" : [ 298.0, 317.0, 110.0, 22.0 ],
+					"patching_rect" : [ 384.0, 400.0, 110.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.io.biquad~"
+					"text" : "m158.o.biquad~"
 				}
 
 			}
@@ -504,7 +571,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 155.714294, 149.0, 50.0, 22.0 ],
+					"patching_rect" : [ 168.714294, 223.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -518,7 +585,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 215.714294, 149.0, 50.0, 22.0 ],
+					"patching_rect" : [ 228.714294, 223.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -530,7 +597,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 81.214294, 190.0, 24.0, 24.0 ],
+					"patching_rect" : [ 94.214294, 264.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -544,7 +611,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 64.714294, 149.0, 79.0, 22.0 ],
+					"patching_rect" : [ 77.714294, 223.0, 79.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -556,20 +623,9 @@
 					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 64.714294, 226.0, 195.0, 22.0 ],
+					"patching_rect" : [ 77.714294, 300.0, 195.0, 22.0 ],
 					"style" : "",
 					"text" : "o.pack /hz 100 /dB 1. /Q 20 /type 0"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-19",
-					"maxclass" : "ezdac~",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"patching_rect" : [ 281.0, 610.0, 45.0, 45.0 ],
-					"style" : ""
 				}
 
 			}
@@ -594,6 +650,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -603,7 +668,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-19", 1 ],
+					"destination" : [ "obj-6", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-14", 0 ]
@@ -612,10 +677,28 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-19", 0 ],
+					"destination" : [ "obj-6", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-16", 0 ]
 				}
 
 			}
@@ -756,26 +839,32 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "m158.o.io.biquad~.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/158b-spring16-o.wrappers/sound_engines/filter",
+				"name" : "m158.o.biquad~.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/sound-engines/filter",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "multimode.biquad.gendsp",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/code",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "m158.o.io.menu.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/158b-spring16-o.wrappers/z_o.io.support",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gui",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "m158.o.io.textfield.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/158b-spring16-o.wrappers/z_o.io.support",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gui",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.accum.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/158b-spring16-o.wrappers/z_o.io.support/Helpers",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gatherers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
