@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 201.0, 79.0, 1033.0, 787.0 ],
+		"rect" : [ 201.0, 79.0, 1057.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -36,7 +36,8 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "Default Max 7",
-		"showontab" : 1,
+		"showrootpatcherontab" : 0,
+		"showontab" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-14",
@@ -53,7 +54,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1033.0, 761.0 ],
+						"rect" : [ 0.0, 26.0, 1057.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -177,7 +178,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 265.5, 394.0, 684.0, 156.0 ],
-									"text" : "/gui/numPitches : 11,\n/gui/baseMIDI : 81.,\n/gui/read : [\"u675002380.json\", 0],\n/gui/time : 2016-08-10T13:15:43.527531Z,\n/id : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],\n/baseHz : 880.,\n/hz : [880., 990., 1100., 1210., 1320., 1430., 1540., 1650., 1760., 1870., 1980.],\n/scaledAmp : 0.0909091,\n/amp : [0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091]",
+									"text" : "/gui/read : [\"u767003746.json\", 0],\n/gui/numPitches : 11,\n/gui/baseMIDI : 81.,\n/gui/time : 2016-08-10T17:15:15.709983Z,\n/id : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],\n/baseHz : 880.,\n/hz : [880., 990., 1100., 1210., 1320., 1430., 1540., 1650., 1760., 1870., 1980.],\n/scaledAmp : 0.0909091,\n/amp : [0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091]",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -384,7 +385,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 126.5, 158.0, 293.0, 75.0 ],
-									"text" : "/gui/numPitches : 11,\n/gui/baseMIDI : 81.,\n/gui/read : [\"u675002380.json\", 0],\n/gui/time : 2016-08-10T13:15:43.527531Z",
+									"text" : "/gui/read : [\"u767003746.json\", 0],\n/gui/numPitches : 11,\n/gui/baseMIDI : 81.,\n/gui/time : 2016-08-10T17:15:15.709983Z",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -421,7 +422,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u675002380"
+									"varname" : "u767003746"
 								}
 
 							}
@@ -598,7 +599,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1033.0, 761.0 ],
+						"rect" : [ 0.0, 26.0, 1057.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -633,7 +634,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 66.5, 710.5, 285.0, 20.0 ],
-									"presentation_rect" : [ 68.5, 711.5, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "see the m158.o.gui help patch for more information."
 								}
@@ -646,7 +646,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 299.0, 190.5, 203.0, 20.0 ],
-									"presentation_rect" : [ 146.0, 176.5, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "you can also send another bundle in"
 								}
@@ -871,7 +870,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 66.5, 571.5, 827.0, 88.0 ],
-									"text" : "/gui/amp : [0.430769, 0.769231, 0.461538, 0.430769, 0.4, 0.369231, 0.292308, 0.153846, 0.184615, 0.153846],\n/gui/mod : 1.2,\n/gui/read : [\"u175002492.json\", 0],\n/gui/hz : 14.,\n/gui/time : 2016-08-10T13:12:09.841515Z",
+									"text" : "/gui/read : [\"u380003859.json\", 0],\n/gui/hz : 14.,\n/gui/amp : [0.430769, 0.769231, 0.461538, 0.430769, 0.4, 0.369231, 0.292308, 0.153846, 0.184615, 0.153846],\n/gui/mod : 1.2,\n/gui/time : 2016-08-10T17:15:15.708868Z",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -908,7 +907,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u175002492"
+									"varname" : "u380003859"
 								}
 
 							}
@@ -968,13 +967,11 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-20",
-									"linecount" : 2,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 548.0, 232.5, 402.0, 48.0 ],
-									"text" : "/sammy : 0.2,\n/davis",
+									"patching_rect" : [ 548.0, 232.5, 402.0, 34.0 ],
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -1050,13 +1047,11 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-7",
-									"linecount" : 3,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 60.0, 246.0, 402.0, 61.0 ],
-									"text" : "/sammy : {\n\t/hello : \"!\"\n}",
+									"patching_rect" : [ 60.0, 246.0, 402.0, 34.0 ],
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -1280,7 +1275,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1033.0, 761.0 ],
+						"rect" : [ 0.0, 26.0, 1057.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1602,7 +1597,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1033.0, 761.0 ],
+						"rect" : [ 0.0, 26.0, 1057.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2188,7 +2183,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1033.0, 761.0 ],
+						"rect" : [ 0.0, 26.0, 1057.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2223,7 +2218,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 291.0, 604.5, 318.0, 33.0 ],
+									"patching_rect" : [ 285.0, 625.5, 318.0, 33.0 ],
 									"style" : "",
 									"text" : "<< in addition to sending a bundle into o.expr.codebox, you can also click directly on it to trigger the computation"
 								}
@@ -2236,7 +2231,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 52.0, 544.0, 533.0, 33.0 ],
+									"patching_rect" : [ 46.0, 565.0, 533.0, 33.0 ],
 									"style" : "",
 									"text" : "nfill() creates a list of repeated numbers, it requires two arguments: the number of elements in the lest, and the vaule to fill the list with."
 								}
@@ -2249,7 +2244,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 52.0, 503.0, 533.0, 33.0 ],
+									"patching_rect" : [ 46.0, 524.0, 533.0, 33.0 ],
 									"style" : "",
 									"text" : "aseq() creates \"a sequence\" of numbers, it requires two arguments: start number, and end number, a third option argument is the stepsize which is 1 by default."
 								}
@@ -2261,7 +2256,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 52.0, 478.0, 450.0, 20.0 ],
+									"patching_rect" : [ 46.0, 499.0, 450.0, 20.0 ],
 									"style" : "",
 									"text" : "Lists can also be created by using the aseq() and nfill() functions in o.expr.codebox"
 								}
@@ -2276,7 +2271,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 64.5, 658.0, 538.0, 34.0 ],
+									"patching_rect" : [ 58.5, 679.0, 538.0, 34.0 ],
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -2291,7 +2286,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 64.5, 598.0, 215.0, 46.0 ],
+									"patching_rect" : [ 58.5, 619.0, 215.0, 46.0 ],
 									"text" : "/sequence = aseq(0, 10),\n/repeating = nfill(10, 2.22)",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
@@ -2303,7 +2298,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 569.0, 451.0, 235.0, 20.0 ],
+									"patching_rect" : [ 396.0, 428.0, 235.0, 20.0 ],
 									"style" : "",
 									"text" : "in odot, strings are contained by quotes \" \""
 								}
@@ -2315,7 +2310,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 661.5, 370.0, 67.0, 20.0 ],
+									"patching_rect" : [ 171.5, 395.0, 67.0, 20.0 ],
 									"style" : "",
 									"text" : "some lists:"
 								}
@@ -2331,7 +2326,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 536.0, 392.0, 340.0, 51.0 ],
+									"patching_rect" : [ 46.0, 417.0, 340.0, 51.0 ],
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 36, 47, 98, 111, 98, 0, 0, 0, 0, 44, 115, 115, 115, 0, 0, 0, 0, 104, 109, 109, 0, 110, 111, 32, 119, 97, 121, 0, 0, 121, 101, 115, 32, 119, 97, 121, 0, 0, 0, 0, 44, 47, 115, 116, 101, 118, 101, 0, 0, 44, 115, 115, 115, 0, 0, 0, 0, 119, 101, 108, 108, 46, 46, 46, 0, 116, 104, 97, 116, 39, 115, 32, 99, 114, 97, 122, 121, 0, 0, 0, 0, 111, 107, 0, 0, 0, 0, 0, 32, 47, 110, 117, 109, 98, 101, 114, 115, 0, 0, 0, 0, 44, 105, 105, 105, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 3 ],
 									"saved_bundle_length" : 140,
 									"text" : "/bob : [\"hmm\", \"no way\", \"yes way\"],\n/steve : [\"well...\", \"that's crazy\", \"ok\"],\n/numbers : [1, 2, 3]",
@@ -2381,9 +2376,9 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 122.5, 128.0, 596.0, 20.0 ],
+									"patching_rect" : [ 122.5, 128.0, 602.0, 20.0 ],
 									"style" : "",
-									"text" : "start the DSP by clicking \"startwinow\" below, and then click on the o.compose objects to hear some harmonies"
+									"text" : "start the DSP by clicking \"startwindow\" below, and then click on the o.compose objects to hear some harmonies"
 								}
 
 							}
@@ -2394,7 +2389,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 55.5, 392.0, 394.0, 33.0 ],
+									"patching_rect" : [ 50.0, 357.0, 394.0, 33.0 ],
 									"style" : "",
 									"text" : "Lists of things can be created in o.compose by using single brackets [ ], with list elements are separated by commas."
 								}
@@ -2407,7 +2402,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 56.0, 73.0, 433.0, 33.0 ],
+									"patching_rect" : [ 56.0, 73.0, 483.0, 33.0 ],
 									"style" : "",
 									"text" : "For example, m158.o.sinusoids~ will play up to 512 individual sinusoids, but requires values for frequency and amplitude for each stored in an OSC bundle."
 								}
@@ -2535,7 +2530,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 187.0, 303.0, 33.0, 22.0 ],
+									"patching_rect" : [ 298.5, 274.0, 33.0, 22.0 ],
 									"style" : "",
 									"text" : "stop"
 								}
@@ -2548,7 +2543,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 105.0, 303.0, 74.0, 22.0 ],
+									"patching_rect" : [ 216.5, 274.0, 74.0, 22.0 ],
 									"style" : "",
 									"text" : "startwindow"
 								}
@@ -2560,7 +2555,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 64.5, 339.0, 37.0, 22.0 ],
+									"patching_rect" : [ 64.5, 311.0, 37.0, 22.0 ],
 									"style" : "",
 									"text" : "dac~"
 								}
@@ -2666,7 +2661,7 @@
 									"destination" : [ "obj-43", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 196.5, 331.5, 74.0, 331.5 ],
+									"midpoints" : [ 308.0, 303.0, 74.0, 303.0 ],
 									"source" : [ "obj-41", 0 ]
 								}
 
@@ -2676,7 +2671,7 @@
 									"destination" : [ "obj-43", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 114.5, 331.5, 74.0, 331.5 ],
+									"midpoints" : [ 226.0, 303.0, 74.0, 303.0 ],
 									"source" : [ "obj-42", 0 ]
 								}
 
@@ -2723,7 +2718,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 201.0, 105.0, 1033.0, 761.0 ],
+						"rect" : [ 0.0, 26.0, 1057.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2758,7 +2753,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 428.0, 137.0, 291.0, 20.0 ],
-									"presentation_rect" : [ 575.0, 122.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "presss some keyboard letters and see what happens"
 								}
@@ -2771,7 +2765,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 281.0, 502.0, 190.0, 20.0 ],
-									"presentation_rect" : [ 99.0, 470.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "What could you do with this data?"
 								}
@@ -2784,7 +2777,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 90.0, 73.0, 365.0, 20.0 ],
-									"presentation_rect" : [ 92.0, 69.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "Here are two examples: m158.o.io.mouse and m158.o.io.keyboard"
 								}
@@ -2808,13 +2800,13 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-4",
-									"linecount" : 11,
+									"linecount" : 6,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 412.0, 166.0, 265.0, 170.0 ],
-									"text" : "/ascii : \"f\",\n/keystate : \"up\",\n/keynum : 102,\n/numKeysDown : 0,\n/fingerIndex : 2,\n/shift : \"up\",\n/capslock : \"up\",\n/option : \"up\",\n/control : \"up\",\n/command : \"down\",\n/time : 2016-08-10T13:25:53.830591Z",
+									"patching_rect" : [ 412.0, 166.0, 265.0, 102.0 ],
+									"text" : "/shift : \"up\",\n/capslock : \"up\",\n/option : \"up\",\n/control : \"up\",\n/command : \"up\",\n/time : 2016-08-10T17:18:42.420497Z",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -2843,7 +2835,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 103.0, 166.0, 265.0, 279.0 ],
-									"text" : "/horizontal : 1094,\n/vertical : 201,\n/delta/horizontal : 0,\n/delta/vertical : 0,\n/screenDim : [1440, 900],\n/middle : [720., 450.],\n/x : 374.,\n/y : 249.,\n/distance : 449.307,\n/angle : 33.6547,\n/delta/distance : 0.,\n/delta/angle : 0.,\n/button/is : \"up\",\n/shift : \"up\",\n/capslock : \"up\",\n/option : \"up\",\n/control : \"up\",\n/command : \"down\",\n/time : 2016-08-10T13:25:53.830503Z",
+									"text" : "/horizontal : 228,\n/vertical : 89,\n/delta/horizontal : 0,\n/delta/vertical : 0,\n/screenDim : [1440, 900],\n/middle : [720., 450.],\n/x : -492.,\n/y : 361.,\n/distance : 610.234,\n/angle : 143.731,\n/delta/distance : 0.,\n/delta/angle : 0.,\n/button/is : \"down\",\n/shift : \"up\",\n/capslock : \"up\",\n/option : \"up\",\n/control : \"up\",\n/command : \"up\",\n/time : 2016-08-10T17:18:58.460127Z",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -2914,7 +2906,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1033.0, 761.0 ],
+						"rect" : [ 0.0, 26.0, 1057.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2950,7 +2942,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 216.5, 262.0, 284.0, 20.0 ],
+									"patching_rect" : [ 210.5, 280.0, 284.0, 20.0 ],
 									"style" : "",
 									"text" : "o.display (compare its data with o.compose above)"
 								}
@@ -2964,7 +2956,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 216.5, 104.0, 71.0, 20.0 ],
+									"patching_rect" : [ 210.5, 122.0, 71.0, 20.0 ],
 									"style" : "",
 									"text" : "o.compose"
 								}
@@ -2979,7 +2971,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 58.0, 643.0, 532.0, 34.0 ],
+									"patching_rect" : [ 52.0, 661.0, 532.0, 34.0 ],
 									"style" : "",
 									"text" : "Computation is triggered in real-time, as data is received in the inlet of o.expr.codebox, and is sent out immediately after all operations finished executing."
 								}
@@ -2993,7 +2985,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 365.0, 514.0, 282.0, 20.0 ],
+									"patching_rect" : [ 359.0, 532.0, 282.0, 20.0 ],
 									"style" : "",
 									"text" : "(bunnies are known for their reproductive prowess)"
 								}
@@ -3008,7 +3000,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 65.0, 561.0, 150.0, 34.0 ],
+									"patching_rect" : [ 59.0, 579.0, 150.0, 34.0 ],
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -3023,7 +3015,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 65.0, 501.0, 293.0, 46.0 ],
+									"patching_rect" : [ 59.0, 519.0, 293.0, 46.0 ],
 									"text" : "/rabbits = /rabbits * 2,\n/num/mammals = /cows + /pigs + /rabbits",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
@@ -3039,7 +3031,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 65.0, 426.0, 150.0, 51.0 ],
+									"patching_rect" : [ 59.0, 444.0, 150.0, 51.0 ],
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 47, 99, 111, 119, 115, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 2, 0, 0, 0, 16, 47, 112, 105, 103, 115, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 8, 0, 0, 0, 20, 47, 114, 97, 98, 98, 105, 116, 115, 0, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 4 ],
 									"saved_bundle_length" : 80,
 									"text" : "/cows : 2,\n/pigs : 8,\n/rabbits : 4",
@@ -3056,7 +3048,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 381.0, 532.0, 34.0 ],
+									"patching_rect" : [ 44.0, 399.0, 532.0, 34.0 ],
 									"style" : "",
 									"text" : "Different expressions are separated by commas. Expressions can assign values to both new and existing addresses:"
 								}
@@ -3070,7 +3062,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 365.0, 186.0, 101.0, 20.0 ],
+									"patching_rect" : [ 359.0, 204.0, 101.0, 20.0 ],
 									"style" : "",
 									"text" : "o.expr.codebox :",
 									"textcolor" : [ 0.0, 0.0, 0.501961, 1.0 ]
@@ -3086,7 +3078,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 365.0, 186.0, 328.0, 34.0 ],
+									"patching_rect" : [ 359.0, 204.0, 328.0, 34.0 ],
 									"style" : "",
 									"text" : "\ncreate expressions that work with data bound to addresses"
 								}
@@ -3101,7 +3093,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 65.0, 255.0, 150.0, 34.0 ],
+									"patching_rect" : [ 59.0, 273.0, 150.0, 34.0 ],
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -3116,7 +3108,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 65.0, 180.0, 293.0, 46.0 ],
+									"patching_rect" : [ 59.0, 198.0, 293.0, 46.0 ],
 									"text" : "/num/birds = /chickens + /turkeys,\n/num/mammals = /cows + /pigs + /rabbits",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
@@ -3132,7 +3124,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 65.0, 75.0, 150.0, 78.0 ],
+									"patching_rect" : [ 59.0, 93.0, 150.0, 78.0 ],
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 47, 99, 104, 105, 99, 107, 101, 110, 115, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 7, 0, 0, 0, 20, 47, 116, 117, 114, 107, 101, 121, 115, 0, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 3, 0, 0, 0, 16, 47, 99, 111, 119, 115, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 2, 0, 0, 0, 16, 47, 112, 105, 103, 115, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 8, 0, 0, 0, 20, 47, 114, 97, 98, 98, 105, 116, 115, 0, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 4 ],
 									"saved_bundle_length" : 128,
 									"text" : "/chickens : 7,\n/turkeys : 3,\n/cows : 2,\n/pigs : 8,\n/rabbits : 4",
@@ -3148,7 +3140,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 30.0, 397.0, 20.0 ],
+									"patching_rect" : [ 47.5, 58.0, 397.0, 20.0 ],
 									"style" : "",
 									"text" : "Now we'd like to do some operations on data stored in our odot bundle."
 								}
@@ -3280,7 +3272,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1033.0, 761.0 ],
+						"rect" : [ 201.0, 105.0, 1057.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3373,7 +3365,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1033.0, 761.0 ],
+						"rect" : [ 0.0, 26.0, 1057.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3697,7 +3689,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 184.0, 114.0, 239.0, 20.0 ],
+									"patching_rect" : [ 211.0, 106.0, 239.0, 20.0 ],
 									"style" : "",
 									"text" : "o.compose, o.expr.codebox, and o.display",
 									"textcolor" : [ 0.0, 0.0, 0.501961, 1.0 ]
@@ -3709,13 +3701,13 @@
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-34",
-									"linecount" : 5,
+									"linecount" : 4,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 40.0, 58.0, 449.0, 76.0 ],
+									"patching_rect" : [ 40.0, 64.0, 449.0, 62.0 ],
 									"style" : "",
-									"text" : "odot is a system for encapsulating, operating on, and delivering control data to objects that need them. We will begin by looking at the most trivial example before applying odot to the Sound Playback examples above.\n\nWe will use three objects:"
+									"text" : "odot is a system for encapsulating, operating on, and delivering control data to objects that need them. \n\nWe will start with three objects:"
 								}
 
 							}
@@ -3728,7 +3720,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 40.0, 21.0, 45.0, 26.0 ],
+									"patching_rect" : [ 40.0, 25.0, 45.0, 26.0 ],
 									"style" : "",
 									"text" : "odot"
 								}
@@ -3792,8 +3784,8 @@
  ],
 		"lines" : [  ],
 		"parameters" : 		{
-			"obj-5::obj-6" : [ "live.gain~[1]", "live.gain~", 0 ],
 			"obj-14::obj-15" : [ "live.gain~[2]", "live.gain~", 0 ],
+			"obj-5::obj-6" : [ "live.gain~[1]", "live.gain~", 0 ],
 			"obj-4::obj-2" : [ "live.gain~", "live.gain~", 0 ]
 		}
 ,
