@@ -5,7 +5,7 @@
 			"major" : 7,
 			"minor" : 2,
 			"revision" : 4,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
@@ -44,7 +44,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 107.0, 107.0, 291.0, 33.0 ],
-					"presentation_rect" : [ 107.0, 110.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "otherwise, always pass everything to the next object\n(adding things if generated in the patch)"
 				}
@@ -57,7 +56,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 392.0, 55.0, 300.0, 20.0 ],
-					"presentation_rect" : [ 403.0, 11.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "if emptybundle comes in send the first object's api only"
 				}
@@ -85,7 +83,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 294.0, 280.0, 73.0, 24.0 ],
-					"presentation_rect" : [ 577.0, 206.0, 0.0, 0.0 ],
 					"saved_bundle_data" : [  ],
 					"saved_bundle_length" : 0,
 					"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
@@ -97,14 +94,13 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-112",
-					"linecount" : 7,
+					"linecount" : 3,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 555.0, 268.0, 250.0, 116.0 ],
-					"presentation_rect" : [ 555.0, 310.0, 0.0, 0.0 ],
-					"text" : "/getapi : 0,\n/api/count : 1,\n/api/1 : {\n\t/name : \"o.cycle~\",\n\t/hz : \"frequency in hertz\",\n\t/amp : \"linear amplitude (0-1)\"\n}",
+					"patching_rect" : [ 555.0, 268.0, 250.0, 61.0 ],
+					"text" : "/name : \"o.cycle~\",\n/hz : \"frequency in hertz\",\n/amp : \"linear amplitude (0-1)\"",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -122,7 +118,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 4,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -244,7 +240,7 @@
 											"major" : 7,
 											"minor" : 2,
 											"revision" : 4,
-											"architecture" : "x64",
+											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
@@ -780,14 +776,14 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "signal", "FullPacket" ],
+					"outlettype" : [ "signal", "" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 4,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -818,6 +814,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "Default Max 7",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-87",
@@ -850,14 +847,14 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 2,
-									"outlettype" : [ "", "FullPacket" ],
+									"outlettype" : [ "", "" ],
 									"patcher" : 									{
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 2,
 											"revision" : 4,
-											"architecture" : "x64",
+											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
@@ -1209,7 +1206,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 138.0, 88.0, 60.0, 22.0 ],
+									"patching_rect" : [ 138.0, 50.0, 60.0, 22.0 ],
 									"style" : "",
 									"text" : "loadbang"
 								}
@@ -1220,15 +1217,15 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-52",
-									"linecount" : 3,
+									"linecount" : 5,
 									"maxclass" : "o.compose",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 138.0, 132.0, 246.0, 51.0 ],
-									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 47, 110, 97, 109, 101, 0, 0, 0, 44, 115, 0, 0, 111, 46, 99, 121, 99, 108, 101, 126, 0, 0, 0, 0, 0, 0, 0, 28, 47, 104, 122, 0, 44, 115, 0, 0, 102, 114, 101, 113, 117, 101, 110, 99, 121, 32, 105, 110, 32, 104, 101, 114, 116, 122, 0, 0, 0, 0, 0, 36, 47, 97, 109, 112, 0, 0, 0, 0, 44, 115, 0, 0, 108, 105, 110, 101, 97, 114, 32, 97, 109, 112, 108, 105, 116, 117, 100, 101, 32, 40, 48, 45, 49, 41, 0, 0 ],
-									"saved_bundle_length" : 116,
-									"text" : "/name : \"o.cycle~\",\n/hz : \"frequency in hertz\",\n/amp : \"linear amplitude (0-1)\"",
+									"patching_rect" : [ 138.0, 94.0, 254.0, 78.0 ],
+									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 47, 110, 97, 109, 101, 0, 0, 0, 44, 115, 0, 0, 111, 46, 99, 121, 99, 108, 101, 126, 0, 0, 0, 0, 0, 0, 0, 108, 47, 112, 97, 114, 97, 109, 101, 116, 101, 114, 115, 0, 44, 46, 0, 0, 0, 0, 0, 88, 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 28, 47, 104, 122, 0, 44, 115, 0, 0, 102, 114, 101, 113, 117, 101, 110, 99, 121, 32, 105, 110, 32, 104, 101, 114, 116, 122, 0, 0, 0, 0, 0, 36, 47, 97, 109, 112, 0, 0, 0, 0, 44, 115, 0, 0, 108, 105, 110, 101, 97, 114, 32, 97, 109, 112, 108, 105, 116, 117, 100, 101, 32, 40, 48, 45, 49, 41, 0, 0 ],
+									"saved_bundle_length" : 156,
+									"text" : "/name : \"o.cycle~\",\n/parameters : {\n\t/hz : \"frequency in hertz\",\n\t/amp : \"linear amplitude (0-1)\"\n}",
 									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
@@ -1372,7 +1369,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 195.0, 147.0, 109.0, 24.0 ],
-					"presentation_rect" : [ 227.0, 98.0, 0.0, 0.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 47, 104, 122, 0, 44, 105, 0, 0, 0, 0, 0, 100 ],
 					"saved_bundle_length" : 32,
 					"text" : "/hz : 100",
@@ -1385,14 +1381,13 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-82",
-					"linecount" : 11,
+					"linecount" : 3,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 569.0, 468.0, 250.0, 170.0 ],
-					"presentation_rect" : [ 370.0, 496.0, 0.0, 0.0 ],
-					"text" : "/getapi : 0,\n/api/count : 2,\n/api/1 : {\n\t/name : \"o.cycle~\",\n\t/hz : \"frequency in hertz\",\n\t/amp : \"linear amplitude (0-1)\"\n},\n/api/2 : {\n\t/name : \"o.*~\",\n\t/amp : \"linear amplitude (0-1)\"\n}",
+					"patching_rect" : [ 569.0, 468.0, 250.0, 61.0 ],
+					"text" : "/name : \"o.cycle~\",\n/hz : \"frequency in hertz\",\n/amp : \"linear amplitude (0-1)\"",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -1407,7 +1402,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 565.0, 135.0, 109.0, 24.0 ],
-					"presentation_rect" : [ 552.0, 90.0, 0.0, 0.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 47, 103, 101, 116, 97, 112, 105, 0, 44, 105, 0, 0, 0, 0, 0, 0 ],
 					"saved_bundle_length" : 36,
 					"text" : "/getapi : 0",
@@ -1425,7 +1419,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 409.0, 90.0, 73.0, 24.0 ],
-					"presentation_rect" : [ 105.0, 47.0, 0.0, 0.0 ],
 					"saved_bundle_data" : [  ],
 					"saved_bundle_length" : 0,
 					"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
