@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 324.0, 105.0, 411.0, 109.0 ],
+		"rect" : [ 324.0, 105.0, 423.0, 103.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,15 +38,25 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
-					"arrows" : 2,
-					"id" : "obj-13",
-					"linecolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"id" : "obj-5",
 					"maxclass" : "live.line",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 124.0, 96.0, 5.0, 100.0 ],
+					"patching_rect" : [ 309.0, 85.5, 5.0, 100.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 79.0, 90.0, 77.0, 10.0 ]
+					"presentation_rect" : [ 266.0, 89.5, 132.0, 5.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "live.line",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 260.0, 104.0, 5.0, 100.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 44.0, 89.5, 119.0, 5.0 ]
 				}
 
 			}
@@ -100,9 +110,9 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 165.0, 165.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 44.0, 84.0, 33.0, 20.0 ],
+					"presentation_rect" : [ 175.0, 81.0, 84.0, 20.0 ],
 					"style" : "",
-					"text" : "time"
+					"text" : "grain duration"
 				}
 
 			}
@@ -126,7 +136,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "FullPacket" ],
 					"patching_rect" : [ 103.0, 91.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -197,17 +207,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "o.expr.codebox.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.route.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }

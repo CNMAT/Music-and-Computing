@@ -164,7 +164,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "x phase (signal)",
 					"id" : "obj-47",
 					"maxclass" : "inlet",
 					"numinlets" : 0,

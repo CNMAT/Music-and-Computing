@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 154.0, 79.0, 1015.0, 763.0 ],
+		"rect" : [ 594.0, 79.0, 1015.0, 763.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -54,7 +54,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1015.0, 737.0 ],
+						"rect" : [ 594.0, 105.0, 1015.0, 737.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -83,6 +83,30 @@
 						"subpatcher_template" : "no-menus",
 						"showontab" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-17",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 457.0, 436.0, 267.0, 20.0 ],
+									"style" : "",
+									"text" : "<< see also the inside of o.granubuf.env.display "
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-14",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 325.0, 436.0, 130.0, 22.0 ],
+									"style" : "",
+									"text" : "o.granubuf.env.display"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-11",
 									"maxclass" : "live.gain~",
@@ -423,7 +447,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 264.5, 99.0, 84.0, 22.0 ],
-									"restore" : [ 5.0 ],
+									"restore" : [ 3.2 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0
 									}
@@ -459,7 +483,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 127.5, 99.0, 84.0, 22.0 ],
-									"restore" : [ -0.4 ],
+									"restore" : [ -0.9 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0
 									}
@@ -502,13 +526,13 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u559008886"
+									"varname" : "u637006591"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"buffername" : "1140-combined",
+									"buffername" : "1950-combined",
 									"id" : "obj-27",
 									"maxclass" : "waveform~",
 									"numinlets" : 5,
@@ -542,6 +566,15 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-13", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-10", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-14", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-10", 0 ]
@@ -810,7 +843,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 154.0, 105.0, 1015.0, 737.0 ],
+						"rect" : [ 0.0, 26.0, 1015.0, 737.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -906,13 +939,13 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-19",
-									"linecount" : 8,
+									"linecount" : 4,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 150.0, 486.5, 704.0, 129.0 ],
-									"text" : "/start : 0.1085,\n/duration : 120.,\n/rate : 1.,\n/amp : 1,\n/nbuffers : 1,\n/namelist : \"drumLoop.aif\",\n/lengths : 153400.,\n/buffername : \"1144-combined\"",
+									"patching_rect" : [ 150.0, 486.5, 704.0, 75.0 ],
+									"text" : "/start : 0.711,\n/duration : 120.,\n/rate : 1.,\n/amp : 1",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -1831,7 +1864,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 574.4375, 357.5, 34.0, 20.0 ],
-									"presentation_rect" : [ 575.25, 357.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "amp"
 								}
@@ -1844,7 +1876,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 524.25, 387.0, 31.0, 20.0 ],
-									"presentation_rect" : [ 528.833374, 387.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "pan"
 								}
@@ -2709,6 +2740,18 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "o.api.handler.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.gather.select.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gatherers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "m158.o.gui.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gui",
 				"type" : "JSON",
@@ -2721,11 +2764,21 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "o.granubuf.env.display.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/sound-engines/samples",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "o.pack.mxo",
 				"type" : "iLaX"
 			}
 , 			{
 				"name" : "o.prepend.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.compose.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -2749,7 +2802,11 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.compose.mxo",
+				"name" : "o.expr.codebox.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.select.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -2766,10 +2823,6 @@
 			}
 , 			{
 				"name" : "o.change.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.expr.codebox.mxo",
 				"type" : "iLaX"
 			}
  ],
