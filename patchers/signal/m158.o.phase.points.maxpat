@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 243.0, 120.0, 847.0, 612.0 ],
+		"rect" : [ 99.0, 97.0, 908.0, 621.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,13 +38,12 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "relative x phase",
 					"id" : "obj-3",
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 83.0, 343.0, 30.0, 30.0 ],
-					"presentation_rect" : [ 266.0, 338.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -119,7 +118,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 74.0, 215.0, 74.0, 22.0 ],
+					"patching_rect" : [ 74.0, 204.0, 74.0, 22.0 ],
 					"style" : "",
 					"text" : "patcherargs"
 				}
@@ -146,7 +145,7 @@
 					"outlettype" : [ "signal", "" ],
 					"patching_rect" : [ 195.0, 284.0, 190.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.points.interp~ #2 #3"
+					"text" : "m158.o.points.interp~"
 				}
 
 			}
@@ -159,7 +158,7 @@
 					"outlettype" : [ "signal", "signal", "" ],
 					"patching_rect" : [ 195.0, 238.0, 190.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.points.lookup~ #1"
+					"text" : "m158.o.points.lookup~"
 				}
 
 			}
@@ -191,7 +190,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "y value",
 					"id" : "obj-49",
 					"maxclass" : "outlet",
 					"numinlets" : 1,
@@ -217,6 +216,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-2", 1 ]
 				}
 
 			}
@@ -375,11 +383,19 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.var.mxo",
+				"name" : "o.cond.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.cond.mxo",
+				"name" : "o.print.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.select.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.var.mxo",
 				"type" : "iLaX"
 			}
 , 			{

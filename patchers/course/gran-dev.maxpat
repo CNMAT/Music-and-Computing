@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 84.0, 79.0, 1189.0, 754.0 ],
+		"rect" : [ 84.0, 79.0, 1019.0, 754.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -44,7 +44,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 543.0, 273.0, 110.0, 22.0 ],
-					"presentation_rect" : [ 500.0, 256.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "m158.phase.click~"
 				}
@@ -133,7 +132,6 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 389.333374, 301.0, 130.0, 130.0 ],
-					"presentation_rect" : [ 598.5, 343.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -186,7 +184,6 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 747.0, 305.0, 130.0, 130.0 ],
-					"presentation_rect" : [ 738.0, 283.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -199,9 +196,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "" ],
-					"patching_rect" : [ 663.0, 206.0, 148.0, 49.0 ],
+					"patching_rect" : [ 663.0, 206.0, 172.0, 49.0 ],
 					"style" : "",
-					"text" : "m158.o.phase.points /sample/1/x /sample/1/y @interp 0"
+					"text" : "m158.o.phase.points @basename /sample/1 @interp 0"
 				}
 
 			}
@@ -267,7 +264,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 974.5, 176.0, 214.0, 141.0 ],
-					"presentation_rect" : [ 1178.0, 172.0, 0.0, 0.0 ],
 					"text" : "/buffer/index = /gui/index,\n/duration = 300,\n/start = 0,\n/pan = 0,\n/amp = 1,\n/xshape = 0,\n/yshape = -5,\n/trigger = 1,\n/numvoices = 32",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -309,7 +305,6 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 373.5, 242.0, 50.0, 22.0 ],
-					"presentation_rect" : [ 310.5, 347.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -322,7 +317,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 347.0, 286.0, 32.0, 22.0 ],
-					"presentation_rect" : [ 284.0, 391.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "*~ 2"
 				}
@@ -336,7 +330,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 467.0, 191.0, 110.0, 22.0 ],
-					"presentation_rect" : [ 245.0, 264.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "m158.phase.click~"
 				}
@@ -388,7 +381,6 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 100.0, 457.0, 130.0, 130.0 ],
-					"presentation_rect" : [ 13.0, 378.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -402,7 +394,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 127.0, 34.0, 85.5, 22.0 ],
+					"patching_rect" : [ 127.0, 34.0, 86.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -499,14 +491,14 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1095.5, 61.5, 97.0, 49.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 1057, 45, 1440, 407 ],
+						"client_rect" : [ 4, 44, 358, 172 ],
 						"parameter_enable" : 0,
 						"storage_rect" : [ 583, 69, 1034, 197 ]
 					}
 ,
 					"style" : "",
 					"text" : "pattrstorage @outputmode 1 @notifymode 1",
-					"varname" : "u427004464"
+					"varname" : "u511000731"
 				}
 
 			}
@@ -583,7 +575,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 770.0, 573.0, 704.0, 333.0 ],
-					"text" : "/gui/sample/1 : [6, 10, 10, 1, 12, 6, 6, 6, 6, 6, 6, 6, 6, 0, 0, 9, 0, 0, 0, 0, 11, 11, 11, 11, 11, 11, 11, 10, 10, 0, 0, 0],\n/gui/index : 0,\n/gui/time : 2016-08-16T16:24:36.396085Z,\n/sample/1/x : [0., 0.03125, 0.09375, 0.125, 0.15625, 0.40625, 0.46875, 0.5, 0.625, 0.84375, 0.90625],\n/sample/1/y : [6, 10, 1, 12, 6, 0, 9, 0, 11, 10, 0],\n/buffer/index : 0,\n/duration : 300,\n/start : 0,\n/pan : 0,\n/amp : 1,\n/xshape : 0,\n/yshape : -5,\n/trigger : 1,\n/numvoices : 32,\n/nbuffers : 15,\n/namelist : [\"cl_hihat.aif\", \"claves.aif\", \"conga1.aif\", \"cowbell.aif\", \"crashcym.aif\", \"handclap.aif\", \"hi_conga.aif\", \"hightom.aif\", \"kick1.aif\", \"kick2.aif\", \"maracas.aif\", \"open_hh.aif\", \"rimshot.aif\", \"snare.aif\", \"tom1.aif\"],\n/lengths : [2328., 1311., 11488., 14992, 98309, 15901., 7880., 8800., 30942., 38160., 1133., 26352., 608., 4088., 15888.],\n/buffername : \"1345-combined\"",
+					"text" : "/gui/sample/1 : [6, 10, 10, 1, 12, 6, 6, 6, 6, 6, 6, 6, 6, 0, 0, 9, 0, 0, 0, 0, 11, 11, 11, 11, 11, 11, 11, 10, 10, 0, 0, 0],\n/gui/index : 0,\n/gui/time : 2016-08-16T17:26:37.637711Z,\n/sample/1/x : [0., 0.03125, 0.09375, 0.125, 0.15625, 0.40625, 0.46875, 0.5, 0.625, 0.84375, 0.90625],\n/sample/1/y : [6, 10, 1, 12, 6, 0, 9, 0, 11, 10, 0],\n/buffer/index : 0,\n/duration : 300,\n/start : 0,\n/pan : 0,\n/amp : 1,\n/xshape : 0,\n/yshape : -5,\n/trigger : 1,\n/numvoices : 32,\n/nbuffers : 15,\n/namelist : [\"cl_hihat.aif\", \"claves.aif\", \"conga1.aif\", \"cowbell.aif\", \"crashcym.aif\", \"handclap.aif\", \"hi_conga.aif\", \"hightom.aif\", \"kick1.aif\", \"kick2.aif\", \"maracas.aif\", \"open_hh.aif\", \"rimshot.aif\", \"snare.aif\", \"tom1.aif\"],\n/lengths : [2328., 1311., 11488., 14992, 98309, 15901., 7880., 8800., 30942., 38160., 1133., 26352., 608., 4088., 15888.],\n/buffername : \"1533-combined\"",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -1255,6 +1247,10 @@
 			}
 , 			{
 				"name" : "o.intersection.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.print.mxo",
 				"type" : "iLaX"
 			}
 , 			{
