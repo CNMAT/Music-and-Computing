@@ -93,7 +93,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 568.0, 45.0, 872.0, 855.0 ],
+						"rect" : [ 384.0, 45.0, 872.0, 855.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -125,13 +125,13 @@
 									"fontface" : 0,
 									"fontsize" : 10.0,
 									"id" : "obj-10",
-									"linecount" : 42,
+									"linecount" : 41,
 									"maxclass" : "o.expr.codebox",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 50.0, 58.0, 523.0, 494.0 ],
-									"text" : "/_/norm ??= 0,\n/_/xdelta ??= 1,\n\n/~/x2delta = \"lambda([xlist],\n  prog2(\n    /_/prev = 0,\n    map(\n      lambda([x],\n        prog1(\n          x - /_/prev,\n          /_/prev = x\n        )\n      ), xlist\n    ),\n    delete(/_/count)\n  )\n)\",\n\nmap(\n  lambda([a],\n    progn(\n      /_/tab = value(a),\n      /_/len = length(/_/tab),\n      /_/prev = 0,\n      /_/x = [],\n      /_/y = [],\n      map(\n        lambda([y,x],\n          if( y != /_/prev,\n            progn(\n              /_/y = [/_/y, y],\n              /_/x = [/_/x, (/_/norm ? float32(x) / /_/len : x) ]\n            )\n          ),\n          /_/prev = y\n        ), /_/tab, aseq(0, /_/len - 1)\n      ),\n      assign(\"/out\"+a+\"/x\", /_/x),\n      assign(\"/out\"+a+\"/y\", /_/y)\n    )\n  ), /_/addr\n)",
+									"patching_rect" : [ 50.0, 58.0, 523.0, 483.0 ],
+									"text" : "/_/norm ??= 0,\n/_/xdelta ??= 1,\n\n/~/x2delta = \"lambda([xlist],\n  prog2(\n    /_/prev = 0,\n    map(\n      lambda([x],\n        prog1(\n          x - /_/prev,\n          /_/prev = x\n        )\n      ), xlist\n    ),\n    delete(/_/count)\n  )\n)\",\n\nmap(\n  lambda([a],\n    progn(\n      /_/tab = value(a),\n      /_/len = length(/_/tab),\n      /_/x = [],\n      /_/y = [],\n      map(\n        lambda([y,x],\n          if( !bound(/_/prev) || y != /_/prev,\n            progn(\n              /_/y = [/_/y, y],\n              /_/x = [/_/x, (/_/norm ? float32(x) / /_/len : x) ]\n            )\n          ),\n          /_/prev = y\n        ), /_/tab, aseq(0, /_/len - 1)\n      ),\n      assign(\"/out\"+a+\"/x\", /_/x),\n      assign(\"/out\"+a+\"/y\", /_/y)\n    )\n  ), /_/addr\n)",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -310,7 +310,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "", "FullPacket" ],
+					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 150.5, 232.0, 89.0, 22.0 ],
 					"style" : "",
 					"text" : "o.gather.select"
@@ -602,7 +602,43 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "o.gather.select.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gatherers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.route.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.collect.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.select.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.pack.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.union.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.expr.codebox.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.var.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
