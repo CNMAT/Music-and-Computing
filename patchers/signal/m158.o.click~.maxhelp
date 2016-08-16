@@ -183,9 +183,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "signal", "signal", "signal", "" ],
-									"patching_rect" : [ 50.0, 100.0, 88.0, 22.0 ],
+									"patching_rect" : [ 50.0, 100.0, 97.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.ramp~"
+									"text" : "m158.o.phase~"
 								}
 
 							}
@@ -367,13 +367,11 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-33",
-					"linecount" : 4,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 187.0, 210.0, 227.0, 75.0 ],
-					"text" : "/rampval : 0.,\n/ms : 1000,\n/y : [0, 1, 0],\n/x : [0, 0.5, 0.9]",
+					"patching_rect" : [ 187.0, 210.0, 227.0, 34.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -499,7 +497,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.ramp~.maxpat",
+				"name" : "m158.o.phase~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1
@@ -570,6 +568,18 @@
 			}
 , 			{
 				"name" : "o.expr.codebox.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.cond.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.print.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.select.mxo",
 				"type" : "iLaX"
 			}
 , 			{

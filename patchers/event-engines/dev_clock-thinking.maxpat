@@ -146,13 +146,11 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-13",
-					"linecount" : 14,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 519.0, 408.0, 236.0, 211.0 ],
-					"text" : "/vector/samples : [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],\n/vector/delay : 1,\n/vector/time : 2016-08-10T20:57:51.545371Z,\n/vector/min : 0.,\n/vector/max : 0.,\n/vector/range : 0.,\n/vector/average : 0.,\n/vector/first : 0.,\n/vector/last : 0.",
+					"patching_rect" : [ 519.0, 408.0, 236.0, 34.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -240,9 +238,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "signal", "signal", "signal", "" ],
-					"patching_rect" : [ 421.0, 108.0, 88.0, 22.0 ],
+					"patching_rect" : [ 421.0, 108.0, 94.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.ramp~"
+					"text" : "m158.o.phase~"
 				}
 
 			}
@@ -384,7 +382,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "m158.o.ramp~.maxpat",
+				"name" : "m158.o.phase~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1
