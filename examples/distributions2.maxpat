@@ -94,7 +94,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 955.0, 468.0, 474.0, 360.0 ],
-					"text" : "/gui/harmonics/amps : [0.833333, 0.0777778, 0.0555556, 0.1, 0.222222, 0.511111, 0.777778, 0.844444, 0.211111, 0.222222, 0.377778, 0.5, 0.744444, 0., 0.511111, 0.255556, 0., 0.0222222, 0.0333333, 0.0666667],\n/gui/note/weight : [0.466667, 0.666667, 0.244444, 0.755556, 0.588889],\n/gui/read : [\"u092004655.json\", 0],\n/gui/ms/weight : [0., 0.144444, 0.288889, 0.155556, 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],\n/gui/env : [1000., 0., 1., 0., 0., 0, 45.2128, 1., 0, 795.213, 0.626667, 0, 1000., 0., 0, \"linear\"],\n/gui/time : 2016-08-01T22:16:12.867788Z,\n/env/x : [0., 0.0452128, 0.795213, 1.],\n/env/y : [0., 1., 0.626667, 0.],\n/notes : [\"a:3\", \"b:3\", \"a:4\", \"f#:4\", \"a:5\"],\n/midi : [57., 59., 69., 66., 81.],\n/numnotes : 5,\n/weights/note : [0.466667, 0.666667, 0.244444, 0.755556, 0.588889],\n/dur/dist : [0., 0.144444, 0.288889, 0.155556, 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],\n/harmonics/amps : [0.833333, 0.0777778, 0.0555556, 0.1, 0.222222, 0.511111, 0.777778, 0.844444, 0.211111, 0.222222, 0.377778, 0.5, 0.744444, 0., 0.511111, 0.255556, 0., 0.0222222, 0.0333333, 0.0666667]",
+					"text" : "/gui/read : [\"u456007979.json\", 0],\n/gui/note/weight : [0.466667, 0.666667, 0.244444, 0.755556, 0.588889],\n/gui/ms/weight : [0., 0.144444, 0.288889, 0.155556, 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],\n/gui/harmonics/amps : [0.833333, 0.077778, 0.055556, 0.1, 0.222222, 0.511111, 0.777778, 0.844444, 0.211111, 0.222222, 0.377778, 0.5, 0.744444, 0., 0.511111, 0.255556, 0., 0.022222, 0.033333, 0.066667],\n/gui/env : [1000., 0., 1., 0., 0., 0, 45.2128, 1., 0, 795.213, 0.626667, 0, 1000., 0., 0, \"linear\"],\n/gui/time : 2016-08-17T18:17:03.534991Z,\n/env/x : [0., 0.0452128, 0.795213, 1.],\n/env/y : [0., 1., 0.626667, 0.],\n/notes : [\"a:3\", \"b:3\", \"a:4\", \"f#:4\", \"a:5\"],\n/midi : [57., 59., 69., 66., 81.],\n/numnotes : 5,\n/weights/note : [0.466667, 0.666667, 0.244444, 0.755556, 0.588889],\n/dur/dist : [0., 0.144444, 0.288889, 0.155556, 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],\n/harmonics/amps : [0.833333, 0.077778, 0.055556, 0.1, 0.222222, 0.511111, 0.777778, 0.844444, 0.211111, 0.222222, 0.377778, 0.5, 0.744444, 0., 0.511111, 0.255556, 0., 0.022222, 0.033333, 0.066667]",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -256,7 +256,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 126.0, 382.0, 510.0, 387.0 ],
-									"text" : "/time : 2016-08-01T22:15:55.665252Z,\n/sample/withinblock : 2,\n/sample/sincedspstart : 5.19091e+06.,\n/notes : [\"a:3\", \"b:3\", \"a:4\", \"f#:4\", \"a:5\"],\n/midi : [57., 59., 69., 66., 81.],\n/numnotes : 5,\n/gui/note/weight : [0.466667, 0.666667, 0.244444, 0.755556, 0.588889],\n/gui/read : [\"u092004655.json\", 0],\n/gui/ms/weight : [0., 0.144444, 0.288889, 0.155556, 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],\n/gui/harmonics/amps : [0.833333, 0.711111, 0.333333, 0.122222, 0.088889, 0.066667, 0.066667, 0.055556, 0.044444, 0., 0., 0., 0.011111, 0.011111, 0., 0., 0., 0., 0., 0.],\n/gui/env : [1000., 0., 1., 0., 0., 0, 45.2128, 1., 0, 795.213, 0.626667, 0, 1000., 0., 0, \"linear\"],\n/gui/time : 2016-08-01T22:14:43.951493Z,\n/env/x : [0., 0.0452128, 0.795213, 1.],\n/env/y : [0., 1., 0.626667, 0.],\n/weights/note : [0.466667, 0.666667, 0.244444, 0.755556, 0.588889],\n/dur/dist : [0., 0.144444, 0.288889, 0.155556, 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],\n/harmonics/amps : [0.833333, 0.711111, 0.333333, 0.122222, 0.088889, 0.066667, 0.066667, 0.055556, 0.044444, 0., 0., 0., 0.011111, 0.011111, 0., 0., 0., 0., 0., 0.],\n/select/note : 1,\n/harmonics/hz : 246.942",
+									"text" : "/time : 2016-08-17T18:18:24.188463Z,\n/sample/withinblock : 7,\n/sample/sincedspstart : 966471.,\n/gui/read : [\"u456007979.json\", 0],\n/gui/note/weight : [0.466667, 0.666667, 0.244444, 0.755556, 0.588889],\n/gui/ms/weight : [0., 0.144444, 0.288889, 0.155556, 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],\n/gui/harmonics/amps : [0.833333, 0.077778, 0.055556, 0.1, 0.222222, 0.511111, 0.777778, 0.844444, 0.211111, 0.222222, 0.377778, 0.5, 0.744444, 0., 0.511111, 0.255556, 0., 0.022222, 0.033333, 0.066667],\n/gui/env : [1000., 0., 1., 0., 0., 0, 45.2128, 1., 0, 795.213, 0.626667, 0, 1000., 0., 0, \"linear\"],\n/gui/time : 2016-08-17T18:17:03.534991Z,\n/env/x : [0., 0.0452128, 0.795213, 1.],\n/env/y : [0., 1., 0.626667, 0.],\n/notes : [\"a:3\", \"b:3\", \"a:4\", \"f#:4\", \"a:5\"],\n/midi : [57., 59., 69., 66., 81.],\n/numnotes : 5,\n/weights/note : [0.466667, 0.666667, 0.244444, 0.755556, 0.588889],\n/dur/dist : [0., 0.144444, 0.288889, 0.155556, 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],\n/harmonics/amps : [0.833333, 0.077778, 0.055556, 0.1, 0.222222, 0.511111, 0.777778, 0.844444, 0.211111, 0.222222, 0.377778, 0.5, 0.744444, 0., 0.511111, 0.255556, 0., 0.022222, 0.033333, 0.066667],\n/select/note : 1,\n/harmonics/hz : 246.942",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -542,11 +542,11 @@
 									"id" : "obj-39",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 2,
-									"outlettype" : [ "signal", "" ],
+									"numoutlets" : 3,
+									"outlettype" : [ "signal", "signal", "" ],
 									"patching_rect" : [ 50.0, 124.5, 167.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.envelope.wave~ /env"
+									"text" : "m158.o.points.phase~ /env"
 								}
 
 							}
@@ -567,9 +567,9 @@
 								"box" : 								{
 									"id" : "obj-24",
 									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "signal" ],
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "signal", "" ],
 									"patching_rect" : [ 296.0, 130.5, 116.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.harmonics~"
@@ -941,7 +941,7 @@
 ,
 					"style" : "",
 					"text" : "pattrstorage @outputmode 1 @notifymode 1",
-					"varname" : "u092004655"
+					"varname" : "u456007979"
 				}
 
 			}
@@ -962,7 +962,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 467.0, 380.0, 640.0, 480.0 ],
+						"rect" : [ 801.0, 309.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1007,11 +1007,11 @@
 									"id" : "obj-2",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 3,
-									"outlettype" : [ "signal", "signal", "signal" ],
-									"patching_rect" : [ 50.0, 211.0, 134.0, 22.0 ],
+									"numoutlets" : 4,
+									"outlettype" : [ "signal", "signal", "signal", "" ],
+									"patching_rect" : [ 50.0, 211.0, 94.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.shot-ms-phasor~"
+									"text" : "m158.o.phase~"
 								}
 
 							}
@@ -1060,7 +1060,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 107.5, 269.0, 30.0, 30.0 ],
+									"patching_rect" : [ 125.0, 264.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -1415,31 +1415,37 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "o.random.weighted~.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/158b-spring16-o.wrappers/random",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/random",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "random.dist.gendsp",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/158b-spring16-o.wrappers/random",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/code",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.shot-ms-phasor~.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158_A_B_Dev/A/patches",
+				"name" : "m158.o.phase~.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "shot-ms-phasor.gendsp",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158_A_B_Dev/A/patches",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/code",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "o.api.handler.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "m158.o.gui.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158_A_B_Dev/A/patches",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gui",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -1451,49 +1457,79 @@
 			}
 , 			{
 				"name" : "m158.o.gui.function.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158_A_B_Dev/A/patches",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gui",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.gather.select.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158_A_B_Dev/A/patches",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gatherers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "m158.o.harmonics~.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/158b-spring16-o.wrappers/sound_engines/additive-synth",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/sound-engines/additive-synth",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.envelope.wave~.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158_A_B_Dev/A/patches",
+				"name" : "gen.harmonics.gendsp",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/code",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "m158.o.points.phase~.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "m158.o.points.lookup~.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "point.lookup.gendsp",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/code",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "m158.o.points.interp~.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "point.interp.gendsp",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/code",
+				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.random.weighted.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/158b-spring16-o.wrappers/random",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/random",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.random.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/158b-spring16-o.wrappers/random",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/random",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "m158.o.ntom.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/158b-spring16-o.wrappers/notes",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/notes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.accum.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/158b-spring16-o.wrappers/z_o.io.support/Helpers",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gatherers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -1522,6 +1558,14 @@
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "o.cond.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.prepend.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "o.collect.mxo",
 				"type" : "iLaX"
 			}
@@ -1538,15 +1582,23 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.prepend.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "o.timetag.mxo",
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "o.change.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "o.select.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.if.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.print.mxo",
 				"type" : "iLaX"
 			}
 , 			{
