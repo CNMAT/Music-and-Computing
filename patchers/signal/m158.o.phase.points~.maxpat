@@ -38,28 +38,51 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-14",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 177.0, 246.0, 123.0, 22.0 ],
+					"fontname" : "Arial Bold",
+					"id" : "obj-16",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 204.0, 504.0, 103.0, 20.0 ],
 					"style" : "",
-					"text" : "routepass basename"
+					"text" : "o.phase.points~"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-13",
-					"linecount" : 2,
+					"id" : "obj-15",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 600.0, 314.0, 283.0, 33.0 ],
-					"presentation_rect" : [ 539.0, 229.0, 0.0, 0.0 ],
+					"patching_rect" : [ 165.0, 462.0, 85.0, 20.0 ],
 					"style" : "",
-					"text" : "maybe don't use @basename with this abstraction but make the first argument be base name..."
+					"text" : "relative phase"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 291.0, 462.0, 69.0, 20.0 ],
+					"style" : "",
+					"text" : "point value"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 776.0, 266.0, 20.0, 22.0 ],
+					"style" : "",
+					"text" : "t l"
 				}
 
 			}
@@ -70,7 +93,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 86.0, 208.0, 83.0, 22.0 ],
+					"patching_rect" : [ 685.0, 228.0, 83.0, 22.0 ],
 					"style" : "",
 					"text" : "basename $1"
 				}
@@ -83,7 +106,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 194.0, 397.0, 30.0, 30.0 ],
+					"patching_rect" : [ 189.0, 419.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -133,7 +156,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 648.0, 167.0, 175.0, 20.0 ],
+					"patching_rect" : [ 477.0, 111.0, 175.0, 20.0 ],
 					"style" : "",
 					"text" : "OSC containing x and y values"
 				}
@@ -145,7 +168,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 247.0, 140.0, 43.0, 20.0 ],
+					"patching_rect" : [ 247.0, 129.0, 43.0, 20.0 ],
 					"style" : "",
 					"text" : "phase"
 				}
@@ -158,7 +181,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 86.0, 171.0, 110.0, 22.0 ],
+					"patching_rect" : [ 685.0, 191.0, 110.0, 22.0 ],
 					"style" : "",
 					"text" : "patcherargs"
 				}
@@ -270,7 +293,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
+					"destination" : [ "obj-6", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-14", 0 ]
@@ -279,7 +302,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
+					"destination" : [ "obj-7", 2 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-14", 0 ]
