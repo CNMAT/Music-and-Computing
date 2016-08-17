@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 157.0, 79.0, 1088.0, 787.0 ],
+		"rect" : [ 108.0, 166.0, 1088.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -5446,7 +5446,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1088.0, 761.0 ],
+						"rect" : [ 108.0, 192.0, 1088.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -5476,14 +5476,14 @@
 						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
-									"fontname" : "Arial Bold",
-									"fontsize" : 14.0,
-									"id" : "obj-15",
+									"fontface" : 3,
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 16.0,
+									"id" : "obj-6",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 41.0, 397.0, 133.0, 22.0 ],
-									"presentation_rect" : [ 40.0, 397.0, 0.0, 0.0 ],
+									"patching_rect" : [ 41.0, 399.5, 149.0, 26.0 ],
 									"style" : "",
 									"text" : "Table of Contents:"
 								}
@@ -5498,7 +5498,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 41.0, 332.0, 407.0, 47.0 ],
-									"presentation_rect" : [ 93.0, 338.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "At the top of this window you should see a row of tabs -- clicking on a tab changes the window view to that screen. Each tab is a chapter, or module, focusing on a particular topic, and arraged in progressive order."
 								}
@@ -5617,7 +5616,6 @@
 									}
 ,
 									"patching_rect" : [ 572.0, 453.0, 19.0, 22.0 ],
-									"presentation_rect" : [ 539.0, 467.0, 0.0, 0.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -5811,7 +5809,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 507.0, 427.5, 427.0, 20.0 ],
-									"presentation_rect" : [ 513.0, 74.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "Max was named after computer music pioneer Max Matthews (pictured above)"
 								}
@@ -5841,8 +5838,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 45.0, 427.5, 210.0, 147.0 ],
-									"presentation_rect" : [ 48.0, 297.0, 0.0, 0.0 ],
+									"patching_rect" : [ 41.0, 427.5, 210.0, 147.0 ],
 									"style" : "",
 									"text" : "1) Hello Max!\n2) Conneting Things\n3) Max Objects\n4) Object Arguments\n5) Finding Help\n6) Meet Message\n7) $ Substitution\n8) Order of Operations\n9) Controlling Order"
 								}
