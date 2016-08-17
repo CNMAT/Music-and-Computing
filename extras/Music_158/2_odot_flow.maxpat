@@ -5,11 +5,15 @@
 			"major" : 7,
 			"minor" : 2,
 			"revision" : 4,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
+<<<<<<< Updated upstream
 		"rect" : [ 279.0, 79.0, 1057.0, 787.0 ],
+=======
+		"rect" : [ 48.0, 84.0, 1057.0, 787.0 ],
+>>>>>>> Stashed changes
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -49,7 +53,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 4,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -421,7 +425,11 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
+<<<<<<< Updated upstream
 									"varname" : "u273001589"
+=======
+									"varname" : "u734003705"
+>>>>>>> Stashed changes
 								}
 
 							}
@@ -594,7 +602,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 4,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -906,7 +914,11 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
+<<<<<<< Updated upstream
 									"varname" : "u215001871"
+=======
+									"varname" : "u213003818"
+>>>>>>> Stashed changes
 								}
 
 							}
@@ -1270,7 +1282,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 4,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -1592,7 +1604,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 4,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -2178,7 +2190,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 4,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -2713,7 +2725,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 4,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -2816,7 +2828,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "FullPacket" ],
 									"patching_rect" : [ 412.0, 111.0, 116.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.io.keyboard"
@@ -2901,7 +2913,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 4,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -3267,11 +3279,15 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 4,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
+<<<<<<< Updated upstream
 						"rect" : [ 279.0, 105.0, 1057.0, 761.0 ],
+=======
+						"rect" : [ 48.0, 110.0, 1057.0, 761.0 ],
+>>>>>>> Stashed changes
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3446,7 +3462,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 4,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -3580,7 +3596,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 40.0, 638.0, 222.5, 22.0 ],
 									"style" : "",
-									"text" : "FullPacket 128 140734795847856"
+									"text" : "FullPacket 128 1602459824"
 								}
 
 							}
@@ -3870,8 +3886,8 @@
 		"lines" : [  ],
 		"parameters" : 		{
 			"obj-14::obj-15" : [ "live.gain~[2]", "live.gain~", 0 ],
-			"obj-5::obj-6" : [ "live.gain~[1]", "live.gain~", 0 ],
-			"obj-4::obj-2" : [ "live.gain~", "live.gain~", 0 ]
+			"obj-4::obj-2" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-5::obj-6" : [ "live.gain~[1]", "live.gain~", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -3888,13 +3904,13 @@
 			}
 , 			{
 				"name" : "m158.o.io.mouse.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/io",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "m158.o.io.keyboard.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/io",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3918,7 +3934,7 @@
 			}
 , 			{
 				"name" : "pattr-to-OSC.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-MMJ-Depot/patchers/data_transformation",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJ-Depot/patchers/data_transformation",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3939,15 +3955,19 @@
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "o.pak.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.expr.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "o.union.mxo",
 				"type" : "iLaX"
 			}
 , 			{
 				"name" : "o.var.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.timetag.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -3972,6 +3992,10 @@
 			}
 , 			{
 				"name" : "o.prepend.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.timetag.mxo",
 				"type" : "iLaX"
 			}
  ],

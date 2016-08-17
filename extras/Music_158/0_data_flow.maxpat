@@ -9,7 +9,11 @@
 			"modernui" : 1
 		}
 ,
+<<<<<<< Updated upstream
 		"rect" : [ 108.0, 166.0, 1088.0, 787.0 ],
+=======
+		"rect" : [ 50.0, 90.0, 1088.0, 787.0 ],
+>>>>>>> Stashed changes
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -53,7 +57,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1088.0, 761.0 ],
+						"rect" : [ 50.0, 116.0, 1088.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3960,13 +3964,13 @@
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-48",
-									"linecount" : 4,
+									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 91.0, 50.0, 407.0, 62.0 ],
+									"patching_rect" : [ 91.0, 50.0, 475.0, 48.0 ],
 									"style" : "",
-									"text" : "Max comes with a massive library of objects. In Max 7, click the rectangular icon on the left toolbar (third from the top) to open the Object Explorer to see a list of what's available. \nDo not be overwhelmed!"
+									"text" : "Max comes with a massive library of objects. In Max 7, you can view this by unlocking the patch and clicking the rectangular icon on the left toolbar (third from the top) to open the Object Explorer to see a list of what's available. "
 								}
 
 							}
@@ -4249,9 +4253,9 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 117.0, 581.0, 315.0, 48.0 ],
+									"patching_rect" : [ 117.0, 581.0, 393.0, 48.0 ],
 									"style" : "",
-									"text" : "A cold inlet does not generate output (but still makes the object work with the data). This is especially useful when you want objects to \"hang on\" to data until later use."
+									"text" : "A cold inlet does not generate output (although the object still stores the data). This is especially useful when you want objects to \"hang on\" to data until later use."
 								}
 
 							}
@@ -4601,9 +4605,9 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 24.0, 486.0, 370.0, 34.0 ],
+									"patching_rect" : [ 24.0, 486.0, 381.0, 34.0 ],
 									"style" : "",
-									"text" : "The PRINT object prints data sent to its inlet to the Max window (you may use the ⌘-M / Ctrl-M keyboard shortcut to see it)."
+									"text" : "The PRINT object prints data sent to its inlet to the Max window (you may use the ⌘-m / Command-Shift-m keyboard shortcut to see it)."
 								}
 
 							}
