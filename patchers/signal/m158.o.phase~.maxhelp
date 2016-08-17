@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 100.0, 100.0, 990.0, 675.0 ],
+		"rect" : [ 270.0, 81.0, 1033.0, 698.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -54,7 +54,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 990.0, 649.0 ],
+						"rect" : [ 0.0, 26.0, 1033.0, 672.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -83,6 +83,44 @@
 						"subpatcher_template" : "no-menus",
 						"showontab" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 586.5, 380.0, 33.0, 22.0 ],
+									"style" : "",
+									"text" : "stop"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 506.0, 380.0, 74.0, 22.0 ],
+									"style" : "",
+									"text" : "startwindow"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 0,
+									"patching_rect" : [ 506.0, 417.0, 37.0, 22.0 ],
+									"style" : "",
+									"text" : "dac~"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"fontface" : 0,
 									"fontsize" : 12.0,
@@ -377,6 +415,15 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-19", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -399,6 +446,15 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-24", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -435,7 +491,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 100.0, 126.0, 990.0, 649.0 ],
+						"rect" : [ 270.0, 107.0, 1033.0, 672.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -465,6 +521,70 @@
 						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-24",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 119.0, 69.0, 122.0, 20.0 ],
+									"style" : "",
+									"text" : "<< click to start ramp"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"hidden" : 1,
+									"id" : "obj-6",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 86.0, 38.0, 100.0, 22.0 ],
+									"style" : "",
+									"text" : "loadmess 1000"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 486.5, 421.0, 33.0, 22.0 ],
+									"style" : "",
+									"text" : "stop"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-19",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 406.0, 421.0, 74.0, 22.0 ],
+									"style" : "",
+									"text" : "startwindow"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 0,
+									"patching_rect" : [ 406.0, 458.0, 37.0, 22.0 ],
+									"style" : "",
+									"text" : "dac~"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-25",
@@ -472,7 +592,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 382.0, 159.0, 563.0, 47.0 ],
+									"patching_rect" : [ 384.0, 189.0, 563.0, 47.0 ],
 									"style" : "",
 									"text" : "attributes:\n            @hzmode -- sets signal input to be interpreted as hertz\n            @phasecycle -- sets phasor~ mode, where phase is not reset when a new time value is received"
 								}
@@ -485,7 +605,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 84.0, 39.0, 24.0, 24.0 ],
+									"patching_rect" : [ 86.0, 69.0, 24.0, 24.0 ],
 									"style" : ""
 								}
 
@@ -499,7 +619,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 84.0, 75.0, 50.0, 22.0 ],
+									"patching_rect" : [ 86.0, 105.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -511,7 +631,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "FullPacket" ],
-									"patching_rect" : [ 84.0, 106.0, 69.0, 22.0 ],
+									"patching_rect" : [ 86.0, 136.0, 69.0, 22.0 ],
 									"style" : "",
 									"text" : "o.pack /ms"
 								}
@@ -524,20 +644,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "" ],
-									"patching_rect" : [ 84.0, 136.0, 107.0, 22.0 ],
+									"patching_rect" : [ 86.0, 166.0, 107.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.click~ /ms"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-24",
-									"maxclass" : "ezdac~",
-									"numinlets" : 2,
-									"numoutlets" : 0,
-									"patching_rect" : [ 444.0, 346.5, 45.0, 45.0 ],
-									"style" : ""
 								}
 
 							}
@@ -549,7 +658,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 382.0, 292.0, 430.0, 20.0 ],
+									"patching_rect" : [ 384.0, 322.0, 430.0, 20.0 ],
 									"style" : "",
 									"text" : "note: on completion of the 0-1 ramp, value stays at 1 and active state goes to 0"
 								}
@@ -563,7 +672,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 248.0, 215.0, 88.0, 19.0 ],
+									"patching_rect" : [ 250.0, 245.0, 88.0, 19.0 ],
 									"style" : "",
 									"text" : "delegate if busy"
 								}
@@ -577,7 +686,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 37.0, 457.0, 36.0, 19.0 ],
+									"patching_rect" : [ 39.0, 487.0, 36.0, 19.0 ],
 									"style" : "",
 									"text" : "busy"
 								}
@@ -591,7 +700,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 37.0, 313.0, 36.0, 19.0 ],
+									"patching_rect" : [ 39.0, 343.0, 36.0, 19.0 ],
 									"style" : "",
 									"text" : "ramp"
 								}
@@ -606,7 +715,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 382.0, 215.0, 370.0, 60.0 ],
+									"patching_rect" : [ 384.0, 245.0, 370.0, 60.0 ],
 									"style" : "",
 									"text" : "output 1: (signal) ramp 0-1, note: stays at 1 on completion\noutput 2: (signal) acitve flag 0/1\noutput 3: (signal) delegation of input if already active\noutput 4: OSC"
 								}
@@ -621,7 +730,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 382.0, 91.5, 576.0, 60.0 ],
+									"patching_rect" : [ 384.0, 121.5, 576.0, 60.0 ],
 									"style" : "",
 									"text" : "input 1: (signal) ms (or hz in @hzmode) value for ramp, non-zero signal triggers ramp to play if not acitve, \n                         constant value causes looping ramp\n             (FullPacket) /ms or /hz value sets constant value, and causes looping ramp\ninput 2: force reset -- override acitve state, set duration, and reset phase to 0 immediately"
 								}
@@ -636,7 +745,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 382.0, 52.0, 195.0, 33.0 ],
+									"patching_rect" : [ 384.0, 82.0, 195.0, 33.0 ],
 									"style" : "",
 									"text" : "rama gottfried, 2016\nbased on shot~ by andrew benson"
 								}
@@ -650,7 +759,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 382.0, 23.0, 210.0, 27.0 ],
+									"patching_rect" : [ 384.0, 53.0, 210.0, 27.0 ],
 									"style" : "",
 									"text" : "m158.o.phase~ "
 								}
@@ -662,7 +771,7 @@
 									"maxclass" : "scope~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 225.0, 427.0, 130.0, 130.0 ],
+									"patching_rect" : [ 227.0, 457.0, 130.0, 130.0 ],
 									"style" : ""
 								}
 
@@ -673,7 +782,7 @@
 									"maxclass" : "scope~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 225.0, 283.0, 130.0, 130.0 ],
+									"patching_rect" : [ 227.0, 313.0, 130.0, 130.0 ],
 									"style" : ""
 								}
 
@@ -685,7 +794,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "signal", "signal", "signal", "" ],
-									"patching_rect" : [ 225.0, 240.0, 94.0, 22.0 ],
+									"patching_rect" : [ 227.0, 270.0, 94.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.phase~"
 								}
@@ -697,7 +806,7 @@
 									"maxclass" : "scope~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 84.0, 428.0, 130.0, 130.0 ],
+									"patching_rect" : [ 86.0, 458.0, 130.0, 130.0 ],
 									"style" : ""
 								}
 
@@ -708,7 +817,7 @@
 									"maxclass" : "scope~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 84.0, 284.0, 130.0, 130.0 ],
+									"patching_rect" : [ 86.0, 314.0, 130.0, 130.0 ],
 									"style" : ""
 								}
 
@@ -720,7 +829,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "signal", "signal", "signal", "" ],
-									"patching_rect" : [ 84.0, 184.0, 94.0, 22.0 ],
+									"patching_rect" : [ 86.0, 214.0, 94.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.phase~"
 								}
@@ -783,10 +892,37 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-19", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-16", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-20", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-16", 0 ],
+									"disabled" : 0,
+									"hidden" : 1,
+									"source" : [ "obj-6", 0 ]
 								}
 
 							}
@@ -841,7 +977,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 990.0, 649.0 ],
+						"rect" : [ 0.0, 26.0, 1033.0, 672.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -871,13 +1007,66 @@
 						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-11",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 846.5, 440.0, 33.0, 22.0 ],
+									"style" : "",
+									"text" : "stop"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-12",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 766.0, 440.0, 74.0, 22.0 ],
+									"style" : "",
+									"text" : "startwindow"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-18",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 0,
+									"patching_rect" : [ 766.0, 477.0, 37.0, 22.0 ],
+									"style" : "",
+									"text" : "dac~"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-8",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 495.0, 82.0, 376.0, 20.0 ],
+									"presentation_rect" : [ 526.0, 33.0, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "When controlled by OSC, the @phasecycle mode is always enabled."
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-17",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 668.5, 158.5, 288.0, 20.0 ],
+									"patching_rect" : [ 191.0, 188.5, 288.0, 20.0 ],
 									"style" : "",
 									"text" : "in @hzmode the input is treated as hz (like phasor~)"
 								}
@@ -890,7 +1079,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 710.166687, 260.0, 35.0, 22.0 ],
+									"patching_rect" : [ 232.666687, 290.0, 35.0, 22.0 ],
 									"style" : "",
 									"text" : "!-~ 1"
 								}
@@ -902,7 +1091,7 @@
 									"maxclass" : "scope~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 685.5, 458.5, 130.0, 130.0 ],
+									"patching_rect" : [ 208.0, 488.5, 130.0, 130.0 ],
 									"style" : ""
 								}
 
@@ -913,7 +1102,7 @@
 									"maxclass" : "scope~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 685.5, 314.5, 130.0, 130.0 ],
+									"patching_rect" : [ 208.0, 344.5, 130.0, 130.0 ],
 									"style" : ""
 								}
 
@@ -926,7 +1115,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "signal", "signal", "signal", "" ],
-									"patching_rect" : [ 685.5, 205.0, 98.0, 49.0 ],
+									"patching_rect" : [ 208.0, 235.0, 98.0, 49.0 ],
 									"style" : "",
 									"text" : "m158.o.phase~ @phasecycle @hzmode"
 								}
@@ -941,7 +1130,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 147.5, 182.0, 334.0, 47.0 ],
+									"patching_rect" : [ 606.0, 217.0, 334.0, 47.0 ],
 									"style" : "",
 									"text" : "whichever parameter is sent in overrides the previous value,\nif both /ms and /hz are present in the bundle, only /ms will be used"
 								}
@@ -956,7 +1145,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 112.0, 248.0, 150.0, 34.0 ],
+									"patching_rect" : [ 570.5, 283.0, 150.0, 34.0 ],
 									"text" : "/ms : 100.",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
@@ -969,7 +1158,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "FullPacket" ],
-									"patching_rect" : [ 130.5, 153.0, 69.0, 22.0 ],
+									"patching_rect" : [ 589.0, 188.0, 69.0, 22.0 ],
 									"style" : "",
 									"text" : "o.pack /hz"
 								}
@@ -986,7 +1175,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 130.5, 119.0, 50.0, 21.0 ],
+									"patching_rect" : [ 589.0, 154.0, 50.0, 21.0 ],
 									"style" : ""
 								}
 
@@ -998,7 +1187,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "FullPacket" ],
-									"patching_rect" : [ 43.0, 153.0, 69.0, 22.0 ],
+									"patching_rect" : [ 501.5, 188.0, 69.0, 22.0 ],
 									"style" : "",
 									"text" : "o.pack /ms"
 								}
@@ -1011,7 +1200,7 @@
 									"numinlets" : 6,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 502.5, 149.5, 116.0, 22.0 ],
+									"patching_rect" : [ 25.0, 179.5, 116.0, 22.0 ],
 									"style" : "",
 									"text" : "scale~ -1 1 10 100"
 								}
@@ -1024,7 +1213,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 502.5, 110.5, 65.0, 22.0 ],
+									"patching_rect" : [ 25.0, 140.5, 65.0, 22.0 ],
 									"style" : "",
 									"text" : "cycle~ 0.2"
 								}
@@ -1037,7 +1226,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 43.0, 85.0, 100.0, 22.0 ],
+									"patching_rect" : [ 501.5, 120.0, 100.0, 22.0 ],
 									"style" : "",
 									"text" : "loadmess 100"
 								}
@@ -1050,7 +1239,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 66.0, 289.5, 35.0, 22.0 ],
+									"patching_rect" : [ 524.5, 324.5, 35.0, 22.0 ],
 									"style" : "",
 									"text" : "!-~ 1"
 								}
@@ -1065,7 +1254,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 492.5, 47.5, 370.0, 33.0 ],
+									"patching_rect" : [ 15.0, 75.5, 370.0, 33.0 ],
 									"style" : "",
 									"text" : "in @phasecycle mode, m158.o.phase~ updates the duration without updating the phase, similar to phasor~"
 								}
@@ -1078,7 +1267,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 527.166626, 250.0, 35.0, 22.0 ],
+									"patching_rect" : [ 49.666626, 280.0, 35.0, 22.0 ],
 									"style" : "",
 									"text" : "!-~ 1"
 								}
@@ -1090,7 +1279,7 @@
 									"maxclass" : "scope~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 502.5, 453.0, 130.0, 130.0 ],
+									"patching_rect" : [ 25.0, 483.0, 130.0, 130.0 ],
 									"style" : ""
 								}
 
@@ -1101,7 +1290,7 @@
 									"maxclass" : "scope~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 502.5, 309.0, 130.0, 130.0 ],
+									"patching_rect" : [ 25.0, 339.0, 130.0, 130.0 ],
 									"style" : ""
 								}
 
@@ -1114,7 +1303,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "signal", "signal", "signal", "" ],
-									"patching_rect" : [ 502.5, 199.5, 98.0, 35.0 ],
+									"patching_rect" : [ 25.0, 229.5, 98.0, 35.0 ],
 									"style" : "",
 									"text" : "m158.o.phase~ @phasecycle"
 								}
@@ -1129,7 +1318,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 116.5, 289.5, 245.0, 33.0 ],
+									"patching_rect" : [ 575.0, 324.5, 245.0, 33.0 ],
 									"style" : "",
 									"text" : "<< when conintuously cycling, you can use the busy state change as a clock pulse"
 								}
@@ -1144,9 +1333,9 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 52.0, 17.0, 353.0, 33.0 ],
+									"patching_rect" : [ 25.0, 27.0, 387.0, 33.0 ],
 									"style" : "",
-									"text" : "/ms, /hz or constant sig~ input loops phasor,\nIn default mode the duration only updates at the end of the ramp"
+									"text" : "/ms, /hz or constant sig~ input loops phasor,\nIn default signal mode the duration only updates at the end of the ramp"
 								}
 
 							}
@@ -1161,7 +1350,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 43.0, 116.0, 50.0, 21.0 ],
+									"patching_rect" : [ 501.5, 151.0, 50.0, 21.0 ],
 									"style" : ""
 								}
 
@@ -1172,7 +1361,7 @@
 									"maxclass" : "scope~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 43.5, 476.5, 130.0, 130.0 ],
+									"patching_rect" : [ 502.0, 511.5, 130.0, 130.0 ],
 									"style" : ""
 								}
 
@@ -1183,7 +1372,7 @@
 									"maxclass" : "scope~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 43.5, 332.5, 130.0, 130.0 ],
+									"patching_rect" : [ 502.0, 367.5, 130.0, 130.0 ],
 									"style" : ""
 								}
 
@@ -1195,7 +1384,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "signal", "signal", "signal", "" ],
-									"patching_rect" : [ 43.0, 219.5, 94.0, 22.0 ],
+									"patching_rect" : [ 501.5, 254.5, 94.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.phase~"
 								}
@@ -1208,6 +1397,24 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-18", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-11", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-18", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-12", 0 ]
 								}
 
 							}
@@ -1396,6 +1603,12 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "o.api.handler.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "m158.o.click~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
@@ -1406,15 +1619,27 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.if.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "o.compose.mxo",
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "o.cond.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "o.pack.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.expr.codebox.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.prepend.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.union.mxo",
 				"type" : "iLaX"
 			}
 , 			{
