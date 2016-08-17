@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 1,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -39,16 +39,17 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontname" : "Arial Italic",
-					"fontsize" : 12.0,
+					"fontsize" : 11.0,
 					"id" : "obj-5",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 10.5, 25.5, 74.0, 20.0 ],
+					"patching_rect" : [ 10.5, 25.5, 76.0, 31.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 20.0, 12.0, 74.0, 20.0 ],
+					"presentation_rect" : [ 5.0, 12.5, 104.0, 19.0 ],
 					"style" : "",
-					"text" : "o.io.dropfile",
+					"text" : "m158.o.gui.dropfile",
 					"textcolor" : [ 1.0, 1.0, 1.0, 0.99 ]
 				}
 

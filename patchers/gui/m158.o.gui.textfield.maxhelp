@@ -94,7 +94,7 @@
 					"id" : "obj-26",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "m158.o.io.textfield.maxpat",
+					"name" : "m158.o.gui.textfield.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
@@ -134,7 +134,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "m158.o.io.textfield.maxpat",
+				"name" : "m158.o.gui.textfield.maxpat",
 				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/158b-spring16-o.wrappers/_dev",
 				"type" : "JSON",
 				"implicit" : 1

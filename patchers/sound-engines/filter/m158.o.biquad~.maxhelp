@@ -172,7 +172,7 @@
 					"id" : "obj-4",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "m158.o.io.menu.maxpat",
+					"name" : "m158.o.gui.menu.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
@@ -851,19 +851,19 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.io.menu.maxpat",
+				"name" : "m158.o.gui.menu.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gui",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.io.textfield.maxpat",
+				"name" : "m158.o.gui.textfield.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gui",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "o.io.accum.maxpat",
+				"name" : "o.gui.accum.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gatherers",
 				"type" : "JSON",
 				"implicit" : 1

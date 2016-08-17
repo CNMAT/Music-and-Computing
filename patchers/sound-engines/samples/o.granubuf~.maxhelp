@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 594.0, 79.0, 1015.0, 763.0 ],
+		"rect" : [ 100.0, 100.0, 921.0, 726.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -54,7 +54,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 594.0, 105.0, 1015.0, 737.0 ],
+						"rect" : [ 0.0, 26.0, 921.0, 700.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -526,7 +526,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u637006591"
+									"varname" : "u774007269"
 								}
 
 							}
@@ -843,7 +843,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1015.0, 737.0 ],
+						"rect" : [ 100.0, 126.0, 921.0, 700.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -917,7 +917,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 90.0, 486.5, 22.0, 140.0 ],
+									"patching_rect" : [ 91.0, 455.5, 22.0, 140.0 ],
 									"style" : ""
 								}
 
@@ -928,7 +928,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 183.5, 454.5, 146.0, 20.0 ],
+									"patching_rect" : [ 184.5, 423.5, 146.0, 20.0 ],
 									"style" : "",
 									"text" : "<< numer of active grains"
 								}
@@ -939,13 +939,13 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-19",
-									"linecount" : 4,
+									"linecount" : 10,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 150.0, 486.5, 704.0, 75.0 ],
-									"text" : "/start : 0.711,\n/duration : 120.,\n/rate : 1.,\n/amp : 1",
+									"patching_rect" : [ 151.0, 455.5, 704.0, 156.0 ],
+									"text" : "/start : 0.119125,\n/duration : 120.,\n/rate : 1.,\n/amp : 1,\n/nbuffers : 1,\n/namelist : \"drumLoop.aif\",\n/lengths : 153400.,\n/buffername : \"1295-combined\",\n/file/name : \"drumLoop.aif\",\n/file/type : \"AIFF\"",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -971,7 +971,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 519.0, 104.0, 313.0, 33.0 ],
 									"style" : "",
-									"text" : "/start /duration /rate values can be numbers or line~ lists (see inside of m158.o.granubuf~ for more info)"
+									"text" : "/start /duration /rate values can be numbers or line~ lists (see inside of o.granubuf~ for more info)"
 								}
 
 							}
@@ -996,7 +996,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 519.0, 59.5, 157.0, 27.0 ],
 									"style" : "",
-									"text" : "m158.o.granubuf~"
+									"text" : "o.granubuf~"
 								}
 
 							}
@@ -1035,7 +1035,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 61.0, 486.5, 22.0, 140.0 ],
+									"patching_rect" : [ 62.0, 455.5, 22.0, 140.0 ],
 									"style" : ""
 								}
 
@@ -1090,7 +1090,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "float" ],
-									"patching_rect" : [ 120.333336, 451.5, 56.0, 22.0 ],
+									"patching_rect" : [ 121.333336, 420.5, 56.0, 22.0 ],
 									"sig" : 0.0,
 									"style" : ""
 								}
@@ -1116,7 +1116,7 @@
 									"numinlets" : 9,
 									"numoutlets" : 4,
 									"outlettype" : [ "signal", "signal", "signal", "FullPacket" ],
-									"patching_rect" : [ 61.0, 414.0, 108.0, 22.0 ],
+									"patching_rect" : [ 62.0, 383.0, 108.0, 22.0 ],
 									"style" : "",
 									"text" : "o.granubuf~"
 								}
@@ -1150,7 +1150,7 @@
 									"id" : "obj-11",
 									"lockeddragscroll" : 0,
 									"maxclass" : "bpatcher",
-									"name" : "o.io.dropfile.maxpat",
+									"name" : "m158.o.gui.dropfile.maxpat",
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"offset" : [ 0.0, 0.0 ],
@@ -1169,7 +1169,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 175.5, 38.0, 56.0, 21.0 ],
+									"patching_rect" : [ 175.5, 20.0, 56.0, 21.0 ],
 									"style" : "",
 									"text" : "loadbang"
 								}
@@ -1818,7 +1818,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1015.0, 737.0 ],
+						"rect" : [ 0.0, 26.0, 921.0, 700.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1847,6 +1847,26 @@
 						"subpatcher_template" : "no-menus",
 						"showontab" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"bgmode" : 0,
+									"border" : 0,
+									"clickthrough" : 0,
+									"enablehscroll" : 0,
+									"enablevscroll" : 0,
+									"id" : "obj-7",
+									"lockeddragscroll" : 0,
+									"maxclass" : "bpatcher",
+									"name" : "m158.o.gui.dropfile.maxpat",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"offset" : [ 0.0, 0.0 ],
+									"outlettype" : [ "FullPacket" ],
+									"patching_rect" : [ 57.25, 353.5, 117.5, 48.0 ],
+									"viewvisibility" : 1
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-15",
 									"maxclass" : "scope~",
@@ -2132,13 +2152,13 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-100",
-									"linecount" : 10,
+									"linecount" : 3,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 417.5, 528.5, 517.0, 156.0 ],
-									"text" : "/file/name : \"C74:/media/msp/\",\n/file/type : \"fold\",\n/yshape : -5,\n/nbuffers : 10,\n/namelist : [\"anton.aif\", \"brushes.aif\", \"cello-f2.aif\", \"cherokee.aif\", \"drumLoop.aif\", \"duduk.aif\", \"jongly.aif\", \"rainstick.aif\", \"sho0630.aif\", \"vibes-a1.aif\"],\n/lengths : [101939, 410895., 63744., 125454., 153400., 390536., 124439., 132675., 152192., 56715.],\n/buffername : \"1147-combined\"",
+									"patching_rect" : [ 417.5, 528.5, 517.0, 61.0 ],
+									"text" : "/file/name : \"C74:/media/msp/\",\n/file/type : \"fold\",\n/yshape : -5",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -2362,26 +2382,6 @@
 								}
 
 							}
-, 							{
-								"box" : 								{
-									"bgmode" : 0,
-									"border" : 0,
-									"clickthrough" : 0,
-									"enablehscroll" : 0,
-									"enablevscroll" : 0,
-									"id" : "obj-10",
-									"lockeddragscroll" : 0,
-									"maxclass" : "bpatcher",
-									"name" : "o.io.dropfile.maxpat",
-									"numinlets" : 0,
-									"numoutlets" : 1,
-									"offset" : [ 0.0, 0.0 ],
-									"outlettype" : [ "FullPacket" ],
-									"patching_rect" : [ 64.833344, 366.5, 117.5, 48.0 ],
-									"viewvisibility" : 1
-								}
-
-							}
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
@@ -2389,15 +2389,6 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-1", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-87", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-10", 0 ]
 								}
 
 							}
@@ -2597,6 +2588,15 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-87", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-7", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-34", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -2717,17 +2717,11 @@
  ],
 		"lines" : [  ],
 		"parameters" : 		{
-			"obj-12::obj-11" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-2::obj-11" : [ "live.gain~[1]", "live.gain~", 0 ]
+			"obj-2::obj-11" : [ "live.gain~[1]", "live.gain~", 0 ],
+			"obj-12::obj-11" : [ "live.gain~", "live.gain~", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "o.io.dropfile.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gui",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "o.granubuf~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/sound-engines/samples",
 				"type" : "JSON",
@@ -2752,6 +2746,12 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "m158.o.gui.dropfile.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gui",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "m158.o.gui.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gui",
 				"type" : "JSON",
@@ -2770,19 +2770,15 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "o.pack.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.prepend.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "o.compose.mxo",
 				"type" : "iLaX"
 			}
 , 			{
 				"name" : "o.route.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.pack.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -2803,6 +2799,10 @@
 			}
 , 			{
 				"name" : "o.expr.codebox.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.prepend.mxo",
 				"type" : "iLaX"
 			}
 , 			{

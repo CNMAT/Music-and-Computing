@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 0,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 363.0, 370.0, 295.0, 48.0 ],
+		"rect" : [ 4.0, 45.0, 1436.0, 855.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -44,7 +44,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 89.0, 449.0, 62.0, 22.0 ],
-					"presentation_rect" : [ 247.0, 448.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "zl.change"
 				}
@@ -110,7 +109,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 0,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -230,7 +229,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 0,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -522,7 +521,7 @@
 					"id" : "obj-43",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "m158.o.io.textfield.maxpat",
+					"name" : "m158.o.gui.textfield.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
@@ -620,7 +619,7 @@
 					"id" : "obj-26",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "m158.o.io.textfield.maxpat",
+					"name" : "m158.o.gui.textfield.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
@@ -851,7 +850,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1167.0, 580.0, 150.0, 60.0 ],
 					"style" : "",
-					"text" : "o.io.menu\n\n/menu/list = list of options\n/menu/select = choice"
+					"text" : "o.gui.menu\n\n/menu/list = list of options\n/menu/select = choice"
 				}
 
 			}
@@ -1245,14 +1244,14 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "m158.o.io.textfield.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/158b-spring16-o.wrappers/_dev",
+				"name" : "m158.o.gui.textfield.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gui",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.accum.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/158b-spring16-o.wrappers/z_o.io.support/Helpers",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gatherers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
