@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 36.0, 79.0, 1368.0, 785.0 ],
+		"rect" : [ 38.0, 79.0, 1368.0, 785.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -154,20 +154,6 @@
 					"patching_rect" : [ 366.0, 368.5, 172.0, 49.0 ],
 					"style" : "",
 					"text" : "m158.o.phase.points~ @basename /sample/2 @interp 0"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-1",
-					"linecount" : 2,
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 3,
-					"outlettype" : [ "signal", "signal", "" ],
-					"patching_rect" : [ 290.0, 589.5, 172.0, 35.0 ],
-					"style" : "",
-					"text" : "m158.o.phase.points @basename /sample/1"
 				}
 
 			}
@@ -572,7 +558,7 @@
 ,
 					"style" : "",
 					"text" : "pattrstorage @outputmode 1 @notifymode 1",
-					"varname" : "u613003795"
+					"varname" : "u728011522"
 				}
 
 			}
@@ -632,13 +618,13 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-19",
-					"linecount" : 27,
+					"linecount" : 17,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 819.0, 570.0, 704.0, 387.0 ],
-					"text" : "/gui/sample/1 : [9, 0, 4, 0, 0, 7, 0, 0],\n/gui/index : 0,\n/gui/sample/2 : [1, 1, 0, 4, 0, 9, 0, 0],\n/gui/time : 2016-08-16T22:31:19.625521Z,\n/sample/1/x : [0., 0.125, 0.25, 0.375, 0.625, 0.75],\n/sample/1/y : [9, 0, 4, 0, 7, 0],\n/sample/2/x : [0., 0.25, 0.375, 0.5, 0.625, 0.75],\n/sample/2/y : [1, 0, 4, 0, 9, 0],\n/buffer/index : 0,\n/duration : -1,\n/start : 0,\n/pan : 0,\n/amp : 1,\n/xshape : 0,\n/yshape : -5,\n/numvoices : 32,\n/rate : 1,\n/nbuffers : 15,\n/namelist : [\"cl_hihat.aif\", \"claves.aif\", \"conga1.aif\", \"cowbell.aif\", \"crashcym.aif\", \"handclap.aif\", \"hi_conga.aif\", \"hightom.aif\", \"kick1.aif\", \"kick2.aif\", \"maracas.aif\", \"open_hh.aif\", \"rimshot.aif\", \"snare.aif\", \"tom1.aif\"],\n/lengths : [2328., 1311., 11488., 14992, 98309, 15901., 7880., 8800., 30942., 38160., 1133., 26352., 608., 4088., 15888.],\n/buffername : \"1103-combined\",\n/file/name : \"Macintosh HD:/Users/r/_samples/ircam_samples/Vintage Drum Machines/Roland_TR808/std 808 drumkit/\",\n/file/type : \"fold\"",
+					"patching_rect" : [ 819.0, 570.0, 704.0, 251.0 ],
+					"text" : "/gui/read : [\"u728011522.json\", 0],\n/gui/sample/1 : [9, 0, 4, 0, 0, 7, 0, 0],\n/gui/index : 0,\n/gui/sample/2 : [1, 1, 0, 4, 0, 9, 0, 0],\n/gui/time : 2016-08-17T19:34:04.656093Z,\n/sample/1/x : [0., 0.125, 0.25, 0.375, 0.625, 0.75],\n/sample/1/y : [9, 0, 4, 0, 7, 0],\n/sample/2/x : [0., 0.25, 0.375, 0.5, 0.625, 0.75],\n/sample/2/y : [1, 0, 4, 0, 9, 0],\n/buffer/index : 0,\n/duration : -1,\n/start : 0,\n/pan : 0,\n/amp : 1,\n/xshape : 0,\n/yshape : -5,\n/numvoices : 32",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -698,9 +684,8 @@
 					"maxclass" : "bpatcher",
 					"name" : "o.io.dropfile.maxpat",
 					"numinlets" : 0,
-					"numoutlets" : 1,
+					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "FullPacket" ],
 					"patching_rect" : [ 1112.25, 354.0, 117.5, 48.0 ],
 					"viewvisibility" : 1
 				}
@@ -735,15 +720,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-103", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-11", 0 ]
 				}
 
 			}
@@ -1183,12 +1159,6 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "o.io.dropfile.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gui",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "o.granubuf~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/sound-engines/samples",
 				"type" : "JSON",
@@ -1203,12 +1173,6 @@
 , 			{
 				"name" : "o.api.handler.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.gather.select.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gatherers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -1267,6 +1231,12 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "o.gather.select.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gatherers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "m158.o.phase.points~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
@@ -1303,25 +1273,15 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.phase.points.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.pack.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.prepend.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "o.compose.mxo",
 				"type" : "iLaX"
 			}
 , 			{
 				"name" : "o.route.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.pack.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -1345,6 +1305,10 @@
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "o.prepend.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "o.select.mxo",
 				"type" : "iLaX"
 			}
@@ -1362,10 +1326,6 @@
 			}
 , 			{
 				"name" : "o.change.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.if.mxo",
 				"type" : "iLaX"
 			}
 , 			{
