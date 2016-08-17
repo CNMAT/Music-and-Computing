@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 201.0, 79.0, 1057.0, 787.0 ],
+		"rect" : [ 279.0, 79.0, 1057.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -177,7 +177,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 265.5, 394.0, 684.0, 156.0 ],
-									"text" : "/gui/read : [\"u767003746.json\", 0],\n/gui/numPitches : 11,\n/gui/baseMIDI : 81.,\n/gui/time : 2016-08-10T17:15:15.709983Z,\n/id : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],\n/baseHz : 880.,\n/hz : [880., 990., 1100., 1210., 1320., 1430., 1540., 1650., 1760., 1870., 1980.],\n/scaledAmp : 0.0909091,\n/amp : [0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091]",
+									"text" : "/gui/read : [\"u273001589.json\", 0],\n/gui/numPitches : 11,\n/gui/baseMIDI : 81.,\n/gui/time : 2016-08-17T13:59:15.832746Z,\n/id : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],\n/baseHz : 880.,\n/hz : [880., 990., 1100., 1210., 1320., 1430., 1540., 1650., 1760., 1870., 1980.],\n/scaledAmp : 0.0909091,\n/amp : [0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091]",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -384,7 +384,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 126.5, 158.0, 293.0, 75.0 ],
-									"text" : "/gui/read : [\"u767003746.json\", 0],\n/gui/numPitches : 11,\n/gui/baseMIDI : 81.,\n/gui/time : 2016-08-10T17:15:15.709983Z",
+									"text" : "/gui/read : [\"u273001589.json\", 0],\n/gui/numPitches : 11,\n/gui/baseMIDI : 81.,\n/gui/time : 2016-08-17T13:59:15.832746Z",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -869,7 +869,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 66.5, 571.5, 827.0, 88.0 ],
-									"text" : "/gui/read : [\"u380003859.json\", 0],\n/gui/hz : 14.,\n/gui/amp : [0.430769, 0.769231, 0.461538, 0.430769, 0.4, 0.369231, 0.292308, 0.153846, 0.184615, 0.153846],\n/gui/mod : 1.2,\n/gui/time : 2016-08-10T17:15:15.708868Z",
+									"text" : "/gui/read : [\"u215001871.json\", 0],\n/gui/hz : 14.,\n/gui/amp : [0.430769, 0.769231, 0.461538, 0.430769, 0.4, 0.369231, 0.292308, 0.153846, 0.184615, 0.153846],\n/gui/mod : 1.2,\n/gui/time : 2016-08-17T13:59:15.830693Z",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -2805,7 +2805,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 412.0, 166.0, 265.0, 170.0 ],
-									"text" : "/ascii : \"delete\",\n/keystate : \"up\",\n/keynum : -7,\n/numKeysDown : 0,\n/fingerIndex : 1,\n/shift : \"up\",\n/capslock : \"up\",\n/option : \"up\",\n/control : \"up\",\n/command : \"up\",\n/time : 2016-08-17T14:08:39.929385Z",
+									"text" : "/ascii : \"D\",\n/keystate : \"up\",\n/keynum : 100,\n/numKeysDown : 0,\n/fingerIndex : 1,\n/shift : \"up\",\n/capslock : \"up\",\n/option : \"up\",\n/control : \"up\",\n/command : \"up\",\n/time : 2016-08-17T14:28:55.728732Z",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -2834,7 +2834,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 103.0, 166.0, 265.0, 279.0 ],
-									"text" : "/horizontal : 342,\n/vertical : 92,\n/delta/horizontal : 0,\n/delta/vertical : 0,\n/screenDim : [1440, 900],\n/middle : [720., 450.],\n/x : -378.,\n/y : 358.,\n/distance : 520.623,\n/angle : 136.557,\n/delta/distance : 0.,\n/delta/angle : 0.,\n/button/is : \"down\",\n/shift : \"up\",\n/capslock : \"up\",\n/option : \"up\",\n/control : \"up\",\n/command : \"up\",\n/time : 2016-08-17T14:08:45.049286Z",
+									"text" : "/horizontal : 435,\n/vertical : 98,\n/delta/horizontal : 0,\n/delta/vertical : 0,\n/screenDim : [1440, 900],\n/middle : [720., 450.],\n/x : -285.,\n/y : 352.,\n/distance : 452.912,\n/angle : 128.996,\n/delta/distance : 0.,\n/delta/angle : 0.,\n/button/is : \"down\",\n/shift : \"up\",\n/capslock : \"up\",\n/option : \"up\",\n/control : \"up\",\n/command : \"up\",\n/time : 2016-08-17T14:29:04.348452Z",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -3271,7 +3271,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 201.0, 105.0, 1057.0, 761.0 ],
+						"rect" : [ 279.0, 105.0, 1057.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3308,7 +3308,7 @@
 									"patching_rect" : [ 486.0, 435.0, 430.0, 20.0 ],
 									"presentation_rect" : [ 540.0, 448.0, 0.0, 0.0 ],
 									"style" : "",
-									"text" : "Organized data makes it easier to think about the relationship between things."
+									"text" : "Organized data makes it easier to think about relationships between things."
 								}
 
 							}
