@@ -5,19 +5,11 @@
 			"major" : 7,
 			"minor" : 2,
 			"revision" : 4,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-		"rect" : [ 108.0, 166.0, 1088.0, 787.0 ],
-=======
 		"rect" : [ 50.0, 90.0, 1088.0, 787.0 ],
->>>>>>> Stashed changes
-=======
-		"rect" : [ 50.0, 90.0, 1088.0, 787.0 ],
->>>>>>> Stashed changes
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -57,7 +49,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 4,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
