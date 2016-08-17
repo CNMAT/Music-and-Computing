@@ -10,7 +10,11 @@
 		}
 ,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 		"rect" : [ 108.0, 166.0, 1088.0, 787.0 ],
+=======
+		"rect" : [ 50.0, 90.0, 1088.0, 787.0 ],
+>>>>>>> Stashed changes
 =======
 		"rect" : [ 50.0, 90.0, 1088.0, 787.0 ],
 >>>>>>> Stashed changes
