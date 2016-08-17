@@ -10,7 +10,11 @@
 		}
 ,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 		"rect" : [ 279.0, 79.0, 1057.0, 787.0 ],
+=======
+		"rect" : [ 48.0, 84.0, 1057.0, 787.0 ],
+>>>>>>> Stashed changes
 =======
 		"rect" : [ 48.0, 84.0, 1057.0, 787.0 ],
 >>>>>>> Stashed changes
@@ -426,7 +430,11 @@
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 									"varname" : "u273001589"
+=======
+									"varname" : "u734003705"
+>>>>>>> Stashed changes
 =======
 									"varname" : "u734003705"
 >>>>>>> Stashed changes
@@ -915,7 +923,11 @@
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 									"varname" : "u215001871"
+=======
+									"varname" : "u213003818"
+>>>>>>> Stashed changes
 =======
 									"varname" : "u213003818"
 >>>>>>> Stashed changes
@@ -3284,7 +3296,11 @@
 						}
 ,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 						"rect" : [ 279.0, 105.0, 1057.0, 761.0 ],
+=======
+						"rect" : [ 48.0, 110.0, 1057.0, 761.0 ],
+>>>>>>> Stashed changes
 =======
 						"rect" : [ 48.0, 110.0, 1057.0, 761.0 ],
 >>>>>>> Stashed changes
