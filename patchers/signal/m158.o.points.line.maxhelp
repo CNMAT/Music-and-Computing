@@ -38,6 +38,31 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 141.5, 213.0, 24.0, 24.0 ],
+					"presentation_rect" : [ 93.0, 248.0, 0.0, 0.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 56.0, 274.0, 24.0, 24.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-18",
@@ -46,8 +71,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 127.0, 242.5, 344.0, 61.0 ],
-					"text" : "/end/time : 2016-08-03T22:25:18.600712Z,\n/end/sample/withinblock : 3,\n/end/sample/sincedspstart : 538147.",
+					"patching_rect" : [ 127.0, 267.5, 344.0, 61.0 ],
+					"text" : "/end/time : 2016-08-17T18:32:48.391528Z,\n/end/sample/withinblock : 5,\n/end/sample/sincedspstart : 731621.",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -72,7 +97,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 38.0, 202.0, 108.0, 22.0 ],
+					"patching_rect" : [ 38.0, 160.0, 108.0, 22.0 ],
 					"style" : "",
 					"text" : "m158.o.points.line"
 				}
@@ -128,7 +153,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 38.0, 129.0, 150.0, 51.0 ],
+					"patching_rect" : [ 38.0, 87.0, 150.0, 51.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 47, 109, 115, 0, 44, 105, 0, 0, 0, 0, 3, -24, 0, 0, 0, 24, 47, 121, 0, 0, 44, 105, 105, 105, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 28, 47, 120, 0, 0, 44, 105, 100, 105, 0, 0, 0, 0, 0, 0, 0, 0, 63, -32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1 ],
 					"saved_bundle_length" : 92,
 					"text" : "/ms : 1000,\n/y : [1, 0, 1],\n/x : [0, 0.5, 1]",
@@ -148,10 +173,28 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-6", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-6", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-6", 0 ]
 				}
 
 			}
@@ -181,7 +224,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.phasor~.maxpat",
+				"name" : "m158.o.phase~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1
@@ -190,6 +233,12 @@
 				"name" : "shot-ms-phasor.gendsp",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/code",
 				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.api.handler.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
@@ -237,7 +286,11 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.union.mxo",
+				"name" : "o.route.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.cond.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -245,15 +298,27 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.intersection.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "o.expr.codebox.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.route.mxo",
+				"name" : "o.prepend.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.union.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.intersection.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.print.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.select.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -266,10 +331,6 @@
 			}
 , 			{
 				"name" : "o.timetag.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.prepend.mxo",
 				"type" : "iLaX"
 			}
 , 			{
