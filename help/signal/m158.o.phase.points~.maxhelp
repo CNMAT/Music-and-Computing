@@ -371,7 +371,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u666001319"
+									"varname" : "u888012277"
 								}
 
 							}
@@ -585,7 +585,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 667.5, 308.5, 408.0, 127.0 ],
+									"patching_rect" : [ 667.5, 322.5, 408.0, 127.0 ],
 									"style" : "",
 									"text" : "left inlet: signal rate phase value 0-1\nright inlet: OSC\n\nleft outlet: signal rate relative phase\nmiddle outlet: signal rate Y value with or without interpolation\nright outlet: OSC\n\nnote: m158.o.phase.points~ is the same as m158.o.points.phase~ except that the left and middle outlets are switched."
 								}
@@ -594,13 +594,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-7",
-									"linecount" : 9,
+									"linecount" : 11,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 667.5, 161.5, 360.0, 127.0 ],
+									"patching_rect" : [ 667.5, 161.5, 360.0, 154.0 ],
 									"style" : "",
-									"text" : "Required argument: the base address name for lookup, where /x, and /y will be found as sub-addresses. A basename of /foo indicates that /foo/x and /foo/y should be found in the bundle. If a sub-address /curve is found, curved interpolation will be used (using the same algorithm as curve~).\n\nOptional attribute: @interp -- if set to 0, the y point value will be held until the next point is reached in time, useful for discrete sequencing."
+									"text" : "Required argument: the base address name for lookup, where /x, and /y will be found as sub-addresses (typically generated with the m158.o.gui.function utility).\n\nA basename of /foo indicates that /foo/x and /foo/y should be found in the bundle. If a sub-address /curve is found, curved interpolation will be used (using the same algorithm as curve~).\n\nOptional attribute: @interp -- if set to 0, the y point value will be held until the next point is reached in time, useful for discrete sequencing."
 								}
 
 							}
@@ -946,7 +946,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u676001664"
+									"varname" : "u958012622"
 								}
 
 							}

@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 232.0, 88.0, 1082.0, 695.0 ],
+		"rect" : [ 100.0, 100.0, 1082.0, 695.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -371,7 +371,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u885002675"
+									"varname" : "u447011117"
 								}
 
 							}
@@ -549,7 +549,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 232.0, 114.0, 1082.0, 669.0 ],
+						"rect" : [ 100.0, 126.0, 1082.0, 669.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -593,13 +593,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-7",
-									"linecount" : 9,
+									"linecount" : 11,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 667.5, 161.5, 360.0, 127.0 ],
+									"patching_rect" : [ 667.5, 137.5, 360.0, 154.0 ],
 									"style" : "",
-									"text" : "Required argument: the base address name for lookup, where /x, and /y will be found as sub-addresses. A basename of /foo indicates that /foo/x and /foo/y should be found in the bundle. If a sub-address /curve is found, curved interpolation will be used (using the same algorithm as curve~).\n\nOptional attribute: @interp -- if set to 0, the y point value will be held until the next point is reached in time, useful for discrete sequencing."
+									"text" : "Required argument: the base address name for lookup, where /x, and /y will be found as sub-addresses (typically generated with the m158.o.gui.function utility).\n\nA basename of /foo indicates that /foo/x and /foo/y should be found in the bundle. If a sub-address /curve is found, curved interpolation will be used (using the same algorithm as curve~).\n\nOptional attribute: @interp -- if set to 0, the y point value will be held until the next point is reached in time, useful for discrete sequencing."
 								}
 
 							}
@@ -610,7 +610,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 667.5, 85.5, 283.0, 60.0 ],
+									"patching_rect" : [ 667.5, 55.5, 283.0, 60.0 ],
 									"style" : "",
 									"text" : "phase based lookup for an array of points, with optional linear and curve interpolation (like curve~) and stepped non-interpolating lookup for integer based arrays."
 								}
@@ -624,7 +624,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 667.5, 56.5, 199.0, 27.0 ],
+									"patching_rect" : [ 667.5, 26.5, 199.0, 27.0 ],
 									"style" : "",
 									"text" : "m158.o.points.phase~"
 								}
@@ -945,7 +945,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u477003020"
+									"varname" : "u088011462"
 								}
 
 							}
