@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 38.0, 79.0, 1368.0, 787.0 ],
+		"rect" : [ 100.0, 79.0, 1368.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,19 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-32",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "signal", "bang", "FullPacket" ],
+					"patching_rect" : [ 584.0, 241.0, 147.0, 22.0 ],
+					"style" : "",
+					"text" : "m158.o.num~ /phrase/ms"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-31",
@@ -46,7 +59,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1003.0, 155.5, 296.0, 106.0 ],
+					"patching_rect" : [ 63.0, 510.5, 296.0, 106.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 104, 47, 103, 117, 105, 47, 115, 97, 109, 112, 108, 101, 47, 49, 0, 0, 0, 44, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 7, 0, 0, 0, 5, 0, 0, 0, 104, 47, 103, 117, 105, 47, 115, 97, 109, 112, 108, 101, 47, 50, 0, 0, 0, 44, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 0, 0, 0, 0, 0, 11, 0, 0, 0, 11, 0, 0, 0, 14, 0, 0, 0, 14, 0, 0, 0, 13, 0, 0, 0, 13, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 14, 0, 0, 0, 14, 0, 0, 0, 12, 0, 0, 0, 12, 0, 0, 0, 7, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 24, 47, 103, 117, 105, 47, 116, 105, 109, 101, 0, 0, 0, 44, 116, 0, 0, -37, 96, -77, 101, -70, -2, 122, -8 ],
 					"saved_bundle_length" : 260,
 					"text" : "/gui/sample/1 : [0, 0, 0, 2, 2, 2, 2, 0, 0, 0, 2, 0, 0, 0, 5, 7, 5],\n/gui/sample/2 : [11, 11, 14, 14, 13, 13, 1, 1, 1, 1, 14, 14, 12, 12, 7, 7, 0],\n/gui/time : 2016-08-18T22:21:25.730445Z",
@@ -59,23 +72,17 @@
 					"id" : "obj-29",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 584.0, 161.0, 62.0, 22.0 ],
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 459.0, 158.0, 65.0, 22.0 ],
+					"restore" : [ 233.0 ],
+					"saved_object_attributes" : 					{
+						"parameter_enable" : 0
+					}
+,
 					"style" : "",
-					"text" : "loadmess"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-23",
-					"maxclass" : "scope~",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"patching_rect" : [ 424.0, 537.0, 130.0, 130.0 ],
-					"presentation_rect" : [ 422.0, 535.0, 0.0, 0.0 ],
-					"style" : ""
+					"text" : "pattr /bpm",
+					"varname" : "/bpm"
 				}
 
 			}
@@ -86,7 +93,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 815.0, 314.0, 66.0, 22.0 ],
+					"patching_rect" : [ 800.0, 318.0, 66.0, 22.0 ],
 					"style" : "",
 					"text" : "delay~ 1 1"
 				}
@@ -138,7 +145,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 815.0, 394.0, 110.0, 22.0 ],
+					"patching_rect" : [ 800.0, 398.0, 110.0, 22.0 ],
 					"presentation_rect" : [ 802.0, 391.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "m158.phase.click~"
@@ -152,7 +159,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 886.0, 432.0, 29.5, 22.0 ],
+					"patching_rect" : [ 871.0, 436.0, 29.5, 22.0 ],
 					"presentation_rect" : [ 873.0, 429.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "*~"
@@ -179,7 +186,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 655.0, 413.0, 29.5, 22.0 ],
+					"patching_rect" : [ 644.5, 417.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "*~"
 				}
@@ -193,7 +200,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "" ],
-					"patching_rect" : [ 815.0, 344.0, 172.0, 35.0 ],
+					"patching_rect" : [ 800.0, 348.0, 172.0, 35.0 ],
 					"style" : "",
 					"text" : "m158.o.phase.points~ /sample/2 @interp 0"
 				}
@@ -209,22 +216,11 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 866.0, 626.0, 354.0, 65.0 ],
+					"patching_rect" : [ 866.0, 622.0, 354.0, 65.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 120, 47, 102, 105, 108, 101, 47, 110, 97, 109, 101, 0, 0, 44, 115, 0, 0, 77, 97, 99, 105, 110, 116, 111, 115, 104, 32, 72, 68, 58, 47, 85, 115, 101, 114, 115, 47, 114, 47, 95, 115, 97, 109, 112, 108, 101, 115, 47, 105, 114, 99, 97, 109, 95, 115, 97, 109, 112, 108, 101, 115, 47, 86, 105, 110, 116, 97, 103, 101, 32, 68, 114, 117, 109, 32, 77, 97, 99, 104, 105, 110, 101, 115, 47, 82, 111, 108, 97, 110, 100, 95, 84, 82, 56, 48, 56, 47, 115, 116, 100, 32, 56, 48, 56, 32, 100, 114, 117, 109, 107, 105, 116, 47, 0, 0, 0, 0, 64, 75, 115, 0, 0, 0, 0, 28, 47, 102, 105, 108, 101, 47, 116, 121, 112, 101, 0, 0, 44, 115, 0, 0, 102, 111, 108, 100, 0, 0, 0, 0, 63, -21, -30, 33 ],
 					"saved_bundle_length" : 172,
 					"text" : "/file/name : \"Macintosh HD:/Users/r/_samples/ircam_samples/Vintage Drum Machines/Roland_TR808/std 808 drumkit/\",\n/file/type : \"fold\"",
 					"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-11",
-					"maxclass" : "scope~",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"patching_rect" : [ 424.0, 443.0, 130.0, 130.0 ],
-					"style" : ""
 				}
 
 			}
@@ -235,7 +231,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 754.0, 96.5, 145.0, 22.0 ],
+					"patching_rect" : [ 970.5, 114.5, 145.0, 22.0 ],
 					"style" : "",
 					"text" : "m158.o.gui.table /sample"
 				}
@@ -246,13 +242,13 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-37",
-					"linecount" : 8,
+					"linecount" : 12,
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 754.0, 145.0, 214.0, 127.0 ],
-					"text" : "/duration = -1,\n/start = 0,\n/pan = 0,\n/amp = 1,\n/rate = 1,\n/xshape = 0,\n/yshape = -5,\n/numvoices = 32",
+					"patching_rect" : [ 584.0, 46.0, 330.0, 182.0 ],
+					"text" : "/nbeats = length(/sample/1/x),\n/phrase/bpm = /gui/bpm / /nbeats,\n/phrase/ms = 60000. / /phrase/bpm,\n\n/duration = -1,\n/start = 0,\n/pan = 0,\n/amp = 1,\n/rate = 1,\n/xshape = 0,\n/yshape = -5,\n/numvoices = 32",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -264,7 +260,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 754.0, 13.0, 24.0, 24.0 ],
+					"patching_rect" : [ 970.5, 31.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -277,7 +273,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "dump" ],
-					"patching_rect" : [ 754.0, 52.0, 70.0, 22.0 ],
+					"patching_rect" : [ 970.5, 70.0, 70.0, 22.0 ],
 					"style" : "",
 					"text" : "m158.o.gui"
 				}
@@ -292,7 +288,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 840.5, 40.5, 97.0, 49.0 ],
+					"patching_rect" : [ 1057.0, 58.5, 97.0, 49.0 ],
 					"saved_object_attributes" : 					{
 						"client_rect" : [ 1057, 45, 1440, 407 ],
 						"parameter_enable" : 0,
@@ -387,7 +383,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "" ],
-					"patching_rect" : [ 584.0, 328.0, 189.0, 35.0 ],
+					"patching_rect" : [ 584.0, 328.0, 161.0, 35.0 ],
 					"style" : "",
 					"text" : "m158.o.phase.points~ /sample/1 @interp 0"
 				}
@@ -401,7 +397,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 48.833374, 162.0, 90.0, 22.0 ],
-					"restore" : [ 0, 0, 0, 2, 2, 2, 2, 0, 0, 0, 2, 0, 0, 0, 5, 7, 5 ],
+					"restore" : [ 0, 0, 0, 2, 7, 2, 2, 0, 0, 0, 2, 0, 0, 0, 5, 7, 5 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0
 					}
@@ -426,7 +422,7 @@
 					"range" : 15,
 					"size" : 17,
 					"style" : "",
-					"table_data" : [ 0, 0, 0, 0, 2, 2, 2, 2, 0, 0, 0, 2, 0, 0, 0, 5, 7, 5 ],
+					"table_data" : [ 0, 0, 0, 0, 2, 7, 2, 2, 0, 0, 0, 2, 0, 0, 0, 5, 7, 5 ],
 					"varname" : "itable"
 				}
 
@@ -440,21 +436,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 584.0, 199.0, 86.0, 22.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-18",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 584.0, 238.0, 69.0, 22.0 ],
+					"patching_rect" : [ 482.0, 193.0, 86.0, 22.0 ],
 					"style" : "",
-					"text" : "o.pack /ms"
+					"varname" : "number"
 				}
 
 			}
@@ -465,7 +449,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "signal", "signal", "signal", "" ],
-					"patching_rect" : [ 584.0, 268.0, 98.0, 22.0 ],
+					"patching_rect" : [ 584.0, 276.0, 98.0, 22.0 ],
 					"style" : "",
 					"text" : "m158.o.phase~"
 				}
@@ -477,7 +461,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 673.0, 537.0, 130.0, 22.0 ],
+					"patching_rect" : [ 668.0, 535.0, 130.0, 22.0 ],
 					"style" : "",
 					"text" : "o.granubuf.env.display"
 				}
@@ -490,7 +474,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 734.083374, 713.0, 33.0, 22.0 ],
+					"patching_rect" : [ 729.083374, 711.0, 33.0, 22.0 ],
 					"style" : "",
 					"text" : "stop"
 				}
@@ -503,7 +487,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 655.333374, 713.0, 74.0, 22.0 ],
+					"patching_rect" : [ 650.333374, 711.0, 74.0, 22.0 ],
 					"style" : "",
 					"text" : "startwindow"
 				}
@@ -515,7 +499,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 584.0, 746.0, 48.0, 22.0 ],
+					"patching_rect" : [ 579.0, 744.0, 48.0, 22.0 ],
 					"style" : "",
 					"text" : "dac~"
 				}
@@ -529,7 +513,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 613.0, 572.0, 22.0, 140.0 ],
+					"patching_rect" : [ 608.0, 570.0, 22.0, 140.0 ],
 					"style" : ""
 				}
 
@@ -542,7 +526,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 584.0, 572.0, 22.0, 140.0 ],
+					"patching_rect" : [ 579.0, 570.0, 22.0, 140.0 ],
 					"style" : ""
 				}
 
@@ -558,7 +542,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 643.333313, 567.0, 56.0, 22.0 ],
+					"patching_rect" : [ 638.333313, 565.0, 56.0, 22.0 ],
 					"sig" : 0.0,
 					"style" : ""
 				}
@@ -571,7 +555,7 @@
 					"numinlets" : 9,
 					"numoutlets" : 4,
 					"outlettype" : [ "signal", "signal", "signal", "FullPacket" ],
-					"patching_rect" : [ 584.0, 505.5, 108.0, 22.0 ],
+					"patching_rect" : [ 579.0, 503.5, 108.0, 22.0 ],
 					"style" : "",
 					"text" : "o.granubuf~"
 				}
@@ -728,15 +712,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-17", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-18", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -764,19 +739,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-18", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-22", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 664.833374, 740.0, 593.5, 740.0 ],
+					"midpoints" : [ 659.833374, 738.0, 588.5, 738.0 ],
 					"source" : [ "obj-24", 0 ]
 				}
 
@@ -786,7 +752,7 @@
 					"destination" : [ "obj-21", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 743.583374, 740.0, 593.5, 740.0 ],
+					"midpoints" : [ 738.583374, 738.0, 588.5, 738.0 ],
 					"source" : [ "obj-26", 0 ]
 				}
 
@@ -814,7 +780,7 @@
 					"destination" : [ "obj-22", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-29", 0 ]
+					"source" : [ "obj-29", 1 ]
 				}
 
 			}
@@ -838,16 +804,34 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-32", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-2", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-37", 0 ]
+					"source" : [ "obj-32", 2 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-42", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-32", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-32", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-37", 0 ]
@@ -937,15 +921,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-5", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -974,15 +949,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-6", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-23", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-6", 0 ]
@@ -1129,6 +1095,12 @@
 				"name" : "delta.click.gendsp",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/code",
 				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "m158.o.num~.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
