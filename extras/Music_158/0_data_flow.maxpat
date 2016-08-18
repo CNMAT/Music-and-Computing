@@ -5,7 +5,7 @@
 			"major" : 7,
 			"minor" : 2,
 			"revision" : 4,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
@@ -49,11 +49,11 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 4,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1088.0, 761.0 ],
+						"rect" : [ 50.0, 116.0, 1088.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -82,6 +82,20 @@
 						"subpatcher_template" : "Default Max 7",
 						"showontab" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-2",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 186.0, 283.0, 50.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
@@ -220,7 +234,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 149.5, 502.0, 135.0, 20.0 ],
+									"patching_rect" : [ 149.5, 516.0, 135.0, 20.0 ],
 									"style" : "",
 									"text" : "\"hidden state\" problem"
 								}
@@ -228,30 +242,28 @@
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
+									"format" : 6,
 									"id" : "obj-110",
-									"maxclass" : "number",
+									"maxclass" : "flonum",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 66.0, 458.0, 50.0, 22.0 ],
+									"patching_rect" : [ 66.0, 472.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
+									"format" : 6,
 									"id" : "obj-111",
-									"maxclass" : "number",
+									"maxclass" : "flonum",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 66.0, 545.0, 50.0, 22.0 ],
+									"patching_rect" : [ 66.0, 559.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -265,7 +277,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "float" ],
-									"patching_rect" : [ 66.0, 502.0, 76.0, 22.0 ],
+									"patching_rect" : [ 66.0, 516.0, 76.0, 22.0 ],
 									"style" : "",
 									"text" : "* 10."
 								}
@@ -273,15 +285,14 @@
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
+									"format" : 6,
 									"id" : "obj-113",
-									"maxclass" : "number",
+									"maxclass" : "flonum",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 123.0, 458.0, 50.0, 22.0 ],
+									"patching_rect" : [ 123.0, 472.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -291,13 +302,13 @@
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-114",
-									"linecount" : 2,
+									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 51.0, 413.0, 315.0, 34.0 ],
+									"patching_rect" : [ 51.0, 413.0, 354.0, 48.0 ],
 									"style" : "",
-									"text" : "Beware - overwriting creation arguments will not change the way the object appears:"
+									"text" : "Beware - changing the operator value in the right inlet will not change the displayed creation agrument. This leads to cases were reading your patch may give you false information."
 								}
 
 							}
@@ -331,8 +342,6 @@
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"format" : 6,
 									"id" : "obj-116",
 									"maxclass" : "flonum",
@@ -341,21 +350,6 @@
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 185.5, 368.0, 50.0, 22.0 ],
-									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
-									"id" : "obj-117",
-									"maxclass" : "number",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "bang" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 185.5, 278.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -538,15 +532,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-118", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-117", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-116", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -578,6 +563,15 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-125", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-118", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-2", 0 ]
 								}
 
 							}
@@ -655,7 +649,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 4,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -905,11 +899,11 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 4,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 50.0, 116.0, 1088.0, 761.0 ],
+						"rect" : [ 0.0, 26.0, 1088.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2039,7 +2033,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 4,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -2583,7 +2577,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 4,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -3266,7 +3260,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 4,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -3307,7 +3301,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 32.0, 218.0, 35.0, 22.0 ],
-									"presentation_rect" : [ 29.0, 243.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "print"
 								}
@@ -3949,7 +3942,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 4,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -4496,7 +4489,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 4,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -4987,7 +4980,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 4,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -5543,7 +5536,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 4,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -5619,7 +5612,7 @@
 											"major" : 7,
 											"minor" : 2,
 											"revision" : 4,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -5768,7 +5761,7 @@
 											"major" : 7,
 											"minor" : 2,
 											"revision" : 4,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -5926,7 +5919,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_matrix" ],
-									"patching_rect" : [ 478.0, 116.0, 508.666656, 305.199982 ],
+									"patching_rect" : [ 478.0, 116.0, 508.666656, 305.199994 ],
 									"pic" : "/Users/r/Downloads/Max-Mathews-007.jpg"
 								}
 
@@ -5953,7 +5946,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 41.0, 116.0, 438.0, 167.0 ],
+									"patching_rect" : [ 41.0, 116.0, 441.0, 167.0 ],
 									"style" : "",
 									"text" : "Welcome to Max! In this introduction, we will be walking through some of the fundamentals of working in Max.\n\nMax (a.k.a. Max/MSP) is a powerful and extremely flexible piece of software that has remained one of the most popular platforms in computer music since its creation in the late 1980s.\n\nIn Music 158A we will be introducing a refined approach to working in Max based on many years of research at UC Berkeley's Center for New Music and Audio Technologies (CNMAT).\n\n... ok, let's get started!"
 								}
@@ -6051,6 +6044,12 @@
 				"name" : "adding_modules.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/course/modules/instructors",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Max-Mathews-007.jpg",
+				"bootpath" : "~/Downloads",
+				"type" : "JPEG",
 				"implicit" : 1
 			}
  ],
