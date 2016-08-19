@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 198.0, 79.0, 1075.0, 769.0 ],
+		"rect" : [ 198.0, 79.0, 1093.0, 762.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -54,7 +54,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1075.0, 743.0 ],
+						"rect" : [ 0.0, 26.0, 1093.0, 736.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -555,7 +555,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1075.0, 743.0 ],
+						"rect" : [ 0.0, 26.0, 1093.0, 736.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1270,7 +1270,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1075.0, 743.0 ],
+						"rect" : [ 0.0, 26.0, 1093.0, 736.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1507,7 +1507,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1075.0, 743.0 ],
+						"rect" : [ 0.0, 26.0, 1093.0, 736.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2641,7 +2641,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1075.0, 743.0 ],
+						"rect" : [ 0.0, 26.0, 1093.0, 736.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3185,7 +3185,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1075.0, 743.0 ],
+						"rect" : [ 0.0, 26.0, 1093.0, 736.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3868,7 +3868,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1075.0, 743.0 ],
+						"rect" : [ 0.0, 26.0, 1093.0, 736.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -4550,7 +4550,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1075.0, 743.0 ],
+						"rect" : [ 0.0, 26.0, 1093.0, 736.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -5097,7 +5097,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1075.0, 743.0 ],
+						"rect" : [ 0.0, 26.0, 1093.0, 736.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -5588,7 +5588,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1075.0, 743.0 ],
+						"rect" : [ 198.0, 105.0, 1093.0, 736.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -5625,7 +5625,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 556.357178, 450.240021, 456.0, 18.0 ],
-									"presentation_rect" : [ 522.0, 418.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "Screenshot of an old Max patch, credited to the band Autechre, who are famous Max users."
 								}
@@ -5769,7 +5768,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 237.0, 529.59375, 258.25, 21.40625 ],
+									"patching_rect" : [ 237.0, 529.59375, 258.249985, 21.40625 ],
 									"presentation_rect" : [ 244.595703, 521.59375, 258.249985, 21.40625 ],
 									"style" : "",
 									"text" : "Click here to open the Cycling '74 website.",
@@ -6079,7 +6078,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 198.0, 105.0, 1075.0, 743.0 ],
+						"rect" : [ 0.0, 26.0, 1093.0, 736.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
