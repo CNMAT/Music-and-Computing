@@ -178,7 +178,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 265.5, 394.0, 684.0, 156.0 ],
-									"text" : "/gui/read : [\"u273001589.json\", 0],\n/gui/numPitches : 11,\n/gui/baseMIDI : 81.,\n/gui/time : 2016-08-17T13:59:15.832746Z,\n/id : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],\n/baseHz : 880.,\n/hz : [880., 990., 1100., 1210., 1320., 1430., 1540., 1650., 1760., 1870., 1980.],\n/scaledAmp : 0.0909091,\n/amp : [0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091]",
+									"text" : "/gui/read : [\"u186001504.json\", 0],\n/gui/numPitches : 11,\n/gui/baseMIDI : 81.,\n/gui/time : 2016-08-19T20:55:42.758333Z,\n/id : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],\n/baseHz : 880.,\n/hz : [880., 990., 1100., 1210., 1320., 1430., 1540., 1650., 1760., 1870., 1980.],\n/scaledAmp : 0.0909091,\n/amp : [0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091, 0.0909091]",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -385,7 +385,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 126.5, 158.0, 293.0, 75.0 ],
-									"text" : "/gui/read : [\"u273001589.json\", 0],\n/gui/numPitches : 11,\n/gui/baseMIDI : 81.,\n/gui/time : 2016-08-17T13:59:15.832746Z",
+									"text" : "/gui/read : [\"u186001504.json\", 0],\n/gui/numPitches : 11,\n/gui/baseMIDI : 81.,\n/gui/time : 2016-08-19T20:55:42.758333Z",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -422,7 +422,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u734003705"
+									"varname" : "u186001504"
 								}
 
 							}
@@ -684,13 +684,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-39",
-									"linecount" : 5,
+									"linecount" : 6,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 581.5, 675.5, 316.0, 74.0 ],
+									"patching_rect" : [ 643.5, 658.5, 316.0, 87.0 ],
 									"style" : "",
-									"text" : "Try it!  \nCreate a new patch -- then on Max's left tool bar, find the icon of paperclip, this is the \"snippet\" menu. Type m158 into the filter field, and then drag m158.o.gui into your new patch."
+									"text" : "Try it!  \n\nCreate a new patch -- then on Max's left tool bar, find the icon of paperclip, this is the \"snippet\" menu. Type m158 into the filter field, and then drag m158.o.gui into your new patch."
 								}
 
 							}
@@ -864,13 +864,13 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-8",
-									"linecount" : 5,
+									"linecount" : 4,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 66.5, 571.5, 827.0, 88.0 ],
-									"text" : "/gui/read : [\"u215001871.json\", 0],\n/gui/hz : 14.,\n/gui/amp : [0.430769, 0.769231, 0.461538, 0.430769, 0.4, 0.369231, 0.292308, 0.153846, 0.184615, 0.153846],\n/gui/mod : 1.2,\n/gui/time : 2016-08-17T13:59:15.830693Z",
+									"patching_rect" : [ 66.5, 571.5, 827.0, 75.0 ],
+									"text" : "/gui/hz : 14.,\n/gui/amp : [0.430769, 0.769231, 0.461538, 0.430769, 0.4, 0.369231, 0.292308, 0.153846, 0.184615, 0.153846],\n/gui/mod : 1.2,\n/gui/time : 2016-08-19T22:16:47.629194Z",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -907,7 +907,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u213003818"
+									"varname" : "u395001617"
 								}
 
 							}
@@ -918,9 +918,9 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 741.0, 130.5, 257.0, 47.0 ],
+									"patching_rect" : [ 741.0, 130.5, 292.0, 47.0 ],
 									"style" : "",
-									"text" : "However there's a problem here: only the left inlet is \"hot\" causing the bundle to be output, and values stored in the right inlet are \"hidden\""
+									"text" : "*Attention!  There's a problem here: only the left inlet is \"hot\" causing the bundle to be output, and values stored in the right inlet are \"hidden\""
 								}
 
 							}
@@ -1047,11 +1047,13 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-7",
+									"linecount" : 3,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 60.0, 246.0, 402.0, 34.0 ],
+									"patching_rect" : [ 60.0, 246.0, 402.0, 61.0 ],
+									"text" : "/sammy : {\n\t/hello : \"!\"\n}",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -1382,11 +1384,13 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-3",
+									"linecount" : 7,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 57.5, 576.0, 920.0, 34.0 ],
+									"patching_rect" : [ 57.5, 576.0, 920.0, 116.0 ],
+									"text" : "/listLength : 20,\n/sequence : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],\n/inverted : [20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0],\n/multiplied : [0., 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1., 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.],\n/offset : [100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120],\n/ummm : [0.044444, 0.266664, 0.488884, 0.711104, 0.933324, 1.15554, 1.37776, 1.59998, 1.8222, 2.04442, 2.26664, 2.48886, 2.71108, 2.9333, 3.15552, 3.37774, 3.59996, 3.82218, 4.0444, 4.26662, 4.48884]",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -1414,9 +1418,9 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 57.5, 306.0, 465.0, 20.0 ],
+									"patching_rect" : [ 57.5, 306.0, 477.0, 20.0 ],
 									"style" : "",
-									"text" : "A list can be scaled by a single number using any math operation, this is super useful!"
+									"text" : "A list can be scaled by a single number using any math operation, which is super useful!"
 								}
 
 							}
@@ -1484,11 +1488,13 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-35",
+									"linecount" : 3,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 49.5, 198.0, 827.0, 34.0 ],
+									"patching_rect" : [ 49.5, 198.0, 827.0, 61.0 ],
+									"text" : "/listLength : 20,\n/sequence : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],\n/repeating : [0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1]",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -1939,9 +1945,9 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 37.5, 43.0, 596.0, 74.0 ],
+									"patching_rect" : [ 37.5, 43.0, 672.0, 74.0 ],
 									"style" : "",
-									"text" : "Going back to the m158.o.sinusoids~ example, we can see that each frequency is a multiple of 110, and that the amplitude is 1 divided by the number of sinusoids (we do this so when all the sinusoids are playing they add up to an amplitude of 1).\n\nLet's automate this with o.expr.codebox!"
+									"text" : "Going back to the m158.o.sinusoids~ example (lists and data collections tab), we can see that each frequency is a multiple of 110, and that the amplitude is 1 divided by the number of sinusoids (we do this so when all the sinusoids are playing they add up to an amplitude of 1).\n\nLet's automate this with o.expr.codebox!"
 								}
 
 							}
@@ -2233,7 +2239,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 46.0, 565.0, 533.0, 33.0 ],
 									"style" : "",
-									"text" : "nfill() creates a list of repeated numbers, it requires two arguments: the number of elements in the lest, and the vaule to fill the list with."
+									"text" : "nfill() creates a list of repeated numbers, it requires two arguments: the number of elements in the lest, and the value to fill the list with."
 								}
 
 							}
@@ -2244,9 +2250,9 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 46.0, 524.0, 533.0, 33.0 ],
+									"patching_rect" : [ 46.0, 524.0, 556.0, 33.0 ],
 									"style" : "",
-									"text" : "aseq() creates \"a sequence\" of numbers, it requires two arguments: start number, and end number, a third option argument is the stepsize which is 1 by default."
+									"text" : "aseq() creates an \"arithmetic sequence\" of numbers, and it requires two arguments: start number, and end number, a third option argument is the stepsize which is 1 by default."
 								}
 
 							}
@@ -2389,9 +2395,9 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 357.0, 394.0, 33.0 ],
+									"patching_rect" : [ 50.0, 357.0, 427.0, 33.0 ],
 									"style" : "",
-									"text" : "Lists of things can be created in o.compose by using single brackets [ ], with list elements are separated by commas."
+									"text" : "Lists of list elements can be created in o.compose by using single brackets [ ].\nList elements are separated by commas."
 								}
 
 							}
@@ -2718,7 +2724,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1057.0, 761.0 ],
+						"rect" : [ 48.0, 110.0, 1057.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2752,7 +2758,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 428.0, 137.0, 291.0, 20.0 ],
+									"patching_rect" : [ 548.0, 209.0, 291.0, 20.0 ],
 									"style" : "",
 									"text" : "presss some keyboard letters and see what happens"
 								}
@@ -2764,7 +2770,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 281.0, 502.0, 190.0, 20.0 ],
+									"patching_rect" : [ 401.0, 574.0, 190.0, 20.0 ],
 									"style" : "",
 									"text" : "What could you do with this data?"
 								}
@@ -2776,7 +2782,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 90.0, 73.0, 365.0, 20.0 ],
+									"patching_rect" : [ 210.0, 145.0, 365.0, 20.0 ],
 									"style" : "",
 									"text" : "Here are two examples: m158.o.io.mouse and m158.o.io.keyboard"
 								}
@@ -2789,7 +2795,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 78.0, 29.0, 534.0, 33.0 ],
+									"patching_rect" : [ 198.0, 101.0, 534.0, 33.0 ],
 									"style" : "",
 									"text" : "Having all *bundles* of grouped data instead of individual numbers flowing through your patch allows you to make cross references between different parameters."
 								}
@@ -2805,8 +2811,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 412.0, 166.0, 265.0, 170.0 ],
-									"text" : "/ascii : \"D\",\n/keystate : \"up\",\n/keynum : 100,\n/numKeysDown : 0,\n/fingerIndex : 1,\n/shift : \"up\",\n/capslock : \"up\",\n/option : \"up\",\n/control : \"up\",\n/command : \"up\",\n/time : 2016-08-17T14:28:55.728732Z",
+									"patching_rect" : [ 532.0, 238.0, 265.0, 170.0 ],
+									"text" : "/ascii : \"return\",\n/keystate : \"up\",\n/keynum : -4,\n/numKeysDown : 0,\n/fingerIndex : 1,\n/shift : \"up\",\n/capslock : \"up\",\n/option : \"up\",\n/control : \"up\",\n/command : \"down\",\n/time : 2016-08-19T22:18:46.128915Z",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -2817,8 +2823,8 @@
 									"maxclass" : "newobj",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "FullPacket" ],
-									"patching_rect" : [ 412.0, 111.0, 116.0, 22.0 ],
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 532.0, 183.0, 116.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.io.keyboard"
 								}
@@ -2834,8 +2840,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 103.0, 166.0, 265.0, 279.0 ],
-									"text" : "/horizontal : 435,\n/vertical : 98,\n/delta/horizontal : 0,\n/delta/vertical : 0,\n/screenDim : [1440, 900],\n/middle : [720., 450.],\n/x : -285.,\n/y : 352.,\n/distance : 452.912,\n/angle : 128.996,\n/delta/distance : 0.,\n/delta/angle : 0.,\n/button/is : \"down\",\n/shift : \"up\",\n/capslock : \"up\",\n/option : \"up\",\n/control : \"up\",\n/command : \"up\",\n/time : 2016-08-17T14:29:04.348452Z",
+									"patching_rect" : [ 223.0, 238.0, 265.0, 279.0 ],
+									"text" : "/horizontal : 499,\n/vertical : 275,\n/delta/horizontal : 0,\n/delta/vertical : 0,\n/screenDim : [1440, 900],\n/middle : [720., 450.],\n/x : -221.,\n/y : 175.,\n/distance : 281.897,\n/angle : 141.626,\n/delta/distance : 0.,\n/delta/angle : 0.,\n/button/is : \"up\",\n/shift : \"up\",\n/capslock : \"up\",\n/option : \"up\",\n/control : \"up\",\n/command : \"down\",\n/time : 2016-08-19T22:18:46.128786Z",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -2847,7 +2853,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 103.0, 111.0, 103.0, 22.0 ],
+									"patching_rect" : [ 223.0, 183.0, 103.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.io.mouse"
 								}
@@ -2996,11 +3002,13 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-86",
+									"linecount" : 4,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 59.0, 579.0, 150.0, 34.0 ],
+									"patching_rect" : [ 59.0, 579.0, 150.0, 75.0 ],
+									"text" : "/cows : 2,\n/pigs : 8,\n/rabbits : 8,\n/num/mammals : 18",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -3089,11 +3097,13 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-80",
+									"linecount" : 7,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 59.0, 273.0, 150.0, 34.0 ],
+									"patching_rect" : [ 59.0, 273.0, 150.0, 116.0 ],
+									"text" : "/chickens : 7,\n/turkeys : 3,\n/cows : 2,\n/pigs : 8,\n/rabbits : 4,\n/num/birds : 10,\n/num/mammals : 14",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -3272,7 +3282,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 48.0, 110.0, 1057.0, 761.0 ],
+						"rect" : [ 0.0, 26.0, 1057.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3307,7 +3317,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 486.0, 435.0, 430.0, 20.0 ],
-									"presentation_rect" : [ 540.0, 448.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "Organized data makes it easier to think about relationships between things."
 								}
@@ -3324,7 +3333,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_matrix" ],
-									"patching_rect" : [ 363.0, 70.787674, 640.769226, 342.328765 ],
+									"patching_rect" : [ 363.0, 70.787674, 640.769226, 342.328766 ],
 									"pic" : "/Users/r/Downloads/Fig-10-10-LC-RS-Tree.jpg"
 								}
 
@@ -3367,7 +3376,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 23.0, 97.0, 314.0, 74.0 ],
 									"style" : "",
-									"text" : "Odot (o.) is an OpenSoundControl (OSC) based system for working with structured data in Max.\n\nWhat does that mean, and why do I need that, you ask? read on!"
+									"text" : "Odot (o.) is an OpenSoundControl (OSC) based system for working with structured data in Max.\n\nWhat does that mean, and why do I need that, you ask? Read on!"
 								}
 
 							}
@@ -3566,7 +3575,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 206.5, 567.0, 231.0, 20.0 ],
 									"style" : "",
-									"text" : "command - click / click in a locked patch"
+									"text" : "click this box to see the output"
 								}
 
 							}
@@ -3580,8 +3589,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 40.0, 638.0, 222.5, 22.0 ],
-									"style" : "",
-									"text" : "FullPacket 128 1602459824"
+									"style" : ""
 								}
 
 							}
@@ -3675,9 +3683,9 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 40.0, 298.0, 449.0, 48.0 ],
+									"patching_rect" : [ 40.0, 298.0, 476.0, 48.0 ],
 									"style" : "",
-									"text" : "To understand the basic principle behind odot, let's use an extremely simple example using farm animals. We may use \"o.compose\" to represent numbers of farm animals at our odot farm:"
+									"text" : "To understand the basic principle behind odot, let's use an extremely simple example with farm animals. We may use \"o.compose\" to represent numbers of farm animals at our odot farm:"
 								}
 
 							}
@@ -3793,7 +3801,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 40.0, 64.0, 449.0, 62.0 ],
 									"style" : "",
-									"text" : "odot is a system for encapsulating, operating on, and delivering control data to objects that need them. \n\nWe will start with three objects:"
+									"text" : "odot is a system for encapsulating, operating on, and delivering control data to objects that need it. \n\nWe will start with three objects:"
 								}
 
 							}
@@ -3870,8 +3878,8 @@
  ],
 		"lines" : [  ],
 		"parameters" : 		{
-			"obj-14::obj-15" : [ "live.gain~[2]", "live.gain~", 0 ],
 			"obj-4::obj-2" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-14::obj-15" : [ "live.gain~[2]", "live.gain~", 0 ],
 			"obj-5::obj-6" : [ "live.gain~[1]", "live.gain~", 0 ]
 		}
 ,
@@ -3882,20 +3890,14 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Fig-10-10-LC-RS-Tree.jpg",
-				"bootpath" : "~/Downloads",
-				"type" : "JPEG",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "m158.o.io.mouse.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/patchers",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/io",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "m158.o.io.keyboard.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/patchers",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/io",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3940,19 +3942,15 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.pak.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.expr.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "o.union.mxo",
 				"type" : "iLaX"
 			}
 , 			{
 				"name" : "o.var.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.timetag.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -3977,10 +3975,6 @@
 			}
 , 			{
 				"name" : "o.prepend.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.timetag.mxo",
 				"type" : "iLaX"
 			}
  ],
