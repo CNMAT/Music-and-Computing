@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 198.0, 79.0, 1093.0, 762.0 ],
+		"rect" : [ 70.0, 97.0, 1299.0, 762.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,243 @@
 		"showontab" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 7,
+							"minor" : 2,
+							"revision" : 4,
+							"architecture" : "x86",
+							"modernui" : 1
+						}
+,
+						"rect" : [ 0.0, 26.0, 1299.0, 736.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "Default Max 7",
+						"showontab" : 1,
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-20",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 519.0, 392.0, 83.0, 20.0 ],
+									"presentation_rect" : [ 470.0, 363.600006, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "matrix"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-19",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "jit_matrix", "" ],
+									"patching_rect" : [ 622.0, 392.0, 112.0, 22.0 ],
+									"style" : "",
+									"text" : "jit.matrix 1 char 3 3"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 0,
+									"fontsize" : 12.0,
+									"id" : "obj-18",
+									"linecount" : 2,
+									"maxclass" : "o.compose",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 622.0, 432.799988, 224.0, 38.0 ],
+									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 47, 112, 97, 114, 97, 109, 101, 116, 101, 114, 47, 49, 0, 0, 0, 0, 44, 115, 0, 0, 98, 105, 103, 32, 98, 101, 97, 114, 0, 0, 0, 0, 0, 0, 0, 32, 47, 112, 97, 114, 97, 109, 101, 116, 101, 114, 47, 50, 0, 0, 0, 0, 44, 115, 0, 0, 108, 105, 116, 116, 108, 101, 32, 98, 101, 97, 114, 0 ],
+									"saved_bundle_length" : 88,
+									"text" : "/parameter/1 : \"big bear\",\n/parameter/2 : \"little bear\"",
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-16",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 622.0, 344.600006, 52.0, 22.0 ],
+									"presentation_rect" : [ 574.0, 315.399994, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "CNMAT"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-15",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 622.0, 306.399994, 37.0, 22.0 ],
+									"presentation_rect" : [ 574.0, 274.200012, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "1000"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-14",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 622.0, 270.200012, 61.0, 22.0 ],
+									"presentation_rect" : [ 569.0, 238.0, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "3.141592"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-13",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 622.0, 233.0, 67.0, 22.0 ],
+									"style" : "",
+									"text" : "1 a 2 b 3 c"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 519.0, 432.799988, 83.0, 20.0 ],
+									"style" : "",
+									"text" : "odot bundles"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-5",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 519.0, 344.600006, 83.0, 20.0 ],
+									"style" : "",
+									"text" : "symbols"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 519.0, 307.399994, 83.0, 20.0 ],
+									"style" : "",
+									"text" : "ints"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 519.0, 270.200012, 83.0, 20.0 ],
+									"style" : "",
+									"text" : "floats"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 519.0, 233.0, 83.0, 20.0 ],
+									"style" : "",
+									"text" : "lists"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 1,
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 20.0,
+									"id" : "obj-79",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 328.0, 160.0, 256.0, 30.0 ],
+									"style" : "",
+									"text" : "Types of data in Max"
+								}
+
+							}
+ ],
+						"lines" : [  ]
+					}
+,
+					"patching_rect" : [ 316.0, 155.0, 96.0, 22.0 ],
+					"presentation_rect" : [ 305.0, 155.0, 0.0, 0.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"style" : "",
+						"tags" : ""
+					}
+,
+					"style" : "",
+					"text" : "p \"Data Types\""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-7",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -54,7 +291,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1093.0, 736.0 ],
+						"rect" : [ 0.0, 26.0, 1299.0, 736.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -91,7 +328,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 36.0, 89.0, 397.0, 48.0 ],
+									"patching_rect" : [ 260.0, 92.0, 397.0, 48.0 ],
 									"style" : "",
 									"text" : "There are two modes involved in the user experience of patcher design.\n1. patching mode (edit / unlocked).  In this mode, you are programming.\n2. usage mode (locked).  In this mode, you are using your program."
 								}
@@ -106,7 +343,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 36.0, 42.0, 389.0, 34.0 ],
+									"patching_rect" : [ 260.0, 45.0, 389.0, 34.0 ],
 									"style" : "",
 									"text" : "Max's main window is called a \"patch\", which can be edited and used to create sounds and control pretty much anything you can imagine."
 								}
@@ -122,7 +359,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 385.0, 639.147095, 345.0, 66.0 ],
+									"patching_rect" : [ 609.0, 642.147095, 345.0, 66.0 ],
 									"style" : "",
 									"text" : "Lock the patch, and use your mouse to interact with the GUI objects... You can also interact with objects from an unlocked patch, by holding down ⌘ (or Ctrl on Windows) while clicking on a GUI object."
 								}
@@ -137,7 +374,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 36.0, 583.0, 107.0, 26.0 ],
+									"patching_rect" : [ 260.0, 586.0, 107.0, 26.0 ],
 									"style" : "",
 									"text" : "GUI Objects:"
 								}
@@ -152,7 +389,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 36.0, 471.0, 98.0, 26.0 ],
+									"patching_rect" : [ 260.0, 474.0, 98.0, 26.0 ],
 									"style" : "",
 									"text" : "Max / MSP:"
 								}
@@ -167,7 +404,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 36.0, 326.0, 65.0, 26.0 ],
+									"patching_rect" : [ 260.0, 329.0, 65.0, 26.0 ],
 									"style" : "",
 									"text" : "Basics:"
 								}
@@ -181,7 +418,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 186.0, 702.441162, 165.0, 20.0 ],
+									"patching_rect" : [ 410.0, 705.441162, 165.0, 20.0 ],
 									"style" : "",
 									"text" : "Message (m)"
 								}
@@ -195,7 +432,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 186.0, 674.294128, 165.0, 20.0 ],
+									"patching_rect" : [ 410.0, 677.294128, 165.0, 20.0 ],
 									"style" : "",
 									"text" : "Floating-point number box (f)"
 								}
@@ -209,7 +446,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 186.0, 646.147095, 165.0, 20.0 ],
+									"patching_rect" : [ 410.0, 649.147095, 165.0, 20.0 ],
 									"style" : "",
 									"text" : "Integer number box (i)"
 								}
@@ -223,7 +460,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 186.0, 618.0, 165.0, 20.0 ],
+									"patching_rect" : [ 410.0, 621.0, 165.0, 20.0 ],
 									"style" : "",
 									"text" : "Button (aka \"bang\") (b)"
 								}
@@ -238,7 +475,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 36.0, 702.441162, 36.0, 22.0 ],
+									"patching_rect" : [ 260.0, 705.441162, 36.0, 22.0 ],
 									"style" : "",
 									"text" : "hello"
 								}
@@ -255,7 +492,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 36.0, 674.294128, 50.0, 22.0 ],
+									"patching_rect" : [ 260.0, 677.294128, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -270,7 +507,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 36.0, 646.147095, 50.0, 22.0 ],
+									"patching_rect" : [ 260.0, 649.147095, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -282,7 +519,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 36.0, 618.0, 20.0, 20.0 ],
+									"patching_rect" : [ 260.0, 621.0, 20.0, 20.0 ],
 									"style" : ""
 								}
 
@@ -296,7 +533,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 36.0, 536.0, 46.0, 22.0 ],
+									"patching_rect" : [ 260.0, 539.0, 46.0, 22.0 ],
 									"style" : "",
 									"text" : "cycle~"
 								}
@@ -311,7 +548,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 36.0, 507.0, 38.0, 22.0 ],
+									"patching_rect" : [ 260.0, 510.0, 38.0, 22.0 ],
 									"style" : "",
 									"text" : "cycle"
 								}
@@ -325,7 +562,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 186.0, 430.420563, 165.0, 20.0 ],
+									"patching_rect" : [ 410.0, 433.420563, 165.0, 20.0 ],
 									"style" : "",
 									"text" : "comment box (c)"
 								}
@@ -340,7 +577,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 36.0, 430.420563, 120.0, 20.0 ],
+									"patching_rect" : [ 260.0, 433.420563, 120.0, 20.0 ],
 									"style" : "",
 									"text" : "(comment)"
 								}
@@ -354,7 +591,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 186.0, 398.710266, 165.0, 20.0 ],
+									"patching_rect" : [ 410.0, 401.710266, 165.0, 20.0 ],
 									"style" : "",
 									"text" : "message box (m)"
 								}
@@ -369,7 +606,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 36.0, 398.710266, 50.0, 22.0 ],
+									"patching_rect" : [ 260.0, 401.710266, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -383,7 +620,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 36.0, 367.0, 100.0, 22.0 ],
+									"patching_rect" : [ 260.0, 370.0, 100.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -396,7 +633,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 186.0, 536.0, 214.0, 20.0 ],
+									"patching_rect" : [ 410.0, 539.0, 214.0, 20.0 ],
 									"style" : "",
 									"text" : "MSP (audio) object - note the tilde! (~)"
 								}
@@ -410,7 +647,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 186.0, 507.0, 165.0, 20.0 ],
+									"patching_rect" : [ 410.0, 510.0, 165.0, 20.0 ],
 									"style" : "",
 									"text" : "Max object"
 								}
@@ -424,7 +661,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 186.0, 367.0, 165.0, 20.0 ],
+									"patching_rect" : [ 410.0, 370.0, 165.0, 20.0 ],
 									"style" : "",
 									"text" : "object box (n)"
 								}
@@ -440,7 +677,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 469.5, 372.710266, 25.0, 92.0 ],
+									"patching_rect" : [ 693.5, 375.710266, 25.0, 92.0 ],
 									"style" : "",
 									"text" : "n\nm\ni\nf\nb\nt"
 								}
@@ -455,7 +692,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 469.5, 360.710266, 332.0, 104.0 ],
+									"patching_rect" : [ 693.5, 363.710266, 332.0, 104.0 ],
 									"style" : "",
 									"text" : "For this lesson, use the following keyboard shortcuts:\n      to create a new object\n      to create a new message\n      to create a number box for an integer\n      to create a number box for a floating-point number\n      to create a button\n      to create a toggle"
 								}
@@ -470,7 +707,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_matrix" ],
-									"patching_rect" : [ 132.0, 207.0, 20.0, 20.0 ],
+									"patching_rect" : [ 356.0, 210.0, 20.0, 20.0 ],
 									"pic" : "lock2.png"
 								}
 
@@ -484,7 +721,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_matrix" ],
-									"patching_rect" : [ 171.0, 207.0, 20.0, 20.0 ],
+									"patching_rect" : [ 395.0, 210.0, 20.0, 20.0 ],
 									"pic" : "lock.png"
 								}
 
@@ -499,7 +736,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 36.0, 147.0, 374.0, 149.0 ],
+									"patching_rect" : [ 260.0, 150.0, 374.0, 149.0 ],
 									"style" : "",
 									"text" : "To enter EDIT MODE, either:\n\n     * Use the ⌘-E (Ctrl-E on Windows) keyboard shortcut\n     * ⌘-click on the white space in the patch\n     * Toggle the         to         in the lower-left corner\n     * Right-click and select \"Edit\" from the menu\n\nOnce in EDIT MODE, you can create objects and connect them with patch cords. A LOCKED PATCH allows you to interact with objects.",
 									"textcolor" : [ 0.0, 0.0, 0.501961, 1.0 ]
@@ -515,7 +752,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 18.0, 10.0, 101.0, 28.0 ],
+									"patching_rect" : [ 242.0, 13.0, 101.0, 28.0 ],
 									"style" : "",
 									"text" : "Hello Max!"
 								}
@@ -555,7 +792,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1093.0, 736.0 ],
+						"rect" : [ 0.0, 26.0, 1299.0, 736.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -593,7 +830,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 415.5, 353.0, 360.0, 38.0 ],
+									"patching_rect" : [ 610.5, 373.0, 360.0, 38.0 ],
 									"style" : "",
 									"text" : "If you send a float into an object that deals only with integers, the float will be \"truncated\", cutting off all decimal values!"
 								}
@@ -608,7 +845,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 305.0, 361.0, 50.0, 22.0 ],
+									"patching_rect" : [ 500.0, 381.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -623,7 +860,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 361.0, 361.0, 50.0, 22.0 ],
+									"patching_rect" : [ 556.0, 381.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -637,7 +874,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 361.0, 278.0, 50.0, 22.0 ],
+									"patching_rect" : [ 556.0, 298.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -650,7 +887,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 436.5, 328.0, 321.0, 20.0 ],
+									"patching_rect" : [ 631.5, 348.0, 321.0, 20.0 ],
 									"style" : "",
 									"text" : "so... what happens if you send a float into an integer box?"
 								}
@@ -665,7 +902,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "float" ],
-									"patching_rect" : [ 361.0, 310.0, 48.0, 22.0 ],
+									"patching_rect" : [ 556.0, 330.0, 48.0, 22.0 ],
 									"style" : "",
 									"text" : "* 10.11"
 								}
@@ -680,7 +917,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 186.0, 283.0, 50.0, 22.0 ],
+									"patching_rect" : [ 381.0, 303.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -693,7 +930,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 561.0, 203.0, 35.0, 22.0 ],
+									"patching_rect" : [ 756.0, 223.0, 35.0, 22.0 ],
 									"style" : "",
 									"text" : "print"
 								}
@@ -707,7 +944,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 546.0, 157.0, 307.0, 20.0 ],
+									"patching_rect" : [ 741.0, 177.0, 307.0, 20.0 ],
 									"style" : "",
 									"text" : "is \"X\" a valid datatype for this object? How can we tell?"
 								}
@@ -723,7 +960,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 501.0, 203.0, 50.0, 22.0 ],
+									"patching_rect" : [ 696.0, 223.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -737,7 +974,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 501.0, 157.0, 32.5, 22.0 ],
+									"patching_rect" : [ 696.0, 177.0, 32.5, 22.0 ],
 									"style" : "",
 									"text" : "* X"
 								}
@@ -753,7 +990,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 501.0, 113.0, 50.0, 22.0 ],
+									"patching_rect" : [ 696.0, 133.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -766,7 +1003,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 486.0, 83.0, 319.0, 20.0 ],
+									"patching_rect" : [ 681.0, 103.0, 319.0, 20.0 ],
 									"style" : "",
 									"text" : "What's wrong with this?"
 								}
@@ -780,7 +1017,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 126.0, 203.0, 35.0, 22.0 ],
+									"patching_rect" : [ 321.0, 223.0, 35.0, 22.0 ],
 									"style" : "",
 									"text" : "print"
 								}
@@ -795,7 +1032,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 486.0, 38.0, 53.0, 26.0 ],
+									"patching_rect" : [ 681.0, 58.0, 53.0, 26.0 ],
 									"style" : "",
 									"text" : "Try it!"
 								}
@@ -810,7 +1047,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 51.0, 38.0, 211.0, 26.0 ],
+									"patching_rect" : [ 246.0, 58.0, 211.0, 26.0 ],
 									"style" : "",
 									"text" : "Creation Arguments"
 								}
@@ -824,7 +1061,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 149.5, 554.0, 135.0, 20.0 ],
+									"patching_rect" : [ 344.5, 574.0, 135.0, 20.0 ],
 									"style" : "",
 									"text" : "\"hidden state\" problem"
 								}
@@ -839,7 +1076,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 66.0, 510.0, 50.0, 22.0 ],
+									"patching_rect" : [ 261.0, 530.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -853,7 +1090,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 66.0, 597.0, 50.0, 22.0 ],
+									"patching_rect" : [ 261.0, 617.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -867,7 +1104,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "float" ],
-									"patching_rect" : [ 66.0, 554.0, 76.0, 22.0 ],
+									"patching_rect" : [ 261.0, 574.0, 76.0, 22.0 ],
 									"style" : "",
 									"text" : "* 10."
 								}
@@ -882,7 +1119,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 123.0, 510.0, 50.0, 22.0 ],
+									"patching_rect" : [ 318.0, 530.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -896,7 +1133,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 40.0, 454.0, 354.0, 48.0 ],
+									"patching_rect" : [ 235.0, 474.0, 354.0, 48.0 ],
 									"style" : "",
 									"text" : "Beware - changing the operator value in the right inlet will not change the displayed creation agrument. This leads to cases were reading your patch may give you false information."
 								}
@@ -910,7 +1147,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 218.0, 323.0, 82.0, 20.0 ],
+									"patching_rect" : [ 413.0, 343.0, 82.0, 20.0 ],
 									"style" : "",
 									"text" : "floating-point"
 								}
@@ -924,7 +1161,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 98.5, 323.0, 47.0, 20.0 ],
+									"patching_rect" : [ 293.5, 343.0, 47.0, 20.0 ],
 									"style" : "",
 									"text" : "integer"
 								}
@@ -939,7 +1176,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 185.5, 368.0, 50.0, 22.0 ],
+									"patching_rect" : [ 380.5, 388.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -953,7 +1190,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "float" ],
-									"patching_rect" : [ 186.0, 323.0, 32.5, 22.0 ],
+									"patching_rect" : [ 381.0, 343.0, 32.5, 22.0 ],
 									"style" : "",
 									"text" : "/ 2."
 								}
@@ -970,7 +1207,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 66.0, 368.0, 50.0, 22.0 ],
+									"patching_rect" : [ 261.0, 388.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -985,7 +1222,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 66.0, 278.0, 50.0, 22.0 ],
+									"patching_rect" : [ 261.0, 298.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -999,7 +1236,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 66.0, 323.0, 32.5, 22.0 ],
+									"patching_rect" : [ 261.0, 343.0, 32.5, 22.0 ],
 									"style" : "",
 									"text" : "/ 2"
 								}
@@ -1013,7 +1250,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 51.0, 248.0, 315.0, 20.0 ],
+									"patching_rect" : [ 246.0, 268.0, 315.0, 20.0 ],
 									"style" : "",
 									"text" : "These values may also define the way the object works:"
 								}
@@ -1027,7 +1264,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 111.0, 157.0, 150.0, 20.0 ],
+									"patching_rect" : [ 306.0, 177.0, 150.0, 20.0 ],
 									"style" : "",
 									"text" : "\"5\" is a creation argument"
 								}
@@ -1043,7 +1280,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 66.0, 203.0, 50.0, 22.0 ],
+									"patching_rect" : [ 261.0, 223.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -1057,7 +1294,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 66.0, 157.0, 32.5, 22.0 ],
+									"patching_rect" : [ 261.0, 177.0, 32.5, 22.0 ],
 									"style" : "",
 									"text" : "* 5"
 								}
@@ -1073,7 +1310,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 66.0, 113.0, 50.0, 22.0 ],
+									"patching_rect" : [ 261.0, 133.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -1086,7 +1323,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 51.0, 83.0, 315.0, 20.0 ],
+									"patching_rect" : [ 246.0, 103.0, 315.0, 20.0 ],
 									"style" : "",
 									"text" : "Objects allow you to specify default values:"
 								}
@@ -1240,7 +1477,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 350.0, 185.0, 124.0, 22.0 ],
+					"patching_rect" : [ 386.0, 211.0, 124.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1270,7 +1507,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1093.0, 736.0 ],
+						"rect" : [ 0.0, 26.0, 1299.0, 736.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1305,7 +1542,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 135.5, 485.0, 327.0, 141.0 ],
+									"patching_rect" : [ 473.5, 519.0, 327.0, 141.0 ],
 									"style" : "",
 									"text" : "Max allows you to save patches and load them in to other patches (this is called an abstraction, and we'll be covering this later).\n\nBecause of this feature, if you have a patch with the same name as an object (or help patch), Max might load that patch instead of the object. That is bad!\n\nMake sure the names you give to patches when you save are unique and descriptive of the contents."
 								}
@@ -1319,7 +1556,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 111.5, 463.0, 347.0, 20.0 ],
+									"patching_rect" : [ 449.5, 497.0, 347.0, 20.0 ],
 									"style" : "",
 									"text" : "2 - Don't save your patch with the same name as an object"
 								}
@@ -1332,7 +1569,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 135.5, 382.0, 288.0, 60.0 ],
+									"patching_rect" : [ 473.5, 416.0, 306.0, 60.0 ],
 									"style" : "",
 									"text" : "If you want to do experiments with the contents of a help patch, good practice is to create a new patch ⌘-N / Ctrl-N and then copy the contents of the help patch into your new patch."
 								}
@@ -1345,7 +1582,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 135.5, 324.0, 283.0, 47.0 ],
+									"patching_rect" : [ 473.5, 358.0, 283.0, 47.0 ],
 									"style" : "",
 									"text" : "Help patches are for your reference, from the developers of Max. You want to keep them just as they are."
 								}
@@ -1358,7 +1595,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 111.5, 302.0, 324.0, 20.0 ],
+									"patching_rect" : [ 449.5, 336.0, 324.0, 20.0 ],
 									"style" : "",
 									"text" : "1 -  Don't save changes you make to Help Patches!"
 								}
@@ -1370,7 +1607,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 57.0, 270.0, 259.0, 20.0 ],
+									"patching_rect" : [ 395.0, 304.0, 259.0, 20.0 ],
 									"style" : "",
 									"text" : "A few points to remember about help patches:"
 								}
@@ -1384,7 +1621,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 326.5, 168.0, 138.0, 33.0 ],
+									"patching_rect" : [ 664.5, 202.0, 138.0, 33.0 ],
 									"style" : "",
 									"text" : "Option-Click (Mac)\nAlt-Click (Win)"
 								}
@@ -1397,7 +1634,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 160.0, 168.0, 406.0, 20.0 ],
+									"patching_rect" : [ 498.0, 202.0, 406.0, 20.0 ],
 									"style" : "",
 									"text" : "With the patch in Edit Mode,                                   on the cycle~ object.",
 									"textcolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ]
@@ -1410,7 +1647,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 180.0, 135.0, 343.0, 20.0 ],
+									"patching_rect" : [ 518.0, 169.0, 343.0, 20.0 ],
 									"style" : "",
 									"text" : "The first place to check for questions is always the help patch!"
 								}
@@ -1424,7 +1661,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 160.0, 115.0, 265.0, 21.0 ],
+									"patching_rect" : [ 498.0, 149.0, 265.0, 21.0 ],
 									"style" : "",
 									"text" : "\"What does the number mean after cycle~?\""
 								}
@@ -1439,7 +1676,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 37.5, 54.0, 315.0, 34.0 ],
+									"patching_rect" : [ 375.5, 88.0, 315.0, 34.0 ],
 									"style" : "",
 									"text" : "There are many things to remember in Max, so it's important to know where to look to find help."
 								}
@@ -1454,7 +1691,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 37.5, 23.0, 107.0, 26.0 ],
+									"patching_rect" : [ 375.5, 57.0, 107.0, 26.0 ],
 									"style" : "",
 									"text" : "Finding Help"
 								}
@@ -1467,7 +1704,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 57.0, 140.0, 68.0, 22.0 ],
+									"patching_rect" : [ 395.0, 174.0, 68.0, 22.0 ],
 									"style" : "",
 									"text" : "cycle~ 100"
 								}
@@ -1507,7 +1744,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1093.0, 736.0 ],
+						"rect" : [ 0.0, 26.0, 1299.0, 736.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2641,7 +2878,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1093.0, 736.0 ],
+						"rect" : [ 0.0, 26.0, 1299.0, 736.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2678,7 +2915,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 428.0, 614.0, 337.0, 34.0 ],
+									"patching_rect" : [ 641.0, 630.0, 337.0, 34.0 ],
 									"style" : "",
 									"text" : "It's in your best interest not to cheat - write down your hypothesis in a comment box (c) or a message box (m)."
 								}
@@ -2692,7 +2929,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 444.0, 569.0, 35.0, 22.0 ],
+									"patching_rect" : [ 657.0, 585.0, 35.0, 22.0 ],
 									"style" : "",
 									"text" : "print"
 								}
@@ -2707,7 +2944,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 568.0, 524.0, 57.0, 22.0 ],
+									"patching_rect" : [ 781.0, 540.0, 57.0, 22.0 ],
 									"style" : "",
 									"text" : "$3 $3 $3"
 								}
@@ -2722,7 +2959,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 504.0, 524.0, 41.0, 22.0 ],
+									"patching_rect" : [ 717.0, 540.0, 41.0, 22.0 ],
 									"style" : "",
 									"text" : "$2 $2"
 								}
@@ -2737,7 +2974,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 444.0, 524.0, 32.5, 22.0 ],
+									"patching_rect" : [ 657.0, 540.0, 32.5, 22.0 ],
 									"style" : "",
 									"text" : "$1"
 								}
@@ -2752,7 +2989,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 444.0, 479.0, 37.0, 22.0 ],
+									"patching_rect" : [ 657.0, 495.0, 37.0, 22.0 ],
 									"style" : "",
 									"text" : "1 2 3"
 								}
@@ -2766,7 +3003,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 428.0, 434.0, 337.0, 20.0 ],
+									"patching_rect" : [ 641.0, 450.0, 337.0, 20.0 ],
 									"style" : "",
 									"text" : "What is the output of the following construction?"
 								}
@@ -2781,7 +3018,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 428.0, 389.0, 53.0, 26.0 ],
+									"patching_rect" : [ 641.0, 405.0, 53.0, 26.0 ],
 									"style" : "",
 									"text" : "Try it!"
 								}
@@ -2796,7 +3033,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 31.0, 350.0, 327.0, 48.0 ],
+									"patching_rect" : [ 244.0, 366.0, 327.0, 48.0 ],
 									"style" : "",
 									"text" : "This functionality will make more sense as we will explore complex objects in Max. There may be many cases, however, when this is undesirable. "
 								}
@@ -2812,7 +3049,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 414.0, 144.0, 178.0, 78.0 ],
+									"patching_rect" : [ 627.0, 160.0, 178.0, 78.0 ],
 									"style" : "",
 									"text" : "RIGHT TO LEFT\n\nBOTTOM TO TOP"
 								}
@@ -2826,7 +3063,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 181.0, 307.0, 35.0, 22.0 ],
+									"patching_rect" : [ 394.0, 323.0, 35.0, 22.0 ],
 									"style" : "",
 									"text" : "print"
 								}
@@ -2839,7 +3076,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 181.0, 187.0, 20.0, 20.0 ],
+									"patching_rect" : [ 394.0, 203.0, 20.0, 20.0 ],
 									"style" : ""
 								}
 
@@ -2853,7 +3090,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 286.0, 216.0, 32.5, 22.0 ],
+									"patching_rect" : [ 499.0, 232.0, 32.5, 22.0 ],
 									"style" : "",
 									"text" : "top"
 								}
@@ -2868,7 +3105,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 286.0, 246.0, 32.5, 22.0 ],
+									"patching_rect" : [ 499.0, 262.0, 32.5, 22.0 ],
 									"style" : "",
 									"text" : "to"
 								}
@@ -2883,7 +3120,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 286.0, 277.0, 50.0, 22.0 ],
+									"patching_rect" : [ 499.0, 293.0, 50.0, 22.0 ],
 									"style" : "",
 									"text" : "Bottom"
 								}
@@ -2897,7 +3134,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 46.0, 186.0, 35.0, 22.0 ],
+									"patching_rect" : [ 259.0, 202.0, 35.0, 22.0 ],
 									"style" : "",
 									"text" : "print"
 								}
@@ -2912,7 +3149,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 46.0, 140.0, 32.5, 22.0 ],
+									"patching_rect" : [ 259.0, 156.0, 32.5, 22.0 ],
 									"style" : "",
 									"text" : "left"
 								}
@@ -2927,7 +3164,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 106.0, 140.0, 32.5, 22.0 ],
+									"patching_rect" : [ 319.0, 156.0, 32.5, 22.0 ],
 									"style" : "",
 									"text" : "to"
 								}
@@ -2942,7 +3179,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 166.0, 140.0, 39.0, 22.0 ],
+									"patching_rect" : [ 379.0, 156.0, 39.0, 22.0 ],
 									"style" : "",
 									"text" : "Right"
 								}
@@ -2955,7 +3192,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 46.0, 96.0, 20.0, 20.0 ],
+									"patching_rect" : [ 259.0, 112.0, 20.0, 20.0 ],
 									"style" : ""
 								}
 
@@ -2968,7 +3205,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 31.0, 66.0, 317.0, 20.0 ],
+									"patching_rect" : [ 244.0, 82.0, 317.0, 20.0 ],
 									"style" : "",
 									"text" : "The order of operations is defined visually. The order is:"
 								}
@@ -2983,7 +3220,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 31.0, 21.0, 206.0, 30.0 ],
+									"patching_rect" : [ 244.0, 37.0, 206.0, 30.0 ],
 									"style" : "",
 									"text" : "Order of Operations:"
 								}
@@ -3185,7 +3422,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 198.0, 105.0, 1093.0, 736.0 ],
+						"rect" : [ 0.0, 26.0, 1299.0, 736.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3222,8 +3459,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 40.0, 176.0, 57.0, 22.0 ],
-									"presentation_rect" : [ 41.0, 174.0, 0.0, 0.0 ],
+									"patching_rect" : [ 183.0, 176.0, 57.0, 22.0 ],
 									"style" : "",
 									"text" : "$2 $1 $3"
 								}
@@ -3238,8 +3474,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 324.5, 448.0, 157.0, 22.0 ],
-									"presentation_rect" : [ 518.5, 345.0, 0.0, 0.0 ],
+									"patching_rect" : [ 467.5, 448.0, 157.0, 22.0 ],
 									"style" : "",
 									"text" : "$1 $2 $3 $4 $5 $6 $7 $8 $9"
 								}
@@ -3254,8 +3489,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 237.0, 152.0, 278.0, 24.0 ],
-									"presentation_rect" : [ 169.0, 126.0, 0.0, 0.0 ],
+									"patching_rect" : [ 380.0, 152.0, 278.0, 24.0 ],
 									"style" : "",
 									"text" : " You can have other data in the same message"
 								}
@@ -3269,7 +3503,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 188.0, 696.5, 72.0, 20.0 ],
+									"patching_rect" : [ 331.0, 696.5, 72.0, 20.0 ],
 									"style" : "",
 									"text" : "(multislider)"
 								}
@@ -3284,7 +3518,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 596.0, 430.0, 343.0, 34.0 ],
+									"patching_rect" : [ 739.0, 430.0, 343.0, 34.0 ],
 									"style" : "",
 									"text" : "Make sure you're using the correct inlets & outlets of the messages in your construction above!"
 								}
@@ -3299,7 +3533,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 731.0, 619.0, 134.0, 24.0 ],
+									"patching_rect" : [ 874.0, 619.0, 134.0, 24.0 ],
 									"style" : "",
 									"text" : "fill out this message"
 								}
@@ -3314,7 +3548,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 596.0, 622.0, 76.0, 22.0 ],
+									"patching_rect" : [ 739.0, 622.0, 76.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -3328,7 +3562,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 596.0, 710.0, 405.0, 22.0 ],
+									"patching_rect" : [ 739.0, 710.0, 405.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -3342,7 +3576,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 596.0, 665.0, 278.0, 22.0 ],
+									"patching_rect" : [ 739.0, 665.0, 278.0, 22.0 ],
 									"style" : "",
 									"text" : "My name is $2 and the name of my neighbor is $1"
 								}
@@ -3357,7 +3591,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 596.0, 562.0, 337.0, 34.0 ],
+									"patching_rect" : [ 739.0, 562.0, 337.0, 34.0 ],
 									"style" : "",
 									"text" : "Create a message that will make the output of the following make sense:"
 								}
@@ -3372,7 +3606,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 596.0, 511.0, 53.0, 26.0 ],
+									"patching_rect" : [ 739.0, 511.0, 53.0, 26.0 ],
 									"style" : "",
 									"text" : "Try it!"
 								}
@@ -3387,7 +3621,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 596.0, 201.0, 375.0, 62.0 ],
+									"patching_rect" : [ 739.0, 201.0, 375.0, 62.0 ],
 									"style" : "",
 									"text" : "Create a message box containing your full name (or any other data, if you would like - at least three elements). Use another message box with $ substitution elements to rearrange (format) the data in a different order."
 								}
@@ -3402,7 +3636,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 596.0, 156.0, 53.0, 26.0 ],
+									"patching_rect" : [ 739.0, 156.0, 53.0, 26.0 ],
 									"style" : "",
 									"text" : "Try it!"
 								}
@@ -3417,7 +3651,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 139.0, 645.0, 50.0, 22.0 ],
+									"patching_rect" : [ 282.0, 645.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -3431,7 +3665,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 213.5, 600.0, 331.0, 76.0 ],
+									"patching_rect" : [ 356.5, 600.0, 331.0, 76.0 ],
 									"style" : "",
 									"text" : "In this case, the second value that is required by the \"line\" object is constant, but any value n we would provide to the \"$1 1000\" message would become \"n 1000\"\n\n(We will cover the details of how [line] works later.)"
 								}
@@ -3446,7 +3680,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 121.5, 552.0, 85.0, 24.0 ],
+									"patching_rect" : [ 264.5, 552.0, 85.0, 24.0 ],
 									"style" : "",
 									"text" : "click these"
 								}
@@ -3460,7 +3694,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 59.0, 690.0, 129.0, 33.0 ],
+									"patching_rect" : [ 202.0, 690.0, 129.0, 33.0 ],
 									"setminmax" : [ 0.0, 1.0 ],
 									"setstyle" : 3,
 									"style" : ""
@@ -3476,7 +3710,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 59.0, 645.0, 59.0, 22.0 ],
+									"patching_rect" : [ 202.0, 645.0, 59.0, 22.0 ],
 									"style" : "",
 									"text" : "line 0. 20"
 								}
@@ -3491,7 +3725,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 59.0, 600.0, 54.0, 22.0 ],
+									"patching_rect" : [ 202.0, 600.0, 54.0, 22.0 ],
 									"style" : "",
 									"text" : "$1 1000"
 								}
@@ -3506,7 +3740,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 89.0, 555.0, 32.5, 22.0 ],
+									"patching_rect" : [ 232.0, 555.0, 32.5, 22.0 ],
 									"style" : "",
 									"text" : "1."
 								}
@@ -3521,7 +3755,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 29.0, 555.0, 32.5, 22.0 ],
+									"patching_rect" : [ 172.0, 555.0, 32.5, 22.0 ],
 									"style" : "",
 									"text" : "0."
 								}
@@ -3536,7 +3770,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 13.0, 495.0, 338.0, 48.0 ],
+									"patching_rect" : [ 156.0, 495.0, 338.0, 48.0 ],
 									"style" : "",
 									"text" : "The $ arguments in the message allow us to trigger complex behaviors from single value inputs. Consider the following example, which uses $1 substitution:"
 								}
@@ -3551,7 +3785,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 150.0, 152.0, 80.0, 22.0 ],
+									"patching_rect" : [ 293.0, 152.0, 80.0, 22.0 ],
 									"style" : "",
 									"text" : "frequency $1"
 								}
@@ -3566,7 +3800,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 102.0, 152.0, 41.0, 22.0 ],
+									"patching_rect" : [ 245.0, 152.0, 41.0, 22.0 ],
 									"style" : "",
 									"text" : "$2 $4"
 								}
@@ -3582,7 +3816,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 18.0, 402.0, 541.0, 64.0 ],
+									"patching_rect" : [ 161.0, 402.0, 541.0, 64.0 ],
 									"style" : "",
 									"text" : "A $n argument in a message is substituted with the nth member of a list sent to the left inlet of the message.  You can use up to changeable arguments for substitution",
 									"textcolor" : [ 0.0, 0.0, 0.501961, 1.0 ]
@@ -3598,7 +3832,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 324.5, 345.0, 109.0, 22.0 ],
+									"patching_rect" : [ 467.5, 345.0, 109.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -3612,7 +3846,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 209.5, 345.0, 109.0, 22.0 ],
+									"patching_rect" : [ 352.5, 345.0, 109.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -3626,7 +3860,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 85.0, 345.0, 120.0, 22.0 ],
+									"patching_rect" : [ 228.0, 345.0, 120.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -3640,7 +3874,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 414.5, 309.0, 54.0, 22.0 ],
+									"patching_rect" : [ 557.5, 309.0, 54.0, 22.0 ],
 									"style" : "",
 									"text" : "$1 9001"
 								}
@@ -3655,7 +3889,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 299.5, 309.0, 57.0, 22.0 ],
+									"patching_rect" : [ 442.5, 309.0, 57.0, 22.0 ],
 									"style" : "",
 									"text" : "$2 $3 $1"
 								}
@@ -3670,7 +3904,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 186.0, 309.0, 93.0, 22.0 ],
+									"patching_rect" : [ 329.0, 309.0, 93.0, 22.0 ],
 									"style" : "",
 									"text" : "$1 blah blah $3"
 								}
@@ -3685,7 +3919,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 186.0, 252.0, 109.0, 22.0 ],
+									"patching_rect" : [ 329.0, 252.0, 109.0, 22.0 ],
 									"style" : "",
 									"text" : "First Second Third"
 								}
@@ -3700,7 +3934,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 170.5, 208.0, 315.0, 34.0 ],
+									"patching_rect" : [ 313.5, 208.0, 315.0, 34.0 ],
 									"style" : "",
 									"text" : "These numbers correspond to elements of an incoming list. Consider a list with descriptive members:"
 								}
@@ -3715,7 +3949,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 40.0, 152.0, 57.0, 22.0 ],
+									"patching_rect" : [ 183.0, 152.0, 57.0, 22.0 ],
 									"style" : "",
 									"text" : "$1 $2 $3"
 								}
@@ -3730,7 +3964,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 29.0, 80.0, 694.0, 48.0 ],
+									"patching_rect" : [ 172.0, 80.0, 694.0, 48.0 ],
 									"style" : "",
 									"text" : "Dollar sign arguments (e.g. $1) specify placeholders that allow input list elements to occupy.  This process is called \"selection\".  The $ argument is replaced by the input element (whether it be the first [$1] second [$2] etc), and the formatted list is output.  The order is determined by the order you format the message with."
 								}
@@ -3745,7 +3979,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 13.0, 6.0, 117.0, 26.0 ],
+									"patching_rect" : [ 156.0, 6.0, 117.0, 26.0 ],
 									"style" : "",
 									"text" : "$-substitution"
 								}
@@ -3759,7 +3993,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 29.0, 48.0, 708.0, 20.0 ],
+									"patching_rect" : [ 172.0, 48.0, 708.0, 20.0 ],
 									"style" : "",
 									"text" : "One of the most important features of messages comes from specifying changeable arguments that can be occupied by variables."
 								}
@@ -3916,7 +4150,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1093.0, 736.0 ],
+						"rect" : [ 0.0, 26.0, 1299.0, 736.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3952,7 +4186,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 32.0, 218.0, 35.0, 22.0 ],
+									"patching_rect" : [ 23.0, 213.0, 35.0, 22.0 ],
 									"style" : "",
 									"text" : "print"
 								}
@@ -3967,7 +4201,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 459.0, 544.0, 53.0, 26.0 ],
+									"patching_rect" : [ 450.0, 539.0, 53.0, 26.0 ],
 									"style" : "",
 									"text" : "Try it!"
 								}
@@ -3982,7 +4216,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 459.0, 587.0, 319.0, 48.0 ],
+									"patching_rect" : [ 450.0, 582.0, 319.0, 48.0 ],
 									"style" : "",
 									"text" : "Since we know that a message box will display whatever is sent to its right inlet, find out what sort of a command does a button (b) object send? Toggle (t)?"
 								}
@@ -3997,7 +4231,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 128.0, 677.0, 225.0, 62.0 ],
+									"patching_rect" : [ 119.0, 672.0, 225.0, 62.0 ],
 									"style" : "",
 									"text" : "Although this doesn't quite fix the hidden state issue, it stresses the fact that the instantiation argument \"5\" is overwritten."
 								}
@@ -4013,7 +4247,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 32.0, 717.0, 50.0, 22.0 ],
+									"patching_rect" : [ 23.0, 712.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -4028,7 +4262,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 95.5, 632.0, 50.0, 22.0 ],
+									"patching_rect" : [ 86.5, 627.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -4043,7 +4277,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 32.0, 632.0, 50.0, 22.0 ],
+									"patching_rect" : [ 23.0, 627.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -4057,7 +4291,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 32.0, 677.0, 32.5, 22.0 ],
+									"patching_rect" : [ 23.0, 672.0, 32.5, 22.0 ],
 									"style" : "",
 									"text" : "+ 5"
 								}
@@ -4072,7 +4306,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 70.5, 677.0, 44.0, 22.0 ],
+									"patching_rect" : [ 61.5, 672.0, 44.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -4086,7 +4320,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 95.0, 531.0, 252.0, 90.0 ],
+									"patching_rect" : [ 86.0, 526.0, 252.0, 90.0 ],
 									"style" : "",
 									"text" : "the right inlet of the message box sets the message without causing output;\n\nthis may be quite useful for monitoring data, and is often more convenient than using the \"print\" object"
 								}
@@ -4101,7 +4335,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 32.0, 576.0, 50.0, 22.0 ],
+									"patching_rect" : [ 23.0, 571.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -4116,7 +4350,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 32.0, 531.0, 50.0, 22.0 ],
+									"patching_rect" : [ 23.0, 526.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -4130,7 +4364,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 32.0, 497.0, 135.0, 26.0 ],
+									"patching_rect" : [ 23.0, 492.0, 135.0, 26.0 ],
 									"style" : "",
 									"text" : "Visual Feedback"
 								}
@@ -4145,7 +4379,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 459.0, 59.0, 53.0, 26.0 ],
+									"patching_rect" : [ 450.0, 54.0, 53.0, 26.0 ],
 									"style" : "",
 									"text" : "Try it!"
 								}
@@ -4159,7 +4393,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 459.0, 96.0, 319.0, 20.0 ],
+									"patching_rect" : [ 450.0, 91.0, 319.0, 20.0 ],
 									"style" : "",
 									"text" : "Create a message box (m) and fill it with some data:"
 								}
@@ -4173,7 +4407,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 32.0, 90.0, 315.0, 20.0 ],
+									"patching_rect" : [ 23.0, 85.0, 315.0, 20.0 ],
 									"style" : "",
 									"text" : "A message box can be used to store lists of data:"
 								}
@@ -4188,7 +4422,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 157.0, 190.0, 205.0, 34.0 ],
+									"patching_rect" : [ 148.0, 185.0, 205.0, 34.0 ],
 									"style" : "",
 									"text" : "commas separate different lists in the same message box"
 								}
@@ -4202,7 +4436,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 157.0, 157.0, 207.0, 20.0 ],
+									"patching_rect" : [ 148.0, 152.0, 207.0, 20.0 ],
 									"style" : "",
 									"text" : "may contain different types"
 								}
@@ -4216,7 +4450,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 157.0, 124.0, 207.0, 20.0 ],
+									"patching_rect" : [ 148.0, 119.0, 207.0, 20.0 ],
 									"style" : "",
 									"text" : "different values separated by spaces"
 								}
@@ -4231,7 +4465,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 63.0, 190.0, 67.0, 22.0 ],
+									"patching_rect" : [ 54.0, 185.0, 67.0, 22.0 ],
 									"style" : "",
 									"text" : "0, 1. 1000."
 								}
@@ -4246,7 +4480,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 55.0, 157.0, 89.0, 22.0 ],
+									"patching_rect" : [ 46.0, 152.0, 89.0, 22.0 ],
 									"style" : "",
 									"text" : "1 2. 3.3 4 bass"
 								}
@@ -4261,7 +4495,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 32.0, 124.0, 57.0, 22.0 ],
+									"patching_rect" : [ 23.0, 119.0, 57.0, 22.0 ],
 									"style" : "",
 									"text" : "1 2 3 4 5"
 								}
@@ -4276,7 +4510,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 32.0, 59.0, 46.0, 26.0 ],
+									"patching_rect" : [ 23.0, 54.0, 46.0, 26.0 ],
 									"style" : "",
 									"text" : "Lists"
 								}
@@ -4291,7 +4525,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 32.0, 18.0, 256.0, 30.0 ],
+									"patching_rect" : [ 23.0, 13.0, 256.0, 30.0 ],
 									"style" : "",
 									"text" : "Messages:"
 								}
@@ -4305,7 +4539,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 182.0, 411.0, 170.0, 20.0 ],
+									"patching_rect" : [ 173.0, 406.0, 170.0, 20.0 ],
 									"style" : "",
 									"text" : "a queue of lists (use commas)"
 								}
@@ -4320,7 +4554,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 77.0, 411.0, 84.0, 22.0 ],
+									"patching_rect" : [ 68.0, 406.0, 84.0, 22.0 ],
 									"style" : "",
 									"text" : "0 1, 2 9, 3 4 5"
 								}
@@ -4334,7 +4568,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 32.0, 441.0, 35.0, 22.0 ],
+									"patching_rect" : [ 23.0, 436.0, 35.0, 22.0 ],
 									"style" : "",
 									"text" : "print"
 								}
@@ -4348,7 +4582,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 182.0, 383.0, 109.0, 20.0 ],
+									"patching_rect" : [ 173.0, 378.0, 109.0, 20.0 ],
 									"style" : "",
 									"text" : "lists of mixed data"
 								}
@@ -4363,7 +4597,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 63.0, 383.0, 102.0, 22.0 ],
+									"patching_rect" : [ 54.0, 378.0, 102.0, 22.0 ],
 									"style" : "",
 									"text" : "freq 440 amp 0.8"
 								}
@@ -4377,7 +4611,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 182.0, 354.0, 32.0, 20.0 ],
+									"patching_rect" : [ 173.0, 349.0, 32.0, 20.0 ],
 									"style" : "",
 									"text" : "lists"
 								}
@@ -4392,7 +4626,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 47.0, 354.0, 34.0, 22.0 ],
+									"patching_rect" : [ 38.0, 349.0, 34.0, 22.0 ],
 									"style" : "",
 									"text" : "440."
 								}
@@ -4406,7 +4640,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 182.0, 324.0, 136.0, 20.0 ],
+									"patching_rect" : [ 173.0, 319.0, 136.0, 20.0 ],
 									"style" : "",
 									"text" : "words (symbols) & data"
 								}
@@ -4421,7 +4655,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 32.0, 324.0, 64.0, 22.0 ],
+									"patching_rect" : [ 23.0, 319.0, 64.0, 22.0 ],
 									"style" : "",
 									"text" : "frequency"
 								}
@@ -4436,7 +4670,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 32.0, 266.0, 86.0, 26.0 ],
+									"patching_rect" : [ 23.0, 261.0, 86.0, 26.0 ],
 									"style" : "",
 									"text" : "Container"
 								}
@@ -4450,7 +4684,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 32.0, 294.0, 315.0, 20.0 ],
+									"patching_rect" : [ 23.0, 289.0, 315.0, 20.0 ],
 									"style" : "",
 									"text" : "A message box has many other uses:"
 								}
@@ -4598,7 +4832,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1093.0, 736.0 ],
+						"rect" : [ 0.0, 26.0, 1299.0, 736.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -4701,7 +4935,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 552.0, 629.0, 53.0, 26.0 ],
+									"patching_rect" : [ 793.0, 623.0, 53.0, 26.0 ],
 									"style" : "",
 									"text" : "Try it!"
 								}
@@ -4881,7 +5115,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 552.0, 663.0, 342.0, 62.0 ],
+									"patching_rect" : [ 793.0, 657.0, 342.0, 62.0 ],
 									"style" : "",
 									"text" : "To get the data out of the [float] object on the left, connect a button (b) to its hot inlet and activate the button - extra points if you remember how to interact with GUI objects from an unlocked patch!"
 								}
@@ -5115,7 +5349,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 318.0, 159.0, 96.0, 22.0 ],
+					"patching_rect" : [ 362.0, 182.0, 96.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -5145,7 +5379,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1093.0, 736.0 ],
+						"rect" : [ 0.0, 26.0, 1299.0, 736.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -5362,7 +5596,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 543.0, 326.0, 337.0, 34.0 ],
+									"patching_rect" : [ 744.0, 395.0, 337.0, 34.0 ],
 									"style" : "",
 									"text" : "Once you're done, LOCK YOUR PATCH, and click on the message."
 								}
@@ -5377,7 +5611,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 543.0, 258.0, 377.0, 62.0 ],
+									"patching_rect" : [ 744.0, 327.0, 377.0, 62.0 ],
 									"style" : "",
 									"text" : "Create a message box, enter a message of your choosing. First, unlock your patch.  Then, create an object box, type in \"print\" (without the quotation marks). Connect the outlet of the message to the inlet of the print object."
 								}
@@ -5392,7 +5626,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 543.0, 225.0, 53.0, 26.0 ],
+									"patching_rect" : [ 744.0, 294.0, 53.0, 26.0 ],
 									"style" : "",
 									"text" : "Try it!"
 								}
@@ -5616,7 +5850,7 @@
 					}
 ,
 					"style" : "",
-					"text" : "p \"Connecting Things\""
+					"text" : "p Connections"
 				}
 
 			}
@@ -5636,7 +5870,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1093.0, 736.0 ],
+						"rect" : [ 0.0, 26.0, 1299.0, 736.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -6060,7 +6294,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 619.0, 81.0, 338.0, 20.0 ],
+					"patching_rect" : [ 795.0, 98.0, 338.0, 20.0 ],
 					"style" : "",
 					"text" : "maybe tell students to save the patch to their personal folder?",
 					"textcolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ]
@@ -6073,7 +6307,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 619.0, 59.0, 209.0, 20.0 ],
+					"patching_rect" : [ 795.0, 76.0, 209.0, 20.0 ],
 					"style" : "",
 					"text" : "maybe make one page an edit page?",
 					"textcolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ]
@@ -6126,7 +6360,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1093.0, 736.0 ],
+						"rect" : [ 70.0, 123.0, 1299.0, 736.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -6163,7 +6397,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 41.0, 399.5, 149.0, 26.0 ],
+									"patching_rect" : [ 159.0, 416.5, 149.0, 26.0 ],
 									"style" : "",
 									"text" : "Table of Contents:"
 								}
@@ -6177,7 +6411,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 41.0, 332.0, 435.0, 60.0 ],
+									"patching_rect" : [ 159.0, 349.0, 435.0, 60.0 ],
 									"style" : "",
 									"text" : "At the top of this window you should see a row of tabs -- \nclicking on a tab brings the corresponding view into focus. Each tab is a chapter – or module – focusing on a particular topic.  The topics are arraged in order from left to right."
 								}
@@ -6295,7 +6529,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 572.0, 453.0, 19.0, 22.0 ],
+									"patching_rect" : [ 690.0, 470.0, 19.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -6321,7 +6555,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 593.0, 453.0, 293.394531, 21.40625 ],
+									"patching_rect" : [ 711.0, 470.0, 293.394531, 21.40625 ],
 									"presentation_rect" : [ 560.0, 467.0, 293.394531, 21.40625 ],
 									"style" : "",
 									"text" : "Click here to learn more about the original Max...",
@@ -6444,7 +6678,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 16.0, 288.59375, 19.0, 22.0 ],
+									"patching_rect" : [ 134.0, 305.59375, 19.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -6470,7 +6704,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 37.0, 288.59375, 264.056641, 21.40625 ],
+									"patching_rect" : [ 155.0, 305.59375, 264.056641, 21.40625 ],
 									"presentation_rect" : [ 0.0, 0.0, 264.056641, 21.40625 ],
 									"style" : "",
 									"text" : "Click here to learn more about Max online...",
@@ -6488,7 +6722,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 507.0, 427.5, 427.0, 20.0 ],
+									"patching_rect" : [ 625.0, 444.5, 427.0, 20.0 ],
 									"style" : "",
 									"text" : "Max was named after computer music pioneer Max Matthews (pictured above)"
 								}
@@ -6505,7 +6739,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_matrix" ],
-									"patching_rect" : [ 478.0, 116.0, 508.666656, 305.199982 ],
+									"patching_rect" : [ 596.0, 133.0, 508.666656, 305.199982 ],
 									"pic" : "/Users/r/Downloads/Max-Mathews-007.jpg"
 								}
 
@@ -6518,7 +6752,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 41.0, 427.5, 210.0, 163.0 ],
+									"patching_rect" : [ 159.0, 444.5, 210.0, 163.0 ],
 									"style" : "",
 									"text" : "0) Max Tour\n1) Hello Max!\n2) Conneting Things\n3) Max Objects\n4) Object Arguments\n5) Finding Help\n6) Meet Message\n7) $ Substitution\n8) Order of Operations\n9) Controlling Order"
 								}
@@ -6532,7 +6766,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 41.0, 116.0, 441.0, 167.0 ],
+									"patching_rect" : [ 159.0, 133.0, 441.0, 167.0 ],
 									"style" : "",
 									"text" : "Welcome to Max! In this introduction, we will be walking through some of the fundamentals of working in Max.\n\nMax (a.k.a. Max/MSP) is a powerful and extremely flexible piece of software that has remained one of the most popular platforms in computer music since its creation in the late 1980s.\n\nIn Music 158A we will be introducing a refined approach to working in Max based on many years of research at UC Berkeley's Center for New Music and Audio Technologies (CNMAT).\n\n... ok, let's get started!"
 								}
@@ -6547,7 +6781,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 41.0, 82.0, 198.0, 30.0 ],
+									"patching_rect" : [ 159.0, 99.0, 198.0, 30.0 ],
 									"style" : "",
 									"text" : "Introduction to Max"
 								}
@@ -6562,7 +6796,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 41.0, 54.0, 98.0, 26.0 ],
+									"patching_rect" : [ 159.0, 71.0, 98.0, 26.0 ],
 									"style" : "",
 									"text" : "Music 158A"
 								}
@@ -6619,7 +6853,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 47.0, 211.0, 769.0, 400.0 ],
+					"patching_rect" : [ 43.0, 262.0, 769.0, 400.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -6631,6 +6865,10 @@
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/course/modules/instructors",
 				"type" : "JSON",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "o.compose.mxo",
+				"type" : "iLaX"
 			}
  ],
 		"autosave" : 0,
