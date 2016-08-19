@@ -5,7 +5,7 @@
 			"major" : 7,
 			"minor" : 2,
 			"revision" : 4,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
@@ -50,7 +50,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 4,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -551,7 +551,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 4,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -1266,7 +1266,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 4,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -1503,7 +1503,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 4,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -2637,7 +2637,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 4,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -3181,11 +3181,11 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 4,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1093.0, 736.0 ],
+						"rect" : [ 198.0, 105.0, 1093.0, 736.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3217,6 +3217,54 @@
 								"box" : 								{
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
+									"id" : "obj-3",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 40.0, 176.0, 57.0, 22.0 ],
+									"presentation_rect" : [ 41.0, 174.0, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "$2 $1 $3"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-2",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 324.5, 448.0, 157.0, 22.0 ],
+									"presentation_rect" : [ 518.5, 345.0, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "$1 $2 $3 $4 $5 $6 $7 $8 $9"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bubble" : 1,
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-1",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 237.0, 152.0, 278.0, 24.0 ],
+									"presentation_rect" : [ 169.0, 126.0, 0.0, 0.0 ],
+									"style" : "",
+									"text" : " You can have other data in the same message"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
 									"id" : "obj-18",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -3236,9 +3284,9 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 596.0, 430.0, 337.0, 34.0 ],
+									"patching_rect" : [ 596.0, 430.0, 343.0, 34.0 ],
 									"style" : "",
-									"text" : "Make sure you're using the right inlets & outlets of the messages in your construction above!"
+									"text" : "Make sure you're using the correct inlets & outlets of the messages in your construction above!"
 								}
 
 							}
@@ -3503,7 +3551,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 224.0, 126.0, 80.0, 22.0 ],
+									"patching_rect" : [ 150.0, 152.0, 80.0, 22.0 ],
 									"style" : "",
 									"text" : "frequency $1"
 								}
@@ -3518,7 +3566,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 149.0, 126.0, 41.0, 22.0 ],
+									"patching_rect" : [ 102.0, 152.0, 41.0, 22.0 ],
 									"style" : "",
 									"text" : "$2 $4"
 								}
@@ -3528,15 +3576,15 @@
 								"box" : 								{
 									"fontface" : 1,
 									"fontname" : "Helvetica Neue",
-									"fontsize" : 20.0,
+									"fontsize" : 16.0,
 									"id" : "obj-148",
-									"linecount" : 2,
+									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 13.0, 420.0, 552.0, 54.0 ],
+									"patching_rect" : [ 18.0, 402.0, 541.0, 64.0 ],
 									"style" : "",
-									"text" : "A $n argument in a message is substituted with the nth member of a list sent to the left inlet of the message.",
+									"text" : "A $n argument in a message is substituted with the nth member of a list sent to the left inlet of the message.  You can use up to changeable arguments for substitution",
 									"textcolor" : [ 0.0, 0.0, 0.501961, 1.0 ]
 								}
 
@@ -3652,7 +3700,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 93.5, 200.0, 315.0, 34.0 ],
+									"patching_rect" : [ 170.5, 208.0, 315.0, 34.0 ],
 									"style" : "",
 									"text" : "These numbers correspond to elements of an incoming list. Consider a list with descriptive members:"
 								}
@@ -3667,7 +3715,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 59.0, 126.0, 57.0, 22.0 ],
+									"patching_rect" : [ 40.0, 152.0, 57.0, 22.0 ],
 									"style" : "",
 									"text" : "$1 $2 $3"
 								}
@@ -3678,13 +3726,13 @@
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-157",
-									"linecount" : 2,
+									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 29.0, 83.0, 315.0, 34.0 ],
+									"patching_rect" : [ 29.0, 80.0, 694.0, 48.0 ],
 									"style" : "",
-									"text" : "Flags consist of a dollar sign followed by a whole number (you can have other data in the same message):"
+									"text" : "Dollar sign arguments (e.g. $1) specify placeholders that allow input list elements to occupy.  This process is called \"selection\".  The $ argument is replaced by the input element (whether it be the first [$1] second [$2] etc), and the formatted list is output.  The order is determined by the order you format the message with."
 								}
 
 							}
@@ -3864,7 +3912,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 4,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -4546,7 +4594,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 4,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -5093,7 +5141,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 4,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -5584,11 +5632,11 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 4,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 198.0, 105.0, 1093.0, 736.0 ],
+						"rect" : [ 0.0, 26.0, 1093.0, 736.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -5645,7 +5693,7 @@
 											"major" : 7,
 											"minor" : 2,
 											"revision" : 4,
-											"architecture" : "x64",
+											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
@@ -5768,8 +5816,8 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 237.0, 529.59375, 258.249985, 21.40625 ],
-									"presentation_rect" : [ 244.595703, 521.59375, 258.249985, 21.40625 ],
+									"patching_rect" : [ 237.0, 529.59375, 258.25, 21.40625 ],
+									"presentation_rect" : [ 244.595703, 521.59375, 258.25, 21.40625 ],
 									"style" : "",
 									"text" : "Click here to open the Cycling '74 website.",
 									"texton" : "Click here to learn more about how hearing works...",
@@ -5788,7 +5836,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_matrix" ],
-									"patching_rect" : [ 494.0, 57.0, 580.714294, 390.240006 ],
+									"patching_rect" : [ 494.0, 57.0, 580.714294, 580.714294 ],
 									"pic" : "/Users/r/Downloads/ae2.jpg"
 								}
 
@@ -5808,7 +5856,7 @@
 											"major" : 7,
 											"minor" : 2,
 											"revision" : 4,
-											"architecture" : "x64",
+											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
@@ -6074,7 +6122,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 4,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -6150,7 +6198,7 @@
 											"major" : 7,
 											"minor" : 2,
 											"revision" : 4,
-											"architecture" : "x64",
+											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
@@ -6299,7 +6347,7 @@
 											"major" : 7,
 											"minor" : 2,
 											"revision" : 4,
-											"architecture" : "x64",
+											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
@@ -6457,7 +6505,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_matrix" ],
-									"patching_rect" : [ 478.0, 116.0, 508.666656, 305.199994 ],
+									"patching_rect" : [ 478.0, 116.0, 508.666656, 305.199982 ],
 									"pic" : "/Users/r/Downloads/Max-Mathews-007.jpg"
 								}
 
@@ -6582,18 +6630,6 @@
 				"name" : "adding_modules.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/course/modules/instructors",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Max-Mathews-007.jpg",
-				"bootpath" : "~/Downloads",
-				"type" : "JPEG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ae2.jpg",
-				"bootpath" : "~/Downloads",
-				"type" : "JPEG",
 				"implicit" : 1
 			}
  ],
