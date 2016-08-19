@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 50.0, 90.0, 1088.0, 787.0 ],
+		"rect" : [ 198.0, 79.0, 1075.0, 769.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -36,10 +36,11 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "Default Max 7",
-		"showontab" : 1,
+		"showrootpatcherontab" : 0,
+		"showontab" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-4",
+					"id" : "obj-7",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
@@ -53,7 +54,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 50.0, 116.0, 1088.0, 761.0 ],
+						"rect" : [ 0.0, 26.0, 1075.0, 743.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -82,6 +83,595 @@
 						"subpatcher_template" : "Default Max 7",
 						"showontab" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-1",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 36.0, 89.0, 397.0, 48.0 ],
+									"style" : "",
+									"text" : "There are two modes involved in the user experience of patcher design.\n1. patching mode (edit / unlocked).  In this mode, you are programming.\n2. usage mode (locked).  In this mode, you are using your program."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-4",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 36.0, 42.0, 389.0, 34.0 ],
+									"style" : "",
+									"text" : "Max's main window is called a \"patch\", which can be edited and used to create sounds and control pretty much anything you can imagine."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bubble" : 1,
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-44",
+									"linecount" : 4,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 385.0, 639.147095, 345.0, 66.0 ],
+									"style" : "",
+									"text" : "Lock the patch, and use your mouse to interact with the GUI objects... You can also interact with objects from an unlocked patch, by holding down ⌘ (or Ctrl on Windows) while clicking on a GUI object."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 3,
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 16.0,
+									"id" : "obj-17",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 36.0, 583.0, 107.0, 26.0 ],
+									"style" : "",
+									"text" : "GUI Objects:"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 3,
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 16.0,
+									"id" : "obj-14",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 36.0, 471.0, 98.0, 26.0 ],
+									"style" : "",
+									"text" : "Max / MSP:"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 3,
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 16.0,
+									"id" : "obj-13",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 36.0, 326.0, 65.0, 26.0 ],
+									"style" : "",
+									"text" : "Basics:"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-60",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 186.0, 702.441162, 165.0, 20.0 ],
+									"style" : "",
+									"text" : "Message (m)"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-59",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 186.0, 674.294128, 165.0, 20.0 ],
+									"style" : "",
+									"text" : "Floating-point number box (f)"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-58",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 186.0, 646.147095, 165.0, 20.0 ],
+									"style" : "",
+									"text" : "Integer number box (i)"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-57",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 186.0, 618.0, 165.0, 20.0 ],
+									"style" : "",
+									"text" : "Button (aka \"bang\") (b)"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-56",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 36.0, 702.441162, 36.0, 22.0 ],
+									"style" : "",
+									"text" : "hello"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"format" : 6,
+									"id" : "obj-54",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 36.0, 674.294128, 50.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-52",
+									"maxclass" : "number",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 36.0, 646.147095, 50.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-49",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 36.0, 618.0, 20.0, 20.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-43",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 36.0, 536.0, 46.0, 22.0 ],
+									"style" : "",
+									"text" : "cycle~"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-42",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 36.0, 507.0, 38.0, 22.0 ],
+									"style" : "",
+									"text" : "cycle"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-32",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 186.0, 430.420563, 165.0, 20.0 ],
+									"style" : "",
+									"text" : "comment box (c)"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 1.0, 1.0, 0.4, 0.0 ],
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-31",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 36.0, 430.420563, 120.0, 20.0 ],
+									"style" : "",
+									"text" : "(comment)"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-29",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 186.0, 398.710266, 165.0, 20.0 ],
+									"style" : "",
+									"text" : "message box (m)"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-21",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 36.0, 398.710266, 50.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-15",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 36.0, 367.0, 100.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-16",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 186.0, 536.0, 214.0, 20.0 ],
+									"style" : "",
+									"text" : "MSP (audio) object - note the tilde! (~)"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-7",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 186.0, 507.0, 165.0, 20.0 ],
+									"style" : "",
+									"text" : "Max object"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-26",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 186.0, 367.0, 165.0, 20.0 ],
+									"style" : "",
+									"text" : "object box (n)"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 1,
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-8",
+									"linecount" : 6,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 469.5, 372.710266, 25.0, 92.0 ],
+									"style" : "",
+									"text" : "n\nm\ni\nf\nb\nt"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-18",
+									"linecount" : 7,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 469.5, 360.710266, 332.0, 104.0 ],
+									"style" : "",
+									"text" : "For this lesson, use the following keyboard shortcuts:\n      to create a new object\n      to create a new message\n      to create a number box for an integer\n      to create a number box for a floating-point number\n      to create a button\n      to create a toggle"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"data" : [ 451, "png", "IBkSG0fBZn....PCIgDQRA...PA....EHX....PiI1QC....DLmPIQEBHf.B7g.YHB..AnWRDEDU3zXqR9qhBCDDG9aioHFhfchVa50RwTXinDwBK70vm.KrPrvNeYBJArPDrSDqErwZahHBAydEGl6fM4NOO+UM6ry7M+gAdyR7vnc61xfffWBRtb4X974B.z.v008kgAPPP.tttxXf+GXeGJ.5+VflllToREDBA62u+WK9OBzwwggCGx4ymIJJhBEJvzoSw22+uCrXwhLZzHlLYBKWtD.pUqFiGOlCGNvwiGSLOsz.1qWO1tcaLL.1rYCqVsh986mZGlJvFMZftt5.nooQ850+YfRoLwOSxuTJQHDoFapc3qJA.NNNxGUnZ0pLXv.JUpDgggJmIVVVXXXvoSmX1rYra2tOAIDrd8ZgxRpa2tXaaG+Ne97I1I111zoSmXfOjxHqo87agLYxn36suCU.FEE8zIe+9cEeJ6POOOJWtLFFFeFftNYylE.tc6Fgggw1dddJ.E.zpUK4kKWd5NKIYYYwhEK95BsYylxqWu9RvLMMw22W8Z+cnO.CRpX52jWpfC....PRE4DQtJDXBB" ],
+									"embed" : 1,
+									"id" : "obj-19",
+									"maxclass" : "fpic",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "jit_matrix" ],
+									"patching_rect" : [ 132.0, 207.0, 20.0, 20.0 ],
+									"pic" : "lock2.png"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"data" : [ 452, "png", "IBkSG0fBZn....PCIgDQRA...PA....EHX....PiI1QC....DLmPIQEBHf.B7g.YHB..ArWRDEDU3zXqT1ipBCDEE9K5SXv+Hjd6TvVsxMfnDQrPvEfK.qrTDwcfVptBz9f+THoxVWBtBrHinoPcdUJ3Kwm4EdmpYNL2ON26vLv+rzdrnZ0pJoTFJHoRkhkKWpAPD.LMMCML.jRIlllJ.95gwOkggAsa2lhEKxkKWX850rXwBte+9ag9Lg+T555Lc5Tz00Y73wLe9bZznACGN7io8K+La0pEGNbfd858za2tczsaWRmNMNNN+Mf4ymGaa6W7bbbne+9eLg91xRoDCCiOVbfAZaaSylMIQhDgCnRodwb61sHDBFLXPfA8fguIToTLYxDJUpDYxj4OkPOWJEJTfNc5fPH350qLa1LNd7nmBcccYznQre+9eGX850IWtbO2GKVr2NKqUqlGfdZ4HQ7cJ3qhFMpGufWc.kGfu6spe51sad77LCsrrHa1rHDheElqqKVVVd70.nRkJpSmNE3j4mRlLIqVsR64GrkKWVc974PAKd73rYyFsOexPnuAE.KgTV98QRH.....IUjSD4pPfIH" ],
+									"embed" : 1,
+									"id" : "obj-20",
+									"maxclass" : "fpic",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "jit_matrix" ],
+									"patching_rect" : [ 171.0, 207.0, 20.0, 20.0 ],
+									"pic" : "lock.png"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 1,
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-22",
+									"linecount" : 10,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 36.0, 147.0, 374.0, 149.0 ],
+									"style" : "",
+									"text" : "To enter EDIT MODE, either:\n\n     * Use the ⌘-E (Ctrl-E on Windows) keyboard shortcut\n     * ⌘-click on the white space in the patch\n     * Toggle the         to         in the lower-left corner\n     * Right-click and select \"Edit\" from the menu\n\nOnce in EDIT MODE, you can create objects and connect them with patch cords. A LOCKED PATCH allows you to interact with objects.",
+									"textcolor" : [ 0.0, 0.0, 0.501961, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 3,
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 18.0,
+									"id" : "obj-23",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 18.0, 10.0, 101.0, 28.0 ],
+									"style" : "",
+									"text" : "Hello Max!"
+								}
+
+							}
+ ],
+						"lines" : [  ]
+					}
+,
+					"patching_rect" : [ 248.0, 107.0, 111.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"style" : "",
+						"tags" : ""
+					}
+,
+					"style" : "",
+					"text" : "p \"Hello Max!\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 7,
+							"minor" : 2,
+							"revision" : 4,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"rect" : [ 0.0, 26.0, 1075.0, 743.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "Default Max 7",
+						"showontab" : 1,
+						"boxes" : [ 							{
+								"box" : 								{
+									"bubble" : 1,
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-8",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 415.5, 353.0, 360.0, 38.0 ],
+									"style" : "",
+									"text" : "If you send a float into an object that deals only with integers, the float will be \"truncated\", cutting off all decimal values!"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-7",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 305.0, 361.0, 50.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-6",
+									"maxclass" : "number",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 361.0, 361.0, 50.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-1",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 361.0, 278.0, 50.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-3",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 436.5, 328.0, 321.0, 20.0 ],
+									"style" : "",
+									"text" : "so... what happens if you send a float into an integer box?"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-5",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "float" ],
+									"patching_rect" : [ 361.0, 310.0, 48.0, 22.0 ],
+									"style" : "",
+									"text" : "* 10.11"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"format" : 6,
 									"id" : "obj-2",
@@ -234,7 +824,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 149.5, 516.0, 135.0, 20.0 ],
+									"patching_rect" : [ 149.5, 554.0, 135.0, 20.0 ],
 									"style" : "",
 									"text" : "\"hidden state\" problem"
 								}
@@ -249,7 +839,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 66.0, 472.0, 50.0, 22.0 ],
+									"patching_rect" : [ 66.0, 510.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -263,7 +853,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 66.0, 559.0, 50.0, 22.0 ],
+									"patching_rect" : [ 66.0, 597.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -277,7 +867,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "float" ],
-									"patching_rect" : [ 66.0, 516.0, 76.0, 22.0 ],
+									"patching_rect" : [ 66.0, 554.0, 76.0, 22.0 ],
 									"style" : "",
 									"text" : "* 10."
 								}
@@ -292,7 +882,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 123.0, 472.0, 50.0, 22.0 ],
+									"patching_rect" : [ 123.0, 510.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -306,7 +896,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 51.0, 413.0, 354.0, 48.0 ],
+									"patching_rect" : [ 40.0, 454.0, 354.0, 48.0 ],
 									"style" : "",
 									"text" : "Beware - changing the operator value in the right inlet will not change the displayed creation agrument. This leads to cases were reading your patch may give you false information."
 								}
@@ -505,6 +1095,15 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
+									"destination" : [ "obj-5", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-112", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -620,10 +1219,28 @@
 								}
 
 							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
  ]
 					}
 ,
-					"patching_rect" : [ 289.0, 181.0, 124.0, 22.0 ],
+					"patching_rect" : [ 350.0, 185.0, 124.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -653,7 +1270,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1088.0, 761.0 ],
+						"rect" : [ 0.0, 26.0, 1075.0, 743.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -860,7 +1477,7 @@
 						"lines" : [  ]
 					}
 ,
-					"patching_rect" : [ 386.0, 42.0, 96.0, 22.0 ],
+					"patching_rect" : [ 410.0, 42.0, 96.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -871,19 +1488,6 @@
 ,
 					"style" : "",
 					"text" : "p \"Finding Help\""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-1",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 572.0, 179.0, 166.0, 20.0 ],
-					"style" : "",
-					"text" : "ADD SOUND SOMEWHERE",
-					"textcolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ]
 				}
 
 			}
@@ -903,7 +1507,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1088.0, 761.0 ],
+						"rect" : [ 0.0, 26.0, 1075.0, 743.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2007,7 +2611,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 514.0, 155.0, 186.0, 22.0 ],
+					"patching_rect" : [ 538.0, 155.0, 120.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2037,7 +2641,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1088.0, 761.0 ],
+						"rect" : [ 0.0, 26.0, 1075.0, 743.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2551,7 +3155,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 487.0, 128.0, 135.0, 22.0 ],
+					"patching_rect" : [ 511.0, 128.0, 135.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2581,7 +3185,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1088.0, 761.0 ],
+						"rect" : [ 0.0, 26.0, 1075.0, 743.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3234,7 +3838,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 465.0, 96.0, 118.0, 22.0 ],
+					"patching_rect" : [ 489.0, 96.0, 118.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -3264,7 +3868,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1088.0, 761.0 ],
+						"rect" : [ 0.0, 26.0, 1075.0, 743.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3916,7 +4520,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 420.0, 66.0, 134.0, 22.0 ],
+					"patching_rect" : [ 444.0, 66.0, 134.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -3946,7 +4550,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1088.0, 761.0 ],
+						"rect" : [ 0.0, 26.0, 1075.0, 743.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -4463,7 +5067,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 257.0, 155.0, 96.0, 22.0 ],
+					"patching_rect" : [ 318.0, 159.0, 96.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -4493,7 +5097,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1088.0, 761.0 ],
+						"rect" : [ 0.0, 26.0, 1075.0, 743.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -4577,7 +5181,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 264.0, 621.0, 89.0, 22.0 ],
+									"patching_rect" : [ 323.0, 613.0, 89.0, 22.0 ],
 									"style" : "",
 									"text" : "1 2. 3.3 4 bass"
 								}
@@ -4607,7 +5211,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 275.0, 546.0, 67.0, 22.0 ],
+									"patching_rect" : [ 330.5, 546.0, 67.0, 22.0 ],
 									"style" : "",
 									"text" : "0, 1. 1000."
 								}
@@ -4622,9 +5226,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 74.0, 546.0, 36.0, 22.0 ],
+									"patching_rect" : [ 64.0, 546.0, 79.0, 22.0 ],
 									"style" : "",
-									"text" : "hello"
+									"text" : "\"hello, max!\""
 								}
 
 							}
@@ -4639,7 +5243,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 134.0, 546.0, 50.0, 22.0 ],
+									"patching_rect" : [ 189.5, 546.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -4654,7 +5258,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 209.0, 546.0, 50.0, 22.0 ],
+									"patching_rect" : [ 264.5, 546.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -4954,7 +5558,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 224.0, 125.0, 129.0, 22.0 ],
+					"patching_rect" : [ 277.0, 131.0, 129.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -4984,7 +5588,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1088.0, 761.0 ],
+						"rect" : [ 0.0, 26.0, 1075.0, 743.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -5014,91 +5618,16 @@
 						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
-									"id" : "obj-1",
-									"linecount" : 3,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 36.0, 89.0, 397.0, 48.0 ],
-									"style" : "",
-									"text" : "There are two modes involved in the user experience of patcher design.\n1. patching mode (edit / unlocked).  In this mode, you are programming.\n2. usage mode (locked).  In this mode, you are using your program."
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
-									"id" : "obj-4",
-									"linecount" : 2,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 36.0, 42.0, 389.0, 34.0 ],
-									"style" : "",
-									"text" : "Max's main window is called a \"patch\", which can be edited and used to create sounds and control pretty much anything you can imagine."
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
-									"id" : "obj-44",
-									"linecount" : 4,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 463.0, 617.0, 345.0, 62.0 ],
-									"style" : "",
-									"text" : "Lock the patch, and use your mouse to interact with the GUI objects... You can also interact with objects from an unlocked patch, by holding down ⌘ (or Ctrl on Windows) while clicking on a GUI object."
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontface" : 3,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 16.0,
-									"id" : "obj-17",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 36.0, 583.0, 107.0, 26.0 ],
-									"style" : "",
-									"text" : "GUI Objects:"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontface" : 3,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 16.0,
-									"id" : "obj-14",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 36.0, 471.0, 98.0, 26.0 ],
-									"style" : "",
-									"text" : "Max / MSP:"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontface" : 3,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 16.0,
+									"fontname" : "Arial Italic",
+									"fontsize" : 10.0,
 									"id" : "obj-13",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 36.0, 326.0, 65.0, 26.0 ],
+									"patching_rect" : [ 556.357178, 450.240021, 456.0, 18.0 ],
+									"presentation_rect" : [ 522.0, 418.0, 0.0, 0.0 ],
 									"style" : "",
-									"text" : "Basics:"
+									"text" : "Screenshot of an old Max patch, credited to the band Autechre, who are famous Max users."
 								}
 
 							}
@@ -5106,86 +5635,162 @@
 								"box" : 								{
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
-									"id" : "obj-60",
-									"maxclass" : "comment",
+									"hidden" : 1,
+									"id" : "obj-10",
+									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 186.0, 702.441162, 165.0, 20.0 ],
+									"patcher" : 									{
+										"fileversion" : 1,
+										"appversion" : 										{
+											"major" : 7,
+											"minor" : 2,
+											"revision" : 4,
+											"architecture" : "x64",
+											"modernui" : 1
+										}
+,
+										"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
+										"bglocked" : 0,
+										"openinpresentation" : 0,
+										"default_fontsize" : 12.0,
+										"default_fontface" : 0,
+										"default_fontname" : "Helvetica Neue",
+										"gridonopen" : 1,
+										"gridsize" : [ 15.0, 15.0 ],
+										"gridsnaponopen" : 1,
+										"objectsnaponopen" : 1,
+										"statusbarvisible" : 2,
+										"toolbarvisible" : 1,
+										"lefttoolbarpinned" : 0,
+										"toptoolbarpinned" : 0,
+										"righttoolbarpinned" : 0,
+										"bottomtoolbarpinned" : 0,
+										"toolbars_unpinned_last_save" : 0,
+										"tallnewobj" : 0,
+										"boxanimatetime" : 200,
+										"enablehscroll" : 1,
+										"enablevscroll" : 1,
+										"devicewidth" : 0.0,
+										"description" : "",
+										"digest" : "",
+										"tags" : "",
+										"style" : "",
+										"subpatcher_template" : "",
+										"boxes" : [ 											{
+												"box" : 												{
+													"fontname" : "Arial",
+													"fontsize" : 9.0,
+													"id" : "obj-2",
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 50.0, 84.0, 209.0, 19.0 ],
+													"style" : "",
+													"text" : "https://cycling74.com/"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"fontname" : "Arial",
+													"fontsize" : 9.0,
+													"id" : "obj-82",
+													"linecount" : 2,
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 50.0, 124.0, 106.0, 29.0 ],
+													"style" : "",
+													"text" : ";\rmax launch_browser $1"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"comment" : "",
+													"id" : "obj-5",
+													"maxclass" : "inlet",
+													"numinlets" : 0,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 50.0, 40.0, 25.0, 25.0 ],
+													"style" : ""
+												}
+
+											}
+ ],
+										"lines" : [ 											{
+												"patchline" : 												{
+													"destination" : [ "obj-82", 0 ],
+													"disabled" : 0,
+													"hidden" : 0,
+													"source" : [ "obj-2", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-2", 0 ],
+													"disabled" : 0,
+													"hidden" : 0,
+													"source" : [ "obj-5", 0 ]
+												}
+
+											}
+ ]
+									}
+,
+									"patching_rect" : [ 216.0, 529.59375, 19.0, 22.0 ],
+									"saved_object_attributes" : 									{
+										"description" : "",
+										"digest" : "",
+										"fontname" : "Helvetica Neue",
+										"globalpatchername" : "",
+										"style" : "",
+										"tags" : ""
+									}
+,
 									"style" : "",
-									"text" : "Message (m)"
+									"text" : "p"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
-									"id" : "obj-59",
-									"maxclass" : "comment",
+									"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+									"fontface" : 3,
+									"fontlink" : 1,
+									"id" : "obj-11",
+									"maxclass" : "textbutton",
 									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 186.0, 674.294128, 165.0, 20.0 ],
-									"style" : "",
-									"text" : "Floating-point number box (f)"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
-									"id" : "obj-58",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 186.0, 646.147095, 165.0, 20.0 ],
-									"style" : "",
-									"text" : "Integer number box (i)"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
-									"id" : "obj-57",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 186.0, 618.0, 165.0, 20.0 ],
-									"style" : "",
-									"text" : "Button (aka \"bang\") (b)"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
-									"id" : "obj-56",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 36.0, 702.441162, 36.0, 22.0 ],
-									"style" : "",
-									"text" : "hello"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
-									"format" : 6,
-									"id" : "obj-54",
-									"maxclass" : "flonum",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "bang" ],
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 36.0, 674.294128, 50.0, 22.0 ],
-									"style" : ""
+									"patching_rect" : [ 237.0, 529.59375, 258.25, 21.40625 ],
+									"presentation_rect" : [ 244.595703, 521.59375, 258.249985, 21.40625 ],
+									"style" : "",
+									"text" : "Click here to open the Cycling '74 website.",
+									"texton" : "Click here to learn more about how hearing works...",
+									"textoncolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ],
+									"textovercolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+									"usetextovercolor" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"autofit" : 1,
+									"forceaspect" : 1,
+									"id" : "obj-9",
+									"maxclass" : "fpic",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "jit_matrix" ],
+									"patching_rect" : [ 494.0, 57.0, 580.714294, 390.240006 ],
+									"pic" : "/Users/r/Downloads/ae2.jpg"
 								}
 
 							}
@@ -5193,245 +5798,161 @@
 								"box" : 								{
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
-									"id" : "obj-52",
-									"maxclass" : "number",
+									"hidden" : 1,
+									"id" : "obj-33",
+									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "bang" ],
+									"numoutlets" : 0,
+									"patcher" : 									{
+										"fileversion" : 1,
+										"appversion" : 										{
+											"major" : 7,
+											"minor" : 2,
+											"revision" : 4,
+											"architecture" : "x64",
+											"modernui" : 1
+										}
+,
+										"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
+										"bglocked" : 0,
+										"openinpresentation" : 0,
+										"default_fontsize" : 12.0,
+										"default_fontface" : 0,
+										"default_fontname" : "Helvetica Neue",
+										"gridonopen" : 1,
+										"gridsize" : [ 15.0, 15.0 ],
+										"gridsnaponopen" : 1,
+										"objectsnaponopen" : 1,
+										"statusbarvisible" : 2,
+										"toolbarvisible" : 1,
+										"lefttoolbarpinned" : 0,
+										"toptoolbarpinned" : 0,
+										"righttoolbarpinned" : 0,
+										"bottomtoolbarpinned" : 0,
+										"toolbars_unpinned_last_save" : 0,
+										"tallnewobj" : 0,
+										"boxanimatetime" : 200,
+										"enablehscroll" : 1,
+										"enablevscroll" : 1,
+										"devicewidth" : 0.0,
+										"description" : "",
+										"digest" : "",
+										"tags" : "",
+										"style" : "",
+										"subpatcher_template" : "",
+										"boxes" : [ 											{
+												"box" : 												{
+													"fontname" : "Arial",
+													"fontsize" : 9.0,
+													"id" : "obj-2",
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 50.0, 84.0, 209.0, 19.0 ],
+													"style" : "",
+													"text" : "https://cycling74.com/project/e-string/"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"fontname" : "Arial",
+													"fontsize" : 9.0,
+													"id" : "obj-82",
+													"linecount" : 2,
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 50.0, 124.0, 106.0, 29.0 ],
+													"style" : "",
+													"text" : ";\rmax launch_browser $1"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"comment" : "",
+													"id" : "obj-5",
+													"maxclass" : "inlet",
+													"numinlets" : 0,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 50.0, 40.0, 25.0, 25.0 ],
+													"style" : ""
+												}
+
+											}
+ ],
+										"lines" : [ 											{
+												"patchline" : 												{
+													"destination" : [ "obj-82", 0 ],
+													"disabled" : 0,
+													"hidden" : 0,
+													"source" : [ "obj-2", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-2", 0 ],
+													"disabled" : 0,
+													"hidden" : 0,
+													"source" : [ "obj-5", 0 ]
+												}
+
+											}
+ ]
+									}
+,
+									"patching_rect" : [ 216.0, 502.0, 19.0, 22.0 ],
+									"saved_object_attributes" : 									{
+										"description" : "",
+										"digest" : "",
+										"fontname" : "Helvetica Neue",
+										"globalpatchername" : "",
+										"style" : "",
+										"tags" : ""
+									}
+,
+									"style" : "",
+									"text" : "p"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+									"fontface" : 3,
+									"fontlink" : 1,
+									"id" : "obj-37",
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 36.0, 646.147095, 50.0, 22.0 ],
-									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-49",
-									"maxclass" : "button",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 36.0, 618.0, 20.0, 20.0 ],
-									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
-									"id" : "obj-43",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 36.0, 536.0, 46.0, 22.0 ],
+									"patching_rect" : [ 237.0, 502.0, 223.404297, 21.40625 ],
+									"presentation_rect" : [ 15.0, 15.0, 223.404297, 21.40625 ],
 									"style" : "",
-									"text" : "cycle~"
+									"text" : "Click here to see a cool Max project!",
+									"texton" : "Click here to learn more about how hearing works...",
+									"textoncolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ],
+									"textovercolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+									"usetextovercolor" : 1
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
-									"id" : "obj-42",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 36.0, 507.0, 38.0, 22.0 ],
-									"style" : "",
-									"text" : "cycle"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
-									"id" : "obj-32",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 186.0, 430.420563, 165.0, 20.0 ],
-									"style" : "",
-									"text" : "comment box (c)"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bgcolor" : [ 1.0, 1.0, 0.4, 0.0 ],
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
-									"id" : "obj-31",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 36.0, 430.420563, 120.0, 20.0 ],
-									"style" : "",
-									"text" : "(comment)"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
-									"id" : "obj-29",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 186.0, 398.710266, 165.0, 20.0 ],
-									"style" : "",
-									"text" : "message box (m)"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
-									"id" : "obj-21",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 36.0, 398.710266, 50.0, 22.0 ],
-									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
-									"id" : "obj-15",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 36.0, 367.0, 100.0, 22.0 ],
-									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
-									"id" : "obj-16",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 186.0, 536.0, 214.0, 20.0 ],
-									"style" : "",
-									"text" : "MSP (audio) object - note the tilde! (~)"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
-									"id" : "obj-7",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 186.0, 507.0, 165.0, 20.0 ],
-									"style" : "",
-									"text" : "Max object"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
-									"id" : "obj-26",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 186.0, 367.0, 165.0, 20.0 ],
-									"style" : "",
-									"text" : "object box (n)"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontface" : 1,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-8",
-									"linecount" : 6,
+									"linecount" : 32,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 476.0, 119.0, 25.0, 92.0 ],
+									"patching_rect" : [ 36.0, 57.0, 456.0, 435.0 ],
 									"style" : "",
-									"text" : "n\nm\ni\nf\nb\nt"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
-									"id" : "obj-18",
-									"linecount" : 7,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 476.0, 107.0, 332.0, 104.0 ],
-									"style" : "",
-									"text" : "For this lesson, use the following keyboard shortcuts:\n      to create a new object\n      to create a new message\n      to create a number box for an integer\n      to create a number box for a floating-point number\n      to create a button\n      to create a toggle"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"data" : [ 451, "png", "IBkSG0fBZn....PCIgDQRA...PA....EHX....PiI1QC....DLmPIQEBHf.B7g.YHB..AnWRDEDU3zXqR9qhBCDDG9aioHFhfchVa50RwTXinDwBK70vm.KrPrvNeYBJArPDrSDqErwZahHBAydEGl6fM4NOO+UM6ry7M+gAdyR7vnc61xfffWBRtb4X974B.z.v008kgAPPP.tttxXf+GXeGJ.5+VflllToREDBA62u+WK9OBzwwggCGx4ymIJJhBEJvzoSw22+uCrXwhLZzHlLYBKWtD.pUqFiGOlCGNvwiGSLOsz.1qWO1tcaLL.1rYCqVsh986mZGlJvFMZftt5.nooQ850+YfRoLwOSxuTJQHDoFapc3qJA.NNNxGUnZ0pLXv.JUpDgggJmIVVVXXXvoSmX1rYra2tOAIDrd8ZgxRpa2tXaaG+Ne97I1I111zoSmXfOjxHqo87agLYxn36suCU.FEE8zIe+9cEeJ6POOOJWtLFFFeFftNYylE.tc6Fgggw1dddJ.E.zpUK4kKWd5NKIYYYwhEK95BsYylxqWu9RvLMMw22W8Z+cnO.CRpX52jWpfC....PRE4DQtJDXBB" ],
-									"embed" : 1,
-									"id" : "obj-19",
-									"maxclass" : "fpic",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "jit_matrix" ],
-									"patching_rect" : [ 132.0, 207.0, 20.0, 20.0 ],
-									"pic" : "lock2.png"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"data" : [ 452, "png", "IBkSG0fBZn....PCIgDQRA...PA....EHX....PiI1QC....DLmPIQEBHf.B7g.YHB..ArWRDEDU3zXqT1ipBCDEE9K5SXv+Hjd6TvVsxMfnDQrPvEfK.qrTDwcfVptBz9f+THoxVWBtBrHinoPcdUJ3Kwm4EdmpYNL2ON26vLv+rzdrnZ0pJoTFJHoRkhkKWpAPD.LMMCML.jRIlllJ.95gwOkggAsa2lhEKxkKWX850rXwBte+9ag9Lg+T555Lc5Tz00Y73wLe9bZznACGN7io8K+La0pEGNbfd858za2tczsaWRmNMNNN+Mf4ymGaa6W7bbbne+9eLg91xRoDCCiOVbfAZaaSylMIQhDgCnRodwb61sHDBFLXPfA8fguIToTLYxDJUpDYxj4OkPOWJEJTfNc5fPH350qLa1LNd7nmBcccYznQre+9eGX850IWtbO2GKVr2NKqUqlGfdZ4HQ7cJ3qhFMpGufWc.kGfu6spe51sad77LCsrrHa1rHDheElqqKVVVd70.nRkJpSmNE3j4mRlLIqVsR64GrkKWVc974PAKd73rYyFsOexPnuAE.KgTV98QRH.....IUjSD4pPfIH" ],
-									"embed" : 1,
-									"id" : "obj-20",
-									"maxclass" : "fpic",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "jit_matrix" ],
-									"patching_rect" : [ 171.0, 207.0, 20.0, 20.0 ],
-									"pic" : "lock.png"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontface" : 1,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
-									"id" : "obj-22",
-									"linecount" : 10,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 36.0, 147.0, 374.0, 149.0 ],
-									"style" : "",
-									"text" : "To enter EDIT MODE, either:\n\n     * Use the ⌘-E (Ctrl-E on Windows) keyboard shortcut\n     * ⌘-click on the white space in the patch\n     * Toggle the         to         in the lower-left corner\n     * Right-click and select \"Edit\" from the menu\n\nOnce in EDIT MODE, you can create objects and connect them with patch cords. A LOCKED PATCH allows you to interact with objects.",
-									"textcolor" : [ 0.0, 0.0, 0.501961, 1.0 ]
+									"text" : "In Music 158A we will be introducing you to a refined approach to working in Max which has been developing at CNMAT over many years. But to begin, let's get to know the basics of Max.\n\nThe developers of Max have created nice Max Tour that introduces the essential pieces that we'll be using.\n\nTo open the tour, find the Help menu at the top of the screen, and select Max Tour. Take a few minutes to go through the tour and then come back to this page. Don't worry to much about remembering what all the objects do for now!\n\nOk, we'll wait for you while you go through the tour.\n\n[A few minutes later]\n\nWelcome back!  As you might have seen at the end of the tour, the Max developers have also created an extensive set of documentation and tutorials that will help you get to know Max in depth.\n\nWe will be focusing on the CNMAT-M158 approach to working in Max, but learning traditional Max will definitely help you as you start to branch out on your own into uncharted territories. \n\nTo get to the tutorials, open the Help menu, and select Reference.\n\nThere is also a thriving online community of Max users, and a forum where users share ideas, and get advice on their work. You can find the forum on the www.cycling74.com website or by going to the Help menu and selecting \"Max Community\".\n\nIn the Max Community, you can also find some interesting projects using Max to give you an idea of what kinds of things are possible."
 								}
 
 							}
@@ -5440,21 +5961,39 @@
 									"fontface" : 3,
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 18.0,
-									"id" : "obj-23",
+									"id" : "obj-5",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 18.0, 10.0, 101.0, 28.0 ],
+									"patching_rect" : [ 18.0, 15.0, 175.0, 28.0 ],
 									"style" : "",
-									"text" : "Hello Max!"
+									"text" : "A Brief Tour of Max"
 								}
 
 							}
  ],
-						"lines" : [  ]
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-10", 0 ],
+									"disabled" : 0,
+									"hidden" : 1,
+									"source" : [ "obj-11", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-33", 0 ],
+									"disabled" : 0,
+									"hidden" : 1,
+									"source" : [ "obj-37", 0 ]
+								}
+
+							}
+ ]
 					}
 ,
-					"patching_rect" : [ 196.0, 90.0, 84.0, 22.0 ],
+					"patching_rect" : [ 198.0, 81.0, 78.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -5464,7 +6003,7 @@
 					}
 ,
 					"style" : "",
-					"text" : "p \"Hello Max!\""
+					"text" : "p \"Max Tour\""
 				}
 
 			}
@@ -5540,7 +6079,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1088.0, 761.0 ],
+						"rect" : [ 198.0, 105.0, 1075.0, 743.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -5928,13 +6467,13 @@
 								"box" : 								{
 									"fontsize" : 14.0,
 									"id" : "obj-5",
-									"linecount" : 9,
+									"linecount" : 10,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 41.0, 427.5, 210.0, 147.0 ],
+									"patching_rect" : [ 41.0, 427.5, 210.0, 163.0 ],
 									"style" : "",
-									"text" : "1) Hello Max!\n2) Conneting Things\n3) Max Objects\n4) Object Arguments\n5) Finding Help\n6) Meet Message\n7) $ Substitution\n8) Order of Operations\n9) Controlling Order"
+									"text" : "0) Max Tour\n1) Hello Max!\n2) Conneting Things\n3) Max Objects\n4) Object Arguments\n5) Finding Help\n6) Meet Message\n7) $ Substitution\n8) Order of Operations\n9) Controlling Order"
 								}
 
 							}
@@ -6004,7 +6543,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 183.0, 59.0, 52.0, 22.0 ],
+					"patching_rect" : [ 181.5, 53.0, 52.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -6048,6 +6587,12 @@
 			}
 , 			{
 				"name" : "Max-Mathews-007.jpg",
+				"bootpath" : "~/Downloads",
+				"type" : "JPEG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ae2.jpg",
 				"bootpath" : "~/Downloads",
 				"type" : "JPEG",
 				"implicit" : 1

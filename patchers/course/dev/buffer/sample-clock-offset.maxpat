@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 0,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -58,13 +58,11 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-6",
-					"linecount" : 10,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 391.0, 543.0, 690.0, 156.0 ],
-					"text" : "/nbuffers : 45,\n/namelist : [\"XR10bd01.wav\", \"XR10bd02.wav\", \"XR10bd03.wav\", \"XR10bd04.wav\", \"XR10bd05.wav\", \"XR10bd06.wav\", \"XR10bd07.wav\", \"XR10bd08.wav\", \"XR10bd09.wav\", \"XR10bd10.wav\", \"XR10choke.wav\", \"XR10clap.wav\", \"XR10clhat.wav\", \"XR10crash1.wav\", \"XR10crash2.wav\", \"XR10hiq1.wav\", \"XR10hiq2.wav\", \"XR10htom1.wav\", \"XR10htom2.wav\", \"XR10htom3.wav\", \"XR10htom4.wav\", \"XR10ltom1.wav\", \"XR10ltom2.wav\", \"XR10ltom3.wav\", \"XR10ltom4.wav\", \"XR10mdhat.wav\", \"XR10mtom1.wav\", \"XR10mtom2.wav\", \"XR10mtom3.wav\", \"XR10mtom4.wav\", \"XR10ophat.wav\", \"XR10ride.wav\", \"XR10rim1.wav\", \"XR10rim2.wav\", \"XR10sd01.wav\", \"XR10sd02.wav\", \"XR10sd03.wav\", \"XR10sd04.wav\", \"XR10sd05.wav\", \"XR10sd06.wav\", \"XR10sd07.wav\", \"XR10sd08.wav\", \"XR10sd09.wav\", \"XR10sd10.wav\", \"XR10tamb.wav\"]",
+					"patching_rect" : [ 391.0, 543.0, 690.0, 34.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -136,9 +134,8 @@
 					"maxclass" : "bpatcher",
 					"name" : "o.io.dropfile.maxpat",
 					"numinlets" : 0,
-					"numoutlets" : 1,
+					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "FullPacket" ],
 					"patching_rect" : [ 583.0, 301.0, 117.5, 48.0 ],
 					"viewvisibility" : 1
 				}
@@ -236,7 +233,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 0,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -316,7 +313,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 2,
-											"revision" : 0,
+											"revision" : 4,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -565,7 +562,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 2,
-											"revision" : 0,
+											"revision" : 4,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1067,7 +1064,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 2,
-											"revision" : 0,
+											"revision" : 4,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1316,7 +1313,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 2,
-											"revision" : 0,
+											"revision" : 4,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1818,7 +1815,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 2,
-											"revision" : 0,
+											"revision" : 4,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2067,7 +2064,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 2,
-											"revision" : 0,
+											"revision" : 4,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2569,7 +2566,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 2,
-											"revision" : 0,
+											"revision" : 4,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2818,7 +2815,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 2,
-											"revision" : 0,
+											"revision" : 4,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3320,7 +3317,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 2,
-											"revision" : 0,
+											"revision" : 4,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3569,7 +3566,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 2,
-											"revision" : 0,
+											"revision" : 4,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -4228,7 +4225,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 2,
-											"revision" : 0,
+											"revision" : 4,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -5010,12 +5007,12 @@
 				"box" : 				{
 					"id" : "obj-13",
 					"maxclass" : "newobj",
-					"numinlets" : 7,
+					"numinlets" : 9,
 					"numoutlets" : 4,
 					"outlettype" : [ "signal", "signal", "signal", "FullPacket" ],
-					"patching_rect" : [ 272.0, 442.0, 138.0, 22.0 ],
+					"patching_rect" : [ 283.831665, 440.0, 138.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.granubuf~.pan2"
+					"text" : "o.granubuf~"
 				}
 
 			}
@@ -5130,24 +5127,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-20", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-20", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-13", 6 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -5215,14 +5194,20 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "m158.o.granubuf~.pan2.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/158b-spring16-o.wrappers/sound_engines/samples",
+				"name" : "o.granubuf~.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/sound-engines/samples",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "o.io.dropfile.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/158b-spring16-o.wrappers/z_o.io.support",
+				"name" : "granubuf.pan.gendsp",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/code",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.api.handler.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -5232,10 +5217,6 @@
 			}
 , 			{
 				"name" : "o.pack.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.prepend.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -5252,6 +5233,22 @@
 			}
 , 			{
 				"name" : "o.var.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.expr.codebox.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.prepend.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.select.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.collect.mxo",
 				"type" : "iLaX"
 			}
 , 			{
