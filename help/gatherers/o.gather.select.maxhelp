@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 3,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -38,52 +38,74 @@
 		"subpatcher_template" : "no-menus",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 18.0,
+					"id" : "obj-3",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 494.0, 97.5, 137.0, 27.0 ],
+					"presentation_rect" : [ 491.0, 97.5, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "o.gather.select"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontsize" : 12.0,
+					"id" : "obj-10",
+					"linecount" : 5,
+					"maxclass" : "o.display",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 117.0, 354.0, 150.0, 88.0 ],
+					"text" : "/foo/foo : 2,\n/foo : 1,\n/bar/barbar : 4,\n/bar/ohyes : 5,\n/bar : 3",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontsize" : 12.0,
+					"id" : "obj-9",
+					"linecount" : 2,
+					"maxclass" : "o.display",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 359.0, 359.0, 150.0, 48.0 ],
+					"text" : "/bb/ohno : 6,\n/no/no : 7",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 242.0, 139.0, 60.0, 22.0 ],
+					"style" : "",
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-6",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 473.0, 148.5, 218.0, 33.0 ],
+					"patching_rect" : [ 494.0, 128.0, 218.0, 33.0 ],
 					"style" : "",
 					"text" : "o.gather.select works like o.gather, but also allows partial matches"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 0,
-					"fontsize" : 12.0,
-					"id" : "obj-4",
-					"linecount" : 2,
-					"maxclass" : "o.compose",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 267.0, 223.0, 150.0, 38.0 ],
-					"presentation_rect" : [ 267.0, 220.0, 0.0, 0.0 ],
-					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 47, 98, 98, 47, 111, 104, 110, 111, 0, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 6, 0, 0, 0, 16, 47, 110, 111, 47, 110, 111, 0, 0, 44, 105, 0, 0, 0, 0, 0, 7 ],
-					"saved_bundle_length" : 60,
-					"text" : "/bb/ohno : 6,\n/no/no : 7",
-					"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 0,
-					"fontsize" : 12.0,
-					"id" : "obj-3",
-					"linecount" : 5,
-					"maxclass" : "o.compose",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 86.0, 251.0, 150.0, 78.0 ],
-					"presentation_rect" : [ 86.0, 251.0, 0.0, 0.0 ],
-					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 47, 98, 97, 114, 47, 98, 97, 114, 98, 97, 114, 0, 44, 105, 0, 0, 0, 0, 0, 4, 0, 0, 0, 20, 47, 98, 97, 114, 47, 111, 104, 121, 101, 115, 0, 0, 44, 105, 0, 0, 0, 0, 0, 5, 0, 0, 0, 16, 47, 98, 97, 114, 0, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 3, 0, 0, 0, 20, 47, 102, 111, 111, 47, 102, 111, 111, 0, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 2, 0, 0, 0, 16, 47, 102, 111, 111, 0, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 1 ],
-					"saved_bundle_length" : 128,
-					"text" : "/bar/barbar : 4,\n/bar/ohyes : 5,\n/bar : 3,\n/foo/foo : 2,\n/foo : 1",
-					"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 				}
 
 			}
@@ -97,7 +119,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 232.0, 57.0, 150.0, 106.0 ],
+					"patching_rect" : [ 242.0, 185.0, 150.0, 106.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 47, 102, 111, 111, 0, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 1, 0, 0, 0, 20, 47, 102, 111, 111, 47, 102, 111, 111, 0, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 2, 0, 0, 0, 16, 47, 98, 97, 114, 0, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 3, 0, 0, 0, 20, 47, 98, 97, 114, 47, 98, 97, 114, 98, 97, 114, 0, 44, 105, 0, 0, 0, 0, 0, 4, 0, 0, 0, 20, 47, 98, 97, 114, 47, 111, 104, 121, 101, 115, 0, 0, 44, 105, 0, 0, 0, 0, 0, 5, 0, 0, 0, 20, 47, 98, 98, 47, 111, 104, 110, 111, 0, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 6, 0, 0, 0, 16, 47, 110, 111, 47, 110, 111, 0, 0, 44, 105, 0, 0, 0, 0, 0, 7 ],
 					"saved_bundle_length" : 172,
 					"text" : "/foo : 1,\n/foo/foo : 2,\n/bar : 3,\n/bar/barbar : 4,\n/bar/ohyes : 5,\n/bb/ohno : 6,\n/no/no : 7",
@@ -112,7 +134,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 232.0, 178.0, 136.0, 22.0 ],
+					"patching_rect" : [ 242.0, 306.0, 136.0, 22.0 ],
 					"style" : "",
 					"text" : "o.gather.select /foo /bar"
 				}
@@ -121,7 +143,7 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 1 ],
+					"destination" : [ "obj-10", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
@@ -130,7 +152,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 1 ],
+					"destination" : [ "obj-9", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-1", 1 ]
@@ -146,10 +168,19 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
  ],
 		"dependency_cache" : [ 			{
 				"name" : "o.gather.select.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158_A_B_Dev/A/patches",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gatherers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -162,7 +193,15 @@
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "o.var.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "o.compose.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.display.mxo",
 				"type" : "iLaX"
 			}
  ],
