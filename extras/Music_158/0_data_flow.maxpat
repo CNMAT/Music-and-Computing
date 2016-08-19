@@ -3536,9 +3536,9 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 13.0, 495.0, 317.0, 48.0 ],
+									"patching_rect" : [ 13.0, 495.0, 338.0, 48.0 ],
 									"style" : "",
-									"text" : "The $n flags in the message allow us to trigger complex behaviors from single value inputs. Consider the following example, which uses $1 substitution:"
+									"text" : "The $ arguments in the message allow us to trigger complex behaviors from single value inputs. Consider the following example, which uses $1 substitution:"
 								}
 
 							}
