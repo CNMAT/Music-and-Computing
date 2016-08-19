@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 0,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 188.0, 45.0, 1083.0, 855.0 ],
+		"rect" : [ 170.0, 130.0, 1082.0, 715.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,19 +38,150 @@
 		"subpatcher_template" : "no-menus",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-2",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 685.0, 590.0, 126.0, 60.0 ],
+					"presentation_rect" : [ 685.0, 590.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "note letter with # or b\n: colon separator\noctave number\n+ or - cents"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 569.0, 585.0, 111.0, 20.0 ],
+					"presentation_rect" : [ 569.0, 585.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "/note string format:"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 569.0, 542.0, 466.0, 33.0 ],
+					"presentation_rect" : [ 569.0, 542.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "output: OSC bundle with a /notes address\ninput: OSC bundle with a /midi address added corresponding to the /notes message."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 569.0, 493.0, 185.0, 20.0 ],
+					"presentation_rect" : [ 569.0, 493.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "MIDI number conversion to note"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 18.0,
+					"id" : "obj-14",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 569.0, 461.0, 122.0, 27.0 ],
+					"presentation_rect" : [ 569.0, 461.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "m158.o.mton"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 685.0, 174.0, 126.0, 60.0 ],
+					"style" : "",
+					"text" : "note letter with # or b\n: colon separator\noctave number\n+ or - cents"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 569.0, 169.0, 111.0, 20.0 ],
+					"style" : "",
+					"text" : "/note string format:"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 569.0, 126.0, 466.0, 33.0 ],
+					"style" : "",
+					"text" : "input: OSC bundle with a /notes address\noutput: OSC bundle with a /midi address added corresponding to the /notes message."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 569.0, 77.0, 185.0, 20.0 ],
+					"style" : "",
+					"text" : "note to MIDI number conversion."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 18.0,
+					"id" : "obj-3",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 569.0, 45.0, 122.0, 27.0 ],
+					"style" : "",
+					"text" : "m158.o.ntom"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-24",
-					"linecount" : 2,
 					"maxclass" : "o.compose",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 199.5, 294.5, 303.0, 38.0 ],
-					"presentation_rect" : [ 68.5, 290.0, 0.0, 0.0 ],
-					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 40, 47, 110, 111, 116, 101, 115, 0, 0, 44, 115, 115, 115, 0, 0, 0, 0, 99, 35, 58, 52, 0, 0, 0, 0, 101, 58, 52, 45, 49, 52, 0, 0, 103, 98, 58, 52, 43, 50, 0, 0, 0, 0, 0, 40, 47, 109, 105, 100, 105, 0, 0, 0, 44, 100, 100, 100, 0, 0, 0, 0, 64, 78, -128, 0, 0, 0, 0, 0, 64, 79, -18, 20, 122, -31, 71, -82, 64, 80, -127, 71, -82, 20, 122, -31 ],
-					"saved_bundle_length" : 104,
-					"text" : "/notes : [\"c#:4\", \"e:4-14\", \"gb:4+2\"],\n/midi : [61., 63.86, 66.02]",
+					"patching_rect" : [ 135.5, 380.5, 167.0, 24.0 ],
+					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 28, 47, 109, 105, 100, 105, 0, 0, 0, 44, 105, 105, 105, 0, 0, 0, 0, 0, 0, 0, 60, 0, 0, 0, 61, 0, 0, 0, 62 ],
+					"saved_bundle_length" : 48,
+					"text" : "/midi : [60, 61, 62]",
 					"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 				}
 
@@ -65,9 +196,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 158.5, 447.0, 401.0, 48.0 ],
-					"presentation_rect" : [ 146.5, 388.0, 0.0, 0.0 ],
-					"text" : "/notes : [\"c#:4\", \"e:4-14\", \"f#:4+2\"],\n/midi : [61., 63.86, 66.02]",
+					"patching_rect" : [ 76.5, 512.0, 401.0, 48.0 ],
+					"text" : "/midi : [60, 61, 62],\n/notes : [\"c:4\", \"c#:4\", \"d:4\"]",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -79,7 +209,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 158.5, 385.0, 91.0, 22.0 ],
+					"patching_rect" : [ 76.5, 450.0, 91.0, 22.0 ],
 					"style" : "",
 					"text" : "m158.o.mton"
 				}
@@ -92,7 +222,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 158.5, 216.0, 91.0, 22.0 ],
+					"patching_rect" : [ 76.5, 281.0, 91.0, 22.0 ],
 					"style" : "",
 					"text" : "m158.o.ntom"
 				}
@@ -106,7 +236,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 655.0, 167.0, 50.0, 22.0 ],
+					"patching_rect" : [ 370.5, 291.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -120,7 +250,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 650.0, 127.0, 50.0, 22.0 ],
+					"patching_rect" : [ 370.5, 251.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -130,13 +260,11 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-4",
-					"linecount" : 2,
 					"maxclass" : "o.compose",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 318.5, 131.0, 282.0, 38.0 ],
-					"presentation_rect" : [ 490.0, 31.0, 0.0, 0.0 ],
+					"patching_rect" : [ 236.5, 196.0, 289.0, 24.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 40, 47, 110, 111, 116, 101, 115, 0, 0, 44, 115, 115, 115, 0, 0, 0, 0, 99, 35, 58, 52, 0, 0, 0, 0, 101, 58, 52, 45, 49, 52, 0, 0, 103, 98, 58, 52, 43, 50, 0, 0 ],
 					"saved_bundle_length" : 60,
 					"text" : "/notes : [\"c#:4\", \"e:4-14\", \"gb:4+2\"]",
@@ -149,12 +277,11 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-1",
-					"linecount" : 2,
 					"maxclass" : "o.compose",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 158.5, 127.0, 131.0, 38.0 ],
+					"patching_rect" : [ 76.5, 192.0, 145.0, 24.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 47, 110, 111, 116, 101, 115, 0, 0, 44, 115, 0, 0, 98, 58, 51, 43, 49, 53, 0, 0 ],
 					"saved_bundle_length" : 40,
 					"text" : "/notes : \"b:3+15\"",
@@ -192,15 +319,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-24", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-21", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-23", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -229,13 +347,13 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "m158.o.ntom.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/158b-spring16-o.wrappers/notes",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/notes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "m158.o.mton.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/158b-spring16-o.wrappers/notes",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/notes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
