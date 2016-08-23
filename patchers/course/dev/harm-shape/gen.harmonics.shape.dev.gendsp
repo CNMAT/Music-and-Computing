@@ -40,12 +40,13 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-12",
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 659.0, 171.0, 150.0, 20.0 ],
+					"patching_rect" : [ 659.0, 171.0, 160.0, 47.0 ],
 					"style" : "",
-					"text" : "hz / samplerate"
+					"text" : "if ratios are used, amps are required, taken care of in odot in the main patch"
 				}
 
 			}
@@ -105,7 +106,7 @@
 			}
 , 			{
 				"box" : 				{
-					"code" : "Buffer ratiolist();\r\nHistory phase(0);\r\nData Incr(512);\r\nData PC(512);\r\n\r\nnratios = dim(ratiolist);\r\n\r\nconst_sr_incr = 1. / samplerate;\r\n\r\nbasehz = in1;\r\nnfreqs = clip(in2, 0, 512);\r\nex = in3 ;\r\noddamp = in4;\r\nevenamp = in5;\r\n\r\nbaseincr = basehz * const_sr_incr;\r\n\r\nsum_a = 0;\r\nw = 0;\r\n\r\nratio = peek(ratiolist, 0, 0, channels=1);\r\n\r\nif( ratio > 0 )\r\n{\r\n\tfor(i=1; (i<=nfreqs && i<=nratios); i+=1)\r\n\t{\r\n\t\tscalar = ( i % 2 == 1) ? oddamp : evenamp;\r\n\t\ta = (1.0 / fastpow(i, ex)) * scalar;\r\n\t\tsum_a += a;\r\n\t\t\r\n\t\tratio = peek(ratiolist, i-1, 0, channels=1);\r\n\t\tif( ratio != 0 )\t\t\r\n\t\t\tw += a * fastsin(phase * TWOPI * ratio);\r\n\t}\r\n}\r\nelse\r\n{\r\n\tfor(i=1; i<=nfreqs; i+=1)\r\n\t{\r\n\t\tscalar = ( i % 2 == 1) ? oddamp : evenamp;\r\n\t\ta = (1.0 / fastpow(i, ex)) * scalar;\r\n\t\tsum_a += a;\r\n\t\tw += a * fastsin(phase * TWOPI * i);\r\n\t}\r\n}\r\n\r\nout1 = w / sum_a;\r\nphase = (phase + baseincr);",
+					"code" : "Buffer ratiolist();\r\nBuffer amplist();\r\n\r\nHistory phase(0);\r\n\r\nnratios = dim(ratiolist);\r\nnamps = dim(amplist);\r\n\r\nconst_sr_incr = 1. / samplerate;\r\n\r\nbasehz = in1;\r\nnfreqs = clip(in2, 0, 512);\r\nex = in3 ;\r\noddamp = in4;\r\nevenamp = in5;\r\n\r\nbaseincr = basehz * const_sr_incr;\r\n\r\nsum_a = 0;\r\nw = 0;\r\n\r\nratio = peek(ratiolist, 0, 0, channels=1);\r\n\r\nif( ratio > 0 )\r\n{\r\n\tfor(i=1; (i<=nfreqs && i<=nratios); i+=1)\r\n\t{\r\n\t\tratio = peek(ratiolist, i-1, 0, channels=1);\r\n\t\tamp = peek(amplist, i-1, 0, channels=1);\r\n\t\t\r\n\t\tif( amp > 0 )\r\n\t\t{\r\n\t\t\tscalar = ( i % 2 == 1) ? oddamp : evenamp;\r\n\t\t\ta = amp * (1.0 / fastpow(i, ex)) * scalar;\r\n\t\t\tsum_a += a;\r\n\t\t\t\r\n\t\t\tif( ratio != 0 )\t\t\r\n\t\t\t\tw += a * fastsin(phase * TWOPI * ratio);\r\n\t\t}\r\n\t}\r\n}\r\nelse\r\n{\r\n\tfor(i=1; i<=nfreqs; i+=1)\r\n\t{\r\n\t\tscalar = ( i % 2 == 1) ? oddamp : evenamp;\r\n\t\ta = (1.0 / fastpow(i, ex)) * scalar;\r\n\t\tsum_a += a;\r\n\t\tw += a * fastsin(phase * TWOPI * i);\r\n\t}\r\n}\r\n\r\nout1 = w / sum_a;\r\nphase = (phase + baseincr);",
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -199,8 +200,7 @@
 				}
 
 			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
