@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 83.0, 79.0, 1158.0, 726.0 ],
+		"rect" : [ 100.0, 100.0, 1158.0, 726.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -55,7 +55,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 261.5, 74.0, 83.0, 20.0 ],
-					"presentation_rect" : [ 148.5, 378.5, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "phrase length"
 				}
@@ -70,7 +69,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 600.0, 17.0, 152.0, 27.0 ],
-					"presentation_rect" : [ 717.0, 35.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "m158.o.gui.table"
 				}
@@ -114,7 +112,7 @@
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 418.5, 517.0, 155.0, 95.0 ],
+					"patching_rect" : [ 418.5, 513.0, 155.0, 95.0 ],
 					"range" : [ 0.0, 1.0 ],
 					"style" : ""
 				}
@@ -515,7 +513,7 @@
 ,
 					"style" : "default",
 					"text" : "pattrstorage @outputmode 1 @notifymode 1",
-					"varname" : "u175005902"
+					"varname" : "u551004076"
 				}
 
 			}
@@ -555,7 +553,7 @@
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 418.5, 348.5, 155.0, 169.0 ],
+					"patching_rect" : [ 418.5, 336.5, 155.0, 169.0 ],
 					"range" : [ 0.0, 1.0 ],
 					"style" : ""
 				}
@@ -744,6 +742,7 @@
 			}
 , 			{
 				"patchline" : 				{
+					"color" : [ 0.0, 1.0, 0.933485, 1.0 ],
 					"destination" : [ "obj-12", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -754,6 +753,7 @@
 			}
 , 			{
 				"patchline" : 				{
+					"color" : [ 0.0, 1.0, 0.933485, 1.0 ],
 					"destination" : [ "obj-37", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
