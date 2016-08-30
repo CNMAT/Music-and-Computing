@@ -107,9 +107,8 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 199.0, 36.0, 30.0, 30.0 ],
-					"presentation_rect" : [ 187.0, 178.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -161,7 +160,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 199.0, 322.0, 100.0, 22.0 ],
 					"style" : "",
-					"text" : "wave~"
+					"text" : "wave~ @interp 5"
 				}
 
 			}
@@ -256,7 +255,39 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "o.api.handler.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.route.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.cond.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.pack.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.expr.codebox.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.prepend.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.union.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
