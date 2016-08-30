@@ -38,17 +38,12 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
-					"cols" : 512,
-					"fontface" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-9",
-					"maxclass" : "jit.cellblock",
-					"numinlets" : 2,
-					"numoutlets" : 4,
-					"outlettype" : [ "list", "", "", "" ],
-					"patching_rect" : [ 77.0, 338.0, 200.0, 200.0 ],
-					"rows" : 596
+					"id" : "obj-7",
+					"maxclass" : "jit.pwindow",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 83.0, 220.0, 80.0, 60.0 ]
 				}
 
 			}
@@ -337,7 +332,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 653.0, 250.0, 221.0, 170.0 ],
-					"text" : "/trigger : 1,\n/selected/start : 0.00218341,\n/selected/end : 1.,\n/hopsize : 256,\n/fftsize : 1024,\n/buffername : \"3013-buffer\",\n/nsamples : 153400,\n/ms : 3478.46,\n/samplerate : 44100.,\n/selected/length : 0.997817,\n/selected/ms : 3470.86",
+					"text" : "/hopsize : 256,\n/fftsize : 1024,\n/buffername : \"3092-buffer\",\n/nsamples : 153400,\n/ms : 3478.46,\n/samplerate : 44100.,\n/selected/start : 0,\n/selected/end : 1,\n/selected/length : 1,\n/selected/ms : 3478.46,\n/trigger : 0",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -468,7 +463,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
+					"destination" : [ "obj-7", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-18", 0 ]
