@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 330.0, 79.0, 1143.0, 724.0 ],
+		"rect" : [ 152.0, 79.0, 1119.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,22 @@
 		"style" : "",
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
+				"box" : 				{
+					"cols" : 512,
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-9",
+					"maxclass" : "jit.cellblock",
+					"numinlets" : 2,
+					"numoutlets" : 4,
+					"outlettype" : [ "list", "", "", "" ],
+					"patching_rect" : [ 77.0, 338.0, 200.0, 200.0 ],
+					"rows" : 596
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-4",
 					"maxclass" : "newobj",
@@ -167,19 +183,6 @@
 					"patching_rect" : [ 70.0, 281.0, 177.0, 33.0 ],
 					"style" : "",
 					"text" : "2 plane fft matrix containing amplitude and phase values"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-22",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 70.0, 250.0, 136.0, 22.0 ],
-					"style" : "",
-					"text" : "jit_matrix 2024-analysis"
 				}
 
 			}
@@ -334,7 +337,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 653.0, 250.0, 221.0, 170.0 ],
-					"text" : "/trigger : 1,\n/selected/start : 0.491266,\n/selected/end : 0.659389,\n/samplerate : 44100.,\n/ms : 3478.46,\n/nsamples : 153400,\n/buffername : \"2024-buffer\",\n/fftsize : 1024,\n/hopsize : 256,\n/selected/length : 0.168122,\n/selected/ms : 584.806",
+					"text" : "/trigger : 1,\n/selected/start : 0.00218341,\n/selected/end : 1.,\n/hopsize : 256,\n/fftsize : 1024,\n/buffername : \"3013-buffer\",\n/nsamples : 153400,\n/ms : 3478.46,\n/samplerate : 44100.,\n/selected/length : 0.997817,\n/selected/ms : 3470.86",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -456,19 +459,19 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-22", 1 ],
+					"destination" : [ "obj-4", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-18", 0 ]
+					"source" : [ "obj-18", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
+					"destination" : [ "obj-9", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-18", 1 ]
+					"source" : [ "obj-18", 0 ]
 				}
 
 			}
@@ -574,26 +577,20 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "o.gather.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/odot/patchers/namespace",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.righttoleft.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/odot/patchers/ordering",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "m158.o.gui.dropfile.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gui",
+				"name" : "o.deferlow.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.api.handler.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "m158.o.gui.dropfile.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gui",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -654,6 +651,10 @@
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "o.var.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "o.pack.mxo",
 				"type" : "iLaX"
 			}
@@ -674,27 +675,19 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.compose.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.intersection.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.collect.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.difference.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "o.prepend.mxo",
 				"type" : "iLaX"
 			}
 , 			{
 				"name" : "o.cond.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.compose.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.collect.mxo",
 				"type" : "iLaX"
 			}
  ],
