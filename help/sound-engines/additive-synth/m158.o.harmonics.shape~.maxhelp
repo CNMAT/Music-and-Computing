@@ -81,7 +81,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1178.0, 758.0 ],
+						"rect" : [ 140.0, 105.0, 1178.0, 758.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -111,6 +111,19 @@
 						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-25",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 695.25, 141.0, 297.0, 20.0 ],
+									"presentation_rect" : [ 640.0, 138.0, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "if no /amps are included with /ratios, all will be set to 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-34",
@@ -119,8 +132,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 566.25, 262.5, 441.0, 38.0 ],
-									"presentation_rect" : [ 571.25, 290.5, 0.0, 0.0 ],
+									"patching_rect" : [ 573.0, 255.5, 441.0, 38.0 ],
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 84, 47, 114, 97, 116, 105, 111, 115, 0, 44, 100, 100, 100, 100, 100, 100, 100, 100, 0, 0, 0, 63, -16, 0, 0, 0, 0, 0, 0, 63, -14, 0, 0, 0, 0, 0, 0, 63, -12, 0, 0, 0, 0, 0, 0, 63, -11, 85, 81, -42, -116, 105, 47, 63, -8, 0, 0, 0, 0, 0, 0, 63, -7, -103, -103, -103, -103, -103, -102, 63, -4, 0, 0, 0, 0, 0, 0, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 84, 47, 97, 109, 112, 115, 0, 0, 0, 44, 100, 100, 100, 100, 100, 100, 100, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, -55, -103, -103, -103, -103, -103, -102, 0, 0, 0, 0, 0, 0, 0, 0, 63, -39, -103, -103, -103, -103, -103, -102, 63, -32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, -26, 102, 102, 102, 102, 102, 102, 0, 0, 0, 0, 0, 0, 0, 0 ],
 									"saved_bundle_length" : 192,
 									"text" : "/ratios : [1., 1.125, 1.25, 1.33333, 1.5, 1.6, 1.75, 2.],\n/amps : [0., 0.2, 0., 0.4, 0.5, 0., 0.7, 0.]",
@@ -134,8 +146,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 672.0, 323.0, 281.0, 20.0 ],
-									"presentation_rect" : [ 672.0, 242.5, 0.0, 0.0 ],
+									"patching_rect" : [ 678.75, 316.0, 281.0, 20.0 ],
 									"style" : "",
 									"text" : "a ratio of zero resets to the default harmonic series"
 								}
@@ -150,8 +161,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 566.25, 321.0, 102.0, 24.0 ],
-									"presentation_rect" : [ 569.25, 253.5, 0.0, 0.0 ],
+									"patching_rect" : [ 573.0, 314.0, 102.0, 24.0 ],
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 47, 114, 97, 116, 105, 111, 115, 0, 44, 105, 0, 0, 0, 0, 0, 0 ],
 									"saved_bundle_length" : 36,
 									"text" : "/ratios : 0",
@@ -218,7 +228,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 566.25, 127.5, 60.0, 22.0 ],
+									"patching_rect" : [ 568.25, 123.5, 60.0, 22.0 ],
 									"style" : "",
 									"text" : "loadbang"
 								}
@@ -234,7 +244,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 566.25, 166.5, 441.0, 65.0 ],
+									"patching_rect" : [ 568.25, 165.5, 441.0, 65.0 ],
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 84, 47, 114, 97, 116, 105, 111, 115, 0, 44, 100, 100, 100, 100, 100, 100, 100, 100, 0, 0, 0, 63, -16, 0, 0, 0, 0, 0, 0, 63, -14, 0, 0, 0, 0, 0, 0, 63, -12, 0, 0, 0, 0, 0, 0, 63, -11, 85, 81, -42, -116, 105, 47, 63, -8, 0, 0, 0, 0, 0, 0, 63, -7, -103, -103, -103, -103, -103, -102, 63, -4, 0, 0, 0, 0, 0, 0, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 47, 115, 99, 97, 108, 101, 47, 111, 100, 100, 0, 0, 44, 105, 0, 0, 0, 0, 0, 1, 0, 0, 0, 20, 47, 115, 99, 97, 108, 101, 47, 101, 118, 101, 110, 0, 44, 105, 0, 0, 0, 0, 0, 1, 0, 0, 0, 16, 47, 110, 104, 97, 114, 109, 115, 0, 44, 105, 0, 0, 0, 0, 0, 8 ],
 									"saved_bundle_length" : 172,
 									"text" : "/ratios : [1., 1.125, 1.25, 1.33333, 1.5, 1.6, 1.75, 2.],\n/scale/odd : 1,\n/scale/even : 1,\n/nharms : 8",
@@ -260,13 +270,13 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-29",
-									"linecount" : 5,
+									"linecount" : 7,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 522.25, 408.0, 430.0, 88.0 ],
-									"text" : "/scale/even : 1,\n/scale/odd : 1,\n/exp : 0,\n/nharms : 8,\n/hz : 0.",
+									"patching_rect" : [ 522.25, 408.0, 430.0, 116.0 ],
+									"text" : "/scale/even : 1,\n/scale/odd : 1,\n/exp : 0,\n/nharms : 8,\n/hz : 0.,\n/amps : [1., 1., 1., 1., 1., 1., 1., 1.],\n/ratios : [1., 1.125, 1.25, 1.33333, 1.5, 1.6, 1.75, 2.]",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -993,7 +1003,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 140.0, 105.0, 1178.0, 758.0 ],
+						"rect" : [ 0.0, 26.0, 1178.0, 758.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1551,7 +1561,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "float" ],
 									"patching_rect" : [ 194.100006, 155.5, 56.0, 22.0 ],
-									"sig" : 1.0,
+									"sig" : -3.32,
 									"style" : ""
 								}
 
@@ -1568,7 +1578,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "float" ],
 									"patching_rect" : [ 131.050003, 209.0, 56.0, 22.0 ],
-									"sig" : 8.0,
+									"sig" : 7.0,
 									"style" : ""
 								}
 
@@ -1829,6 +1839,12 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "gen.harmonics.shape.gendsp",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/code",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "o.input.switch~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
 				"type" : "JSON",
@@ -1838,12 +1854,6 @@
 				"name" : "o.api.handler.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "gen.harmonics.shape.gendsp",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/code",
-				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{

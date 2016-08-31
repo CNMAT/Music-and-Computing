@@ -38,6 +38,19 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-35",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "FullPacket" ],
+					"patching_rect" : [ 662.0, 444.0, 124.0, 22.0 ],
+					"style" : "",
+					"text" : "o.select /amps /ratios"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-28",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -170,7 +183,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "FullPacket" ],
+									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 40.0, 30.0, 30.0 ],
 									"style" : ""
 								}
@@ -228,7 +241,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 634.75, 630.0, 56.0, 22.0 ],
+					"patching_rect" : [ 668.0, 643.0, 56.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -318,7 +331,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "FullPacket" ],
-					"patching_rect" : [ 391.0, 399.0, 157.0, 22.0 ],
+					"patching_rect" : [ 391.0, 399.0, 257.0, 22.0 ],
 					"style" : "",
 					"text" : "o.route /amplist /ratiolist"
 				}
@@ -513,7 +526,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 104.0, 512.0, 75.0, 22.0 ],
 									"style" : "",
-									"text" : "1341-ratio1"
+									"text" : "1079-ratio0"
 								}
 
 							}
@@ -919,13 +932,13 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-28",
-									"linecount" : 39,
+									"linecount" : 40,
 									"maxclass" : "o.expr.codebox",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 54.0, 55.0, 740.0, 548.0 ],
-									"text" : "/prev/amps ??= 0,\n/prev/ratios ??= -1,\n/count ??= 0,\n/count = (/count+1) % 2,    \n\nif( bound(/amps) && (length(/amps) != length(/prev/amps) || sum(/amps != /prev/amps) > 0),\n  progn(\n    /amplist/setbuf = /unique+\"-amp\"+/count,\n    /amplist/setlen = length(/amps),\n    /amplist/fill = /amps,\n    /prev/amps = /amps\n  )\n),\n\nif( bound(/ratios) && (length(/ratios) != length(/prev/ratios) || sum(/ratios != /prev/ratios) > 0),\n  progn(\n    /ratiolist/setbuf = /unique+\"-ratio\"+/count,\n    /ratiolist/setlen = length(/ratios),\n    /ratiolist/fill = /ratios,\n    /prev/ratios = /ratios\n  )\n),\n\nif( bound(/ratios) && !bound(/amps),\n  progn(\n    /amplist/setbuf = /unique+\"-amp\"+/count,\n    /amplist/setlen = length(/ratios),\n    /amplist/fill = nfill(/amplist/setlen, 1.),\n    /prev/amps = /amplist/fill\n  ),\n  if( !bound(/ratios) && bound(/amps),\n    progn(\n      /ratiolist/setbuf = /unique+\"-ratio\"+/count,\n      /ratiolist/setlen = length(/amps),\n      /ratiolist/fill = aseq(1, length(/amps)),\n      /prev/ratios = /ratiolist/fill\n    )\n  )\n)",
+									"patching_rect" : [ 54.0, 55.0, 740.0, 562.0 ],
+									"text" : "/prev/amps ??= 0,\n/prev/ratios ??= -1,\n/count ??= 0,\n/count = (/count+1) % 2,    \n\nif( bound(/amps) && (length(/amps) != length(/prev/amps) || sum(/amps != /prev/amps) > 0),\n  progn(\n    /amplist/setbuf = /unique+\"-amp\"+/count,\n    /amplist/setlen = length(/amps),\n    /amplist/fill = /amps,\n    /prev/amps = /amps\n  )\n),\n\nif( bound(/ratios) && (length(/ratios) != length(/prev/ratios) || sum(/ratios != /prev/ratios) > 0),\n  progn(\n    /ratiolist/setbuf = /unique+\"-ratio\"+/count,\n    /ratiolist/setlen = length(/ratios),\n    /ratiolist/fill = /ratios,\n    /prev/ratios = /ratios\n  )\n),\n\nif( bound(/ratios) && !bound(/amps),\n  progn(\n    /amplist/setbuf = /unique+\"-amp\"+/count,\n    /amplist/setlen = length(/ratios),\n    /amplist/fill = nfill(/amplist/setlen, 1.),\n    /amps = /amplist/fill,\n    /prev/amps = /amplist/fill\n  ),\n  if( !bound(/ratios) && bound(/amps),\n    progn(\n      /ratiolist/setbuf = /unique+\"-ratio\"+/count,\n      /ratiolist/setlen = length(/amps),\n      /ratiolist/fill = aseq(1, length(/amps)),\n      /prev/ratios = /ratiolist/fill\n    )\n  )\n)",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -1122,7 +1135,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 104.0, 512.0, 75.0, 22.0 ],
 									"style" : "",
-									"text" : "1029-harm1"
+									"text" : "1079-amp0"
 								}
 
 							}
@@ -1620,7 +1633,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 560.75, 538.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -1659,7 +1672,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 210.0, 515.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -1672,7 +1685,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 11.5, 5.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -2022,6 +2035,35 @@
 			}
 , 			{
 				"patchline" : 				{
+					"color" : [ 0.001082, 0.798639, 1.0, 1.0 ],
+					"destination" : [ "obj-26", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 776.5, 482.0, 795.5, 482.0, 795.5, 251.5, 184.5, 251.5 ],
+					"source" : [ "obj-35", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-40", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-35", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-40", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-17", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -2049,11 +2091,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"color" : [ 0.001082, 0.798639, 1.0, 1.0 ],
-					"destination" : [ "obj-26", 0 ],
+					"destination" : [ "obj-35", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 538.5, 431.0, 728.5, 431.0, 728.5, 251.5, 184.5, 251.5 ],
+					"midpoints" : [ 638.5, 432.0, 671.5, 432.0 ],
 					"source" : [ "obj-37", 2 ]
 				}
 
