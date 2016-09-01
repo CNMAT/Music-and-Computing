@@ -282,7 +282,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 495.0, 77.0, 872.0, 855.0 ],
+						"rect" : [ 371.0, 63.0, 872.0, 855.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -314,13 +314,13 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-10",
-									"linecount" : 49,
+									"linecount" : 51,
 									"maxclass" : "o.expr.codebox",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 50.0, 59.0, 503.0, 684.0 ],
-									"text" : "/_/norm ??= 0,\n/_/xdelta ??= 1,\n/_/direct ??= 0,\n\n/~/x2delta = \"lambda([xlist],\n  prog2(\n    /_/prev = 0,\n    map(\n      lambda([x],\n        prog1(\n          x - /_/prev,\n          /_/prev = x\n        )\n      ), xlist\n    ),\n    delete(/_/count)\n  )\n)\",\n\nmap(\n  lambda([a],\n    if( /_/direct == 1,\n      progn(\n        /_/y = value(a),\n        assign(\"/out\"+a+\"/x\", aseq(0, length(/_/y)-1)),\n        assign(\"/out\"+a+\"/y\", /_/y)\n      ),\n      progn(\n        /_/tab = value(a),\n        /_/len = length(/_/tab),\n        /_/x = [],\n        /_/y = [],\n        map(\n          lambda([y,x],\n            if( !bound(/_/prev) || y != /_/prev,\n              progn(\n                /_/y = [/_/y, y],\n                /_/x = [/_/x, (/_/norm ? float32(x) / /_/len : x) ]\n              )\n            ),\n            /_/prev = y\n          ), /_/tab, aseq(0, /_/len - 1)\n        ),\n        assign(\"/out\"+a+\"/x\", /_/x),\n        assign(\"/out\"+a+\"/y\", /_/y)\n      )\n    )\n  ), /_/addr\n)",
+									"patching_rect" : [ 50.0, 58.0, 503.0, 711.0 ],
+									"text" : "/_/norm ??= 1,\n/_/xdelta ??= 1,\n/_/direct ??= 0,\n\n/~/x2delta = \"lambda([xlist],\n  prog2(\n    /_/prev = 0,\n    map(\n      lambda([x],\n        prog1(\n          x - /_/prev,\n          /_/prev = x\n        )\n      ), xlist\n    ),\n    delete(/_/count)\n  )\n)\",\n\nmap(\n  lambda([a],\n    if( /_/direct == 1,\n      progn(\n        /_/y = value(a),\n        /_/x = aseq(0, length(/_/y)-1),\n        if( /_/norm == 1, /_/x = float32(/_/x) / max(/_/x)),\n        assign(\"/out\"+a+\"/x\", /_/x),\n        assign(\"/out\"+a+\"/y\", /_/y)\n      ),\n      progn(\n        /_/tab = value(a),\n        /_/len = length(/_/tab),\n        /_/x = [],\n        /_/y = [],\n        map(\n          lambda([y,x],\n            if( !bound(/_/prev) || y != /_/prev,\n              progn(\n                /_/y = [/_/y, y],\n                /_/x = [/_/x, (/_/norm ? float32(x) / /_/len : x) ]\n              )\n            ),\n            /_/prev = y\n          ), /_/tab, aseq(0, /_/len - 1)\n        ),\n        assign(\"/out\"+a+\"/x\", /_/x),\n        assign(\"/out\"+a+\"/y\", /_/y)\n      )\n    )\n  ), /_/addr\n)",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
