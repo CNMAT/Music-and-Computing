@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -56,7 +56,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 497.0, 129.0, 361.0, 33.0 ],
+					"patching_rect" : [ 530.0, 129.0, 361.0, 33.0 ],
 					"style" : "",
 					"text" : "<< patcher args can be late compared to loadbangs upstream, so using done here to re-trigger output on load."
 				}
@@ -74,7 +74,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -277,12 +277,12 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 384.0, 45.0, 872.0, 855.0 ],
+						"rect" : [ 495.0, 77.0, 872.0, 855.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -312,15 +312,15 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontface" : 0,
-									"fontsize" : 10.0,
+									"fontsize" : 12.0,
 									"id" : "obj-10",
-									"linecount" : 41,
+									"linecount" : 49,
 									"maxclass" : "o.expr.codebox",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 50.0, 58.0, 523.0, 483.0 ],
-									"text" : "/_/norm ??= 0,\n/_/xdelta ??= 1,\n\n/~/x2delta = \"lambda([xlist],\n  prog2(\n    /_/prev = 0,\n    map(\n      lambda([x],\n        prog1(\n          x - /_/prev,\n          /_/prev = x\n        )\n      ), xlist\n    ),\n    delete(/_/count)\n  )\n)\",\n\nmap(\n  lambda([a],\n    progn(\n      /_/tab = value(a),\n      /_/len = length(/_/tab),\n      /_/x = [],\n      /_/y = [],\n      map(\n        lambda([y,x],\n          if( !bound(/_/prev) || y != /_/prev,\n            progn(\n              /_/y = [/_/y, y],\n              /_/x = [/_/x, (/_/norm ? float32(x) / /_/len : x) ]\n            )\n          ),\n          /_/prev = y\n        ), /_/tab, aseq(0, /_/len - 1)\n      ),\n      assign(\"/out\"+a+\"/x\", /_/x),\n      assign(\"/out\"+a+\"/y\", /_/y)\n    )\n  ), /_/addr\n)",
+									"patching_rect" : [ 50.0, 59.0, 503.0, 684.0 ],
+									"text" : "/_/norm ??= 0,\n/_/xdelta ??= 1,\n/_/direct ??= 0,\n\n/~/x2delta = \"lambda([xlist],\n  prog2(\n    /_/prev = 0,\n    map(\n      lambda([x],\n        prog1(\n          x - /_/prev,\n          /_/prev = x\n        )\n      ), xlist\n    ),\n    delete(/_/count)\n  )\n)\",\n\nmap(\n  lambda([a],\n    if( /_/direct == 1,\n      progn(\n        /_/y = value(a),\n        assign(\"/out\"+a+\"/x\", aseq(0, length(/_/y)-1)),\n        assign(\"/out\"+a+\"/y\", /_/y)\n      ),\n      progn(\n        /_/tab = value(a),\n        /_/len = length(/_/tab),\n        /_/x = [],\n        /_/y = [],\n        map(\n          lambda([y,x],\n            if( !bound(/_/prev) || y != /_/prev,\n              progn(\n                /_/y = [/_/y, y],\n                /_/x = [/_/x, (/_/norm ? float32(x) / /_/len : x) ]\n              )\n            ),\n            /_/prev = y\n          ), /_/tab, aseq(0, /_/len - 1)\n        ),\n        assign(\"/out\"+a+\"/x\", /_/x),\n        assign(\"/out\"+a+\"/y\", /_/y)\n      )\n    )\n  ), /_/addr\n)",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -346,7 +346,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 587.0, 30.0, 30.0 ],
+									"patching_rect" : [ 50.0, 779.0, 30.0, 30.0 ],
 									"style" : "",
 									"varname" : "u286001501"
 								}
@@ -422,7 +422,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "bang" ],
-					"patching_rect" : [ 438.5, 120.0, 44.0, 22.0 ],
+					"patching_rect" : [ 465.5, 121.0, 44.0, 22.0 ],
 					"style" : "",
 					"text" : "t b b b"
 				}
@@ -458,12 +458,12 @@
 				"box" : 				{
 					"id" : "obj-4",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
+					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 342.5, 257.0, 159.0, 22.0 ],
+					"patching_rect" : [ 342.5, 257.0, 215.0, 22.0 ],
 					"style" : "",
-					"text" : "o.pack /_/norm 1 /_/xdelta 0"
+					"text" : "o.pack /_/norm 1 /_/xdelta 0 /_/direct 0"
 				}
 
 			}
@@ -471,12 +471,12 @@
 				"box" : 				{
 					"id" : "obj-2",
 					"maxclass" : "newobj",
-					"numinlets" : 4,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 342.5, 89.0, 163.0, 22.0 ],
+					"numinlets" : 5,
+					"numoutlets" : 5,
+					"outlettype" : [ "", "", "", "", "" ],
+					"patching_rect" : [ 342.5, 89.0, 183.0, 22.0 ],
 					"style" : "",
-					"text" : "route normal_x delta done"
+					"text" : "route normal_x delta direct done"
 				}
 
 			}
@@ -668,6 +668,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-2", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 2 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-2", 2 ]

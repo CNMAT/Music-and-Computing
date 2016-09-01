@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 261.0, 187.0, 793.0, 572.0 ],
+		"rect" : [ 100.0, 100.0, 793.0, 572.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -80,7 +80,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 436.0, 115.0, 302.0, 60.0 ],
-					"presentation_rect" : [ 444.0, 125.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "Requires pitch and amplitude parameters.\n\nPitch may be specified with the /hz or /midi addresses.\nAmplitude is specified with the /amp address."
 				}
@@ -111,7 +110,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 525.0, 338.0, 204.0, 33.0 ],
+					"patching_rect" : [ 551.0, 338.0, 204.0, 33.0 ],
 					"style" : "",
 					"text" : "or a list can be given to specify an amplitude for each"
 				}
@@ -140,10 +139,10 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 269.5, 338.0, 224.0, 38.0 ],
-					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 47, 109, 105, 100, 105, 0, 0, 0, 44, 105, 105, 105, 105, 0, 0, 0, 0, 0, 0, 60, 0, 0, 0, 61, 0, 0, 0, 62, 0, 0, 0, 63, 0, 0, 0, 48, 47, 97, 109, 112, 0, 0, 0, 0, 44, 100, 100, 100, 100, 0, 0, 0, 63, -48, 0, 0, 0, 0, 0, 0, 63, -26, 102, 102, 102, 102, 102, 102, 63, -29, 51, 51, 51, 51, 51, 51, 63, -32, 0, 0, 0, 0, 0, 0 ],
-					"saved_bundle_length" : 104,
-					"text" : "/midi : [60, 61, 62, 63],\n/amp : [0.25, 0.7, 0.6, 0.5]",
+					"patching_rect" : [ 269.5, 338.0, 276.0, 38.0 ],
+					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 44, 47, 109, 105, 100, 105, 0, 0, 0, 44, 105, 100, 100, 100, 0, 0, 0, 0, 0, 0, 60, 64, 79, 107, -123, 30, -72, 81, -20, 64, 80, 62, -72, 81, -21, -123, 31, 64, 80, -63, 71, -82, 20, 122, -31, 0, 0, 0, 48, 47, 97, 109, 112, 0, 0, 0, 0, 44, 100, 100, 100, 100, 0, 0, 0, 63, -48, 0, 0, 0, 0, 0, 0, 63, -26, 102, 102, 102, 102, 102, 102, 63, -29, 51, 51, 51, 51, 51, 51, 63, -32, 0, 0, 0, 0, 0, 0 ],
+					"saved_bundle_length" : 116,
+					"text" : "/midi : [60, 62.84, 64.98, 67.02],\n/amp : [0.25, 0.7, 0.6, 0.5]",
 					"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 				}
 

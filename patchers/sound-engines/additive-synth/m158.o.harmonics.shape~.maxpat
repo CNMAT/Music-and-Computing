@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -118,7 +118,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -183,7 +183,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "FullPacket" ],
 									"patching_rect" : [ 50.0, 40.0, 30.0, 30.0 ],
 									"style" : ""
 								}
@@ -349,7 +349,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -485,7 +485,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -895,7 +895,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1059,7 +1059,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "OSC",
 					"id" : "obj-21",
 					"maxclass" : "outlet",
 					"numinlets" : 1,
@@ -1094,7 +1094,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1616,7 +1616,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "(signal) waveform out",
 					"id" : "obj-6",
 					"maxclass" : "outlet",
 					"numinlets" : 1,
@@ -1628,12 +1628,12 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "(signal) even harmonic scalar",
 					"id" : "obj-5",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 560.75, 538.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -1641,12 +1641,12 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "(signal) odd harmonic scalar",
 					"id" : "obj-4",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 435.5, 538.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -1654,20 +1654,20 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "(signal) harmonic amplitude coefficient 1/(n^x)",
 					"id" : "obj-3",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 310.25, 520.0, 30.0, 30.0 ],
+					"patching_rect" : [ 310.25, 521.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "(signal) number of harmonics",
 					"id" : "obj-2",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
@@ -1685,7 +1685,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 11.5, 5.0, 30.0, 30.0 ],
 					"style" : ""
 				}

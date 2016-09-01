@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 152.0, 79.0, 1119.0, 787.0 ],
+		"rect" : [ 100.0, 100.0, 738.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,19 @@
 		"style" : "",
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "FullPacket" ],
+					"patching_rect" : [ 312.0, 220.0, 100.0, 22.0 ],
+					"style" : "",
+					"text" : "o.route /buffer"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-7",
 					"maxclass" : "jit.pwindow",
@@ -183,17 +196,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-17",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 428.0, 372.5, 150.0, 20.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-15",
 					"maxclass" : "live.gain~",
 					"numinlets" : 2,
@@ -326,13 +328,13 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-21",
-					"linecount" : 11,
+					"linecount" : 12,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 653.0, 250.0, 221.0, 170.0 ],
-					"text" : "/hopsize : 256,\n/fftsize : 1024,\n/buffername : \"3092-buffer\",\n/nsamples : 153400,\n/ms : 3478.46,\n/samplerate : 44100.,\n/selected/start : 0,\n/selected/end : 1,\n/selected/length : 1,\n/selected/ms : 3478.46,\n/trigger : 0",
+					"patching_rect" : [ 681.0, 257.0, 221.0, 184.0 ],
+					"text" : "/buffer/trigger : 1,\n/buffer/hopsize : 256,\n/buffer/fftsize : 1024,\n/buffer/buffername : \"1639-buffer\",\n/buffer/nsamples : 153400,\n/buffer/ms : 3478.46,\n/buffer/samplerate : 44100.,\n/buffer/selected/start : 0.,\n/buffer/selected/end : 1.,\n/buffer/selected/length : 1.,\n/buffer/selected/ms : 3478.46",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -454,19 +456,19 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
+					"destination" : [ "obj-7", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-18", 1 ]
+					"source" : [ "obj-18", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
+					"destination" : [ "obj-9", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-18", 0 ]
+					"source" : [ "obj-18", 1 ]
 				}
 
 			}
@@ -557,6 +559,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-9", 0 ]
 				}
 
 			}
@@ -658,7 +669,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "jit.!-.mxo",
+				"name" : "jit.*.mxo",
 				"type" : "iLaX"
 			}
 , 			{
