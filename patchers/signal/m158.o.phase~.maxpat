@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 410.0, 159.0, 799.0, 601.0 ],
+		"rect" : [ 410.0, 159.0, 845.0, 580.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,20 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 454.0, 48.0, 157.0, 22.0 ],
+					"presentation_rect" : [ 501.0, 379.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "routepass signal FullPacket"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-12",
 					"linecount" : 2,
 					"maxclass" : "message",
@@ -45,7 +59,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 149.0, 234.0, 87.0, 35.0 ],
-					"presentation_rect" : [ 137.5, 252.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "phasecycle 0, hzmode 0"
 				}
@@ -58,7 +71,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 326.0, 115.0, 80.0, 22.0 ],
+					"patching_rect" : [ 326.0, 133.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "o.api.handler"
 				}
@@ -84,7 +97,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 565.5, 44.0, 24.0, 24.0 ],
+					"patching_rect" : [ 628.5, 36.5, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -99,7 +112,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 565.5, 73.0, 181.0, 51.0 ],
+					"patching_rect" : [ 628.5, 65.5, 181.0, 51.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 72, 47, 97, 112, 105, 47, 109, 49, 53, 56, 46, 111, 46, 114, 97, 109, 112, 126, 0, 0, 0, 44, 46, 0, 0, 0, 0, 0, 44, 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 47, 105, 110, 108, 101, 116, 47, 49, 0, 0, 0, 0, 44, 115, 0, 0, 115, 116, 117, 102, 102, 0, 0, 0 ],
 					"saved_bundle_length" : 92,
 					"text" : "/api/m158.o.phase~ : {\n\t/inlet/1 : \"stuff\"\n}",
@@ -114,7 +127,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 596.5, 176.0, 30.0, 30.0 ],
+					"patching_rect" : [ 657.5, 209.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -256,7 +269,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 257.0, 54.0, 157.0, 22.0 ],
+					"patching_rect" : [ 257.0, 94.5, 157.0, 22.0 ],
 					"style" : "",
 					"text" : "routepass signal FullPacket"
 				}
@@ -282,7 +295,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 398.0, 478.0, 30.0, 30.0 ],
+					"patching_rect" : [ 454.0, 478.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -294,7 +307,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 327.5, 478.0, 30.0, 30.0 ],
+					"patching_rect" : [ 355.5, 478.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -319,7 +332,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 398.0, 389.0, 30.0, 30.0 ],
+					"patching_rect" : [ 454.0, 4.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -344,7 +357,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "signal" ],
-					"patching_rect" : [ 257.0, 432.0, 160.0, 22.0 ],
+					"patching_rect" : [ 257.0, 432.0, 216.0, 22.0 ],
 					"style" : "",
 					"text" : "gen~ @gen shot-ms-phasor"
 				}
@@ -498,7 +511,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-14", 1 ],
+					"destination" : [ "obj-24", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-2", 0 ]
@@ -594,6 +607,24 @@
 					"hidden" : 0,
 					"midpoints" : [ 356.5, 218.5, 276.0, 218.5 ],
 					"source" : [ "obj-23", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-24", 1 ]
 				}
 
 			}

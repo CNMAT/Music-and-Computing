@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 308.0, 151.0, 753.0, 531.0 ],
+		"rect" : [ 1625.0, 152.0, 719.0, 501.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,14 +38,26 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
-					"comment" : "",
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "" ],
+					"patching_rect" : [ 287.0, 115.0, 118.0, 22.0 ],
+					"style" : "",
+					"text" : "m158.o.click~ /reset"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "(signal) non-zero to reset",
 					"id" : "obj-7",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 241.0, 115.0, 30.0, 30.0 ],
-					"presentation_rect" : [ 243.0, 116.0, 0.0, 0.0 ],
+					"patching_rect" : [ 219.0, 94.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -56,7 +68,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 473.0, 232.0, 95.0, 20.0 ],
+					"patching_rect" : [ 515.0, 250.0, 95.0, 20.0 ],
 					"style" : "",
 					"text" : "add vsnapshot?"
 				}
@@ -64,12 +76,12 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "OSC out",
 					"id" : "obj-8",
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 414.0, 315.0, 30.0, 30.0 ],
+					"patching_rect" : [ 468.0, 274.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -81,7 +93,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "bang", "FullPacket" ],
-					"patching_rect" : [ 287.0, 166.0, 154.0, 22.0 ],
+					"patching_rect" : [ 386.0, 164.0, 155.0, 22.0 ],
 					"style" : "",
 					"text" : "m158.o.num~ #1"
 				}
@@ -89,25 +101,25 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "(signal) count",
 					"id" : "obj-5",
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 206.0, 293.0, 30.0, 30.0 ],
+					"patching_rect" : [ 184.0, 274.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "OSC in to set max count",
 					"id" : "obj-4",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 287.0, 115.0, 30.0, 30.0 ],
+					"patching_rect" : [ 287.0, 51.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -119,7 +131,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 206.0, 209.0, 100.0, 22.0 ],
+					"patching_rect" : [ 184.0, 211.0, 54.0, 22.0 ],
 					"style" : "",
 					"text" : "%~"
 				}
@@ -132,7 +144,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 206.0, 173.0, 32.0, 22.0 ],
+					"patching_rect" : [ 184.0, 164.0, 54.0, 22.0 ],
 					"style" : "",
 					"text" : "+=~"
 				}
@@ -140,13 +152,13 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "(signal) click to count",
 					"id" : "obj-1",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 206.0, 115.0, 30.0, 30.0 ],
+					"patching_rect" : [ 184.0, 94.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -181,7 +193,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
+					"destination" : [ "obj-9", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-4", 0 ]
@@ -212,6 +224,24 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-9", 1 ]
 				}
 
 			}
