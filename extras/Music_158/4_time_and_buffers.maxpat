@@ -53,7 +53,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1274.0, 761.0 ],
+						"rect" : [ 88.0, 105.0, 1274.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -90,7 +90,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 529.0, 126.0, 288.0, 64.0 ],
-									"presentation_rect" : [ 531.5, 108.5, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "o.granubuf~'s leftmost inlet is the \"trigger\" inlet. Any non-zero sample will trigger a new grain, or sample layer, configured with the values set at that sample via the other signal inlets, or OSC."
 								}
@@ -104,8 +103,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 964.5, 220.5, 276.0, 51.0 ],
-									"presentation_rect" : [ 977.5, 143.0, 0.0, 0.0 ],
+									"patching_rect" : [ 964.5, 220.5, 277.0, 51.0 ],
 									"style" : "",
 									"text" : "o.granubuf~ allows you to load one or a folder full of sound files, which then are collected and indexed internally."
 								}
@@ -115,13 +113,13 @@
 								"box" : 								{
 									"bubble" : 1,
 									"id" : "obj-10",
-									"linecount" : 6,
+									"linecount" : 4,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 560.5, 286.5, 291.0, 91.0 ],
+									"patching_rect" : [ 560.5, 300.0, 291.0, 64.0 ],
 									"style" : "",
-									"text" : "The rightmost inlet sets the buffer index to play from the loaded sound files (starting at zero). In this example, there are 15 files loaded -- try changing the buffer number from 0-14. Since this is controllable at sample rate, we can use o.granubuf~ as a sample bank player."
+									"text" : "The rightmost inlet sets the buffer index to play from the loaded sound files (starting at zero). In this example, there are 15 files loaded -- try changing the buffer number from 0-14."
 								}
 
 							}
@@ -137,7 +135,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "float" ],
 									"patching_rect" : [ 493.0, 321.0, 56.0, 22.0 ],
-									"sig" : 3.0,
+									"sig" : 0.0,
 									"style" : ""
 								}
 
@@ -208,7 +206,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 529.0, 404.0, 682.0, 238.0 ],
-									"text" : "/file/name : \"~/Documents/Max 7/Packages/CNMAT-M158/media/808/\",\n/file/type : \"fold\",\n/nbuffers : 15,\n/namelist : [\"cl_hihat.aif\", \"claves.aif\", \"conga1.aif\", \"cowbell.aif\", \"crashcym.aif\", \"handclap.aif\", \"hi_conga.aif\", \"hightom.aif\", \"kick1.aif\", \"kick2.aif\", \"maracas.aif\", \"open_hh.aif\", \"rimshot.aif\", \"snare.aif\", \"tom1.aif\"],\n/lengths : [2328., 1311., 11488., 14992, 98309, 15901., 7880., 8800., 30942., 38160., 1133., 26352., 608., 4088., 15888.],\n/buffername : \"1679-combined\",\n/yshape : -5,\n/xshape : 0,\n/amp : 1,\n/pan : 0,\n/start : 0,\n/rate : 1,\n/duration : -1",
+									"text" : "/file/name : \"~/Documents/Max 7/Packages/CNMAT-M158/media/808/\",\n/file/type : \"fold\",\n/nbuffers : 15,\n/namelist : [\"cl_hihat.aif\", \"claves.aif\", \"conga1.aif\", \"cowbell.aif\", \"crashcym.aif\", \"handclap.aif\", \"hi_conga.aif\", \"hightom.aif\", \"kick1.aif\", \"kick2.aif\", \"maracas.aif\", \"open_hh.aif\", \"rimshot.aif\", \"snare.aif\", \"tom1.aif\"],\n/lengths : [2328., 1311., 11488., 14992, 98309, 15901., 7880., 8800., 30942., 38160., 1133., 26352., 608., 4088., 15888.],\n/buffername : \"2176-combined\",\n/yshape : -5,\n/xshape : 0,\n/amp : 1,\n/pan : 0,\n/start : 0,\n/rate : 1,\n/duration : -1",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -367,13 +365,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-63",
-									"linecount" : 3,
+									"linecount" : 8,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 9.0, 35.5, 334.0, 47.0 ],
+									"patching_rect" : [ 9.0, 35.5, 358.0, 114.0 ],
 									"style" : "",
-									"text" : "o.granubuf~ is a granular buffer player, that provides some useful features for triggering playback at sample rate. See the help patch for more information. "
+									"text" : "o.granubuf~ is a granular buffer player, that provides some useful features for triggering playback at sample rate.\n\nIn the following examples, we'll be loading a folder of samples into o.granubuf~ and triggering them with sample rate accuracy.\n\nSince this is controllable at sample rate, we can use o.granubuf~ as a sample bank player."
 								}
 
 							}
@@ -677,7 +675,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 15.0, 34.5, 329.0, 288.0 ],
+									"patching_rect" : [ 15.0, 34.5, 331.0, 288.0 ],
 									"style" : "",
 									"text" : "m158.o.buffer~ and m158.o.buffer.player~ provide basic buffer and playback functionality for a single buffer.\n\nIn Max, sound files may be played directly from disk, or read into a memory buffer for fast read and write access. Since we are interested in manipulating and tightly controlling sound, we will focus on buffer based playback.\n\nm158.o.buffer~ provides an easy way to load a sound file into memory and outputs an OSC bundle containing some useful details about the file, and the region that is selected in the GUI window.\n\nm158.o.buffer.player~ takes the information from m158.o.buffer~ and uses it to scale the input phase value to the selected region of the sound file (the full file by default).\n\nIn this example, the selected region in the m158.o.buffer~ GUI window is scaled by the /ms/scale value. A value of 0.5 plays the sound in half the time, and a value of 2 plays the region in twice the time. How does this effect the pitch? "
 								}
@@ -694,7 +692,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 812.5, 154.0, 272.0, 184.0 ],
-									"text" : "/file/name : \"drumloop.aif\",\n/buffer/hopsize : 256,\n/buffer/fftsize : 1024,\n/buffer/name : \"1691-buffer\",\n/buffer/nsamples : 153400,\n/buffer/ms : 3478.46,\n/buffer/samplerate : 44100.,\n/buffer/selected/start : 0,\n/buffer/selected/end : 1,\n/buffer/selected/length : 1,\n/buffer/selected/ms : 3478.46,\n/buffer/trigger : 0",
+									"text" : "/file/name : \"drumloop.aif\",\n/buffer/hopsize : 256,\n/buffer/fftsize : 1024,\n/buffer/name : \"2188-buffer\",\n/buffer/nsamples : 153400,\n/buffer/ms : 3478.46,\n/buffer/samplerate : 44100.,\n/buffer/selected/start : 0,\n/buffer/selected/end : 1,\n/buffer/selected/length : 1,\n/buffer/selected/ms : 3478.46,\n/buffer/trigger : 0",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -1671,14 +1669,14 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 638.5, 42.0, 97.0, 49.0 ],
 									"saved_object_attributes" : 									{
-										"client_rect" : [ 1057, 45, 1440, 407 ],
+										"client_rect" : [ 4, 44, 358, 172 ],
 										"parameter_enable" : 0,
 										"storage_rect" : [ 583, 69, 1034, 197 ]
 									}
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u219008329"
+									"varname" : "u463012315"
 								}
 
 							}
@@ -3010,14 +3008,14 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 648.5, 34.5, 97.0, 49.0 ],
 									"saved_object_attributes" : 									{
-										"client_rect" : [ 1057, 45, 1440, 407 ],
+										"client_rect" : [ 4, 44, 358, 172 ],
 										"parameter_enable" : 0,
 										"storage_rect" : [ 583, 69, 1034, 197 ]
 									}
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u195008862"
+									"varname" : "u830012803"
 								}
 
 							}
