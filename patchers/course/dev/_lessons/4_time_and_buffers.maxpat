@@ -135,7 +135,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "float" ],
 									"patching_rect" : [ 493.0, 321.0, 56.0, 22.0 ],
-									"sig" : 2.0,
+									"sig" : 0.0,
 									"style" : ""
 								}
 
@@ -206,7 +206,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 529.0, 404.0, 682.0, 238.0 ],
-									"text" : "/file/name : \"~/Documents/Max 7/Packages/CNMAT-M158/media/808/\",\n/file/type : \"fold\",\n/nbuffers : 15,\n/namelist : [\"cl_hihat.aif\", \"claves.aif\", \"conga1.aif\", \"cowbell.aif\", \"crashcym.aif\", \"handclap.aif\", \"hi_conga.aif\", \"hightom.aif\", \"kick1.aif\", \"kick2.aif\", \"maracas.aif\", \"open_hh.aif\", \"rimshot.aif\", \"snare.aif\", \"tom1.aif\"],\n/lengths : [2328., 1311., 11488., 14992, 98309, 15901., 7880., 8800., 30942., 38160., 1133., 26352., 608., 4088., 15888.],\n/buffername : \"1852-combined\",\n/yshape : -5,\n/xshape : 0,\n/amp : 1,\n/pan : 0,\n/start : 0,\n/rate : 1,\n/duration : -1",
+									"text" : "/file/name : \"~/Documents/Max 7/Packages/CNMAT-M158/media/808/\",\n/file/type : \"fold\",\n/nbuffers : 15,\n/namelist : [\"cl_hihat.aif\", \"claves.aif\", \"conga1.aif\", \"cowbell.aif\", \"crashcym.aif\", \"handclap.aif\", \"hi_conga.aif\", \"hightom.aif\", \"kick1.aif\", \"kick2.aif\", \"maracas.aif\", \"open_hh.aif\", \"rimshot.aif\", \"snare.aif\", \"tom1.aif\"],\n/lengths : [2328., 1311., 11488., 14992, 98309, 15901., 7880., 8800., 30942., 38160., 1133., 26352., 608., 4088., 15888.],\n/buffername : \"2536-combined\",\n/yshape : -5,\n/xshape : 0,\n/amp : 1,\n/pan : 0,\n/start : 0,\n/rate : 1,\n/duration : -1",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -692,7 +692,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 812.5, 154.0, 272.0, 184.0 ],
-									"text" : "/file/name : \"drumloop.aif\",\n/buffer/hopsize : 256,\n/buffer/fftsize : 1024,\n/buffer/name : \"1864-buffer\",\n/buffer/nsamples : 153400,\n/buffer/ms : 3478.46,\n/buffer/samplerate : 44100.,\n/buffer/selected/start : 0,\n/buffer/selected/end : 1,\n/buffer/selected/length : 1,\n/buffer/selected/ms : 3478.46,\n/buffer/trigger : 0",
+									"text" : "/file/name : \"drumloop.aif\",\n/buffer/hopsize : 256,\n/buffer/fftsize : 1024,\n/buffer/name : \"2548-buffer\",\n/buffer/nsamples : 153400,\n/buffer/ms : 3478.46,\n/buffer/samplerate : 44100.,\n/buffer/selected/start : 0,\n/buffer/selected/end : 1,\n/buffer/selected/length : 1,\n/buffer/selected/ms : 3478.46,\n/buffer/trigger : 0",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -1677,7 +1677,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u123007027"
+									"varname" : "u043010553"
 								}
 
 							}
@@ -3016,7 +3016,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u212007515"
+									"varname" : "u895011041"
 								}
 
 							}
@@ -3624,7 +3624,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1274.0, 761.0 ],
+						"rect" : [ 93.0, 105.0, 1274.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3654,43 +3654,16 @@
 						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-6",
-									"linecount" : 2,
+									"fontname" : "Arial Bold Italic",
+									"fontsize" : 18.0,
+									"id" : "obj-7",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 560.0, 272.0, 283.0, 33.0 ],
+									"patching_rect" : [ 64.0, 93.0, 69.0, 27.0 ],
+									"presentation_rect" : [ 67.0, 84.0, 0.0, 0.0 ],
 									"style" : "",
-									"text" : "make something that triggers different sequences using the keyboard"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontface" : 0,
-									"fontsize" : 12.0,
-									"id" : "obj-5",
-									"linecount" : 11,
-									"maxclass" : "o.display",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 660.0, 122.0, 265.0, 170.0 ],
-									"text" : "/ascii : \"delete\",\n/keystate : \"up\",\n/keynum : -7,\n/numKeysDown : 0,\n/fingerIndex : 1,\n/shift : \"up\",\n/capslock : \"up\",\n/option : \"up\",\n/control : \"up\",\n/command : \"up\",\n/time : 2016-09-05T23:10:36.005858Z",
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-3",
-									"maxclass" : "newobj",
-									"numinlets" : 0,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 660.0, 87.0, 116.0, 22.0 ],
-									"style" : "",
-									"text" : "m158.o.io.keyboard"
+									"text" : "Lab 2: "
 								}
 
 							}
@@ -3701,7 +3674,7 @@
 									"numinlets" : 9,
 									"numoutlets" : 4,
 									"outlettype" : [ "signal", "signal", "signal", "FullPacket" ],
-									"patching_rect" : [ 166.0, 405.0, 103.0, 22.0 ],
+									"patching_rect" : [ 89.0, 376.0, 103.0, 22.0 ],
 									"style" : "",
 									"text" : "o.granubuf~"
 								}
@@ -3710,95 +3683,18 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"linecount" : 3,
+									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 129.0, 85.0, 283.0, 47.0 ],
+									"patching_rect" : [ 64.0, 122.0, 578.0, 33.0 ],
 									"style" : "",
-									"text" : "1) create an evolving rhythmic sequence -- either by using the keyboard to change the sequence, or by setting up a series of phase and counter objects"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-16",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 290.0, 604.0, 33.0, 22.0 ],
-									"style" : "",
-									"text" : "stop"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-14",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 210.0, 604.0, 74.0, 22.0 ],
-									"style" : "",
-									"text" : "startwindow"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-12",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 0,
-									"patching_rect" : [ 210.0, 646.0, 37.0, 22.0 ],
-									"style" : "",
-									"text" : "dac~"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-1",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 129.0, 582.0, 283.0, 20.0 ],
-									"style" : "",
-									"text" : "startwindow to begin computing Audio Rate Signals"
+									"text" : "Create an evolving rhythmic sequence -- either by using the mouse or keyboard to change the steps in the sequence, or create a series of phase and counter objects that change over the course of time."
 								}
 
 							}
  ],
-						"lines" : [ 							{
-								"patchline" : 								{
-									"destination" : [ "obj-12", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-14", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-12", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-16", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-5", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-3", 0 ]
-								}
-
-							}
- ]
+						"lines" : [  ]
 					}
 ,
 					"patching_rect" : [ 279.5, 227.0, 168.0, 22.0 ],
@@ -3832,7 +3728,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 93.0, 105.0, 1274.0, 761.0 ],
+						"rect" : [ 0.0, 26.0, 1274.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -4019,12 +3915,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.io.keyboard.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/io",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "m158.phase.click~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
@@ -4205,10 +4095,6 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.timetag.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "o.intersection.mxo",
 				"type" : "iLaX"
 			}
@@ -4218,6 +4104,10 @@
 			}
 , 			{
 				"name" : "o.atomize.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.timetag.mxo",
 				"type" : "iLaX"
 			}
 , 			{
