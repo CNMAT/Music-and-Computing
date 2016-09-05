@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 745.0, 46.0, 495.0, 355.0 ],
+		"rect" : [ 627.0, 39.0, 495.0, 355.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -44,7 +44,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 430.0, 486.25, 29.5, 22.0 ],
-					"presentation_rect" : [ 573.5, 490.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "t l l"
 				}
@@ -58,7 +57,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 419.5, 353.0, 29.5, 22.0 ],
-					"presentation_rect" : [ 556.5, 295.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "t l l"
 				}
@@ -176,7 +174,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"rect" : [ 63.0, 104.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -238,7 +236,7 @@
 									"outlettype" : [ "", "", "", "", "", "", "FullPacket" ],
 									"patching_rect" : [ 84.0, 130.0, 352.0, 22.0 ],
 									"style" : "",
-									"text" : "o.select /samplerate /ms /nsamples /buffername /fftsize /hopsize"
+									"text" : "o.select /samplerate /ms /nsamples /name /fftsize /hopsize"
 								}
 
 							}
@@ -1445,9 +1443,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 430.0, 384.5, 113.0, 22.0 ],
+					"patching_rect" : [ 430.0, 384.5, 83.0, 22.0 ],
 					"style" : "",
-					"text" : "o.pack /buffername"
+					"text" : "o.pack /name"
 				}
 
 			}
@@ -2784,7 +2782,7 @@
 									"outlettype" : [ "", "", "", "FullPacket" ],
 									"patching_rect" : [ 127.0, 100.0, 211.0, 22.0 ],
 									"style" : "",
-									"text" : "o.route /jitbuffer /buffername /analysis"
+									"text" : "o.route /jitbuffer /name /analysis"
 								}
 
 							}
@@ -3130,9 +3128,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "FullPacket" ],
-									"patching_rect" : [ 50.0, 107.0, 115.0, 22.0 ],
+									"patching_rect" : [ 50.0, 107.0, 85.0, 22.0 ],
 									"style" : "",
-									"text" : "o.route /buffername"
+									"text" : "o.route /name"
 								}
 
 							}
