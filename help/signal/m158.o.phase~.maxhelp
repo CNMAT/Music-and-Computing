@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 270.0, 81.0, 1033.0, 698.0 ],
+		"rect" : [ 254.0, 68.0, 1033.0, 698.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -49,7 +49,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -486,12 +486,12 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 270.0, 107.0, 1033.0, 672.0 ],
+						"rect" : [ 254.0, 94.0, 1033.0, 672.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -732,7 +732,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 384.0, 121.5, 576.0, 60.0 ],
 									"style" : "",
-									"text" : "input 1: (signal) ms (or hz in @hzmode) value for ramp, non-zero signal triggers ramp to play if not acitve, \n                         constant value causes looping ramp\n             (FullPacket) /ms or /hz value sets constant value, and causes looping ramp\ninput 2: force reset -- override acitve state, set duration, and reset phase to 0 immediately"
+									"text" : "input 1: (signal) ms (or hz in @hzmode) value for ramp, non-zero signal triggers ramp to play if not acitve, \n                         constant value causes looping ramp. Negative values create a downward ramp.\n             (FullPacket) /ms or /hz value sets constant value, and causes looping ramp\ninput 2: force reset -- override acitve state, set duration, and reset phase to 0 immediately"
 								}
 
 							}
@@ -972,7 +972,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1052,7 +1052,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 495.0, 82.0, 376.0, 20.0 ],
-									"presentation_rect" : [ 526.0, 33.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "When controlled by OSC, the @phasecycle mode is always enabled."
 								}

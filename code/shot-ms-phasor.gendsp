@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 131.0, 79.0, 755.0, 762.0 ],
+		"rect" : [ 372.0, 79.0, 755.0, 762.0 ],
 		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -56,7 +56,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 417.0, 644.0, 161.0, 22.0 ],
+					"patching_rect" : [ 417.0, 630.0, 161.0, 22.0 ],
 					"style" : "",
 					"text" : "out 3 @comment delegation"
 				}
@@ -68,7 +68,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 233.5, 644.0, 161.0, 22.0 ],
+					"patching_rect" : [ 233.5, 630.0, 161.0, 22.0 ],
 					"style" : "",
 					"text" : "out 2 @comment busy-state"
 				}
@@ -89,7 +89,7 @@
 			}
 , 			{
 				"box" : 				{
-					"code" : "History busy(0); //i.e. false if count >= durSamps\nHistory count(0);\r\nHistory durSamps(0);\r\nParam phasecycle(0);\r\nParam hzmode(0);\r\n\r\nreset = in2;\r\nms = (hzmode == 0) ? in1 : (1000. / in1);\r\n\r\ndelegate = 0;\r\n\r\nif( phasecycle )\r\n{\r\n\tdurSamps = mstosamps(ms);\r\n\tif( busy == 0 )\r\n\t\tcount = 0;\r\n}\r\nelse\r\n{\r\n\tif( (busy == 0 || reset > 0) && ms > 0 )\r\n\t{\r\n\t\tdurSamps = mstosamps(ms);\r\n\t\tcount = 0;\r\n\t}\r\n\telse\r\n\t\tdelegate = ms;\r\n}\r\n\r\nbusy = count < durSamps;\r\n\r\nout1 = clip(count / durSamps, 0, 1);\r\nout2 = busy;\r\nout3 = delegate;\r\n\r\ncount = count + 1;",
+					"code" : "History busy, count, durSamps, inc;\r\nParam phasecycle(0);\r\nParam hzmode(0);\r\n\r\nreset = abs(in2);\r\nms = (hzmode == 0) ? abs(in1) : (1000. / abs(in1));\r\n\r\ndelegate = 0;\r\n\r\nif( phasecycle )\r\n{\r\n\tdurSamps = mstosamps(ms);\r\n\tinc = sign(in1);\r\n\tif( busy == 0 )\r\n\t\tcount = (inc > 0) ? 0 : durSamps - 1;\r\n}\r\nelse\r\n{\r\n\tif( (busy == 0 || reset > 0) && ms > 0 )\r\n\t{\r\n\t\tdurSamps = mstosamps(ms);\r\n\t\tinc = sign(in1);\r\n\t\tcount = (inc > 0) ? 0 : durSamps - 1;\r\n\t}\r\n\telse\r\n\t\tdelegate = in1;\r\n}\r\n\r\nbusy = (count < durSamps) && (count > 0);\r\n\r\nout1 = clip(count / durSamps, 0, 1);\r\nout2 = busy;\r\nout3 = delegate;\r\n\r\ncount = count + inc;",
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -98,7 +98,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 50.0, 66.0, 386.0, 544.0 ],
+					"patching_rect" : [ 50.0, 66.0, 386.0, 534.0 ],
 					"style" : ""
 				}
 
@@ -109,7 +109,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 50.0, 644.0, 138.0, 22.0 ],
+					"patching_rect" : [ 50.0, 630.0, 138.0, 22.0 ],
 					"style" : "",
 					"text" : "out 1 @comment phase"
 				}
