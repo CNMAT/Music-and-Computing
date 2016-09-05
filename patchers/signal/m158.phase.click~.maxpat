@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -42,9 +42,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 184.0, 96.0, 200.0, 20.0 ],
+					"patching_rect" : [ 184.0, 96.0, 235.0, 20.0 ],
 					"style" : "",
-					"text" : "outputs a 1 when phase delta is < 0"
+					"text" : "outputs a 1 when phase direction changes"
 				}
 
 			}
@@ -80,7 +80,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 28.0, 37.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -106,14 +106,6 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "delta.click.gendsp",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/code",
-				"type" : "gDSP",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0,
 		"bgfillcolor_type" : "gradient",
 		"bgfillcolor_color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 		"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
