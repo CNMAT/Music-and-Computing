@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -109,7 +109,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -229,7 +229,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -370,9 +370,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 777.0, 270.0, 69.0, 22.0 ],
+					"patching_rect" : [ 777.0, 270.0, 56.0, 22.0 ],
 					"style" : "",
-					"text" : "o.io.accum"
+					"text" : "o.accum"
 				}
 
 			}
@@ -1250,7 +1250,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "o.io.accum.maxpat",
+				"name" : "o.accum.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gatherers",
 				"type" : "JSON",
 				"implicit" : 1
