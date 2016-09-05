@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 88.0, 79.0, 1274.0, 787.0 ],
+		"rect" : [ 93.0, 79.0, 1274.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -53,7 +53,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 88.0, 105.0, 1274.0, 761.0 ],
+						"rect" : [ 0.0, 26.0, 1274.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -103,7 +103,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 964.5, 220.5, 277.0, 51.0 ],
+									"patching_rect" : [ 875.5, 225.5, 277.0, 51.0 ],
 									"style" : "",
 									"text" : "o.granubuf~ allows you to load one or a folder full of sound files, which then are collected and indexed internally."
 								}
@@ -135,7 +135,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "float" ],
 									"patching_rect" : [ 493.0, 321.0, 56.0, 22.0 ],
-									"sig" : 0.0,
+									"sig" : 2.0,
 									"style" : ""
 								}
 
@@ -146,7 +146,7 @@
 									"maxclass" : "scope~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 238.0, 279.0, 130.0, 130.0 ],
+									"patching_rect" : [ 238.0, 219.0, 130.0, 130.0 ],
 									"style" : ""
 								}
 
@@ -160,7 +160,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 409.0, 42.0, 50.0, 22.0 ],
+									"patching_rect" : [ 409.0, 27.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -172,7 +172,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "FullPacket" ],
-									"patching_rect" : [ 409.0, 76.0, 69.0, 22.0 ],
+									"patching_rect" : [ 409.0, 61.0, 69.0, 22.0 ],
 									"style" : "",
 									"text" : "o.pack /ms"
 								}
@@ -206,7 +206,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 529.0, 404.0, 682.0, 238.0 ],
-									"text" : "/file/name : \"~/Documents/Max 7/Packages/CNMAT-M158/media/808/\",\n/file/type : \"fold\",\n/nbuffers : 15,\n/namelist : [\"cl_hihat.aif\", \"claves.aif\", \"conga1.aif\", \"cowbell.aif\", \"crashcym.aif\", \"handclap.aif\", \"hi_conga.aif\", \"hightom.aif\", \"kick1.aif\", \"kick2.aif\", \"maracas.aif\", \"open_hh.aif\", \"rimshot.aif\", \"snare.aif\", \"tom1.aif\"],\n/lengths : [2328., 1311., 11488., 14992, 98309, 15901., 7880., 8800., 30942., 38160., 1133., 26352., 608., 4088., 15888.],\n/buffername : \"2176-combined\",\n/yshape : -5,\n/xshape : 0,\n/amp : 1,\n/pan : 0,\n/start : 0,\n/rate : 1,\n/duration : -1",
+									"text" : "/file/name : \"~/Documents/Max 7/Packages/CNMAT-M158/media/808/\",\n/file/type : \"fold\",\n/nbuffers : 15,\n/namelist : [\"cl_hihat.aif\", \"claves.aif\", \"conga1.aif\", \"cowbell.aif\", \"crashcym.aif\", \"handclap.aif\", \"hi_conga.aif\", \"hightom.aif\", \"kick1.aif\", \"kick2.aif\", \"maracas.aif\", \"open_hh.aif\", \"rimshot.aif\", \"snare.aif\", \"tom1.aif\"],\n/lengths : [2328., 1311., 11488., 14992, 98309, 15901., 7880., 8800., 30942., 38160., 1133., 26352., 608., 4088., 15888.],\n/buffername : \"1852-combined\",\n/yshape : -5,\n/xshape : 0,\n/amp : 1,\n/pan : 0,\n/start : 0,\n/rate : 1,\n/duration : -1",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -325,7 +325,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "signal", "signal", "signal", "" ],
-									"patching_rect" : [ 409.0, 105.0, 94.0, 22.0 ],
+									"patching_rect" : [ 409.0, 110.0, 94.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.phase~"
 								}
@@ -338,7 +338,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 548.5, 197.0, 60.0, 22.0 ],
+									"patching_rect" : [ 459.5, 202.0, 60.0, 22.0 ],
 									"style" : "",
 									"text" : "loadbang"
 								}
@@ -354,7 +354,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 548.5, 229.5, 414.0, 33.0 ],
+									"patching_rect" : [ 459.5, 234.5, 414.0, 33.0 ],
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 68, 47, 102, 105, 108, 101, 47, 110, 97, 109, 101, 0, 0, 44, 115, 0, 0, 126, 47, 68, 111, 99, 117, 109, 101, 110, 116, 115, 47, 77, 97, 120, 32, 55, 47, 80, 97, 99, 107, 97, 103, 101, 115, 47, 67, 78, 77, 65, 84, 45, 77, 49, 53, 56, 47, 109, 101, 100, 105, 97, 47, 56, 48, 56, 47, 0, 0, 0, 0, 0, 0, 0, 24, 47, 102, 105, 108, 101, 47, 116, 121, 112, 101, 0, 0, 44, 115, 0, 0, 102, 111, 108, 100, 0, 0, 0, 0 ],
 									"saved_bundle_length" : 116,
 									"text" : "/file/name : \"~/Documents/Max 7/Packages/CNMAT-M158/media/808/\",\n/file/type : \"fold\"",
@@ -371,7 +371,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 9.0, 35.5, 358.0, 114.0 ],
 									"style" : "",
-									"text" : "o.granubuf~ is a granular buffer player, that provides some useful features for triggering playback at sample rate.\n\nIn the following examples, we'll be loading a folder of samples into o.granubuf~ and triggering them with sample rate accuracy.\n\nSince this is controllable at sample rate, we can use o.granubuf~ as a sample bank player."
+									"text" : "o.granubuf~ is a granular buffer player, that provides some useful features for triggering playback at sample rate.\n\nIn the following examples, we'll be loading a folder of samples into o.granubuf~ and triggering them with sample rate accuracy.\n\nSince this is controllable at sample rate, we can use o.granubuf~ as a polyphonic sample bank player."
 								}
 
 							}
@@ -675,7 +675,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 15.0, 34.5, 331.0, 288.0 ],
+									"patching_rect" : [ 15.0, 34.5, 333.0, 288.0 ],
 									"style" : "",
 									"text" : "m158.o.buffer~ and m158.o.buffer.player~ provide basic buffer and playback functionality for a single buffer.\n\nIn Max, sound files may be played directly from disk, or read into a memory buffer for fast read and write access. Since we are interested in manipulating and tightly controlling sound, we will focus on buffer based playback.\n\nm158.o.buffer~ provides an easy way to load a sound file into memory and outputs an OSC bundle containing some useful details about the file, and the region that is selected in the GUI window.\n\nm158.o.buffer.player~ takes the information from m158.o.buffer~ and uses it to scale the input phase value to the selected region of the sound file (the full file by default).\n\nIn this example, the selected region in the m158.o.buffer~ GUI window is scaled by the /ms/scale value. A value of 0.5 plays the sound in half the time, and a value of 2 plays the region in twice the time. How does this effect the pitch? "
 								}
@@ -692,7 +692,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 812.5, 154.0, 272.0, 184.0 ],
-									"text" : "/file/name : \"drumloop.aif\",\n/buffer/hopsize : 256,\n/buffer/fftsize : 1024,\n/buffer/name : \"2188-buffer\",\n/buffer/nsamples : 153400,\n/buffer/ms : 3478.46,\n/buffer/samplerate : 44100.,\n/buffer/selected/start : 0,\n/buffer/selected/end : 1,\n/buffer/selected/length : 1,\n/buffer/selected/ms : 3478.46,\n/buffer/trigger : 0",
+									"text" : "/file/name : \"drumloop.aif\",\n/buffer/hopsize : 256,\n/buffer/fftsize : 1024,\n/buffer/name : \"1864-buffer\",\n/buffer/nsamples : 153400,\n/buffer/ms : 3478.46,\n/buffer/samplerate : 44100.,\n/buffer/selected/start : 0,\n/buffer/selected/end : 1,\n/buffer/selected/length : 1,\n/buffer/selected/ms : 3478.46,\n/buffer/trigger : 0",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -704,7 +704,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 412.5, 285.5, 24.0, 24.0 ],
+									"patching_rect" : [ 415.5, 298.5, 24.0, 24.0 ],
 									"style" : ""
 								}
 
@@ -755,9 +755,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "FullPacket" ],
-									"patching_rect" : [ 391.0, 104.879028, 100.0, 22.0 ],
+									"patching_rect" : [ 391.0, 104.879028, 73.0, 22.0 ],
 									"style" : "",
-									"text" : "o.pack /ms/scale"
+									"text" : "o.pack /rate"
 								}
 
 							}
@@ -782,12 +782,13 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-3",
+									"linecount" : 2,
 									"maxclass" : "o.expr.codebox",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 391.0, 235.5, 315.0, 32.0 ],
-									"text" : "/play/ms = /buffer/selected/ms * /ms/scale",
+									"patching_rect" : [ 391.0, 232.5, 315.0, 46.0 ],
+									"text" : "/scalar = 1. / /rate,\n/play/ms = /buffer/selected/ms * /scalar",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -1387,7 +1388,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 796.5, 434.5, 35.0, 22.0 ],
+									"patching_rect" : [ 796.5, 426.5, 35.0, 22.0 ],
 									"style" : "",
 									"text" : "-~ 1"
 								}
@@ -1493,7 +1494,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 380.0, 374.5, 110.0, 22.0 ],
+									"patching_rect" : [ 380.0, 361.5, 110.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.phase.click~"
 								}
@@ -1506,7 +1507,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 673.0, 445.5, 29.5, 22.0 ],
+									"patching_rect" : [ 673.0, 437.5, 29.5, 22.0 ],
 									"style" : "",
 									"text" : "*~"
 								}
@@ -1519,7 +1520,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 759.5, 413.5, 35.0, 22.0 ],
+									"patching_rect" : [ 759.5, 405.5, 35.0, 22.0 ],
 									"style" : "",
 									"text" : ">~ 0"
 								}
@@ -1601,7 +1602,7 @@
 									"numinlets" : 9,
 									"numoutlets" : 4,
 									"outlettype" : [ "signal", "signal", "signal", "FullPacket" ],
-									"patching_rect" : [ 673.0, 489.5, 142.5, 22.0 ],
+									"patching_rect" : [ 673.0, 481.5, 142.5, 22.0 ],
 									"style" : "",
 									"text" : "o.granubuf~"
 								}
@@ -1626,7 +1627,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 3,
 									"outlettype" : [ "signal", "signal", "" ],
-									"patching_rect" : [ 673.0, 341.40625, 266.0, 22.0 ],
+									"patching_rect" : [ 673.0, 333.40625, 266.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.phase.points~ /seq/2 @interp 0"
 								}
@@ -1676,7 +1677,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u463012315"
+									"varname" : "u123007027"
 								}
 
 							}
@@ -1802,7 +1803,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 673.0, 366.5, 110.0, 22.0 ],
+									"patching_rect" : [ 673.0, 358.5, 110.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.phase.click~"
 								}
@@ -1963,7 +1964,7 @@
 									"destination" : [ "obj-53", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 929.5, 474.953125, 682.5, 474.953125 ],
+									"midpoints" : [ 929.5, 466.953125, 682.5, 466.953125 ],
 									"source" : [ "obj-18", 2 ]
 								}
 
@@ -3015,7 +3016,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u830012803"
+									"varname" : "u212007515"
 								}
 
 							}
@@ -3669,13 +3670,13 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-5",
-									"linecount" : 6,
+									"linecount" : 11,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 660.0, 122.0, 265.0, 102.0 ],
-									"text" : "/shift : \"up\",\n/capslock : \"up\",\n/option : \"up\",\n/control : \"up\",\n/command : \"down\",\n/time : 2016-09-05T04:47:37.770789Z",
+									"patching_rect" : [ 660.0, 122.0, 265.0, 170.0 ],
+									"text" : "/ascii : \"delete\",\n/keystate : \"up\",\n/keynum : -7,\n/numKeysDown : 0,\n/fingerIndex : 1,\n/shift : \"up\",\n/capslock : \"up\",\n/option : \"up\",\n/control : \"up\",\n/command : \"up\",\n/time : 2016-09-05T23:10:36.005858Z",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -3831,7 +3832,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1274.0, 761.0 ],
+						"rect" : [ 93.0, 105.0, 1274.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3985,12 +3986,12 @@
  ],
 		"lines" : [  ],
 		"parameters" : 		{
-			"obj-1::obj-48" : [ "live.gain~[6]", "live.gain~", 0 ],
+			"obj-7::obj-71" : [ "live.gain~[3]", "live.gain~", 0 ],
 			"obj-1::obj-38" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-2::obj-34" : [ "live.gain~[7]", "live.gain~", 0 ],
-			"obj-5::obj-58" : [ "live.gain~[5]", "live.gain~", 0 ],
-			"obj-7::obj-71" : [ "live.gain~[3]", "live.gain~", 0 ],
-			"obj-5::obj-34" : [ "live.gain~[4]", "live.gain~", 0 ]
+			"obj-1::obj-48" : [ "live.gain~[6]", "live.gain~", 0 ],
+			"obj-5::obj-34" : [ "live.gain~[4]", "live.gain~", 0 ],
+			"obj-5::obj-58" : [ "live.gain~[5]", "live.gain~", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
