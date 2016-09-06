@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 38.0, 79.0, 1368.0, 787.0 ],
+		"rect" : [ 383.0, 150.0, 756.0, 610.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -56,9 +56,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 259.0, 328.5, 87.0, 22.0 ],
+					"patching_rect" : [ 259.0, 328.5, 91.0, 22.0 ],
 					"style" : "",
-					"text" : "o.prepend /api"
+					"text" : "o.prepend /doc"
 				}
 
 			}
@@ -123,9 +123,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 111.5, 94.5, 71.0, 22.0 ],
+					"patching_rect" : [ 111.5, 94.5, 74.0, 22.0 ],
 					"style" : "",
-					"text" : "o.route /api"
+					"text" : "o.route /doc"
 				}
 
 			}
@@ -150,7 +150,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 290.0, 73.5, 63.0, 20.0 ],
 					"style" : "",
-					"text" : "api input"
+					"text" : "doc input"
 				}
 
 			}
@@ -160,9 +160,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 245.0, 483.0, 145.0, 20.0 ],
+					"patching_rect" : [ 244.0, 477.0, 267.0, 20.0 ],
 					"style" : "",
-					"text" : "api and delegation output"
+					"text" : "documentation / delegation / passthrough output"
 				}
 
 			}
