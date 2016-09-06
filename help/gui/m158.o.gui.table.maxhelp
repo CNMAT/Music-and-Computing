@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 5,
-			"architecture" : "x64",
+			"revision" : 4,
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 100.0, 100.0, 1164.0, 751.0 ],
+		"rect" : [ 56.0, 86.0, 1096.0, 751.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -49,12 +49,12 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 5,
-							"architecture" : "x64",
+							"revision" : 4,
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1164.0, 725.0 ],
+						"rect" : [ 0.0, 26.0, 1096.0, 725.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -90,7 +90,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 823.0, 208.5, 285.0, 24.0 ],
-									"presentation_rect" : [ 833.0, 203.5, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "in @direct mode every step is a separate event.\n"
 								}
@@ -197,8 +196,8 @@
 									"id" : "obj-34",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 630.0, 259.0, 141.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.gui.function /env"
@@ -207,7 +206,7 @@
 							}
 , 							{
 								"box" : 								{
-									"addpoints_with_curve" : [ 0.0, 0.0, 0, 0.0, 16.042781, 1.0, 0, 0.555, 775.40107, 0.426471, 0, -0.755, 1000.0, 0.0, 0, 0.895 ],
+									"addpoints_with_curve" : [ 0.0, 0.0, 0, 0.0, 16.042782, 1.0, 0, 0.555, 775.401062, 0.426471, 0, -0.755, 1000.0, 0.0, 0, 0.895 ],
 									"id" : "obj-32",
 									"linecolor" : [ 0.960784, 0.827451, 0.156863, 1.0 ],
 									"maxclass" : "function",
@@ -231,7 +230,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 83.0, 525.0, 61.0, 22.0 ],
-									"restore" : [ 1000.0, 0.0, 1.0, 0.0, 0.0, 0, 0.0, 16.042781, 1.0, 0, 0.555, 775.40107, 0.426471, 0, -0.755, 1000.0, 0.0, 0, 0.895, "curve" ],
+									"restore" : [ 1000.0, 0.0, 1.0, 0.0, 0.0, 0, 0.0, 16.042782, 1.0, 0, 0.555, 775.401062, 0.426471, 0, -0.755, 1000.0, 0.0, 0, 0.895, "curve" ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0
 									}
@@ -482,8 +481,8 @@
 									"id" : "obj-3",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 630.0, 208.5, 177.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.gui.table /tab @direct 1"
@@ -573,7 +572,7 @@
 ,
 									"style" : "default",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u207010602"
+									"varname" : "u815008024"
 								}
 
 							}
@@ -954,12 +953,12 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 5,
-							"architecture" : "x64",
+							"revision" : 4,
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 100.0, 126.0, 1164.0, 725.0 ],
+						"rect" : [ 56.0, 112.0, 1096.0, 725.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -989,13 +988,128 @@
 						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-18",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patcher" : 									{
+										"fileversion" : 1,
+										"appversion" : 										{
+											"major" : 7,
+											"minor" : 2,
+											"revision" : 4,
+											"architecture" : "x86",
+											"modernui" : 1
+										}
+,
+										"rect" : [ 59.0, 104.0, 805.0, 329.0 ],
+										"bglocked" : 0,
+										"openinpresentation" : 0,
+										"default_fontsize" : 12.0,
+										"default_fontface" : 0,
+										"default_fontname" : "Arial",
+										"gridonopen" : 1,
+										"gridsize" : [ 15.0, 15.0 ],
+										"gridsnaponopen" : 1,
+										"objectsnaponopen" : 1,
+										"statusbarvisible" : 2,
+										"toolbarvisible" : 1,
+										"lefttoolbarpinned" : 0,
+										"toptoolbarpinned" : 0,
+										"righttoolbarpinned" : 0,
+										"bottomtoolbarpinned" : 0,
+										"toolbars_unpinned_last_save" : 0,
+										"tallnewobj" : 0,
+										"boxanimatetime" : 200,
+										"enablehscroll" : 1,
+										"enablevscroll" : 1,
+										"devicewidth" : 0.0,
+										"description" : "",
+										"digest" : "",
+										"tags" : "",
+										"style" : "",
+										"subpatcher_template" : "Default Max 7",
+										"boxes" : [ 											{
+												"box" : 												{
+													"comment" : "",
+													"id" : "obj-2",
+													"maxclass" : "inlet",
+													"numinlets" : 0,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 32.0, 22.0, 30.0, 30.0 ],
+													"style" : ""
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"fontface" : 0,
+													"fontsize" : 12.0,
+													"id" : "obj-1",
+													"linecount" : 14,
+													"maxclass" : "o.display",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 32.0, 77.0, 747.0, 211.0 ],
+													"text" : "/doc/count : 1,\n/doc/1 : {\n\t/name : \"m158.o.gui.table\",\n\t/desc : \"thins table and multislider arrays to change points only\",\n\t/parameters : \"variable.  see helpfile for details – this object interfaces with m158.o.gui\",\n\t/attributes : \"none\",\n\t/arguments : {\n\t\t/1 : \"Name of associated UI object.  This can be a multislider, table, or function object.\"\n\t},\n\t/attributes : {\n\t\t/direct : \"if [@direct 1] is set, m158.o.gui.table outputs all points regardless of change state.\",\n\t\t/normal_x : \"Normalize the values in the x axis.  By default, this is on.\"\n\t}\n}",
+													"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+												}
+
+											}
+ ],
+										"lines" : [ 											{
+												"patchline" : 												{
+													"destination" : [ "obj-1", 0 ],
+													"disabled" : 0,
+													"hidden" : 0,
+													"source" : [ "obj-2", 0 ]
+												}
+
+											}
+ ]
+									}
+,
+									"patching_rect" : [ 799.0, 259.0, 71.0, 22.0 ],
+									"saved_object_attributes" : 									{
+										"description" : "",
+										"digest" : "",
+										"globalpatchername" : "",
+										"style" : "",
+										"tags" : ""
+									}
+,
+									"style" : "",
+									"text" : "p view_doc"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 0,
+									"fontsize" : 12.0,
+									"id" : "obj-15",
+									"maxclass" : "o.compose",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 827.0, 167.0, 45.0, 24.0 ],
+									"saved_bundle_data" : [  ],
+									"saved_bundle_length" : 0,
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"bubble" : 1,
 									"id" : "obj-8",
+									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 792.5, 410.5, 367.0, 24.0 ],
-									"presentation_rect" : [ 815.0, 442.5, 0.0, 0.0 ],
+									"patching_rect" : [ 799.0, 407.0, 204.0, 37.0 ],
 									"style" : "",
 									"text" : "relative phase is being used here to drive the envelope function."
 								}
@@ -1102,8 +1216,8 @@
 									"id" : "obj-34",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 630.0, 259.0, 141.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.gui.function /env"
@@ -1112,7 +1226,7 @@
 							}
 , 							{
 								"box" : 								{
-									"addpoints_with_curve" : [ 0.0, 0.0, 0, 0.0, 37.433155, 0.985294, 0, 0.555, 335.106383, 0.533333, 0, -0.755, 1000.0, 0.0, 0, 0.895 ],
+									"addpoints_with_curve" : [ 0.0, 0.0, 0, 0.0, 37.433155, 0.985294, 0, 0.555, 335.106384, 0.533333, 0, -0.755, 1000.0, 0.0, 0, 0.895 ],
 									"id" : "obj-32",
 									"linecolor" : [ 0.960784, 0.827451, 0.156863, 1.0 ],
 									"maxclass" : "function",
@@ -1136,7 +1250,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 83.0, 525.0, 61.0, 22.0 ],
-									"restore" : [ 1000.0, 0.0, 1.0, 0.0, 0.0, 0, 0.0, 37.433155, 0.985294, 0, 0.555, 335.106383, 0.533333, 0, -0.755, 1000.0, 0.0, 0, 0.895, "curve" ],
+									"restore" : [ 1000.0, 0.0, 1.0, 0.0, 0.0, 0, 0.0, 37.433155, 0.985294, 0, 0.555, 335.106384, 0.533333, 0, -0.755, 1000.0, 0.0, 0, 0.895, "curve" ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0
 									}
@@ -1387,9 +1501,9 @@
 									"id" : "obj-3",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 630.0, 208.5, 124.0, 22.0 ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 630.0, 208.5, 188.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.gui.table /tab"
 								}
@@ -1478,7 +1592,7 @@
 ,
 									"style" : "default",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u180010967"
+									"varname" : "u648008403"
 								}
 
 							}
@@ -1599,6 +1713,15 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-15", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-17", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -1666,6 +1789,15 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-29", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-18", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-3", 1 ]
 								}
 
 							}
@@ -1847,6 +1979,18 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "o.doc.handler.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "m158.loadbang.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "m158.o.points.phase~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
@@ -1874,12 +2018,6 @@
 				"name" : "point.interp.gendsp",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/code",
 				"type" : "gDSP",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.api.handler.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
-				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
@@ -1957,15 +2095,19 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.intersection.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "o.compose.mxo",
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "o.display.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "o.cond.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.intersection.mxo",
 				"type" : "iLaX"
 			}
 , 			{
