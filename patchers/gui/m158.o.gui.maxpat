@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -43,7 +43,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 693.0, 57.0, 118.0, 20.0 ],
-					"presentation_rect" : [ 693.0, 63.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "rama gottfried, 2016"
 				}
@@ -56,7 +55,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 693.0, 40.0, 88.0, 20.0 ],
-					"presentation_rect" : [ 692.0, 40.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "m158.o.gui"
 				}
@@ -73,12 +71,12 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 29.0, 70.0, 640.0, 480.0 ],
+						"rect" : [ 765.0, 340.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -107,12 +105,25 @@
 						"subpatcher_template" : "no-menus",
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-39",
-									"linecount" : 9,
+									"id" : "obj-1",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 81.5, 100.0, 258.0, 127.0 ],
+									"patching_rect" : [ 68.5, 160.0, 175.0, 20.0 ],
+									"presentation_rect" : [ 61.5, 150.0, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "to do: evaluate getstate routine"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-39",
+									"linecount" : 6,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 68.5, 57.0, 354.0, 87.0 ],
 									"style" : "",
 									"text" : "pattrstorage client notifications happen before read, so to avoid incomplete bundles coming out on initiatization, we're using the read message to trigger output. however, if pattrstorage is created *after* the m158.o.gui wrapper, the read message won't be received, so I added a trigger on the input, so if you send a bang into the left inlet, it will open the client notification gate."
 								}
@@ -148,7 +159,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -293,7 +304,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 80.5, 169.0, 87.0, 22.0 ],
+					"patching_rect" : [ 56.0, 172.0, 87.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -314,7 +325,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 80.5, 213.0, 174.0, 22.0 ],
+					"patching_rect" : [ 56.0, 216.0, 202.0, 22.0 ],
 					"style" : "",
 					"text" : "o.route /gui"
 				}
@@ -327,7 +338,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 138.5, 285.0, 60.0, 22.0 ],
+					"patching_rect" : [ 145.0, 285.0, 60.0, 22.0 ],
 					"style" : "",
 					"text" : "o.change"
 				}
@@ -338,11 +349,11 @@
 					"id" : "obj-31",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 80.5, 243.0, 77.0, 22.0 ],
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "FullPacket" ],
+					"patching_rect" : [ 56.0, 246.0, 108.0, 22.0 ],
 					"style" : "",
-					"text" : "o.route /time"
+					"text" : "o.route /time /read"
 				}
 
 			}
@@ -423,7 +434,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -467,7 +478,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 2,
-											"revision" : 4,
+											"revision" : 5,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -771,7 +782,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 2,
-											"revision" : 4,
+											"revision" : 5,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -815,7 +826,7 @@
 														"appversion" : 														{
 															"major" : 7,
 															"minor" : 2,
-															"revision" : 4,
+															"revision" : 5,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -1066,7 +1077,7 @@
 														"appversion" : 														{
 															"major" : 7,
 															"minor" : 2,
-															"revision" : 4,
+															"revision" : 5,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -1461,7 +1472,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 2,
-											"revision" : 4,
+											"revision" : 5,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2041,7 +2052,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2230,7 +2241,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2322,7 +2333,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 2,
-											"revision" : 4,
+											"revision" : 5,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2569,7 +2580,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 2,
-											"revision" : 4,
+											"revision" : 5,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2829,7 +2840,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 2,
-											"revision" : 4,
+											"revision" : 5,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2935,7 +2946,7 @@
 													"maxclass" : "inlet",
 													"numinlets" : 0,
 													"numoutlets" : 1,
-													"outlettype" : [ "FullPacket" ],
+													"outlettype" : [ "" ],
 													"patching_rect" : [ 252.0, 40.0, 30.0, 30.0 ],
 													"style" : ""
 												}
@@ -3128,7 +3139,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "FullPacket" ],
+									"outlettype" : [ "" ],
 									"patching_rect" : [ 242.0, 33.0, 30.0, 30.0 ],
 									"style" : ""
 								}
@@ -3276,7 +3287,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 138.5, 349.0, 95.0, 22.0 ],
+					"patching_rect" : [ 145.0, 349.0, 95.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -3333,8 +3344,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 138.5, 315.0, 63.0, 22.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 145.0, 315.0, 63.0, 22.0 ],
 					"style" : "",
 					"text" : "o.atomize"
 				}
@@ -3450,7 +3461,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "FullPacket" ],
 					"patching_rect" : [ 145.0, 7.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -3510,7 +3521,7 @@
 					"destination" : [ "obj-30", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 206.5, 205.5, 90.0, 205.5 ],
+					"midpoints" : [ 206.5, 205.5, 65.5, 205.5 ],
 					"source" : [ "obj-14", 1 ]
 				}
 
@@ -3727,7 +3738,7 @@
 					"destination" : [ "obj-38", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-31", 1 ]
+					"source" : [ "obj-31", 2 ]
 				}
 
 			}
@@ -3893,45 +3904,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "o.collect.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.atomize.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.prepend.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.route.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.timetag.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.union.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.pack.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.var.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.change.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
