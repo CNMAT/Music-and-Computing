@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 0,
-			"architecture" : "x64",
+			"revision" : 4,
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
+		"rect" : [ 132.0, 164.0, 709.0, 512.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,46 @@
 				"box" : 				{
 					"fontface" : 0,
 					"fontsize" : 12.0,
+					"id" : "obj-2",
+					"maxclass" : "o.compose",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 37.0, 50.0, 55.0, 24.0 ],
+					"presentation_rect" : [ 164.0, 108.0, 0.0, 0.0 ],
+					"saved_bundle_data" : [  ],
+					"saved_bundle_length" : 0,
+					"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontsize" : 12.0,
+					"id" : "obj-1",
+					"linecount" : 11,
+					"maxclass" : "o.display",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 324.0, 262.0, 345.0, 170.0 ],
+					"presentation_rect" : [ 379.0, 344.0, 0.0, 0.0 ],
+					"text" : "/doc/count : 1,\n/doc/1 : {\n\t/parameters : {\n\t\t/prompt : \"set the text (in grey italics) that is to be displayed in the textfield\",\n\t\t/entry : \"set and output the text for the textfield\"\n\t},\n\t/attributes : \"none\",\n\t/arguments : \"none\"\n}",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontsize" : 12.0,
 					"id" : "obj-32",
 					"maxclass" : "o.compose",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 366.0, 146.0, 224.0, 24.0 ],
+					"patching_rect" : [ 239.0, 88.0, 224.0, 24.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 47, 101, 110, 116, 114, 121, 0, 0, 44, 115, 0, 0, 47, 102, 105, 108, 116, 101, 114, 47, 116, 121, 112, 101, 108, 105, 115, 116, 0, 0, 0, 0 ],
 					"saved_bundle_length" : 52,
 					"text" : "/entry : \"/filter/typelist\"",
@@ -62,7 +96,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 303.0, 101.0, 267.0, 24.0 ],
+					"patching_rect" : [ 176.0, 43.0, 267.0, 24.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 36, 47, 112, 114, 111, 109, 112, 116, 0, 44, 115, 0, 0, 101, 110, 116, 101, 114, 32, 97, 100, 100, 114, 101, 115, 115, 32, 102, 111, 114, 32, 108, 105, 115, 116, 0, 0 ],
 					"saved_bundle_length" : 56,
 					"text" : "/prompt : \"enter address for list\"",
@@ -79,7 +113,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 303.0, 267.0, 207.0, 34.0 ],
+					"patching_rect" : [ 176.0, 209.0, 207.0, 34.0 ],
+					"text" : "/entry : \"/filter/typelist\"",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -98,14 +133,32 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 303.0, 209.0, 167.0, 21.0 ],
+					"outlettype" : [ "FullPacket", "" ],
+					"patching_rect" : [ 176.0, 151.0, 167.0, 21.0 ],
 					"viewvisibility" : 1
 				}
 
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-26", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-26", 1 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-28", 0 ],
 					"disabled" : 0,
@@ -135,7 +188,19 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "m158.o.gui.textfield.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/158b-spring16-o.wrappers/_dev",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gui",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.doc.handler.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "m158.loadbang.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -157,6 +222,14 @@
 			}
 , 			{
 				"name" : "o.union.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.cond.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.prepend.mxo",
 				"type" : "iLaX"
 			}
 , 			{
