@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 2,
 			"revision" : 4,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 170.0, 130.0, 1082.0, 715.0 ],
+		"rect" : [ 100.0, 100.0, 1082.0, 715.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,13 +38,144 @@
 		"subpatcher_template" : "no-menus",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 7,
+							"minor" : 2,
+							"revision" : 4,
+							"architecture" : "x86",
+							"modernui" : 1
+						}
+,
+						"rect" : [ 59.0, 104.0, 673.0, 302.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "no-menus",
+						"boxes" : [ 							{
+								"box" : 								{
+									"fontface" : 0,
+									"fontsize" : 12.0,
+									"id" : "obj-16",
+									"linecount" : 10,
+									"maxclass" : "o.display",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 50.0, 100.0, 603.0, 156.0 ],
+									"text" : "/doc/count : 1,\n/doc/1 : {\n\t/name : \"m158.o.ntom\",\n\t/desc : \"notevalue to MIDI number (float) conversion\",\n\t/parameters : {\n\t\t/notes : \"note letter with # or b colon separator, octave number, + or - cents\"\n\t},\n\t/arguments : \"none\",\n\t/attributes : \"none\"\n}",
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-18",
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 50.0, 40.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-16", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-18", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 148.5, 333.0, 71.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"style" : "",
+						"tags" : ""
+					}
+,
+					"style" : "",
+					"text" : "p doc_view"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontsize" : 12.0,
+					"id" : "obj-17",
+					"maxclass" : "o.compose",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 23.5, 192.0, 36.0, 24.0 ],
+					"presentation_rect" : [ 112.5, 145.0, 0.0, 0.0 ],
+					"saved_bundle_data" : [  ],
+					"saved_bundle_length" : 0,
+					"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontsize" : 12.0,
+					"id" : "obj-15",
+					"linecount" : 5,
+					"maxclass" : "o.display",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 334.0, 333.0, 150.0, 88.0 ],
+					"text" : "/notes : [\"c#:4\", \"e:4-14\", \"gb:4+2\"],\n/midi : [61., 63.86, 66.02]",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-2",
 					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 685.0, 590.0, 126.0, 60.0 ],
-					"presentation_rect" : [ 685.0, 590.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "note letter with # or b\n: colon separator\noctave number\n+ or - cents"
 				}
@@ -57,7 +188,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 569.0, 585.0, 111.0, 20.0 ],
-					"presentation_rect" : [ 569.0, 585.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "/note string format:"
 				}
@@ -71,7 +201,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 569.0, 542.0, 466.0, 33.0 ],
-					"presentation_rect" : [ 569.0, 542.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "output: OSC bundle with a /notes address\ninput: OSC bundle with a /midi address added corresponding to the /notes message."
 				}
@@ -84,7 +213,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 569.0, 493.0, 185.0, 20.0 ],
-					"presentation_rect" : [ 569.0, 493.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "MIDI number conversion to note"
 				}
@@ -99,7 +227,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 569.0, 461.0, 122.0, 27.0 ],
-					"presentation_rect" : [ 569.0, 461.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "m158.o.mton"
 				}
@@ -197,7 +324,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 76.5, 512.0, 401.0, 48.0 ],
-					"text" : "/midi : [60, 61, 62],\n/notes : [\"c:4\", \"c#:4\", \"d:4\"]",
+					"text" : "/notes : [\"c#:4\", \"e:4-14\", \"f#:4+2\"],\n/midi : [61., 63.86, 66.02]",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -207,8 +334,8 @@
 					"id" : "obj-22",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 76.5, 450.0, 91.0, 22.0 ],
 					"style" : "",
 					"text" : "m158.o.mton"
@@ -220,8 +347,8 @@
 					"id" : "obj-21",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 76.5, 281.0, 91.0, 22.0 ],
 					"style" : "",
 					"text" : "m158.o.ntom"
@@ -236,7 +363,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 370.5, 291.0, 50.0, 22.0 ],
+					"patching_rect" : [ 300.5, 281.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -250,7 +377,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 370.5, 251.0, 50.0, 22.0 ],
+					"patching_rect" : [ 300.5, 246.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -310,6 +437,33 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-21", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-21", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -352,6 +506,18 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "o.doc.handler.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "m158.loadbang.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "m158.o.mton.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/notes",
 				"type" : "JSON",
@@ -362,15 +528,35 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.expr.codebox.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "o.select.mxo",
 				"type" : "iLaX"
 			}
 , 			{
 				"name" : "o.collect.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.route.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.cond.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.pack.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.expr.codebox.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.prepend.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.union.mxo",
 				"type" : "iLaX"
 			}
 , 			{
