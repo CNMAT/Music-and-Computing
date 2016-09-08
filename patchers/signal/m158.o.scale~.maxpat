@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -70,7 +70,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 463.200012, 256.0, 30.0, 30.0 ],
-					"presentation_rect" : [ 414.0, 270.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -84,7 +83,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 209.0, 191.0, 100.0, 22.0 ],
 					"style" : "",
-					"text" : "o.api.handler"
+					"text" : "o.doc.handler"
 				}
 
 			}
@@ -109,7 +108,6 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 277.799988, 310.0, 53.0, 22.0 ],
-					"presentation_rect" : [ 351.799988, 143.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "unjoin 2"
 				}
@@ -173,7 +171,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 128.0, 56.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -328,7 +326,39 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "o.doc.handler.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.route.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.cond.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.pack.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.expr.codebox.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.prepend.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.union.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
