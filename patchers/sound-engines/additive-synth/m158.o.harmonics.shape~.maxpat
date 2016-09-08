@@ -446,7 +446,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 205.0, 101.0, 39.0, 22.0 ],
+					"patching_rect" : [ 208.0, 100.0, 39.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -467,9 +467,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 144.0, 129.0, 80.0, 22.0 ],
+					"patching_rect" : [ 144.0, 129.0, 83.0, 22.0 ],
 					"style" : "",
-					"text" : "o.api.handler"
+					"text" : "o.doc.handler"
 				}
 
 			}
@@ -1540,12 +1540,12 @@
 				"box" : 				{
 					"id" : "obj-31",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 287.0, 35.0, 60.0, 22.0 ],
+					"patching_rect" : [ 287.0, 35.0, 93.0, 22.0 ],
 					"style" : "",
-					"text" : "loadbang"
+					"text" : "m158.loadbang"
 				}
 
 			}
@@ -1802,7 +1802,7 @@
 					"destination" : [ "obj-41", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 214.5, 157.5, 807.0, 157.5 ],
+					"midpoints" : [ 217.5, 157.5, 807.0, 157.5 ],
 					"source" : [ "obj-17", 1 ]
 				}
 
