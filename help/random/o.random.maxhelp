@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 0,
-			"architecture" : "x64",
+			"revision" : 4,
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 100.0, 100.0, 873.0, 590.0 ],
+		"rect" : [ 80.0, 88.0, 769.0, 540.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,12 +38,46 @@
 		"subpatcher_template" : "no-menus",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 0,
+					"fontsize" : 12.0,
+					"id" : "obj-11",
+					"linecount" : 10,
+					"maxclass" : "o.display",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 150.0, 314.0, 546.0, 156.0 ],
+					"presentation_rect" : [ 306.0, 428.0, 0.0, 0.0 ],
+					"text" : "/doc/count : 1,\n/doc/1 : {\n\t/name : \"o.random\",\n\t/desc : \"generate one or more random numbers as a single float or list\",\n\t/parameters : {\n\t\t/nrand : \"specify the number of list elements to be generated\"\n\t},\n\t/arguments : \"none\",\n\t/attributes : \"none\"\n}",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontsize" : 12.0,
+					"id" : "obj-10",
+					"maxclass" : "o.compose",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 44.0, 98.0, 41.0, 24.0 ],
+					"presentation_rect" : [ 119.0, 205.0, 0.0, 0.0 ],
+					"saved_bundle_data" : [  ],
+					"saved_bundle_length" : 0,
+					"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-8",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 665.0, 304.0, 98.0, 22.0 ],
+					"patching_rect" : [ 570.0, 153.0, 98.0, 22.0 ],
 					"style" : "",
 					"text" : "o.random.thresh"
 				}
@@ -56,7 +90,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 665.0, 270.0, 98.0, 22.0 ],
+					"patching_rect" : [ 570.0, 119.0, 98.0, 22.0 ],
 					"style" : "",
 					"text" : "o.random.prob"
 				}
@@ -67,9 +101,9 @@
 					"id" : "obj-4",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 665.0, 202.0, 61.0, 22.0 ],
+					"numoutlets" : 2,
+					"outlettype" : [ "FullPacket", "" ],
+					"patching_rect" : [ 570.0, 51.0, 61.0, 22.0 ],
 					"style" : "",
 					"text" : "o.random"
 				}
@@ -82,7 +116,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 665.0, 237.0, 113.0, 22.0 ],
+					"patching_rect" : [ 570.0, 86.0, 113.0, 22.0 ],
 					"style" : "",
 					"text" : "o.random.weighted"
 				}
@@ -93,13 +127,13 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-3",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 256.0, 356.0, 387.0, 48.0 ],
-					"text" : "/random : [0.253656, 0.32946, 0.732899, 0.961605],\n/foo : 1",
+					"patching_rect" : [ 108.0, 233.0, 387.0, 61.0 ],
+					"text" : "/random : [0.586027, 0.883905, 0.656881, 0.953424],\n/foo : 1,\n/nrand : 4",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -113,7 +147,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 256.0, 165.0, 80.0, 24.0 ],
+					"patching_rect" : [ 108.0, 42.0, 80.0, 24.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 47, 102, 111, 111, 0, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 1 ],
 					"saved_bundle_length" : 36,
 					"text" : "/foo : 1",
@@ -131,7 +165,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 327.0, 221.0, 95.0, 38.0 ],
+					"patching_rect" : [ 179.0, 98.0, 95.0, 38.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 47, 102, 111, 111, 0, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 1, 0, 0, 0, 16, 47, 110, 114, 97, 110, 100, 0, 0, 44, 105, 0, 0, 0, 0, 0, 4 ],
 					"saved_bundle_length" : 56,
 					"text" : "/foo : 1,\n/nrand : 4",
@@ -144,9 +178,9 @@
 					"id" : "obj-6",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 256.0, 302.0, 61.0, 22.0 ],
+					"numoutlets" : 2,
+					"outlettype" : [ "FullPacket", "" ],
+					"patching_rect" : [ 108.0, 179.0, 61.0, 22.0 ],
 					"style" : "",
 					"text" : "o.random"
 				}
@@ -159,6 +193,24 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-6", 1 ]
 				}
 
 			}
@@ -183,31 +235,43 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "o.random.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/158b-spring16-o.wrappers/_dev",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/random",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "m158.loadbang.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.doc.handler.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.random.weighted.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/158b-spring16-o.wrappers/_dev",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/random",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "m158.o.ntom.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/158b-spring16-o.wrappers/notes",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/notes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.random.prob.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/158b-spring16-o.wrappers/_dev",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/random",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.random.thresh.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/158b-spring16-o.wrappers/_dev",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/random",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -232,6 +296,18 @@
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "o.route.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.cond.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.prepend.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "o.compose.mxo",
 				"type" : "iLaX"
 			}
@@ -241,10 +317,6 @@
 			}
 , 			{
 				"name" : "o.collect.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.route.mxo",
 				"type" : "iLaX"
 			}
  ],
