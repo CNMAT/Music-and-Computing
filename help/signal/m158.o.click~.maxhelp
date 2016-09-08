@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 190.0, 97.0, 962.0, 662.0 ],
+		"rect" : [ 100.0, 100.0, 962.0, 662.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -45,7 +45,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 497.0, 61.0, 128.0, 27.0 ],
-					"presentation_rect" : [ 498.0, 61.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "m158.o.click~"
 				}
@@ -74,7 +73,6 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 240.0, 411.5, 166.0, 86.0 ],
-					"presentation_rect" : [ 211.0, 427.0, 0.0, 0.0 ],
 					"range" : [ 0.0, 1.0 ],
 					"style" : ""
 				}
@@ -132,9 +130,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "signal", "signal", "signal", "" ],
-					"patching_rect" : [ 240.0, 322.0, 94.0, 22.0 ],
+					"patching_rect" : [ 240.0, 322.0, 84.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.phase~"
+					"text" : "m158.phase~"
 				}
 
 			}
@@ -335,7 +333,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.phase~.maxpat",
+				"name" : "m158.phase~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1
@@ -347,7 +345,13 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "o.api.handler.maxpat",
+				"name" : "m158.loadbang.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.doc.handler.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
 				"type" : "JSON",
 				"implicit" : 1
