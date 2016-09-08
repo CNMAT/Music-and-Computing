@@ -592,9 +592,9 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 384.0, 189.0, 563.0, 47.0 ],
+									"patching_rect" : [ 384.0, 189.0, 573.0, 47.0 ],
 									"style" : "",
-									"text" : "attributes:\n            @hzmode -- sets signal input to be interpreted as hertz\n            @phasecycle -- sets phasor~ mode, where phase is not reset when a new time value is received"
+									"text" : "attributes:\n            @hzmode 1 -- sets signal input to be interpreted as hertz\n            @phasecycle 1 -- sets phasor~ mode, where phase is not reset when a new time value is received"
 								}
 
 							}
