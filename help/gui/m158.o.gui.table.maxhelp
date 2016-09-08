@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 4,
-			"architecture" : "x86",
+			"revision" : 5,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 56.0, 86.0, 1096.0, 751.0 ],
+		"rect" : [ 100.0, 100.0, 1096.0, 751.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -49,8 +49,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 4,
-							"architecture" : "x86",
+							"revision" : 5,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -572,7 +572,7 @@
 ,
 									"style" : "default",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u815008024"
+									"varname" : "u481002119"
 								}
 
 							}
@@ -953,12 +953,12 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 4,
-							"architecture" : "x86",
+							"revision" : 5,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 56.0, 112.0, 1096.0, 725.0 ],
+						"rect" : [ 100.0, 126.0, 1096.0, 725.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -991,113 +991,11 @@
 									"id" : "obj-18",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patcher" : 									{
-										"fileversion" : 1,
-										"appversion" : 										{
-											"major" : 7,
-											"minor" : 2,
-											"revision" : 4,
-											"architecture" : "x86",
-											"modernui" : 1
-										}
-,
-										"rect" : [ 59.0, 104.0, 805.0, 329.0 ],
-										"bglocked" : 0,
-										"openinpresentation" : 0,
-										"default_fontsize" : 12.0,
-										"default_fontface" : 0,
-										"default_fontname" : "Arial",
-										"gridonopen" : 1,
-										"gridsize" : [ 15.0, 15.0 ],
-										"gridsnaponopen" : 1,
-										"objectsnaponopen" : 1,
-										"statusbarvisible" : 2,
-										"toolbarvisible" : 1,
-										"lefttoolbarpinned" : 0,
-										"toptoolbarpinned" : 0,
-										"righttoolbarpinned" : 0,
-										"bottomtoolbarpinned" : 0,
-										"toolbars_unpinned_last_save" : 0,
-										"tallnewobj" : 0,
-										"boxanimatetime" : 200,
-										"enablehscroll" : 1,
-										"enablevscroll" : 1,
-										"devicewidth" : 0.0,
-										"description" : "",
-										"digest" : "",
-										"tags" : "",
-										"style" : "",
-										"subpatcher_template" : "Default Max 7",
-										"boxes" : [ 											{
-												"box" : 												{
-													"comment" : "",
-													"id" : "obj-2",
-													"maxclass" : "inlet",
-													"numinlets" : 0,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
-													"patching_rect" : [ 32.0, 22.0, 30.0, 30.0 ],
-													"style" : ""
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"fontface" : 0,
-													"fontsize" : 12.0,
-													"id" : "obj-1",
-													"linecount" : 14,
-													"maxclass" : "o.display",
-													"numinlets" : 1,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
-													"patching_rect" : [ 32.0, 77.0, 747.0, 211.0 ],
-													"text" : "/doc/count : 1,\n/doc/1 : {\n\t/name : \"m158.o.gui.table\",\n\t/desc : \"thins table and multislider arrays to change points only\",\n\t/parameters : \"variable.  see helpfile for details – this object interfaces with m158.o.gui\",\n\t/attributes : \"none\",\n\t/arguments : {\n\t\t/1 : \"Name of associated UI object.  This can be a multislider, table, or function object.\"\n\t},\n\t/attributes : {\n\t\t/direct : \"if [@direct 1] is set, m158.o.gui.table outputs all points regardless of change state.\",\n\t\t/normal_x : \"Normalize the values in the x axis.  By default, this is on.\"\n\t}\n}",
-													"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-												}
-
-											}
- ],
-										"lines" : [ 											{
-												"patchline" : 												{
-													"destination" : [ "obj-1", 0 ],
-													"disabled" : 0,
-													"hidden" : 0,
-													"source" : [ "obj-2", 0 ]
-												}
-
-											}
- ]
-									}
-,
-									"patching_rect" : [ 799.0, 259.0, 71.0, 22.0 ],
-									"saved_object_attributes" : 									{
-										"description" : "",
-										"digest" : "",
-										"globalpatchername" : "",
-										"style" : "",
-										"tags" : ""
-									}
-,
+									"numoutlets" : 3,
+									"outlettype" : [ "signal", "bang", "FullPacket" ],
+									"patching_rect" : [ 630.0, 323.5, 159.0, 22.0 ],
 									"style" : "",
-									"text" : "p view_doc"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontface" : 0,
-									"fontsize" : 12.0,
-									"id" : "obj-15",
-									"maxclass" : "o.compose",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 827.0, 167.0, 45.0, 24.0 ],
-									"saved_bundle_data" : [  ],
-									"saved_bundle_length" : 0,
-									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
+									"text" : "m158.o.num~ /ms"
 								}
 
 							}
@@ -1109,7 +1007,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 799.0, 407.0, 204.0, 37.0 ],
+									"patching_rect" : [ 799.0, 407.0, 205.0, 37.0 ],
 									"style" : "",
 									"text" : "relative phase is being used here to drive the envelope function."
 								}
@@ -1121,7 +1019,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 630.0, 80.5, 448.0, 20.0 ],
+									"patching_rect" : [ 630.0, 60.5, 448.0, 20.0 ],
 									"style" : "",
 									"text" : "if \"@direct 1\" is set, m158.o.gui.table outputs all points regardless of change state."
 								}
@@ -1147,7 +1045,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 630.0, 31.0, 152.0, 27.0 ],
+									"patching_rect" : [ 630.0, 11.0, 152.0, 27.0 ],
 									"style" : "",
 									"text" : "m158.o.gui.table"
 								}
@@ -1218,7 +1116,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 630.0, 259.0, 141.0, 22.0 ],
+									"patching_rect" : [ 630.0, 219.0, 141.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.gui.function /env"
 								}
@@ -1271,7 +1169,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 630.0, 299.0, 344.0, 46.0 ],
+									"patching_rect" : [ 630.0, 257.0, 344.0, 46.0 ],
 									"text" : "/amps = /gui/harmonics / sum(/gui/harmonics),\n/ms = /gui/ms",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
@@ -1320,7 +1218,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 630.0, 60.0, 391.0, 20.0 ],
+									"patching_rect" : [ 630.0, 40.0, 391.0, 20.0 ],
 									"style" : "",
 									"text" : "m158.o.gui.table thins table and multislider arrays to change points only"
 								}
@@ -1474,9 +1372,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "signal", "signal", "signal", "" ],
-									"patching_rect" : [ 630.0, 366.0, 159.0, 22.0 ],
+									"patching_rect" : [ 630.0, 355.0, 84.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.phase~"
+									"text" : "m158.phase~"
 								}
 
 							}
@@ -1503,7 +1401,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 630.0, 208.5, 188.0, 22.0 ],
+									"patching_rect" : [ 630.0, 176.5, 123.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.gui.table /tab"
 								}
@@ -1557,7 +1455,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 630.0, 117.0, 24.0, 24.0 ],
+									"patching_rect" : [ 630.0, 89.0, 24.0, 24.0 ],
 									"style" : ""
 								}
 
@@ -1569,7 +1467,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "dump" ],
-									"patching_rect" : [ 630.0, 155.5, 70.0, 22.0 ],
+									"patching_rect" : [ 630.0, 127.5, 70.0, 22.0 ],
 									"style" : "default",
 									"text" : "m158.o.gui"
 								}
@@ -1583,7 +1481,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 716.5, 132.0, 97.0, 49.0 ],
+									"patching_rect" : [ 716.5, 104.0, 97.0, 49.0 ],
 									"saved_object_attributes" : 									{
 										"client_rect" : [ 4, 44, 358, 172 ],
 										"parameter_enable" : 0,
@@ -1592,7 +1490,7 @@
 ,
 									"style" : "default",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u648008403"
+									"varname" : "u148002729"
 								}
 
 							}
@@ -1713,15 +1611,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-3", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-15", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-17", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -1735,6 +1624,24 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-16", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 1 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-18", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-18", 0 ]
 								}
 
 							}
@@ -1785,19 +1692,10 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-7", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-29", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-18", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"source" : [ "obj-3", 1 ]
+									"source" : [ "obj-29", 0 ]
 								}
 
 							}
@@ -1924,15 +1822,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-6", 1 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-7", 3 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-6", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -1979,13 +1868,13 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "o.doc.handler.maxpat",
+				"name" : "m158.loadbang.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.loadbang.maxpat",
+				"name" : "o.doc.handler.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
 				"type" : "JSON",
 				"implicit" : 1
@@ -2021,7 +1910,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.phase~.maxpat",
+				"name" : "m158.phase~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1
@@ -2047,6 +1936,18 @@
 , 			{
 				"name" : "m158.o.gui.function.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gui",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "m158.o.num~.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "m158.o.phase~.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1
 			}

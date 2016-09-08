@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -227,7 +227,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 55.0, 26.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -245,7 +245,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -287,7 +287,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 82.0, 507.0, 62.0, 22.0 ],
 									"style" : "",
-									"text" : "1029-harm1"
+									"text" : "1950-harm1"
 								}
 
 							}
@@ -734,12 +734,12 @@
 				"box" : 				{
 					"id" : "obj-31",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 387.0, 39.0, 60.0, 22.0 ],
+					"patching_rect" : [ 387.0, 39.0, 93.0, 22.0 ],
 					"style" : "",
-					"text" : "loadbang"
+					"text" : "m158.loadbang"
 				}
 
 			}
