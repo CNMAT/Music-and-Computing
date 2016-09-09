@@ -4,8 +4,8 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 5,
-			"architecture" : "x64",
+			"revision" : 4,
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
@@ -38,35 +38,6 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-25",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 386.5, 262.0, 100.0, 22.0 ],
-					"style" : "",
-					"text" : "o.select /doc"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 0,
-					"fontsize" : 12.0,
-					"id" : "obj-16",
-					"linecount" : 9,
-					"maxclass" : "o.display",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 386.5, 295.0, 596.0, 143.0 ],
-					"text" : "/doc/count : 1,\n/doc/1 : {\n\t/name : \"m158.o.gui.menu\",\n\t/desc : \"helper abstraction/bpatcher for menu selection\",\n\t/parameters : \"variable.  addresses should be caught before being sent into the object.  see helpfile for details.\",\n\t/attributes : \"none\",\n\t/arguments : \"none\"\n}",
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-10",
 					"maxclass" : "button",
 					"numinlets" : 1,
@@ -74,22 +45,6 @@
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 322.0, 19.0, 24.0, 24.0 ],
 					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 0,
-					"fontsize" : 12.0,
-					"id" : "obj-7",
-					"maxclass" : "o.compose",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 44.5, 179.0, 41.0, 24.0 ],
-					"saved_bundle_data" : [  ],
-					"saved_bundle_length" : 0,
-					"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 				}
 
 			}
@@ -124,13 +79,11 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-22",
-					"linecount" : 5,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 44.5, 276.0, 279.0, 88.0 ],
-					"text" : "/menu/selected/index : 0,\n/menu/selected/name : \"/bass\",\n/list/address : \"/models\",\n/select/address : \"/use/model\",\n/use/model : \"/bass\"",
+					"patching_rect" : [ 44.5, 276.0, 279.0, 34.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -166,13 +119,11 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-17",
-					"linecount" : 14,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 44.5, 497.0, 755.0, 211.0 ],
-					"text" : "/resonators : [41.5, 0.08, 0.388112, 83.4, 0.4, 0.73463, 115., 0.3, 5.8215, 125.17, 0.14, 0.93076, 126.3, 0.18, 0.717288, 166.25, 0.07, 0.970249, 167.6, 0.07, 0.831642, 207.27, 0.03, 1.4741, 208.9, 0.04, 1.17122, 248.9, 0.02, 1.66954, 252.14, 0.02, 1.51221, 286.4, 0.0125, 1.92526, 287.4, 0.0125, 1.51221, 333.3, 0.0125, 1.51221, 335.1, 0.0135, 0.900255, 375., 0.035, 1.67023, 376.8, 0.035, 1.10886, 415.7, 0.006, 1.17816, 418.8, 0.007, 0.693035, 458.3, 0.025, 4.07505, 461.6, 0.025, 2.91075, 498., 0.007, 2.91075, 499., 0.008, 0.977192, 543., 0.006, 5.54428, 546., 0.0065, 2.91075, 586., 0.0125, 11.0886, 591., 0.0125, 3.32657, 627., 0.0045, 3.64538, 631., 0.0045, 2.91075, 667., 0.00125, 4.07505, 673., 0.00125, 2.2, 710., 0.0015, 5.32943, 713., 0.0015, 2.30781, 752., 0.0015, 2.34938, 757., 0.0065, 19.5574, 793., 0.001, 4.89284, 796., 0.002, 7.29767, 835., 0.00075, 1.88496, 840., 0.0017, 7.33232, 875., 0.003, 2.63353, 876.7, 0.006, 8.38573, 917., 0.002, 8.87085, 957.3, 0.003, 8.38573, 968., 0.002, 3.881, 1002., 0.002594, 5.47291, 1043.9, 0.002174, 5.73171, 1086.2, 0.001819, 6.00541, 1126.1, 0.001537, 6.27552, 1170., 0.001277, 6.58679, 1212., 0.00107, 6.9, 1254., 0.000896, 7.22607, 1291., 0.000766, 7.52697, 1332., 0.000645, 7.87509, 1377., 0.000533, 8.27574, 1419., 0.000447, 8.66803, 1462., 0.000373, 9.08894, 1504., 0.000312, 9.51977, 1546., 0.000261, 9.97107, 1587., 0.00022, 10.4322]",
+					"patching_rect" : [ 44.5, 497.0, 755.0, 34.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -230,8 +181,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 5,
-							"architecture" : "x64",
+							"revision" : 4,
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -402,15 +353,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-25", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-1", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -492,24 +434,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-16", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-25", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-7", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -531,12 +455,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "o.accum.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gatherers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "o.doc.handler.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
 				"type" : "JSON",
@@ -545,6 +463,12 @@
 , 			{
 				"name" : "m158.loadbang.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.accum.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gatherers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -573,11 +497,11 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.select.mxo",
+				"name" : "o.cond.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.cond.mxo",
+				"name" : "o.select.mxo",
 				"type" : "iLaX"
 			}
 , 			{

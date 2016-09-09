@@ -5,7 +5,7 @@
 			"major" : 7,
 			"minor" : 2,
 			"revision" : 4,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
@@ -50,7 +50,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 4,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -133,7 +133,7 @@
 											"major" : 7,
 											"minor" : 2,
 											"revision" : 4,
-											"architecture" : "x64",
+											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
@@ -395,7 +395,6 @@
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 715.0, 207.5, 50.0, 22.0 ],
-									"presentation_rect" : [ 740.0, 65.5, 0.0, 0.0 ],
 									"style" : "",
 									"varname" : "number[2]"
 								}
@@ -430,7 +429,6 @@
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 600.0, 207.5, 50.0, 22.0 ],
-									"presentation_rect" : [ 629.0, 66.5, 0.0, 0.0 ],
 									"style" : "",
 									"varname" : "number[1]"
 								}
@@ -645,7 +643,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u988002429"
+									"varname" : "u637010979"
 								}
 
 							}
@@ -686,7 +684,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 526.0, 37.0, 94.5, 22.0 ],
+									"patching_rect" : [ 526.0, 37.0, 95.0, 22.0 ],
 									"style" : "",
 									"text_width" : 61.0
 								}
@@ -903,7 +901,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 4,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -957,34 +955,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 682.0, 24.0, 180.0, 27.0 ],
-									"presentation_rect" : [ 454.5, 33.5, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "m158.o.harmonics~"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-19",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 144.5, 366.5, 60.0, 22.0 ],
-									"style" : "",
-									"text" : "loadbang"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-18",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 211.5, 394.5, 319.0, 20.0 ],
-									"style" : "",
-									"text" : "<< send an empty bundle into either inlet to output the API"
 								}
 
 							}
@@ -1188,39 +1160,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u379002609"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontface" : 0,
-									"fontsize" : 12.0,
-									"id" : "obj-2",
-									"linecount" : 8,
-									"maxclass" : "o.display",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 191.5, 468.5, 603.0, 129.0 ],
-									"text" : "/gui/midinote : 59,\n/gui/amplist : [0.804598, 0.321839, 0.413793, 0.586207, 0.747126, 0.632184, 0.425287, 0.413793, 0.505747, 0.252874, 0.195402, 0., 0.103448],\n/gui/read : [\"u379002609.json\", 0],\n/gui/time : 2016-08-09T17:20:28.352049Z,\n/amps : [0.148936, 0.0595745, 0.0765957, 0.108511, 0.138298, 0.117021, 0.0787234, 0.0765957, 0.093617, 0.0468085, 0.0361702, 0., 0.0191489],\n/hz : 246.942",
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontface" : 0,
-									"fontsize" : 12.0,
-									"id" : "obj-26",
-									"maxclass" : "o.compose",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 144.5, 394.5, 55.299988, 24.0 ],
-									"saved_bundle_data" : [  ],
-									"saved_bundle_length" : 0,
-									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
+									"varname" : "u217011073"
 								}
 
 							}
@@ -1326,24 +1266,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-26", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-19", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-7", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-26", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-103", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -1375,15 +1297,6 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-7", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-2", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-7", 1 ]
 								}
 
 							}
@@ -1428,6 +1341,12 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "m158.loadbang.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "gen.harmonics.gendsp",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/code",
 				"type" : "gDSP",
@@ -1436,12 +1355,6 @@
 , 			{
 				"name" : "m158.o.gui.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gui",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "pattr-to-OSC.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-MMJ-Depot/patchers/data_transformation",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -1474,19 +1387,11 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.display.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "o.collect.mxo",
 				"type" : "iLaX"
 			}
 , 			{
 				"name" : "o.atomize.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.var.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -1498,7 +1403,15 @@
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "o.var.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "o.change.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.display.mxo",
 				"type" : "iLaX"
 			}
  ],
