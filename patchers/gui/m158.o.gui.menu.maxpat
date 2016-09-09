@@ -647,7 +647,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "FullPacket", "FullPacket" ],
+					"outlettype" : [ "FullPacket", "" ],
 					"patching_rect" : [ 1007.0, 176.5, 172.0, 17.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 123.0, 17.5, 167.0, 19.0 ],
@@ -731,7 +731,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "FullPacket", "FullPacket" ],
+					"outlettype" : [ "FullPacket", "" ],
 					"patching_rect" : [ 777.0, 171.0, 169.0, 17.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 123.0, 2.0, 167.0, 16.0 ],
@@ -1118,6 +1118,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-47", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-24", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1367,12 +1376,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "o.accum.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gatherers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "o.doc.handler.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
 				"type" : "JSON",
@@ -1381,6 +1384,12 @@
 , 			{
 				"name" : "m158.loadbang.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.accum.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gatherers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -1409,11 +1418,11 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.select.mxo",
+				"name" : "o.cond.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.cond.mxo",
+				"name" : "o.select.mxo",
 				"type" : "iLaX"
 			}
  ],
