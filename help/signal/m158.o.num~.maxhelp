@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 2,
 			"revision" : 4,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 382.0, 171.0, 933.0, 577.0 ],
+		"rect" : [ 60.0, 97.0, 933.0, 577.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,48 @@
 		"style" : "",
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 103.0, 290.0, 24.0, 24.0 ],
+					"presentation_rect" : [ 93.0, 291.0, 0.0, 0.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 283.0, 290.0, 24.0, 24.0 ],
+					"presentation_rect" : [ 297.5, 291.0, 0.0, 0.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontsize" : 12.0,
+					"id" : "obj-3",
+					"maxclass" : "o.compose",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 465.0, 217.0, 37.0, 24.0 ],
+					"saved_bundle_data" : [  ],
+					"saved_bundle_length" : 0,
+					"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bubble" : 1,
 					"id" : "obj-34",
@@ -83,7 +125,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 618.0, 53.0, 245.0, 154.0 ],
-					"presentation_rect" : [ 561.0, 53.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "converts an address into signal value.\n\nrequired argument 1: address of value\noptional argument 2: ramp time in ms \n\noptional OSC input:\n/ramptime sets interpolation time (default 0)\n\noutlet 1: signal number\noutlet 2: bang at end of ramp\noutlet 3: OSC"
 				}
@@ -108,14 +149,11 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-26",
-					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 79.0, 302.0, 106.0, 48.0 ],
-					"presentation_rect" : [ 103.0, 287.0, 0.0, 0.0 ],
-					"text" : "/x : 20.,\n/ramptime : 0",
+					"patching_rect" : [ 99.0, 325.0, 106.0, 34.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -125,14 +163,11 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-25",
-					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 254.0, 308.0, 128.0, 48.0 ],
-					"presentation_rect" : [ 294.0, 274.0, 0.0, 0.0 ],
-					"text" : "/x : -28.,\n/ramptime : 1000",
+					"patching_rect" : [ 273.0, 325.0, 128.0, 34.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -144,7 +179,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 465.0, 339.0, 99.0, 20.0 ],
-					"presentation_rect" : [ 425.0, 331.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "bang when done"
 				}
@@ -167,13 +201,11 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-21",
-					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 563.0, 285.0, 150.0, 48.0 ],
-					"text" : "/x : 49.,\n/ramptime : 500",
+					"patching_rect" : [ 563.0, 285.0, 150.0, 34.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -190,7 +222,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 442.0, 377.0, 56.0, 22.0 ],
-					"presentation_rect" : [ 378.0, 254.0, 0.0, 0.0 ],
 					"sig" : 0.0,
 					"style" : ""
 				}
@@ -205,8 +236,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 442.0, 168.0, 50.0, 22.0 ],
-					"presentation_rect" : [ 378.0, 108.0, 0.0, 0.0 ],
+					"patching_rect" : [ 442.0, 156.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -218,7 +248,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 442.0, 197.0, 139.0, 22.0 ],
+					"patching_rect" : [ 442.0, 185.0, 139.0, 22.0 ],
 					"style" : "",
 					"text" : "o.pack /x /ramptime 500"
 				}
@@ -249,7 +279,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 229.0, 381.0, 56.0, 22.0 ],
-					"presentation_rect" : [ 195.0, 256.0, 0.0, 0.0 ],
 					"sig" : 0.0,
 					"style" : ""
 				}
@@ -265,7 +294,6 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 229.0, 118.0, 50.0, 22.0 ],
-					"presentation_rect" : [ 195.0, 110.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -394,6 +422,15 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-26", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -407,6 +444,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-10", 1 ]
 				}
 
 			}
@@ -502,6 +548,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -544,7 +599,13 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "o.api.handler.maxpat",
+				"name" : "o.doc.handler.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "m158.loadbang.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
 				"type" : "JSON",
 				"implicit" : 1
