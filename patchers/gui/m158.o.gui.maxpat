@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 442.0, 45.0, 921.0, 760.0 ],
+		"rect" : [ 353.0, 45.0, 921.0, 760.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -1833,13 +1833,14 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-54",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 129.0, 493.5, 134.25, 22.0 ],
+									"patching_rect" : [ 129.0, 493.5, 134.25, 35.0 ],
 									"style" : "",
-									"text" : "zl.join"
+									"text" : "zl.join @zlmaxsize 65536"
 								}
 
 							}
@@ -1850,9 +1851,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 51.0, 100.0, 212.25, 22.0 ],
+									"patching_rect" : [ 51.0, 99.0, 212.25, 22.0 ],
 									"style" : "",
-									"text" : "zl.slice 1"
+									"text" : "zl.slice 1 @zlmaxsize 65536"
 								}
 
 							}
@@ -3147,13 +3148,14 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-18",
+									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 165.25, 452.0, 101.0, 22.0 ],
+									"patching_rect" : [ 165.25, 452.0, 101.0, 49.0 ],
 									"style" : "",
-									"text" : "zl.join"
+									"text" : "zl.join @zlmaxsize 65536"
 								}
 
 							}
@@ -3166,7 +3168,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 101.0, 156.0, 165.25, 22.0 ],
 									"style" : "",
-									"text" : "zl.slice 1"
+									"text" : "zl.slice 1 @zlmaxsize 65536"
 								}
 
 							}
@@ -3499,7 +3501,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 145.0, 17.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -3952,7 +3954,51 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "m158.loadbang.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.collect.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.atomize.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.prepend.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.route.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.timetag.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.union.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.pack.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.var.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.change.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
