@@ -664,7 +664,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 42.0, 45.0, 1337.0, 836.0 ],
+						"rect" : [ 42.0, 45.0, 1308.0, 855.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -701,7 +701,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 580.0, 120.0, 748.0, 440.0 ],
+									"patching_rect" : [ 689.0, 59.0, 748.0, 440.0 ],
 									"text" : "/data = /gui/matrix,\n/i = 0,\n/mode = /data[[/i++]],\n/ncol = /data[[/i++]],\n/nrow = /data[[/i++]],\n/nconstraints = /data[[/i++]],\n/nsteps = /data[[/i++]],\n\n/raw/contraints = [],\nif( /nconstraints > 0,\n  progn(\n    /i = aseq(/i, /i + /nconstraints - 1),\n    /raw/contraints = /data[[ /i ]],\n    /contraints/y = /raw/contraints % 100,\n    /contraints/x = (/raw/contraints - /contraints/y) / 1000\n  )\n),\n/i = max(/i),\n/raw/steps = [],\nif( /nsteps > 0,\n  progn(\n    /i = aseq(/i, /i + /nsteps - 1),\n    /raw/steps = /data[[ /i ]],\n    /steps/y = /raw/steps % 100,\n    /steps/x = (/raw/steps - /steps/y) / 1000\n  )\n),\n/i = aseq(max(/i) + 1, max(/i) + /ncol),\n/column/direction = /data[[ /i ]] - 1,\n\ndelete(/i), delete(/raw/steps), delete(/raw/constraints)",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
@@ -753,8 +753,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 50.0, 89.0, 503.0, 942.0 ],
-									"text" : "/_/direct ??= 0,\n/_/norm ??= (/_/direct ? 0 : 1),\n\nmap(\n  lambda([a],\n    /data = value(a),\n    /i = 0,\n    /mode = /data[[/i++]],\n    /ncol = /data[[/i++]],\n    /nrow = /data[[/i++]],\n    /nconstraints = /data[[/i++]],\n    /nsteps = /data[[/i++]],\n\n    /raw/contraints = [],\n    if( /nconstraints > 0,\n      progn(\n        /i = aseq(/i, /i + /nconstraints - 1),\n        /raw/contraints = /data[[ /i ]],\n        /contraints/y = /raw/contraints % 100,\n        /contraints/x = (/raw/contraints - /contraints/y) / 1000\n      )\n    ),\n    /i = max(/i),\n    /raw/steps = [],\n    if( /nsteps > 0,\n      progn(\n        /i = aseq(/i, /i + /nsteps - 1),\n        /raw/steps = /data[[ /i ]],\n        /steps/y = /raw/steps % 100,\n        /steps/x = (/raw/steps - /steps/y) / 1000\n      )\n    ),\n    /i = aseq(max(/i) + 1, max(/i) + /ncol),\n    /column/direction = /data[[ /i ]] - 1,\n\n    if( /_/direct == 1,\n      progn(\n        /_/y = /steps/y,\n        /_/y = [/_/y, last(/_/y)],\n        /_/x = /steps/x,\n        if( /_/norm == 1, /_/x = float32(/_/x) / max(/_/x)),\n        assign(\"/out\"+a+\"/x\", /_/x),\n        assign(\"/out\"+a+\"/y\", /_/y)\n      ),\n      progn(\n        /_/tab = /steps/y,\n        /_/len = length(/_/tab),\n        /_/x = [],\n        /_/y = [],\n        map(\n          lambda([y,x],\n            if( !bound(/_/prev) || y != /_/prev,\n              progn(\n                /_/y = [/_/y, y],\n                /_/x = [/_/x, (/_/norm ? float32(x) / /_/len : x) ]\n              )\n            ),\n            /_/prev = y\n          ), /_/tab, aseq(0, /_/len - 1)\n        ),\n        /_/x = [/_/x, ( /_/norm ? 1. : last(/_/x) ) ],\n        /_/y = [/_/y, last(/_/y) ],\n        assign(\"/out\"+a+\"/x\", /_/x),\n        assign(\"/out\"+a+\"/y\", /_/y)\n      )\n    )\n  ), /_/addr\n)",
+									"patching_rect" : [ 123.0, 64.0, 503.0, 942.0 ],
+									"text" : "/_/direct ??= 0,\n/_/norm ??= 0,\n\nmap(\n  lambda([a],\n    /data = value(a),\n    /i = 0,\n    /mode = /data[[/i++]],\n    /ncol = /data[[/i++]],\n    /nrow = /data[[/i++]],\n    /nconstraints = /data[[/i++]],\n    /nsteps = /data[[/i++]],\n\n    /raw/contraints = [],\n    if( /nconstraints > 0,\n      progn(\n        /i = aseq(/i, /i + /nconstraints - 1),\n        /raw/contraints = /data[[ /i ]],\n        /contraints/y = /raw/contraints % 100,\n        /contraints/x = (/raw/contraints - /contraints/y) / 1000\n      )\n    ),\n    /i = max(/i),\n    /raw/steps = [],\n    if( /nsteps > 0,\n      progn(\n        /i = aseq(/i, /i + /nsteps - 1),\n        /raw/steps = /data[[ /i ]],\n        /steps/y = /raw/steps % 100,\n        /steps/x = (/raw/steps - /steps/y) / 1000\n      )\n    ),\n    /i = aseq(max(/i) + 1, max(/i) + /ncol),\n    /column/direction = /data[[ /i ]] - 1,\n\n    if( /_/direct == 1,\n      progn(\n        /_/y = /steps/y,\n#        /_/y = [/_/y, last(/_/y)],\n        /_/x = /steps/x,\n        if( /_/norm == 1, /_/x = float32(/_/x) / max(/_/x)),\n        assign(\"/out\"+a+\"/x\", /_/x),\n        assign(\"/out\"+a+\"/y\", /_/y)\n      ),\n      progn(\n        /_/tab = /steps/y,\n        /_/len = length(/_/tab),\n        /_/x = [],\n        /_/y = [],\n        map(\n          lambda([y,x],\n            if( !bound(/_/prev) || y != /_/prev,\n              progn(\n                /_/y = [/_/y, y],\n                /_/x = [/_/x, (/_/norm ? float32(x) / /_/len : x) ]\n              )\n            ),\n            /_/prev = y\n          ), /_/tab, aseq(0, /_/len - 1)\n        ),\n#        /_/x = [/_/x, ( /_/norm ? 1. : last(/_/x) ) ],\n#        /_/y = [/_/y, last(/_/y) ],\n        assign(\"/out\"+a+\"/x\", /_/x),\n        assign(\"/out\"+a+\"/y\", /_/y)\n      )\n    )\n  ), /_/addr\n)",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 

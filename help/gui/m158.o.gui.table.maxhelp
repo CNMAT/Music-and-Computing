@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 100.0, 100.0, 1096.0, 751.0 ],
+		"rect" : [ 142.0, 79.0, 1096.0, 751.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -471,7 +471,7 @@
 									"outlettype" : [ "signal", "signal", "" ],
 									"patching_rect" : [ 630.0, 407.0, 159.0, 35.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /tab @interp 0"
+									"text" : "m158.o.points.phase~ /tab @step 1"
 								}
 
 							}
@@ -572,7 +572,7 @@
 ,
 									"style" : "default",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u481002119"
+									"varname" : "u216004704"
 								}
 
 							}
@@ -958,7 +958,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 100.0, 126.0, 1096.0, 725.0 ],
+						"rect" : [ 142.0, 105.0, 1096.0, 725.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1116,7 +1116,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 630.0, 219.0, 141.0, 22.0 ],
+									"patching_rect" : [ 630.0, 219.0, 146.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.gui.function /env"
 								}
@@ -1389,7 +1389,7 @@
 									"outlettype" : [ "signal", "signal", "" ],
 									"patching_rect" : [ 630.0, 407.0, 159.0, 35.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /tab @interp 0"
+									"text" : "m158.o.points.phase~ /tab @step 1"
 								}
 
 							}
@@ -1401,7 +1401,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 630.0, 176.5, 123.0, 22.0 ],
+									"patching_rect" : [ 630.0, 176.5, 146.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.gui.table /tab"
 								}
@@ -1490,7 +1490,7 @@
 ,
 									"style" : "default",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u148002729"
+									"varname" : "u913005173"
 								}
 
 							}
@@ -1856,6 +1856,12 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "m158.loadbang.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "m158.o.gui.table.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gui",
 				"type" : "JSON",
@@ -1864,12 +1870,6 @@
 , 			{
 				"name" : "o.gather.select.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gatherers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "m158.loadbang.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -1997,10 +1997,6 @@
 			}
 , 			{
 				"name" : "o.compose.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.display.mxo",
 				"type" : "iLaX"
 			}
 , 			{

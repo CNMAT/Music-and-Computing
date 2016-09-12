@@ -90,7 +90,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 524.0, 168.5, 283.0, 37.0 ],
-									"presentation_rect" : [ 535.5, 159.5, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "m158.phase~ in @phasecycle 1 mode updates the phase whenever a new duration is received"
 								}
@@ -235,7 +234,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 528.0, 456.0, 682.0, 238.0 ],
-									"text" : "/file/name : \"~/Documents/Max 7/Packages/CNMAT-M158/media/808/\",\n/file/type : \"fold\",\n/nbuffers : 15,\n/namelist : [\"cl_hihat.aif\", \"claves.aif\", \"conga1.aif\", \"cowbell.aif\", \"crashcym.aif\", \"handclap.aif\", \"hi_conga.aif\", \"hightom.aif\", \"kick1.aif\", \"kick2.aif\", \"maracas.aif\", \"open_hh.aif\", \"rimshot.aif\", \"snare.aif\", \"tom1.aif\"],\n/lengths : [2328., 1311., 11488., 14992, 98309, 15901., 7880., 8800., 30942., 38160., 1133., 26352., 608., 4088., 15888.],\n/buffername : \"1000-combined\",\n/yshape : -5,\n/xshape : 0,\n/amp : 1,\n/pan : 0,\n/start : 0,\n/rate : 1,\n/duration : -1",
+									"text" : "/file/name : \"~/Documents/Max 7/Packages/CNMAT-M158/media/808/\",\n/file/type : \"fold\",\n/nbuffers : 15,\n/namelist : [\"cl_hihat.aif\", \"claves.aif\", \"conga1.aif\", \"cowbell.aif\", \"crashcym.aif\", \"handclap.aif\", \"hi_conga.aif\", \"hightom.aif\", \"kick1.aif\", \"kick2.aif\", \"maracas.aif\", \"open_hh.aif\", \"rimshot.aif\", \"snare.aif\", \"tom1.aif\"],\n/lengths : [2328., 1311., 11488., 14992, 98309, 15901., 7880., 8800., 30942., 38160., 1133., 26352., 608., 4088., 15888.],\n/buffername : \"1686-combined\",\n/yshape : -5,\n/xshape : 0,\n/amp : 1,\n/pan : 0,\n/start : 0,\n/rate : 1,\n/duration : -1",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -731,7 +730,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 812.5, 154.0, 272.0, 184.0 ],
-									"text" : "/file/name : \"drumloop.aif\",\n/buffer/hopsize : 256,\n/buffer/fftsize : 1024,\n/buffer/name : \"1024-buffer\",\n/buffer/nsamples : 153400,\n/buffer/ms : 3478.46,\n/buffer/samplerate : 44100.,\n/buffer/selected/start : 0,\n/buffer/selected/end : 1,\n/buffer/selected/length : 1,\n/buffer/selected/ms : 3478.46,\n/buffer/trigger : 0",
+									"text" : "/file/name : \"drumloop.aif\",\n/buffer/hopsize : 256,\n/buffer/fftsize : 1024,\n/buffer/name : \"1701-buffer\",\n/buffer/nsamples : 153400,\n/buffer/ms : 3478.46,\n/buffer/samplerate : 44100.,\n/buffer/selected/start : 0,\n/buffer/selected/end : 1,\n/buffer/selected/length : 1,\n/buffer/selected/ms : 3478.46,\n/buffer/trigger : 0",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -1291,12 +1290,30 @@
 						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"fontface" : 0,
+									"fontsize" : 12.0,
+									"id" : "obj-14",
+									"linecount" : 8,
+									"maxclass" : "o.compose",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 943.5, 19.90625, 318.0, 119.0 ],
+									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 36, 47, 103, 117, 105, 47, 115, 101, 113, 47, 49, 0, 0, 44, 105, 105, 105, 105, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 14, 0, 0, 0, 11, 0, 0, 0, 32, 47, 103, 117, 105, 47, 115, 101, 113, 47, 50, 0, 0, 44, 105, 105, 105, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 3, 0, 0, 0, 13, 0, 0, 0, 28, 47, 103, 117, 105, 47, 112, 104, 114, 97, 115, 101, 47, 109, 115, 0, 0, 44, 100, 0, 0, 64, -112, -56, 0, 0, 0, 0, 0, 0, 0, 0, 24, 47, 103, 117, 105, 47, 116, 105, 109, 101, 0, 0, 0, 44, 116, 0, 0, -37, -127, -101, 62, 92, 102, -83, -83, 0, 0, 0, 36, 47, 115, 101, 113, 47, 49, 47, 120, 0, 0, 0, 0, 44, 105, 105, 105, 105, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 3, 0, 0, 0, 36, 47, 115, 101, 113, 47, 49, 47, 121, 0, 0, 0, 0, 44, 105, 105, 105, 105, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 14, 0, 0, 0, 11, 0, 0, 0, 32, 47, 115, 101, 113, 47, 50, 47, 120, 0, 0, 0, 0, 44, 105, 105, 105, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 32, 47, 115, 101, 113, 47, 50, 47, 121, 0, 0, 0, 0, 44, 105, 105, 105, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 3, 0, 0, 0, 13 ],
+									"saved_bundle_length" : 304,
+									"text" : "/gui/seq/1 : [10, 0, 14, 11],\n/gui/seq/2 : [1, 3, 13],\n/gui/phrase/ms : 1074.,\n/gui/time : 2016-09-12T21:23:10.360942Z,\n/seq/1/x : [0, 1, 2, 3],\n/seq/1/y : [10, 0, 14, 11],\n/seq/2/x : [0, 1, 2],\n/seq/2/y : [1, 3, 13]",
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-12",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "signal", "bang", "FullPacket" ],
-									"patching_rect" : [ 552.0, 237.0, 107.0, 22.0 ],
+									"patching_rect" : [ 539.0, 237.0, 107.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.num~ /ms"
 								}
@@ -1348,13 +1365,13 @@
 								"box" : 								{
 									"bubble" : 1,
 									"id" : "obj-19",
-									"linecount" : 2,
+									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 814.5, 90.90625, 426.0, 37.0 ],
+									"patching_rect" : [ 735.0, 87.90625, 302.0, 51.0 ],
 									"style" : "",
-									"text" : "\"@direct 1\" tells m158.o.gui.table to output all steps\n\"@normal_x 1\" tells m158.o.gui.table to normalize step numbers to 0-1."
+									"text" : "\"@direct 1\" tells m158.o.gui.table to output all steps. With @direct 0 (the default), repeated steps are grouped together as longer notes."
 								}
 
 							}
@@ -1365,7 +1382,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "FullPacket" ],
-									"patching_rect" : [ 552.0, 204.40625, 50.0, 22.0 ],
+									"patching_rect" : [ 539.0, 204.40625, 50.0, 22.0 ],
 									"style" : "",
 									"text" : "o.union"
 								}
@@ -1380,7 +1397,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 552.0, 151.0, 157.0, 32.0 ],
+									"patching_rect" : [ 539.0, 151.0, 157.0, 32.0 ],
 									"text" : "/ms = /gui/phrase/ms",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
@@ -1535,7 +1552,7 @@
 									"outlettype" : [ "signal", "signal", "" ],
 									"patching_rect" : [ 380.0, 333.40625, 266.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.phase.points~ /seq/1 @interp 0"
+									"text" : "m158.o.phase.points~ /seq/1 @step 1"
 								}
 
 							}
@@ -1681,7 +1698,7 @@
 									"outlettype" : [ "signal", "signal", "" ],
 									"patching_rect" : [ 673.0, 333.40625, 266.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.phase.points~ /seq/2 @interp 0"
+									"text" : "m158.o.phase.points~ /seq/2 @step 1"
 								}
 
 							}
@@ -1692,7 +1709,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 552.0, 15.0, 24.0, 24.0 ],
+									"patching_rect" : [ 539.0, 15.0, 24.0, 24.0 ],
 									"style" : ""
 								}
 
@@ -1705,7 +1722,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "dump" ],
-									"patching_rect" : [ 552.0, 53.5, 70.0, 22.0 ],
+									"patching_rect" : [ 539.0, 53.5, 70.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.gui"
 								}
@@ -1720,7 +1737,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 638.5, 42.0, 97.0, 49.0 ],
+									"patching_rect" : [ 625.5, 42.0, 97.0, 49.0 ],
 									"saved_object_attributes" : 									{
 										"client_rect" : [ 4, 44, 358, 172 ],
 										"parameter_enable" : 0,
@@ -1729,7 +1746,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u726001263"
+									"varname" : "u860011002"
 								}
 
 							}
@@ -1791,9 +1808,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 552.0, 102.40625, 255.0, 22.0 ],
+									"patching_rect" : [ 539.0, 102.40625, 180.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.gui.table /seq @direct 1 @normal_x 1"
+									"text" : "m158.o.gui.table /seq @direct 1"
 								}
 
 							}
@@ -1855,7 +1872,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 673.0, 358.5, 110.0, 22.0 ],
+									"patching_rect" : [ 673.0, 365.5, 110.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.phase.click~"
 								}
@@ -1868,7 +1885,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "signal", "signal", "signal", "" ],
-									"patching_rect" : [ 552.0, 275.0, 94.0, 22.0 ],
+									"patching_rect" : [ 539.0, 275.0, 84.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.phase~"
 								}
@@ -1977,10 +1994,28 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-18", 1 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-12", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-2", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-12", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-44", 1 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-12", 2 ]
 								}
 
 							}
@@ -2041,28 +2076,10 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-18", 1 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-2", 3 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-18", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-2", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-44", 1 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-2", 3 ]
 								}
 
 							}
@@ -2132,6 +2149,15 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-11", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-14", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-4", 0 ]
@@ -2371,7 +2397,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 57.0, 105.0, 1274.0, 761.0 ],
+						"rect" : [ 0.0, 26.0, 1274.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2753,13 +2779,14 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-29",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 3,
 									"outlettype" : [ "signal", "signal", "" ],
-									"patching_rect" : [ 757.0, 408.5, 200.0, 22.0 ],
+									"patching_rect" : [ 757.0, 402.0, 200.0, 35.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /seq/2"
+									"text" : "m158.o.points.phase~ /seq/2 @step 1 @normal_x 0"
 								}
 
 							}
@@ -3090,7 +3117,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u223001803"
+									"varname" : "u380011578"
 								}
 
 							}
@@ -3149,13 +3176,14 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-21",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 3,
 									"outlettype" : [ "signal", "signal", "" ],
-									"patching_rect" : [ 491.5, 408.5, 200.0, 22.0 ],
+									"patching_rect" : [ 491.5, 402.0, 200.0, 35.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /seq/1"
+									"text" : "m158.o.points.phase~ /seq/1 @step 1 @normal_x 0"
 								}
 
 							}
@@ -3707,7 +3735,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1274.0, 761.0 ],
+						"rect" : [ 57.0, 105.0, 1274.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3861,12 +3889,12 @@
  ],
 		"lines" : [  ],
 		"parameters" : 		{
-			"obj-5::obj-34" : [ "live.gain~[4]", "live.gain~", 0 ],
 			"obj-7::obj-71" : [ "live.gain~[3]", "live.gain~", 0 ],
-			"obj-2::obj-34" : [ "live.gain~[7]", "live.gain~", 0 ],
 			"obj-1::obj-38" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-5::obj-58" : [ "live.gain~[5]", "live.gain~", 0 ],
-			"obj-1::obj-48" : [ "live.gain~[6]", "live.gain~", 0 ]
+			"obj-5::obj-34" : [ "live.gain~[4]", "live.gain~", 0 ],
+			"obj-1::obj-48" : [ "live.gain~[6]", "live.gain~", 0 ],
+			"obj-2::obj-34" : [ "live.gain~[7]", "live.gain~", 0 ],
+			"obj-5::obj-58" : [ "live.gain~[5]", "live.gain~", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
