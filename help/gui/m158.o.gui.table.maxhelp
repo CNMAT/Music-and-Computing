@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 142.0, 79.0, 1096.0, 751.0 ],
+		"rect" : [ 100.0, 100.0, 1096.0, 751.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -84,14 +84,28 @@
 						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"color" : [ 0.701961, 0.415686, 0.886275, 1.0 ],
+									"id" : "obj-18",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "signal", "bang", "FullPacket" ],
+									"patching_rect" : [ 630.0, 332.5, 159.0, 22.0 ],
+									"style" : "",
+									"text" : "m158.o.num~ /ms"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"bubble" : 1,
 									"id" : "obj-15",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 823.0, 208.5, 285.0, 24.0 ],
+									"patching_rect" : [ 793.0, 412.5, 285.0, 24.0 ],
 									"style" : "",
-									"text" : "in @direct mode every step is a separate event.\n"
+									"text" : "in @beats mode every step is a separate event.\n"
 								}
 
 							}
@@ -198,7 +212,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 630.0, 259.0, 141.0, 22.0 ],
+									"patching_rect" : [ 630.0, 230.0, 141.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.gui.function /env"
 								}
@@ -251,7 +265,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 630.0, 299.0, 344.0, 46.0 ],
+									"patching_rect" : [ 630.0, 270.0, 344.0, 46.0 ],
 									"text" : "/amps = /gui/harmonics / sum(/gui/harmonics),\n/ms = /gui/ms",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
@@ -454,9 +468,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "signal", "signal", "signal", "" ],
-									"patching_rect" : [ 630.0, 366.0, 159.0, 22.0 ],
+									"patching_rect" : [ 630.0, 366.0, 84.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.phase~"
+									"text" : "m158.phase~"
 								}
 
 							}
@@ -471,7 +485,7 @@
 									"outlettype" : [ "signal", "signal", "" ],
 									"patching_rect" : [ 630.0, 407.0, 159.0, 35.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /tab @step 1"
+									"text" : "m158.o.points.phase~ /tab @step 1 @beats 1"
 								}
 
 							}
@@ -483,9 +497,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 630.0, 208.5, 177.0, 22.0 ],
+									"patching_rect" : [ 630.0, 194.5, 123.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.gui.table /tab @direct 1"
+									"text" : "m158.o.gui.table /tab"
 								}
 
 							}
@@ -572,7 +586,7 @@
 ,
 									"style" : "default",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u216004704"
+									"varname" : "u088010595"
 								}
 
 							}
@@ -724,6 +738,24 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-6", 1 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-18", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-18", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-17", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -769,7 +801,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-7", 0 ],
+									"destination" : [ "obj-18", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-29", 0 ]
@@ -899,15 +931,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-6", 1 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-7", 3 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-6", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -927,7 +950,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 126.0, 133.0, 62.0, 22.0 ],
+					"patching_rect" : [ 125.0, 133.0, 128.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -937,7 +960,7 @@
 					}
 ,
 					"style" : "",
-					"text" : "p @direct",
+					"text" : "p \"use with @beats 1\"",
 					"varname" : "patcher[1]"
 				}
 
@@ -958,7 +981,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 142.0, 105.0, 1096.0, 725.0 ],
+						"rect" : [ 100.0, 126.0, 1096.0, 725.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -988,6 +1011,22 @@
 						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"bubble" : 1,
+									"id" : "obj-15",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 799.5, 401.5, 256.0, 51.0 ],
+									"presentation_rect" : [ 805.0, 398.5, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "m158.o.points.phase~ @step 1 and @beats 0 creates longer events from repeated notes."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"color" : [ 0.701961, 0.415686, 0.886275, 1.0 ],
 									"id" : "obj-18",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -1003,11 +1042,11 @@
 								"box" : 								{
 									"bubble" : 1,
 									"id" : "obj-8",
-									"linecount" : 2,
+									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 799.0, 407.0, 205.0, 37.0 ],
+									"patching_rect" : [ 922.0, 486.5, 150.0, 51.0 ],
 									"style" : "",
 									"text" : "relative phase is being used here to drive the envelope function."
 								}
@@ -1389,7 +1428,7 @@
 									"outlettype" : [ "signal", "signal", "" ],
 									"patching_rect" : [ 630.0, 407.0, 159.0, 35.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /tab @step 1"
+									"text" : "m158.o.points.phase~ /tab @step 1 @beats 0"
 								}
 
 							}
@@ -1401,7 +1440,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 630.0, 176.5, 146.0, 22.0 ],
+									"patching_rect" : [ 630.0, 176.5, 123.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.gui.table /tab"
 								}
@@ -1490,7 +1529,7 @@
 ,
 									"style" : "default",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u913005173"
+									"varname" : "u879001871"
 								}
 
 							}
@@ -1946,12 +1985,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.phase~.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "o.collect.mxo",
 				"type" : "iLaX"
 			}
@@ -2009,6 +2042,10 @@
 			}
 , 			{
 				"name" : "o.print.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.display.mxo",
 				"type" : "iLaX"
 			}
 , 			{

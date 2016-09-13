@@ -82,12 +82,25 @@
 						"subpatcher_template" : "Default Max 7",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-2",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "FullPacket" ],
+									"patching_rect" : [ 311.399994, 142.276978, 92.0, 22.0 ],
+									"style" : "",
+									"text" : "o.pack /_/beats"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-1",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "FullPacket" ],
-									"patching_rect" : [ 298.0, 139.276978, 92.0, 22.0 ],
+									"patching_rect" : [ 248.399994, 194.276978, 92.0, 22.0 ],
 									"style" : "",
 									"text" : "o.pack /_/norm"
 								}
@@ -100,7 +113,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "FullPacket" ],
-									"patching_rect" : [ 173.0, 139.276978, 115.0, 22.0 ],
+									"patching_rect" : [ 182.266663, 241.776978, 115.0, 22.0 ],
 									"style" : "",
 									"text" : "o.pack /_/stepmode"
 								}
@@ -113,7 +126,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 221.776978, 55.0, 22.0 ],
+									"patching_rect" : [ 50.0, 189.776978, 55.0, 22.0 ],
 									"style" : "",
 									"text" : "o.collect"
 								}
@@ -588,12 +601,12 @@
 								"box" : 								{
 									"id" : "obj-75",
 									"maxclass" : "newobj",
-									"numinlets" : 5,
-									"numoutlets" : 5,
-									"outlettype" : [ "", "", "", "", "" ],
+									"numinlets" : 6,
+									"numoutlets" : 6,
+									"outlettype" : [ "", "", "", "", "", "" ],
 									"patching_rect" : [ 50.0, 100.0, 349.666656, 22.0 ],
 									"style" : "",
-									"text" : "route done basename step normal_x"
+									"text" : "route done basename step normal_x beats"
 								}
 
 							}
@@ -655,6 +668,15 @@
 									"destination" : [ "obj-19", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-19", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
 									"source" : [ "obj-20", 0 ]
 								}
 
@@ -692,6 +714,15 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-75", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-75", 4 ]
 								}
 
 							}
@@ -738,7 +769,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 479.0, 45.0, 682.0, 771.0 ],
+						"rect" : [ 186.0, 45.0, 1048.0, 855.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -767,14 +798,119 @@
 						"subpatcher_template" : "no-menus",
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-6",
+									"id" : "obj-5",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "FullPacket", "FullPacket" ],
+									"patching_rect" : [ 108.0, 824.0, 123.0, 22.0 ],
+									"presentation_rect" : [ 98.0, 836.223022, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "o.cond !bound(/error)"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-1",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "FullPacket" ],
-									"patching_rect" : [ 50.0, 494.0, 61.0, 22.0 ],
+									"patching_rect" : [ 50.0, 799.0, 77.0, 22.0 ],
 									"style" : "",
 									"text" : "o.route /_"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 0,
+									"patcher" : 									{
+										"fileversion" : 1,
+										"appversion" : 										{
+											"major" : 7,
+											"minor" : 2,
+											"revision" : 5,
+											"architecture" : "x64",
+											"modernui" : 1
+										}
+,
+										"rect" : [ 29.0, 70.0, 640.0, 480.0 ],
+										"bglocked" : 0,
+										"openinpresentation" : 0,
+										"default_fontsize" : 12.0,
+										"default_fontface" : 0,
+										"default_fontname" : "Arial",
+										"gridonopen" : 1,
+										"gridsize" : [ 15.0, 15.0 ],
+										"gridsnaponopen" : 1,
+										"objectsnaponopen" : 1,
+										"statusbarvisible" : 2,
+										"toolbarvisible" : 1,
+										"lefttoolbarpinned" : 0,
+										"toptoolbarpinned" : 0,
+										"righttoolbarpinned" : 0,
+										"bottomtoolbarpinned" : 0,
+										"toolbars_unpinned_last_save" : 15,
+										"tallnewobj" : 0,
+										"boxanimatetime" : 200,
+										"enablehscroll" : 1,
+										"enablevscroll" : 1,
+										"devicewidth" : 0.0,
+										"description" : "",
+										"digest" : "",
+										"tags" : "",
+										"style" : "",
+										"subpatcher_template" : "no-menus",
+										"boxes" : [ 											{
+												"box" : 												{
+													"fontface" : 0,
+													"fontsize" : 12.0,
+													"id" : "obj-10",
+													"linecount" : 37,
+													"maxclass" : "o.expr.codebox",
+													"numinlets" : 1,
+													"numoutlets" : 2,
+													"outlettype" : [ "FullPacket", "FullPacket" ],
+													"patching_rect" : [ 50.0, 100.0, 503.0, 521.0 ],
+													"text" : "/_/direct ??= 0,\n/_/norm ??= 0,\n\nmap(\n  lambda([a],\n    if( /_/direct == 1,\n      progn(\n        /_/y = value(a),\n        /_/x = aseq(0, length(/_/y)-1),\n        if( /_/norm == 1, /_/x = float32(/_/x) / max(/_/x)),\n        assign(\"/out\"+a+\"/x\", /_/x),\n        assign(\"/out\"+a+\"/y\", /_/y)\n      ),\n      progn(\n        /_/tab = value(a),\n        /_/len = length(/_/tab),\n        /_/x = [],\n        /_/y = [],\n        map(\n          lambda([y,x],\n            if( !bound(/_/prev) || y != /_/prev,\n              progn(\n                /_/y = [/_/y, y],\n                /_/x = [/_/x, (/_/norm ? float32(x) / /_/len : x) ]\n              )\n            ),\n            /_/prev = y\n          ), /_/tab, aseq(0, /_/len - 1)\n        ),\n#        /_/x = [/_/x, ( /_/norm ? 1. : last(/_/x) ) ],\n#        /_/y = [/_/y, last(/_/y) ],\n        assign(\"/out\"+a+\"/x\", /_/x),\n        assign(\"/out\"+a+\"/y\", /_/y)\n      )\n    )\n  ), /_/addr\n)",
+													"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+												}
+
+											}
+ ],
+										"lines" : [  ]
+									}
+,
+									"patching_rect" : [ 569.0, 799.0, 18.0, 22.0 ],
+									"saved_object_attributes" : 									{
+										"description" : "",
+										"digest" : "",
+										"globalpatchername" : "",
+										"style" : "",
+										"tags" : ""
+									}
+,
+									"style" : "",
+									"text" : "p"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 0,
+									"fontsize" : 12.0,
+									"id" : "obj-8",
+									"maxclass" : "o.display",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 612.0, 188.0, 395.0, 34.0 ],
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
 							}
@@ -785,7 +921,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "FullPacket" ],
-									"patching_rect" : [ 268.0, 595.0, 100.0, 22.0 ],
+									"patching_rect" : [ 261.0, 835.0, 100.0, 22.0 ],
 									"style" : "",
 									"text" : "o.select /error"
 								}
@@ -798,7 +934,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 268.0, 621.0, 73.0, 22.0 ],
+									"patching_rect" : [ 261.0, 861.0, 73.0, 22.0 ],
 									"style" : "",
 									"text" : "o.print error"
 								}
@@ -810,22 +946,9 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 268.0, 541.0, 275.0, 20.0 ],
+									"patching_rect" : [ 376.0, 857.0, 275.0, 20.0 ],
 									"style" : "",
 									"text" : "this is printing too much so is diconnected for now"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-42",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 92.0, 548.223022, 123.0, 22.0 ],
-									"style" : "",
-									"text" : "o.cond !bound(/error)"
 								}
 
 							}
@@ -847,13 +970,13 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-7",
-									"linecount" : 23,
+									"linecount" : 48,
 									"maxclass" : "o.expr.codebox",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 50.0, 143.223022, 410.0, 331.0 ],
-									"text" : "/_/stepmode ??= 0,\n/_/norm ??= 1,\nif( /_/stepmode == 1 && bound(/_/baseAddr),\n  progn(\n\n    /_/addr/x = /_/baseAddr + \"/x\",\n    /_/addr/y = /_/baseAddr + \"/y\",\n    /_/x = value(/_/addr/x),\n    /_/y = value(/_/addr/y),\n\n    if( !bound(/_/x) || !bound(/_/y),\n      /error = \"unbound value for lookup\",\n        progn(\n          /_/x = float32([/_/x, last(/_/x)+1]),\n          if( /_/norm == 1,\n            /_/x /= max(/_/x)\n          ),\n          assign(value(/_/addr/x), /_/x),\n          assign(value(/_/addr/y), [/_/y, last(/_/y)])\n        )\n    )\n  )\n)",
+									"patching_rect" : [ 50.0, 118.223022, 517.0, 671.0 ],
+									"text" : "/_/stepmode ??= 0,\n/_/norm ??= 1,\n/_/beats ??= 1,\n\nif( /_/stepmode == 1 && bound(/_/baseAddr),\n  progn(\n    /_/addr/x = /_/baseAddr + \"/x\",\n    /_/addr/y = /_/baseAddr + \"/y\",\n    /_/x = value(/_/addr/x),\n    /_/y = value(/_/addr/y),\n\n    if( !bound(/_/x) || !bound(/_/y),\n      /error = \"unbound value for lookup\",\n      if( /_/beats == 1,\n        progn(\n          /_/y = [/_/y, last(/_/y)],\n          /_/x = [/_/x, last(/_/x)+1],\n          if( /_/norm == 1, \n            /_/x = float32(/_/x) / max(/_/x)\n          ),\n          assign(value(/_/addr/x), /_/x),\n          assign(value(/_/addr/y), /_/y)\n        ),\n        progn(\n          /_/tab = /_/y,\n          /_/len = length(/_/tab),\n          /_/x = [],\n          /_/y = [],\n          map(\n            lambda([y,x],\n              if( !bound(/_/prev) || y != /_/prev,\n                progn(\n                  /_/y = [/_/y, y],\n                  /_/x = [/_/x, (/_/norm ? float32(x) / /_/len : x) ]\n                )\n              ),\n              /_/prev = y\n            ), /_/tab, aseq(0, /_/len - 1)\n          ),\n          /_/x = [/_/x, ( /_/norm ? 1. : last(/_/x) ) ],\n          /_/y = [/_/y, last(/_/y) ],\n          assign(value(/_/addr/x), /_/x),\n          assign(value(/_/addr/y), /_/y)\n        )\n      )\n    )\n  )\n)",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -891,13 +1014,22 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 92.0, 627.0, 30.0, 30.0 ],
+									"patching_rect" : [ 108.0, 861.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
 							}
  ],
 						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-5", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-1", 1 ]
+								}
+
+							}
+, 							{
 								"patchline" : 								{
 									"destination" : [ "obj-7", 0 ],
 									"disabled" : 0,
@@ -912,15 +1044,6 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-4", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-46", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-42", 0 ]
 								}
 
 							}
@@ -944,18 +1067,28 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-42", 0 ],
+									"destination" : [ "obj-46", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"source" : [ "obj-6", 1 ]
+									"source" : [ "obj-5", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-6", 0 ],
+									"destination" : [ "obj-1", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"source" : [ "obj-7", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-8", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 59.5, 794.223022, 599.5, 794.223022, 599.5, 177.0, 621.5, 177.0 ],
 									"source" : [ "obj-7", 0 ]
 								}
 
@@ -1186,7 +1319,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 222.0, 110.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -1408,6 +1541,96 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "m158.o.points.lookup~.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "point.lookup.gendsp",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/code",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "m158.loadbang.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "m158.o.points.interp~.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "point.interp.gendsp",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/code",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.doc.handler.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.union.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.pack.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.intersection.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.compose.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.expr.codebox.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.route.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.cond.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.print.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.select.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.var.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.prepend.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.display.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.collect.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0,
 		"bgfillcolor_type" : "gradient",
 		"bgfillcolor_color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 		"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],

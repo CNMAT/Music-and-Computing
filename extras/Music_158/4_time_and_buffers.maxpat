@@ -234,7 +234,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 528.0, 456.0, 682.0, 238.0 ],
-									"text" : "/file/name : \"~/Documents/Max 7/Packages/CNMAT-M158/media/808/\",\n/file/type : \"fold\",\n/nbuffers : 15,\n/namelist : [\"cl_hihat.aif\", \"claves.aif\", \"conga1.aif\", \"cowbell.aif\", \"crashcym.aif\", \"handclap.aif\", \"hi_conga.aif\", \"hightom.aif\", \"kick1.aif\", \"kick2.aif\", \"maracas.aif\", \"open_hh.aif\", \"rimshot.aif\", \"snare.aif\", \"tom1.aif\"],\n/lengths : [2328., 1311., 11488., 14992, 98309, 15901., 7880., 8800., 30942., 38160., 1133., 26352., 608., 4088., 15888.],\n/buffername : \"1686-combined\",\n/yshape : -5,\n/xshape : 0,\n/amp : 1,\n/pan : 0,\n/start : 0,\n/rate : 1,\n/duration : -1",
+									"text" : "/file/name : \"~/Documents/Max 7/Packages/CNMAT-M158/media/808/\",\n/file/type : \"fold\",\n/nbuffers : 15,\n/namelist : [\"cl_hihat.aif\", \"claves.aif\", \"conga1.aif\", \"cowbell.aif\", \"crashcym.aif\", \"handclap.aif\", \"hi_conga.aif\", \"hightom.aif\", \"kick1.aif\", \"kick2.aif\", \"maracas.aif\", \"open_hh.aif\", \"rimshot.aif\", \"snare.aif\", \"tom1.aif\"],\n/lengths : [2328., 1311., 11488., 14992, 98309, 15901., 7880., 8800., 30942., 38160., 1133., 26352., 608., 4088., 15888.],\n/buffername : \"1004-combined\",\n/yshape : -5,\n/xshape : 0,\n/amp : 1,\n/pan : 0,\n/start : 0,\n/rate : 1,\n/duration : -1",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -730,7 +730,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 812.5, 154.0, 272.0, 184.0 ],
-									"text" : "/file/name : \"drumloop.aif\",\n/buffer/hopsize : 256,\n/buffer/fftsize : 1024,\n/buffer/name : \"1701-buffer\",\n/buffer/nsamples : 153400,\n/buffer/ms : 3478.46,\n/buffer/samplerate : 44100.,\n/buffer/selected/start : 0,\n/buffer/selected/end : 1,\n/buffer/selected/length : 1,\n/buffer/selected/ms : 3478.46,\n/buffer/trigger : 0",
+									"text" : "/file/name : \"drumloop.aif\",\n/buffer/hopsize : 256,\n/buffer/fftsize : 1024,\n/buffer/name : \"1019-buffer\",\n/buffer/nsamples : 153400,\n/buffer/ms : 3478.46,\n/buffer/samplerate : 44100.,\n/buffer/selected/start : 0,\n/buffer/selected/end : 1,\n/buffer/selected/length : 1,\n/buffer/selected/ms : 3478.46,\n/buffer/trigger : 0",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -1290,19 +1290,41 @@
 						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
-									"fontface" : 0,
-									"fontsize" : 12.0,
-									"id" : "obj-14",
-									"linecount" : 8,
-									"maxclass" : "o.compose",
+									"bubble" : 1,
+									"id" : "obj-19",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 920.0, 583.0, 325.0, 51.0 ],
+									"style" : "",
+									"text" : "note: m158.o.phase.points~ and m158.o.points.phase~ are the same except that the first two outlets are switched (useful in some patching situations)."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-16",
+									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 943.5, 19.90625, 318.0, 119.0 ],
-									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 36, 47, 103, 117, 105, 47, 115, 101, 113, 47, 49, 0, 0, 44, 105, 105, 105, 105, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 14, 0, 0, 0, 11, 0, 0, 0, 32, 47, 103, 117, 105, 47, 115, 101, 113, 47, 50, 0, 0, 44, 105, 105, 105, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 3, 0, 0, 0, 13, 0, 0, 0, 28, 47, 103, 117, 105, 47, 112, 104, 114, 97, 115, 101, 47, 109, 115, 0, 0, 44, 100, 0, 0, 64, -112, -56, 0, 0, 0, 0, 0, 0, 0, 0, 24, 47, 103, 117, 105, 47, 116, 105, 109, 101, 0, 0, 0, 44, 116, 0, 0, -37, -127, -101, 62, 92, 102, -83, -83, 0, 0, 0, 36, 47, 115, 101, 113, 47, 49, 47, 120, 0, 0, 0, 0, 44, 105, 105, 105, 105, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 3, 0, 0, 0, 36, 47, 115, 101, 113, 47, 49, 47, 121, 0, 0, 0, 0, 44, 105, 105, 105, 105, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 14, 0, 0, 0, 11, 0, 0, 0, 32, 47, 115, 101, 113, 47, 50, 47, 120, 0, 0, 0, 0, 44, 105, 105, 105, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 32, 47, 115, 101, 113, 47, 50, 47, 121, 0, 0, 0, 0, 44, 105, 105, 105, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 3, 0, 0, 0, 13 ],
-									"saved_bundle_length" : 304,
-									"text" : "/gui/seq/1 : [10, 0, 14, 11],\n/gui/seq/2 : [1, 3, 13],\n/gui/phrase/ms : 1074.,\n/gui/time : 2016-09-12T21:23:10.360942Z,\n/seq/1/x : [0, 1, 2, 3],\n/seq/1/y : [10, 0, 14, 11],\n/seq/2/x : [0, 1, 2],\n/seq/2/y : [1, 3, 13]",
-									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
+									"numoutlets" : 3,
+									"outlettype" : [ "signal", "signal", "" ],
+									"patching_rect" : [ 779.5, 583.0, 129.0, 22.0 ],
+									"style" : "",
+									"text" : "m158.o.points.phase~"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-14",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 3,
+									"outlettype" : [ "signal", "signal", "" ],
+									"patching_rect" : [ 779.5, 620.0, 129.0, 22.0 ],
+									"style" : "",
+									"text" : "m158.o.phase.points~"
 								}
 
 							}
@@ -1341,7 +1363,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 293.0, 216.0, 223.0, 64.0 ],
+									"patching_rect" : [ 315.5, 204.40625, 223.0, 64.0 ],
 									"style" : "",
 									"text" : "the tables have been set to have a Y axis range of the number of samples in the folder + 1, so that we can use zero as a rest."
 								}
@@ -1355,23 +1377,9 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 673.0, 250.5, 364.0, 37.0 ],
+									"patching_rect" : [ 662.0, 237.0, 364.0, 37.0 ],
 									"style" : "",
 									"text" : "Since the sequence steps are normalized 0-1, the phase triggers each step as a subdivision of the total phrase length."
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bubble" : 1,
-									"id" : "obj-19",
-									"linecount" : 3,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 735.0, 87.90625, 302.0, 51.0 ],
-									"style" : "",
-									"text" : "\"@direct 1\" tells m158.o.gui.table to output all steps. With @direct 0 (the default), repeated steps are grouped together as longer notes."
 								}
 
 							}
@@ -1412,7 +1420,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 380.0, 168.0, 70.0, 22.0 ],
+									"patching_rect" : [ 392.0, 128.0, 70.0, 22.0 ],
 									"style" : "",
 									"varname" : "number"
 								}
@@ -1425,7 +1433,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 339.5, 139.0, 100.0, 22.0 ],
+									"patching_rect" : [ 351.5, 99.0, 100.0, 22.0 ],
 									"restore" : [ 1074.0 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0
@@ -1739,14 +1747,14 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 625.5, 42.0, 97.0, 49.0 ],
 									"saved_object_attributes" : 									{
-										"client_rect" : [ 4, 44, 358, 172 ],
+										"client_rect" : [ 1057, 45, 1440, 407 ],
 										"parameter_enable" : 0,
 										"storage_rect" : [ 583, 69, 1034, 197 ]
 									}
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u860011002"
+									"varname" : "u230001622"
 								}
 
 							}
@@ -1758,7 +1766,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 17.5, 330.0, 71.0, 22.0 ],
-									"restore" : [ 1, 3, 13 ],
+									"restore" : [ 2, 3, 16, 0, 3, 0, 1013, 2008, 2, 2, 2 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0
 									}
@@ -1771,26 +1779,41 @@
 							}
 , 							{
 								"box" : 								{
-									"hint" : "",
+									"bgstepcolor" : [ 0.196078, 0.196078, 0.196078, 0.0 ],
+									"bgstepcolor2" : [ 0.196078, 0.196078, 0.196078, 0.09 ],
+									"bordercolor2" : [ 0.0, 0.0, 0.0, 0.0 ],
+									"columns" : 3,
+									"direction" : 0,
+									"direction_height" : 32.0,
 									"id" : "obj-42",
-									"maxclass" : "itable",
-									"name" : "",
+									"marker_horizontal" : 0,
+									"marker_vertical" : 0,
+									"maxclass" : "live.grid",
 									"numinlets" : 2,
-									"numoutlets" : 2,
-									"outlettype" : [ "int", "bang" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 43.5, 361.5, 251.0, 137.0 ],
-									"range" : 16,
-									"size" : 3,
-									"style" : "",
-									"table_data" : [ 0, 1, 3, 13 ],
+									"numoutlets" : 6,
+									"outlettype" : [ "", "", "", "", "", "" ],
+									"parameter_enable" : 1,
+									"patching_rect" : [ 43.5, 361.5, 261.0, 155.0 ],
+									"rounded" : 0.0,
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_longname" : "live.grid[1]",
+											"parameter_shortname" : "live.grid",
+											"parameter_type" : 3,
+											"parameter_invisible" : 1
+										}
+
+									}
+,
+									"spacing" : 0.0,
+									"stepcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"varname" : "multislider[1]"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"attr" : "size",
+									"attr" : "columns",
 									"id" : "obj-43",
 									"maxclass" : "attrui",
 									"numinlets" : 1,
@@ -1808,9 +1831,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 539.0, 102.40625, 180.0, 22.0 ],
+									"patching_rect" : [ 539.0, 102.40625, 141.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.gui.table /seq @direct 1"
+									"text" : "m158.o.gui.live.grid /seq"
 								}
 
 							}
@@ -1822,7 +1845,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 17.5, 134.0, 71.0, 22.0 ],
-									"restore" : [ 10, 0, 14, 11 ],
+									"restore" : [ 2, 4, 16, 0, 4, 10, 1000, 2014, 3008, 2, 2, 2, 2 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0
 									}
@@ -1835,26 +1858,41 @@
 							}
 , 							{
 								"box" : 								{
-									"hint" : "",
+									"bgstepcolor" : [ 0.196078, 0.196078, 0.196078, 0.0 ],
+									"bgstepcolor2" : [ 0.196078, 0.196078, 0.196078, 0.09 ],
+									"bordercolor2" : [ 0.0, 0.0, 0.0, 0.0 ],
+									"columns" : 4,
+									"direction" : 0,
+									"direction_height" : 32.0,
 									"id" : "obj-9",
-									"maxclass" : "itable",
-									"name" : "",
+									"marker_horizontal" : 0,
+									"marker_vertical" : 0,
+									"maxclass" : "live.grid",
 									"numinlets" : 2,
-									"numoutlets" : 2,
-									"outlettype" : [ "int", "bang" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 43.5, 164.40625, 251.0, 138.0 ],
-									"range" : 16,
-									"size" : 4,
-									"style" : "",
-									"table_data" : [ 0, 10, 0, 14, 11 ],
+									"numoutlets" : 6,
+									"outlettype" : [ "", "", "", "", "", "" ],
+									"parameter_enable" : 1,
+									"patching_rect" : [ 43.5, 164.40625, 266.0, 145.0 ],
+									"rounded" : 0.0,
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_longname" : "live.grid",
+											"parameter_shortname" : "live.grid",
+											"parameter_type" : 3,
+											"parameter_invisible" : 1
+										}
+
+									}
+,
+									"spacing" : 0.0,
+									"stepcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"varname" : "multislider"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"attr" : "size",
+									"attr" : "columns",
 									"id" : "obj-10",
 									"maxclass" : "attrui",
 									"numinlets" : 1,
@@ -1913,7 +1951,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 759.5, 156.0, 60.0, 22.0 ],
+									"patching_rect" : [ 738.5, 110.0, 60.0, 22.0 ],
 									"style" : "",
 									"text" : "loadbang"
 								}
@@ -1929,7 +1967,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 759.5, 188.5, 414.0, 33.0 ],
+									"patching_rect" : [ 738.5, 142.5, 414.0, 33.0 ],
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 68, 47, 102, 105, 108, 101, 47, 110, 97, 109, 101, 0, 0, 44, 115, 0, 0, 126, 47, 68, 111, 99, 117, 109, 101, 110, 116, 115, 47, 77, 97, 120, 32, 55, 47, 80, 97, 99, 107, 97, 103, 101, 115, 47, 67, 78, 77, 65, 84, 45, 77, 49, 53, 56, 47, 109, 101, 100, 105, 97, 47, 56, 48, 56, 47, 0, 0, 0, 0, 0, 0, 0, 24, 47, 102, 105, 108, 101, 47, 116, 121, 112, 101, 0, 0, 44, 115, 0, 0, 102, 111, 108, 100, 0, 0, 0, 0 ],
 									"saved_bundle_length" : 116,
 									"text" : "/file/name : \"~/Documents/Max 7/Packages/CNMAT-M158/media/808/\",\n/file/type : \"fold\"",
@@ -2157,15 +2195,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-14", 1 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-4", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-34", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -2354,14 +2383,23 @@
 								}
 
 							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-5", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-8", 0 ]
-								}
+ ],
+						"styles" : [ 							{
+								"name" : "envelope_m4l",
+								"default" : 								{
+									"bgfillcolor" : 									{
+										"type" : "gradient",
+										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39
+									}
 
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
 							}
  ]
 					}
@@ -2397,7 +2435,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1274.0, 761.0 ],
+						"rect" : [ 38.0, 79.0, 1274.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2424,7 +2462,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "Default Max 7",
-						"showontab" : 1,
+						"showontab" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-8",
@@ -3043,7 +3081,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 29.0, 115.5, 71.0, 22.0 ],
-									"restore" : [ 9, 6, 9, 0, 0, 2, 14, 14, 14, 2, 2, 0, 14, 0, 4, 2, 0, 0, 2 ],
+									"restore" : [ 9, 6, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0
 									}
@@ -3068,7 +3106,7 @@
 									"range" : 16,
 									"size" : 19,
 									"style" : "",
-									"table_data" : [ 0, 9, 6, 9, 0, 0, 2, 14, 14, 14, 2, 2, 0, 14, 0, 4, 2, 0, 0, 2 ],
+									"table_data" : [ 0, 9, 6, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 									"varname" : "multislider"
 								}
 
@@ -3110,14 +3148,14 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 648.5, 25.5, 97.0, 49.0 ],
 									"saved_object_attributes" : 									{
-										"client_rect" : [ 4, 44, 358, 172 ],
+										"client_rect" : [ 1057, 45, 1440, 407 ],
 										"parameter_enable" : 0,
 										"storage_rect" : [ 583, 69, 1034, 197 ]
 									}
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u380011578"
+									"varname" : "u253002216"
 								}
 
 							}
@@ -3194,7 +3232,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "FullPacket" ],
-									"patching_rect" : [ 491.5, 368.5, 200.0, 22.0 ],
+									"patching_rect" : [ 491.5, 352.0, 200.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.click.counter~ /count/max/1"
 								}
@@ -3689,7 +3727,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 239.5, 201.0, 75.0, 22.0 ],
+					"patching_rect" : [ 362.5, 223.0, 75.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -3735,7 +3773,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 57.0, 105.0, 1274.0, 761.0 ],
+						"rect" : [ 0.0, 26.0, 1274.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3889,12 +3927,14 @@
  ],
 		"lines" : [  ],
 		"parameters" : 		{
-			"obj-7::obj-71" : [ "live.gain~[3]", "live.gain~", 0 ],
-			"obj-1::obj-38" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-5::obj-34" : [ "live.gain~[4]", "live.gain~", 0 ],
+			"obj-5::obj-9" : [ "live.grid", "live.grid", 0 ],
 			"obj-1::obj-48" : [ "live.gain~[6]", "live.gain~", 0 ],
+			"obj-7::obj-71" : [ "live.gain~[3]", "live.gain~", 0 ],
 			"obj-2::obj-34" : [ "live.gain~[7]", "live.gain~", 0 ],
-			"obj-5::obj-58" : [ "live.gain~[5]", "live.gain~", 0 ]
+			"obj-5::obj-42" : [ "live.grid[1]", "live.grid", 0 ],
+			"obj-5::obj-58" : [ "live.gain~[5]", "live.gain~", 0 ],
+			"obj-1::obj-38" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-5::obj-34" : [ "live.gain~[4]", "live.gain~", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -4018,6 +4058,12 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "m158.o.gui.live.grid.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gui",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "m158.o.phase.points~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
@@ -4104,6 +4150,10 @@
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "o.display.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "o.collect.mxo",
 				"type" : "iLaX"
 			}
@@ -4117,10 +4167,6 @@
 			}
 , 			{
 				"name" : "o.change.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.display.mxo",
 				"type" : "iLaX"
 			}
 , 			{

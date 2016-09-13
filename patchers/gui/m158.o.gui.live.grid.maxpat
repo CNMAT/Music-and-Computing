@@ -38,6 +38,200 @@
 		"subpatcher_template" : "no-menus",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontsize" : 18.0,
+					"id" : "obj-20",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "FullPacket" ],
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 7,
+							"minor" : 2,
+							"revision" : 5,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"rect" : [ 42.0, 45.0, 1308.0, 855.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 15,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "no-menus",
+						"boxes" : [ 							{
+								"box" : 								{
+									"fontface" : 0,
+									"fontsize" : 12.0,
+									"id" : "obj-7",
+									"linecount" : 31,
+									"maxclass" : "o.expr.codebox",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "FullPacket", "FullPacket" ],
+									"patching_rect" : [ 689.0, 59.0, 748.0, 440.0 ],
+									"text" : "/data = /gui/matrix,\n/i = 0,\n/mode = /data[[/i++]],\n/ncol = /data[[/i++]],\n/nrow = /data[[/i++]],\n/nconstraints = /data[[/i++]],\n/nsteps = /data[[/i++]],\n\n/raw/contraints = [],\nif( /nconstraints > 0,\n  progn(\n    /i = aseq(/i, /i + /nconstraints - 1),\n    /raw/contraints = /data[[ /i ]],\n    /contraints/y = /raw/contraints % 100,\n    /contraints/x = (/raw/contraints - /contraints/y) / 1000\n  )\n),\n/i = max(/i),\n/raw/steps = [],\nif( /nsteps > 0,\n  progn(\n    /i = aseq(/i, /i + /nsteps - 1),\n    /raw/steps = /data[[ /i ]],\n    /steps/y = /raw/steps % 100,\n    /steps/x = (/raw/steps - /steps/y) / 1000\n  )\n),\n/i = aseq(max(/i) + 1, max(/i) + /ncol),\n/column/direction = /data[[ /i ]] - 1,\n\ndelete(/i), delete(/raw/steps), delete(/raw/constraints)",
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 0,
+									"fontsize" : 12.0,
+									"id" : "obj-3",
+									"linecount" : 4,
+									"maxclass" : "o.compose",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 297.0, 6.0, 150.0, 65.0 ],
+									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 28, 47, 116, 97, 98, 0, 0, 0, 0, 44, 105, 105, 105, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 20, 47, 95, 47, 97, 100, 100, 114, 0, 44, 115, 0, 0, 47, 116, 97, 98, 0, 0, 0, 0, 0, 0, 0, 20, 47, 95, 47, 100, 105, 114, 101, 99, 116, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 1, 0, 0, 0, 16, 47, 95, 47, 110, 111, 114, 109, 0, 44, 105, 0, 0, 0, 0, 0, 1 ],
+									"saved_bundle_length" : 116,
+									"text" : "/tab : [0, 1, 2],\n/_/addr : \"/tab\",\n/_/direct : 1,\n/_/norm : 1",
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 0,
+									"fontsize" : 12.0,
+									"id" : "obj-1",
+									"linecount" : 2,
+									"maxclass" : "o.compose",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 123.0, 6.0, 150.0, 38.0 ],
+									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 28, 47, 116, 97, 98, 0, 0, 0, 0, 44, 105, 105, 105, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 20, 47, 95, 47, 97, 100, 100, 114, 0, 44, 115, 0, 0, 47, 116, 97, 98, 0, 0, 0, 0 ],
+									"saved_bundle_length" : 72,
+									"text" : "/tab : [0, 1, 2],\n/_/addr : \"/tab\"",
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 0,
+									"fontsize" : 12.0,
+									"id" : "obj-10",
+									"linecount" : 68,
+									"maxclass" : "o.expr.codebox",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "FullPacket", "FullPacket" ],
+									"patching_rect" : [ 123.0, 64.0, 503.0, 942.0 ],
+									"text" : "/_/direct ??= 0,\n/_/norm ??= 0,\n\nmap(\n  lambda([a],\n    /data = value(a),\n    /i = 0,\n    /mode = /data[[/i++]],\n    /ncol = /data[[/i++]],\n    /nrow = /data[[/i++]],\n    /nconstraints = /data[[/i++]],\n    /nsteps = /data[[/i++]],\n\n    /raw/contraints = [],\n    if( /nconstraints > 0,\n      progn(\n        /i = aseq(/i, /i + /nconstraints - 1),\n        /raw/contraints = /data[[ /i ]],\n        /contraints/y = /raw/contraints % 100,\n        /contraints/x = (/raw/contraints - /contraints/y) / 1000\n      )\n    ),\n    /i = max(/i),\n    /raw/steps = [],\n    if( /nsteps > 0,\n      progn(\n        /i = aseq(/i, /i + /nsteps - 1),\n        /raw/steps = /data[[ /i ]],\n        /steps/y = /raw/steps % 100,\n        /steps/x = (/raw/steps - /steps/y) / 1000\n      )\n    ),\n    /i = aseq(max(/i) + 1, max(/i) + /ncol),\n    /column/direction = /data[[ /i ]] - 1,\n\n    if( /_/direct == 1,\n      progn(\n        /_/y = /steps/y,\n#        /_/y = [/_/y, last(/_/y)],\n        /_/x = /steps/x,\n        if( /_/norm == 1, /_/x = float32(/_/x) / max(/_/x)),\n        assign(\"/out\"+a+\"/x\", /_/x),\n        assign(\"/out\"+a+\"/y\", /_/y)\n      ),\n      progn(\n        /_/tab = /steps/y,\n        /_/len = length(/_/tab),\n        /_/x = [],\n        /_/y = [],\n        map(\n          lambda([y,x],\n            if( !bound(/_/prev) || y != /_/prev,\n              progn(\n                /_/y = [/_/y, y],\n                /_/x = [/_/x, (/_/norm ? float32(x) / /_/len : x) ]\n              )\n            ),\n            /_/prev = y\n          ), /_/tab, aseq(0, /_/len - 1)\n        ),\n#        /_/x = [/_/x, ( /_/norm ? 1. : last(/_/x) ) ],\n#        /_/y = [/_/y, last(/_/y) ],\n        assign(\"/out\"+a+\"/x\", /_/x),\n        assign(\"/out\"+a+\"/y\", /_/y)\n      )\n    )\n  ), /_/addr\n)",
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-9",
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 50.0, 6.0, 30.0, 30.0 ],
+									"style" : "",
+									"varname" : "u541001500"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-13",
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 50.0, 779.0, 30.0, 30.0 ],
+									"style" : "",
+									"varname" : "u286001501"
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-10", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-13", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-10", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-10", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-10", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 448.5, 467.0, 96.0, 29.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"style" : "",
+						"tags" : ""
+					}
+,
+					"style" : "",
+					"text" : "p codebox"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-19",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -664,7 +858,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 42.0, 45.0, 1308.0, 855.0 ],
+						"rect" : [ 132.0, 45.0, 1308.0, 855.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -748,13 +942,13 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-10",
-									"linecount" : 68,
+									"linecount" : 36,
 									"maxclass" : "o.expr.codebox",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 123.0, 64.0, 503.0, 942.0 ],
-									"text" : "/_/direct ??= 0,\n/_/norm ??= 0,\n\nmap(\n  lambda([a],\n    /data = value(a),\n    /i = 0,\n    /mode = /data[[/i++]],\n    /ncol = /data[[/i++]],\n    /nrow = /data[[/i++]],\n    /nconstraints = /data[[/i++]],\n    /nsteps = /data[[/i++]],\n\n    /raw/contraints = [],\n    if( /nconstraints > 0,\n      progn(\n        /i = aseq(/i, /i + /nconstraints - 1),\n        /raw/contraints = /data[[ /i ]],\n        /contraints/y = /raw/contraints % 100,\n        /contraints/x = (/raw/contraints - /contraints/y) / 1000\n      )\n    ),\n    /i = max(/i),\n    /raw/steps = [],\n    if( /nsteps > 0,\n      progn(\n        /i = aseq(/i, /i + /nsteps - 1),\n        /raw/steps = /data[[ /i ]],\n        /steps/y = /raw/steps % 100,\n        /steps/x = (/raw/steps - /steps/y) / 1000\n      )\n    ),\n    /i = aseq(max(/i) + 1, max(/i) + /ncol),\n    /column/direction = /data[[ /i ]] - 1,\n\n    if( /_/direct == 1,\n      progn(\n        /_/y = /steps/y,\n#        /_/y = [/_/y, last(/_/y)],\n        /_/x = /steps/x,\n        if( /_/norm == 1, /_/x = float32(/_/x) / max(/_/x)),\n        assign(\"/out\"+a+\"/x\", /_/x),\n        assign(\"/out\"+a+\"/y\", /_/y)\n      ),\n      progn(\n        /_/tab = /steps/y,\n        /_/len = length(/_/tab),\n        /_/x = [],\n        /_/y = [],\n        map(\n          lambda([y,x],\n            if( !bound(/_/prev) || y != /_/prev,\n              progn(\n                /_/y = [/_/y, y],\n                /_/x = [/_/x, (/_/norm ? float32(x) / /_/len : x) ]\n              )\n            ),\n            /_/prev = y\n          ), /_/tab, aseq(0, /_/len - 1)\n        ),\n#        /_/x = [/_/x, ( /_/norm ? 1. : last(/_/x) ) ],\n#        /_/y = [/_/y, last(/_/y) ],\n        assign(\"/out\"+a+\"/x\", /_/x),\n        assign(\"/out\"+a+\"/y\", /_/y)\n      )\n    )\n  ), /_/addr\n)",
+									"patching_rect" : [ 50.0, 86.0, 503.0, 508.0 ],
+									"text" : "map(\n  lambda([a],\n    /data = value(a),\n    /i = 0,\n    /mode = /data[[/i++]],\n    /ncol = /data[[/i++]],\n    /nrow = /data[[/i++]],\n    /nconstraints = /data[[/i++]],\n    /nsteps = /data[[/i++]],\n\n    /raw/contraints = [],\n    if( /nconstraints > 0,\n      progn(\n        /i = aseq(/i, /i + /nconstraints - 1),\n        /raw/contraints = /data[[ /i ]],\n        /contraints/y = /raw/contraints % 100,\n        /contraints/x = (/raw/contraints - /contraints/y) / 1000\n      )\n    ),\n    /i = max(/i),\n    /raw/steps = [],\n    if( /nsteps > 0,\n      progn(\n        /i = aseq(/i, /i + /nsteps - 1),\n        /raw/steps = /data[[ /i ]],\n        /steps/y = /raw/steps % 100,\n        /steps/x = (/raw/steps - /steps/y) / 1000\n      )\n    ),\n    /i = aseq(max(/i) + 1, max(/i) + /ncol),\n    /column/direction = /data[[ /i ]] - 1,\n   \n    assign(\"/out\"+a+\"/x\", /steps/x),\n    assign(\"/out\"+a+\"/y\", /steps/y)\n  ), /_/addr\n)",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -780,7 +974,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 779.0, 30.0, 30.0 ],
+									"patching_rect" : [ 50.0, 755.0, 30.0, 30.0 ],
 									"style" : "",
 									"varname" : "u286001501"
 								}
@@ -938,7 +1132,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
+					"outlettype" : [ "", "FullPacket" ],
 					"patching_rect" : [ 138.5, 341.0, 89.0, 22.0 ],
 					"style" : "",
 					"text" : "o.gather.select"
@@ -1004,7 +1198,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "FullPacket" ],
 					"patching_rect" : [ 72.0, 36.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -1321,66 +1515,6 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "o.gather.select.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gatherers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "m158.loadbang.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.doc.handler.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.route.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.collect.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.select.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.var.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.union.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.expr.codebox.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.compose.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.pack.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.cond.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.prepend.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "envelope_m4l",
 				"default" : 				{
