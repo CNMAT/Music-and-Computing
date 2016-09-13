@@ -160,8 +160,7 @@
 								}
 
 							}
- ],
-						"autosave" : 0
+ ]
 					}
 ,
 					"patching_rect" : [ 468.0, 401.0, 38.0, 22.0 ],
@@ -240,7 +239,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 184.0, 265.0, 30.0, 30.0 ],
+					"patching_rect" : [ 184.0, 285.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -252,7 +251,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "FullPacket" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 287.0, 51.0, 30.0, 30.0 ],
 					"style" : ""
 				}
