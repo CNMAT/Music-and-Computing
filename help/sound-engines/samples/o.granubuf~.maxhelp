@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 211.0, 79.0, 1150.0, 711.0 ],
+		"rect" : [ 100.0, 100.0, 1150.0, 711.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -526,13 +526,13 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u371012372"
+									"varname" : "u228007902"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"buffername" : "2318-combined",
+									"buffername" : "1331-combined",
 									"id" : "obj-27",
 									"maxclass" : "waveform~",
 									"numinlets" : 5,
@@ -843,7 +843,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1150.0, 685.0 ],
+						"rect" : [ 100.0, 126.0, 1150.0, 685.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -918,7 +918,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 518.0, 354.5, 462.0, 275.0 ],
-									"presentation_rect" : [ 519.0, 379.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "Inlets:\nnote: signal inlets override osc values\n1: OSC or (signal) trigger, any non-zero value triggers playback\n2: (signal) duration of grain in ms., negative duration uses full buffer length.\n3: (signal) rate ratio for grain, (e.g. 1 = 1x, 2 = 2x speed, -1 = reverse)\n4: (signal) start position for grain (0-1)\n5 : (signal) pan position for grain (0-1)\n6 : (signal) amplitude for grain (0-1)\n7 : (signal) \"xshape\", time axis shaping function for cosine window lobe, \n      0 = center, negative = earlier, positive = later\n8 : (signal) \"yshape\", amplitude axis shaping function for cosine window lobe, \n      0 = linear, negative = wider lobe, positive = thinner lobe\n9 : (signal) buffer index if multiple files have been concatenated with a /file/type 'fold'.\n     0 = first buffer\n\nOutlets:\n1: Left channel output\n2: Right channel output\n3: (signal) number of active voices\n4: OSC"
 								}
@@ -931,7 +930,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 518.0, 41.0, 213.0, 20.0 ],
-									"presentation_rect" : [ 521.0, 84.5, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "sample rate granular synthesis engine"
 								}
@@ -998,7 +996,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 217.0, 445.5, 199.0, 168.0 ],
-									"text" : "/start : 0.81175,\n/duration : 120.,\n/rate : 1.,\n/amp : 1,\n/file/name : \"drumLoop.aif\",\n/file/type : \"AIFF\",\n/nbuffers : 1,\n/namelist : \"drumLoop.aif\",\n/lengths : 153400.,\n/buffername : \"2321-combined\",\n/yshape : -5,\n/xshape : 0,\n/pan : 0",
+									"text" : "/start : 0.370625,\n/duration : 120.,\n/rate : 1.,\n/amp : 1,\n/buffername : \"foo\",\n/nbuffers : 1,\n/namelist : \"drumLoop.aif\",\n/lengths : 153400.,\n/file/name : \"drumLoop.aif\",\n/file/type : \"AIFF\",\n/yshape : -5,\n/xshape : 0,\n/pan : 0",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -1572,9 +1570,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 518.0, 74.0, 512.0, 275.0 ],
-									"presentation_rect" : [ 518.0, 176.5, 0.0, 0.0 ],
 									"style" : "",
-									"text" : "OSC messages:\n/trigger : any value causes playback of one grain\n/duration : duration of grain in ms., negative duration uses full buffer length\n/rate : rate ratio for grain, (e.g. 1 = 1x, 2 = 2x speed, -1 = reverse)\n/start : start position for grain (0-1)\n/pan : pan position for grain (0-1)\n/amp : amplitude for grain (0-1)\n/xshape : time axis shaping function for cosine window lobe, \n      0 = center, negative = earlier, positive = later\n/yshape : amplitude axis shaping function for cosine window lobe, \n      0 = linear, negative = wider lobe, positive = thinner lobe\n/buffer/index : buffer index if multiple files have been concatenated with a /file/type 'fold'.\n     0 = first buffer\n/numvoices : (int) sets maximum number of grains that can play at the same time\n    (for CPU management)\n/file : o.granubuf~ has an internal buffer system that is configured to accept messages from\n     o.io.dropfile. Required information: /file/name, and /file/type. The type may be 'WAV', 'AIFF',\n     'MPG3', or 'fold' for referencing a folder of files.\n\nline~ messages also accepted for most parameters"
+									"text" : "OSC messages:\n/trigger : any value causes playback of one grain\n/duration : duration of grain in ms., negative duration uses full buffer length\n/rate : rate ratio for grain, (e.g. 1 = 1x, 2 = 2x speed, -1 = reverse)\n/start : start position for grain (0-1)\n/pan : pan position for grain (0-1)\n/amp : amplitude for grain (0-1)\n/xshape : time axis shaping function for cosine window lobe, \n      0 = center, negative = earlier, positive = later\n/yshape : amplitude axis shaping function for cosine window lobe, \n      0 = linear, negative = wider lobe, positive = thinner lobe\n/buffer/index : buffer index if multiple files have been concatenated with a /file/type 'fold'.\n     0 = first buffer\n/numvoices : (int) sets maximum number of grains that can play at the same time\n    (for CPU management)\n/file : o.granubuf~ has an internal buffer system that is configured to accept messages from\n     o.io.dropfile. Required information: /file/name, and /file/type. The type may be 'WAV', 'AIFF',\n     'MPG3', or 'fold' for referencing a folder of files.\n/buffername : sets o.granbuf~ to use named external buffer.\nline~ messages also accepted for most parameters"
 								}
 
 							}
@@ -1849,7 +1846,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 211.0, 105.0, 1150.0, 685.0 ],
+						"rect" : [ 0.0, 26.0, 1150.0, 685.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2749,8 +2746,8 @@
 		"lines" : [  ],
 		"parameters" : 		{
 			"obj-2::obj-11" : [ "live.gain~[1]", "live.gain~", 0 ],
-			"obj-12::obj-11" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-1::obj-32" : [ "live.gain~[2]", "live.gain~", 0 ]
+			"obj-1::obj-32" : [ "live.gain~[2]", "live.gain~", 0 ],
+			"obj-12::obj-11" : [ "live.gain~", "live.gain~", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -2766,7 +2763,13 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "o.api.handler.maxpat",
+				"name" : "m158.loadbang.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.doc.handler.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
 				"type" : "JSON",
 				"implicit" : 1
