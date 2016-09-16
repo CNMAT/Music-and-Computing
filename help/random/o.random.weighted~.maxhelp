@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 3,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -66,13 +66,13 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-110",
-					"linecount" : 8,
+					"linecount" : 7,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 386.0, 278.5, 524.0, 129.0 ],
-					"text" : "/dist : [0., 0., 0.488372, 0.616279, 0.72093, 0.604651, 0.5, 0.418605, 0.395349, 0.372093, 0.372093, 0.406977, 0.44186, 0.488372, 0.55814, 0.465116, 0.383721, 0.313953, 0.313953, 0.313953, 0.348837, 0.383721, 0.430233, 0.395349, 0.395349, 0.395349, 0.406977, 0.418605, 0.430233, 0.44186, 0.453488, 0.465116, 0.44186, 0.424419, 0.406977, 0.389535, 0.372093, 0.368217, 0.364341, 0.360465, 0.360465, 0.360465, 0.366279, 0.372093, 0.383721, 0.383721, 0.383721, 0.383721, 0.383721, 0.383721, 0.383721, 0.383721, 0.383721, 0.389535, 0.395349, 0.395349, 0., 0.]",
+					"patching_rect" : [ 386.0, 278.5, 524.0, 116.0 ],
+					"text" : "/dist : [0., 0.22093, 0.226744, 0.232558, 0.244186, 0.255814, 0.267442, 0.27907, 0.313953, 0.341085, 0.325581, 0.343023, 0.360465, 0.406977, 0.372093, 0.296512, 0.22093, 0.0813954, 0., 0., 0.127907, 0.174419, 0.186047, 0.186047, 0.186047, 0.186047, 0.232558, 0.232558, 0.232558, 0.232558, 0.232558, 0.232558, 0.232558, 0.22093, 0.209302, 0.162791, 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.]",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -88,7 +88,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 3,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -183,8 +183,8 @@
 									"id" : "obj-28",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "signal" ],
+									"numoutlets" : 2,
+									"outlettype" : [ "signal", "" ],
 									"patching_rect" : [ 267.0, 604.5, 120.0, 22.0 ],
 									"style" : "",
 									"text" : "o.random.weighted~"
@@ -253,7 +253,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 2,
-											"revision" : 3,
+											"revision" : 5,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -766,11 +766,11 @@
 					"id" : "obj-28",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 97.0, 438.5, 120.0, 22.0 ],
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "" ],
+					"patching_rect" : [ 97.0, 438.5, 145.0, 22.0 ],
 					"style" : "",
-					"text" : "o.random.weighted~"
+					"text" : "o.random.weighted~ /dist"
 				}
 
 			}
@@ -871,14 +871,20 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "o.random.weighted~.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/158b-spring16-o.wrappers/random",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/random",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "random.dist.gendsp",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/158b-spring16-o.wrappers/random",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/code",
 				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "m158.loadbang.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
@@ -895,10 +901,6 @@
 			}
 , 			{
 				"name" : "o.pack.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.var.mxo",
 				"type" : "iLaX"
 			}
 , 			{
