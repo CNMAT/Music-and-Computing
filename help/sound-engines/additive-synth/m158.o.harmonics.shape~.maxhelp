@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 100.0, 100.0, 797.0, 784.0 ],
+		"rect" : [ 100.0, 82.0, 1177.0, 744.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -81,7 +81,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 797.0, 758.0 ],
+						"rect" : [ 0.0, 26.0, 1177.0, 718.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -314,7 +314,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 195.0, 19.0, 691.0, 47.0 ],
+									"patching_rect" : [ 199.0, 37.0, 691.0, 47.0 ],
 									"style" : "",
 									"text" : "Other relative intervals may also be set by supplying a list of ratios, note the number of harmonics is constrained to the ratio list.\nSimilarly, a list amplitudes can be set -- manual amplitudes will still be effected by shaping function, and even/odd weights.\nCurrently, a ratio list must be set for the amplitude list to take effect. "
 								}
@@ -325,13 +325,13 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-29",
-									"linecount" : 8,
+									"linecount" : 3,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 522.25, 408.0, 430.0, 129.0 ],
-									"text" : "/scale/even : 1,\n/nharms : 9,\n/scale/odd : \"signal\",\n/exp : \"signal\",\n/hz : \"signal\",\n/amps : [1., 1., 1., 1., 1., 1., 1., 1., 1.],\n/ratios : [1., 1.125, 1.25, 1.33333, 1.5, 1.6, 1.75, 2., 2.25]",
+									"patching_rect" : [ 522.25, 408.0, 430.0, 61.0 ],
+									"text" : "/exp : 0,\n/scale/odd : 1,\n/scale/even : 1",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -683,7 +683,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 797.0, 758.0 ],
+						"rect" : [ 0.0, 26.0, 1177.0, 718.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -799,13 +799,13 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-29",
-									"linecount" : 5,
+									"linecount" : 4,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 526.25, 332.0, 135.0, 88.0 ],
-									"text" : "/scale/even : 0,\n/scale/odd : 1,\n/exp : 0,\n/nharms : 13,\n/hz : 0.",
+									"patching_rect" : [ 526.25, 332.0, 135.0, 75.0 ],
+									"text" : "/exp : 0,\n/scale/odd : 1,\n/scale/even : 1,\n/nharms : 13",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -1094,7 +1094,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 100.0, 126.0, 797.0, 758.0 ],
+						"rect" : [ 100.0, 108.0, 1177.0, 718.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1123,6 +1123,19 @@
 						"subpatcher_template" : "Default Max 7",
 						"showontab" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-33",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 904.599976, 206.0, 131.0, 20.0 ],
+									"presentation_rect" : [ 861.0, 76.0, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "rama gottfried, 2016"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"hidden" : 1,
 									"id" : "obj-32",
@@ -1155,7 +1168,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 802.0, 112.0, 222.0, 20.0 ],
+									"patching_rect" : [ 800.0, 123.0, 222.0, 20.0 ],
 									"style" : "",
 									"text" : "if n^x = zero, amplitudes are all set to 1."
 								}
@@ -1167,7 +1180,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 612.0, 143.0, 419.0, 20.0 ],
+									"patching_rect" : [ 610.0, 154.0, 419.0, 20.0 ],
 									"style" : "",
 									"text" : "by default both scaling functions are set to 1, and the exponent is set to zero."
 								}
@@ -1179,7 +1192,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 802.0, 90.0, 355.0, 20.0 ],
+									"patching_rect" : [ 800.0, 101.0, 355.0, 20.0 ],
 									"style" : "",
 									"text" : "where n = the partial number, and x = exponential curve value"
 								}
@@ -1192,7 +1205,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 745.0, 90.0, 55.0, 20.0 ],
+									"patching_rect" : [ 743.0, 101.0, 55.0, 20.0 ],
 									"style" : "",
 									"text" : "1 / (n^x)"
 								}
@@ -1204,7 +1217,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 612.0, 90.0, 131.0, 20.0 ],
+									"patching_rect" : [ 610.0, 101.0, 131.0, 20.0 ],
 									"style" : "",
 									"text" : "exponential amp curve"
 								}
@@ -1217,7 +1230,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 612.0, 47.0, 383.0, 33.0 ],
+									"patching_rect" : [ 610.0, 52.5, 383.0, 33.0 ],
 									"style" : "",
 									"text" : "A bank of oscillators tuned in relationship to a fundemental frequency, with optional signal rate shaping controls."
 								}
@@ -1231,7 +1244,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 612.0, 14.0, 237.0, 27.0 ],
+									"patching_rect" : [ 610.0, 20.0, 237.0, 27.0 ],
 									"style" : "",
 									"text" : "m158.o.harmonics.shape~"
 								}
@@ -1919,8 +1932,8 @@
 		"lines" : [  ],
 		"parameters" : 		{
 			"obj-37::obj-13" : [ "live.gain~[2]", "live.gain~", 0 ],
-			"obj-35::obj-13" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-36::obj-13" : [ "live.gain~[1]", "live.gain~", 0 ]
+			"obj-36::obj-13" : [ "live.gain~[1]", "live.gain~", 0 ],
+			"obj-35::obj-13" : [ "live.gain~", "live.gain~", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

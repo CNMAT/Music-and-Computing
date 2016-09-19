@@ -38,6 +38,19 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-45",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 892.0, 682.0, 157.0, 33.0 ],
+					"style" : "",
+					"text" : "m158.o.harmonics.shape~\nrama gottfried, 2016"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-35",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -1542,7 +1555,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 287.0, 35.0, 93.0, 22.0 ],
 					"style" : "",
 					"text" : "m158.loadbang"
@@ -1646,7 +1659,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 435.5, 538.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -1672,7 +1685,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 210.0, 515.0, 30.0, 30.0 ],
 					"style" : ""
 				}
