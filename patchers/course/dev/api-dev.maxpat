@@ -4,8 +4,8 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 4,
-			"architecture" : "x64",
+			"revision" : 5,
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
@@ -47,7 +47,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 31.0, 435.0, 260.0, 38.0 ],
-					"presentation_rect" : [ 31.0, 435.0, 0.0, 0.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 28, 47, 104, 122, 0, 44, 115, 0, 0, 102, 114, 101, 113, 117, 101, 110, 99, 121, 32, 105, 110, 32, 104, 101, 114, 116, 122, 0, 0, 0, 0, 0, 36, 47, 97, 109, 112, 0, 0, 0, 0, 44, 115, 0, 0, 108, 105, 110, 101, 97, 114, 32, 97, 109, 112, 108, 105, 116, 117, 100, 101, 32, 40, 48, 45, 49, 41, 0, 0 ],
 					"saved_bundle_length" : 88,
 					"text" : "/hz : \"frequency in hertz\",\n/amp : \"linear amplitude (0-1)\"",
@@ -65,7 +64,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 14.0, 268.0, 260.0, 24.0 ],
-					"presentation_rect" : [ 220.0, 306.0, 0.0, 0.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 47, 104, 122, 0, 44, 105, 0, 0, 0, 0, 0, 100 ],
 					"saved_bundle_length" : 32,
 					"text" : "/hz : 100",
@@ -124,7 +122,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 555.0, 268.0, 250.0, 34.0 ],
-					"text" : "/hz : 100",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -135,14 +132,14 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
-					"outlettype" : [ "signal", "" ],
+					"outlettype" : [ "signal", "FullPacket" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 4,
-							"architecture" : "x64",
+							"revision" : 5,
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -257,14 +254,14 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 2,
-									"outlettype" : [ "", "" ],
+									"outlettype" : [ "", "FullPacket" ],
 									"patcher" : 									{
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 2,
-											"revision" : 4,
-											"architecture" : "x64",
+											"revision" : 5,
+											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
@@ -315,9 +312,9 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "FullPacket" ],
-													"patching_rect" : [ 259.0, 328.5, 87.0, 22.0 ],
+													"patching_rect" : [ 259.0, 328.5, 92.0, 22.0 ],
 													"style" : "",
-													"text" : "o.prepend /api"
+													"text" : "o.prepend /doc"
 												}
 
 											}
@@ -382,9 +379,9 @@
 													"numinlets" : 1,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "FullPacket" ],
-													"patching_rect" : [ 111.5, 94.5, 71.0, 22.0 ],
+													"patching_rect" : [ 111.5, 94.5, 75.0, 22.0 ],
 													"style" : "",
-													"text" : "o.route /api"
+													"text" : "o.route /doc"
 												}
 
 											}
@@ -819,8 +816,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 4,
-							"architecture" : "x64",
+							"revision" : 5,
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -851,6 +848,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "Default Max 7",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-87",
@@ -889,8 +887,8 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 2,
-											"revision" : 4,
-											"architecture" : "x64",
+											"revision" : 5,
+											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
@@ -941,9 +939,9 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "FullPacket" ],
-													"patching_rect" : [ 259.0, 328.5, 87.0, 22.0 ],
+													"patching_rect" : [ 259.0, 328.5, 91.0, 22.0 ],
 													"style" : "",
-													"text" : "o.prepend /api"
+													"text" : "o.prepend /doc"
 												}
 
 											}
@@ -1008,9 +1006,9 @@
 													"numinlets" : 1,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "FullPacket" ],
-													"patching_rect" : [ 111.5, 94.5, 71.0, 22.0 ],
+													"patching_rect" : [ 111.5, 94.5, 75.0, 22.0 ],
 													"style" : "",
-													"text" : "o.route /api"
+													"text" : "o.route /doc"
 												}
 
 											}
@@ -1435,7 +1433,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 569.0, 468.0, 250.0, 34.0 ],
-					"text" : "/hz : 100",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
