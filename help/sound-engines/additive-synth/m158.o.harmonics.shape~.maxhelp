@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 140.0, 79.0, 1178.0, 784.0 ],
+		"rect" : [ 100.0, 100.0, 797.0, 784.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -76,12 +76,12 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 140.0, 105.0, 1178.0, 758.0 ],
+						"rect" : [ 0.0, 26.0, 797.0, 758.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -119,7 +119,6 @@
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 396.149994, 235.5, 50.0, 22.0 ],
-									"presentation_rect" : [ 410.100006, 159.0, 0.0, 0.0 ],
 									"style" : ""
 								}
 
@@ -679,12 +678,12 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1178.0, 758.0 ],
+						"rect" : [ 0.0, 26.0, 797.0, 758.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1090,12 +1089,12 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1178.0, 758.0 ],
+						"rect" : [ 100.0, 126.0, 797.0, 758.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1247,7 +1246,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 131.050003, 150.0, 61.050003, 35.0 ],
+									"patching_rect" : [ 131.050003, 150.0, 63.0, 35.0 ],
 									"style" : "",
 									"text" : "loadmess 7"
 								}
@@ -1304,7 +1303,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 523.099976, 658.0, 361.0, 47.0 ],
 									"style" : "",
-									"text" : "square    = exponential amp curve 1, odd scalar 1, even scalar 0\nsawtooth = exponential amp curve 1, odd scalar 1, even scalar 0\ntriangle    = exponential amp curve 2, odd scalar 1, even scalar 0"
+									"text" : "square    = exponential amp curve 1, odd scalar 1, even scalar 0\nsawtooth = exponential amp curve 1, odd scalar 1, even scalar 1\ntriangle    = exponential amp curve 2, odd scalar 1, even scalar 0"
 								}
 
 							}
@@ -1937,13 +1936,19 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "m158.loadbang.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "o.input.switch~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "o.api.handler.maxpat",
+				"name" : "o.doc.handler.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
 				"type" : "JSON",
 				"implicit" : 1
