@@ -38,12 +38,13 @@
 		"subpatcher_template" : "gridded",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-6",
+					"id" : "obj-7",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 27.0, 204.0, 56.0, 22.0 ],
+					"patching_rect" : [ 27.0, 69.0, 56.0, 22.0 ],
+					"presentation_rect" : [ 100.0, 176.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "deferlow"
 				}
@@ -56,7 +57,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "bang" ],
-					"patching_rect" : [ 27.0, 166.0, 67.0, 22.0 ],
+					"patching_rect" : [ 27.0, 198.0, 67.0, 22.0 ],
 					"style" : "",
 					"text" : "onebang 1"
 				}
@@ -69,7 +70,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 61.0, 68.0, 60.0, 22.0 ],
+					"patching_rect" : [ 61.0, 100.0, 60.0, 22.0 ],
 					"style" : "",
 					"text" : "loadbang"
 				}
@@ -94,7 +95,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "int" ],
-					"patching_rect" : [ 27.0, 101.0, 34.0, 22.0 ],
+					"patching_rect" : [ 27.0, 133.0, 34.0, 22.0 ],
 					"style" : "",
 					"text" : "t b 0"
 				}
@@ -116,7 +117,7 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
+					"destination" : [ "obj-7", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
@@ -128,7 +129,7 @@
 					"destination" : [ "obj-1", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 51.5, 137.0, 167.0, 137.0, 167.0, 23.0, 36.5, 23.0 ],
+					"midpoints" : [ 51.5, 168.0, 167.0, 168.0, 167.0, 23.0, 36.5, 23.0 ],
 					"source" : [ "obj-2", 1 ]
 				}
 
@@ -153,7 +154,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
+					"destination" : [ "obj-3", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-5", 0 ]
@@ -162,14 +163,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
+					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-6", 0 ]
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [  ],
+		"autosave" : 0
 	}
 
 }

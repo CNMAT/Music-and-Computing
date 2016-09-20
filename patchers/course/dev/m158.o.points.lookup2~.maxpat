@@ -38,6 +38,18 @@
 		"subpatcher_template" : "no-menus",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 280.0, 488.723022, 87.0, 22.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-49",
@@ -45,8 +57,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 584.0, 394.723022, 325.0, 24.0 ],
-					"presentation_rect" : [ 583.0, 394.723022, 0.0, 0.0 ],
+					"patching_rect" : [ 512.0, 162.723022, 325.0, 24.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 48, 47, 120, 0, 0, 44, 105, 100, 100, 100, 100, 0, 0, 0, 0, 0, 0, 63, -39, -103, -103, -103, -103, -103, -102, 63, -32, 0, 0, 0, 0, 0, 0, 63, -29, 51, 51, 51, 51, 51, 51, 63, -16, 0, 0, 0, 0, 0, 0 ],
 					"saved_bundle_length" : 68,
 					"text" : "/x : [0, 0.4, 0.5, 0.6, 1.]",
@@ -63,8 +74,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 584.0, 352.723022, 325.0, 24.0 ],
-					"presentation_rect" : [ 584.0, 351.223022, 0.0, 0.0 ],
+					"patching_rect" : [ 512.0, 120.723022, 325.0, 24.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 48, 47, 120, 0, 0, 44, 105, 100, 100, 100, 100, 0, 0, 0, 0, 0, 0, 63, -71, -103, -103, -103, -103, -103, -102, 63, -55, -103, -103, -103, -103, -103, -102, 63, -45, 51, 51, 51, 51, 51, 51, 63, -16, 0, 0, 0, 0, 0, 0 ],
 					"saved_bundle_length" : 68,
 					"text" : "/x : [0, 0.1, 0.2, 0.3, 1.]",
@@ -82,7 +92,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 580.0, 284.223022, 325.0, 51.0 ],
+					"patching_rect" : [ 508.0, 52.223022, 325.0, 51.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 52, 47, 120, 47, 48, 0, 0, 0, 0, 44, 105, 100, 100, 100, 100, 0, 0, 0, 0, 0, 0, 63, -71, -103, -103, -103, -103, -103, -102, 63, -55, -103, -103, -103, -103, -103, -102, 63, -45, 51, 51, 51, 51, 51, 51, 63, -16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 60, 47, 120, 47, 49, 0, 0, 0, 0, 44, 105, 100, 100, 100, 100, 100, 0, 0, 0, 0, 0, 63, -124, 122, -31, 71, -82, 20, 123, 63, -55, -103, -103, -103, -103, -103, -102, 63, -45, 51, 51, 51, 51, 51, 51, 63, -26, 102, 102, 102, 102, 102, 102, 63, -16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 60, 47, 120, 47, 50, 0, 0, 0, 0, 44, 105, 100, 100, 100, 100, 100, 0, 0, 0, 0, 0, 63, 80, 98, 77, -46, -15, -87, -4, 63, 96, 98, 77, -46, -15, -87, -4, 63, 104, -109, 116, -68, 106, 126, -6, 63, -23, -103, -103, -103, -103, -103, -102, 63, -16, 0, 0, 0, 0, 0, 0 ],
 					"saved_bundle_length" : 200,
 					"text" : "/x/0 : [0, 0.1, 0.2, 0.3, 1.],\n/x/1 : [0, 0.01, 0.2, 0.3, 0.7, 1.],\n/x/2 : [0, 0.001, 0.002, 0.003, 0.8, 1.]",
@@ -97,22 +107,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 297.0, 416.946045, 124.0, 22.0 ],
+					"patching_rect" : [ 297.0, 416.946045, 138.0, 22.0 ],
 					"style" : "",
-					"text" : "o.route /x/buffername"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-36",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 297.0, 313.223022, 101.0, 22.0 ],
-					"style" : "",
-					"text" : "o.select #1/x"
+					"text" : "o.route #1/x/buffername"
 				}
 
 			}
@@ -149,9 +146,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 297.0, 367.223022, 89.0, 22.0 ],
+					"patching_rect" : [ 297.0, 367.223022, 112.0, 22.0 ],
 					"style" : "",
-					"text" : "o.list.buffer~ /x"
+					"text" : "o.list.buffer~2 #1 /x"
 				}
 
 			}
@@ -162,7 +159,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 661.5, 158.223022, 219.0, 33.0 ],
+					"patching_rect" : [ 661.5, 234.946045, 219.0, 33.0 ],
 					"style" : "",
 					"text" : "m158.o.points.lookup~\nrama gottfried, 2016"
 				}
@@ -367,7 +364,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-36", 0 ],
+					"destination" : [ "obj-15", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-19", 0 ]
@@ -398,15 +395,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-21", 5 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-15", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-36", 0 ]
 				}
 
 			}
@@ -493,6 +481,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-8", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-68", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-40", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -544,8 +541,8 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "o.list.buffer~.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"name" : "o.list.buffer~2.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/course/dev",
 				"type" : "JSON",
 				"implicit" : 1
 			}
