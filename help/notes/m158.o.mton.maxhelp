@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 4,
-			"architecture" : "x86",
+			"revision" : 5,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 18.0, 90.0, 1062.0, 562.0 ],
+		"rect" : [ 100.0, 100.0, 1062.0, 562.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,19 @@
 		"style" : "",
 		"subpatcher_template" : "no-menus",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 865.0, 58.0, 118.0, 20.0 ],
+					"presentation_rect" : [ 866.0, 58.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "rama gottfried, 2016"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-2",
 					"linecount" : 4,
@@ -160,7 +173,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 539.0, 45.0, 122.0, 27.0 ],
 					"style" : "",
-					"text" : "m158.o.mton"
+					"text" : "m158.o.ntom"
 				}
 
 			}

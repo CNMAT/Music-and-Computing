@@ -1,0 +1,17 @@
+36, 00.c_pizz_fo_c2.aif -12;
+37, 00.c_pizz_fo_c2.aif -11;
+48, 00.c_pizz_fo_c2.aif 0;
+49, 00.c_pizz_fo_c2.aif 1;
+50, 00.c_pizz_fo_c2.aif 2;
+51, 01.c_pizz_fo_e2.aif -1;
+52, 01.c_pizz_fo_e2.aif 0;
+56, 02.g_pizz_fo_gs2.aif 0;
+62, 03.g_pizz_fo_d3.aif 0;
+65, 04.g_pizz_fo_f3.aif 0;
+69, 05.d_pizz_fo_a3.aif 0;
+73, 06.a_pizz_fo_cS4.aif 0;
+76, 07.a_pizz_fo_e4.aif 0;
+79, 08.a_pizz_fo_g4.aif 0;
+82, 09.a_pizz_fo_aS4.aif 0;
+85, 10.a_pizz_fo_cS5.aif 0;
+88, 11.a_pizz_fo_e5.aif 0;
