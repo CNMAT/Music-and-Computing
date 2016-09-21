@@ -54,7 +54,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1368.0, 761.0 ],
+						"rect" : [ 38.0, 105.0, 1368.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -236,7 +236,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 78.0, 133.0, 186.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.phase~ /steps"
+													"text" : "m158.o.points.buffer~ /steps"
 												}
 
 											}
@@ -440,7 +440,6 @@
 													"numinlets" : 1,
 													"numoutlets" : 0,
 													"patching_rect" : [ 648.166687, 257.0, 30.0, 30.0 ],
-													"presentation_rect" : [ 647.166687, 247.0, 0.0, 0.0 ],
 													"style" : ""
 												}
 
@@ -637,7 +636,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 593.833374, 309.5, 132.666626, 35.0 ],
 													"style" : "",
-													"text" : "m158.o.points.phase~ /scale"
+													"text" : "m158.o.points.buffer~ /scale"
 												}
 
 											}
@@ -728,7 +727,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 440.166687, 416.0, 287.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.phase~ /scale @step 1 @normal_x 0"
+													"text" : "m158.o.points.buffer~ /scale @step 1 @normal_x 0"
 												}
 
 											}
@@ -741,7 +740,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 335.0, 281.0, 219.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.phase~ /steps @step 1"
+													"text" : "m158.o.points.buffer~ /steps @step 1"
 												}
 
 											}
@@ -1256,7 +1255,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 1089.699951, 417.5, 166.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /mod"
+									"text" : "m158.o.points.buffer~ /mod"
 								}
 
 							}
@@ -1553,7 +1552,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u535006382"
+									"varname" : "u587005917"
 								}
 
 							}
@@ -1872,7 +1871,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 38.0, 105.0, 1368.0, 761.0 ],
+						"rect" : [ 0.0, 26.0, 1368.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2382,7 +2381,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 68.333313, 65.0, 300.0, 154.0 ],
+													"patching_rect" : [ 68.333313, 65.0, 303.0, 154.0 ],
 													"style" : "",
 													"text" : "We want to keep the beat lengths the same, no matter how long the phrase is, so we need to know how many beats are in the phrase. However, in order to do this, we need to data from the m158.o.points.phase~ object to control the click count that drives it. This is feedback, which is not allowed in DSP (it would cause an infinite loop). To get around this limitation, we can use send~ and receive~ to send the length back up to the counter. Using send/receive~ adds one vector size of delay, but if your vector size is not too large this is okay. Try a vector size of 32."
 												}
@@ -2692,7 +2691,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 719.833374, 389.5, 132.666626, 35.0 ],
 													"style" : "",
-													"text" : "m158.o.points.phase~ /scale"
+													"text" : "m158.o.points.buffer~ /scale"
 												}
 
 											}
@@ -2783,7 +2782,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 565.5, 530.0, 287.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.phase~ /scale @step 1 @normal_x 0"
+													"text" : "m158.o.points.buffer~ /scale @step 1 @normal_x 0"
 												}
 
 											}
@@ -2797,7 +2796,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 390.999969, 304.5, 245.312439, 35.0 ],
 													"style" : "",
-													"text" : "m158.o.points.phase~ /steps @step 1 @normal_x 0"
+													"text" : "m158.o.points.buffer~ /steps @step 1 @normal_x 0"
 												}
 
 											}
@@ -3397,7 +3396,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 1009.200012, 440.0, 166.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /mod"
+									"text" : "m158.o.points.buffer~ /mod"
 								}
 
 							}
@@ -3694,7 +3693,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u801008057"
+									"varname" : "u076002526"
 								}
 
 							}
@@ -4564,7 +4563,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.points.phase~.maxpat",
+				"name" : "m158.o.points.buffer~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1

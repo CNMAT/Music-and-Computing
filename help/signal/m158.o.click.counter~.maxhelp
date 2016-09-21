@@ -50,13 +50,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-39",
-					"linecount" : 8,
+					"linecount" : 9,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 470.5, 141.5, 322.0, 114.0 ],
+					"patching_rect" : [ 470.5, 141.5, 321.0, 127.0 ],
 					"style" : "",
-					"text" : "inlet 1: click to count\ninlet 2: click to reset\ninlet 3: OSC input\n\noutlet 1: current count (starting from zero)\noutlet 2: click at maximum\noutlet 3: how many times the maximum has been reached\noutlet 4: OSC passthrough"
+					"text" : "inlet 1: click to count\ninlet 2: click to reset\ninlet 3: sets number of steps\ninlet 4: OSC input\n\noutlet 1: current count (starting from zero)\noutlet 2: click at maximum\noutlet 3: how many times the maximum has been reached\noutlet 4: OSC passthrough"
 				}
 
 			}
@@ -130,7 +130,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 210.5, 278.0, 24.0, 24.0 ],
+					"patching_rect" : [ 186.333328, 279.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -142,7 +142,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 210.5, 307.0, 41.0, 22.0 ],
+					"patching_rect" : [ 186.333328, 308.0, 41.0, 22.0 ],
 					"style" : "",
 					"text" : "click~"
 				}
@@ -258,7 +258,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 364.0, 206.5, 50.0, 22.0 ],
+					"patching_rect" : [ 357.0, 210.5, 50.0, 22.0 ],
 					"style" : "",
 					"varname" : "number[1]"
 				}
@@ -271,7 +271,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 338.0, 166.0, 71.0, 22.0 ],
+					"patching_rect" : [ 331.0, 175.0, 71.0, 22.0 ],
 					"restore" : [ 18 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0
@@ -374,7 +374,7 @@
 ,
 					"style" : "",
 					"text" : "pattrstorage @outputmode 1 @notifymode 1",
-					"varname" : "u946011598"
+					"varname" : "u439009566"
 				}
 
 			}
@@ -438,7 +438,7 @@
 				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 4,
 					"outlettype" : [ "signal", "signal", "signal", "" ],
 					"patching_rect" : [ 138.0, 342.0, 164.0, 22.0 ],
@@ -594,7 +594,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 2 ],
+					"destination" : [ "obj-1", 3 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-4", 2 ]
