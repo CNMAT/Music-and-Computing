@@ -450,7 +450,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u775000511"
+									"varname" : "u947002144"
 								}
 
 							}
@@ -803,12 +803,12 @@
 									"fontsize" : 12.0,
 									"id" : "obj-20",
 									"maxclass" : "number~",
-									"mode" : 1,
+									"mode" : 2,
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "float" ],
 									"patching_rect" : [ 221.0, 351.5, 56.0, 22.0 ],
-									"sig" : 1.0,
+									"sig" : 0.0,
 									"style" : ""
 								}
 
@@ -1094,7 +1094,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u133002564"
+									"varname" : "u088001940"
 								}
 
 							}
@@ -1571,11 +1571,11 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.cond.mxo",
+				"name" : "o.select.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.select.mxo",
+				"name" : "o.cond.mxo",
 				"type" : "iLaX"
 			}
 , 			{
