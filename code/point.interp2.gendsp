@@ -78,7 +78,7 @@
 			}
 , 			{
 				"box" : 				{
-					"code" : "expA(x0) // approx exp(x) (more accurate than 'fastexp()') from sm_filter_pack\n{\n\tx = 0.999996 + (0.031261316 + (0.00048274797 + 0.000006 * x0) * x0) * x0;\n\tx *= x; x *= x; x *= x; x *= x; x *= x;\n\treturn x;\n}\r\n\r\nHistory prev_idx, prev_v, fp;\r\nBuffer ybuf(\"#0-y0\");\r\nBuffer cbuf(\"#0-c0\");\r\nParam interp(1);\r\nParam dspstate(0);\r\n\r\nphase = in1;\r\nidx = in2;\r\nchannel = in3;\r\n\r\npoints_len = peek(ybuf, 0, channel, channels=1);\r\nmax_idx = points_len;\r\n\r\nv = prev_v;\r\n\r\nif( change(phase) || change(idx) || change(dspstate) || change(channel)) {\r\n\tif( interp == 0 )\r\n\t{\r\n\t\tv = peek(ybuf, clip(idx, 1, max_idx), channel, channels=1);\r\n\t}\r\n\telse\r\n\t{\r\n\t\t// get y positions and interpolate a la curve~ \r\n\t\ty0 = peek(ybuf, clip(idx, 1, max_idx), channel, channels=1);\r\n\t\ty1 = peek(ybuf, clip(idx+1, 1, max_idx), channel, channels=1);\r\n\t\trange = y1-y0;\r\n\t\t\r\n\t\tfp = peek(cbuf, clip(idx+1, 1, max_idx), channel, channels=1);\r\n\t\r\n\t\tif( fp == 0 )\r\n\t\t\tv = y0 + phase*range;\r\n\t\telse {\r\n\t\t\tgp = (exp(fp * phase) - 1.) / (exp(fp) - 1.) ;\r\n\t\t\tv = y0 + gp*range;\r\n\t\t}\r\n\t}\r\n}\r\nout1 = v;\r\nprev_idx = idx;\r\nprev_v = v;",
+					"code" : "expA(x0) // approx exp(x) (more accurate than 'fastexp()') from sm_filter_pack\n{\n\tx = 0.999996 + (0.031261316 + (0.00048274797 + 0.000006 * x0) * x0) * x0;\n\tx *= x; x *= x; x *= x; x *= x; x *= x;\n\treturn x;\n}\r\n\r\nHistory prev_idx, prev_v;\r\nBuffer ybuf(\"#0-y0\");\r\nBuffer cbuf(\"#0-c0\");\r\nParam interp(1);\r\nParam dspstate(0);\r\n\r\nphase = in1;\r\nidx = in2;\r\nchannel = in3;\r\n\r\npoints_len = peek(ybuf, 0, channel, channels=1);\r\nmax_idx = points_len;\r\n\r\nv = prev_v;\r\n\r\nif( change(phase) || change(idx) || change(dspstate) || change(channel)) {\r\n\tif( interp == 0 )\r\n\t{\r\n\t\tv = peek(ybuf, clip(idx, 1, max_idx), channel, channels=1);\r\n\t}\r\n\telse\r\n\t{\r\n\t\t// get y positions and interpolate a la curve~ \r\n\t\ty0 = peek(ybuf, clip(idx, 1, max_idx), channel, channels=1);\r\n\t\ty1 = peek(ybuf, clip(idx+1, 1, max_idx), channel, channels=1);\r\n\t\trange = y1-y0;\r\n\t\t\r\n\t\tfp = peek(cbuf, clip(idx+1, 1, max_idx), channel, channels=1);\r\n\t\r\n\t\tif( fp == 0 )\r\n\t\t\tv = y0 + phase*range;\r\n\t\telse {\r\n\t\t\tgp = (exp(fp * phase) - 1.) / (exp(fp) - 1.) ;\r\n\t\t\tv = y0 + gp*range;\r\n\t\t}\r\n\t}\r\n}\r\nout1 = v;\r\nprev_idx = idx;\r\nprev_v = v;",
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -141,7 +141,8 @@
 				}
 
 			}
- ]
+ ],
+		"autosave" : 0
 	}
 
 }
