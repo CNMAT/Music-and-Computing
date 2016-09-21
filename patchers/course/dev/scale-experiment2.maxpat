@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 136.0, 79.0, 1270.0, 716.0 ],
+		"rect" : [ 136.0, 79.0, 996.0, 716.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -48,7 +48,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 921.0, 212.0, 56.0, 22.0 ],
-					"sig" : 2.0,
+					"sig" : 0.0,
 					"style" : ""
 				}
 
@@ -340,7 +340,7 @@
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 					"patching_rect" : [ 1021.5, 572.0, 166.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.points.phase3~ /mod"
+					"text" : "m158.o.points.phase~ /mod"
 				}
 
 			}
@@ -798,7 +798,7 @@
 ,
 					"style" : "",
 					"text" : "pattrstorage @outputmode 1 @notifymode 1",
-					"varname" : "u098007207"
+					"varname" : "u268011980"
 				}
 
 			}
@@ -1359,6 +1359,12 @@
 , 			{
 				"name" : "o.input.switch~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "m158.o.points.phase~.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
