@@ -84,12 +84,25 @@
 						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-22",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "FullPacket" ],
+									"patching_rect" : [ 630.0, 176.0, 71.0, 22.0 ],
+									"style" : "",
+									"text" : "o.route /gui"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"color" : [ 0.701961, 0.415686, 0.886275, 1.0 ],
 									"id" : "obj-18",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 3,
-									"outlettype" : [ "signal", "bang", "FullPacket" ],
+									"outlettype" : [ "signal", "bang", "" ],
 									"patching_rect" : [ 630.0, 332.5, 159.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.num~ /ms"
@@ -212,7 +225,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 630.0, 230.0, 141.0, 22.0 ],
+									"patching_rect" : [ 630.0, 250.0, 141.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.gui.function /env"
 								}
@@ -260,13 +273,12 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-29",
-									"linecount" : 2,
 									"maxclass" : "o.expr.codebox",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 630.0, 270.0, 344.0, 46.0 ],
-									"text" : "/amps = /gui/harmonics / sum(/gui/harmonics),\n/ms = /gui/ms",
+									"patching_rect" : [ 630.0, 287.0, 272.0, 32.0 ],
+									"text" : "/amps = /harmonics / sum(/harmonics)",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -497,7 +509,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 630.0, 194.5, 123.0, 22.0 ],
+									"patching_rect" : [ 630.0, 214.5, 123.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.gui.table /tab"
 								}
@@ -551,7 +563,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 630.0, 117.0, 24.0, 24.0 ],
+									"patching_rect" : [ 630.0, 115.0, 24.0, 24.0 ],
 									"style" : ""
 								}
 
@@ -563,7 +575,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "dump" ],
-									"patching_rect" : [ 630.0, 155.5, 70.0, 22.0 ],
+									"patching_rect" : [ 630.0, 145.0, 70.0, 22.0 ],
 									"style" : "default",
 									"text" : "m158.o.gui"
 								}
@@ -577,7 +589,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 716.5, 132.0, 97.0, 49.0 ],
+									"patching_rect" : [ 716.5, 121.5, 97.0, 49.0 ],
 									"saved_object_attributes" : 									{
 										"client_rect" : [ 4, 44, 358, 172 ],
 										"parameter_enable" : 0,
@@ -586,7 +598,7 @@
 ,
 									"style" : "default",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u088010595"
+									"varname" : "u962001425"
 								}
 
 							}
@@ -666,7 +678,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-3", 0 ],
+									"destination" : [ "obj-22", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-103", 0 ]
@@ -787,6 +799,15 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-21", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-22", 0 ]
 								}
 
 							}
@@ -1011,6 +1032,19 @@
 						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-22",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "FullPacket" ],
+									"patching_rect" : [ 630.0, 160.0, 71.0, 22.0 ],
+									"style" : "",
+									"text" : "o.route /gui"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"bubble" : 1,
 									"id" : "obj-15",
 									"linecount" : 3,
@@ -1018,7 +1052,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 799.5, 401.5, 256.0, 51.0 ],
-									"presentation_rect" : [ 805.0, 398.5, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "m158.o.points.phase~ @step 1 and @beats 0 creates longer events from repeated notes."
 								}
@@ -1031,7 +1064,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 3,
-									"outlettype" : [ "signal", "bang", "FullPacket" ],
+									"outlettype" : [ "signal", "bang", "" ],
 									"patching_rect" : [ 630.0, 323.5, 159.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.num~ /ms"
@@ -1155,7 +1188,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 630.0, 219.0, 146.0, 22.0 ],
+									"patching_rect" : [ 630.0, 224.0, 146.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.gui.function /env"
 								}
@@ -1203,13 +1236,12 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-29",
-									"linecount" : 2,
 									"maxclass" : "o.expr.codebox",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 630.0, 257.0, 344.0, 46.0 ],
-									"text" : "/amps = /gui/harmonics / sum(/gui/harmonics),\n/ms = /gui/ms",
+									"patching_rect" : [ 630.0, 257.0, 272.0, 32.0 ],
+									"text" : "/amps = /harmonics / sum(/harmonics)",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -1440,7 +1472,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 630.0, 176.5, 123.0, 22.0 ],
+									"patching_rect" : [ 630.0, 188.5, 123.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.gui.table /tab"
 								}
@@ -1529,7 +1561,7 @@
 ,
 									"style" : "default",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u879001871"
+									"varname" : "u215005252"
 								}
 
 							}
@@ -1596,7 +1628,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-3", 0 ],
+									"destination" : [ "obj-22", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-103", 0 ]
@@ -1717,6 +1749,15 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-21", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-22", 0 ]
 								}
 
 							}
@@ -2001,10 +2042,6 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.timetag.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "o.union.mxo",
 				"type" : "iLaX"
 			}
@@ -2021,7 +2058,15 @@
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "o.timetag.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "o.select.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.if.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -2046,10 +2091,6 @@
 			}
 , 			{
 				"name" : "o.display.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.if.mxo",
 				"type" : "iLaX"
 			}
  ],

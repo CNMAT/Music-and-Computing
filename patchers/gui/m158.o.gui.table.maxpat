@@ -283,7 +283,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 272.5, 192.0, 71.0, 22.0 ],
+					"patching_rect" : [ 272.5, 177.0, 71.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1104,8 +1104,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 79.5, 235.0, 185.0, 22.0 ],
+					"outlettype" : [ "FullPacket", "" ],
+					"patching_rect" : [ 79.5, 228.0, 185.0, 22.0 ],
 					"style" : "",
 					"text" : "o.gather.select"
 				}
@@ -1131,7 +1131,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "", "" ],
-					"patching_rect" : [ 31.5, 199.0, 40.0, 22.0 ],
+					"patching_rect" : [ 31.5, 173.0, 40.0, 22.0 ],
 					"style" : "",
 					"text" : "t b l l"
 				}
@@ -1144,7 +1144,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 272.5, 158.16748, 74.0, 22.0 ],
+					"patching_rect" : [ 272.5, 143.16748, 74.0, 22.0 ],
 					"style" : "",
 					"text" : "patcherargs"
 				}
@@ -1170,7 +1170,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "FullPacket" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 31.5, 28.0, 30.0, 30.0 ],
 					"style" : ""
 				}
