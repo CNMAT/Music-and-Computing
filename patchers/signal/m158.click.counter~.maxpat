@@ -102,7 +102,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "(signal) count",
+					"comment" : "(signal) carry click",
 					"id" : "obj-2",
 					"maxclass" : "outlet",
 					"numinlets" : 1,
@@ -300,7 +300,8 @@
 								}
 
 							}
- ]
+ ],
+						"autosave" : 0
 					}
 ,
 					"patching_rect" : [ 88.666664, 205.0, 154.0, 22.0 ],
