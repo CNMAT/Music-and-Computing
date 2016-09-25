@@ -298,9 +298,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 531.0, 155.0, 244.0, 22.0 ],
+					"patching_rect" : [ 444.0, 120.0, 244.0, 22.0 ],
 					"style" : "",
-					"text" : "setitem 0 < select an item >, enableitem 0 0"
+					"text" : "setitem 0 list of topics:, enableitem 0 0"
 				}
 
 			}
@@ -700,7 +700,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-11",
-					"items" : [ "<", "select", "an", "item", ">", ",", "round()", ",", "ceil()", ",", "floor()", ",", "clip()", ",", "scale()" ],
+					"items" : [ "list", "of", "topics:", ",", "round()", ",", "ceil()", ",", "floor()", ",", "clip()", ",", "scale()" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -715,7 +715,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-10",
-					"items" : [ "<", "select", "an", "item", ">", ",", "nfill()", ",", "??=", ",", "creating", "lists", ",", "accessing", "list", "elements", ",", "aseq", ",", "list()", ",", "summing", "list", "elements", ",", "minimum", ",", "maximum", ",", "averaging", "list", "elements", ",", "mean", ",", "reversing", "elements" ],
+					"items" : [ "list", "of", "topics:", ",", "nfill()", ",", "??=", ",", "creating", "lists", ",", "accessing", "list", "elements", ",", "aseq", ",", "list()", ",", "summing", "list", "elements", ",", "minimum", ",", "maximum", ",", "averaging", "list", "elements", ",", "mean", ",", "reversing", "elements" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -730,7 +730,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-9",
-					"items" : [ "<", "select", "an", "item", ">", ",", "+", ",", "-", ",", "*", ",", "/", ",", "+=", ",", "-=", ",", "*=", ",", "/=", ",", "pow()", ",", "sqrt()" ],
+					"items" : [ "list", "of", "topics:", ",", "+", ",", "-", ",", "*", ",", "/", ",", "+=", ",", "-=", ",", "*=", ",", "/=", ",", "pow()", ",", "sqrt()" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -745,7 +745,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-8",
-					"items" : [ "<", "select", "an", "item", ">", ",", "integers", ",", "floats", ",", "strings", ",", "lists", ",", "casting" ],
+					"items" : [ "list", "of", "topics:", ",", "integers", ",", "floats", ",", "strings", ",", "lists", ",", "casting" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -760,7 +760,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-7",
-					"items" : [ "<", "select", "an", "item", ">", ",", "comments", ",", "manual", "assignment", ",", "colon", "assignment", ",", "dynamic", "assignment", ",", "deleting", ",", "values" ],
+					"items" : [ "list", "of", "topics:", ",", "comments", ",", "manual", "assignment", ",", "colon", "assignment", ",", "dynamic", "assignment", ",", "deleting", ",", "values" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
