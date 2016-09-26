@@ -105,7 +105,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 227.0, 473.5, 149.0, 22.0 ],
-									"presentation_rect" : [ 246.0, 460.5, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "m158.phase.divider~"
 								}
@@ -120,7 +119,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 242.0, 268.5, 134.0, 22.0 ],
-									"presentation_rect" : [ 238.0, 263.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "m158.o.duration2x"
 								}
@@ -135,7 +133,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 293.0, 109.0, 43.0, 22.0 ],
-									"presentation_rect" : [ 454.0, 38.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "sah~"
 								}
@@ -148,7 +145,6 @@
 									"numinlets" : 2,
 									"numoutlets" : 0,
 									"patching_rect" : [ 421.0, 571.0, 130.0, 130.0 ],
-									"presentation_rect" : [ 191.0, 597.0, 0.0, 0.0 ],
 									"style" : ""
 								}
 
@@ -176,8 +172,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "float" ],
 									"patching_rect" : [ 524.0, 403.0, 56.0, 22.0 ],
-									"presentation_rect" : [ 431.0, 484.0, 0.0, 0.0 ],
-									"sig" : 4.0,
+									"sig" : 0.0,
 									"style" : ""
 								}
 
@@ -194,8 +189,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "float" ],
 									"patching_rect" : [ 421.0, 390.0, 56.0, 22.0 ],
-									"presentation_rect" : [ 327.0, 483.0, 0.0, 0.0 ],
-									"sig" : 453.0,
+									"sig" : 0.0,
 									"style" : ""
 								}
 
@@ -221,7 +215,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 559.0, 473.5, 413.0, 47.0 ],
-									"presentation_rect" : [ 465.0, 533.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "m158.phase.divider~ creates phase ramps relative to an input phase. The value in the right inlet sets the division amount -- e.g. a value of 2 creates a new phase ramp that is 2x the speed of the original."
 								}
@@ -232,13 +225,11 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-11",
-									"linecount" : 2,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 414.0, 308.0, 257.0, 48.0 ],
-									"text" : "/beat/dur : [1, 2, 1, 1],\n/beat/dur/x : [0., 1., 3., 4., 5.]",
+									"patching_rect" : [ 414.0, 308.0, 257.0, 34.0 ],
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -267,8 +258,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 702.0, 268.5, 338.0, 47.0 ],
-									"presentation_rect" : [ 555.0, 309.0, 0.0, 0.0 ],
+									"patching_rect" : [ 702.0, 268.5, 339.0, 47.0 ],
 									"style" : "",
 									"text" : "m158.o.duration2x converts duration values to /x start times, starting at 0 and ending at 1. Since an end point is required to represent the duration, an extra /x point is added."
 								}
@@ -542,7 +532,6 @@
 					}
 ,
 					"patching_rect" : [ 220.0, 109.5, 55.0, 22.0 ],
-					"presentation_rect" : [ 220.0, 109.5, 0.0, 0.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -914,7 +903,6 @@
 					}
 ,
 					"patching_rect" : [ 137.0, 73.5, 55.0, 22.0 ],
-					"presentation_rect" : [ 137.0, 73.5, 0.0, 0.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -945,7 +933,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1368.0, 761.0 ],
+						"rect" : [ 38.0, 105.0, 1368.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1017,7 +1005,7 @@
 									"outlettype" : [ "signal", "signal", "", "float", "list" ],
 									"parameter_enable" : 1,
 									"patching_rect" : [ 390.5, 541.0, 126.0, 48.0 ],
-									"presentation_rect" : [ 0.0, 0.0, 50.0, 34.0 ],
+									"presentation_rect" : [ 0.0, 0.0, 50.0, 48.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
 											"parameter_longname" : "live.gain~",
@@ -1198,9 +1186,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "FullPacket" ],
-									"patching_rect" : [ 790.0, 304.0, 177.0, 22.0 ],
+									"patching_rect" : [ 790.0, 274.0, 184.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.delta2xy /rhythm/norm"
+									"text" : "m158.o.duration2x /rhythm/norm"
 								}
 
 							}
@@ -1215,7 +1203,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 790.0, 67.5, 439.0, 168.0 ],
-									"text" : "/beat/dur = 200,\n/beat/pattern =     [2,  3,  1,  1,   2],\n/beat/interval =    [0,  7,  4,  10,  3],\n/beat/subdivision = [1,  3,  2,  3,   3],\n/pattern/length = sum(/beat/pattern),\n/dur = /beat/dur * /pattern/length,\n\n# scale rhythm to be relative to pattern length\n/rhythm/norm = float32(/beat/pattern) / /pattern/length,\n\n/hz/ratio = pow(2., /beat/interval / 12.)",
+									"text" : "/beat/dur = 200,\n/beat/pattern =     [2,  3,  4,  2,   2],\n/beat/interval =    [0,  7,  4,  -1,  3],\n/beat/subdivision = [1,  3,  2,  5,   3],\n/pattern/length = sum(/beat/pattern),\n/dur = /beat/dur * /pattern/length,\n\n# scale rhythm to be relative to pattern length\n/rhythm/norm = float32(/beat/pattern) / /pattern/length,\n\n/hz/ratio = pow(2., /beat/interval / 12.)",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -1580,7 +1568,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 38.0, 105.0, 1368.0, 761.0 ],
+						"rect" : [ 0.0, 26.0, 1368.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1848,9 +1836,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "FullPacket" ],
-									"patching_rect" : [ 790.0, 241.0, 177.0, 22.0 ],
+									"patching_rect" : [ 790.0, 241.0, 184.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.delta2xy /rhythm/norm"
+									"text" : "m158.o.duration2x /rhythm/norm"
 								}
 
 							}
@@ -2403,8 +2391,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 967.700012, 631.0, 332.0, 37.0 ],
-									"presentation_rect" : [ 969.700012, 631.0, 0.0, 0.0 ],
+									"patching_rect" : [ 999.700012, 627.0, 332.0, 37.0 ],
 									"style" : "",
 									"text" : "we can also create an x/y envelope for the amplitude by hand."
 								}
@@ -2418,8 +2405,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 967.700012, 581.0, 332.0, 37.0 ],
-									"presentation_rect" : [ 970.700012, 590.0, 0.0, 0.0 ],
+									"patching_rect" : [ 999.700012, 577.0, 332.0, 37.0 ],
 									"style" : "",
 									"text" : "we need to add one more point to the interval list to match the lengths."
 								}
@@ -2430,14 +2416,13 @@
 									"bubble" : 1,
 									"bubbleside" : 3,
 									"id" : "obj-6",
-									"linecount" : 5,
+									"linecount" : 9,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 9.5, 334.0, 129.0, 78.0 ],
-									"presentation_rect" : [ 28.700012, 388.0, 0.0, 0.0 ],
+									"patching_rect" : [ 22.0, 282.5, 159.0, 131.0 ],
 									"style" : "",
-									"text" : "sah~ hold the value in the left inlet at the time of the trigger in the right inlet"
+									"text" : "sah~ hold the value in the left inlet at the time of the trigger in the right inlet. we can use the relative phase to trigger the sah~ to hold the value of the Y axis output from m158.o.points.buffer~."
 								}
 
 							}
@@ -2449,8 +2434,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 751.700012, 334.0, 351.0, 51.0 ],
-									"presentation_rect" : [ 742.700012, 357.5, 0.0, 0.0 ],
+									"patching_rect" : [ 783.700012, 330.0, 351.0, 51.0 ],
 									"style" : "",
 									"text" : "m158.o.duration2x converts duration values to /x start times, starting at 0 and ending at 1. Since an end point is required to represent the duration, an extra /x point is added."
 								}
@@ -2463,7 +2447,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 596.700012, 8.5, 165.0, 24.0 ],
+									"patching_rect" : [ 628.700012, 4.5, 165.0, 24.0 ],
 									"style" : "",
 									"text" : "click to send data through"
 								}
@@ -2476,7 +2460,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 241.749985, 499.0, 32.0, 22.0 ],
+									"patching_rect" : [ 273.75, 495.0, 32.0, 22.0 ],
 									"style" : "",
 									"text" : "*~ 5"
 								}
@@ -2489,7 +2473,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 188.949997, 499.0, 50.0, 22.0 ],
+									"patching_rect" : [ 220.949997, 495.0, 50.0, 22.0 ],
 									"style" : "",
 									"text" : "sig~ 10"
 								}
@@ -2502,7 +2486,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 155.0, 568.0, 229.0, 22.0 ],
+									"patching_rect" : [ 187.0, 564.0, 229.0, 22.0 ],
 									"style" : "",
 									"text" : "*~"
 								}
@@ -2515,7 +2499,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 6,
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
-									"patching_rect" : [ 334.0, 441.0, 153.0, 22.0 ],
+									"patching_rect" : [ 366.0, 437.0, 153.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.points.buffer~ /env"
 								}
@@ -2528,7 +2512,7 @@
 									"numinlets" : 6,
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "FullPacket" ],
-									"patching_rect" : [ 155.0, 535.0, 188.75, 22.0 ],
+									"patching_rect" : [ 187.0, 531.0, 188.75, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.harmonics.shape~"
 								}
@@ -2541,7 +2525,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 280.0, 658.0, 33.0, 22.0 ],
+									"patching_rect" : [ 312.0, 654.0, 33.0, 22.0 ],
 									"style" : "",
 									"text" : "stop"
 								}
@@ -2554,7 +2538,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 193.0, 658.0, 74.0, 22.0 ],
+									"patching_rect" : [ 225.0, 654.0, 74.0, 22.0 ],
 									"style" : "",
 									"text" : "startwindow"
 								}
@@ -2567,7 +2551,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 560.0, 6.5, 24.0, 24.0 ],
+									"patching_rect" : [ 592.0, 2.5, 24.0, 24.0 ],
 									"style" : ""
 								}
 
@@ -2579,7 +2563,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 155.0, 468.0, 41.0, 22.0 ],
+									"patching_rect" : [ 187.0, 464.0, 41.0, 22.0 ],
 									"style" : "",
 									"text" : "mtof~"
 								}
@@ -2591,7 +2575,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 159.0, 698.0, 37.0, 22.0 ],
+									"patching_rect" : [ 191.0, 694.0, 37.0, 22.0 ],
 									"style" : "",
 									"text" : "dac~"
 								}
@@ -2605,7 +2589,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 155.0, 613.5, 148.0, 31.0 ],
+									"patching_rect" : [ 187.0, 609.5, 148.0, 31.0 ],
 									"style" : ""
 								}
 
@@ -2617,7 +2601,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 155.0, 436.0, 29.5, 22.0 ],
+									"patching_rect" : [ 187.0, 432.0, 29.5, 22.0 ],
 									"style" : "",
 									"text" : "+~"
 								}
@@ -2630,7 +2614,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "signal", "bang", "" ],
-									"patching_rect" : [ 345.0, 383.5, 142.0, 22.0 ],
+									"patching_rect" : [ 377.0, 379.5, 142.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.num~ /baseMIDI"
 								}
@@ -2643,7 +2627,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 193.0, 334.0, 110.0, 22.0 ],
+									"patching_rect" : [ 225.0, 305.0, 110.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.phase.click~"
 								}
@@ -2656,7 +2640,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 155.0, 366.0, 57.0, 22.0 ],
+									"patching_rect" : [ 187.0, 337.0, 57.0, 22.0 ],
 									"style" : "",
 									"text" : "sah~ 0.5"
 								}
@@ -2673,7 +2657,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "float" ],
-									"patching_rect" : [ 51.0, 429.0, 71.0, 22.0 ],
+									"patching_rect" : [ 199.949997, 371.0, 71.0, 22.0 ],
 									"sig" : 0.0,
 									"style" : ""
 								}
@@ -2682,13 +2666,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-4",
-									"linecount" : 3,
+									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 51.0, 44.5, 333.0, 60.0 ],
+									"patching_rect" : [ 22.0, 45.5, 385.0, 33.0 ],
 									"style" : "",
-									"text" : "Sometimes, people like to specify a phrase with rhythm described as duration of beats.\n\n"
+									"text" : "Sometimes, people like to specify a phrase with rhythm described as duration of beats."
 								}
 
 							}
@@ -2699,7 +2683,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 6,
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
-									"patching_rect" : [ 155.0, 229.0, 209.0, 22.0 ],
+									"patching_rect" : [ 187.0, 225.0, 209.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.points.buffer~ /seq/time"
 								}
@@ -2713,7 +2697,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "signal", "signal", "signal", "" ],
-									"patching_rect" : [ 155.0, 182.0, 108.0, 35.0 ],
+									"patching_rect" : [ 187.0, 178.0, 108.0, 35.0 ],
 									"style" : "",
 									"text" : "m158.phase~ @phasecycle 1"
 								}
@@ -2726,7 +2710,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "signal", "bang", "" ],
-									"patching_rect" : [ 155.0, 151.0, 209.0, 22.0 ],
+									"patching_rect" : [ 187.0, 147.0, 209.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.num~ /dur"
 								}
@@ -2741,7 +2725,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 51.0, 19.5, 98.0, 26.0 ],
+									"patching_rect" : [ 22.0, 20.5, 98.0, 26.0 ],
 									"style" : "",
 									"text" : "Music 158A"
 								}
@@ -2752,13 +2736,11 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-9",
-									"linecount" : 8,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 596.700012, 402.0, 550.599976, 129.0 ],
-									"text" : "/beat/dur : 200,\n/beat/pattern : [3, 3, 1, 1, 3],\n/beat/interval : [0, 7, 4, 10, 3],\n/pattern/length : 11,\n/dur : 2200,\n/rhythm/norm : [0.272727, 0.272727, 0.0909091, 0.0909091, 0.272727],\n/baseMIDI : 50,\n/rhythm/norm/x : [0., 0.272727, 0.545455, 0.636364, 0.727273, 1.]",
+									"patching_rect" : [ 628.700012, 398.0, 550.599976, 34.0 ],
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -2768,13 +2750,11 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-8",
-									"linecount" : 7,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 586.700012, 202.0, 550.599976, 116.0 ],
-									"text" : "/beat/dur : 200,\n/beat/pattern : [3, 3, 1, 1, 3],\n/beat/interval : [0, 7, 4, 10, 3],\n/pattern/length : 11,\n/dur : 2200,\n/rhythm/norm : [0.272727, 0.272727, 0.0909091, 0.0909091, 0.272727],\n/baseMIDI : 50",
+									"patching_rect" : [ 618.700012, 198.0, 550.599976, 34.0 ],
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -2789,7 +2769,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 560.0, 567.0, 403.0, 86.0 ],
+									"patching_rect" : [ 592.0, 563.0, 403.0, 86.0 ],
 									"text" : "/seq/time/x = /rhythm/norm/x,\n/seq/time/y = [/beat/interval, last(/beat/interval)],\n\n/env/y = [0, 1,    0.1, 0],\n/env/x = [0, 0.001, 0.5, 1]",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
@@ -2802,7 +2782,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "FullPacket" ],
-									"patching_rect" : [ 560.0, 342.5, 184.0, 22.0 ],
+									"patching_rect" : [ 592.0, 338.5, 184.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.duration2x /rhythm/norm"
 								}
@@ -2818,7 +2798,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 560.0, 35.5, 439.0, 154.0 ],
+									"patching_rect" : [ 592.0, 31.5, 439.0, 154.0 ],
 									"text" : "/beat/dur = 200,\n/beat/pattern =  [3,  3,  1,  1,  3],\n/beat/interval = [0,  7,  4,  10,  3],\n/pattern/length = sum(/beat/pattern),\n/dur = /beat/dur * /pattern/length,\n\n# scale rhythm to be relative to pattern length\n/rhythm/norm = float32(/beat/pattern) / /pattern/length,\n\n/baseMIDI = 50",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
@@ -2848,7 +2828,7 @@
 									"destination" : [ "obj-45", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 569.5, 679.0, 520.0, 679.0, 520.0, 135.0, 164.5, 135.0 ],
+									"midpoints" : [ 601.5, 675.0, 552.0, 675.0, 552.0, 131.0, 196.5, 131.0 ],
 									"source" : [ "obj-10", 0 ]
 								}
 
@@ -3204,12 +3184,6 @@
 , 			{
 				"name" : "o.input.switch~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "m158.o.delta2xy.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/course/dev",
 				"type" : "JSON",
 				"implicit" : 1
 			}
