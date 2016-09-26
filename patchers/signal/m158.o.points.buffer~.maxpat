@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 38.0, 79.0, 1368.0, 787.0 ],
+		"rect" : [ 38.0, 79.0, 963.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -66,7 +66,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 698.0, 174.0, 640.0, 480.0 ],
+						"rect" : [ 565.0, 149.0, 386.0, 628.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -95,12 +95,26 @@
 						"subpatcher_template" : "Default Max 7",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-2",
+									"linecount" : 2,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 50.0, 282.0, 56.0, 35.0 ],
+									"style" : "",
+									"text" : "updated $1"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-45",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "bang", "bang" ],
-									"patching_rect" : [ 50.0, 164.0, 43.0, 22.0 ],
+									"patching_rect" : [ 120.5, 165.0, 43.0, 22.0 ],
 									"style" : "",
 									"text" : "t s b b"
 								}
@@ -159,7 +173,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 347.333344, 451.0, 129.0, 22.0 ],
 													"style" : "",
-													"text" : "set 2788-xbuf0"
+													"text" : "set 1324-xbuf0"
 												}
 
 											}
@@ -172,7 +186,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 326.666656, 205.0, 129.0, 22.0 ],
 													"style" : "",
-													"text" : "28 1"
+													"text" : "12 1"
 												}
 
 											}
@@ -625,7 +639,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 50.0, 133.223022, 71.0, 22.0 ],
+									"patching_rect" : [ 120.5, 134.223022, 71.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -646,7 +660,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 123.0, 223.0, 40.0, 22.0 ],
+									"patching_rect" : [ 193.5, 224.0, 40.0, 22.0 ],
 									"style" : "",
 									"text" : "zl.reg"
 								}
@@ -706,7 +720,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 464.333344, 462.0, 50.0, 49.0 ],
 													"style" : "",
-													"text" : "set 2788-ybuf0"
+													"text" : "set 1324-ybuf0"
 												}
 
 											}
@@ -1150,7 +1164,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 144.0, 133.223022, 71.0, 22.0 ],
+									"patching_rect" : [ 214.5, 134.223022, 71.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -1171,7 +1185,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 217.0, 223.0, 40.0, 22.0 ],
+									"patching_rect" : [ 287.5, 224.0, 40.0, 22.0 ],
 									"style" : "",
 									"text" : "zl.reg"
 								}
@@ -1182,11 +1196,11 @@
 									"id" : "obj-26",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 4,
-									"outlettype" : [ "", "", "", "FullPacket" ],
+									"numoutlets" : 5,
+									"outlettype" : [ "", "", "", "", "FullPacket" ],
 									"patching_rect" : [ 50.0, 100.0, 301.0, 22.0 ],
 									"style" : "",
-									"text" : "o.route /x /y /curve"
+									"text" : "o.route /count /x /y /curve"
 								}
 
 							}
@@ -1665,7 +1679,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 238.0, 133.223022, 71.0, 22.0 ],
+									"patching_rect" : [ 308.5, 134.223022, 71.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -1686,7 +1700,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 217.0, 258.330872, 50.0, 22.0 ],
+									"patching_rect" : [ 287.5, 259.330872, 50.0, 22.0 ],
 									"style" : "",
 									"text" : "cbuf $1"
 								}
@@ -1699,7 +1713,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 123.0, 258.330872, 50.0, 22.0 ],
+									"patching_rect" : [ 193.5, 259.330872, 50.0, 22.0 ],
 									"style" : "",
 									"text" : "ybuf $1"
 								}
@@ -1712,7 +1726,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 258.330872, 50.0, 22.0 ],
+									"patching_rect" : [ 120.5, 259.330872, 50.0, 22.0 ],
 									"style" : "",
 									"text" : "xbuf $1"
 								}
@@ -1738,7 +1752,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 124.0, 340.330872, 30.0, 30.0 ],
+									"patching_rect" : [ 120.5, 359.330872, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -1746,16 +1760,16 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
-									"destination" : [ "obj-43", 0 ],
+									"destination" : [ "obj-50", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"source" : [ "obj-26", 1 ]
+									"source" : [ "obj-2", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-44", 0 ],
+									"destination" : [ "obj-2", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-26", 0 ]
@@ -1764,10 +1778,28 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-58", 0 ],
+									"destination" : [ "obj-43", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-26", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-44", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-26", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-58", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-26", 3 ]
 								}
 
 							}
@@ -2709,7 +2741,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "FullPacket" ],
-									"patching_rect" : [ 56.0, 51.0, 100.0, 22.0 ],
+									"patching_rect" : [ 56.0, 45.0, 100.0, 22.0 ],
 									"style" : "",
 									"text" : "o.union"
 								}
@@ -2733,13 +2765,13 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-7",
-									"linecount" : 155,
+									"linecount" : 156,
 									"maxclass" : "o.expr.codebox",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 56.0, 88.0, 770.0, 2125.0 ],
-									"text" : "/count ??= 0,\n/_/stepmode ??= 0,\n/_/norm ??= 1,\n/_/beats ??= 1,\n\n/_/x = value(/_/baseAddr+\"/x\"),\n/_/y = value(/_/baseAddr+\"/y\"),\n/_/curve = value(/_/baseAddr+\"/curve\"),\n\n/planecount = 0,\n/maxlen = 0,\n\nif( bound(/_/x) && bound(/_/y),\n  if( /_/stepmode == 1,\n    progn(\n      if( /_/beats == 1,\n        progn(\n          /_/y = [/_/y, last(/_/y)],\n          /_/x = [/_/x, last(/_/x)+1],\n          if( /_/norm == 1, \n            /_/x = float32(/_/x) / max(/_/x)\n          ),\n          /len = length(/_/x),  #assumes the user has the right length for y\n          /maxlen = /len+1,\n          assign(\"/out/x/fill/0\", [/len, /_/x, 0] ),\n          assign(\"/out/y/fill/0\", [/len, /_/y, 0] ),\n          /planecount = 1\n        ),\n        progn(\n          /_/tab = /_/y,\n          /_/len = length(/_/tab),\n          /_/x = [],\n          /_/y = [],\n          map(\n            lambda([y,x],\n              if( !bound(/_/prev) || y != /_/prev,\n                progn(\n                  /_/y = [/_/y, y],\n                  /_/x = [/_/x, x]\n                )\n              ),\n              /_/prev = y\n            ), /_/tab, aseq(0, /_/len - 1)\n          ),\n          /_/y = [/_/y, last(/_/y)],\n          /_/x = [/_/x, last(/_/x)+1],\n          if( /_/norm == 1, \n            /_/x = float32(/_/x) / max(/_/x)\n          ),\n          /len = length(/_/x),  #assumes the user has the right length for y\n          /maxlen = /len+1,\n          assign(\"/out/x/fill/0\", [/len, /_/x, 0] ),\n          assign(\"/out/y/fill/0\", [/len, /_/y, 0] ),\n          /planecount = 1\n        )\n      )\n    ),\n    progn(\n      if( /_/norm == 1, \n        /_/x = float32(/_/x) / max(/_/x)\n      ),\n      /len = length(/_/x),  #assumes the user has the right length for y\n      /maxlen = max([/len+1, /maxlen]),\n      assign(\"/out/x/fill/0\", [/len, /_/x, 0] ),\n      assign(\"/out/y/fill/0\", [/len, /_/y, 0] ),\n      if( bound(/_/curve),\n        progn(\n          /_/curve = clip( (abs(/_/curve) > 0.001) * /_/curve, -1., 1. ),\n          /hp = sign(/_/curve) * pow((abs(/_/curve) + (sign(/_/curve)*1e-20)) * 1.2, 0.41) * 0.91,\n          /fp = /hp / (1. - abs(/hp)),\n          assign(\"/out/curve/fill/0\", [/len, /fp, 0] )\n        )\n      ),\n      /planecount = 1\n    )    \n  ),\n  map(\n    lambda(i,\n      /_/x = value(/_/baseAddr+\"/\"+i+\"/x\"),\n      /_/y = value(/_/baseAddr+\"/\"+i+\"/y\"),\n      /_/curve = value(/_/baseAddr+\"/\"+i+\"/curve\"),\n      if( bound(/_/x) && bound(/_/y),\n        if( /_/stepmode == 1,\n          if( /_/beats == 1,\n            progn(\n              /_/y = [/_/y, last(/_/y)],\n              /_/x = [/_/x, last(/_/x)+1],\n              if( /_/norm == 1, \n                /_/x = float32(/_/x) / max(/_/x)\n              ),\n              /len = length(/_/x),  #assumes the user has the right length for y\n              /maxlen = max([/len+1, /maxlen]),\n              assign(\"/out/x/fill/\"+/planecount, [/len, /_/x, /planecount] ),\n              assign(\"/out/y/fill/\"+/planecount, [/len, /_/y, /planecount] ),\n              /planecount++\n            ),\n            progn(\n              /_/tab = /_/y,\n              /_/len = length(/_/tab),\n              /_/x = [],\n              /_/y = [],\n              map(\n                lambda([y,x],\n                  if( !bound(/_/prev) || y != /_/prev,\n                    progn(\n                      /_/y = [/_/y, y],\n                      /_/x = [/_/x, x]\n                    )\n                  ),\n                  /_/prev = y\n                ), /_/tab, aseq(0, /_/len - 1)\n              ),\n              /_/y = [/_/y, last(/_/y)],\n              /_/x = [/_/x, last(/_/x)+1],\n              if( /_/norm == 1, \n                /_/x = float32(/_/x) / max(/_/x)\n              ),\n              /len = length(/_/x),  #assumes the user has the right length for y\n              /maxlen = max([/len+1, /maxlen]),\n              assign(\"/out/x/fill/\"+/planecount, [/len, /_/x, /planecount] ),\n              assign(\"/out/y/fill/\"+/planecount, [/len, /_/y, /planecount] ),\n              /planecount++\n            )\n          ),\n          progn(\n            if( /_/norm == 1, \n              /_/x = float32(/_/x) / max(/_/x)\n            ),\n            /len = length(/_/x),  #assumes the user has the right length for y\n            /maxlen = max([/len+1, /maxlen]),\n            assign(\"/out/x/fill/\"+/planecount, [/len, /_/x, /planecount] ),\n            assign(\"/out/y/fill/\"+/planecount, [/len, /_/y, /planecount] ),\n            if( bound(/_/curve),\n              progn(\n                /_/curve = clip( (abs(/_/curve) > 0.001) * /_/curve, -1., 1. ),\n                /hp = sign(/_/curve) * pow((abs(/_/curve) + (sign(/_/curve)*1e-20)) * 1.2, 0.41) * 0.91,\n                /fp = /hp / (1. - abs(/hp)),\n                assign(\"/out/curve/fill/\"+/planecount, [/len, /fp, /planecount] )\n              )\n            ),\n            /planecount++\n          )\n        )    \n      )\n    ), aseq(0, length(/addrs)-1)\n  )\n),\n\n/out/x/dim = [/maxlen, /planecount],\n/out/y/dim = /out/x/dim,\n/out/curve/dim = /out/x/dim,\n/out/x/setbuf = /unique + \"-xbuf\" + /count,\n/out/y/setbuf = /unique + \"-ybuf\" + /count,\n/out/curve/setbuf = /unique + \"-cbuf\" + /count,\n/count = (/count + 1) % 2",
+									"patching_rect" : [ 56.0, 74.0, 770.0, 2138.0 ],
+									"text" : "/count ??= 0,\n/_/stepmode ??= 0,\n/_/norm ??= 1,\n/_/beats ??= 1,\n\n/_/x = value(/_/baseAddr+\"/x\"),\n/_/y = value(/_/baseAddr+\"/y\"),\n/_/curve = value(/_/baseAddr+\"/curve\"),\n\n/planecount = 0,\n/maxlen = 0,\n\nif( bound(/_/x) && bound(/_/y),\n  if( /_/stepmode == 1,\n    progn(\n      if( /_/beats == 1,\n        progn(\n          /_/y = [/_/y, last(/_/y)],\n          /_/x = [/_/x, last(/_/x)+1],\n          if( /_/norm == 1, \n            /_/x = float32(/_/x) / max(/_/x)\n          ),\n          /len = length(/_/x),  #assumes the user has the right length for y\n          /maxlen = /len+1,\n          assign(\"/out/x/fill/0\", [/len, /_/x, 0] ),\n          assign(\"/out/y/fill/0\", [/len, /_/y, 0] ),\n          /planecount = 1\n        ),\n        progn(\n          /_/tab = /_/y,\n          /_/len = length(/_/tab),\n          /_/x = [],\n          /_/y = [],\n          map(\n            lambda([y,x],\n              if( !bound(/_/prev) || y != /_/prev,\n                progn(\n                  /_/y = [/_/y, y],\n                  /_/x = [/_/x, x]\n                )\n              ),\n              /_/prev = y\n            ), /_/tab, aseq(0, /_/len - 1)\n          ),\n          /_/y = [/_/y, last(/_/y)],\n          /_/x = [/_/x, last(/_/x)+1],\n          if( /_/norm == 1, \n            /_/x = float32(/_/x) / max(/_/x)\n          ),\n          /len = length(/_/x),  #assumes the user has the right length for y\n          /maxlen = /len+1,\n          assign(\"/out/x/fill/0\", [/len, /_/x, 0] ),\n          assign(\"/out/y/fill/0\", [/len, /_/y, 0] ),\n          /planecount = 1\n        )\n      )\n    ),\n    progn(\n      if( /_/norm == 1, \n        /_/x = float32(/_/x) / max(/_/x)\n      ),\n      /len = length(/_/x),  #assumes the user has the right length for y\n      /maxlen = max([/len+1, /maxlen]),\n      assign(\"/out/x/fill/0\", [/len, /_/x, 0] ),\n      assign(\"/out/y/fill/0\", [/len, /_/y, 0] ),\n      if( bound(/_/curve),\n        progn(\n          /_/curve = clip( (abs(/_/curve) > 0.001) * /_/curve, -1., 1. ),\n          /hp = sign(/_/curve) * pow((abs(/_/curve) + (sign(/_/curve)*1e-20)) * 1.2, 0.41) * 0.91,\n          /fp = /hp / (1. - abs(/hp)),\n          assign(\"/out/curve/fill/0\", [/len, /fp, 0] )\n        )\n      ),\n      /planecount = 1\n    )    \n  ),\n  map(\n    lambda(i,\n      /_/x = value(/_/baseAddr+\"/\"+i+\"/x\"),\n      /_/y = value(/_/baseAddr+\"/\"+i+\"/y\"),\n      /_/curve = value(/_/baseAddr+\"/\"+i+\"/curve\"),\n      if( bound(/_/x) && bound(/_/y),\n        if( /_/stepmode == 1,\n          if( /_/beats == 1,\n            progn(\n              /_/y = [/_/y, last(/_/y)],\n              /_/x = [/_/x, last(/_/x)+1],\n              if( /_/norm == 1, \n                /_/x = float32(/_/x) / max(/_/x)\n              ),\n              /len = length(/_/x),  #assumes the user has the right length for y\n              /maxlen = max([/len+1, /maxlen]),\n              assign(\"/out/x/fill/\"+/planecount, [/len, /_/x, /planecount] ),\n              assign(\"/out/y/fill/\"+/planecount, [/len, /_/y, /planecount] ),\n              /planecount++\n            ),\n            progn(\n              /_/tab = /_/y,\n              /_/len = length(/_/tab),\n              /_/x = [],\n              /_/y = [],\n              map(\n                lambda([y,x],\n                  if( !bound(/_/prev) || y != /_/prev,\n                    progn(\n                      /_/y = [/_/y, y],\n                      /_/x = [/_/x, x]\n                    )\n                  ),\n                  /_/prev = y\n                ), /_/tab, aseq(0, /_/len - 1)\n              ),\n              /_/y = [/_/y, last(/_/y)],\n              /_/x = [/_/x, last(/_/x)+1],\n              if( /_/norm == 1, \n                /_/x = float32(/_/x) / max(/_/x)\n              ),\n              /len = length(/_/x),  #assumes the user has the right length for y\n              /maxlen = max([/len+1, /maxlen]),\n              assign(\"/out/x/fill/\"+/planecount, [/len, /_/x, /planecount] ),\n              assign(\"/out/y/fill/\"+/planecount, [/len, /_/y, /planecount] ),\n              /planecount++\n            )\n          ),\n          progn(\n            if( /_/norm == 1, \n              /_/x = float32(/_/x) / max(/_/x)\n            ),\n            /len = length(/_/x),  #assumes the user has the right length for y\n            /maxlen = max([/len+1, /maxlen]),\n            assign(\"/out/x/fill/\"+/planecount, [/len, /_/x, /planecount] ),\n            assign(\"/out/y/fill/\"+/planecount, [/len, /_/y, /planecount] ),\n            if( bound(/_/curve),\n              progn(\n                /_/curve = clip( (abs(/_/curve) > 0.001) * /_/curve, -1., 1. ),\n                /hp = sign(/_/curve) * pow((abs(/_/curve) + (sign(/_/curve)*1e-20)) * 1.2, 0.41) * 0.91,\n                /fp = /hp / (1. - abs(/hp)),\n                assign(\"/out/curve/fill/\"+/planecount, [/len, /fp, /planecount] )\n              )\n            ),\n            /planecount++\n          )\n        )    \n      )\n    ), aseq(0, length(/addrs)-1)\n  )\n),\n\n/out/x/dim = [/maxlen, /planecount],\n/out/y/dim = /out/x/dim,\n/out/curve/dim = /out/x/dim,\n/out/x/setbuf = /unique + \"-xbuf\" + /count,\n/out/y/setbuf = /unique + \"-ybuf\" + /count,\n/out/curve/setbuf = /unique + \"-cbuf\" + /count,\n/out/count = /count,\n/count = (/count + 1) % 2",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -2752,7 +2784,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "FullPacket" ],
-									"patching_rect" : [ 56.0, 11.0, 30.0, 30.0 ],
+									"patching_rect" : [ 56.0, 10.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -2802,7 +2834,7 @@
 									"destination" : [ "obj-2", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 123.5, 2283.0, 941.0, 2283.0, 941.0, 40.0, 146.5, 40.0 ],
+									"midpoints" : [ 123.5, 2283.0, 941.0, 2283.0, 941.0, 34.0, 146.5, 34.0 ],
 									"source" : [ "obj-3", 0 ]
 								}
 
