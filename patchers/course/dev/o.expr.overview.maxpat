@@ -241,7 +241,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 209.0, 246.0, 37.0, 22.0 ],
-					"presentation_rect" : [ 220.0, 187.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "set 0"
 				}
@@ -256,7 +255,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "front", "bang" ],
 					"patching_rect" : [ 152.0, 246.0, 51.0, 22.0 ],
-					"presentation_rect" : [ 156.0, 187.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "t front b"
 				}
@@ -311,7 +309,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 60.0, 74.0, 328.0, 87.0 ],
+					"patching_rect" : [ 60.0, 74.0, 333.0, 87.0 ],
 					"style" : "",
 					"text" : "This is an overview of the odot expression language that is meant to be a primer and reference into getting started using some of the more powerful features in the odot library.  Although this library is available in Max/MSP/Jitter, it can also be found implemented in a number of other languages, and the things you learn here will translate elsewhere."
 				}
@@ -3051,7 +3049,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 193.0, 535.5, 175.0, 43.0 ],
-									"presentation_rect" : [ 193.0, 546.5, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "here, we grab the value stored in 'a' and assign it to 'c'.  note how we access 'a':  value(\"/a\")"
 								}
@@ -3761,7 +3758,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 20.0, 101.0, 56.0, 21.0 ],
-									"presentation_rect" : [ 18.0, 91.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "loadbang"
 								}
@@ -3776,7 +3772,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 816.0, 141.0, 56.0, 21.0 ],
-									"presentation_rect" : [ 848.0, 141.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "loadbang"
 								}
@@ -3790,7 +3785,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 687.0, 452.0, 333.0, 33.0 ],
-									"presentation_rect" : [ 412.0, 461.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "...as you might expect, there are many other math functions that can be found in the o.expr.codebox help file!"
 								}
@@ -4259,7 +4253,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 524.0, 371.0, 56.0, 21.0 ],
-									"presentation_rect" : [ 495.0, 383.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "loadbang"
 								}
@@ -4274,7 +4267,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 873.0, 105.0, 56.0, 21.0 ],
-									"presentation_rect" : [ 870.0, 110.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "loadbang"
 								}
@@ -4289,7 +4281,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 454.0, 105.0, 56.0, 21.0 ],
-									"presentation_rect" : [ 536.0, 94.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "loadbang"
 								}
@@ -4302,7 +4293,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 199.0, 128.0, 150.0, 20.0 ],
-									"presentation_rect" : [ 322.0, 292.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "accessing elements: [[]]"
 								}
