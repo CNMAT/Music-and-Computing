@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -38,6 +38,97 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-15",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "FullPacket" ],
+					"patching_rect" : [ 223.0, 460.0, 100.0, 35.0 ],
+					"style" : "",
+					"text" : "m158.o.resonators~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontsize" : 12.0,
+					"id" : "obj-14",
+					"linecount" : 3,
+					"maxclass" : "o.compose",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 505.0, 99.0, 196.0, 51.0 ],
+					"presentation_rect" : [ 506.0, 101.5, 0.0, 0.0 ],
+					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 47, 104, 122, 0, 44, 105, 105, 105, 0, 0, 0, 0, 0, 0, 2, 38, 0, 0, 2, -18, 0, 0, 6, 124, 0, 0, 0, 40, 47, 97, 109, 112, 0, 0, 0, 0, 44, 100, 100, 100, 0, 0, 0, 0, 63, -16, 0, 0, 0, 0, 0, 0, 63, -32, 0, 0, 0, 0, 0, 0, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 36, 47, 114, 97, 116, 101, 0, 0, 0, 44, 100, 100, 105, 0, 0, 0, 0, 63, -55, -103, -103, -103, -103, -103, -102, 63, -20, -52, -52, -52, -52, -52, -51, 0, 0, 0, 2 ],
+					"saved_bundle_length" : 128,
+					"text" : "/hz : [550, 750, 1660],\n/amp : [1., 0.5, 2.],\n/rate : [0.2, 0.9, 2]",
+					"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"channels" : 1,
+					"fontsize" : 13.0,
+					"id" : "obj-13",
+					"maxclass" : "live.gain~",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"orientation" : 1,
+					"outlettype" : [ "signal", "", "float", "list" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 56.0, 272.0, 136.0, 35.0 ],
+					"presentation_rect" : [ 54.5, 271.0, 50.0, 35.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "live.gain~[2]",
+							"parameter_shortname" : "live.gain~",
+							"parameter_type" : 0,
+							"parameter_mmin" : -70.0,
+							"parameter_mmax" : 6.0,
+							"parameter_initial_enable" : 1,
+							"parameter_initial" : [ -70 ],
+							"parameter_unitstyle" : 4
+						}
+
+					}
+,
+					"showname" : 0,
+					"varname" : "live.gain~[2]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 18.0, 132.0, 174.0, 22.0 ],
+					"style" : "",
+					"text" : "440 1 0.2 550 0.5 0.9 660 2. 2."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "list" ],
+					"patching_rect" : [ 68.0, 232.0, 74.0, 22.0 ],
+					"style" : "",
+					"text" : "resonators~"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "spectroscope~",
 					"numinlets" : 2,
@@ -58,7 +149,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 513.0, 107.0, 189.0, 51.0 ],
+					"patching_rect" : [ 505.0, 33.5, 189.0, 51.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 47, 104, 122, 0, 44, 105, 105, 105, 0, 0, 0, 0, 0, 0, 1, -72, 0, 0, 2, 38, 0, 0, 2, -108, 0, 0, 0, 40, 47, 97, 109, 112, 0, 0, 0, 0, 44, 100, 100, 100, 0, 0, 0, 0, 63, -16, 0, 0, 0, 0, 0, 0, 63, -32, 0, 0, 0, 0, 0, 0, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 36, 47, 114, 97, 116, 101, 0, 0, 0, 44, 100, 100, 105, 0, 0, 0, 0, 63, -55, -103, -103, -103, -103, -103, -102, 63, -20, -52, -52, -52, -52, -52, -51, 0, 0, 0, 2 ],
 					"saved_bundle_length" : 128,
 					"text" : "/hz : [440, 550, 660],\n/amp : [1., 0.5, 2.],\n/rate : [0.2, 0.9, 2]",
@@ -275,6 +366,42 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -347,6 +474,24 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-9", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -365,6 +510,7 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-13" : [ "live.gain~[2]", "live.gain~", 0 ],
 			"obj-8" : [ "live.gain~[1]", "live.gain~", 0 ]
 		}
 ,
@@ -378,6 +524,18 @@
 				"name" : "gen.resonators.gendsp",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/course/dev/resonators",
 				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.doc.handler.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "m158.o.resonators~.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/sound-engines/resonators",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
@@ -402,6 +560,22 @@
 			}
 , 			{
 				"name" : "o.expr.codebox.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.cond.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.prepend.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "resonators~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "res-transform.mxo",
 				"type" : "iLaX"
 			}
  ],

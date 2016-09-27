@@ -54,7 +54,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 38.0, 105.0, 1368.0, 761.0 ],
+						"rect" : [ 0.0, 26.0, 1368.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -134,7 +134,6 @@
 													"numinlets" : 1,
 													"numoutlets" : 0,
 													"patching_rect" : [ 942.166687, 730.0, 30.0, 30.0 ],
-													"presentation_rect" : [ 1010.0, 205.0, 0.0, 0.0 ],
 													"style" : ""
 												}
 
@@ -1017,17 +1016,6 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-31",
-									"maxclass" : "scope~",
-									"numinlets" : 2,
-									"numoutlets" : 0,
-									"patching_rect" : [ 1200.0, 447.0, 130.0, 130.0 ],
-									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-15",
 									"maxclass" : "number",
 									"numinlets" : 1,
@@ -1486,7 +1474,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u456005316"
+									"varname" : "u424005215"
 								}
 
 							}
@@ -1881,7 +1869,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1368.0, 761.0 ],
+						"rect" : [ 38.0, 105.0, 1368.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1950,7 +1938,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 55.0, 99.0, 354.0, 141.0 ],
 									"style" : "",
-									"text" : "Arpeggios are \"notes of a chord played in sucssion\" -- we can also think of them as patterns within a clearly defined pitch grid.\n\nIn this example, we use the index parameter of m158.o.points.phase~ to switch between pitch collections or scales, so that the /step pattern articulates the pitches with its melodic contour.\n\nSee the \"pitches\" subpatch for more details on how we wrap the step numbers to be within the pitch collection."
+									"text" : "Arpeggios are \"notes of a chord played in succession\" -- we can also think of them as patterns within a clearly defined pitch grid.\n\nIn this example, we use the index parameter of m158.o.points.phase~ to switch between pitch collections or scales, so that the /step pattern articulates the pitches with its melodic contour.\n\nSee the \"pitches\" subpatch for more details on how we wrap the step numbers to be within the pitch collection."
 								}
 
 							}
@@ -3379,7 +3367,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u355006132"
+									"varname" : "u820004285"
 								}
 
 							}
@@ -4103,9 +4091,9 @@
  ],
 		"lines" : [  ],
 		"parameters" : 		{
+			"obj-4::obj-53" : [ "live.gain~[3]", "live.gain~", 0 ],
 			"obj-1::obj-53" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-3::obj-53" : [ "live.gain~[2]", "live.gain~", 0 ],
-			"obj-4::obj-53" : [ "live.gain~[3]", "live.gain~", 0 ]
+			"obj-3::obj-53" : [ "live.gain~[2]", "live.gain~", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

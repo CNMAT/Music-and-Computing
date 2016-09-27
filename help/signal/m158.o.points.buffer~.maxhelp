@@ -450,7 +450,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u577002203"
+									"varname" : "u829002654"
 								}
 
 							}
@@ -821,7 +821,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 111.0, 118.5, 149.0, 22.0 ],
+									"patching_rect" : [ 111.0, 128.5, 149.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.gui.function /func"
 								}
@@ -986,7 +986,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 38.450005, 591.030151, 123.0, 20.0 ],
+									"patching_rect" : [ 32.450005, 591.030151, 123.0, 20.0 ],
 									"style" : "",
 									"text" : "interpolated y output "
 								}
@@ -1145,7 +1145,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u700001862"
+									"varname" : "u706002903"
 								}
 
 							}
@@ -1242,7 +1242,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 667.5, 26.5, 199.0, 27.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~"
+									"text" : "m158.o.points.buffer~"
 								}
 
 							}
