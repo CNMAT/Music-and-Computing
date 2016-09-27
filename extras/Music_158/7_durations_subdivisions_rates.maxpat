@@ -103,7 +103,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 63.0, 76.0, 89.0, 33.0 ],
-									"presentation_rect" : [ 60.0, 76.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "m158A"
 								}
@@ -143,7 +142,6 @@
 					}
 ,
 					"patching_rect" : [ 147.0, 54.5, 55.0, 22.0 ],
-					"presentation_rect" : [ 147.0, 54.5, 0.0, 0.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -241,7 +239,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 322.25, 620.0, 131.0, 24.0 ],
-									"presentation_rect" : [ 254.75, 555.0, 0.0, 0.0 ],
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 47, 110, 117, 109, 118, 111, 105, 99, 101, 115, 0, 0, 44, 105, 0, 0, 0, 0, 0, 16 ],
 									"saved_bundle_length" : 40,
 									"text" : "/numvoices : 16",
@@ -259,7 +256,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 322.25, 591.0, 131.0, 24.0 ],
-									"presentation_rect" : [ 95.75, 563.0, 0.0, 0.0 ],
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 47, 110, 117, 109, 118, 111, 105, 99, 101, 115, 0, 0, 44, 105, 0, 0, 0, 0, 0, 64 ],
 									"saved_bundle_length" : 40,
 									"text" : "/numvoices : 64",
@@ -277,7 +273,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 322.25, 532.0, 131.0, 24.0 ],
-									"presentation_rect" : [ 154.75, 532.0, 0.0, 0.0 ],
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 47, 100, 117, 114, 97, 116, 105, 111, 110, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 100 ],
 									"saved_bundle_length" : 40,
 									"text" : "/duration : 100",
@@ -417,7 +412,6 @@
 													"numinlets" : 1,
 													"numoutlets" : 0,
 													"patching_rect" : [ 737.5, 686.5, 116.0, 20.0 ],
-													"presentation_rect" : [ 752.200012, 676.5, 0.0, 0.0 ],
 													"style" : "",
 													"text" : "to o.granubuf~ rate"
 												}
@@ -430,7 +424,6 @@
 													"numinlets" : 1,
 													"numoutlets" : 0,
 													"patching_rect" : [ 184.200012, 561.5, 126.0, 20.0 ],
-													"presentation_rect" : [ 184.200012, 560.0, 0.0, 0.0 ],
 													"style" : "",
 													"text" : "to o.granubuf~ trigger"
 												}
@@ -1477,7 +1470,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u714001047"
+									"varname" : "u427006567"
 								}
 
 							}
@@ -1516,7 +1509,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "FullPacket" ],
+									"outlettype" : [ "" ],
 									"patching_rect" : [ 498.0, 260.5, 190.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.duration2x /rhythm/norm"
@@ -2269,7 +2262,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "FullPacket" ],
+									"outlettype" : [ "" ],
 									"patching_rect" : [ 414.0, 268.5, 161.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.duration2x /beat/dur"
@@ -2429,7 +2422,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 38.0, 105.0, 1232.0, 748.0 ],
+						"rect" : [ 0.0, 26.0, 1232.0, 748.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3096,7 +3089,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "FullPacket" ],
+									"outlettype" : [ "" ],
 									"patching_rect" : [ 673.0, 351.0, 184.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.duration2x /rhythm/norm"
@@ -3774,7 +3767,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "FullPacket" ],
+									"outlettype" : [ "" ],
 									"patching_rect" : [ 750.0, 228.0, 184.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.duration2x /rhythm/norm"
@@ -4294,7 +4287,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1232.0, 748.0 ],
+						"rect" : [ 38.0, 105.0, 1232.0, 748.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -4376,19 +4369,6 @@
 									"patching_rect" : [ 766.700012, 346.0, 351.0, 51.0 ],
 									"style" : "",
 									"text" : "m158.o.duration2x converts duration values to /x start times, starting at 0 and ending at 1. Since an end point is required to represent the duration, an extra /x point is added."
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bubble" : 1,
-									"id" : "obj-3",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 611.700012, 20.5, 165.0, 24.0 ],
-									"style" : "",
-									"text" : "click to send data through"
 								}
 
 							}
@@ -4605,13 +4585,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-4",
-									"linecount" : 2,
+									"linecount" : 6,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 22.0, 45.5, 385.0, 33.0 ],
+									"patching_rect" : [ 22.0, 47.5, 385.0, 87.0 ],
 									"style" : "",
-									"text" : "Sometimes, people like to specify a phrase with rhythm described as duration of beats."
+									"text" : "Sometimes, people like to specify a phrase with rhythm described as duration of beats.\n\nIn this examle, a set of durations is specified in /beat/pattern, we then need to convert the beats to x axis points so we can use m158.o.points.buffer~ as a lookup table."
 								}
 
 							}
@@ -4681,7 +4661,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 611.700012, 414.0, 550.599976, 129.0 ],
-									"text" : "/beat/dur : 200,\n/beat/pattern : [3, 3, 1, 1, 3],\n/beat/interval : [0, 7, 4, 10, 3],\n/pattern/length : 11,\n/dur : 2200,\n/rhythm/norm : [0.272727, 0.272727, 0.0909091, 0.0909091, 0.272727],\n/baseMIDI : 50,\n/rhythm/norm/x : [0., 0.272727, 0.545455, 0.636364, 0.727273, 1.]",
+									"text" : "/beat/dur : 200,\n/beat/pattern : [3, 3, 1, 1, 3],\n/beat/interval : [0, 7, 4, 10, 3],\n/num/beats : 11,\n/dur : 2200,\n/rhythm/norm : [0.272727, 0.272727, 0.0909091, 0.0909091, 0.272727],\n/baseMIDI : 50,\n/rhythm/norm/x : [0., 0.272727, 0.545455, 0.636364, 0.727273, 1.]",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -4697,7 +4677,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 601.700012, 214.0, 550.599976, 116.0 ],
-									"text" : "/beat/dur : 200,\n/beat/pattern : [3, 3, 1, 1, 3],\n/beat/interval : [0, 7, 4, 10, 3],\n/pattern/length : 11,\n/dur : 2200,\n/rhythm/norm : [0.272727, 0.272727, 0.0909091, 0.0909091, 0.272727],\n/baseMIDI : 50",
+									"text" : "/beat/dur : 200,\n/beat/pattern : [3, 3, 1, 1, 3],\n/beat/interval : [0, 7, 4, 10, 3],\n/num/beats : 11,\n/dur : 2200,\n/rhythm/norm : [0.272727, 0.272727, 0.0909091, 0.0909091, 0.272727],\n/baseMIDI : 50",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -4741,8 +4721,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 575.0, 47.5, 439.0, 154.0 ],
-									"text" : "/beat/dur = 200,\n/beat/pattern =  [3,  3,  1,  1,  3],\n/beat/interval = [0,  7,  4,  10,  3],\n/pattern/length = sum(/beat/pattern),\n/dur = /beat/dur * /pattern/length,\n\n# scale rhythm to be relative to pattern length\n/rhythm/norm = float32(/beat/pattern) / /pattern/length,\n\n/baseMIDI = 50",
+									"patching_rect" : [ 575.0, 47.5, 539.0, 154.0 ],
+									"text" : "/beat/dur = 200,\n/beat/pattern =  [3,  3,  1,  1,  3],\n/beat/interval = [0,  7,  4,  10,  3],\n/num/beats = sum(/beat/pattern),\n/dur = /beat/dur * /num/beats,\n\n# scale rhythm to be relative to the number of beats in the total phrase\n/rhythm/norm = float32(/beat/pattern) / /num/beats,\n\n/baseMIDI = 50",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -5055,7 +5035,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "m158.o.duration2x.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/course/dev",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/notes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
