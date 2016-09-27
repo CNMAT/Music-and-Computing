@@ -54,7 +54,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 38.0, 105.0, 1232.0, 748.0 ],
+						"rect" : [ 0.0, 26.0, 1232.0, 748.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2429,7 +2429,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1232.0, 748.0 ],
+						"rect" : [ 38.0, 105.0, 1232.0, 748.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2535,10 +2535,11 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-8",
+									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1020.0, 179.166672, 231.0, 20.0 ],
+									"patching_rect" : [ 1020.0, 179.166672, 188.0, 33.0 ],
 									"style" : "",
 									"text" : "odot version sets max count with address"
 								}
