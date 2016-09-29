@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 206.0, 91.0, 753.0, 531.0 ],
+		"rect" : [ 52.0, 82.0, 385.0, 219.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -53,13 +53,13 @@
 				"box" : 				{
 					"fontsize" : 11.0,
 					"id" : "obj-8",
-					"linecount" : 3,
+					"linecount" : 5,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 99.5, 124.5, 210.0, 43.0 ],
+					"patching_rect" : [ 99.5, 124.5, 210.0, 68.0 ],
 					"style" : "",
-					"text" : "note that the comment does not show up in the resultant bundle.  \nit is exclusively there for the programmer."
+					"text" : "comments are created with the special character # (pound sign).\nnote that the comment does not show up in the resultant bundle.  \nit is exclusively there for the programmer."
 				}
 
 			}
@@ -87,6 +87,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 24.0, 124.5, 65.0, 33.0 ],
+					"text" : "/foo : 4",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 

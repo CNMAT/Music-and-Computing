@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 206.0, 91.0, 464.0, 300.0 ],
+		"rect" : [ 72.0, 112.0, 464.0, 300.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -59,11 +59,13 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-6",
+					"linecount" : 3,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 15.0, 193.0, 224.0, 33.0 ],
+					"patching_rect" : [ 15.0, 193.0, 257.0, 58.0 ],
+					"text" : "/foo : 300,\n/bundle/member,\n/post : \"found a bundle element\"",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 

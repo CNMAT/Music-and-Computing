@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 206.0, 91.0, 295.0, 373.0 ],
+		"rect" : [ 90.0, 98.0, 295.0, 373.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -45,7 +45,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 37.0, 293.0, 191.0, 33.0 ],
+					"patching_rect" : [ 54.0, 210.0, 191.0, 33.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -55,13 +55,12 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-21",
-					"linecount" : 3,
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 37.0, 195.0, 184.0, 59.0 ],
-					"text" : "/rounded = round(/input),\n/ceiling = ceil(/input),\n/floor = floor(/input)",
+					"patching_rect" : [ 54.0, 151.0, 158.0, 31.0 ],
+					"text" : "/floor = floor(/input)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -77,7 +76,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 37.0, 23.0, 47.0, 21.0 ],
+					"patching_rect" : [ 54.0, 78.0, 47.0, 21.0 ],
 					"style" : ""
 				}
 
@@ -90,7 +89,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 37.0, 56.0, 73.0, 21.0 ],
+					"patching_rect" : [ 54.0, 111.0, 73.0, 21.0 ],
 					"style" : "",
 					"text" : "o.pack /input"
 				}

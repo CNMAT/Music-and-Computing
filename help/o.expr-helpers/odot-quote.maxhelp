@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 206.0, 91.0, 753.0, 531.0 ],
+		"rect" : [ 65.0, 89.0, 204.0, 248.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -43,7 +43,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 231.0, 77.0, 60.0, 22.0 ],
+					"patching_rect" : [ 41.0, 30.0, 60.0, 22.0 ],
 					"style" : "",
 					"text" : "loadbang"
 				}
@@ -54,12 +54,13 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-25",
+					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 196.0, 246.0, 244.0, 33.0 ],
-					"text" : "/quoted : \"4\"",
+					"patching_rect" : [ 41.0, 128.0, 98.0, 45.0 ],
+					"text" : "/int : 4,\n/string : \"4\"",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -74,8 +75,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 196.0, 164.0, 151.0, 43.0 ],
-					"text" : "/quoted = quote(4), \n/int = 4",
+					"patching_rect" : [ 41.0, 65.0, 131.0, 43.0 ],
+					"text" : "/int = 4,\n/string = quote(4)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 

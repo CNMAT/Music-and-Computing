@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 206.0, 91.0, 970.0, 407.0 ],
+		"rect" : [ 61.0, 88.0, 402.0, 397.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -41,11 +41,13 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-17",
+					"linecount" : 4,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 641.0, 251.0, 224.0, 33.0 ],
+					"patching_rect" : [ 60.0, 266.0, 224.0, 70.0 ],
+					"text" : "/input : true,\n/larger : false,\n/smaller : true,\n/result : \"always within bounds\"",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -60,23 +62,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 641.0, 109.0, 283.0, 118.0 ],
-					"text" : "/larger = /input > 1,\n/smaller = /input < 5,\n\nif(\n  /input = /larger | /input = /smaller, \n  /result = \"always within bounds\", \n  /result = \"out of bounds\"\n)",
+					"patching_rect" : [ 60.0, 124.0, 291.0, 118.0 ],
+					"text" : "/larger = /input > 1,\n/smaller = /input < 5,\n\nif(\n  /input = /larger || /input = /smaller, \n  /result = \"always within bounds\", \n  /result = \"out of bounds\"\n)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 0,
-					"fontsize" : 11.0,
-					"id" : "obj-13",
-					"maxclass" : "o.display",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 331.0, 251.0, 178.0, 33.0 ],
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -91,7 +79,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 331.0, 23.0, 50.0, 21.0 ],
+					"patching_rect" : [ 60.0, 46.0, 50.0, 21.0 ],
 					"style" : ""
 				}
 
@@ -104,55 +92,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 331.0, 53.0, 73.0, 21.0 ],
+					"patching_rect" : [ 60.0, 76.0, 73.0, 21.0 ],
 					"style" : "",
 					"text" : "o.pack /input"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 0,
-					"fontsize" : 11.0,
-					"id" : "obj-16",
-					"linecount" : 8,
-					"maxclass" : "o.expr.codebox",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 331.0, 109.0, 290.0, 118.0 ],
-					"text" : "/larger = /input > 1,\n/smaller = /input < 5,\n\nif(\n  /input = /larger && /input = /smaller, \n  /result = \"within bounds\", \n  /result = \"out of bounds\"\n)",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 0,
-					"fontsize" : 11.0,
-					"id" : "obj-12",
-					"maxclass" : "o.display",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 28.0, 251.0, 171.0, 33.0 ],
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 0,
-					"fontsize" : 11.0,
-					"id" : "obj-4",
-					"linecount" : 6,
-					"maxclass" : "o.expr.codebox",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 28.0, 109.0, 263.0, 93.0 ],
-					"text" : "/compare = 3,\n/equal = /input == /compare,\n/less/than = /input < /compare,\n/less/equal/to = /input <= /compare,\n/greater = /input > /compare,\n/greater/equal/to = /input >= /compare",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -168,37 +110,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-16", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-15", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-15", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-15", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-16", 0 ]
 				}
 
 			}
@@ -211,26 +126,17 @@
 				}
 
 			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-12", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-4", 0 ]
-				}
-
-			}
  ],
 		"dependency_cache" : [ 			{
+				"name" : "o.pack.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "o.expr.codebox.mxo",
 				"type" : "iLaX"
 			}
 , 			{
 				"name" : "o.display.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.pack.mxo",
 				"type" : "iLaX"
 			}
  ],

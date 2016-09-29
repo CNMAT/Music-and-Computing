@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 206.0, 91.0, 975.0, 432.0 ],
+		"rect" : [ 49.0, 79.0, 303.0, 278.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,50 +38,6 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
-					"fontface" : 0,
-					"fontsize" : 11.0,
-					"id" : "obj-17",
-					"maxclass" : "o.display",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 638.0, 290.0, 224.0, 33.0 ],
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 0,
-					"fontsize" : 11.0,
-					"id" : "obj-20",
-					"linecount" : 8,
-					"maxclass" : "o.expr.codebox",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 638.0, 148.0, 283.0, 118.0 ],
-					"text" : "/larger = /input > 1,\n/smaller = /input < 5,\n\nif(\n  /input = /larger | /input = /smaller, \n  /result = \"always within bounds\", \n  /result = \"out of bounds\"\n)",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 0,
-					"fontsize" : 11.0,
-					"id" : "obj-13",
-					"maxclass" : "o.display",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 328.0, 290.0, 178.0, 33.0 ],
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontsize" : 11.0,
 					"id" : "obj-14",
 					"maxclass" : "number",
@@ -91,7 +47,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 328.0, 62.0, 50.0, 21.0 ],
+					"patching_rect" : [ 34.0, 27.0, 50.0, 21.0 ],
 					"style" : ""
 				}
 
@@ -104,7 +60,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 328.0, 92.0, 73.0, 21.0 ],
+					"patching_rect" : [ 34.0, 57.0, 73.0, 21.0 ],
 					"style" : "",
 					"text" : "o.pack /input"
 				}
@@ -114,28 +70,14 @@
 				"box" : 				{
 					"fontface" : 0,
 					"fontsize" : 11.0,
-					"id" : "obj-16",
-					"linecount" : 8,
-					"maxclass" : "o.expr.codebox",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 328.0, 148.0, 290.0, 118.0 ],
-					"text" : "/larger = /input > 1,\n/smaller = /input < 5,\n\nif(\n  /input = /larger && /input = /smaller, \n  /result = \"within bounds\", \n  /result = \"out of bounds\"\n)",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 0,
-					"fontsize" : 11.0,
 					"id" : "obj-12",
+					"linecount" : 3,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 290.0, 171.0, 33.0 ],
+					"patching_rect" : [ 34.0, 159.0, 171.0, 58.0 ],
+					"text" : "/input : 5,\n/compare : 3,\n/less/than : false",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -145,13 +87,13 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-4",
-					"linecount" : 6,
+					"linecount" : 2,
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 25.0, 148.0, 263.0, 93.0 ],
-					"text" : "/compare = 3,\n/equal = /input == /compare,\n/less/than = /input < /compare,\n/less/equal/to = /input <= /compare,\n/greater = /input > /compare,\n/greater/equal/to = /input >= /compare",
+					"patching_rect" : [ 34.0, 91.0, 211.0, 43.0 ],
+					"text" : "/compare = 3,\n/less/than = /input < /compare",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -168,46 +110,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-16", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-15", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-20", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-15", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-15", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-16", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-17", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-20", 0 ]
 				}
 
 			}

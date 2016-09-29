@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 206.0, 91.0, 390.0, 235.0 ],
+		"rect" : [ 53.0, 99.0, 390.0, 235.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -71,6 +71,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 23.0, 141.5, 150.0, 34.0 ],
+					"text" : "/param/2 : \"two\"",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 

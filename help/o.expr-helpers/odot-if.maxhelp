@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 206.0, 91.0, 381.0, 323.0 ],
+		"rect" : [ 51.0, 85.0, 304.0, 327.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -48,7 +48,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 25.0, 23.0, 48.0, 21.0 ],
+					"patching_rect" : [ 25.0, 23.0, 67.0, 21.0 ],
 					"style" : ""
 				}
 
@@ -61,7 +61,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 25.0, 74.0, 125.0, 21.0 ],
+					"patching_rect" : [ 25.0, 74.0, 73.0, 21.0 ],
 					"style" : "",
 					"text" : "o.pack /input"
 				}
@@ -72,11 +72,13 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-5",
+					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 251.0, 184.0, 33.0 ],
+					"patching_rect" : [ 25.0, 205.0, 191.0, 45.0 ],
+					"text" : "/input : 0.41,\n/threshold/exceeded : false",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 

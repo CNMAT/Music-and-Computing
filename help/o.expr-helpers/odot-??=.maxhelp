@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 206.0, 91.0, 753.0, 531.0 ],
+		"rect" : [ 49.0, 113.0, 487.0, 381.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,16 +38,27 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-8",
+					"linecount" : 6,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 35.0, 234.0, 424.0, 87.0 ],
+					"style" : "",
+					"text" : "??=\n\nnull coalescing operator.\nthis comparator looks at the input and if it's bound, it leaves it alone.  if it's not bound, or not present, it creates a default value dictated by the right of the operation."
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-6",
-					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 439.0, 268.0, 150.0, 48.0 ],
-					"presentation_rect" : [ 439.0, 268.0, 0.0, 0.0 ],
+					"patching_rect" : [ 221.0, 174.0, 157.0, 34.0 ],
 					"text" : "/depends : [1, 2, 3]",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -62,7 +73,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 182.0, 275.0, 150.0, 34.0 ],
+					"patching_rect" : [ 30.0, 174.0, 150.0, 34.0 ],
 					"text" : "/depends : \"string\"",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -77,8 +88,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 359.0, 154.0, 171.0, 32.0 ],
-					"presentation_rect" : [ 359.0, 153.0, 0.0, 0.0 ],
+					"patching_rect" : [ 221.0, 110.0, 171.0, 32.0 ],
 					"text" : "/depends ??= [1, 2, 3]",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -93,7 +103,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 182.0, 105.0, 159.0, 24.0 ],
+					"patching_rect" : [ 30.0, 73.0, 159.0, 24.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 47, 100, 101, 112, 101, 110, 100, 115, 0, 0, 0, 0, 44, 115, 0, 0, 115, 116, 114, 105, 110, 103, 0, 0 ],
 					"saved_bundle_length" : 44,
 					"text" : "/depends : \"string\"",
@@ -110,7 +120,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 176.0, 154.0, 171.0, 32.0 ],
+					"patching_rect" : [ 30.0, 110.0, 171.0, 32.0 ],
 					"text" : "/depends ??= [1, 2, 3]",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -123,7 +133,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 168.0, 69.0, 60.0, 22.0 ],
+					"patching_rect" : [ 30.0, 25.0, 60.0, 22.0 ],
 					"style" : "",
 					"text" : "loadbang"
 				}
@@ -144,6 +154,7 @@
 					"destination" : [ "obj-4", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 39.5, 63.0, 230.5, 63.0 ],
 					"source" : [ "obj-1", 0 ]
 				}
 

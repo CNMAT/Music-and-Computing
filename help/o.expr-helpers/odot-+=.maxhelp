@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 206.0, 91.0, 342.0, 299.0 ],
+		"rect" : [ 71.0, 79.0, 258.0, 271.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -44,7 +44,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 150.0, 131.0, 68.0, 31.0 ],
+					"patching_rect" : [ 144.0, 123.0, 68.0, 31.0 ],
 					"style" : "",
 					"text" : "augmented assignment"
 				}
@@ -58,7 +58,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 37.0, 14.0, 56.0, 21.0 ],
+					"patching_rect" : [ 31.0, 30.0, 56.0, 21.0 ],
 					"style" : "",
 					"text" : "loadbang"
 				}
@@ -69,15 +69,14 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-16",
-					"linecount" : 4,
 					"maxclass" : "o.compose",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 37.0, 53.0, 102.0, 60.0 ],
-					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 47, 112, 108, 117, 115, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 1, 0, 0, 0, 16, 47, 116, 105, 109, 101, 115, 0, 0, 44, 105, 0, 0, 0, 0, 0, 3, 0, 0, 0, 16, 47, 100, 105, 118, 0, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 16, 0, 0, 0, 16, 47, 115, 117, 98, 0, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 5 ],
-					"saved_bundle_length" : 96,
-					"text" : "/plus : 1,\n/times : 3,\n/div : 16,\n/sub : 5",
+					"patching_rect" : [ 31.0, 69.0, 82.0, 23.0 ],
+					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 47, 112, 108, 117, 115, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 1 ],
+					"saved_bundle_length" : 36,
+					"text" : "/plus : 1",
 					"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 				}
 
@@ -87,11 +86,13 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-14",
+					"linecount" : 4,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 37.0, 224.0, 92.0, 33.0 ],
+					"patching_rect" : [ 31.0, 161.0, 92.0, 70.0 ],
+					"text" : "/plus : 2,\n/times : 3,\n/div : 16,\n/sub : 5",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -101,13 +102,12 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-15",
-					"linecount" : 4,
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 37.0, 131.0, 98.0, 68.0 ],
-					"text" : "/plus += 1,\n/times *= 3,\n/div /= 4,\n/sub -= 2",
+					"patching_rect" : [ 31.0, 108.0, 79.0, 31.0 ],
+					"text" : "/plus += 1",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
