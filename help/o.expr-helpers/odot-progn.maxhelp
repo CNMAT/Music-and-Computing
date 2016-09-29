@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 206.0, 91.0, 859.0, 498.0 ],
+		"rect" : [ 75.0, 92.0, 830.0, 393.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -84,11 +84,13 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-25",
+					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 410.0, 258.0, 145.0, 33.0 ],
+					"patching_rect" : [ 410.0, 258.0, 145.0, 45.0 ],
+					"text" : "/input : 5,\n/freq : [44, 54, 74]",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -114,11 +116,13 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-24",
+					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 35.0, 258.0, 92.0, 33.0 ],
+					"patching_rect" : [ 35.0, 258.0, 92.0, 45.0 ],
+					"text" : "/input : 5,\n/freq : 74",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 

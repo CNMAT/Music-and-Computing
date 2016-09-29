@@ -44,7 +44,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 26.0, 26.0, 56.0, 21.0 ],
+					"patching_rect" : [ 58.0, 52.0, 56.0, 21.0 ],
 					"style" : "",
 					"text" : "loadbang"
 				}
@@ -59,7 +59,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 26.0, 164.0, 164.0, 33.0 ],
+					"patching_rect" : [ 58.0, 152.0, 164.0, 33.0 ],
+					"text" : "/two/times/two : 4",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -69,13 +70,12 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-13",
-					"linecount" : 4,
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 26.0, 71.0, 191.0, 68.0 ],
-					"text" : "/two/plus/two = 2 + 2,\n/two/minus/one = 2 - 1,\n/two/times/two = 2 * 2,\n/two/divided/by/two = 2 / 2",
+					"patching_rect" : [ 58.0, 97.0, 158.0, 31.0 ],
+					"text" : "/two/times/two = 2 * 2",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 

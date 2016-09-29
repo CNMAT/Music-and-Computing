@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 206.0, 91.0, 418.0, 397.0 ],
+		"rect" : [ 60.0, 88.0, 358.0, 334.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -45,7 +45,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 47.0, 256.0, 178.0, 33.0 ],
+					"patching_rect" : [ 34.0, 234.0, 178.0, 33.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -61,7 +61,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 47.0, 28.0, 50.0, 21.0 ],
+					"patching_rect" : [ 34.0, 25.0, 50.0, 21.0 ],
 					"style" : ""
 				}
 
@@ -74,7 +74,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 47.0, 58.0, 73.0, 21.0 ],
+					"patching_rect" : [ 34.0, 55.0, 73.0, 21.0 ],
 					"style" : "",
 					"text" : "o.pack /input"
 				}
@@ -90,7 +90,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 47.0, 114.0, 290.0, 118.0 ],
+					"patching_rect" : [ 34.0, 92.0, 290.0, 118.0 ],
 					"text" : "/larger = /input > 1,\n/smaller = /input < 5,\n\nif(\n  /input = /larger && /input = /smaller, \n  /result = \"within bounds\", \n  /result = \"out of bounds\"\n)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}

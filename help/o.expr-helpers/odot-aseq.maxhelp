@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 206.0, 91.0, 405.0, 300.0 ],
+		"rect" : [ 55.0, 99.0, 379.0, 365.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,13 +38,26 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-2",
+					"linecount" : 7,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 126.0, 37.0, 245.0, 100.0 ],
+					"style" : "",
+					"text" : "aseq()\n\narithmetic sequence.\naseq can be used to generate any sized sequence starting from a start value and ending in an end value, with a specified step increase."
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontsize" : 11.0,
 					"id" : "obj-12",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 142.0, 59.0, 56.0, 21.0 ],
+					"patching_rect" : [ 32.0, 121.0, 56.0, 21.0 ],
 					"style" : "",
 					"text" : "loadbang"
 				}
@@ -55,11 +68,13 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-20",
+					"linecount" : 7,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 142.0, 145.0, 330.0, 33.0 ],
+					"patching_rect" : [ 32.0, 232.0, 330.0, 108.0 ],
+					"text" : "/count/whole : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],\n/count/fractional : [0.5, 0.75, 1., 1.25, 1.5, 1.75, 2., 2.25, 2.5, 2.75, 3., 3.25, 3.5, 3.75, 4., 4.25, 4.5, 4.75, 5., 5.25, 5.5, 5.75, 6., 6.25, 6.5, 6.75, 7., 7.25, 7.5, 7.75, 8., 8.25, 8.5, 8.75, 9., 9.25, 9.5, 9.75, 10.]",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -74,7 +89,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 142.0, 95.0, 270.0, 43.0 ],
+					"patching_rect" : [ 32.0, 169.0, 270.0, 43.0 ],
 					"text" : "/count/whole = aseq(1, 20, 1),\n/count/fractional = aseq(0.5, 10, 0.25)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}

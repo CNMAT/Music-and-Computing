@@ -100,11 +100,13 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-41",
+					"linecount" : 3,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 29.0, 170.5, 157.0, 34.0 ],
+					"patching_rect" : [ 29.0, 170.5, 157.0, 61.0 ],
+					"text" : "/a : 4,\n/b : 100,\n/c : 4",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -119,7 +121,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 29.0, 116.5, 164.0, 31.0 ],
-					"text" : "assign(/c, value(\"/a\"))",
+					"text" : "/c = value(\"/a\")",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 

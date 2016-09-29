@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 206.0, 91.0, 753.0, 531.0 ],
+		"rect" : [ 65.0, 92.0, 321.0, 270.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,14 +38,29 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 29.0, 28.0, 60.0, 22.0 ],
+					"style" : "",
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-25",
+					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 148.0, 186.0, 244.0, 33.0 ],
+					"patching_rect" : [ 29.0, 153.0, 224.0, 45.0 ],
+					"text" : "/list : [100, 3, 42, 12, 1000],\n/length : 5",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -60,22 +75,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 148.0, 104.0, 462.0, 43.0 ],
-					"text" : "/idx = aseq(0, length(/addys) - 1),\nmap(lambda([l,i], assign(\"/new\"+i, /addys[[i]] + 10)), /addys, /idx)",
+					"patching_rect" : [ 29.0, 71.0, 224.0, 43.0 ],
+					"text" : "/list = [100, 3, 42, 12, 1000],\n/length = length(/list)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-24",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 148.0, 50.0, 105.0, 22.0 ],
-					"style" : "",
-					"text" : "o.route /pulled/val"
 				}
 
 			}
@@ -85,7 +87,7 @@
 					"destination" : [ "obj-26", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-24", 1 ]
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -100,10 +102,6 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "o.route.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "o.expr.codebox.mxo",
 				"type" : "iLaX"
 			}

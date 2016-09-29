@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 206.0, 91.0, 351.0, 334.0 ],
+		"rect" : [ 51.0, 93.0, 411.0, 316.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -72,11 +72,13 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-23",
+					"linecount" : 3,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 35.0, 205.0, 244.0, 33.0 ],
+					"patching_rect" : [ 35.0, 205.0, 328.0, 58.0 ],
+					"text" : "/param/1 : [1, 3, 5],\n/param/2 : [222, 2, 3],\n/names/of/parameters : [\"/param/1\", \"/param/2\"]",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -86,13 +88,12 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-21",
-					"linecount" : 3,
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 35.0, 123.0, 257.0, 56.0 ],
-					"text" : "/addys = getaddresses(), \n/index = 1,\n/pulled/val = value(/addys[[/index]])",
+					"patching_rect" : [ 35.0, 123.0, 257.0, 31.0 ],
+					"text" : "/names/of/parameters = getaddresses()",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 

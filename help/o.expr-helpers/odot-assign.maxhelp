@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 206.0, 91.0, 463.0, 620.0 ],
+		"rect" : [ 57.0, 103.0, 714.0, 375.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -43,7 +43,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 166.0, 235.5, 96.0, 19.0 ],
+					"patching_rect" : [ 304.0, 231.5, 96.0, 19.0 ],
 					"style" : "",
 					"text" : "colon assignment"
 				}
@@ -57,7 +57,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 166.0, 268.5, 175.0, 80.0 ],
+					"patching_rect" : [ 304.0, 267.5, 175.0, 80.0 ],
 					"style" : "",
 					"text" : "assign bundle parameters by typing them into an o.compose box.  even though there is no expression here, the values are still bound within the context of the compose box and are valid."
 				}
@@ -73,7 +73,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 33.0, 268.5, 80.0, 38.0 ],
+					"patching_rect" : [ 215.0, 267.5, 80.0, 38.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 47, 97, 0, 0, 44, 105, 0, 0, 0, 0, 0, 4, 0, 0, 0, 12, 47, 98, 0, 0, 44, 105, 0, 0, 0, 0, 0, 100 ],
 					"saved_bundle_length" : 48,
 					"text" : "/a : 4,\n/b : 100",
@@ -120,7 +120,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 33.0, 444.5, 167.0, 38.0 ],
+					"patching_rect" : [ 434.0, 55.5, 167.0, 38.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 47, 110, 97, 109, 101, 0, 0, 0, 44, 115, 0, 0, 47, 109, 121, 47, 110, 97, 109, 101, 0, 0, 0, 0, 0, 0, 0, 28, 47, 100, 97, 116, 97, 0, 0, 0, 44, 105, 105, 105, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 3, 0, 0, 0, 6 ],
 					"saved_bundle_length" : 76,
 					"text" : "/name : \"/my/name\",\n/data : [1, 3, 6]",
@@ -135,7 +135,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 33.0, 413.5, 60.0, 22.0 ],
+					"patching_rect" : [ 434.0, 24.5, 60.0, 22.0 ],
 					"style" : "",
 					"text" : "loadbang"
 				}
@@ -148,7 +148,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 166.0, 413.5, 169.0, 19.0 ],
+					"patching_rect" : [ 567.0, 24.5, 169.0, 19.0 ],
 					"style" : "",
 					"text" : "dynamic assignment"
 				}
@@ -159,11 +159,13 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-38",
+					"linecount" : 3,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 33.0, 542.5, 157.0, 34.0 ],
+					"patching_rect" : [ 434.0, 137.5, 157.0, 61.0 ],
+					"text" : "/name : \"/my/name\",\n/data : [1, 3, 6],\n/my/name : [1, 3, 6]",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -177,7 +179,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 33.0, 488.5, 191.0, 31.0 ],
+					"patching_rect" : [ 434.0, 99.5, 191.0, 31.0 ],
 					"text" : "assign(value(/name), /data)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -215,11 +217,13 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-14",
+					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 33.0, 130.5, 171.0, 34.0 ],
+					"patching_rect" : [ 33.0, 130.5, 171.0, 48.0 ],
+					"text" : "/param/1 : [1, 3, 5],\n/param/2 : [1, 2, 3]",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 

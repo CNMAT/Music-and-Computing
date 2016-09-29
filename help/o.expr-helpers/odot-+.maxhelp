@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 206.0, 91.0, 299.0, 258.0 ],
+		"rect" : [ 62.0, 79.0, 299.0, 258.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -44,7 +44,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 26.0, 26.0, 56.0, 21.0 ],
+					"patching_rect" : [ 66.0, 53.0, 56.0, 21.0 ],
 					"style" : "",
 					"text" : "loadbang"
 				}
@@ -59,7 +59,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 26.0, 164.0, 164.0, 33.0 ],
+					"patching_rect" : [ 66.0, 161.0, 164.0, 33.0 ],
+					"text" : "/two/plus/two : 4",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -69,13 +70,12 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-13",
-					"linecount" : 4,
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 26.0, 71.0, 191.0, 68.0 ],
-					"text" : "/two/plus/two = 2 + 2,\n/two/minus/one = 2 - 1,\n/two/times/two = 2 * 2,\n/two/divided/by/two = 2 / 2",
+					"patching_rect" : [ 66.0, 98.0, 151.0, 31.0 ],
+					"text" : "/two/plus/two = 2 + 2",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 

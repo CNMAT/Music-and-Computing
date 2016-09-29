@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 206.0, 91.0, 353.0, 279.0 ],
+		"rect" : [ 57.0, 83.0, 353.0, 279.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -42,11 +42,13 @@
 					"format" : 6,
 					"id" : "obj-6",
 					"maxclass" : "flonum",
+					"maximum" : 12544.0,
+					"minimum" : 8.175847,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 46.0, 20.0, 47.0, 21.0 ],
+					"patching_rect" : [ 97.0, 70.0, 109.0, 21.0 ],
 					"style" : ""
 				}
 
@@ -59,9 +61,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 46.0, 71.0, 125.0, 21.0 ],
+					"patching_rect" : [ 97.0, 104.0, 83.0, 21.0 ],
 					"style" : "",
-					"text" : "o.pack /fundamental/hz"
+					"text" : "o.pack /freq/hz"
 				}
 
 			}
@@ -70,11 +72,13 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-5",
+					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 46.0, 185.0, 264.0, 33.0 ],
+					"patching_rect" : [ 97.0, 177.0, 138.0, 45.0 ],
+					"text" : "/freq/hz : 14.749,\n/midi : 10.2142",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -84,13 +88,12 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-3",
-					"linecount" : 3,
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 46.0, 108.0, 246.0, 56.0 ],
-					"text" : "/midi = ftom(/fundamental/hz),\n/midi/int = int32(floor(/midi)),\n/frequency = mtof(/midi)",
+					"patching_rect" : [ 97.0, 137.0, 158.0, 31.0 ],
+					"text" : "/midi = ftom(/freq/hz)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 

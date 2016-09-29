@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 206.0, 91.0, 348.0, 300.0 ],
+		"rect" : [ 206.0, 91.0, 254.0, 267.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,15 +38,32 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
-					"fontsize" : 11.0,
-					"format" : 6,
-					"id" : "obj-6",
-					"maxclass" : "flonum",
+					"id" : "obj-4",
+					"maxclass" : "number",
+					"maximum" : 127,
+					"minimum" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 80.0, 55.0, 47.0, 21.0 ],
+					"patching_rect" : [ 89.0, 19.0, 50.0, 22.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 11.0,
+					"format" : 6,
+					"id" : "obj-6",
+					"maxclass" : "flonum",
+					"maximum" : 127.0,
+					"minimum" : 0.0,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 25.0, 19.0, 47.0, 21.0 ],
 					"style" : ""
 				}
 
@@ -59,9 +76,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 80.0, 106.0, 125.0, 21.0 ],
+					"patching_rect" : [ 25.0, 70.0, 69.0, 21.0 ],
 					"style" : "",
-					"text" : "o.pack /fundamental/hz"
+					"text" : "o.pack /midi"
 				}
 
 			}
@@ -70,11 +87,13 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-5",
+					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 80.0, 220.0, 264.0, 33.0 ],
+					"patching_rect" : [ 25.0, 184.0, 178.0, 45.0 ],
+					"text" : "/midi : 38,\n/frequency : 73.4162",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -84,13 +103,12 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-3",
-					"linecount" : 3,
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 80.0, 143.0, 246.0, 56.0 ],
-					"text" : "/midi = ftom(/fundamental/hz),\n/midi/int = int32(floor(/midi)),\n/frequency = mtof(/midi)",
+					"patching_rect" : [ 25.0, 107.0, 171.0, 31.0 ],
+					"text" : "/frequency = mtof(/midi)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -111,6 +129,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-4", 0 ]
 				}
 
 			}
