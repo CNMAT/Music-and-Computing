@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 51.0, 85.0, 304.0, 327.0 ],
+		"rect" : [ 51.0, 85.0, 595.0, 371.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,32 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-8",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 285.0, 32.0, 51.0, 20.0 ],
+					"style" : "",
+					"text" : "if()"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"linecount" : 14,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 285.0, 67.0, 283.0, 194.0 ],
+					"style" : "",
+					"text" : "conditionally execute < arg2 > or optional <arg 3> based on the result of < arg1 >.\nin other words, branch a program's execution based on the logical evaluation of the first argument.\n\narguments:\n\n1. if\n2. then\n3. (optional) else\n\nnote:  function can be used inline or can be assigned to a variable."
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontsize" : 11.0,
 					"format" : 6,
 					"id" : "obj-6",
@@ -48,7 +74,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 25.0, 23.0, 67.0, 21.0 ],
+					"patching_rect" : [ 32.0, 32.0, 73.0, 21.0 ],
 					"style" : ""
 				}
 
@@ -61,7 +87,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 25.0, 74.0, 73.0, 21.0 ],
+					"patching_rect" : [ 32.0, 66.0, 73.0, 21.0 ],
 					"style" : "",
 					"text" : "o.pack /input"
 				}
@@ -72,13 +98,13 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-5",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 205.0, 191.0, 45.0 ],
-					"text" : "/input : 0.41,\n/threshold/exceeded : false",
+					"patching_rect" : [ 32.0, 270.0, 204.0, 58.0 ],
+					"text" : "/input : 1.,\n/threshold/exceeded : false,\n/result : false",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -88,13 +114,13 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-3",
-					"linecount" : 5,
+					"linecount" : 11,
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 25.0, 109.0, 217.0, 81.0 ],
-					"text" : "if(\n  /input > 0.5, \n  /threshold/exceeded = true, \n  /threshold/exceeded = false\n)",
+					"patching_rect" : [ 32.0, 101.0, 217.0, 156.0 ],
+					"text" : "if(\n  /input > 0.5, \n  /threshold/exceeded = true, \n  /threshold/exceeded = false\n),\n\n/result = if(\n  /input < 0.5, \n  /threshold/exceeded = true, \n  /threshold/exceeded = false\n)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 

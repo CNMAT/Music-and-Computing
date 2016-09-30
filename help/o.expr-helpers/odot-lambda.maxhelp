@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 63.0, 93.0, 634.0, 298.0 ],
+		"rect" : [ 63.0, 93.0, 666.0, 323.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,14 +38,41 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontsize" : 11.0,
 					"id" : "obj-3",
-					"linecount" : 14,
+					"linecount" : 5,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 363.0, 48.0, 253.0, 194.0 ],
+					"patching_rect" : [ 67.5, 132.0, 282.0, 68.0 ],
 					"style" : "",
-					"text" : "lambda()\n\nthe lambda function allows you to execute a function in place.  this can be accomplished via the apply() function (function application), or via the map() funtion (function mapping).  \n\nhere we have an example whereby a lambda is defined and operates on the two variables \"seq\" and \"val\".  note that although the val is a singleton, it is added to each element in the sequences, meaning that there is an auto-expansion of \"val\" to each element of \"seq\"."
+					"text" : "here we have an example whereby a lambda is defined and operates on the two variables \"seq\" and \"val\".  note that although the val is a singleton, it is added to each element in the sequences, meaning that there is an auto-expansion of \"val\" to each element of \"seq\"."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-8",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 372.5, 23.0, 61.0, 20.0 ],
+					"style" : "",
+					"text" : "lambda()"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"linecount" : 11,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 372.5, 58.0, 263.0, 154.0 ],
+					"style" : "",
+					"text" : "lambda()\n\nthe lambda function allows you to execute an anonymous function in place.  this can be accomplished via apply() (function application), or map() (function mapping).  \n\narguments:\n\n1. list of arguments to pass to function\n2. function body"
 				}
 
 			}
@@ -72,7 +99,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 37.0, 135.0, 244.0, 58.0 ],
+					"patching_rect" : [ 37.0, 224.0, 244.0, 58.0 ],
 					"text" : "/val : 456,\n/seq : [0, 1, 2, 3],\n/res : [456, 457, 458, 459]",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -89,7 +116,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 37.0, 54.0, 316.0, 56.0 ],
-					"text" : "/val = 456,\n/seq = aseq(0, 3),\napply(lambda([l,i], /res = l + i), /val, /seq)",
+					"text" : "/val = 456,\n/seq = aseq(0, 3),\napply(lambda([v,s], /res = v + s), /val, /seq)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 

@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 63.0, 92.0, 304.0, 241.0 ],
+		"rect" : [ 63.0, 92.0, 500.0, 240.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,32 @@
 		"style" : "",
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-1",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 281.0, 38.0, 51.0, 20.0 ],
+					"style" : "",
+					"text" : "sqrt()"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 281.0, 73.0, 211.0, 74.0 ],
+					"style" : "",
+					"text" : "return the square root of an input.\n\narguments: \n\n1. input to be squared"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontsize" : 11.0,
 					"id" : "obj-6",

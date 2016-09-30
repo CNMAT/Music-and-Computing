@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 49.0, 113.0, 487.0, 381.0 ],
+		"rect" : [ 54.0, 90.0, 680.0, 250.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,14 +38,27 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-8",
+					"fontface" : 1,
+					"id" : "obj-7",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 416.0, 25.0, 51.0, 20.0 ],
+					"style" : "",
+					"text" : "??="
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
 					"linecount" : 6,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 35.0, 234.0, 424.0, 87.0 ],
+					"patching_rect" : [ 416.0, 60.0, 250.0, 87.0 ],
 					"style" : "",
-					"text" : "??=\n\nnull coalescing operator.\nthis comparator looks at the input and if it's bound, it leaves it alone.  if it's not bound, or not present, it creates a default value dictated by the right of the operation."
+					"text" : "null coalescing operator.\nthis comparator looks at the input and if the input is bound, leaves it alone.  if it's not bound (or not present), it assigns a default  dictated by the value to the right of the operator."
 				}
 
 			}

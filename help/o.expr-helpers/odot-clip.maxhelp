@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 55.0, 93.0, 328.0, 327.0 ],
+		"rect" : [ 55.0, 96.0, 618.0, 288.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,32 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-8",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 297.0, 36.0, 51.0, 20.0 ],
+					"style" : "",
+					"text" : "clip()"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"linecount" : 10,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 297.0, 71.0, 293.0, 141.0 ],
+					"style" : "",
+					"text" : "clip an input to bounds.\nthis function takes a single input (can be a list of one or more elements), and clips within a defined output range.\n\narguments:  \n\n1. input to be scaled\n2. output min\n3. output max"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontsize" : 11.0,
 					"format" : 6,
 					"id" : "obj-6",
@@ -47,7 +73,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 48.0, 38.0, 47.0, 21.0 ],
+					"patching_rect" : [ 42.0, 36.0, 47.0, 21.0 ],
 					"style" : ""
 				}
 
@@ -60,7 +86,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 48.0, 71.0, 73.0, 21.0 ],
+					"patching_rect" : [ 42.0, 69.0, 73.0, 21.0 ],
 					"style" : "",
 					"text" : "o.pack /input"
 				}
@@ -76,8 +102,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 48.0, 207.0, 191.0, 45.0 ],
-					"text" : "/input : 0.5,\n/clipped : 0.5",
+					"patching_rect" : [ 42.0, 205.0, 191.0, 45.0 ],
+					"text" : "/input : 0.066,\n/clipped : 0.5",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -91,7 +117,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 48.0, 109.0, 230.0, 31.0 ],
+					"patching_rect" : [ 42.0, 107.0, 230.0, 31.0 ],
 					"text" : "/clipped = clip(/input, 0.5, 1.0)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}

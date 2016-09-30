@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 70.0, 97.0, 292.0, 237.0 ],
+		"rect" : [ 70.0, 97.0, 558.0, 243.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,32 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-8",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 275.0, 39.0, 51.0, 20.0 ],
+					"style" : "",
+					"text" : "sum()"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"linecount" : 7,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 275.0, 74.0, 245.0, 100.0 ],
+					"style" : "",
+					"text" : "sum a list of elements and return the result.\n\narguments:  \n\n1. list to sum\n\nnote that a single element will sum to itself."
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontsize" : 11.0,
 					"id" : "obj-11",
 					"maxclass" : "newobj",
@@ -55,11 +81,13 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-4",
+					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 40.0, 152.0, 215.0, 33.0 ],
+					"patching_rect" : [ 40.0, 152.0, 215.0, 45.0 ],
+					"text" : "/list : [1, 2, 3, 4, 5],\n/sum : 15",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 

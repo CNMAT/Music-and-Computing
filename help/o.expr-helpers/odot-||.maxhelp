@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 61.0, 88.0, 402.0, 397.0 ],
+		"rect" : [ 61.0, 102.0, 652.0, 392.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,16 +38,40 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-8",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 386.0, 46.0, 148.0, 20.0 ],
+					"style" : "",
+					"text" : "||, logical OR"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 386.0, 81.0, 223.0, 74.0 ],
+					"style" : "",
+					"text" : "logical || operand.  compare two pieces of data and return a boolean representing the result.  the result will be true if either expression/value is non-negative or true."
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-17",
-					"linecount" : 4,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 60.0, 266.0, 224.0, 70.0 ],
-					"text" : "/input : true,\n/larger : false,\n/smaller : true,\n/result : \"always within bounds\"",
+					"patching_rect" : [ 60.0, 266.0, 224.0, 33.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 

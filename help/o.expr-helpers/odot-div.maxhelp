@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 71.0, 101.0, 245.0, 211.0 ],
+		"rect" : [ 63.0, 105.0, 400.0, 208.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,31 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-8",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 253.0, 21.0, 49.0, 20.0 ],
+					"style" : "",
+					"text" : "/, div()"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 253.0, 56.0, 117.0, 20.0 ],
+					"style" : "",
+					"text" : "divide two values."
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontsize" : 11.0,
 					"id" : "obj-19",
 					"maxclass" : "newobj",
@@ -55,12 +80,13 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-12",
+					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 30.0, 122.0, 164.0, 33.0 ],
-					"text" : "/two/divided/by/two : 1",
+					"patching_rect" : [ 30.0, 122.0, 178.0, 45.0 ],
+					"text" : "/two/divided/by/two : 1,\n/one : 1",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -70,12 +96,13 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-13",
+					"linecount" : 2,
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 30.0, 66.0, 191.0, 31.0 ],
-					"text" : "/two/divided/by/two = 2 / 2",
+					"patching_rect" : [ 30.0, 66.0, 204.0, 43.0 ],
+					"text" : "/two/divided/by/two = 2 / 2,\n/one = div(2, 2)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 

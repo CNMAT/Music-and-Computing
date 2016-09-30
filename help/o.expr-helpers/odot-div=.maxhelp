@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 86.0, 96.0, 306.0, 253.0 ],
+		"rect" : [ 74.0, 109.0, 414.0, 232.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,14 +38,27 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
-					"fontsize" : 11.0,
-					"id" : "obj-4",
+					"fontface" : 1,
+					"id" : "obj-1",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 133.0, 70.0, 125.0, 19.0 ],
+					"patching_rect" : [ 151.0, 35.0, 51.0, 20.0 ],
 					"style" : "",
-					"text" : "augmented assignment"
+					"text" : "/="
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 151.0, 70.0, 232.0, 47.0 ],
+					"style" : "",
+					"text" : "divide an address by a number and reassign said address.  also known as augmented assignment."
 				}
 
 			}
@@ -85,13 +98,12 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-14",
-					"linecount" : 4,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 37.0, 149.0, 92.0, 70.0 ],
-					"text" : "/plus : 2,\n/times : 9,\n/div : 4,\n/sub : 3",
+					"patching_rect" : [ 37.0, 149.0, 92.0, 33.0 ],
+					"text" : "/div : 4",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 

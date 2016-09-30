@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 61.0, 85.0, 579.0, 458.0 ],
+		"rect" : [ 61.0, 85.0, 550.0, 459.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,13 +39,39 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-2",
-					"linecount" : 9,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 34.0, 47.0, 60.0, 22.0 ],
+					"style" : "",
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-8",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 331.0, 257.0, 159.0, 127.0 ],
+					"patching_rect" : [ 130.5, 47.0, 51.0, 20.0 ],
 					"style" : "",
-					"text" : "map()\n\nmap a function to addresses.  a function can be mapped to one or more addresses at a time, based on the number of parameters you send in to it."
+					"text" : "map()"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"linecount" : 8,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 130.5, 82.0, 370.0, 114.0 ],
+					"style" : "",
+					"text" : "map a function to addresses.  a function can be mapped to one or more addresses at a time, based on the number of parameters you send in to it.\n\narguments:\n\n1. function to map (defined as a lambda or evaluated to a lambda)\n2. addresses to pass into function that is to be evaluated\n"
 				}
 
 			}
@@ -54,13 +80,13 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-25",
-					"linecount" : 10,
+					"linecount" : 5,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 59.0, 257.0, 244.0, 145.0 ],
-					"text" : "/foo : 123,\n/fee : 456,\n/fah : 789,\n/addys : [\"/foo\", \"/fee\", \"/fah\"],\n/index : 1,\n/pulled/val : 456,\n/idx : [0, 1, 2],\n/new0 : \"/foo10\",\n/new1 : \"/fee10\",\n/new2 : \"/fah10\"",
+					"patching_rect" : [ 34.0, 345.0, 184.0, 83.0 ],
+					"text" : "/addys : [123, 456, 789],\n/idx : [0, 1, 2],\n/new/0 : 133,\n/new/1 : 466,\n/new/2 : 799",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -70,67 +96,24 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-26",
-					"linecount" : 2,
+					"linecount" : 6,
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 59.0, 175.0, 462.0, 43.0 ],
-					"text" : "/idx = aseq(0, length(/addys) - 1),\nmap(lambda([l,i], assign(\"/new\"+i, /addys[[i]] + 10)), /addys, /idx)",
+					"patching_rect" : [ 34.0, 232.0, 377.0, 93.0 ],
+					"text" : "/list = [123, 456, 789],\n/idx = aseq(0, length(/list) - 1),\nmap(\n  lambda([l,i], assign(\"/new/\"+i, /addys[[i]] + 10)), \n  /addys, /idx\n)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 0,
-					"fontsize" : 11.0,
-					"id" : "obj-21",
-					"linecount" : 3,
-					"maxclass" : "o.expr.codebox",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 59.0, 87.0, 257.0, 56.0 ],
-					"text" : "/addys = getaddresses(), \n/index = 1,\n/pulled/val = value(/addys[[/index]])",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 0,
-					"fontsize" : 11.0,
-					"id" : "obj-17",
-					"linecount" : 3,
-					"maxclass" : "o.compose",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 59.0, 19.0, 102.0, 48.0 ],
-					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 47, 102, 111, 111, 0, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 123, 0, 0, 0, 16, 47, 102, 101, 101, 0, 0, 0, 0, 44, 105, 0, 0, 0, 0, 1, -56, 0, 0, 0, 16, 47, 102, 97, 104, 0, 0, 0, 0, 44, 105, 0, 0, 0, 0, 3, 21 ],
-					"saved_bundle_length" : 76,
-					"text" : "/foo : 123,\n/fee : 456,\n/fah : 789",
-					"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 				}
 
 			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-17", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-26", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-21", 0 ]
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -145,10 +128,6 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "o.compose.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "o.expr.codebox.mxo",
 				"type" : "iLaX"
 			}

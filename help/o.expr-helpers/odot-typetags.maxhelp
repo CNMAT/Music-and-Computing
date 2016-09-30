@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 206.0, 91.0, 657.0, 413.0 ],
+		"rect" : [ 49.0, 96.0, 760.0, 392.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,32 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-4",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 534.0, 17.0, 68.0, 20.0 ],
+					"style" : "",
+					"text" : "typetags()"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"linecount" : 13,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 534.0, 52.0, 211.0, 181.0 ],
+					"style" : "",
+					"text" : "typetags is a function that returns a list of one or more elements (depending on the value inspected) representing the type of each list element.\nnote that since lists can have varied types, this is useful for gathering information about what a specfic parameter does.\n\narguments:\n\n1. input to return typetags for"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -53,13 +79,13 @@
 				"box" : 				{
 					"fontsize" : 11.0,
 					"id" : "obj-18",
-					"linecount" : 6,
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 508.0, 117.5, 87.0, 80.0 ],
+					"patching_rect" : [ 408.0, 154.5, 102.0, 43.0 ],
 					"style" : "",
-					"text" : "type primitives:\n\nint\nfloat\nstring\nlist"
+					"text" : "type primitives:\n\nint, float, string, list"
 				}
 
 			}
@@ -73,7 +99,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 489.0, 203.0, 125.0, 73.0 ],
+					"patching_rect" : [ 392.0, 210.0, 125.0, 73.0 ],
 					"text" : "/int = 300,\n/float = 4.5,\n/string = \"4\",\n/list = [1, 2, 3]",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -89,7 +115,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 489.0, 291.0, 125.0, 70.0 ],
+					"patching_rect" : [ 392.0, 298.0, 125.0, 70.0 ],
 					"text" : "/int : 300,\n/float : 4.5,\n/string : \"4\",\n/list : [1, 2, 3]",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -105,25 +131,11 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 27.0, 46.5, 82.0, 60.0 ],
+					"patching_rect" : [ 27.0, 62.5, 82.0, 60.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64, 47, 102, 111, 111, 0, 0, 0, 0, 44, 46, 0, 0, 0, 0, 0, 48, 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 47, 97, 0, 0, 44, 105, 0, 0, 0, 0, 0, 1, 0, 0, 0, 12, 47, 98, 0, 0, 44, 105, 0, 0, 0, 0, 0, 2 ],
 					"saved_bundle_length" : 84,
 					"text" : "/foo : {\n\t/a : 1,\n\t/b : 2\n}",
 					"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontsize" : 11.0,
-					"id" : "obj-12",
-					"linecount" : 6,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 115.5, 44.5, 379.0, 80.0 ],
-					"style" : "",
-					"text" : "typetags()\n\ntypetags is a function that returns a list of one or more elements (depending on the value inspected) representing the type of each list element.\nnote that since lists can have varied types, this is useful for gathering information about what a specfic parameter does."
 				}
 
 			}
@@ -183,7 +195,7 @@
 					"destination" : [ "obj-1", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 36.5, 39.5, 498.5, 39.5 ],
+					"midpoints" : [ 36.5, 59.5, 401.5, 59.5 ],
 					"source" : [ "obj-2", 0 ]
 				}
 

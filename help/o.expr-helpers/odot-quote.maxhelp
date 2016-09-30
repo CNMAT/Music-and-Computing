@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 65.0, 89.0, 204.0, 248.0 ],
+		"rect" : [ 68.0, 110.0, 471.0, 221.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,12 +38,38 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-8",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 194.0, 36.0, 51.0, 20.0 ],
+					"style" : "",
+					"text" : "quote()"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"linecount" : 7,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 194.0, 71.0, 258.0, 100.0 ],
+					"style" : "",
+					"text" : "surround any piece of data in quotes.\n\nthis is equivalent to using the string() function.\n\narguments: \n\n1. data to quote"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 41.0, 30.0, 60.0, 22.0 ],
+					"patching_rect" : [ 40.0, 36.0, 60.0, 22.0 ],
 					"style" : "",
 					"text" : "loadbang"
 				}
@@ -59,7 +85,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 41.0, 128.0, 98.0, 45.0 ],
+					"patching_rect" : [ 40.0, 134.0, 125.0, 45.0 ],
 					"text" : "/int : 4,\n/string : \"4\"",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -75,7 +101,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 41.0, 65.0, 131.0, 43.0 ],
+					"patching_rect" : [ 40.0, 71.0, 131.0, 43.0 ],
 					"text" : "/int = 4,\n/string = quote(4)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}

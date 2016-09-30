@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 206.0, 91.0, 492.0, 309.0 ],
+		"rect" : [ 60.0, 91.0, 446.0, 306.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,13 +38,39 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-8",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 234.0, 37.5, 49.0, 20.0 ],
+					"style" : "",
+					"text" : "value()"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"linecount" : 6,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 234.0, 72.5, 193.0, 87.0 ],
+					"style" : "",
+					"text" : "grab a value and use it elsewhere\n(copying data)\n\narguments:\n\n1. value to acquire"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontsize" : 11.0,
 					"id" : "obj-6",
 					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 198.0, 170.5, 175.0, 43.0 ],
+					"patching_rect" : [ 47.0, 167.5, 175.0, 43.0 ],
 					"style" : "",
 					"text" : "here, we grab the value stored in 'a' and assign it to 'c'.  note how we access 'a':  value(\"/a\")"
 				}
@@ -60,7 +86,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 29.0, 72.5, 80.0, 38.0 ],
+					"patching_rect" : [ 29.0, 69.5, 80.0, 38.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 47, 97, 0, 0, 44, 105, 0, 0, 0, 0, 0, 4, 0, 0, 0, 12, 47, 98, 0, 0, 44, 105, 0, 0, 0, 0, 0, 100 ],
 					"saved_bundle_length" : 48,
 					"text" : "/a : 4,\n/b : 100",
@@ -75,23 +101,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 29.0, 41.5, 60.0, 22.0 ],
+					"patching_rect" : [ 29.0, 37.5, 60.0, 22.0 ],
 					"style" : "",
 					"text" : "loadbang"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontsize" : 11.0,
-					"id" : "obj-37",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 189.0, 72.5, 179.0, 31.0 ],
-					"style" : "",
-					"text" : "grab a value and use it elsewhere\n(copying data)"
 				}
 
 			}
@@ -105,7 +117,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 29.0, 170.5, 157.0, 61.0 ],
+					"patching_rect" : [ 29.0, 220.5, 157.0, 61.0 ],
 					"text" : "/a : 4,\n/b : 100,\n/c : 4",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}

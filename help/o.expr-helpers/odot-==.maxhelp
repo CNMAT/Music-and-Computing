@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 51.0, 85.0, 308.0, 280.0 ],
+		"rect" : [ 66.0, 99.0, 490.0, 255.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,32 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-8",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 245.0, 29.0, 148.0, 20.0 ],
+					"style" : "",
+					"text" : "==, equal"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"linecount" : 6,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 245.0, 64.0, 216.0, 87.0 ],
+					"style" : "",
+					"text" : "logical == operand.  compare two pieces of data and return a boolean representing the result.  the result will be true if the data to the left of the operand is equal to the right, and vice versa."
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontsize" : 11.0,
 					"id" : "obj-14",
 					"maxclass" : "number",
@@ -47,7 +73,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 45.0, 21.0, 50.0, 21.0 ],
+					"patching_rect" : [ 30.0, 29.0, 50.0, 21.0 ],
 					"style" : ""
 				}
 
@@ -60,7 +86,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 45.0, 51.0, 73.0, 21.0 ],
+					"patching_rect" : [ 30.0, 59.0, 73.0, 21.0 ],
 					"style" : "",
 					"text" : "o.pack /input"
 				}
@@ -76,8 +102,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 45.0, 161.0, 171.0, 58.0 ],
-					"text" : "/input : 3,\n/compare : 3,\n/equal : true",
+					"patching_rect" : [ 30.0, 169.0, 171.0, 58.0 ],
+					"text" : "/input : 5,\n/compare : 3,\n/equal : false",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -92,7 +118,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 45.0, 89.0, 191.0, 43.0 ],
+					"patching_rect" : [ 30.0, 97.0, 191.0, 43.0 ],
 					"text" : "/compare = 3,\n/equal = /input == /compare",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}

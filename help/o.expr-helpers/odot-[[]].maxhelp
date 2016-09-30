@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 67.0, 81.0, 311.0, 285.0 ],
+		"rect" : [ 54.0, 96.0, 574.0, 298.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,13 +38,27 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-9",
+					"fontface" : 1,
+					"id" : "obj-8",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 115.0, 39.0, 136.0, 20.0 ],
+					"patching_rect" : [ 270.0, 31.0, 115.0, 20.0 ],
 					"style" : "",
-					"text" : "accessing elements: [[]]"
+					"text" : "[[]], list access"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"linecount" : 6,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 270.0, 66.0, 274.0, 87.0 ],
+					"style" : "",
+					"text" : "access members of a list based on an argument.\n\narguments:\n\n1. list of elements to return from the referenced address."
 				}
 
 			}
@@ -53,13 +67,13 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-28",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 36.0, 207.0, 138.0, 45.0 ],
-					"text" : "/list : [6, 5, 4],\n/second/element : 5",
+					"patching_rect" : [ 29.0, 199.0, 178.0, 58.0 ],
+					"text" : "/list : [6, 5, 4],\n/second : 5,\n/first/and/third : [6, 4]",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -69,13 +83,13 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-29",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 36.0, 99.0, 197.0, 43.0 ],
-					"text" : "/list = [6, 5, 4],\n/second/element = /list[[1]]",
+					"patching_rect" : [ 29.0, 91.0, 224.0, 56.0 ],
+					"text" : "/list = [6, 5, 4],\n/second = /list[[1]],\n/first/and/third = /list[[0, 2]]",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -88,7 +102,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 36.0, 39.0, 56.0, 21.0 ],
+					"patching_rect" : [ 29.0, 31.0, 56.0, 21.0 ],
 					"style" : "",
 					"text" : "loadbang"
 				}

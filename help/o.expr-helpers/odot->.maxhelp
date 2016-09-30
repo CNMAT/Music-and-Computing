@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 54.0, 79.0, 359.0, 356.0 ],
+		"rect" : [ 56.0, 106.0, 526.0, 266.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,32 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-8",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 270.0, 39.0, 148.0, 20.0 ],
+					"style" : "",
+					"text" : ">, greater than"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 270.0, 74.0, 216.0, 74.0 ],
+					"style" : "",
+					"text" : "logical > operand.  compare two pieces of data and return a boolean representing the result.  the result will be true if the data to the left of the operand is greater than the right."
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontsize" : 11.0,
 					"id" : "obj-14",
 					"maxclass" : "number",
@@ -47,7 +73,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 79.0, 72.0, 50.0, 21.0 ],
+					"patching_rect" : [ 41.0, 39.0, 50.0, 21.0 ],
 					"style" : ""
 				}
 
@@ -60,7 +86,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 79.0, 102.0, 73.0, 21.0 ],
+					"patching_rect" : [ 41.0, 69.0, 73.0, 21.0 ],
 					"style" : "",
 					"text" : "o.pack /input"
 				}
@@ -71,13 +97,11 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-12",
-					"linecount" : 3,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 79.0, 211.0, 171.0, 58.0 ],
-					"text" : "/input : 1,\n/compare : 3,\n/greater : false",
+					"patching_rect" : [ 41.0, 178.0, 171.0, 33.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -92,7 +116,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 79.0, 145.0, 197.0, 43.0 ],
+					"patching_rect" : [ 41.0, 112.0, 197.0, 43.0 ],
 					"text" : "/compare = 3,\n/greater = /input > /compare",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}

@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 57.0, 83.0, 353.0, 279.0 ],
+		"rect" : [ 57.0, 102.0, 634.0, 261.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,32 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-8",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 321.0, 25.0, 51.0, 20.0 ],
+					"style" : "",
+					"text" : "mtof()"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"linecount" : 9,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 321.0, 60.0, 285.0, 127.0 ],
+					"style" : "",
+					"text" : "convert an input of one or more list elements into MIDI float representation.  the input is expected to be represented in Hz.  floats are accepted.\n\narguments:\n\n1. input to convert\n\nexpression: 69 + ((12 * log(/input / 440.0)) / log(2))"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontsize" : 11.0,
 					"format" : 6,
 					"id" : "obj-6",
@@ -48,7 +74,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 97.0, 70.0, 109.0, 21.0 ],
+					"patching_rect" : [ 33.0, 25.0, 92.0, 21.0 ],
 					"style" : ""
 				}
 
@@ -61,7 +87,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 97.0, 104.0, 83.0, 21.0 ],
+					"patching_rect" : [ 33.0, 59.0, 83.0, 21.0 ],
 					"style" : "",
 					"text" : "o.pack /freq/hz"
 				}
@@ -72,13 +98,13 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-5",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 97.0, 177.0, 138.0, 45.0 ],
-					"text" : "/freq/hz : 14.749,\n/midi : 10.2142",
+					"patching_rect" : [ 33.0, 160.0, 145.0, 58.0 ],
+					"text" : "/freq/hz : 83.348,\n/midi : 40.1966,\n/midi/rounded : 40.",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -88,12 +114,13 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-3",
+					"linecount" : 2,
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 97.0, 137.0, 158.0, 31.0 ],
-					"text" : "/midi = ftom(/freq/hz)",
+					"patching_rect" : [ 33.0, 101.0, 257.0, 43.0 ],
+					"text" : "/midi = ftom(/freq/hz),\n/midi/rounded = round(ftom(/freq/hz))",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 

@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 206.0, 91.0, 254.0, 267.0 ],
+		"rect" : [ 80.0, 97.0, 558.0, 307.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,32 @@
 		"style" : "",
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-8",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 230.0, 19.0, 51.0, 20.0 ],
+					"style" : "",
+					"text" : "mtof()"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"linecount" : 9,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 230.0, 54.0, 315.0, 127.0 ],
+					"style" : "",
+					"text" : "convert an input of one or more list elements into frequency.  the input is expected to be represented in midi (0-127) range.  floats are accepted.\n\narguments:\n\n1. input to convert\n\nexpression:  freq = 440 * exp(0.057762265 * (input - 69)))"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-4",
 					"maxclass" : "number",
@@ -93,7 +119,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 25.0, 184.0, 178.0, 45.0 ],
-					"text" : "/midi : 38,\n/frequency : 73.4162",
+					"text" : "/midi : 0.759,\n/frequency : 8.54221",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 

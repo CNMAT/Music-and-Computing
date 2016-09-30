@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 74.0, 81.0, 354.0, 260.0 ],
+		"rect" : [ 74.0, 81.0, 636.0, 283.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,32 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-8",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 346.0, 28.0, 51.0, 20.0 ],
+					"style" : "",
+					"text" : "scale()"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"linecount" : 13,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 346.0, 63.0, 266.0, 181.0 ],
+					"style" : "",
+					"text" : "scale an input.\nthis function takes a single input (can be a list of one or more elements), and scales it from a defined input range to an output range.\n\narguments:  \n\n1. input to be scaled\n2. input min\n3. input max\n4. output min\n5. output max\n\n"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontsize" : 11.0,
 					"format" : 6,
 					"id" : "obj-6",
@@ -47,7 +73,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 27.0, 39.0, 47.0, 21.0 ],
+					"patching_rect" : [ 27.0, 28.0, 47.0, 21.0 ],
 					"style" : ""
 				}
 
@@ -60,7 +86,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 27.0, 72.0, 73.0, 21.0 ],
+					"patching_rect" : [ 27.0, 61.0, 73.0, 21.0 ],
 					"style" : "",
 					"text" : "o.pack /input"
 				}
@@ -75,7 +101,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 27.0, 170.0, 118.0, 33.0 ],
+					"patching_rect" : [ 27.0, 159.0, 118.0, 33.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -89,7 +115,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 27.0, 113.0, 290.0, 31.0 ],
+					"patching_rect" : [ 27.0, 102.0, 290.0, 31.0 ],
 					"text" : "/scaled = scale(/input, 0., 1., 30., 542.)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}

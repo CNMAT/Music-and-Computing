@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 73.0, 79.0, 279.0, 257.0 ],
+		"rect" : [ 73.0, 121.0, 529.0, 259.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,12 +38,38 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-8",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 276.0, 31.0, 51.0, 20.0 ],
+					"style" : "",
+					"text" : "int32()"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 276.0, 66.0, 217.0, 74.0 ],
+					"style" : "",
+					"text" : "cast any parameter to a 32-bit integer.\n\narguments:\n\n1. value to cast"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 28.0, 57.0, 60.0, 22.0 ],
+					"patching_rect" : [ 35.0, 31.0, 60.0, 22.0 ],
 					"style" : "",
 					"text" : "loadbang"
 				}
@@ -56,7 +82,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 28.0, 22.0, 150.0, 19.0 ],
+					"patching_rect" : [ 62.0, 128.0, 150.0, 19.0 ],
 					"style" : "",
 					"text" : "casting values to other types"
 				}
@@ -72,7 +98,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 28.0, 98.0, 204.0, 43.0 ],
+					"patching_rect" : [ 35.0, 72.0, 204.0, 43.0 ],
 					"text" : "/float = 3.14159,\n/float/to/int = int32(/float)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -83,11 +109,13 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-20",
+					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 28.0, 166.0, 218.0, 33.0 ],
+					"patching_rect" : [ 35.0, 163.0, 218.0, 45.0 ],
+					"text" : "/float : 3.14159,\n/float/to/int : 3",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 

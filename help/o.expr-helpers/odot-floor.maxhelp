@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 90.0, 98.0, 295.0, 373.0 ],
+		"rect" : [ 67.0, 106.0, 516.0, 245.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,14 +38,42 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-8",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 247.0, 28.0, 51.0, 20.0 ],
+					"style" : "",
+					"text" : "floor()"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"linecount" : 6,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 247.0, 63.0, 235.0, 87.0 ],
+					"style" : "",
+					"text" : "round a list of one or more elements down to the nearest integer.\n\narguments:\n\n1. data to round"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-20",
+					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 54.0, 210.0, 191.0, 33.0 ],
+					"patching_rect" : [ 31.0, 160.0, 191.0, 45.0 ],
+					"text" : "/input : 6.8,\n/floor : 6.",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -59,7 +87,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 54.0, 151.0, 158.0, 31.0 ],
+					"patching_rect" : [ 31.0, 101.0, 158.0, 31.0 ],
 					"text" : "/floor = floor(/input)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -76,7 +104,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 54.0, 78.0, 47.0, 21.0 ],
+					"patching_rect" : [ 31.0, 28.0, 47.0, 21.0 ],
 					"style" : ""
 				}
 
@@ -89,7 +117,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 54.0, 111.0, 73.0, 21.0 ],
+					"patching_rect" : [ 31.0, 61.0, 73.0, 21.0 ],
 					"style" : "",
 					"text" : "o.pack /input"
 				}

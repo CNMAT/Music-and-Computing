@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 73.0, 94.0, 347.0, 313.0 ],
+		"rect" : [ 56.0, 111.0, 562.0, 273.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,32 @@
 		"style" : "",
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-8",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 328.0, 30.0, 148.0, 20.0 ],
+					"style" : "",
+					"text" : "<=, less than or equal to"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"linecount" : 6,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 328.0, 65.0, 216.0, 87.0 ],
+					"style" : "",
+					"text" : "logical <= operand.  compare two pieces of data and return a boolean representing the result.  the result will be true if the data to the left of the operand is less than or equal to the right."
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontsize" : 11.0,
 					"id" : "obj-14",
@@ -77,7 +103,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 35.0, 177.0, 171.0, 58.0 ],
-					"text" : "/input : 5,\n/compare : 3,\n/less/equal/to : false",
+					"text" : "/input : 1,\n/compare : 3,\n/less/equal/to : true",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 

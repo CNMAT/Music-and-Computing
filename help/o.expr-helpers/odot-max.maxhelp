@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 78.0, 90.0, 282.0, 254.0 ],
+		"rect" : [ 78.0, 90.0, 538.0, 236.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,13 +38,39 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-8",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 288.0, 27.0, 51.0, 20.0 ],
+					"style" : "",
+					"text" : "max()"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 288.0, 62.0, 228.0, 74.0 ],
+					"style" : "",
+					"text" : "return the maximum in a list of elements\n\narguments: \n\n1. list to assess"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontsize" : 11.0,
 					"id" : "obj-11",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 30.0, 50.0, 56.0, 21.0 ],
+					"patching_rect" : [ 30.0, 27.0, 56.0, 21.0 ],
 					"style" : "",
 					"text" : "loadbang"
 				}
@@ -60,7 +86,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 30.0, 157.0, 215.0, 45.0 ],
+					"patching_rect" : [ 30.0, 134.0, 215.0, 45.0 ],
 					"text" : "/list : [1, 2, 3, 4, 5],\n/max : 5",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -76,7 +102,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 30.0, 87.0, 184.0, 43.0 ],
+					"patching_rect" : [ 30.0, 64.0, 184.0, 43.0 ],
 					"text" : "/list = [1, 2, 3, 4, 5], \n/max = max(/list)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
