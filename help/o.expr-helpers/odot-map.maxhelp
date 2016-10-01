@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 61.0, 85.0, 550.0, 459.0 ],
+		"rect" : [ 100.0, 100.0, 550.0, 459.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -86,7 +86,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 34.0, 345.0, 184.0, 83.0 ],
-					"text" : "/addys : [123, 456, 789],\n/idx : [0, 1, 2],\n/new/0 : 133,\n/new/1 : 466,\n/new/2 : 799",
+					"text" : "/list : [123, 456, 789],\n/idx : [0, 1, 2],\n/new/0 : 133,\n/new/1 : 466,\n/new/2 : 799",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -102,7 +102,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 34.0, 232.0, 377.0, 93.0 ],
-					"text" : "/list = [123, 456, 789],\n/idx = aseq(0, length(/list) - 1),\nmap(\n  lambda([l,i], assign(\"/new/\"+i, /addys[[i]] + 10)), \n  /addys, /idx\n)",
+					"text" : "/list = [123, 456, 789],\n/idx = aseq(0, length(/list) - 1),\nmap(\n  lambda([l,i], assign(\"/new/\"+i, /list[[i]] + 10)), \n  /list, /idx\n)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
