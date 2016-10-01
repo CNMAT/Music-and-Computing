@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 57.0, 102.0, 634.0, 261.0 ],
+		"rect" : [ 100.0, 100.0, 634.0, 261.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,19 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 143.0, 25.0, 61.0, 22.0 ],
+					"style" : "",
+					"text" : "8 9 10 12"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontface" : 1,
 					"id" : "obj-8",
 					"maxclass" : "comment",
@@ -45,7 +58,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 321.0, 25.0, 51.0, 20.0 ],
 					"style" : "",
-					"text" : "mtof()"
+					"text" : "ftom()"
 				}
 
 			}
@@ -56,9 +69,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 321.0, 60.0, 285.0, 127.0 ],
+					"patching_rect" : [ 321.0, 60.0, 296.0, 127.0 ],
 					"style" : "",
-					"text" : "convert an input of one or more list elements into MIDI float representation.  the input is expected to be represented in Hz.  floats are accepted.\n\narguments:\n\n1. input to convert\n\nexpression: 69 + ((12 * log(/input / 440.0)) / log(2))"
+					"text" : "convert an input of one or more list elements into MIDI representation.  the input is expected to be represented in Hz.  both integers and floats are valid.\n\narguments:\n\n1. input to convert\n\nexpression: 69 + ((12 * log(/input / 440.0)) / log(2))"
 				}
 
 			}
@@ -98,13 +111,13 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-5",
-					"linecount" : 3,
+					"linecount" : 4,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 33.0, 160.0, 145.0, 58.0 ],
-					"text" : "/freq/hz : 83.348,\n/midi : 40.1966,\n/midi/rounded : 40.",
+					"patching_rect" : [ 33.0, 160.0, 265.0, 70.0 ],
+					"text" : "/freq/hz : [8, 9, 10, 12],\n/midi : [-0.376317, 1.66278, 3.48682, 6.64323],\n/midi/rounded : [-0., 2., 3., 7.]",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -150,6 +163,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}

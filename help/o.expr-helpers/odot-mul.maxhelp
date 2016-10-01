@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 55.0, 100.0, 382.0, 212.0 ],
+		"rect" : [ 100.0, 100.0, 542.0, 222.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -52,12 +52,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-3",
+					"linecount" : 6,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 233.0, 66.0, 115.0, 20.0 ],
+					"patching_rect" : [ 233.0, 66.0, 246.0, 87.0 ],
 					"style" : "",
-					"text" : "multiply two values."
+					"text" : "multiply two values.\n\narguments:\n\n1. the first number or list to be multiplied\n2. the second number or list to be multiplied"
 				}
 
 			}
@@ -86,7 +87,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 33.0, 131.0, 164.0, 45.0 ],
-					"text" : "/two/times/two : 4,\n/four : 4",
+					"text" : "/two/times/two : 4,\n/mul/func : 4",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -102,7 +103,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 33.0, 76.0, 178.0, 43.0 ],
-					"text" : "/two/times/two = 2 * 2, \n/four = mul(2, 2)",
+					"text" : "/two/times/two = 2 * 2, \n/mul/func = mul(2, 2)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 

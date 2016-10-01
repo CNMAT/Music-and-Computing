@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 72.0, 112.0, 464.0, 300.0 ],
+		"rect" : [ 100.0, 100.0, 683.0, 286.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,32 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-1",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 407.0, 32.0, 55.0, 20.0 ],
+					"style" : "",
+					"text" : "exists()"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"linecount" : 11,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 407.0, 67.0, 233.0, 154.0 ],
+					"style" : "",
+					"text" : "return a boolean representing the evaluation of whether or not a specified address is present in a bundle.\n\narguments: \n\n1. address to query\n\nnote: this differs from bound() as bound() will check whether or not a specified address is bound to data."
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-11",
@@ -46,7 +72,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 314.0, 31.0, 115.0, 35.0 ],
+					"patching_rect" : [ 282.0, 31.0, 115.0, 35.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 47, 102, 111, 111, 0, 0, 0, 0, 44, 105, 0, 0, 0, 0, 1, 44, 0, 0, 0, 20, 47, 98, 117, 110, 100, 108, 101, 47, 109, 101, 109, 98, 101, 114, 0, 0, 44, 0, 0, 0 ],
 					"saved_bundle_length" : 60,
 					"text" : "/foo : 300,\n/bundle/member",
@@ -59,13 +85,13 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-6",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 15.0, 193.0, 257.0, 58.0 ],
-					"text" : "/foo : 300,\n/bundle/member,\n/post : \"found a bundle element\"",
+					"patching_rect" : [ 15.0, 193.0, 257.0, 45.0 ],
+					"text" : "/foo : 300,\n/post : \"did not find bundle element\"",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -97,7 +123,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 140.0, 31.0, 155.0, 35.0 ],
+					"patching_rect" : [ 112.0, 31.0, 155.0, 35.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 47, 98, 117, 110, 100, 108, 101, 47, 109, 101, 109, 98, 101, 114, 0, 0, 44, 105, 0, 0, 0, 0, 0, 1, 0, 0, 0, 16, 47, 102, 111, 111, 0, 0, 0, 0, 44, 105, 0, 0, 0, 0, 1, 44 ],
 					"saved_bundle_length" : 64,
 					"text" : "/bundle/member : 1,\n/foo : 300",

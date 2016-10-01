@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 63.0, 92.0, 500.0, 240.0 ],
+		"rect" : [ 100.0, 100.0, 500.0, 240.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -52,13 +52,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-3",
-					"linecount" : 5,
+					"linecount" : 7,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 281.0, 73.0, 211.0, 74.0 ],
+					"patching_rect" : [ 281.0, 73.0, 215.0, 100.0 ],
 					"style" : "",
-					"text" : "return the square root of an input.\n\narguments: \n\n1. input to be squared"
+					"text" : "return the square root of an input.  the input can be a list of one or more elements\n\narguments: \n\n1. input to be squared"
 				}
 
 			}

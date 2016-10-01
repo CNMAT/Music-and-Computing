@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 57.0, 103.0, 714.0, 375.0 ],
+		"rect" : [ 100.0, 100.0, 660.0, 348.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -43,7 +43,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 304.0, 231.5, 96.0, 19.0 ],
+					"patching_rect" : [ 267.0, 211.5, 96.0, 19.0 ],
 					"style" : "",
 					"text" : "colon assignment"
 				}
@@ -57,7 +57,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 304.0, 267.5, 175.0, 80.0 ],
+					"patching_rect" : [ 267.0, 239.5, 175.0, 80.0 ],
 					"style" : "",
 					"text" : "assign bundle parameters by typing them into an o.compose box.  even though there is no expression here, the values are still bound within the context of the compose box and are valid."
 				}
@@ -73,7 +73,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 215.0, 267.5, 80.0, 38.0 ],
+					"patching_rect" : [ 180.0, 211.5, 80.0, 38.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 47, 97, 0, 0, 44, 105, 0, 0, 0, 0, 0, 4, 0, 0, 0, 12, 47, 98, 0, 0, 44, 105, 0, 0, 0, 0, 0, 100 ],
 					"saved_bundle_length" : 48,
 					"text" : "/a : 4,\n/b : 100",
@@ -148,7 +148,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 567.0, 24.5, 169.0, 19.0 ],
+					"patching_rect" : [ 505.0, 24.5, 169.0, 19.0 ],
 					"style" : "",
 					"text" : "dynamic assignment"
 				}
@@ -206,7 +206,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 166.0, 24.5, 106.0, 19.0 ],
+					"patching_rect" : [ 103.0, 24.5, 106.0, 19.0 ],
 					"style" : "",
 					"text" : "manual assignment"
 				}

@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 53.0, 99.0, 390.0, 235.0 ],
+		"rect" : [ 100.0, 100.0, 501.0, 217.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,13 +38,27 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-31",
+					"fontface" : 1,
+					"id" : "obj-8",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 183.0, 93.5, 151.0, 20.0 ],
+					"patching_rect" : [ 204.0, 12.5, 51.0, 20.0 ],
 					"style" : "",
-					"text" : "remove a bundle member "
+					"text" : "quote()"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"linecount" : 9,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 204.0, 47.5, 260.0, 127.0 ],
+					"style" : "",
+					"text" : "remove a bundle member \n\narguments:\n\n1. address to remove from the resultant bundle\n\nnote:  you must remove each address individually.  you cannot pass an array of addresses to delete() at this time."
 				}
 
 			}

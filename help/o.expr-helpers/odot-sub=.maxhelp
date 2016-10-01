@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 57.0, 88.0, 219.0, 265.0 ],
+		"rect" : [ 100.0, 100.0, 377.0, 218.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,15 +38,27 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
-					"fontsize" : 11.0,
-					"id" : "obj-4",
-					"linecount" : 2,
+					"fontface" : 1,
+					"id" : "obj-8",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 124.0, 95.0, 68.0, 31.0 ],
+					"patching_rect" : [ 153.0, 18.0, 51.0, 20.0 ],
 					"style" : "",
-					"text" : "augmented assignment"
+					"text" : "-="
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 153.0, 53.0, 197.0, 47.0 ],
+					"style" : "",
+					"text" : "subtract a number from an address and reassign said address.  also known as augmented assignment."
 				}
 
 			}
@@ -86,13 +98,12 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-14",
-					"linecount" : 4,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 29.0, 144.0, 92.0, 70.0 ],
-					"text" : "/plus : 2,\n/times : 9,\n/div : 4,\n/sub : 3",
+					"patching_rect" : [ 29.0, 144.0, 92.0, 33.0 ],
+					"text" : "/sub : 3",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 

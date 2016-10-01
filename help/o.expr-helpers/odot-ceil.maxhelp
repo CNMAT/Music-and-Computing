@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 56.0, 94.0, 507.0, 251.0 ],
+		"rect" : [ 100.0, 100.0, 507.0, 251.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -52,13 +52,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-3",
-					"linecount" : 6,
+					"linecount" : 10,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 258.0, 58.0, 236.0, 87.0 ],
+					"patching_rect" : [ 258.0, 58.0, 236.0, 141.0 ],
 					"style" : "",
-					"text" : "round a list of one or more elements up to the nearest integer.\n\narguments:\n\n1. data to round"
+					"text" : "round a list of one or more elements up to the nearest integer.\n\nif a number is between 0 and 0.001 of a whole number, the resultant number is rounded up.\n\narguments:\n\n1. data to round"
 				}
 
 			}
@@ -73,7 +73,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 35.0, 170.0, 191.0, 45.0 ],
-					"text" : "/input : 11.4,\n/ceiling : 12.",
+					"text" : "/input : 0.05,\n/ceiling : 1.",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -104,7 +104,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 35.0, 23.0, 47.0, 21.0 ],
+					"patching_rect" : [ 35.0, 23.0, 73.0, 21.0 ],
 					"style" : ""
 				}
 

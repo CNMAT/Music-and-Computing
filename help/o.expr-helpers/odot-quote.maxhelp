@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 68.0, 110.0, 471.0, 221.0 ],
+		"rect" : [ 100.0, 100.0, 471.0, 221.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -58,7 +58,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 194.0, 71.0, 258.0, 100.0 ],
 					"style" : "",
-					"text" : "surround any piece of data in quotes.\n\nthis is equivalent to using the string() function.\n\narguments: \n\n1. data to quote"
+					"text" : "surround data in quotes.\n\nthis is equivalent to using the string() function.\n\narguments: \n\n1. data to quote"
 				}
 
 			}

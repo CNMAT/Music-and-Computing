@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 45.0, 96.0, 356.0, 233.0 ],
+		"rect" : [ 59.0, 100.0, 503.0, 233.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -52,12 +52,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-3",
+					"linecount" : 6,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 225.0, 67.0, 94.0, 20.0 ],
+					"patching_rect" : [ 225.0, 67.0, 246.0, 87.0 ],
 					"style" : "",
-					"text" : "add two values."
+					"text" : "add two values.\n\narguments:\n\n1. the first number or list to be added\n2. the second number or list to be added"
 				}
 
 			}

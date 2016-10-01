@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 73.0, 121.0, 529.0, 259.0 ],
+		"rect" : [ 100.0, 100.0, 529.0, 259.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -58,7 +58,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 276.0, 66.0, 217.0, 74.0 ],
 					"style" : "",
-					"text" : "cast any parameter to a 32-bit integer.\n\narguments:\n\n1. value to cast"
+					"text" : "cast data to a 32-bit integer value.\n\narguments:\n\n1. data to cast"
 				}
 
 			}

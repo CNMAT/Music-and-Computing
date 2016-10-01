@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 54.0, 90.0, 680.0, 250.0 ],
+		"rect" : [ 100.0, 100.0, 663.0, 250.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -56,9 +56,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 416.0, 60.0, 250.0, 87.0 ],
+					"patching_rect" : [ 416.0, 60.0, 225.0, 87.0 ],
 					"style" : "",
-					"text" : "null coalescing operator.\nthis comparator looks at the input and if the input is bound, leaves it alone.  if it's not bound (or not present), it assigns a default  dictated by the value to the right of the operator."
+					"text" : "null coalescing operator.\nthis comparator/operand looks at the input and if said input is bound, leaves it alone.  if the input is not bound (or not present), it assigns a default dictated by the value to the right of the operator."
 				}
 
 			}

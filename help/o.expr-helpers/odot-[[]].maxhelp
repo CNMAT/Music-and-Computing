@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 54.0, 96.0, 574.0, 298.0 ],
+		"rect" : [ 100.0, 100.0, 498.0, 298.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -56,9 +56,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 270.0, 66.0, 274.0, 87.0 ],
+					"patching_rect" : [ 270.0, 66.0, 206.0, 87.0 ],
 					"style" : "",
-					"text" : "access members of a list based on an argument.\n\narguments:\n\n1. list of elements to return from the referenced address."
+					"text" : "access members of a list.\n\narguments:\n\n1. list of elements to return from the referenced address."
 				}
 
 			}
@@ -72,7 +72,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 29.0, 199.0, 178.0, 58.0 ],
+					"patching_rect" : [ 29.0, 199.0, 190.0, 58.0 ],
 					"text" : "/list : [6, 5, 4],\n/second : 5,\n/first/and/third : [6, 4]",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}

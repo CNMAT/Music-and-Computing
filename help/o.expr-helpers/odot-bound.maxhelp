@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 206.0, 91.0, 383.0, 313.0 ],
+		"rect" : [ 52.0, 100.0, 588.0, 280.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,14 +38,42 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-1",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 353.0, 32.0, 55.0, 20.0 ],
+					"style" : "",
+					"text" : "bound()"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"linecount" : 11,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 353.0, 67.0, 211.0, 154.0 ],
+					"style" : "",
+					"text" : "return a boolean representing the evaluation of whether or not a specified address is bound to data.\n\narguments: \n\n1. address to assess\n\nnote: this differs from exists() as exists() will check for the presence of an address within the bundle."
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-7",
+					"linecount" : 3,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 20.0, 191.0, 237.0, 33.0 ],
+					"patching_rect" : [ 20.0, 191.0, 237.0, 58.0 ],
+					"text" : "/foo : 300,\n/bundle/member,\n/post : \"bundle member is unbound\"",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 

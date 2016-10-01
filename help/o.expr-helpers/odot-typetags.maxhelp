@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 49.0, 96.0, 760.0, 392.0 ],
+		"rect" : [ 100.0, 100.0, 760.0, 392.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -52,13 +52,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-5",
-					"linecount" : 13,
+					"linecount" : 16,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 534.0, 52.0, 211.0, 181.0 ],
+					"patching_rect" : [ 534.0, 52.0, 199.0, 221.0 ],
 					"style" : "",
-					"text" : "typetags is a function that returns a list of one or more elements (depending on the value inspected) representing the type of each list element.\nnote that since lists can have varied types, this is useful for gathering information about what a specfic parameter does.\n\narguments:\n\n1. input to return typetags for"
+					"text" : "typetags is a function that returns a list of one or more elements (depending on the value inspected) representing the type of each list element.\nnote that since lists can have varied types, this is useful for gathering information about what a specfic parameter does.\n\narguments:\n\n1. input to return typetags for evaluation of types across polymorphic lists fo one or more elements"
 				}
 
 			}

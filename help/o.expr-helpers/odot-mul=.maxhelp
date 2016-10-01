@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 69.0, 115.0, 427.0, 243.0 ],
+		"rect" : [ 100.0, 100.0, 401.0, 243.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -56,9 +56,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 155.0, 80.0, 228.0, 47.0 ],
+					"patching_rect" : [ 155.0, 80.0, 242.0, 47.0 ],
 					"style" : "",
-					"text" : "divide an address by a number and reassign said address.  also known as augmented assignment."
+					"text" : "multiply an address by a number and reassign said address.  also known as augmented assignment."
 				}
 
 			}

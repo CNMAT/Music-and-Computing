@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 69.0, 102.0, 379.0, 215.0 ],
+		"rect" : [ 100.0, 100.0, 498.0, 215.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -52,12 +52,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-3",
+					"linecount" : 6,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 226.0, 64.0, 117.0, 20.0 ],
+					"patching_rect" : [ 226.0, 64.0, 246.0, 87.0 ],
 					"style" : "",
-					"text" : "subtract two values."
+					"text" : "subtract two values.\n\narguments:\n\n1. the first number or list to be subtracted\n2. the second number or list to be subtracted"
 				}
 
 			}
@@ -80,12 +81,13 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-12",
+					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 35.0, 126.0, 164.0, 33.0 ],
-					"text" : "/two/minus/one : 1",
+					"patching_rect" : [ 35.0, 126.0, 164.0, 45.0 ],
+					"text" : "/two/minus/one : 1,\n/sub/func : 1",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -101,7 +103,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 35.0, 74.0, 171.0, 43.0 ],
-					"text" : "/two/minus/one = 2 - 1,\nsub(2, 1)",
+					"text" : "/two/minus/one = 2 - 1,\n/sub/func = sub(2, 1)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 

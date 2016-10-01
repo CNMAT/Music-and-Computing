@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 63.0, 105.0, 400.0, 208.0 ],
+		"rect" : [ 100.0, 100.0, 519.0, 209.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -52,12 +52,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-3",
+					"linecount" : 6,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 253.0, 56.0, 117.0, 20.0 ],
+					"patching_rect" : [ 253.0, 56.0, 230.0, 87.0 ],
 					"style" : "",
-					"text" : "divide two values."
+					"text" : "divide two values.\n\narguments:\n\n1. the first number or list to be divided\n2. the second number or list to be divided"
 				}
 
 			}
