@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 183.0, 79.0, 1152.0, 696.0 ],
+		"rect" : [ 100.0, 100.0, 1152.0, 696.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -89,7 +89,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 637.5, 414.0, 33.0, 20.0 ],
-									"presentation_rect" : [ 664.0, 414.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "type"
 								}
@@ -102,7 +101,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 587.0, 414.0, 23.0, 20.0 ],
-									"presentation_rect" : [ 605.0, 381.5, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "Q"
 								}
@@ -115,7 +113,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 543.0, 410.5, 23.0, 20.0 ],
-									"presentation_rect" : [ 545.599976, 410.5, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "dB"
 								}
@@ -128,7 +125,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 496.600006, 414.0, 23.0, 20.0 ],
-									"presentation_rect" : [ 493.5, 337.5, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "hz"
 								}
@@ -141,7 +137,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 637.5, 108.5, 274.0, 20.0 ],
-									"presentation_rect" : [ 122.5, 109.5, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "all filter parameters are controllable at signal rate"
 								}
@@ -194,7 +189,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 483.100006, 108.5, 63.0, 22.0 ],
-									"presentation_rect" : [ 507.5, 106.5, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "sig~ 1000"
 								}
@@ -208,7 +202,6 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 483.100006, 137.0, 84.0, 22.0 ],
-									"presentation_rect" : [ 507.5, 135.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "m158.phase~"
 								}
@@ -326,6 +319,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-17",
+									"logfreq" : 1,
 									"maxclass" : "spectroscope~",
 									"numinlets" : 2,
 									"numoutlets" : 1,
@@ -619,7 +613,6 @@
 					}
 ,
 					"patching_rect" : [ 235.5, 145.5, 96.0, 22.0 ],
-					"presentation_rect" : [ 235.5, 145.5, 0.0, 0.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -650,7 +643,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 183.0, 105.0, 1152.0, 670.0 ],
+						"rect" : [ 100.0, 126.0, 1152.0, 670.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -751,7 +744,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u445007531"
+									"varname" : "u971008584"
 								}
 
 							}
@@ -864,6 +857,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-17",
+									"logfreq" : 1,
 									"maxclass" : "spectroscope~",
 									"numinlets" : 2,
 									"numoutlets" : 1,
