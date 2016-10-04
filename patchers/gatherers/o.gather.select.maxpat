@@ -5,7 +5,7 @@
 			"major" : 7,
 			"minor" : 2,
 			"revision" : 5,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
@@ -62,7 +62,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 5,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -489,7 +489,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "(FullPacket) outgoing bundle",
 					"id" : "obj-5",
 					"maxclass" : "outlet",
 					"numinlets" : 1,
@@ -514,7 +514,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "(anything) FullPacket or scripting instructions",
 					"id" : "obj-3",
 					"maxclass" : "inlet",
 					"numinlets" : 0,

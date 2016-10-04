@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 481.0, 282.0, 668.0, 699.0 ],
+		"rect" : [ 81.0, 86.0, 668.0, 699.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -61,7 +61,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -306,7 +306,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "(FullPacket) outgoing bundle containing text entry",
 					"id" : "obj-39",
 					"maxclass" : "outlet",
 					"numinlets" : 1,
@@ -331,7 +331,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "(FullPacket) incoming bundle configuring o.gui.textfield",
 					"id" : "obj-36",
 					"maxclass" : "inlet",
 					"numinlets" : 0,

@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 25.0, 70.0, 1329.0, 852.0 ],
+		"rect" : [ 85.0, 72.0, 1329.0, 852.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,7 +38,7 @@
 		"subpatcher_template" : "no-menus",
 		"boxes" : [ 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "(FullPacket) dump or unmatched data",
 					"id" : "obj-47",
 					"maxclass" : "outlet",
 					"numinlets" : 1,
@@ -86,7 +86,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -248,7 +248,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -368,7 +368,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -818,7 +818,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "(FullPacket) outgoing bundle containing menu selection data",
 					"id" : "obj-11",
 					"maxclass" : "outlet",
 					"numinlets" : 1,
@@ -830,7 +830,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "(FullPacket) bundle configuring menu - see help",
 					"id" : "obj-10",
 					"maxclass" : "inlet",
 					"numinlets" : 0,

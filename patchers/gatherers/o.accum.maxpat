@@ -3,9 +3,9 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 1,
-			"revision" : 0,
-			"architecture" : "x64",
+			"minor" : 2,
+			"revision" : 5,
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
@@ -64,7 +64,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "(FullPacket) outgoing bundle",
 					"id" : "obj-2",
 					"maxclass" : "outlet",
 					"numinlets" : 1,
@@ -76,7 +76,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "(FullPacket) incoming bundle",
 					"id" : "obj-1",
 					"maxclass" : "inlet",
 					"numinlets" : 0,

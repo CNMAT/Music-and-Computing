@@ -5,7 +5,7 @@
 			"major" : 7,
 			"minor" : 2,
 			"revision" : 5,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
@@ -44,7 +44,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 42.0, 396.0, 93.0, 22.0 ],
-					"presentation_rect" : [ 837.0, 177.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "m158.loadbang"
 				}
@@ -109,7 +108,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 42.0, 639.0, 180.0, 20.0 ],
-					"presentation_rect" : [ 78.0, 649.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "@time attribute enables timetag"
 				}
@@ -123,7 +121,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 159.0, 558.0, 89.0, 22.0 ],
-					"presentation_rect" : [ 72.0, 610.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "o.timetag /time"
 				}
@@ -217,7 +214,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 5,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -304,7 +301,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 5,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -579,7 +576,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 5,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -623,7 +620,7 @@
 											"major" : 7,
 											"minor" : 2,
 											"revision" : 5,
-											"architecture" : "x64",
+											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
@@ -927,7 +924,7 @@
 											"major" : 7,
 											"minor" : 2,
 											"revision" : 5,
-											"architecture" : "x64",
+											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
@@ -971,7 +968,7 @@
 															"major" : 7,
 															"minor" : 2,
 															"revision" : 5,
-															"architecture" : "x64",
+															"architecture" : "x86",
 															"modernui" : 1
 														}
 ,
@@ -1222,7 +1219,7 @@
 															"major" : 7,
 															"minor" : 2,
 															"revision" : 5,
-															"architecture" : "x64",
+															"architecture" : "x86",
 															"modernui" : 1
 														}
 ,
@@ -1617,7 +1614,7 @@
 											"major" : 7,
 											"minor" : 2,
 											"revision" : 5,
-											"architecture" : "x64",
+											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
@@ -2185,7 +2182,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 5,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -2361,7 +2358,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 5,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -2453,7 +2450,7 @@
 											"major" : 7,
 											"minor" : 2,
 											"revision" : 5,
-											"architecture" : "x64",
+											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
@@ -2700,7 +2697,7 @@
 											"major" : 7,
 											"minor" : 2,
 											"revision" : 5,
-											"architecture" : "x64",
+											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
@@ -2960,7 +2957,7 @@
 											"major" : 7,
 											"minor" : 2,
 											"revision" : 5,
-											"architecture" : "x64",
+											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
@@ -3065,7 +3062,7 @@
 													"maxclass" : "inlet",
 													"numinlets" : 0,
 													"numoutlets" : 1,
-													"outlettype" : [ "" ],
+													"outlettype" : [ "FullPacket" ],
 													"patching_rect" : [ 252.0, 40.0, 30.0, 30.0 ],
 													"style" : ""
 												}
@@ -3259,7 +3256,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "FullPacket" ],
 									"patching_rect" : [ 242.0, 33.0, 30.0, 30.0 ],
 									"style" : ""
 								}
@@ -3464,7 +3461,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "FullPacket" ],
 					"patching_rect" : [ 230.0, 320.0, 63.0, 22.0 ],
 					"style" : "",
 					"text" : "o.atomize"
@@ -3564,7 +3561,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "(anything) to pattrstorage",
 					"id" : "obj-1",
 					"maxclass" : "outlet",
 					"numinlets" : 1,
@@ -3576,12 +3573,12 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "(anything) configure o.gui",
 					"id" : "obj-101",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 230.0, 22.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -3589,7 +3586,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "(FullPacket) outgoing bundle",
 					"id" : "obj-102",
 					"maxclass" : "outlet",
 					"numinlets" : 1,
@@ -4089,7 +4086,51 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "m158.loadbang.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.collect.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.atomize.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.prepend.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.route.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.union.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.pack.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.var.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.change.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.timetag.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
