@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 100.0, 100.0, 471.0, 221.0 ],
+		"rect" : [ 100.0, 100.0, 498.0, 220.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -43,9 +43,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 194.0, 36.0, 51.0, 20.0 ],
+					"patching_rect" : [ 212.0, 36.0, 73.0, 20.0 ],
 					"style" : "",
-					"text" : "quote()"
+					"text" : "quote(), \" \""
 				}
 
 			}
@@ -56,7 +56,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 194.0, 71.0, 258.0, 100.0 ],
+					"patching_rect" : [ 212.0, 71.0, 258.0, 100.0 ],
 					"style" : "",
 					"text" : "surround data in quotes.\n\nthis is equivalent to using the string() function.\n\narguments: \n\n1. data to quote"
 				}
@@ -96,13 +96,13 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-26",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 40.0, 71.0, 131.0, 43.0 ],
-					"text" : "/int = 4,\n/string = quote(4)",
+					"patching_rect" : [ 40.0, 71.0, 158.0, 56.0 ],
+					"text" : "/int = 4,\n/string/1 = quote(4),\n/string/2 = \"4\"",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
