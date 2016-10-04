@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 2,
 			"revision" : 5,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 38.0, 79.0, 1006.0, 760.0 ],
+		"rect" : [ 77.0, 94.0, 795.0, 460.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,12 +38,28 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 0,
+					"fontsize" : 12.0,
+					"id" : "obj-2",
+					"linecount" : 4,
+					"maxclass" : "o.display",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 397.0, 223.0, 221.0, 75.0 ],
+					"text" : "/foo/0 : [1, 2, 3],\n/foo/1 : [4, 5, 6, 7],\n/foo/2 : [8, 9, 10, 11, 12],\n/foo/buffername : \"1372-buf1\"",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-84",
-					"linecount" : 12,
+					"linecount" : 13,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 539.0, 122.223022, 409.0, 167.0 ],
+					"patching_rect" : [ 417.0, 19.223022, 347.0, 181.0 ],
 					"style" : "",
 					"text" : "o.list.buffer~\nrama gottfried, 2016\n\naddresses must have number indicating channel to write to:\n/foo/0\n/foo/1 etc.\n\n/foo subaddresses should only be numbers!\n\nthe first sample of each channel is the number of samples in that channnel\n\nnote: currently > 32 channels seems to cause jit.fill to complain"
 				}
@@ -56,10 +72,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 98.0, 379.0, 65.0, 22.0 ],
-					"presentation_rect" : [ 172.0, 392.0, 0.0, 0.0 ],
+					"patching_rect" : [ 31.0, 277.0, 65.0, 22.0 ],
 					"style" : "",
-					"text" : "1318-buf0"
+					"text" : "1372-buf1"
 				}
 
 			}
@@ -71,8 +86,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 311.0, 357.0, 50.0, 22.0 ],
-					"presentation_rect" : [ 557.0, 373.0, 0.0, 0.0 ],
+					"patching_rect" : [ 244.0, 276.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -83,7 +97,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 117.0, 474.5, 45.0, 45.0 ],
+					"patching_rect" : [ 436.0, 342.0, 45.0, 45.0 ],
 					"style" : ""
 				}
 
@@ -96,7 +110,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 392.0, 397.0, 50.0, 22.0 ],
+					"patching_rect" : [ 325.0, 276.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -108,7 +122,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 311.0, 392.0, 33.0, 22.0 ],
+					"patching_rect" : [ 244.0, 306.0, 33.0, 22.0 ],
 					"style" : "",
 					"text" : "sig~"
 				}
@@ -125,7 +139,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 311.0, 486.0, 56.0, 22.0 ],
+					"patching_rect" : [ 244.0, 384.0, 56.0, 22.0 ],
 					"sig" : 0.0,
 					"style" : ""
 				}
@@ -138,7 +152,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 311.0, 444.0, 100.0, 22.0 ],
+					"patching_rect" : [ 244.0, 342.0, 100.0, 22.0 ],
 					"style" : "",
 					"text" : "index~ f"
 				}
@@ -151,7 +165,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 221.0, 392.0, 50.0, 22.0 ],
+					"patching_rect" : [ 154.0, 290.0, 50.0, 22.0 ],
 					"style" : "",
 					"text" : "set $1"
 				}
@@ -164,7 +178,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 221.0, 299.0, 135.0, 22.0 ],
+					"patching_rect" : [ 154.0, 197.0, 135.0, 22.0 ],
 					"style" : "",
 					"text" : "o.route /foo/buffername"
 				}
@@ -180,7 +194,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 221.0, 185.0, 217.0, 51.0 ],
+					"patching_rect" : [ 154.0, 83.0, 217.0, 51.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 28, 47, 102, 111, 111, 47, 48, 0, 0, 44, 105, 105, 105, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 3, 0, 0, 0, 32, 47, 102, 111, 111, 47, 49, 0, 0, 44, 105, 105, 105, 105, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 5, 0, 0, 0, 6, 0, 0, 0, 7, 0, 0, 0, 36, 47, 102, 111, 111, 47, 50, 0, 0, 44, 105, 105, 105, 105, 105, 0, 0, 0, 0, 0, 8, 0, 0, 0, 9, 0, 0, 0, 10, 0, 0, 0, 11, 0, 0, 0, 12 ],
 					"saved_bundle_length" : 124,
 					"text" : "/foo/0 : [1, 2, 3],\n/foo/1 : [4, 5, 6, 7],\n/foo/2 : [8, 9, 10, 11, 12]",
@@ -195,7 +209,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 221.0, 255.0, 100.0, 22.0 ],
+					"patching_rect" : [ 154.0, 153.0, 100.0, 22.0 ],
 					"style" : "",
 					"text" : "o.list.buffer~ /foo"
 				}
@@ -276,6 +290,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-69", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -295,10 +318,6 @@
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
 				"type" : "JSON",
 				"implicit" : 1
-			}
-, 			{
-				"name" : "o.expr.codebox.mxo",
-				"type" : "iLaX"
 			}
 , 			{
 				"name" : "o.union.mxo",
@@ -326,6 +345,18 @@
 			}
 , 			{
 				"name" : "o.collect.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.select.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.expr.codebox.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.display.mxo",
 				"type" : "iLaX"
 			}
  ],
