@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 2,
 			"revision" : 5,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 100.0, 100.0, 1233.0, 781.0 ],
+		"rect" : [ 59.0, 79.0, 1401.0, 781.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -188,7 +188,7 @@
 					"bgstepcolor" : [ 0.196078, 0.196078, 0.196078, 0.0 ],
 					"bgstepcolor2" : [ 0.196078, 0.196078, 0.196078, 0.09 ],
 					"bordercolor2" : [ 0.0, 0.0, 0.0, 0.0 ],
-					"columns" : 14,
+					"columns" : 12,
 					"direction" : 0,
 					"direction_height" : 32.0,
 					"id" : "obj-118",
@@ -502,8 +502,8 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-118" : [ "live.grid", "live.grid", 0 ],
-			"obj-8" : [ "live.grid[1]", "live.grid", 0 ]
+			"obj-8" : [ "live.grid[1]", "live.grid", 0 ],
+			"obj-118" : [ "live.grid", "live.grid", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
