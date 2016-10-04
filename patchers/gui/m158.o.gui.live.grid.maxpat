@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 2,
 			"revision" : 5,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 94.0, 79.0, 922.0, 787.0 ],
+		"rect" : [ 94.0, 79.0, 1219.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,7 +40,7 @@
 				"box" : 				{
 					"id" : "obj-34",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patcher" : 					{
@@ -49,11 +49,11 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 5,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 496.0, 302.0, 528.0, 424.0 ],
+						"rect" : [ 496.0, 302.0, 723.0, 425.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -82,6 +82,71 @@
 						"subpatcher_template" : "no-menus",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "FullPacket" ],
+									"patching_rect" : [ 484.0, 116.0, 104.0, 22.0 ],
+									"style" : "",
+									"text" : "o.pack /_direction"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-8",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 435.0, 116.0, 24.0, 24.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 435.0, 292.0, 55.0, 22.0 ],
+									"style" : "",
+									"text" : "o.collect"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-5",
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 435.0, 33.0, 30.0, 30.0 ],
+									"presentation_rect" : [ 437.0, 33.0, 0.0, 0.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "" ],
+									"patching_rect" : [ 435.0, 75.0, 117.0, 22.0 ],
+									"style" : "",
+									"text" : "route done direction"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-3",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -100,7 +165,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 138.0, 283.0, 30.0, 30.0 ],
+									"patching_rect" : [ 435.0, 347.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -220,17 +285,71 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-2", 0 ],
+									"destination" : [ "obj-6", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-3", 0 ]
 								}
 
 							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-8", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-9", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-4", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-6", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-8", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
  ]
 					}
 ,
-					"patching_rect" : [ 275.5, 211.0, 71.0, 22.0 ],
+					"patching_rect" : [ 275.5, 211.0, 74.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -271,7 +390,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 5,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -489,7 +608,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 5,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -605,9 +724,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 319.5, 111.0, 164.0, 20.0 ],
+					"patching_rect" : [ 387.5, 160.0, 68.0, 20.0 ],
 					"style" : "",
-					"text" : "delta attr is in development..."
+					"text" : "@direction"
 				}
 
 			}
@@ -649,7 +768,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 5,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -808,7 +927,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 5,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -896,13 +1015,13 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-10",
-									"linecount" : 43,
+									"linecount" : 48,
 									"maxclass" : "o.expr.codebox",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 50.0, 86.0, 511.0, 603.0 ],
-									"text" : "map(\n  lambda([a],\n    /data = value(a),\n    if( length(/data) > 1,\n      progn(\n        /i = 0,\n        /mode = /data[[/i++]],\n        /ncol = /data[[/i++]],\n        /nrow = /data[[/i++]],\n        /nconstraints = /data[[/i++]],\n        /nsteps = /data[[/i++]],\n\n        /raw/contraints = [],\n        if( /nconstraints > 0,\n          progn(\n            /i = aseq(/i, /i + /nconstraints - 1),\n            /raw/contraints = /data[[ /i ]],\n            /contraints/y = /raw/contraints % 100,\n            /contraints/x = (/raw/contraints - /contraints/y) / 1000\n          )\n        ),\n        /i = max(/i),\n        /raw/steps = [],\n        if( /nsteps > 0,\n          progn(\n            /i = aseq(/i, /i + /nsteps - 1),\n            /raw/steps = /data[[ /i ]],\n            /steps/y = /raw/steps % 100,\n            /steps/x = (/raw/steps - /steps/y) / 1000\n          )\n        ),\n        /i = aseq(max(/i) + 1, max(/i) + /ncol),\n        /column/direction = /data[[ /i ]] - 1,\n       \n        assign(\"/out\"+a+\"/x\", /steps/x),\n        assign(\"/out\"+a+\"/y\", /steps/y)\n      )\n    )\n  ), /_/addr\n),\n\nif( typetags(/name) != 'i',\n  assign(\"/out\"+/name+\"/count\", length(/_/addr)))",
+									"patching_rect" : [ 50.0, 86.0, 511.0, 671.0 ],
+									"text" : "/_direction ??= 0,\n\nmap(\n  lambda([a],\n    /data = value(a),\n    if( length(/data) > 1,\n      progn(\n        /i = 0,\n        /mode = /data[[/i++]],\n        /ncol = /data[[/i++]],\n        /nrow = /data[[/i++]],\n        /nconstraints = /data[[/i++]],\n        /nsteps = /data[[/i++]],\n\n        /raw/contraints = [],\n        if( /nconstraints > 0,\n          progn(\n            /i = aseq(/i, /i + /nconstraints - 1),\n            /raw/contraints = /data[[ /i ]],\n            /contraints/y = /raw/contraints % 100,\n            /contraints/x = (/raw/contraints - /contraints/y) / 1000\n          )\n        ),\n        /i = max(/i),\n        /raw/steps = [],\n        if( /nsteps > 0,\n          progn(\n            /i = aseq(/i, /i + /nsteps - 1),\n            /raw/steps = /data[[ /i ]],\n            /steps/y = /raw/steps % 100,\n            /steps/x = (/raw/steps - /steps/y) / 1000\n          )\n        ),\n        /i = aseq(max(/i) + 1, max(/i) + /ncol),\n        /column/direction = /data[[ /i ]] - 1,\n       \n        assign(\"/out\"+a+\"/x\", /steps/x),\n        assign(\"/out\"+a+\"/y\", /steps/y),\n        if( /_direction == 1,\n          assign(\"/out\"+a+\"/direction\",  /column/direction)\n        ) \n      )\n    )\n  ), /_/addr\n),\n\nif( typetags(/name) != 'i',\n  assign(\"/out\"+/name+\"/count\", length(/_/addr)))",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -1034,7 +1153,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "FullPacket", "" ],
+					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 138.5, 304.0, 176.0, 22.0 ],
 					"style" : "",
 					"text" : "o.gather.select"
@@ -1100,7 +1219,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "FullPacket" ],
 					"patching_rect" : [ 72.0, 36.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -1230,6 +1349,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-34", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-3", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-34", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1319,66 +1447,6 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "o.gather.select.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gatherers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "m158.loadbang.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.doc.handler.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.route.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.collect.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.select.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.if.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.union.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.expr.codebox.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.compose.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.cond.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.pack.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.prepend.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "envelope_m4l",
 				"default" : 				{
