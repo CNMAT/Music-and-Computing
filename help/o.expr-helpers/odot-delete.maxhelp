@@ -45,7 +45,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 204.0, 12.5, 51.0, 20.0 ],
 					"style" : "",
-					"text" : "quote()"
+					"text" : "delete()"
 				}
 
 			}
@@ -56,7 +56,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 204.0, 47.5, 260.0, 127.0 ],
+					"patching_rect" : [ 204.0, 47.5, 261.0, 127.0 ],
 					"style" : "",
 					"text" : "remove a bundle member \n\narguments:\n\n1. address to remove from the resultant bundle\n\nnote:  you must remove each address individually.  you cannot pass an array of addresses to delete() at this time."
 				}
