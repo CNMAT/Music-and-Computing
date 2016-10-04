@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 2,
 			"revision" : 5,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 383.0, 150.0, 756.0, 610.0 ],
+		"rect" : [ 84.0, 125.0, 756.0, 610.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -180,7 +180,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "(FullPacket) outgoing bundle",
 					"id" : "obj-1",
 					"maxclass" : "outlet",
 					"numinlets" : 1,
@@ -192,7 +192,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "(FullPacket) bundle to parse",
 					"id" : "obj-69",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
@@ -218,7 +218,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "(FullPacket) dump, documentation, or delegation bundle",
 					"id" : "obj-71",
 					"maxclass" : "outlet",
 					"numinlets" : 1,
