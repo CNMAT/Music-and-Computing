@@ -1999,7 +1999,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 560.387451, 630.5, 30.0, 30.0 ],
+					"patching_rect" : [ 563.6875, 630.5, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -2530,7 +2530,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 136.25, 352.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -5495,7 +5495,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 619.989746, 593.5, 133.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"text" : "genbuf 2842-combined"
 				}
 
 			}
@@ -5889,7 +5890,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 117.0, 40.0, 30.0, 30.0 ],
 									"style" : ""
 								}
@@ -6039,7 +6040,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 199.75, 352.0, 30.0, 30.0 ],
 					"style" : ""
 				}
