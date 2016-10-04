@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 100.0, 100.0, 550.0, 459.0 ],
+		"rect" : [ 100.0, 100.0, 530.0, 440.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -43,7 +43,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 34.0, 47.0, 60.0, 22.0 ],
+					"patching_rect" : [ 34.0, 155.0, 60.0, 22.0 ],
 					"style" : "",
 					"text" : "loadbang"
 				}
@@ -56,7 +56,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 130.5, 47.0, 51.0, 20.0 ],
+					"patching_rect" : [ 130.5, 28.0, 51.0, 20.0 ],
 					"style" : "",
 					"text" : "map()"
 				}
@@ -69,7 +69,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 130.5, 82.0, 370.0, 114.0 ],
+					"patching_rect" : [ 130.5, 63.0, 370.0, 114.0 ],
 					"style" : "",
 					"text" : "map a function to addresses.  a function can be mapped to one or more addresses at a time, based on the number of parameters you send in to it.\n\narguments:\n\n1. function to map (defined as a lambda or evaluated to a lambda)\n2. addresses to pass into function that is to be evaluated\n"
 				}
@@ -85,7 +85,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 34.0, 345.0, 184.0, 83.0 ],
+					"patching_rect" : [ 34.0, 330.0, 184.0, 83.0 ],
 					"text" : "/list : [123, 456, 789],\n/idx : [0, 1, 2],\n/new/0 : 133,\n/new/1 : 466,\n/new/2 : 799",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -101,7 +101,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 34.0, 232.0, 377.0, 93.0 ],
+					"patching_rect" : [ 34.0, 228.0, 377.0, 93.0 ],
 					"text" : "/list = [123, 456, 789],\n/idx = aseq(0, length(/list) - 1),\nmap(\n  lambda([l,i], assign(\"/new/\"+i, /list[[i]] + 10)), \n  /list, /idx\n)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
