@@ -56,7 +56,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 15.75, 45.5, 93.0, 22.0 ],
+					"patching_rect" : [ 34.75, 84.5, 93.0, 22.0 ],
 					"style" : "",
 					"text" : "m158.loadbang"
 				}
@@ -67,12 +67,12 @@
 					"fontname" : "Arial",
 					"fontsize" : 11.595187,
 					"id" : "obj-33",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 38.25, 133.0, 106.0, 47.0 ],
+					"patching_rect" : [ 15.75, 27.5, 152.0, 34.0 ],
 					"style" : "",
 					"text" : "window flags grow nofloat, window exec"
 				}
@@ -88,7 +88,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 15.75, 76.0, 160.0, 34.0 ],
+					"patching_rect" : [ 34.75, 115.0, 160.0, 34.0 ],
 					"style" : "",
 					"text" : "window flags nogrow float, window exec"
 				}
@@ -3180,7 +3180,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 211.5, 36.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -3266,7 +3266,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 1.285706, 0.0, 178.0, 19.0 ],
 					"style" : "",
-					"text" : "type: bp_const_skirt",
+					"text" : "type: lowpass",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -3297,11 +3297,11 @@
 				"box" : 				{
 					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
 					"curvecolor" : [ 0.0, 0.933485, 1.0, 1.0 ],
-					"domain" : [ 0.0, 20000.0 ],
 					"fontface" : 0,
 					"fontname" : "Courier",
 					"id" : "obj-1",
 					"linmarkers" : [ 0.0, 11025.0, 16537.5 ],
+					"logfreq" : 0,
 					"logmarkers" : [ 0.0, 100.0, 1000.0, 10000.0 ],
 					"markercolor" : [ 0.376471, 0.384314, 0.4, 0.0 ],
 					"maxclass" : "filtergraph~",
@@ -3314,7 +3314,6 @@
 					"patching_rect" : [ 428.285706, 640.5, 181.0, 75.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2.285706, 10.0, 256.0, 128.0 ],
-					"range" : [ 0.0, 24.0 ],
 					"setfilter" : [ 0, 0, 1, 0, 0, 0.0001, 0.212873, 0.64033, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
 					"style" : "",
 					"textcolor" : [ 0.639216, 0.458824, 0.070588, 0.78 ]
@@ -3324,10 +3323,9 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
-					"domain" : [ 0.0, 20000.0 ],
+					"domain" : [ 20.0, 20000.0 ],
 					"fgcolor" : [ 0.317647, 0.654902, 0.976471, 0.58 ],
 					"id" : "obj-25",
-					"logfreq" : 1,
 					"markercolor" : [ 0.376471, 0.384314, 0.4, 0.0 ],
 					"maxclass" : "spectroscope~",
 					"numinlets" : 2,
@@ -3831,7 +3829,67 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "m158.loadbang.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "multimode.biquad.gendsp",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/code",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.doc.handler.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.route.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.pack.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.cond.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.expr.codebox.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.prepend.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.union.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.compose.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.intersection.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.difference.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.select.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
