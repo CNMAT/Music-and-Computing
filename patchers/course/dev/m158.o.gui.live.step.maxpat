@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1091.0, 147.0, 505.0, 708.0 ],
+		"rect" : [ 868.0, 99.0, 505.0, 708.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -618,7 +618,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 535.0, 111.0, 1231.0, 828.0 ],
+						"rect" : [ 535.0, 111.0, 603.0, 746.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -649,84 +649,14 @@
 								"box" : 								{
 									"fontface" : 0,
 									"fontsize" : 12.0,
-									"id" : "obj-4",
-									"linecount" : 48,
-									"maxclass" : "o.expr.codebox",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 649.0, 79.0, 511.0, 671.0 ],
-									"text" : "/_direction ??= 0,\n\nmap(\n  lambda([a],\n    /data = value(a),\n    if( length(/data) > 1,\n      progn(\n        /i = 0,\n        /mode = /data[[/i++]],\n        /ncol = /data[[/i++]],\n        /nrow = /data[[/i++]],\n        /nconstraints = /data[[/i++]],\n        /nsteps = /data[[/i++]],\n\n        /raw/contraints = [],\n        if( /nconstraints > 0,\n          progn(\n            /i = aseq(/i, /i + /nconstraints - 1),\n            /raw/contraints = /data[[ /i ]],\n            /contraints/y = /raw/contraints % 100,\n            /contraints/x = (/raw/contraints - /contraints/y) / 1000\n          )\n        ),\n        /i = max(/i),\n        /raw/steps = [],\n        if( /nsteps > 0,\n          progn(\n            /i = aseq(/i, /i + /nsteps - 1),\n            /raw/steps = /data[[ /i ]],\n            /steps/y = /raw/steps % 100,\n            /steps/x = (/raw/steps - /steps/y) / 1000\n          )\n        ),\n        /i = aseq(max(/i) + 1, max(/i) + /ncol),\n        /column/direction = /data[[ /i ]] - 1,\n       \n        assign(\"/out\"+a+\"/x\", /steps/x),\n        assign(\"/out\"+a+\"/y\", /steps/y),\n        if( /_direction == 1,\n          assign(\"/out\"+a+\"/direction\",  /column/direction)\n        ) \n      )\n    )\n  ), /_/addr\n),\n\nif( typetags(/name) != 'i',\n  assign(\"/out\"+/name+\"/count\", length(/_/addr)))",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontface" : 0,
-									"fontsize" : 12.0,
-									"id" : "obj-6",
-									"linecount" : 3,
-									"maxclass" : "o.compose",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 495.0, 19.5, 567.0, 51.0 ],
-									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -60, 47, 115, 116, 101, 112, 47, 48, 0, 44, 105, 105, 105, 105, 105, 105, 105, 100, 100, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, 0, 1, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 3, 64, 77, -77, 51, 51, 51, 51, 51, 64, 85, -77, 51, 51, 51, 51, 51, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 79, 0, 0, 0, 74, 0, 0, 0, 4, 0, 0, 0, 127, 0, 0, 0, 127, 0, 0, 0, 72, 0, 0, 0, 43, 0, 0, 0, 4, 0, 0, 0, 127, 0, 0, 0, 127, 0, 0, 0, 67, 0, 0, 0, 35, 0, 0, 0, 4, 0, 0, 0, 127, 0, 0, 0, 127, 0, 0, 0, 74, 0, 0, 0, 78, 0, 0, 0, 4, 0, 0, 0, 127, 0, 0, 0, 127, 0, 0, 0, 64, 0, 0, 0, 70, 0, 0, 0, 78, 0, 0, 0, 80, 0, 0, 0, 20, 47, 95, 47, 97, 100, 100, 114, 0, 44, 115, 0, 0, 47, 115, 116, 101, 112, 47, 48, 0 ],
-									"saved_bundle_length" : 240,
-									"text" : "/step/0 : [1, 4, 4, 1, 12, 0, 3, 59.4, 86.8, 0, 0, 79, 74, 4, 127, 127, 72, 43, 4, 127, 127, 67, 35, 4, 127, 127, 74, 78, 4, 127, 127, 64, 70, 78, 80],\n/_/addr : \"/step/0\"",
-									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontface" : 0,
-									"fontsize" : 12.0,
-									"id" : "obj-3",
-									"linecount" : 4,
-									"maxclass" : "o.compose",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 296.0, 6.0, 150.0, 65.0 ],
-									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 28, 47, 116, 97, 98, 0, 0, 0, 0, 44, 105, 105, 105, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 20, 47, 95, 47, 97, 100, 100, 114, 0, 44, 115, 0, 0, 47, 116, 97, 98, 0, 0, 0, 0, 0, 0, 0, 20, 47, 95, 47, 100, 105, 114, 101, 99, 116, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 1, 0, 0, 0, 16, 47, 95, 47, 110, 111, 114, 109, 0, 44, 105, 0, 0, 0, 0, 0, 1 ],
-									"saved_bundle_length" : 116,
-									"text" : "/tab : [0, 1, 2],\n/_/addr : \"/tab\",\n/_/direct : 1,\n/_/norm : 1",
-									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontface" : 0,
-									"fontsize" : 12.0,
-									"id" : "obj-1",
-									"linecount" : 2,
-									"maxclass" : "o.compose",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 123.0, 6.0, 150.0, 38.0 ],
-									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 28, 47, 116, 97, 98, 0, 0, 0, 0, 44, 105, 105, 105, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 20, 47, 95, 47, 97, 100, 100, 114, 0, 44, 115, 0, 0, 47, 116, 97, 98, 0, 0, 0, 0 ],
-									"saved_bundle_length" : 72,
-									"text" : "/tab : [0, 1, 2],\n/_/addr : \"/tab\"",
-									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontface" : 0,
-									"fontsize" : 12.0,
 									"id" : "obj-10",
-									"linecount" : 44,
+									"linecount" : 42,
 									"maxclass" : "o.expr.codebox",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 50.0, 121.0, 511.0, 616.0 ],
-									"text" : "map(\n  lambda([a],\n    /data = value(a),\n    if( length(/data) > 1,\n      progn(\n        /i = 0,\n        /nseq = /data[[/i++]],\n        /nstep = /data[[/i++]],\n        /ninfold = /data[[/i++]],\n        /start = /data[[/i++]],\n        /end = /data[[/i++]],\n        /view/min = /data[[/i++]],\n        /view/max = /data[[/i++]],\n        /pitch/vector = /data[[/i++]],\n        /vel/vector = /data[[/i++]],\n        /dur/vector = /data[[/i++]],\n\n        if( /nstep > 0, \n          [progn(\n            /idx = aseq(/i, /i + /nstep - 1),\n            /steps/pitch = /data[[ /idx ]]\n          ),\n          /i += /nstep,\n          progn(\n            /idx = aseq(/i, /i + /nstep - 1),\n            /steps/vel = /data[[ /idx ]]\n          ),\n          /i += /nstep,\n          progn(\n            /idx = aseq(/i, /i + /nstep - 1),\n            /steps/dur = /data[[ /idx ]]\n          ),\n          assign(\"/out\"+a+\"/pitch\", /steps/pitch),\n          assign(\"/out\"+a+\"/vel\", /steps/vel),\n          assign(\"/out\"+a+\"/dur\", /steps/dur)]\n        )\n      )\n    )\n  ), /_/addr\n),\n\nif( typetags(/name) != 'i',\n  assign(\"/out\"+/name+\"/count\", length(/_/addr))\n)",
+									"patching_rect" : [ 50.0, 52.0, 511.0, 603.0 ],
+									"text" : "map(\n  lambda([a],\n    /data = value(a),\n    if( length(/data) > 1,\n      progn(\n        /i = 0,\n        /n/seq = /data[[/i++]],\n        /n/step = /data[[/i++]],\n        /n/in/fold = /data[[/i++]],\n        /active = /data[[/i++]],\n        /idk/1 = /data[[/i++]],\n        /loop/min = /data[[/i++]],\n        /loop/max = /data[[/i++]],\n        /zoom/min = /data[[/i++]],\n        /zoom/max = /data[[/i++]],\n        /direction = /data[[/i++]],\n        /idk/2 = /data[[/i++]],\n        /i++,\n        if( /n/step > 0, \n          progn(            \n            /length/steps = /n/step * 5,\n            /start = /i - 1,\n            /end = (/start + /length/steps) - 1,\n            /idx = aseq(/start, /end, 5),\n            /pitch = /data[[/idx]],\n            /idx = aseq(/start + 1, /end, 5),\n            /vel = /data[[/idx]],\n            /idx = aseq(/start + 2, /end, 5),\n            /dur = /data[[/idx]],\n            assign(\"/out/pitch\", /pitch),\n            assign(\"/out/vel\", /vel),\n            assign(\"/out/dur\", /dur)\n          ) \n        )\n      )\n    )\n  ), /_/addr\n),\n\nif( typetags(/name) != 'i',\n  assign(\"/out\"+/name+\"/count\", length(/_/addr))\n)\n",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -752,7 +682,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 790.0, 30.0, 30.0 ],
+									"patching_rect" : [ 50.0, 677.0, 30.0, 30.0 ],
 									"style" : "",
 									"varname" : "u286001501"
 								}
@@ -761,37 +691,10 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
-									"destination" : [ "obj-10", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-1", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-13", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-10", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-10", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-3", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-10", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-6", 0 ]
 								}
 
 							}
