@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 868.0, 99.0, 505.0, 708.0 ],
+		"rect" : [ 277.0, 98.0, 505.0, 708.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,7 +40,7 @@
 				"box" : 				{
 					"id" : "obj-34",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patcher" : 					{
@@ -53,7 +53,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 496.0, 302.0, 528.0, 424.0 ],
+						"rect" : [ 496.0, 302.0, 723.0, 425.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -82,6 +82,70 @@
 						"subpatcher_template" : "no-menus",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "FullPacket" ],
+									"patching_rect" : [ 484.0, 116.0, 104.0, 22.0 ],
+									"style" : "",
+									"text" : "o.pack /_verbose"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-8",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 435.0, 116.0, 24.0, 24.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 435.0, 292.0, 55.0, 22.0 ],
+									"style" : "",
+									"text" : "o.collect"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-5",
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 435.0, 33.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "" ],
+									"patching_rect" : [ 435.0, 75.0, 117.0, 22.0 ],
+									"style" : "",
+									"text" : "route done verbose"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-3",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -100,7 +164,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 138.0, 283.0, 30.0, 30.0 ],
+									"patching_rect" : [ 435.0, 347.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -220,17 +284,71 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-2", 0 ],
+									"destination" : [ "obj-6", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-3", 0 ]
 								}
 
 							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-8", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-9", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-4", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-6", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-8", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
  ]
 					}
 ,
-					"patching_rect" : [ 275.5, 211.0, 71.0, 22.0 ],
+					"patching_rect" : [ 275.5, 211.0, 74.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -618,7 +736,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 535.0, 111.0, 603.0, 746.0 ],
+						"rect" : [ 319.0, 45.0, 603.0, 746.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -650,13 +768,13 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-10",
-									"linecount" : 42,
+									"linecount" : 66,
 									"maxclass" : "o.expr.codebox",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 50.0, 52.0, 511.0, 603.0 ],
-									"text" : "map(\n  lambda([a],\n    /data = value(a),\n    if( length(/data) > 1,\n      progn(\n        /i = 0,\n        /n/seq = /data[[/i++]],\n        /n/step = /data[[/i++]],\n        /n/in/fold = /data[[/i++]],\n        /active = /data[[/i++]],\n        /idk/1 = /data[[/i++]],\n        /loop/min = /data[[/i++]],\n        /loop/max = /data[[/i++]],\n        /zoom/min = /data[[/i++]],\n        /zoom/max = /data[[/i++]],\n        /direction = /data[[/i++]],\n        /idk/2 = /data[[/i++]],\n        /i++,\n        if( /n/step > 0, \n          progn(            \n            /length/steps = /n/step * 5,\n            /start = /i - 1,\n            /end = (/start + /length/steps) - 1,\n            /idx = aseq(/start, /end, 5),\n            /pitch = /data[[/idx]],\n            /idx = aseq(/start + 1, /end, 5),\n            /vel = /data[[/idx]],\n            /idx = aseq(/start + 2, /end, 5),\n            /dur = /data[[/idx]],\n            assign(\"/out/pitch\", /pitch),\n            assign(\"/out/vel\", /vel),\n            assign(\"/out/dur\", /dur)\n          ) \n        )\n      )\n    )\n  ), /_/addr\n),\n\nif( typetags(/name) != 'i',\n  assign(\"/out\"+/name+\"/count\", length(/_/addr))\n)\n",
+									"patching_rect" : [ 50.0, 52.0, 518.0, 929.0 ],
+									"text" : "map(\n  lambda([a],\n    /data = value(a),\n    if( length(/data) > 1,\n      progn(\n        /i = 0,\n        /n/seq = /data[[/i++]],\n        /n/step = /data[[/i++]],\n        /n/in/fold = /data[[/i++]],\n        /active = /data[[/i++]],\n        /idk/1 = /data[[/i++]],\n        /loop/min = /data[[/i++]],\n        /loop/max = /data[[/i++]],\n        /zoom/min = /data[[/i++]],\n        /zoom/max = /data[[/i++]],\n        /direction = /data[[/i++]],\n        /idk/2 = /data[[/i++]],\n        /offset = /i,\n        /i++,\n        if( /n/step > 0, \n          progn(\n            /length/steps = /n/step * 5,\n            /start = /i - 1,\n            /end = (/start + /length/steps) - 1,\n            /idx = aseq(/start, /end, 5),\n            /pitch = /data[[/idx]],\n            /idx = aseq(/start + 1, /end, 5),\n\n            if( exists(/_verbose) && /_verbose == 1, \n              progn(                \n                /vel = /data[[/idx]],\n                /idx = aseq(/start + 2, /end, 5),\n                /dur = /data[[/idx]],\n                /idx = aseq(0, /n/step),\n                assign(\"/out\"+a+\"/pitch/x\", /idx),\n                assign(\"/out\"+a+\"/pitch/y\", /pitch),\n                assign(\"/out\"+a+\"/vel/x\", /idx),\n                assign(\"/out\"+a+\"/vel/y\", /vel),\n                assign(\"/out\"+a+\"/dur/x\", /idx),\n                assign(\"/out\"+a+\"/dur/y\", /dur), \n                assign(\"/out\"+a+\"/n/seq\", /n/seq),\n                assign(\"/out\"+a+\"/n/step\", /n/step),\n                assign(\"/out\"+a+\"/n/in/fold\", /n/in/fold),\n                assign(\"/out\"+a+\"/active\", /active),\n                assign(\"/out\"+a+\"/loop/min\", /loop/min),\n                assign(\"/out\"+a+\"/loop/max\", /loop/max),\n                assign(\"/out\"+a+\"/zoom/min\", /zoom/min),\n                assign(\"/out\"+a+\"/zoom/min\", /zoom/max),\n                assign(\"/out\"+a+\"/direction\", /direction)\n              ), \n              progn(\n                /idx = aseq(0, /n/step),\n                assign(\"/out\"+a+\"/x\", /idx),\n                assign(\"/out\"+a+\"/y\", /pitch)\n              )\n            )\n          ) \n        )\n      )\n    )\n  ), /_/addr\n),\n\nif( typetags(/name) != 'i',\n  assign(\"/out\"+/name+\"/count\", length(/_/addr))\n)\n",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -682,7 +800,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 677.0, 30.0, 30.0 ],
+									"patching_rect" : [ 50.0, 708.0, 30.0, 30.0 ],
 									"style" : "",
 									"varname" : "u286001501"
 								}
@@ -961,6 +1079,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-34", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-3", 1 ]
 				}
 
 			}
