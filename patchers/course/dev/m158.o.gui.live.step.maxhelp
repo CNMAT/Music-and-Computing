@@ -254,13 +254,13 @@
 					"fontface" : 0,
 					"fontsize" : 9.0,
 					"id" : "obj-5",
-					"linecount" : 29,
+					"linecount" : 31,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 20.0, 284.0, 495.0, 316.0 ],
-					"text" : "/step/0/pitch/x : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],\n/step/0/pitch/y : [75, 75, 72, 68, 69, 68, 67, 66, 65, 71, 60, 70],\n/step/0/vel/x : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],\n/step/0/vel/y : [60, 48, 73, 91, 110, 127, 113, 110, 37, 34, 100, 84],\n/step/0/dur/x : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],\n/step/0/dur/y : [1, 5, 0, 1, 4, 3, 1, 0, 0, 0, 4, 4],\n/step/0/n/seq : 1,\n/step/0/n/step : 12,\n/step/0/n/in/fold : 5,\n/step/0/active : 1,\n/step/0/loop/min : 0,\n/step/0/loop/max : 16,\n/step/0/zoom/min : 83.0657,\n/step/0/direction : 0,\n/step/1/pitch/x : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],\n/step/1/pitch/y : [63, 66, 67, 74, 70, 67, 60, 70, 67, 79, 60, 70, 60, 63, 70, 62],\n/step/1/vel/x : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],\n/step/1/vel/y : [101, 83, 57, 78, 35, 75, 114, 75, 59, 80, 100, 84, 114, 98, 97, 103],\n/step/1/dur/x : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],\n/step/1/dur/y : [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],\n/step/1/n/seq : 1,\n/step/1/n/step : 16,\n/step/1/n/in/fold : 0,\n/step/1/active : 1,\n/step/1/loop/min : 0,\n/step/1/loop/max : 16,\n/step/1/zoom/min : 80.,\n/step/1/direction : 0,\n/step/count : 2",
+					"patching_rect" : [ 20.0, 284.0, 495.0, 336.0 ],
+					"text" : "/step/0/pitch/x : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],\n/step/0/pitch/y : [75, 75, 72, 68, 69, 68, 67, 66, 65, 71, 60, 70],\n/step/0/vel/x : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],\n/step/0/vel/y : [60, 48, 73, 91, 110, 127, 113, 110, 37, 34, 100, 84],\n/step/0/dur/x : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],\n/step/0/dur/y : [1, 5, 0, 1, 4, 3, 1, 0, 0, 0, 4, 4],\n/step/0/n/seq : 1,\n/step/0/n/step : 12,\n/step/0/n/in/fold : 5,\n/step/0/active : 1,\n/step/0/loop/min : 0,\n/step/0/loop/max : 16,\n/step/0/zoom/min : 62.4657,\n/step/0/zoom/max : 83.0657,\n/step/0/direction : 0,\n/step/1/pitch/x : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],\n/step/1/pitch/y : [63, 66, 67, 74, 70, 67, 60, 70, 67, 79, 60, 70, 60, 63, 70, 62],\n/step/1/vel/x : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],\n/step/1/vel/y : [101, 83, 57, 78, 35, 75, 114, 75, 59, 80, 100, 84, 114, 98, 97, 103],\n/step/1/dur/x : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],\n/step/1/dur/y : [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],\n/step/1/n/seq : 1,\n/step/1/n/step : 16,\n/step/1/n/in/fold : 0,\n/step/1/active : 1,\n/step/1/loop/min : 0,\n/step/1/loop/max : 16,\n/step/1/zoom/min : 59.,\n/step/1/zoom/max : 80.,\n/step/1/direction : 0,\n/step/count : 2",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
