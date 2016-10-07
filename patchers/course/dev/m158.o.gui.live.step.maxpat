@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 277.0, 98.0, 505.0, 708.0 ],
+		"rect" : [ 395.0, 79.0, 505.0, 708.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -87,9 +87,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "FullPacket" ],
-									"patching_rect" : [ 484.0, 116.0, 104.0, 22.0 ],
+									"patching_rect" : [ 467.0, 116.0, 71.0, 22.0 ],
 									"style" : "",
-									"text" : "o.pack /_verbose"
+									"text" : "o.pack /_all"
 								}
 
 							}
@@ -138,9 +138,9 @@
 									"numinlets" : 3,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 435.0, 75.0, 117.0, 22.0 ],
+									"patching_rect" : [ 435.0, 75.0, 83.0, 22.0 ],
 									"style" : "",
-									"text" : "route done verbose"
+									"text" : "route done all"
 								}
 
 							}
@@ -774,7 +774,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 50.0, 52.0, 518.0, 929.0 ],
-									"text" : "map(\n  lambda([a],\n    /data = value(a),\n    if( length(/data) > 1,\n      progn(\n        /i = 0,\n        /n/seq = /data[[/i++]],\n        /n/step = /data[[/i++]],\n        /n/in/fold = /data[[/i++]],\n        /active = /data[[/i++]],\n        /idk/1 = /data[[/i++]],\n        /loop/min = /data[[/i++]],\n        /loop/max = /data[[/i++]],\n        /zoom/min = /data[[/i++]],\n        /zoom/max = /data[[/i++]],\n        /direction = /data[[/i++]],\n        /idk/2 = /data[[/i++]],\n        /offset = /i,\n        /i++,\n        if( /n/step > 0, \n          progn(\n            /length/steps = /n/step * 5,\n            /start = /i - 1,\n            /end = (/start + /length/steps) - 1,\n            /idx = aseq(/start, /end, 5),\n            /pitch = /data[[/idx]],\n            /idx = aseq(/start + 1, /end, 5),\n\n            if( exists(/_verbose) && /_verbose == 1, \n              progn(                \n                /vel = /data[[/idx]],\n                /idx = aseq(/start + 2, /end, 5),\n                /dur = /data[[/idx]],\n                /idx = aseq(0, /n/step),\n                assign(\"/out\"+a+\"/pitch/x\", /idx),\n                assign(\"/out\"+a+\"/pitch/y\", /pitch),\n                assign(\"/out\"+a+\"/vel/x\", /idx),\n                assign(\"/out\"+a+\"/vel/y\", /vel),\n                assign(\"/out\"+a+\"/dur/x\", /idx),\n                assign(\"/out\"+a+\"/dur/y\", /dur), \n                assign(\"/out\"+a+\"/n/seq\", /n/seq),\n                assign(\"/out\"+a+\"/n/step\", /n/step),\n                assign(\"/out\"+a+\"/n/in/fold\", /n/in/fold),\n                assign(\"/out\"+a+\"/active\", /active),\n                assign(\"/out\"+a+\"/loop/min\", /loop/min),\n                assign(\"/out\"+a+\"/loop/max\", /loop/max),\n                assign(\"/out\"+a+\"/zoom/min\", /zoom/min),\n                assign(\"/out\"+a+\"/zoom/min\", /zoom/max),\n                assign(\"/out\"+a+\"/direction\", /direction)\n              ), \n              progn(\n                /idx = aseq(0, /n/step),\n                assign(\"/out\"+a+\"/x\", /idx),\n                assign(\"/out\"+a+\"/y\", /pitch)\n              )\n            )\n          ) \n        )\n      )\n    )\n  ), /_/addr\n),\n\nif( typetags(/name) != 'i',\n  assign(\"/out\"+/name+\"/count\", length(/_/addr))\n)\n",
+									"text" : "map(\n  lambda([a],\n    /data = value(a),\n    if( length(/data) > 1,\n      progn(\n        /i = 0,\n        /n/seq = /data[[/i++]],\n        /n/step = /data[[/i++]],\n        /n/in/fold = /data[[/i++]],\n        /active = /data[[/i++]],\n        /idk/1 = /data[[/i++]],\n        /loop/min = /data[[/i++]],\n        /loop/max = /data[[/i++]],\n        /zoom/min = /data[[/i++]],\n        /zoom/max = /data[[/i++]],\n        /direction = /data[[/i++]],\n        /idk/2 = /data[[/i++]],\n        /offset = /i,\n        /i++,\n        if( /n/step > 0, \n          progn(\n            /length/steps = /n/step * 5,\n            /start = /i - 1,\n            /end = (/start + /length/steps) - 1,\n            /idx = aseq(/start, /end, 5),\n            /pitch = /data[[/idx]],\n            /idx = aseq(/start + 1, /end, 5),\n\n            if( exists(/_all) && /_all == 1, \n              progn(                \n                /vel = /data[[/idx]],\n                /idx = aseq(/start + 2, /end, 5),\n                /dur = /data[[/idx]],\n                /idx = aseq(0, /n/step),\n                assign(\"/out\"+a+\"/pitch/x\", /idx),\n                assign(\"/out\"+a+\"/pitch/y\", /pitch),\n                assign(\"/out\"+a+\"/vel/x\", /idx),\n                assign(\"/out\"+a+\"/vel/y\", /vel),\n                assign(\"/out\"+a+\"/dur/x\", /idx),\n                assign(\"/out\"+a+\"/dur/y\", /dur), \n                assign(\"/out\"+a+\"/n/seq\", /n/seq),\n                assign(\"/out\"+a+\"/n/step\", /n/step),\n                assign(\"/out\"+a+\"/n/in/fold\", /n/in/fold),\n                assign(\"/out\"+a+\"/active\", /active),\n                assign(\"/out\"+a+\"/loop/min\", /loop/min),\n                assign(\"/out\"+a+\"/loop/max\", /loop/max),\n                assign(\"/out\"+a+\"/zoom/min\", /zoom/min),\n                assign(\"/out\"+a+\"/zoom/min\", /zoom/max),\n                assign(\"/out\"+a+\"/direction\", /direction)\n              ), \n              progn(\n                /idx = aseq(0, /n/step),\n                assign(\"/out\"+a+\"/x\", /idx),\n                assign(\"/out\"+a+\"/y\", /pitch)\n              )\n            )\n          ) \n        )\n      )\n    )\n  ), /_/addr\n),\n\nif( typetags(/name) != 'i',\n  assign(\"/out\"+/name+\"/count\", length(/_/addr))\n)\n",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 

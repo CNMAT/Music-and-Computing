@@ -368,9 +368,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 20.0, 248.5, 215.0, 22.0 ],
+					"patching_rect" : [ 20.0, 248.5, 184.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.gui.live.step /step @verbose 1"
+					"text" : "m158.o.gui.live.step /step @all 1"
 				}
 
 			}
