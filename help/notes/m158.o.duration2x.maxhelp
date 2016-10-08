@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 2,
 			"revision" : 5,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 38.0, 79.0, 1200.0, 622.0 ],
+		"rect" : [ 100.0, 100.0, 1049.0, 622.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -42,7 +42,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 753.0, 104.0, 283.0, 20.0 ],
+					"patching_rect" : [ 701.0, 75.5, 283.0, 20.0 ],
 					"style" : "",
 					"text" : "helper tool to convert duration sequence to x points"
 				}
@@ -56,7 +56,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 749.0, 73.0, 170.0, 27.0 ],
+					"patching_rect" : [ 697.0, 44.5, 170.0, 27.0 ],
 					"style" : "",
 					"text" : "m158.o.duration2x"
 				}
@@ -79,14 +79,11 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-4",
-					"linecount" : 4,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 69.0, 501.0, 550.599976, 75.0 ],
-					"presentation_rect" : [ 79.0, 498.0, 0.0, 0.0 ],
-					"text" : "/beat/pattern : [3, 3, 1, 1, 3],\n/num/beats : 11,\n/rhythm/norm : [0.272727, 0.272727, 0.0909091, 0.0909091, 0.272727],\n/rhythm/norm/x : [0., 0.272727, 0.545455, 0.636364, 0.727273, 1.]",
+					"patching_rect" : [ 69.0, 501.0, 550.599976, 34.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -115,7 +112,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 69.0, 359.5, 539.0, 86.0 ],
-					"presentation_rect" : [ 314.0, 195.5, 0.0, 0.0 ],
 					"text" : "/beat/pattern =  [3,  3,  1,  1,  3],\n/num/beats = sum(/beat/pattern),\n\n# scale rhythm to be relative to the number of beats in the total phrase\n/rhythm/norm = float32(/beat/pattern) / /num/beats",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -125,13 +121,13 @@
 				"box" : 				{
 					"bubble" : 1,
 					"id" : "obj-5",
-					"linecount" : 3,
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 262.700012, 177.0, 351.0, 51.0 ],
+					"patching_rect" : [ 268.700012, 183.0, 550.0, 64.0 ],
 					"style" : "",
-					"text" : "m158.o.duration2x converts duration values to /x start times, starting at 0 and ending at 1. Since an end point is required to represent the duration, an extra /x point is added."
+					"text" : "[m158.o.duration2x] expects a list of durations (specified by its argument) to generate a list of \"/x start times\"; a list representing the successive accumulation between duration elements. Since an end point is always required to represent durations, an extra /x point (0.) is prepended to the beginning of the list as an initial start time."
 				}
 
 			}
@@ -152,13 +148,11 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-9",
-					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 69.0, 244.0, 550.599976, 48.0 ],
-					"text" : "/beat/pattern : [3, 3, 1, 1, 3],\n/beat/pattern/x : [0., 3., 6., 7., 8., 11.]",
+					"patching_rect" : [ 69.0, 264.0, 550.599976, 34.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -173,7 +167,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 99.700012, 133.0, 550.599976, 34.0 ],
-					"text" : "/beat/pattern : [3, 3, 1, 1, 3]",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -185,7 +178,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 69.0, 191.5, 184.0, 22.0 ],
+					"patching_rect" : [ 69.0, 204.0, 184.0, 22.0 ],
 					"style" : "",
 					"text" : "m158.o.duration2x /beat/pattern"
 				}
@@ -273,7 +266,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "m158.o.duration2x.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/course/dev",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/notes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
