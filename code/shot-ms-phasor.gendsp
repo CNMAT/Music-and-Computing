@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 2,
-			"revision" : 5,
+			"minor" : 3,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -89,7 +89,7 @@
 			}
 , 			{
 				"box" : 				{
-					"code" : "History busy, count, durSamps, inc, pc, prev;\r\nParam phasecycle(0);\r\nParam hzmode(0);\r\n\r\nreset = abs(in2);\r\nms = (hzmode == 0) ? abs(in1) : (1000. / abs(in1));\r\n\r\ndelegate = 0;\r\n\r\nif( phasecycle && in1 != prev )\r\n{\r\n\tdurSamps = mstosamps(ms);\r\n\tinc = sign(in1);\r\n\tif( busy == 0 )\r\n\t\tcount = (inc > 0) ? 0 : durSamps - 1;\r\n\telse\r\n\t\tcount = (inc > 0) ? ceil(pc*durSamps) : floor(pc*durSamps);\r\n}\r\nelse\r\n{\r\n\tif( (busy == 0 || reset > 0) && ms > 0 )\r\n\t{\r\n\t\tdurSamps = mstosamps(ms);\r\n\t\tinc = sign(in1);\r\n\t\tcount = (inc > 0) ? 0 : durSamps - 1;\r\n\t}\r\n\telse\r\n\t\tdelegate = in1;\r\n}\r\n\r\nbusy = (count < durSamps) && (count >= 0);\r\npc = clip(count / durSamps, 0, 1);\r\nout1 = pc;\r\nout2 = busy;\r\nout3 = delegate;\r\ncount = count + inc;\r\nprev = in1;",
+					"code" : "History busy, count, durSamps, inc, pc, prev;\r\nParam phasecycle(0);\r\nParam hzmode(0);\r\n\r\nreset = abs(in2);\r\nms = (hzmode == 0) ? abs(in1) : (1000. / abs(in1));\r\n\r\ndelegate = 0;\r\n\r\nif( phasecycle && in1 != prev )\r\n{\r\n\tif( busy == 0 )\r\n\t{\r\n\t\tdurSamps = mstosamps(ms);\r\n\t\tinc = sign(in1);\r\n\t\tcount = (inc > 0) ? 0 : durSamps - 1;\r\n\t}\r\n\telse\r\n\t{\r\n\t\tpc = clip(count / durSamps, 0, 1);\r\n\t\tdurSamps = mstosamps(ms);\r\n\t\tinc = sign(in1);\r\n\t\tcount = (inc > 0) ? ceil(pc*durSamps) : floor(pc*durSamps);\r\n\t}\r\n}\r\nelse\r\n{\r\n\tif( (busy == 0 || reset > 0) && ms > 0 )\r\n\t{\r\n\t\tdurSamps = mstosamps(ms);\r\n\t\tinc = sign(in1);\r\n\t\tcount = (inc > 0) ? 0 : durSamps - 1;\r\n\t}\r\n\telse\r\n\t\tdelegate = in1;\r\n}\r\n\r\nbusy = (count < durSamps) && (count >= 0);\r\npc = clip(count / durSamps, 0, 1);\r\nout1 = pc;\r\nout2 = busy;\r\nout3 = delegate;\r\ncount = count + inc;\r\nprev = in1;",
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
