@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 2,
-			"revision" : 5,
+			"minor" : 3,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -38,6 +38,20 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-5",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 618.0, 298.0, 314.0, 33.0 ],
+					"presentation_rect" : [ 642.0, 306.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "Note: if the file is too long (ca. 5 minutes), m158.o.buffer~ will not create the frequency domain display."
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-9",
 					"maxclass" : "scope~",
 					"numinlets" : 2,
@@ -54,7 +68,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 646.0, 131.0, 286.0, 154.0 ],
+					"patching_rect" : [ 646.0, 117.0, 286.0, 154.0 ],
 					"style" : "",
 					"text" : "The m158.o.buffer~ GUI window provides an interface to explore a sound file in frequency and time domain.\n\nSelecting a section of the file outputs a bundle with necessary information to play that region of the file, via the /buffer/selected addresses.\n\nTo select the full file, click the arrow buttons.\nThe circular button sets the /buffer/trigger address to 1, which can be used to trigger playback. "
 				}
@@ -91,7 +105,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 309.0, 322.0, 128.0, 22.0 ],
+					"patching_rect" : [ 309.0, 329.0, 128.0, 22.0 ],
 					"style" : "",
 					"text" : "o.if /buffer/trigger == 1"
 				}
@@ -300,13 +314,13 @@
 					"fontface" : 0,
 					"fontsize" : 10.0,
 					"id" : "obj-21",
-					"linecount" : 11,
+					"linecount" : 12,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 337.5, 164.5, 235.0, 145.0 ],
-					"text" : "/buffer/trigger : 1,\n/buffer/hopsize : 256,\n/buffer/fftsize : 1024,\n/buffer/name : \"1706-buffer\",\n/buffer/nsamples : 153400,\n/buffer/ms : 3478.46,\n/buffer/samplerate : 44100.,\n/buffer/selected/start : 0.,\n/buffer/selected/end : 1.,\n/buffer/selected/length : 1.,\n/buffer/selected/ms : 3478.46",
+					"patching_rect" : [ 337.5, 164.5, 253.0, 156.0 ],
+					"text" : "/file/name : \"drumloop.aif\",\n/buffer/hopsize : 256,\n/buffer/fftsize : 1024,\n/buffer/name : \"1060-buffer\",\n/buffer/nsamples : 153400,\n/buffer/ms : 3478.46,\n/buffer/samplerate : 44100.,\n/buffer/selected/start : 0,\n/buffer/selected/end : 1,\n/buffer/selected/length : 1,\n/buffer/selected/ms : 3478.46,\n/buffer/trigger : 0",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -526,7 +540,7 @@
 			}
 , 			{
 				"name" : "o.doc.handler.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"bootpath" : "~/Documents/Max 7/Packages/EnvelopLive/patchers/util",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -556,7 +570,7 @@
 			}
 , 			{
 				"name" : "m158.loadbang.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"bootpath" : "~/Documents/Max 7/Packages/EnvelopLive/patchers/util",
 				"type" : "JSON",
 				"implicit" : 1
 			}
