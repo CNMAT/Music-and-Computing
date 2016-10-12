@@ -38,12 +38,25 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-3",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 560.0, 343.0, 267.0, 60.0 ],
+					"style" : "",
+					"text" : "by using the same phase to drive the buffer.player~ and points.buffer~ the two will be ensured to start and stop at exactly the same time."
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-35",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 436.899994, 392.0, 110.0, 22.0 ],
+					"patching_rect" : [ 359.899994, 406.0, 110.0, 22.0 ],
 					"style" : "",
 					"text" : "m158.phase.click~"
 				}
@@ -64,7 +77,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 599.0, 439.0, 117.5, 48.0 ],
+					"patching_rect" : [ 560.0, 436.0, 117.5, 48.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -76,7 +89,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 6,
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
-					"patching_rect" : [ 400.5, 363.0, 201.0, 22.0 ],
+					"patching_rect" : [ 323.5, 377.0, 201.0, 22.0 ],
 					"style" : "",
 					"text" : "m158.o.points.buffer~ /seq @step 1"
 				}
@@ -152,7 +165,7 @@
 ,
 					"style" : "",
 					"text" : "pattrstorage @outputmode 1 @notifymode 1",
-					"varname" : "u190001271"
+					"varname" : "u627000539"
 				}
 
 			}
@@ -176,7 +189,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 628.0, 87.0, 100.0, 22.0 ],
+					"patching_rect" : [ 652.0, 66.0, 100.0, 22.0 ],
 					"restore" : [ 2, 43, 16, 0, 43, 3, 1009, 2011, 3010, 4009, 5006, 6006, 7007, 8014, 9014, 10014, 11000, 12003, 13004, 14006, 15014, 16013, 17007, 18007, 19008, 20008, 21006, 22009, 23011, 24012, 25012, 26012, 27007, 28008, 29006, 30006, 31005, 32005, 33005, 34004, 35004, 36004, 37003, 38003, 39003, 40004, 41004, 42002, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0
@@ -231,8 +244,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 370.0, 516.0, 48.0, 138.0 ],
-					"presentation_rect" : [ 372.0, 478.0, 0.0, 0.0 ],
+					"patching_rect" : [ 359.899994, 521.0, 48.0, 138.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~[1]",
@@ -258,8 +270,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 370.0, 672.0, 37.0, 22.0 ],
-					"presentation_rect" : [ 372.0, 634.0, 0.0, 0.0 ],
+					"patching_rect" : [ 359.899994, 677.0, 37.0, 22.0 ],
 					"style" : "",
 					"text" : "dac~"
 				}
@@ -272,7 +283,7 @@
 					"numinlets" : 9,
 					"numoutlets" : 4,
 					"outlettype" : [ "signal", "signal", "signal", "FullPacket" ],
-					"patching_rect" : [ 370.0, 478.0, 103.0, 22.0 ],
+					"patching_rect" : [ 359.899994, 483.0, 103.0, 22.0 ],
 					"style" : "",
 					"text" : "o.granubuf~"
 				}
@@ -286,7 +297,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 49.0, 202.0, 24.0, 24.0 ],
-					"presentation_rect" : [ 105.0, 151.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -633,9 +643,11 @@
 			}
 , 			{
 				"patchline" : 				{
+					"color" : [ 0.0, 1.0, 0.977796, 0.9 ],
 					"destination" : [ "obj-12", 8 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 333.0, 460.5, 453.399994, 460.5 ],
 					"source" : [ "obj-33", 0 ]
 				}
 
@@ -760,7 +772,7 @@
 			}
 , 			{
 				"name" : "o.doc.handler.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/EnvelopLive/patchers/util",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -784,7 +796,7 @@
 			}
 , 			{
 				"name" : "m158.loadbang.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/EnvelopLive/patchers/util",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
 				"type" : "JSON",
 				"implicit" : 1
 			}

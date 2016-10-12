@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 213.0, 79.0, 586.0, 776.0 ],
+		"rect" : [ 418.0, 79.0, 586.0, 776.0 ],
 		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -39,11 +39,24 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 449.0, 77.0, 39.0, 22.0 ],
+					"style" : "",
+					"text" : "in 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-6",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 438.0, 616.0, 37.0, 22.0 ],
+					"patching_rect" : [ 449.0, 619.0, 37.0, 22.0 ],
 					"style" : "",
 					"text" : "out 2"
 				}
@@ -51,16 +64,16 @@
 			}
 , 			{
 				"box" : 				{
-					"code" : "Buffer distbuf();\r\nHistory samp(-1);\r\n\r\n_noise = noise();\r\n\r\nsum, idx = peek(distbuf, 0, 0, channels=1);\r\nrnd = abs(_noise) * sum;\r\nsize = dim(distbuf) - 1;\r\n\r\nret = -1;\r\n\r\nfor(i=1; i<size; i+=1)\r\n{\r\n\ttest, idx = peek(distbuf, i, 0, channels=1);\r\n\tif( rnd < test )\r\n\t{\r\n\t\tret = i;\r\n\t\tbreak;\r\n\t}\r\n\trnd -= test;\r\n}\r\n\r\nif( in1 > 0 )\r\n\tsamp = ret;\r\n\t\r\nout1 = samp;\r\nout2 = ret;",
+					"code" : "Buffer distbuf();\r\nHistory samp(-1);\r\n\r\n_noise = noise();\r\n\r\nnchannels = channels(distbuf);\r\nchannel = clip(in2, 0, nchannels-1);\r\n\r\nsize, idx \t= peek(distbuf, 0, channel, channels=1) - 1;\r\nsum, idx \t= peek(distbuf, 1, channel, channels=1);\r\nrnd \t\t= abs(_noise) * sum;\r\n\r\nret = -1;\r\n\r\nfor(i=0; i<size; i+=1)\r\n{\r\n\ttest, idx = peek(distbuf, i+2, channel, channels=1);\r\n\tif( rnd < test )\r\n\t{\r\n\t\tret = i;\r\n\t\tbreak;\r\n\t}\r\n\trnd -= test;\r\n}\r\n\r\nif( in1 > 0 )\r\n\tsamp = ret;\r\n\t\r\nout1 = samp;\r\nout2 = ret;",
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-5",
 					"maxclass" : "codebox",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 55.0, 149.0, 402.0, 429.0 ],
+					"patching_rect" : [ 55.0, 149.0, 413.0, 454.0 ],
 					"style" : ""
 				}
 
@@ -92,6 +105,15 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"disabled" : 0,
