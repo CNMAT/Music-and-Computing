@@ -1,0 +1,191 @@
+{
+	"patcher" : 	{
+		"fileversion" : 1,
+		"appversion" : 		{
+			"major" : 7,
+			"minor" : 3,
+			"revision" : 0,
+			"architecture" : "x64",
+			"modernui" : 1
+		}
+,
+		"rect" : [ 26.0, 79.0, 894.0, 787.0 ],
+		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
+		"bglocked" : 0,
+		"openinpresentation" : 0,
+		"default_fontsize" : 12.0,
+		"default_fontface" : 0,
+		"default_fontname" : "Arial",
+		"gridonopen" : 1,
+		"gridsize" : [ 15.0, 15.0 ],
+		"gridsnaponopen" : 1,
+		"objectsnaponopen" : 1,
+		"statusbarvisible" : 2,
+		"toolbarvisible" : 1,
+		"lefttoolbarpinned" : 0,
+		"toptoolbarpinned" : 0,
+		"righttoolbarpinned" : 0,
+		"bottomtoolbarpinned" : 0,
+		"toolbars_unpinned_last_save" : 0,
+		"tallnewobj" : 0,
+		"boxanimatetime" : 200,
+		"enablehscroll" : 1,
+		"enablevscroll" : 1,
+		"devicewidth" : 0.0,
+		"description" : "",
+		"digest" : "",
+		"tags" : "",
+		"style" : "",
+		"subpatcher_template" : "",
+		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 437.0, 48.0, 30.0, 22.0 ],
+					"style" : "",
+					"text" : "in 4"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 560.0, 48.0, 30.0, 22.0 ],
+					"style" : "",
+					"text" : "in 5"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 312.0, 48.0, 30.0, 22.0 ],
+					"style" : "",
+					"text" : "in 3"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"code" : "Param anynonzero(1);\r\nParam everyindex(0);\r\n\r\nHistory prev_state;\r\nBuffer rec_buf(); // rec and points buffers must be the same size\r\nBuffer xpoints_buf();\r\nBuffer ypoints_buf();\r\n\r\nmax_rec = dim(rec_buf);\r\nmax_channels = channels(rec_buf);\r\n\r\nvalue = in1;\r\nphase = clip(abs(in2), 0, 1);\r\non_off = in3; // 0-1\r\nchannel = in4;\r\nnpoints = (in5 > 0) ? in5 : max_rec;\r\n\r\nnotify = 0;\r\n\r\nif( on_off != 0 )\r\n{\t\r\n\tif( anynonzero == 0 || ((anynonzero == 1) && (value != 0)) )\r\n\t{\r\n\t\tpoke( rec_buf, value, floor(phase*npoints), channel, 0 );\r\n\t}\r\n}\r\nelse if( prev_state != on_off )\r\n{\r\n\t// in points mode, reduce buffer to x/y pairs for output buffer\r\n\t// do reduction here\r\n\tcount = 0;\r\n\tprev_y = 0;\r\n\tfor( i = 0; i < npoints; i += 1)\r\n\t{\r\n\t\ty = peek(rec_buf, i, channel, channels=1);\r\n\t\tpoke( rec_buf, 0, i, channel, 0 );\r\n\r\n\t\tif( everyindex || (!everyindex && (y != prev_y) && ((anynonzero == 1) ? y != 0 : 1) ))\r\n\t\t{\r\n\t\t\tcount += 1;\r\n\t\t\tpoke( xpoints_buf, i, count, channel, 0 );\r\n\t\t\tpoke( ypoints_buf, y, count, channel, 0 );\r\n\t\t}\r\n\t\t\r\n\t\tprev_y = y;\r\n\t}\r\n\t\r\n\tpoke( xpoints_buf, count, 0, channel, 0 );\r\n\r\n\tnotify = channel + 1;\r\n}\r\n\r\n\r\nout1 = notify;\r\nprev_state = on_off;",
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-6",
+					"maxclass" : "codebox",
+					"numinlets" : 5,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 64.0, 92.0, 765.0, 629.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 64.0, 48.0, 30.0, 22.0 ],
+					"style" : "",
+					"text" : "in 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 188.0, 48.0, 30.0, 22.0 ],
+					"style" : "",
+					"text" : "in 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 64.0, 736.0, 37.0, 22.0 ],
+					"style" : "",
+					"text" : "out 1"
+				}
+
+			}
+ ],
+		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 3 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 2 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 4 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+ ]
+	}
+
+}
