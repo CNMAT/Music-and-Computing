@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 26.0, 79.0, 894.0, 787.0 ],
+		"rect" : [ 38.0, 79.0, 1147.0, 787.0 ],
 		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -39,12 +39,28 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"code" : "// in points mode, reduce buffer to x/y pairs for output buffer\r\n/*\r\n\r\nmodes:\r\n@anynonzero 0 + @everyindex 0 + npoints == maxlen\r\n\r\n\r\n*/\r\n\r\n\r\nParam anynonzero(1);\r\nParam everyindex(0);\r\n\r\nHistory prev_state, prev_y, count(0), len;\r\nBuffer xpoints_buf(); //buffers assumed to be same size\r\nBuffer ypoints_buf();\r\n\r\nmax_size = dim(xpoints_buf);\r\nmax_channels = channels(xpoints_buf);\r\n\r\ny = in1;\r\nphase = clip(abs(in2), 0, 1);\r\non_off = in3; // 0-1\r\nchannel = in4;\r\nnpoints = (in5 == 0  && everyindex == 1) ? max_size : in5;\r\n// if no input to npoints, then use the max size\r\n\r\nnotify = 0;\r\n\r\nif( on_off == 0 && prev_state == 1 )\r\n{\r\n\tlen = ( everyindex == 0 ) ? count : npoints;\r\n\tpoke( xpoints_buf, len, 0, channel, 0 );\r\n\t\r\n\tcount = 0;\r\n\tprev_y = 0;\t\r\n\tnotify = channel + 1;\r\n}\r\nelse if( on_off == 1 )\r\n{\t\r\n\tx = (npoints > 0) ? floor(phase*npoints) : phase; \r\n\t\r\n\tif( everyindex )\r\n\t{\r\n\t\tcount = (everyindex == 0) ? count + 1 : floor(phase*npoints);\r\n\t\tpoke( xpoints_buf, x, count, channel, 0 );\r\n\t\tpoke( ypoints_buf, y, count, channel, 0 );\r\n\t}\r\n\t\r\n\tif( !anynonzero || (anynonzero && y != 0) ) // && ((npoints == 0) ? y != prev_y : 1) \r\n\t{\r\n\t\tif( y != prev_y ) {\r\n\t\t\tcount = (everyindex == 0) ? count + 1 : floor(phase*npoints);\r\n\t\t\tpoke( xpoints_buf, x, count, channel, 0 );\r\n\t\t\tpoke( ypoints_buf, y, count, channel, 0 );\r\n\t\t}\r\n\t}\r\n\t\r\n\tprev_y = y;\r\n}\r\n\r\nout1 = notify;\r\nout2 = npoints;\r\nprev_state = on_off;",
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-9",
+					"maxclass" : "codebox",
+					"numinlets" : 5,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 841.0, 96.0, 765.0, 629.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 437.0, 48.0, 30.0, 22.0 ],
+					"patching_rect" : [ 475.75, 52.0, 30.0, 22.0 ],
 					"style" : "",
 					"text" : "in 4"
 				}
@@ -57,7 +73,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 560.0, 48.0, 30.0, 22.0 ],
+					"patching_rect" : [ 613.0, 52.0, 30.0, 22.0 ],
 					"style" : "",
 					"text" : "in 5"
 				}
@@ -70,7 +86,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 312.0, 48.0, 30.0, 22.0 ],
+					"patching_rect" : [ 338.5, 52.0, 30.0, 22.0 ],
 					"style" : "",
 					"text" : "in 3"
 				}
@@ -78,7 +94,7 @@
 			}
 , 			{
 				"box" : 				{
-					"code" : "Param anynonzero(1);\r\nParam everyindex(0);\r\n\r\nHistory prev_state;\r\nBuffer rec_buf(); // rec and points buffers must be the same size\r\nBuffer xpoints_buf();\r\nBuffer ypoints_buf();\r\n\r\nmax_rec = dim(rec_buf);\r\nmax_channels = channels(rec_buf);\r\n\r\nvalue = in1;\r\nphase = clip(abs(in2), 0, 1);\r\non_off = in3; // 0-1\r\nchannel = in4;\r\nnpoints = (in5 > 0) ? in5 : max_rec;\r\n\r\nnotify = 0;\r\n\r\nif( on_off != 0 )\r\n{\t\r\n\tif( anynonzero == 0 || ((anynonzero == 1) && (value != 0)) )\r\n\t{\r\n\t\tpoke( rec_buf, value, floor(phase*npoints), channel, 0 );\r\n\t}\r\n}\r\nelse if( prev_state != on_off )\r\n{\r\n\t// in points mode, reduce buffer to x/y pairs for output buffer\r\n\t// do reduction here\r\n\tcount = 0;\r\n\tprev_y = 0;\r\n\tfor( i = 0; i < npoints; i += 1)\r\n\t{\r\n\t\ty = peek(rec_buf, i, channel, channels=1);\r\n\t\tpoke( rec_buf, 0, i, channel, 0 );\r\n\r\n\t\tif( everyindex || (!everyindex && (y != prev_y) && ((anynonzero == 1) ? y != 0 : 1) ))\r\n\t\t{\r\n\t\t\tcount += 1;\r\n\t\t\tpoke( xpoints_buf, i, count, channel, 0 );\r\n\t\t\tpoke( ypoints_buf, y, count, channel, 0 );\r\n\t\t}\r\n\t\t\r\n\t\tprev_y = y;\r\n\t}\r\n\t\r\n\tpoke( xpoints_buf, count, 0, channel, 0 );\r\n\r\n\tnotify = channel + 1;\r\n}\r\n\r\n\r\nout1 = notify;\r\nprev_state = on_off;",
+					"code" : "Param onchange(0);\r\nHistory prev_state, prev_y, count(0), len;\r\nBuffer xpoints_buf(); //buffers assumed to be same size\r\nBuffer ypoints_buf();\r\n\r\nmax_size = dim(xpoints_buf);\r\nmax_channels = channels(xpoints_buf);\r\n\r\ny = in1;\r\nphase = clip(abs(in2), 0, 1);\r\non_off = in3; // 0-1\r\nnpoints = in4;\r\nchannel = clip(in5, 0, max_channels - 1);\r\n\r\n// if no input to npoints, then use the max size\r\n\r\nnotify = 0;\r\n\r\nif( on_off == 0 && prev_state == 1 )\r\n{\r\n\tpoke( xpoints_buf, count, 0, channel, 0 );\r\n\t\r\n\tcount = 0;\r\n\tprev_y = 0;\t\r\n\tnotify = channel + 1;\r\n}\r\nelse if( on_off == 1 && count < max_size )\r\n{\t\r\n\tx = (npoints > 0) ? floor(phase*npoints) : phase; \r\n\t\r\n\tif( y != 0 ) // && ((npoints == 0) ? y != prev_y : 1) \r\n\t{\r\n\t\tif( !onchange || (onchange && y != prev_y) ) {\r\n\t\t\tcount = count + 1;\r\n\t\t\tpoke( xpoints_buf, x, count, channel, 0 );\r\n\t\t\tpoke( ypoints_buf, y, count, channel, 0 );\r\n\t\t}\r\n\t}\r\n\t\r\n\tprev_y = y;\r\n}\r\n\r\nout1 = notify;\r\nprev_state = on_off;",
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -87,7 +103,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 64.0, 92.0, 765.0, 629.0 ],
+					"patching_rect" : [ 64.0, 92.0, 568.0, 625.0 ],
 					"style" : ""
 				}
 
@@ -112,7 +128,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 188.0, 48.0, 30.0, 22.0 ],
+					"patching_rect" : [ 201.25, 52.0, 30.0, 22.0 ],
 					"style" : "",
 					"text" : "in 2"
 				}
