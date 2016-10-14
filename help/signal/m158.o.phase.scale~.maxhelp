@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 138.0, 155.0, 1027.0, 743.0 ],
+		"rect" : [ 38.0, 79.0, 1113.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,12 +38,90 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 548.0, 556.0, 33.0, 22.0 ],
+					"presentation_rect" : [ 548.0, 558.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "stop"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 470.0, 556.0, 74.0, 22.0 ],
+					"style" : "",
+					"text" : "startwindow"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "ezdac~",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 470.0, 596.0, 45.0, 45.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 430.0, 464.0, 290.0, 47.0 ],
+					"style" : "",
+					"text" : "in this example, m158.o.phase.scale~ is used to play a region of the total phase duration, at the correct speed."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 690.0, 86.5, 298.0, 74.0 ],
+					"style" : "",
+					"text" : "scales a 0-1 phase to another range.\n\nrequired argument:\nOSC address of list containing min and max numbers for scaling"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold Italic",
+					"fontsize" : 18.0,
+					"id" : "obj-3",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 690.0, 51.5, 190.0, 27.0 ],
+					"style" : "",
+					"text" : "m158.o.phase.scale~"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-24",
 					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 87.0, 322.0, 24.0, 24.0 ],
+					"patching_rect" : [ 172.0, 321.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -55,7 +133,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 87.0, 368.0, 37.0, 22.0 ],
+					"patching_rect" : [ 172.0, 367.0, 37.0, 22.0 ],
 					"style" : "",
 					"text" : "o.var"
 				}
@@ -67,7 +145,7 @@
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 87.0, 542.0, 130.0, 130.0 ],
+					"patching_rect" : [ 172.0, 541.0, 130.0, 130.0 ],
 					"style" : ""
 				}
 
@@ -79,7 +157,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 87.0, 406.0, 160.0, 22.0 ],
+					"patching_rect" : [ 172.0, 409.0, 199.0, 22.0 ],
 					"style" : "",
 					"text" : "m158.o.click~ /play/duration"
 				}
@@ -92,26 +170,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "signal", "signal", "signal", "" ],
-					"patching_rect" : [ 87.0, 452.0, 100.0, 22.0 ],
+					"patching_rect" : [ 172.0, 450.0, 100.0, 22.0 ],
 					"style" : "",
 					"text" : "m158.phase~"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 0,
-					"fontsize" : 12.0,
-					"id" : "obj-18",
-					"linecount" : 6,
-					"maxclass" : "o.display",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 538.0, 507.0, 443.0, 102.0 ],
-					"presentation_rect" : [ 440.0, 514.0, 0.0, 0.0 ],
-					"text" : "/region : [0., 1.],\n/duration : 1000,\n/region/start : 0.,\n/region/end : 1.,\n/region/size : 1.,\n/play/duration : 1000.",
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -123,7 +184,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 377.0, 232.5, 70.0, 22.0 ],
+					"patching_rect" : [ 430.0, 145.5, 70.0, 22.0 ],
 					"style" : "",
 					"text" : "o.route /gui"
 				}
@@ -139,8 +200,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 377.0, 265.5, 367.0, 154.0 ],
-					"presentation_rect" : [ 568.0, 433.0, 0.0, 0.0 ],
+					"patching_rect" : [ 430.0, 178.5, 367.0, 154.0 ],
 					"text" : "/duration = 1000,\n/region/start = /region[[0]],\n/region/end = /region[[1]],\n\n/region/size = /region/end - /region/start,\n\n/play/duration = /duration * /region/size,\n\n/playpoints = [/region/start, /region/end]\n",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -153,7 +213,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 185.75, 190.0, 29.5, 22.0 ],
+					"patching_rect" : [ 262.75, 176.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "0 1"
 				}
@@ -166,7 +226,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 377.0, 152.0, 24.0, 24.0 ],
+					"patching_rect" : [ 430.0, 65.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -179,7 +239,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "dump" ],
-					"patching_rect" : [ 377.0, 190.5, 70.0, 22.0 ],
+					"patching_rect" : [ 430.0, 103.5, 70.0, 22.0 ],
 					"style" : "",
 					"text" : "m158.o.gui"
 				}
@@ -194,7 +254,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 463.5, 179.0, 97.0, 49.0 ],
+					"patching_rect" : [ 516.5, 92.0, 97.0, 49.0 ],
 					"saved_object_attributes" : 					{
 						"client_rect" : [ 1057, 45, 1440, 407 ],
 						"parameter_enable" : 0,
@@ -203,7 +263,7 @@
 ,
 					"style" : "",
 					"text" : "pattrstorage @outputmode 1 @notifymode 1",
-					"varname" : "u255002463"
+					"varname" : "u611007292"
 				}
 
 			}
@@ -214,7 +274,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 64.0, 190.0, 100.0, 22.0 ],
+					"patching_rect" : [ 141.0, 176.0, 100.0, 22.0 ],
 					"restore" : [ 0.0, 0.406149 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0
@@ -235,7 +295,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 104.5, 227.0, 192.0, 20.0 ],
+					"patching_rect" : [ 181.5, 213.0, 192.0, 20.0 ],
 					"size" : 1.0,
 					"style" : "",
 					"varname" : "rslider"
@@ -244,12 +304,13 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.901961, 0.8, 0.392157, 1.0 ],
 					"id" : "obj-11",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 87.0, 500.0, 196.0, 22.0 ],
+					"patching_rect" : [ 172.0, 484.0, 199.0, 22.0 ],
 					"style" : "",
 					"text" : "m158.o.phase.scale~ /playpoints"
 				}
@@ -316,6 +377,24 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-18", 0 ]
 				}
 
 			}
@@ -476,10 +555,6 @@
 			}
 , 			{
 				"name" : "o.timetag.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.display.mxo",
 				"type" : "iLaX"
 			}
 , 			{
