@@ -54,7 +54,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1252.0, 686.0 ],
+						"rect" : [ 110.0, 105.0, 1252.0, 686.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -83,6 +83,22 @@
 						"subpatcher_template" : "Default Max 7",
 						"showontab" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"fontname" : "Arial Italic",
+									"fontsize" : 14.0,
+									"id" : "obj-4",
+									"linecount" : 5,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 22.0, 224.5, 362.0, 85.0 ],
+									"presentation_rect" : [ 23.0, 253.5, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "To get us there, we take a short trip through the basics of ring and amplitude modulation synthesis techniques, as an introduction to frequency modulation. Then we jump over to thinking about how we can use the keyboard as a controller, and finally put the pieces together."
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"fontsize" : 14.0,
 									"id" : "obj-3",
@@ -216,6 +232,20 @@
 						"subpatcher_template" : "Default Max 7",
 						"showontab" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"hidden" : 1,
+									"id" : "obj-2",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 685.0, 52.0, 82.0, 22.0 ],
+									"style" : "",
+									"text" : "loadmess 0.5"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-24",
 									"maxclass" : "comment",
@@ -354,7 +384,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "float" ],
 									"patching_rect" : [ 685.0, 116.5, 56.0, 22.0 ],
-									"sig" : 0.0,
+									"sig" : 0.5,
 									"style" : ""
 								}
 
@@ -395,7 +425,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "float" ],
 									"patching_rect" : [ 469.25, 122.0, 56.0, 22.0 ],
-									"sig" : 0.0,
+									"sig" : 0.52,
 									"style" : ""
 								}
 
@@ -489,7 +519,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "float" ],
 									"patching_rect" : [ 359.5, 123.0, 56.0, 22.0 ],
-									"sig" : 0.0,
+									"sig" : 325.0,
 									"style" : ""
 								}
 
@@ -629,6 +659,15 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-19", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-48", 0 ],
+									"disabled" : 0,
+									"hidden" : 1,
+									"source" : [ "obj-2", 0 ]
 								}
 
 							}
@@ -2277,7 +2316,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 340.0, 165.0, 65.0, 22.0 ],
-									"restore" : [ 121.0 ],
+									"restore" : [ 145.0 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0
 									}
@@ -2311,7 +2350,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 225.5, 165.0, 58.0, 22.0 ],
-									"restore" : [ 1500.0 ],
+									"restore" : [ 596.0 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0
 									}
@@ -2394,7 +2433,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u478010329"
+									"varname" : "u945004697"
 								}
 
 							}
@@ -3029,7 +3068,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "float" ],
 									"patching_rect" : [ 746.0, 60.0, 56.0, 22.0 ],
-									"sig" : 0.0,
+									"sig" : 599.0,
 									"style" : ""
 								}
 
@@ -3136,7 +3175,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "float" ],
 									"patching_rect" : [ 470.5, 64.0, 56.0, 22.0 ],
-									"sig" : 0.0,
+									"sig" : 150.3,
 									"style" : ""
 								}
 
@@ -8387,7 +8426,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u229011331"
+									"varname" : "u735005706"
 								}
 
 							}
@@ -8633,14 +8672,13 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-8",
-									"linecount" : 10,
+									"linecount" : 16,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 24.0, 236.5, 287.0, 141.0 ],
-									"presentation_rect" : [ 783.5, 322.0, 0.0, 0.0 ],
+									"patching_rect" : [ 24.0, 236.5, 296.0, 221.0 ],
 									"style" : "",
-									"text" : "In this example, we're using the /key/id/column for to change the note number with column and the octave with the row. We're also using the column to change the note duration.\n\nThis is just to show how it works -- for your lab: make it much more interesting!!  use scales, change the harmonicity, change the modulation index range, change the envelopes, you could also add delay, .... and on and on!"
+									"text" : "In this example, we're using the /key/id/column for to change the note number with column and the octave with the row. We're also using the column to change the note duration.\n\nThis is just to show how it works -- for your lab: make it much more interesting!!  \n\nfor example you could:\nuse scales for the notes, \nchange the harmonicity, \nchange the modulation index range, \nchange the envelopes, \nyou could also add delay, \n\n... and on and on!"
 								}
 
 							}
@@ -8651,7 +8689,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 547.5, 52.0, 236.0, 20.0 ],
-									"presentation_rect" : [ 496.0, 48.5, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "Your version should be MUCH BETTER : )"
 								}
@@ -8701,7 +8738,7 @@
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 100.0, 116.0, 684.0, 696.0 ],
+										"rect" : [ 100.0, 116.0, 927.0, 580.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -9852,7 +9889,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u739011644"
+									"varname" : "u226006030"
 								}
 
 							}
@@ -10053,7 +10090,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 110.0, 105.0, 1252.0, 686.0 ],
+						"rect" : [ 0.0, 26.0, 1252.0, 686.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -10154,7 +10191,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 418.0, 199.0, 279.0, 347.0 ],
-									"text" : "/ascii : \"delete\",\n/keystate : \"up\",\n/keynum : -7,\n/numKeysDown : 0,\n/fingerIndex : 1,\n/shift : \"up\",\n/capslock : \"up\",\n/option : \"up\",\n/control : \"up\",\n/command : \"down\",\n/time : 2016-10-25T01:06:30.360222Z,\n/horizontal : 1260,\n/vertical : 87,\n/delta/horizontal : 0,\n/delta/vertical : 0,\n/screenDim : [1440, 900],\n/middle : [720., 450.],\n/button/is : \"up\",\n/x : 540.,\n/y : 363.,\n/distance : 650.668,\n/angle : 33.9099,\n/delta/distance : 0.,\n/delta/angle : 0.",
+									"text" : "/ascii : \"f\",\n/keystate : \"up\",\n/keynum : 102,\n/numKeysDown : 0,\n/fingerIndex : 2,\n/shift : \"up\",\n/capslock : \"up\",\n/option : \"up\",\n/control : \"up\",\n/command : \"up\",\n/time : 2016-10-25T02:40:33.190536Z,\n/horizontal : 747,\n/vertical : 203,\n/delta/horizontal : 432,\n/delta/vertical : -22,\n/screenDim : [1440, 900],\n/middle : [720., 450.],\n/button/is : \"up\",\n/x : 27.,\n/y : 247.,\n/distance : 248.471,\n/angle : 83.7617,\n/delta/distance : 432.56,\n/delta/angle : 2.91532",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -10209,7 +10246,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 90.0, 199.0, 279.0, 347.0 ],
-									"text" : "/horizontal : 1260,\n/vertical : 87,\n/delta/horizontal : 0,\n/delta/vertical : 0,\n/screenDim : [1440, 900],\n/middle : [720., 450.],\n/button/is : \"up\",\n/x : 540.,\n/y : 363.,\n/distance : 650.668,\n/angle : 33.9099,\n/delta/distance : 0.,\n/delta/angle : 0.,\n/shift : \"up\",\n/capslock : \"up\",\n/option : \"up\",\n/control : \"up\",\n/command : \"down\",\n/time : 2016-10-25T01:06:30.360128Z,\n/ascii : \"delete\",\n/keystate : \"up\",\n/keynum : -7,\n/numKeysDown : 0,\n/fingerIndex : 1",
+									"text" : "/horizontal : 137,\n/vertical : 90,\n/delta/horizontal : 0,\n/delta/vertical : 0,\n/screenDim : [1440, 900],\n/middle : [720., 450.],\n/button/is : \"down\",\n/x : -583.,\n/y : 360.,\n/distance : 685.193,\n/angle : 148.305,\n/delta/distance : 0.,\n/delta/angle : 0.,\n/shift : \"up\",\n/capslock : \"up\",\n/option : \"up\",\n/control : \"up\",\n/command : \"up\",\n/time : 2016-10-25T02:40:39.269535Z,\n/ascii : \"f\",\n/keystate : \"up\",\n/keynum : 102,\n/numKeysDown : 0,\n/fingerIndex : 2",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -10264,7 +10301,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 724.0, 190.0, 279.0, 347.0 ],
-									"text" : "/horizontal : 1260,\n/vertical : 87,\n/delta/horizontal : 0,\n/delta/vertical : 0,\n/screenDim : [1440, 900],\n/middle : [720., 450.],\n/button/is : \"up\",\n/x : 540.,\n/y : 363.,\n/distance : 650.668,\n/angle : 33.9099,\n/delta/distance : 0.,\n/delta/angle : 0.,\n/shift : \"up\",\n/capslock : \"up\",\n/option : \"up\",\n/control : \"up\",\n/command : \"down\",\n/time : 2016-10-25T01:06:30.360003Z,\n/ascii : \"delete\",\n/keystate : \"up\",\n/keynum : -7,\n/numKeysDown : 0,\n/fingerIndex : 1",
+									"text" : "/horizontal : 137,\n/vertical : 90,\n/delta/horizontal : 0,\n/delta/vertical : 0,\n/screenDim : [1440, 900],\n/middle : [720., 450.],\n/button/is : \"down\",\n/x : -583.,\n/y : 360.,\n/distance : 685.193,\n/angle : 148.305,\n/delta/distance : 0.,\n/delta/angle : 0.,\n/shift : \"up\",\n/capslock : \"up\",\n/option : \"up\",\n/control : \"up\",\n/command : \"up\",\n/time : 2016-10-25T02:40:39.269425Z,\n/ascii : \"f\",\n/keystate : \"up\",\n/keynum : 102,\n/numKeysDown : 0,\n/fingerIndex : 2",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -10662,7 +10699,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 434.0, 67.0, 197.0, 156.0 ],
-									"text" : "/ascii : \"delete\",\n/keystate : \"up\",\n/keynum : -7,\n/numKeysDown : 0,\n/fingerIndex : 1,\n/shift : \"up\",\n/capslock : \"up\",\n/option : \"up\",\n/control : \"up\",\n/command : \"up\",\n/time : 2016-10-25T01:06:26.160028Z",
+									"text" : "/ascii : \"a\",\n/keystate : \"up\",\n/keynum : 97,\n/numKeysDown : 0,\n/fingerIndex : 1,\n/shift : \"up\",\n/capslock : \"up\",\n/option : \"up\",\n/control : \"up\",\n/command : \"up\",\n/time : 2016-10-25T02:38:35.673368Z",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -10990,7 +11027,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 415.5, 628.0, 320.0, 48.0 ],
-									"text" : "/key/id/row : 0,\n/key/id/column : 0",
+									"text" : "/key/id/row : 2,\n/key/id/column : 1",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -11258,9 +11295,9 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 842.0, 309.5, 298.0, 51.0 ],
+									"patching_rect" : [ 842.0, 309.5, 309.0, 51.0 ],
 									"style" : "",
-									"text" : "To trigger a note to be played only when we press a key, we can use the if statement and only create the trigger value (sent to an m158.o.click~)"
+									"text" : "To trigger a note to be played only when we press the [a] key, we can use the if statement and only create the trigger value (sent to an m158.o.click~)"
 								}
 
 							}
@@ -12204,7 +12241,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u380012049"
+									"varname" : "u924006434"
 								}
 
 							}
@@ -13457,7 +13494,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u469012350"
+									"varname" : "u518013109"
 								}
 
 							}
