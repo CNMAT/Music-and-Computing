@@ -54,7 +54,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 110.0, 105.0, 1252.0, 686.0 ],
+						"rect" : [ 0.0, 26.0, 1252.0, 686.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -91,8 +91,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 22.0, 224.5, 362.0, 85.0 ],
-									"presentation_rect" : [ 23.0, 253.5, 0.0, 0.0 ],
+									"patching_rect" : [ 22.0, 224.5, 366.0, 85.0 ],
 									"style" : "",
 									"text" : "To get us there, we take a short trip through the basics of ring and amplitude modulation synthesis techniques, as an introduction to frequency modulation. Then we jump over to thinking about how we can use the keyboard as a controller, and finally put the pieces together."
 								}
@@ -425,7 +424,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "float" ],
 									"patching_rect" : [ 469.25, 122.0, 56.0, 22.0 ],
-									"sig" : 0.52,
+									"sig" : 0.0,
 									"style" : ""
 								}
 
@@ -519,7 +518,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "float" ],
 									"patching_rect" : [ 359.5, 123.0, 56.0, 22.0 ],
-									"sig" : 325.0,
+									"sig" : 0.0,
 									"style" : ""
 								}
 
@@ -2433,7 +2432,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u945004697"
+									"varname" : "u075003739"
 								}
 
 							}
@@ -3068,7 +3067,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "float" ],
 									"patching_rect" : [ 746.0, 60.0, 56.0, 22.0 ],
-									"sig" : 599.0,
+									"sig" : 0.0,
 									"style" : ""
 								}
 
@@ -3175,7 +3174,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "float" ],
 									"patching_rect" : [ 470.5, 64.0, 56.0, 22.0 ],
-									"sig" : 150.3,
+									"sig" : 0.0,
 									"style" : ""
 								}
 
@@ -8426,7 +8425,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u735005706"
+									"varname" : "u674011738"
 								}
 
 							}
@@ -9889,7 +9888,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u226006030"
+									"varname" : "u739011427"
 								}
 
 							}
@@ -12241,7 +12240,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u924006434"
+									"varname" : "u863011012"
 								}
 
 							}
@@ -13494,7 +13493,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u518013109"
+									"varname" : "u921013284"
 								}
 
 							}
@@ -13745,7 +13744,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1252.0, 686.0 ],
+						"rect" : [ 110.0, 105.0, 1252.0, 686.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -13775,12 +13774,27 @@
 						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"bubble" : 1,
+									"id" : "obj-23",
+									"linecount" : 4,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 614.0, 93.0, 163.0, 64.0 ],
+									"presentation_rect" : [ 573.0, 168.0, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "the \"modulation index\" is the ratio between the modulator and the peak frequency deviation."
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-18",
 									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 934.5, 174.5, 71.0, 33.0 ],
+									"patching_rect" : [ 989.5, 126.5, 71.0, 33.0 ],
 									"style" : "",
 									"text" : "modulation index",
 									"textjustification" : 1
@@ -13793,7 +13807,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 797.5, 183.5, 45.0, 20.0 ],
+									"patching_rect" : [ 852.5, 135.5, 45.0, 20.0 ],
 									"style" : "",
 									"text" : "carrier"
 								}
@@ -13806,7 +13820,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 868.0, 177.0, 63.5, 33.0 ],
+									"patching_rect" : [ 923.0, 129.0, 63.5, 33.0 ],
 									"style" : "",
 									"text" : "harmonic ratio",
 									"textjustification" : 1
@@ -13819,7 +13833,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 792.0, 131.0, 229.0, 20.0 ],
+									"patching_rect" : [ 847.0, 101.5, 229.0, 20.0 ],
 									"style" : "",
 									"text" : "Here's a gen~ version of the same patch:"
 								}
@@ -13948,13 +13962,14 @@
 							}
 , 							{
 								"box" : 								{
+									"bubble" : 1,
 									"id" : "obj-21",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 598.0, 281.0, 155.0, 20.0 ],
+									"patching_rect" : [ 598.0, 281.0, 161.0, 24.0 ],
 									"style" : "",
-									"text" : "bipolar modulator deviation"
+									"text" : "peak frequency deviation"
 								}
 
 							}
@@ -14145,7 +14160,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1047.5, 319.0, 33.0, 22.0 ],
+									"patching_rect" : [ 1102.5, 271.0, 33.0, 22.0 ],
 									"style" : "",
 									"text" : "stop"
 								}
@@ -14158,7 +14173,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 964.5, 319.0, 74.0, 22.0 ],
+									"patching_rect" : [ 1019.5, 271.0, 74.0, 22.0 ],
 									"style" : "",
 									"text" : "startwindow"
 								}
@@ -14170,7 +14185,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 792.0, 353.0, 37.0, 22.0 ],
+									"patching_rect" : [ 847.0, 305.0, 37.0, 22.0 ],
 									"style" : "",
 									"text" : "dac~"
 								}
@@ -14184,7 +14199,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 792.0, 294.0, 124.0, 19.0 ],
+									"patching_rect" : [ 847.0, 246.0, 124.0, 19.0 ],
 									"style" : ""
 								}
 
@@ -14200,7 +14215,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "float" ],
-									"patching_rect" : [ 946.0, 210.5, 56.0, 22.0 ],
+									"patching_rect" : [ 1001.0, 162.5, 56.0, 22.0 ],
 									"sig" : 0.0,
 									"style" : ""
 								}
@@ -14217,7 +14232,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "float" ],
-									"patching_rect" : [ 869.0, 210.5, 56.0, 22.0 ],
+									"patching_rect" : [ 924.0, 162.5, 56.0, 22.0 ],
 									"sig" : 0.0,
 									"style" : ""
 								}
@@ -14234,7 +14249,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "float" ],
-									"patching_rect" : [ 792.0, 210.5, 56.0, 22.0 ],
+									"patching_rect" : [ 847.0, 162.5, 56.0, 22.0 ],
 									"sig" : 0.0,
 									"style" : ""
 								}
@@ -14542,7 +14557,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 792.0, 252.5, 173.0, 22.0 ],
+									"patching_rect" : [ 847.0, 204.5, 173.0, 22.0 ],
 									"style" : "",
 									"text" : "gen~"
 								}
