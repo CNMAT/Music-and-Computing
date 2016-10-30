@@ -70848,14 +70848,94 @@
 						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-3",
-									"linecount" : 4,
+									"bubble" : 1,
+									"id" : "obj-19",
+									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 37.0, 60.0, 254.0, 60.0 ],
+									"patching_rect" : [ 878.5, 601.0, 214.0, 37.0 ],
 									"style" : "",
-									"text" : "Trigger with LFO with keyboard and scale.\n\nIn this examle, each synth voice is in its own subpatch, (see the synth-voices subpatch)."
+									"text" : "look inside to see modular delegation polyphony approach"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-17",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 860.125, 578.5, 37.0, 20.0 ],
+									"presentation_rect" : [ 871.125, 557.5, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "OSC"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-16",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 748.125, 565.5, 72.0, 33.0 ],
+									"presentation_rect" : [ 754.0, 574.5, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "maximum mod index"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-15",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 644.0, 578.5, 72.0, 20.0 ],
+									"presentation_rect" : [ 651.0, 582.5, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "harmonicity"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-13",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 528.0, 554.5, 43.0, 20.0 ],
+									"presentation_rect" : [ 533.0, 549.0, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "car hz"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-12",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 424.0, 548.0, 57.0, 33.0 ],
+									"style" : "",
+									"text" : "duration trigger"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"linecount" : 9,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 37.0, 60.0, 264.0, 127.0 ],
+									"style" : "",
+									"text" : "Trigger with LFO with keyboard and scale.\n\nIn this examle, each synth voice is in its own subpatch, (see the synth-voices subpatch).\n\nHere the FM carrier hz and harmonicity are sampled and held with sah~, but the maximum modulation index value is controlled in real time across all voices by the LFO. "
 								}
 
 							}
@@ -70922,7 +71002,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 18.0, 409.0, 361.0, 304.0 ],
-									"text" : "/key/id/row : 0,\n/key/id/column : 0,\n/ascii : \"down\",\n/keystate : \"up\",\n/keynum : -10,\n/numKeysDown : 0,\n/fingerIndex : 1,\n/shift : \"up\",\n/capslock : \"up\",\n/option : \"up\",\n/control : \"up\",\n/command : \"down\",\n/time : 2016-10-30T22:52:07.317534Z,\n/env/amp/x : [0., 0.0212766, 0.792553, 1.],\n/env/amp/y : [0., 1., 0.606667, 0.],\n/env/mod/x : [0., 0., 0.0797872, 0.382979, 0.920213, 1.],\n/env/mod/y : [0., 1., 0., 0., 0.846667, 0.],\n/env/count : 2,\n/baseMIDI : 36,\n/scale/intervals : [0, 2, 3.86, 5, 7.02, 8.86, 10.84],\n/scale/length : 7,\n/step : -1,\n/interval : 10.84,\n/octaveOffset : -1.,\n/hz : 61.1675",
+									"text" : "/key/id/row : 0,\n/key/id/column : 0,\n/ascii : \"return\",\n/keystate : \"up\",\n/keynum : -4,\n/numKeysDown : 0,\n/fingerIndex : 1,\n/shift : \"up\",\n/capslock : \"up\",\n/option : \"up\",\n/control : \"up\",\n/command : \"down\",\n/time : 2016-10-30T22:58:14.301894Z,\n/env/amp/x : [0., 0.0212766, 0.792553, 1.],\n/env/amp/y : [0., 1., 0.606667, 0.],\n/env/mod/x : [0., 0., 0.0797872, 0.382979, 0.920213, 1.],\n/env/mod/y : [0., 1., 0., 0., 0.846667, 0.],\n/env/count : 2,\n/baseMIDI : 36,\n/scale/intervals : [0, 2, 3.86, 5, 7.02, 8.86, 10.84],\n/scale/length : 7,\n/step : -1,\n/interval : 10.84,\n/octaveOffset : -1.,\n/hz : 61.1675",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -71402,7 +71482,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 629.125, 564.5, 44.0, 22.0 ],
+									"patching_rect" : [ 629.125, 554.5, 44.0, 22.0 ],
 									"style" : "",
 									"text" : "trunc~"
 								}
@@ -71490,7 +71570,7 @@
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 406.0, 79.0, 457.0, 703.0 ],
+										"rect" : [ 458.0, 86.0, 407.0, 714.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -71519,12 +71599,101 @@
 										"subpatcher_template" : "Default Max 7",
 										"boxes" : [ 											{
 												"box" : 												{
+													"id" : "obj-26",
+													"linecount" : 2,
+													"maxclass" : "comment",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 90.550003, 566.5, 245.0, 33.0 ],
+													"presentation_rect" : [ 95.550003, 573.0, 0.0, 0.0 ],
+													"style" : "",
+													"text" : "scaling so if all 12 voices are playing the maximum amplitude will be 1"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-25",
+													"maxclass" : "comment",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 90.550003, 621.0, 60.0, 20.0 ],
+													"presentation_rect" : [ 90.550003, 622.0, 0.0, 0.0 ],
+													"style" : "",
+													"text" : "audio out"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-20",
+													"maxclass" : "comment",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 266.75, 29.0, 37.0, 20.0 ],
+													"style" : "",
+													"text" : "OSC"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-21",
+													"linecount" : 2,
+													"maxclass" : "comment",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 214.149994, 78.0, 72.0, 33.0 ],
+													"style" : "",
+													"text" : "maximum mod index"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-22",
+													"maxclass" : "comment",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 161.149994, 51.0, 72.0, 20.0 ],
+													"style" : "",
+													"text" : "harmonicity"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-23",
+													"maxclass" : "comment",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 138.100006, 74.5, 43.0, 20.0 ],
+													"style" : "",
+													"text" : "car hz"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-24",
+													"linecount" : 2,
+													"maxclass" : "comment",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 80.550003, 42.0, 57.0, 33.0 ],
+													"style" : "",
+													"text" : "duration trigger"
+												}
+
+											}
+, 											{
+												"box" : 												{
 													"id" : "obj-19",
 													"maxclass" : "newobj",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "signal" ],
-													"patching_rect" : [ 50.0, 511.0, 38.0, 22.0 ],
+													"patching_rect" : [ 50.0, 572.0, 38.0, 22.0 ],
 													"style" : "",
 													"text" : "/~ 12"
 												}
@@ -72472,7 +72641,7 @@
  ]
 													}
 ,
-													"patching_rect" : [ 50.0, 469.0, 239.25, 22.0 ],
+													"patching_rect" : [ 50.0, 530.0, 239.25, 22.0 ],
 													"saved_object_attributes" : 													{
 														"description" : "",
 														"digest" : "",
@@ -73428,7 +73597,7 @@
  ]
 													}
 ,
-													"patching_rect" : [ 50.0, 435.0, 239.25, 22.0 ],
+													"patching_rect" : [ 50.0, 496.0, 239.25, 22.0 ],
 													"saved_object_attributes" : 													{
 														"description" : "",
 														"digest" : "",
@@ -74384,7 +74553,7 @@
  ]
 													}
 ,
-													"patching_rect" : [ 50.0, 403.0, 239.25, 22.0 ],
+													"patching_rect" : [ 50.0, 464.0, 239.25, 22.0 ],
 													"saved_object_attributes" : 													{
 														"description" : "",
 														"digest" : "",
@@ -75340,7 +75509,7 @@
  ]
 													}
 ,
-													"patching_rect" : [ 50.0, 369.0, 239.25, 22.0 ],
+													"patching_rect" : [ 50.0, 430.0, 239.25, 22.0 ],
 													"saved_object_attributes" : 													{
 														"description" : "",
 														"digest" : "",
@@ -76296,7 +76465,7 @@
  ]
 													}
 ,
-													"patching_rect" : [ 50.0, 336.0, 239.25, 22.0 ],
+													"patching_rect" : [ 50.0, 397.0, 239.25, 22.0 ],
 													"saved_object_attributes" : 													{
 														"description" : "",
 														"digest" : "",
@@ -77252,7 +77421,7 @@
  ]
 													}
 ,
-													"patching_rect" : [ 50.0, 302.0, 239.25, 22.0 ],
+													"patching_rect" : [ 50.0, 363.0, 239.25, 22.0 ],
 													"saved_object_attributes" : 													{
 														"description" : "",
 														"digest" : "",
@@ -77274,7 +77443,7 @@
 													"numinlets" : 0,
 													"numoutlets" : 1,
 													"outlettype" : [ "signal" ],
-													"patching_rect" : [ 226.199997, 43.0, 30.0, 30.0 ],
+													"patching_rect" : [ 226.199997, 113.0, 30.0, 30.0 ],
 													"style" : ""
 												}
 
@@ -78221,7 +78390,7 @@
  ]
 													}
 ,
-													"patching_rect" : [ 50.0, 267.0, 239.25, 22.0 ],
+													"patching_rect" : [ 50.0, 328.0, 239.25, 22.0 ],
 													"saved_object_attributes" : 													{
 														"description" : "",
 														"digest" : "",
@@ -79177,7 +79346,7 @@
  ]
 													}
 ,
-													"patching_rect" : [ 50.0, 233.0, 239.25, 22.0 ],
+													"patching_rect" : [ 50.0, 294.0, 239.25, 22.0 ],
 													"saved_object_attributes" : 													{
 														"description" : "",
 														"digest" : "",
@@ -80133,7 +80302,7 @@
  ]
 													}
 ,
-													"patching_rect" : [ 50.0, 201.0, 239.25, 22.0 ],
+													"patching_rect" : [ 50.0, 262.0, 239.25, 22.0 ],
 													"saved_object_attributes" : 													{
 														"description" : "",
 														"digest" : "",
@@ -81089,7 +81258,7 @@
  ]
 													}
 ,
-													"patching_rect" : [ 50.0, 167.0, 239.25, 22.0 ],
+													"patching_rect" : [ 50.0, 228.0, 239.25, 22.0 ],
 													"saved_object_attributes" : 													{
 														"description" : "",
 														"digest" : "",
@@ -82045,7 +82214,7 @@
  ]
 													}
 ,
-													"patching_rect" : [ 50.0, 134.0, 239.25, 22.0 ],
+													"patching_rect" : [ 50.0, 195.0, 239.25, 22.0 ],
 													"saved_object_attributes" : 													{
 														"description" : "",
 														"digest" : "",
@@ -83001,7 +83170,7 @@
  ]
 													}
 ,
-													"patching_rect" : [ 50.0, 100.0, 239.25, 22.0 ],
+													"patching_rect" : [ 50.0, 161.0, 239.25, 22.0 ],
 													"saved_object_attributes" : 													{
 														"description" : "",
 														"digest" : "",
@@ -83023,7 +83192,7 @@
 													"numinlets" : 0,
 													"numoutlets" : 1,
 													"outlettype" : [ "signal" ],
-													"patching_rect" : [ 94.050003, 43.0, 30.0, 30.0 ],
+													"patching_rect" : [ 94.050003, 78.0, 30.0, 30.0 ],
 													"style" : ""
 												}
 
@@ -83036,7 +83205,7 @@
 													"numinlets" : 0,
 													"numoutlets" : 1,
 													"outlettype" : [ "signal" ],
-													"patching_rect" : [ 138.100006, 43.0, 30.0, 30.0 ],
+													"patching_rect" : [ 138.100006, 104.0, 30.0, 30.0 ],
 													"style" : ""
 												}
 
@@ -83049,7 +83218,7 @@
 													"numinlets" : 0,
 													"numoutlets" : 1,
 													"outlettype" : [ "signal" ],
-													"patching_rect" : [ 182.149994, 43.0, 30.0, 30.0 ],
+													"patching_rect" : [ 182.149994, 74.5, 30.0, 30.0 ],
 													"style" : ""
 												}
 
@@ -83062,7 +83231,7 @@
 													"numinlets" : 0,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 270.25, 43.0, 30.0, 30.0 ],
+													"patching_rect" : [ 270.25, 51.0, 30.0, 30.0 ],
 													"style" : ""
 												}
 
@@ -83074,7 +83243,7 @@
 													"maxclass" : "outlet",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 50.0, 560.0, 30.0, 30.0 ],
+													"patching_rect" : [ 50.0, 621.0, 30.0, 30.0 ],
 													"style" : ""
 												}
 
