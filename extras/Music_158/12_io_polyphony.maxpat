@@ -53,7 +53,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 46.0, 105.0, 1193.0, 732.0 ],
+						"rect" : [ 0.0, 26.0, 1193.0, 732.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -85061,7 +85061,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1193.0, 732.0 ],
+						"rect" : [ 46.0, 105.0, 1193.0, 732.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -85760,7 +85760,7 @@
 															"modernui" : 1
 														}
 ,
-														"rect" : [ 359.0, 139.0, 955.0, 647.0 ],
+														"rect" : [ 202.0, 117.0, 1092.0, 645.0 ],
 														"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 0,
@@ -85789,6 +85789,19 @@
 														"style" : "",
 														"subpatcher_template" : "",
 														"boxes" : [ 															{
+																"box" : 																{
+																	"id" : "obj-23",
+																	"linecount" : 6,
+																	"maxclass" : "comment",
+																	"numinlets" : 1,
+																	"numoutlets" : 0,
+																	"patching_rect" : [ 564.25, 465.0, 378.0, 87.0 ],
+																	"style" : "",
+																	"text" : "note: \ngen~ performs its code on every sample. \n\nNormal variables only keep their values until the end of the codebox, History variables hold their values for multiple samples until set again."
+																}
+
+															}
+, 															{
 																"box" : 																{
 																	"id" : "obj-17",
 																	"linecount" : 2,
@@ -85867,7 +85880,7 @@
 															}
 , 															{
 																"box" : 																{
-																	"code" : "History sah_env, prev_w;\r\n\r\nenv = in1;\r\nmode = in2; // 0 note off, 1 note on\r\n\r\nw = -1;\r\n\r\nif( abs(change(mode)) ) // similar to sah~\r\n{\r\n\tsah_env = prev_w;\r\n}\r\n\r\nif( mode == 1 )\r\n{\r\n\tw = scale( env, 0, 1, sah_env, 1);\r\n}\r\nelse if( mode == 0)\r\n{\r\n\tw = scale( env, 0, 1, 0, sah_env);\r\n}\r\n\r\nout1 = w;\r\nout2 = sah_env;\r\nprev_w = w;",
+																	"code" : "History sah_env, prev_w;\r\n\r\nenv = in1;\r\nmode = in2; // 0 note off, 1 note on\r\n\r\nw = 0; //initialize w\r\n\r\nif( abs(change(mode)) ) // similar to sah~\r\n{\r\n\tsah_env = prev_w;\r\n}\r\n\r\nif( mode == 1 )\r\n{\r\n\tw = scale( env, 0, 1, sah_env, 1);\r\n}\r\nelse if( mode == 0)\r\n{\r\n\tw = scale( env, 0, 1, 0, sah_env);\r\n}\r\n\r\nout1 = w;\r\nout2 = sah_env;\r\nprev_w = w;",
 																	"fontface" : 0,
 																	"fontname" : "Arial",
 																	"fontsize" : 12.0,
@@ -85876,7 +85889,7 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "" ],
-																	"patching_rect" : [ 555.25, 89.0, 340.0, 388.0 ],
+																	"patching_rect" : [ 564.25, 66.5, 357.0, 386.0 ],
 																	"style" : ""
 																}
 
@@ -85991,7 +86004,7 @@
 																	"maxclass" : "comment",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 582.25, 65.0, 277.0, 20.0 ],
+																	"patching_rect" : [ 604.25, 44.5, 277.0, 20.0 ],
 																	"style" : "",
 																	"text" : "Here is (almost) the same patch but in a codebox."
 																}
@@ -86700,7 +86713,7 @@
 															"modernui" : 1
 														}
 ,
-														"rect" : [ 359.0, 139.0, 955.0, 647.0 ],
+														"rect" : [ 202.0, 117.0, 1092.0, 645.0 ],
 														"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 0,
@@ -86729,6 +86742,19 @@
 														"style" : "",
 														"subpatcher_template" : "",
 														"boxes" : [ 															{
+																"box" : 																{
+																	"id" : "obj-23",
+																	"linecount" : 6,
+																	"maxclass" : "comment",
+																	"numinlets" : 1,
+																	"numoutlets" : 0,
+																	"patching_rect" : [ 564.25, 465.0, 378.0, 87.0 ],
+																	"style" : "",
+																	"text" : "note: \ngen~ performs its code on every sample. \n\nNormal variables only keep their values until the end of the codebox, History variables hold their values for multiple samples until set again."
+																}
+
+															}
+, 															{
 																"box" : 																{
 																	"id" : "obj-17",
 																	"linecount" : 2,
@@ -86807,7 +86833,7 @@
 															}
 , 															{
 																"box" : 																{
-																	"code" : "History sah_env, prev_w;\r\n\r\nenv = in1;\r\nmode = in2; // 0 note off, 1 note on\r\n\r\nw = -1;\r\n\r\nif( abs(change(mode)) ) // similar to sah~\r\n{\r\n\tsah_env = prev_w;\r\n}\r\n\r\nif( mode == 1 )\r\n{\r\n\tw = scale( env, 0, 1, sah_env, 1);\r\n}\r\nelse if( mode == 0)\r\n{\r\n\tw = scale( env, 0, 1, 0, sah_env);\r\n}\r\n\r\nout1 = w;\r\nout2 = sah_env;\r\nprev_w = w;",
+																	"code" : "History sah_env, prev_w;\r\n\r\nenv = in1;\r\nmode = in2; // 0 note off, 1 note on\r\n\r\nw = 0; //initialize w\r\n\r\nif( abs(change(mode)) ) // similar to sah~\r\n{\r\n\tsah_env = prev_w;\r\n}\r\n\r\nif( mode == 1 )\r\n{\r\n\tw = scale( env, 0, 1, sah_env, 1);\r\n}\r\nelse if( mode == 0)\r\n{\r\n\tw = scale( env, 0, 1, 0, sah_env);\r\n}\r\n\r\nout1 = w;\r\nout2 = sah_env;\r\nprev_w = w;",
 																	"fontface" : 0,
 																	"fontname" : "Arial",
 																	"fontsize" : 12.0,
@@ -86816,7 +86842,7 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "" ],
-																	"patching_rect" : [ 555.25, 89.0, 340.0, 388.0 ],
+																	"patching_rect" : [ 564.25, 66.5, 357.0, 386.0 ],
 																	"style" : ""
 																}
 
@@ -86931,7 +86957,7 @@
 																	"maxclass" : "comment",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 582.25, 65.0, 277.0, 20.0 ],
+																	"patching_rect" : [ 604.25, 44.5, 277.0, 20.0 ],
 																	"style" : "",
 																	"text" : "Here is (almost) the same patch but in a codebox."
 																}
@@ -87640,7 +87666,7 @@
 															"modernui" : 1
 														}
 ,
-														"rect" : [ 359.0, 139.0, 955.0, 647.0 ],
+														"rect" : [ 202.0, 117.0, 1092.0, 645.0 ],
 														"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 0,
@@ -87669,6 +87695,19 @@
 														"style" : "",
 														"subpatcher_template" : "",
 														"boxes" : [ 															{
+																"box" : 																{
+																	"id" : "obj-23",
+																	"linecount" : 6,
+																	"maxclass" : "comment",
+																	"numinlets" : 1,
+																	"numoutlets" : 0,
+																	"patching_rect" : [ 564.25, 465.0, 378.0, 87.0 ],
+																	"style" : "",
+																	"text" : "note: \ngen~ performs its code on every sample. \n\nNormal variables only keep their values until the end of the codebox, History variables hold their values for multiple samples until set again."
+																}
+
+															}
+, 															{
 																"box" : 																{
 																	"id" : "obj-17",
 																	"linecount" : 2,
@@ -87747,7 +87786,7 @@
 															}
 , 															{
 																"box" : 																{
-																	"code" : "History sah_env, prev_w;\r\n\r\nenv = in1;\r\nmode = in2; // 0 note off, 1 note on\r\n\r\nw = -1;\r\n\r\nif( abs(change(mode)) ) // similar to sah~\r\n{\r\n\tsah_env = prev_w;\r\n}\r\n\r\nif( mode == 1 )\r\n{\r\n\tw = scale( env, 0, 1, sah_env, 1);\r\n}\r\nelse if( mode == 0)\r\n{\r\n\tw = scale( env, 0, 1, 0, sah_env);\r\n}\r\n\r\nout1 = w;\r\nout2 = sah_env;\r\nprev_w = w;",
+																	"code" : "History sah_env, prev_w;\r\n\r\nenv = in1;\r\nmode = in2; // 0 note off, 1 note on\r\n\r\nw = 0; //initialize w\r\n\r\nif( abs(change(mode)) ) // similar to sah~\r\n{\r\n\tsah_env = prev_w;\r\n}\r\n\r\nif( mode == 1 )\r\n{\r\n\tw = scale( env, 0, 1, sah_env, 1);\r\n}\r\nelse if( mode == 0)\r\n{\r\n\tw = scale( env, 0, 1, 0, sah_env);\r\n}\r\n\r\nout1 = w;\r\nout2 = sah_env;\r\nprev_w = w;",
 																	"fontface" : 0,
 																	"fontname" : "Arial",
 																	"fontsize" : 12.0,
@@ -87756,7 +87795,7 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "" ],
-																	"patching_rect" : [ 555.25, 89.0, 340.0, 388.0 ],
+																	"patching_rect" : [ 564.25, 66.5, 357.0, 386.0 ],
 																	"style" : ""
 																}
 
@@ -87871,7 +87910,7 @@
 																	"maxclass" : "comment",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 582.25, 65.0, 277.0, 20.0 ],
+																	"patching_rect" : [ 604.25, 44.5, 277.0, 20.0 ],
 																	"style" : "",
 																	"text" : "Here is (almost) the same patch but in a codebox."
 																}
@@ -88580,7 +88619,7 @@
 															"modernui" : 1
 														}
 ,
-														"rect" : [ 359.0, 139.0, 955.0, 647.0 ],
+														"rect" : [ 202.0, 117.0, 1092.0, 645.0 ],
 														"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 0,
@@ -88609,6 +88648,19 @@
 														"style" : "",
 														"subpatcher_template" : "",
 														"boxes" : [ 															{
+																"box" : 																{
+																	"id" : "obj-23",
+																	"linecount" : 6,
+																	"maxclass" : "comment",
+																	"numinlets" : 1,
+																	"numoutlets" : 0,
+																	"patching_rect" : [ 564.25, 465.0, 378.0, 87.0 ],
+																	"style" : "",
+																	"text" : "note: \ngen~ performs its code on every sample. \n\nNormal variables only keep their values until the end of the codebox, History variables hold their values for multiple samples until set again."
+																}
+
+															}
+, 															{
 																"box" : 																{
 																	"id" : "obj-17",
 																	"linecount" : 2,
@@ -88687,7 +88739,7 @@
 															}
 , 															{
 																"box" : 																{
-																	"code" : "History sah_env, prev_w;\r\n\r\nenv = in1;\r\nmode = in2; // 0 note off, 1 note on\r\n\r\nw = -1;\r\n\r\nif( abs(change(mode)) ) // similar to sah~\r\n{\r\n\tsah_env = prev_w;\r\n}\r\n\r\nif( mode == 1 )\r\n{\r\n\tw = scale( env, 0, 1, sah_env, 1);\r\n}\r\nelse if( mode == 0)\r\n{\r\n\tw = scale( env, 0, 1, 0, sah_env);\r\n}\r\n\r\nout1 = w;\r\nout2 = sah_env;\r\nprev_w = w;",
+																	"code" : "History sah_env, prev_w;\r\n\r\nenv = in1;\r\nmode = in2; // 0 note off, 1 note on\r\n\r\nw = 0; //initialize w\r\n\r\nif( abs(change(mode)) ) // similar to sah~\r\n{\r\n\tsah_env = prev_w;\r\n}\r\n\r\nif( mode == 1 )\r\n{\r\n\tw = scale( env, 0, 1, sah_env, 1);\r\n}\r\nelse if( mode == 0)\r\n{\r\n\tw = scale( env, 0, 1, 0, sah_env);\r\n}\r\n\r\nout1 = w;\r\nout2 = sah_env;\r\nprev_w = w;",
 																	"fontface" : 0,
 																	"fontname" : "Arial",
 																	"fontsize" : 12.0,
@@ -88696,7 +88748,7 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "" ],
-																	"patching_rect" : [ 555.25, 89.0, 340.0, 388.0 ],
+																	"patching_rect" : [ 564.25, 66.5, 357.0, 386.0 ],
 																	"style" : ""
 																}
 
@@ -88811,7 +88863,7 @@
 																	"maxclass" : "comment",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 582.25, 65.0, 277.0, 20.0 ],
+																	"patching_rect" : [ 604.25, 44.5, 277.0, 20.0 ],
 																	"style" : "",
 																	"text" : "Here is (almost) the same patch but in a codebox."
 																}
@@ -89524,7 +89576,7 @@
 															"modernui" : 1
 														}
 ,
-														"rect" : [ 359.0, 139.0, 955.0, 647.0 ],
+														"rect" : [ 202.0, 117.0, 1092.0, 645.0 ],
 														"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 0,
@@ -89553,6 +89605,20 @@
 														"style" : "",
 														"subpatcher_template" : "",
 														"boxes" : [ 															{
+																"box" : 																{
+																	"id" : "obj-23",
+																	"linecount" : 6,
+																	"maxclass" : "comment",
+																	"numinlets" : 1,
+																	"numoutlets" : 0,
+																	"patching_rect" : [ 564.25, 465.0, 378.0, 87.0 ],
+																	"presentation_rect" : [ 571.75, 512.0, 0.0, 0.0 ],
+																	"style" : "",
+																	"text" : "note: \ngen~ performs its code on every sample. \n\nNormal variables only keep their values until the end of the codebox, History variables hold their values for multiple samples until set again."
+																}
+
+															}
+, 															{
 																"box" : 																{
 																	"id" : "obj-17",
 																	"linecount" : 2,
@@ -89635,7 +89701,7 @@
 															}
 , 															{
 																"box" : 																{
-																	"code" : "History sah_env, prev_w;\r\n\r\nenv = in1;\r\nmode = in2; // 0 note off, 1 note on\r\n\r\nw = -1;\r\n\r\nif( abs(change(mode)) ) // similar to sah~\r\n{\r\n\tsah_env = prev_w;\r\n}\r\n\r\nif( mode == 1 )\r\n{\r\n\tw = scale( env, 0, 1, sah_env, 1);\r\n}\r\nelse if( mode == 0)\r\n{\r\n\tw = scale( env, 0, 1, 0, sah_env);\r\n}\r\n\r\nout1 = w;\r\nout2 = sah_env;\r\nprev_w = w;",
+																	"code" : "History sah_env, prev_w;\r\n\r\nenv = in1;\r\nmode = in2; // 0 note off, 1 note on\r\n\r\nw = 0; //initialize w\r\n\r\nif( abs(change(mode)) ) // similar to sah~\r\n{\r\n\tsah_env = prev_w;\r\n}\r\n\r\nif( mode == 1 )\r\n{\r\n\tw = scale( env, 0, 1, sah_env, 1);\r\n}\r\nelse if( mode == 0)\r\n{\r\n\tw = scale( env, 0, 1, 0, sah_env);\r\n}\r\n\r\nout1 = w;\r\nout2 = sah_env;\r\nprev_w = w;",
 																	"fontface" : 0,
 																	"fontname" : "Arial",
 																	"fontsize" : 12.0,
@@ -89644,7 +89710,7 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "" ],
-																	"patching_rect" : [ 555.25, 89.0, 340.0, 388.0 ],
+																	"patching_rect" : [ 564.25, 66.5, 357.0, 386.0 ],
 																	"style" : ""
 																}
 
@@ -89759,7 +89825,7 @@
 																	"maxclass" : "comment",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 582.25, 65.0, 277.0, 20.0 ],
+																	"patching_rect" : [ 604.25, 44.5, 277.0, 20.0 ],
 																	"style" : "",
 																	"text" : "Here is (almost) the same patch but in a codebox."
 																}
