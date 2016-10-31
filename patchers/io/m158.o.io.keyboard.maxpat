@@ -41,13 +41,13 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-6",
-					"linecount" : 3,
+					"linecount" : 5,
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 274.666626, 518.0, 212.0, 56.0 ],
-					"text" : "/ascii ??= \"none\",\n/keystate ??= \"none\",\n/keynum ??= 0",
+					"patching_rect" : [ 274.666626, 525.0, 231.0, 81.0 ],
+					"text" : "/ascii ??= \"none\",\n/keystate ??= \"none\",\n/keynum ??= 0,\n/numKeysDown ??= 0,\n/fingerIndex ??= 0",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -58,7 +58,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 490.0, 53.0, 86.0, 21.0 ],
 					"style" : "",
 					"text" : "m158.loadbang"
@@ -523,7 +523,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 179.0, 83.0, 50.0, 21.0 ],
 					"style" : "",
-					"text" : "13"
+					"text" : "104"
 				}
 
 			}
@@ -564,7 +564,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 274.666626, 591.0, 83.0, 21.0 ],
+					"patching_rect" : [ 274.666626, 621.0, 83.0, 21.0 ],
 					"style" : "",
 					"text" : "o.timetag /time"
 				}
@@ -579,9 +579,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 485.0, 367.0, 184.0, 21.0 ],
+					"patching_rect" : [ 485.0, 367.0, 202.0, 21.0 ],
 					"style" : "",
-					"text" : "o.pack /numKeysDown /fingerIndex"
+					"text" : "o.pack /numKeysDown 0 /fingerIndex 0"
 				}
 
 			}
@@ -875,7 +875,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 274.666626, 620.0, 25.0, 25.0 ],
+					"patching_rect" : [ 274.666626, 650.0, 25.0, 25.0 ],
 					"style" : ""
 				}
 
@@ -1665,39 +1665,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "m158.loadbang.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.pack.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.union.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.timetag.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.change.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.var.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.expr.codebox.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
