@@ -36,7 +36,8 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "Default Max 7",
-		"showontab" : 1,
+		"showrootpatcherontab" : 0,
+		"showontab" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-5",
@@ -53,7 +54,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1193.0, 732.0 ],
+						"rect" : [ 116.0, 105.0, 1193.0, 732.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -83,15 +84,30 @@
 						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"fontname" : "Arial Italic",
+									"fontsize" : 14.0,
+									"id" : "obj-6",
+									"linecount" : 5,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 29.0, 294.056732, 360.0, 85.0 ],
+									"style" : "",
+									"text" : "In the lesson we start by studying sample and hold and delegation techniques, and then examine a few different approaches to using delegation. In conclusion we look at how to create sustaining notes by using tools to keep track of which keys are pressed down and lifted."
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"fontsize" : 14.0,
 									"id" : "obj-5",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 681.61499, 659.113464, 101.0, 22.0 ],
+									"patching_rect" : [ 518.61499, 659.113464, 408.0, 22.0 ],
 									"presentation_rect" : [ 572.0, 651.5, 0.0, 0.0 ],
 									"style" : "",
-									"text" : "The Polymoog"
+									"text" : "The Polymoog: each key has its own \"polycom\" oscillator circuit."
 								}
 
 							}
@@ -85534,7 +85550,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 116.0, 105.0, 1193.0, 732.0 ],
+						"rect" : [ 0.0, 26.0, 1193.0, 732.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -85564,12 +85580,46 @@
 						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-12",
+									"bubble" : 1,
+									"bubblepoint" : 0.0,
+									"bubbleside" : 0,
+									"id" : "obj-15",
+									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 22.0, 43.0, 241.0, 20.0 ],
-									"style" : ""
+									"patching_rect" : [ 573.0, 266.0, 225.0, 52.0 ],
+									"presentation_rect" : [ 446.0, 54.5, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "The assign() function allows us to dynamically create OSC addresses!"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bubble" : 1,
+									"id" : "obj-14",
+									"linecount" : 5,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 896.0, 382.0, 281.0, 78.0 ],
+									"presentation_rect" : [ 896.0, 382.0, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "o.route understands the * as a wildcard that matches any address value at that name level. Here we use this functionality to set all note on and off addresses when the patch loads, separate from the keyboard voice allocation."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-12",
+									"linecount" : 27,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 22.0, 41.0, 277.0, 368.0 ],
+									"style" : "",
+									"text" : "Another technique for creating polyphony with synthesizers is to manually turn on and off synth voices. The issue is that you then need to keep track of which note-off belong to previous note-on.\n\nIn Max, there is a useful object for tracking note ons and offs called poly (and poly~). Inside the m158.o.io.keyboard abstraction there is a poly object that allocates a voice number when a key is pressed down, which is remembered when the key is lifted. When the voice receives a note off, the voices is no longer busy, so that voice index can be used again. In the OSC bundle this value is labeled /fingerIndex.\n\nIn the o.expr.codebox, we use this /fingerIndex identifier to create messages that are passed to the individual \"sine\" subpatchers via o.route.\n\nSince note on and offs are labeled with the /fingerIndex number, we can use that to sustain notes while playing others.\n\nAdditionally, this patch provides an example of how to use different envelopes for note on and off, and gives an example of how you can use gen~ to handle retriggering notes to avoid clicking."
 								}
 
 							}
@@ -85597,22 +85647,23 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 20.5, 394.5, 259.0, 258.0 ],
-									"text" : "/key/id/row : 0,\n/key/id/column : 0,\n/ascii : \"right\",\n/keystate : \"up\",\n/keynum : -12,\n/numKeysDown : 0,\n/fingerIndex : 1,\n/shift : \"up\",\n/capslock : \"up\",\n/option : \"up\",\n/control : \"up\",\n/command : \"down\",\n/time : 2016-10-31T22:14:06.438183Z,\n/state : 0,\n/hz : 130.813,\n/attack/dur : 266,\n/release/dur : 1266.67,\n/sine/1/state : 0,\n/sine/1/hz : 130.813,\n/sine/1/onoff/duration/x : [0, 1],\n/sine/1/onoff/duration/y : [1266.67, 266]",
+									"patching_rect" : [ 22.0, 457.5, 259.0, 258.0 ],
+									"text" : "/key/id/row : 3,\n/key/id/column : 5,\n/ascii : \"T\",\n/keystate : \"up\",\n/keynum : 116,\n/numKeysDown : 0,\n/fingerIndex : 1,\n/shift : \"up\",\n/capslock : \"up\",\n/option : \"up\",\n/control : \"up\",\n/command : \"up\",\n/time : 2016-10-31T22:38:32.955445Z,\n/state : 0,\n/hz : 1396.91,\n/attack/dur : 67,\n/release/dur : 466.667,\n/sine/1/state : 0,\n/sine/1/hz : 1396.91,\n/sine/1/onoff/duration/x : [0, 1],\n/sine/1/onoff/duration/y : [466.667, 67]",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
 							}
 , 							{
 								"box" : 								{
+									"bubble" : 1,
 									"id" : "obj-1",
-									"linecount" : 4,
+									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 525.0, 66.5, 259.0, 60.0 ],
+									"patching_rect" : [ 562.0, 494.0, 482.0, 51.0 ],
 									"style" : "",
-									"text" : "sustains note while key is down, separate not on and off envelopes are triggered, and scaled according to current amplitude to avoid clicks on re-triggering."
+									"text" : "Each sinusoid synth voice sustains its note while the matching /keyIndex is down. Inside the subpatch, the separate note on and off envelopes are triggered, and scaled according to current amplitude to avoid clicks on re-triggering."
 								}
 
 							}
@@ -85624,7 +85675,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 996.0, 265.0, 129.0, 22.0 ],
+									"patching_rect" : [ 990.0, 226.0, 129.0, 22.0 ],
 									"style" : "",
 									"text_width" : 65.0
 								}
@@ -85637,7 +85688,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 476.0, 592.0, 33.0, 22.0 ],
+									"patching_rect" : [ 476.0, 607.0, 33.0, 22.0 ],
 									"style" : "",
 									"text" : "stop"
 								}
@@ -85650,7 +85701,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 391.5, 592.0, 74.0, 22.0 ],
+									"patching_rect" : [ 391.5, 607.0, 74.0, 22.0 ],
 									"style" : "",
 									"text" : "startwindow"
 								}
@@ -85663,7 +85714,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 898.0, 55.5, 265.0, 33.0 ],
+									"patching_rect" : [ 892.0, 16.5, 265.0, 33.0 ],
 									"style" : "",
 									"text" : "note on: starts at zero and ends at sustain level\nnote off: starts at 1 and ends at zero"
 								}
@@ -85672,14 +85723,14 @@
 , 							{
 								"box" : 								{
 									"fontface" : 0,
-									"fontsize" : 12.0,
+									"fontsize" : 11.0,
 									"id" : "obj-40",
 									"linecount" : 7,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 700.0, 545.0, 394.0, 116.0 ],
+									"patching_rect" : [ 528.0, 362.0, 364.0, 108.0 ],
 									"text" : "/sine/*/env/note/1/x : [0., 0.0106383, 0.12766, 1.],\n/sine/*/env/note/1/y : [0., 1., 0.653333, 0.586667],\n/sine/*/env/note/1/curve : [0., 0., 0., -0.945],\n/sine/*/env/note/0/x : [0., 0.239362, 0.62234, 1.],\n/sine/*/env/note/0/y : [1., 0.386667, 0.933333, 0.],\n/sine/*/env/note/0/curve : [0., 0., 0., -0.6],\n/sine/*/env/count : 2",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
@@ -85692,7 +85743,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "FullPacket" ],
-									"patching_rect" : [ 684.0, 500.0, 100.0, 22.0 ],
+									"patching_rect" : [ 365.5, 387.0, 100.0, 22.0 ],
 									"style" : "",
 									"text" : "o.prepend /sine/*"
 								}
@@ -85705,7 +85756,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 684.0, 450.0, 141.0, 22.0 ],
+									"patching_rect" : [ 365.5, 355.0, 141.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.gui.function /env"
 								}
@@ -85721,7 +85772,7 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "float", "", "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 945.0, 304.5, 200.0, 100.0 ],
+									"patching_rect" : [ 939.0, 265.5, 200.0, 100.0 ],
 									"style" : "",
 									"varname" : "/env/noteOn[2]"
 								}
@@ -85736,7 +85787,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 920.0, 258.5, 69.0, 35.0 ],
+									"patching_rect" : [ 914.0, 219.5, 69.0, 35.0 ],
 									"restore" : [ 1000.0, 0.0, 1.0, 0.0, 1.0, 0, 0.0, 239.361702, 0.386667, 0, 0.0, 622.340426, 0.933333, 0, 0.0, 1000.0, 0.0, 0, -0.6, "curve" ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0
@@ -85758,7 +85809,7 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "float", "", "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 945.0, 148.5, 200.0, 100.0 ],
+									"patching_rect" : [ 939.0, 109.5, 200.0, 100.0 ],
 									"style" : "",
 									"varname" : "/env/noteOn[1]"
 								}
@@ -85773,7 +85824,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 919.5, 99.5, 70.0, 35.0 ],
+									"patching_rect" : [ 913.5, 60.5, 70.0, 35.0 ],
 									"restore" : [ 1000.0, 0.0, 1.0, 0.0, 0.0, 0, 0.0, 10.638298, 1.0, 0, 0.0, 127.659574, 0.653333, 0, 0.0, 1000.0, 0.586667, 0, -0.945, "curve" ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0
@@ -85793,7 +85844,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "FullPacket" ],
-									"patching_rect" : [ 684.0, 420.5, 70.0, 22.0 ],
+									"patching_rect" : [ 365.5, 325.5, 70.0, 22.0 ],
 									"style" : "",
 									"text" : "o.route /gui"
 								}
@@ -85806,7 +85857,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 684.0, 354.0, 24.0, 24.0 ],
+									"patching_rect" : [ 365.5, 266.0, 24.0, 24.0 ],
 									"style" : ""
 								}
 
@@ -85819,7 +85870,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "dump" ],
-									"patching_rect" : [ 684.0, 392.5, 70.0, 22.0 ],
+									"patching_rect" : [ 365.5, 297.5, 70.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.gui"
 								}
@@ -85834,7 +85885,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 770.5, 381.0, 97.0, 49.0 ],
+									"patching_rect" : [ 452.0, 286.0, 97.0, 49.0 ],
 									"saved_object_attributes" : 									{
 										"client_rect" : [ 4, 44, 358, 172 ],
 										"parameter_enable" : 0,
@@ -86102,7 +86153,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 301.0, 128.0, 79.0, 22.0 ],
+									"patching_rect" : [ 301.0, 59.0, 79.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -86123,7 +86174,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 301.0, 642.5, 37.0, 22.0 ],
+									"patching_rect" : [ 301.0, 657.5, 37.0, 22.0 ],
 									"style" : "",
 									"text" : "dac~"
 								}
@@ -87068,7 +87119,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 513.0, 493.5, 43.0, 22.0 ],
+									"patching_rect" : [ 513.0, 508.5, 43.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -88021,7 +88072,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 460.0, 493.5, 43.0, 22.0 ],
+									"patching_rect" : [ 460.0, 508.5, 43.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -88974,7 +89025,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 407.0, 493.5, 43.0, 22.0 ],
+									"patching_rect" : [ 407.0, 508.5, 43.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -89927,7 +89978,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 354.0, 493.5, 43.0, 22.0 ],
+									"patching_rect" : [ 354.0, 508.5, 43.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -90880,7 +90931,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 301.0, 493.5, 43.0, 22.0 ],
+									"patching_rect" : [ 301.0, 508.5, 43.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -90902,7 +90953,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 301.0, 554.5, 158.0, 27.0 ],
+									"patching_rect" : [ 301.0, 569.5, 158.0, 27.0 ],
 									"style" : ""
 								}
 
@@ -90914,7 +90965,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 6,
 									"outlettype" : [ "", "", "", "", "", "FullPacket" ],
-									"patching_rect" : [ 301.0, 454.0, 284.0, 22.0 ],
+									"patching_rect" : [ 301.0, 477.0, 284.0, 22.0 ],
 									"style" : "",
 									"text" : "o.route /1 /2 /3 /4 /5"
 								}
@@ -90927,7 +90978,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "FullPacket" ],
-									"patching_rect" : [ 301.0, 406.0, 77.0, 22.0 ],
+									"patching_rect" : [ 301.0, 447.5, 77.0, 22.0 ],
 									"style" : "",
 									"text" : "o.route /sine"
 								}
@@ -90943,7 +90994,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 301.0, 161.5, 603.0, 168.0 ],
+									"patching_rect" : [ 301.0, 92.5, 603.0, 168.0 ],
 									"text" : "/state = int32(/keystate == \"down\"),\n/hz = mtof( 48 + /key/id/column + (/key/id/row * 12)),\n\n/attack/dur = scale( /key/id/row, 1, 4, 200, 1),\n/release/dur = scale( /key/id/row, 1, 4, 1000, 200.),\n\nassign(\"/sine/\" + /fingerIndex + \"/state\", /state),\nassign(\"/sine/\" + /fingerIndex + \"/hz\", /hz),\n\nassign(\"/sine/\" + /fingerIndex + \"/onoff/duration/x\", [0, 1]),\nassign(\"/sine/\" + /fingerIndex + \"/onoff/duration/y\", [/release/dur, /attack/dur])",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
@@ -90956,7 +91007,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 301.0, 89.0, 116.0, 22.0 ],
+									"patching_rect" : [ 301.0, 20.0, 116.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.io.keyboard"
 								}
@@ -90970,7 +91021,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1011.0, 112.5, 134.0, 22.0 ],
+									"patching_rect" : [ 1005.0, 73.5, 134.0, 22.0 ],
 									"style" : "",
 									"text_width" : 65.0
 								}
@@ -91180,7 +91231,7 @@
 									"destination" : [ "obj-10", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 693.5, 549.0, 641.0, 549.0, 641.0, 374.0, 310.5, 374.0 ],
+									"midpoints" : [ 375.0, 437.25, 310.5, 437.25 ],
 									"source" : [ "obj-36", 0 ]
 								}
 
@@ -91190,6 +91241,7 @@
 									"destination" : [ "obj-40", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"midpoints" : [ 375.0, 420.0, 516.0, 420.0, 516.0, 342.0, 537.5, 342.0 ],
 									"source" : [ "obj-36", 0 ]
 								}
 
@@ -91253,6 +91305,7 @@
 									"destination" : [ "obj-6", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"midpoints" : [ 310.5, 418.5, 31.5, 418.5 ],
 									"source" : [ "obj-9", 0 ]
 								}
 
