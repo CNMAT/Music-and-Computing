@@ -36,7 +36,8 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "Default Max 7",
-		"showontab" : 1,
+		"showrootpatcherontab" : 0,
+		"showontab" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-8",
@@ -53,7 +54,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 140.0, 105.0, 1193.0, 732.0 ],
+						"rect" : [ 0.0, 26.0, 1193.0, 732.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -132,7 +133,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 540.0, 196.5, 317.0, 190.0 ],
-									"presentation_rect" : [ 498.0, 225.5, 0.0, 0.0 ],
 									"text" : "/synchronizer/tick/ms : 89.,\n/env/note/1/x : [0., 0.0106383, 0.12766, 1.],\n/env/note/1/y : [0., 1., 0.653333, 0.586667],\n/env/note/1/curve : [0., 0., 0., -0.945],\n/env/note/0/x : [0., 0.239362, 0.62234, 1.],\n/env/note/0/y : [1., 0.386667, 0.933333, 0.],\n/env/note/0/curve : [0., 0., 0., -0.6],\n/env/count : 2,\n/seq/pitches/x : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31],\n/seq/pitches/y : [7, 8, 7, 14, 0, 9, 4, 9, 2, 7, 26, 3, 7, 3, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 8, 3, 2, 14, 8, 7],\n/seq/count : 1",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
@@ -13148,7 +13148,7 @@
 													"maxclass" : "inlet",
 													"numinlets" : 0,
 													"numoutlets" : 1,
-													"outlettype" : [ "" ],
+													"outlettype" : [ "FullPacket" ],
 													"patching_rect" : [ 72.0, 72.5, 30.0, 30.0 ],
 													"style" : ""
 												}
@@ -13588,7 +13588,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u065010675"
+									"varname" : "u198006048"
 								}
 
 							}
@@ -14227,7 +14227,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1193.0, 732.0 ],
+						"rect" : [ 140.0, 105.0, 1193.0, 732.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -15153,7 +15153,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u192013591"
+									"varname" : "u480005867"
 								}
 
 							}
@@ -30691,7 +30691,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u276015724"
+									"varname" : "u809003663"
 								}
 
 							}
@@ -86119,7 +86119,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u904020091"
+									"varname" : "u214010113"
 								}
 
 							}
@@ -100061,7 +100061,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u512022183"
+									"varname" : "u872021266"
 								}
 
 							}
