@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 0,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -64,7 +64,7 @@
 			}
 , 			{
 				"box" : 				{
-					"code" : "Buffer distbuf();\r\nHistory samp(-1);\r\n\r\n_noise = noise();\r\n\r\nnchannels = channels(distbuf);\r\nchannel = clip(in2, 0, nchannels-1);\r\n\r\nsize, idx \t= peek(distbuf, 0, channel, channels=1) - 1;\r\nsum, idx \t= peek(distbuf, 1, channel, channels=1);\r\nrnd \t\t= abs(_noise) * sum;\r\n\r\nret = -1;\r\n\r\nfor(i=0; i<size; i+=1)\r\n{\r\n\ttest, idx = peek(distbuf, i+2, channel, channels=1);\r\n\tif( rnd < test )\r\n\t{\r\n\t\tret = i;\r\n\t\tbreak;\r\n\t}\r\n\trnd -= test;\r\n}\r\n\r\nif( in1 > 0 )\r\n\tsamp = ret;\r\n\t\r\nout1 = samp;\r\nout2 = ret;",
+					"code" : "Buffer distbuf();\r\nHistory samp(-1);\r\n\r\n_noise = noise();\r\n\r\nnchannels = channels(distbuf);\r\nchannel = clip(in2, 0, nchannels-1);\r\n\r\nsize, idx \t= peek(distbuf, 0, channel, channels=1);\r\nsum, idx \t= peek(distbuf, 1, channel, channels=1);\r\nrnd \t\t= abs(_noise) * sum;\r\n\r\nret = -1;\r\n\r\nfor(i=0; i<size; i+=1)\r\n{\r\n\ttest, idx = peek(distbuf, i+2, channel, channels=1);\r\n\tif( rnd < test )\r\n\t{\r\n\t\tret = i;\r\n\t\tbreak;\r\n\t}\r\n\trnd -= test;\r\n}\r\n\r\nif( in1 > 0 )\r\n\tsamp = ret;\r\n\t\r\nout1 = samp;\r\nout2 = ret;",
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -140,8 +140,7 @@
 				}
 
 			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
