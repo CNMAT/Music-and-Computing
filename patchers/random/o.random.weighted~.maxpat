@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 0,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -47,7 +47,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -91,7 +91,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 3,
-											"revision" : 0,
+											"revision" : 1,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -690,7 +690,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1315,7 +1315,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1625,12 +1625,12 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 122.0, 45.0, 633.0, 855.0 ],
+						"rect" : [ 461.0, 45.0, 766.0, 838.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1717,13 +1717,13 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-28",
-									"linecount" : 33,
+									"linecount" : 38,
 									"maxclass" : "o.expr.codebox",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 50.0, 120.0, 567.0, 467.0 ],
-									"text" : "/count ??= 0,\n/planecount = 0,\n/maxlen = 0,\n/_/dist = value(/_/baseAddr),\n\nif( bound(/_/dist),\n  progn(\n    /sum = sum(/_/dist),\n    /len = length(/_/dist),\n    /maxlen = max([/len+2, /maxlen]),\n    assign(\"/fill/\"+/planecount, [/len, /sum, /_/dist, /planecount] ),\n    /planecount++\n\n  ),\n  map(\n    lambda(i,\n      /_/dist = value(/_/baseAddr+\"/\"+i),\n      if( bound(/_/dist),\n        progn(\n          /sum = sum(/_/dist),\n          /len = length(/_/dist),\n          /maxlen = max([/len+2, /maxlen]),\n          assign(\"/fill/\"+/planecount, [/len, /sum, /_/dist, /planecount] ),\n          /planecount++\n        )\n      )\n    ), aseq(0, length(/addrs)-1)\n  )\n),\n\n/dim = [/maxlen, /planecount],\n/setbuf = /unique+\"-dist\"+/count,\n/count = (/count + 1) % 2",
+									"patching_rect" : [ 50.0, 120.0, 567.0, 535.0 ],
+									"text" : "/count ??= 0,\n/planecount = 0,\n/maxlen = 0,\n/_/distw = value(/_/baseAddr),\n/_/disty = value(/_/baseAddr+\"/y\"),\n/_/dist = bound(/_/distw) ? /_/distw : /_/disty,\n\nif( bound(/_/dist),\n  progn(\n    /sum = sum(/_/dist),\n    /len = length(/_/dist),\n    /maxlen = max([/len+2, /maxlen]),\n    assign(\"/fill/\"+/planecount, [/len, /sum, /_/dist, /planecount] ),\n    /planecount++\n\n  ),\n  map(\n    lambda(i,\n       /_/distw = value(/_/baseAddr+\"/\"+i),\n       /_/disty = value(/_/baseAddr+\"/\"+i+\"/y\"),\n       /_/dist = bound(/_/distw) ? /_/distw : /_/disty,\n\n      if( bound(/_/dist),\n        progn(\n          /sum = sum(/_/dist),\n          /len = length(/_/dist),\n          /maxlen = max([/len+2, /maxlen]),\n          assign(\"/fill/\"+/planecount, [/len, /sum, /_/dist, /planecount] ),\n          /planecount++\n        )\n      )\n    ), aseq(0, length(/addrs)-1)\n  )\n),\n\n/dim = [/maxlen, /planecount],\n/setbuf = /unique+\"-dist\"+/count,\n/count = (/count + 1) % 2",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -1759,7 +1759,7 @@
 									"destination" : [ "obj-8", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 91.5, 805.0, 623.5, 805.0, 623.5, 58.0, 140.5, 58.0 ],
+									"midpoints" : [ 91.5, 805.0, 667.5, 805.0, 667.5, 58.0, 140.5, 58.0 ],
 									"source" : [ "obj-10", 0 ]
 								}
 
@@ -1883,7 +1883,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 479.0, 212.194458, 93.0, 22.0 ],
 					"style" : "",
 					"text" : "m158.loadbang"
@@ -2265,13 +2265,13 @@
 			}
 , 			{
 				"name" : "m158.loadbang.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"bootpath" : "~/Documents/Max 7/Packages/EnvelopForLive/patchers/util",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.doc.handler.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"bootpath" : "~/Documents/Max 7/Packages/EnvelopForLive/patchers/util",
 				"type" : "JSON",
 				"implicit" : 1
 			}

@@ -3,9 +3,9 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 2,
-			"revision" : 4,
-			"architecture" : "x86",
+			"minor" : 3,
+			"revision" : 1,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
@@ -44,7 +44,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 253.0, 590.0, 30.0, 30.0 ],
-					"presentation_rect" : [ 166.0, 598.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -53,12 +52,12 @@
 				"box" : 				{
 					"id" : "obj-9",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 64.0, 147.0, 123.0, 22.0 ],
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 64.0, 124.0, 153.0, 22.0 ],
 					"style" : "",
-					"text" : "routepass FullPacket"
+					"text" : "routepass FullPacket bang"
 				}
 
 			}
@@ -73,9 +72,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 4,
-							"architecture" : "x86",
+							"minor" : 3,
+							"revision" : 1,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -222,9 +221,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 4,
-							"architecture" : "x86",
+							"minor" : 3,
+							"revision" : 1,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -301,6 +300,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
@@ -481,7 +481,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 64.0, 53.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -519,7 +519,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 64.0, 328.5, 50.0, 22.0 ],
+					"patching_rect" : [ 64.0, 232.0, 50.0, 22.0 ],
 					"style" : "",
 					"text" : "t l l"
 				}
@@ -548,7 +548,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 294.0, 93.0, 35.5, 22.0 ],
+					"patching_rect" : [ 294.0, 93.0, 41.5, 22.0 ],
 					"style" : "",
 					"text" : "#0"
 				}
@@ -801,6 +801,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"color" : [ 0.972428, 0.0, 1.0, 1.0 ],
+					"destination" : [ "obj-31", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-9", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -809,56 +819,6 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "m158.loadbang.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.doc.handler.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.expr.codebox.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.union.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.select.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.timetag.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.pack.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.route.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.cond.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.prepend.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.compose.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0,
 		"bgfillcolor_type" : "gradient",
 		"bgfillcolor_color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 		"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],

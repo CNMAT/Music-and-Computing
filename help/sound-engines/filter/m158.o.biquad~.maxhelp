@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 2,
-			"revision" : 5,
+			"minor" : 3,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -48,8 +48,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 5,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -637,8 +637,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 5,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -672,6 +672,32 @@
 						"subpatcher_template" : "<none>",
 						"showontab" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 844.5, 426.5, 205.0, 20.0 ],
+									"presentation_rect" : [ 857.5, 359.5, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "also available as a gen~ abstraction:"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "newobj",
+									"numinlets" : 5,
+									"numoutlets" : 7,
+									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal" ],
+									"patching_rect" : [ 844.5, 452.5, 171.0, 22.0 ],
+									"style" : "",
+									"text" : "gen~ @gen multimode.biquad"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-37",
 									"maxclass" : "newobj",
@@ -744,7 +770,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u971008584"
+									"varname" : "u035024546"
 								}
 
 							}
@@ -1283,19 +1309,13 @@
 			}
 , 			{
 				"name" : "m158.loadbang.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"bootpath" : "~/Documents/Max 7/Packages/EnvelopForLive/patchers/util",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "multimode.biquad.gendsp",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/code",
-				"type" : "gDSP",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "o.doc.handler.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"bootpath" : "~/Documents/Max 7/Packages/EnvelopForLive/patchers/util",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -1303,6 +1323,12 @@
 				"name" : "m158.o.gui.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gui",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "multimode.biquad.gendsp",
+				"bootpath" : "~/Documents/Max 7/Packages/EnvelopForLive/code",
+				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{

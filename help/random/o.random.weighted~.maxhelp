@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 0,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 119.0, 79.0, 1011.0, 711.0 ],
+		"rect" : [ 105.0, 45.0, 940.0, 700.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -49,12 +49,12 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1011.0, 685.0 ],
+						"rect" : [ 0.0, 26.0, 940.0, 674.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -144,7 +144,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 456.5, 64.0, 105.0, 22.0 ],
-									"presentation_rect" : [ 98.5, 51.0, 0.0, 0.0 ],
 									"style" : "",
 									"text_width" : 59.5
 								}
@@ -179,7 +178,6 @@
 									"outlettype" : [ "", "" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 597.5, 93.5, 160.0, 87.0 ],
-									"presentation_rect" : [ 240.0, 79.5, 0.0, 0.0 ],
 									"setminmax" : [ 0.0, 1.0 ],
 									"size" : 33,
 									"style" : "",
@@ -280,7 +278,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u096006159"
+									"varname" : "u416009154"
 								}
 
 							}
@@ -624,7 +622,6 @@
 					}
 ,
 					"patching_rect" : [ 263.0, 162.5, 138.0, 22.0 ],
-					"presentation_rect" : [ 263.0, 161.5, 0.0, 0.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -650,12 +647,12 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 119.0, 105.0, 1011.0, 685.0 ],
+						"rect" : [ 105.0, 71.0, 940.0, 674.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -688,13 +685,11 @@
 									"fontface" : 0,
 									"fontsize" : 11.0,
 									"id" : "obj-9",
-									"linecount" : 8,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 293.0, 252.5, 249.0, 120.0 ],
-									"text" : "/dist : [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.511628, 0., 0., 0., 0., 0., 0., 0., 0.0930233, 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.]",
+									"patching_rect" : [ 293.0, 252.5, 249.0, 33.0 ],
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -766,13 +761,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-19",
-									"linecount" : 6,
+									"linecount" : 7,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 568.0, 237.5, 306.0, 87.0 ],
+									"patching_rect" : [ 568.0, 237.5, 357.0, 100.0 ],
 									"style" : "",
-									"text" : "Required argument: OSC address of distribution\n\nOptional: Sending sub addresses with integers starting at zero (e.g. /dist/0, /dist/1, etc.) multiple distributions may be set, up to 32 distributions. Distributions may be switched between at sample rate using the middle inlet."
+									"text" : "Required argument: OSC address of distribution, or a base OSC address with a sub /y address contaning the distribution list.\n\nOptional: Sending sub addresses with integers starting at zero (e.g. /dist/0, /dist/1, etc.) multiple distributions may be set, up to 32 distributions. Distributions may be switched between at sample rate using the middle inlet."
 								}
 
 							}
@@ -916,9 +911,9 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 568.0, 82.0, 212.0, 20.0 ],
+									"patching_rect" : [ 568.0, 82.0, 179.0, 20.0 ],
 									"style" : "",
-									"text" : "signal rate weighted random selection"
+									"text" : "signal rate weighted distribution"
 								}
 
 							}
@@ -1209,7 +1204,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1385,13 +1380,13 @@
 			}
 , 			{
 				"name" : "m158.loadbang.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"bootpath" : "~/Documents/Max 7/Packages/EnvelopForLive/patchers/util",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.doc.handler.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"bootpath" : "~/Documents/Max 7/Packages/EnvelopForLive/patchers/util",
 				"type" : "JSON",
 				"implicit" : 1
 			}
