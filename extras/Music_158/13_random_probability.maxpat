@@ -3199,7 +3199,7 @@
 ,
 													"style" : "",
 													"text" : "pattrstorage @outputmode 1 @notifymode 1",
-													"varname" : "u000008915"
+													"varname" : "u329027495"
 												}
 
 											}
@@ -14042,6 +14042,128 @@
 						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"hidden" : 1,
+									"id" : "obj-21",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patcher" : 									{
+										"fileversion" : 1,
+										"appversion" : 										{
+											"major" : 7,
+											"minor" : 3,
+											"revision" : 1,
+											"architecture" : "x64",
+											"modernui" : 1
+										}
+,
+										"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+										"bglocked" : 0,
+										"openinpresentation" : 0,
+										"default_fontsize" : 12.0,
+										"default_fontface" : 0,
+										"default_fontname" : "Arial",
+										"gridonopen" : 1,
+										"gridsize" : [ 15.0, 15.0 ],
+										"gridsnaponopen" : 1,
+										"objectsnaponopen" : 1,
+										"statusbarvisible" : 2,
+										"toolbarvisible" : 1,
+										"lefttoolbarpinned" : 0,
+										"toptoolbarpinned" : 0,
+										"righttoolbarpinned" : 0,
+										"bottomtoolbarpinned" : 0,
+										"toolbars_unpinned_last_save" : 0,
+										"tallnewobj" : 0,
+										"boxanimatetime" : 200,
+										"enablehscroll" : 1,
+										"enablevscroll" : 1,
+										"devicewidth" : 0.0,
+										"description" : "",
+										"digest" : "",
+										"tags" : "",
+										"style" : "",
+										"subpatcher_template" : "Default Max 7",
+										"boxes" : [ 											{
+												"box" : 												{
+													"hidden" : 1,
+													"id" : "obj-6",
+													"linecount" : 2,
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 50.0, 100.0, 512.0, 35.0 ],
+													"style" : "",
+													"text" : ";\rmax launch_browser http://projects.fivethirtyeight.com/2016-election-forecast/?ex_cid=rrpromo"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"comment" : "",
+													"id" : "obj-10",
+													"maxclass" : "inlet",
+													"numinlets" : 0,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 50.0, 40.0, 30.0, 30.0 ],
+													"style" : ""
+												}
+
+											}
+ ],
+										"lines" : [ 											{
+												"patchline" : 												{
+													"destination" : [ "obj-6", 0 ],
+													"disabled" : 0,
+													"hidden" : 0,
+													"source" : [ "obj-10", 0 ]
+												}
+
+											}
+ ]
+									}
+,
+									"patching_rect" : [ 523.0, 537.0, 19.0, 22.0 ],
+									"saved_object_attributes" : 									{
+										"description" : "",
+										"digest" : "",
+										"globalpatchername" : "",
+										"style" : "",
+										"tags" : ""
+									}
+,
+									"style" : "",
+									"text" : "p"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+									"fontface" : 3,
+									"fontlink" : 1,
+									"fontsize" : 18.0,
+									"id" : "obj-37",
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 523.0, 500.59375, 296.045898, 28.109375 ],
+									"presentation_rect" : [ 0.0, 0.0, 296.045898, 28.109375 ],
+									"style" : "",
+									"text" : "Click here to open fivethirtyeight",
+									"texton" : "Click here to learn more about how hearing works...",
+									"textoncolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ],
+									"textovercolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+									"usetextovercolor" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"fontsize" : 14.0,
 									"id" : "obj-3",
 									"linecount" : 2,
@@ -14098,7 +14220,16 @@
 
 							}
  ],
-						"lines" : [  ]
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-21", 0 ],
+									"disabled" : 0,
+									"hidden" : 1,
+									"source" : [ "obj-37", 0 ]
+								}
+
+							}
+ ]
 					}
 ,
 					"patching_rect" : [ 128.833374, 112.0, 44.0, 22.0 ],
@@ -24331,7 +24462,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u390029558"
+									"varname" : "u639013109"
 								}
 
 							}
@@ -25697,7 +25828,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u353029075"
+									"varname" : "u732012173"
 								}
 
 							}
@@ -26540,7 +26671,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u472028830"
+									"varname" : "u497010905"
 								}
 
 							}
