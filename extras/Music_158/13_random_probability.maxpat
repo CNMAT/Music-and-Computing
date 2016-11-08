@@ -36,7 +36,8 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "Default Max 7",
-		"showontab" : 1,
+		"showrootpatcherontab" : 0,
+		"showontab" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-10",
@@ -206,13 +207,11 @@
 									"fontface" : 0,
 									"fontsize" : 11.0,
 									"id" : "obj-9",
-									"linecount" : 7,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 608.0, 277.5, 422.0, 108.0 ],
-									"text" : "/dist : [0., 0., 0., 0., 0., 0., 0.267442, 0.453488, 0.488372, 0.104651, 0.0232558, 0.0232558, 0.348837, 0.383721, 0.418605, 0.453488, 0.232558, 0.430233, 0.0116279, 0.00968992, 0.00775194, 0.00581395, 0.00387597, 0.00193798, 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.0813954, 0.162791, 0.209302, 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.]",
+									"patching_rect" : [ 608.0, 277.5, 422.0, 33.0 ],
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -1085,7 +1084,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1165.0, 744.0 ],
+						"rect" : [ 38.0, 79.0, 1165.0, 744.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1112,7 +1111,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "Default Max 7",
-						"showontab" : 1,
+						"showontab" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-42",
@@ -3094,22 +3093,6 @@
 											}
 , 											{
 												"box" : 												{
-													"fontface" : 0,
-													"fontsize" : 12.0,
-													"id" : "obj-24",
-													"linecount" : 48,
-													"maxclass" : "o.display",
-													"numinlets" : 1,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
-													"patching_rect" : [ 214.0, 555.0, 553.0, 673.0 ],
-													"text" : "/prob : [9, 7, 4, 6, 1, 3],\n/bpm : 297.,\n/seq/0/x : [0, 1, 2, 3],\n/seq/0/y : [0, 1, 2, 3],\n/seq/2/x : [0, 1, 2, 3],\n/seq/2/y : [0, 2, -2, -1],\n/seq/1/x : [0, 1, 2, 3],\n/seq/1/y : [0, -3, -4, -5],\n/seq/3/x : [0, 1, 2, 3],\n/seq/3/y : [0, 0, 2, 1],\n/seq/4/x : [0, 1, 2, 3],\n/seq/4/y : [0, -3, -2, -1],\n/seq/5/x : [0, 1, 2, 3],\n/seq/5/y : [0, -1, -2, -3],\n/seq/count : 6,\n/seq/addr : \"/seq/5/y\",\n/offsetY : [3, 2, 1, 0],\n/maj : [0, 2, 4, 7, 9, 11],\n/dom : [-8, -5, -3, -2, 0, 2],\n/min : [-2, 0, 1, 3, 5, 7, 9],\n/notes : [\"b:4\", \"d:3\", \"g:2\", \"bb:2\", \"eb:3\", \"eb:3\", \"a:2\", \"d:3\", \"g:2\", \"bb:3\", \"eb:2\", \"f#:2\", \"b:3\", \"b:3\", \"f:2\", \"bb:3\", \"eb:2\", \"eb:2\", \"a:2\", \"d:3\", \"g:2\", \"g:2\", \"c#:2\", \"f#:2\", \"b:2\", \"b:2\", \"f:2\", \"bb:3\", \"eb:2\", \"eb:2\", \"c#:2\", \"f#:2\"],\n/chords : [\"maj\", \"dom\", \"maj\", \"dom\", \"maj\", \"maj\", \"min\", \"dom\", \"maj\", \"dom\", \"maj\", \"dom\", \"maj\", \"maj\", \"min\", \"dom\", \"maj\", \"maj\", \"min\", \"dom\", \"maj\", \"maj\", \"min\", \"dom\", \"maj\", \"maj\", \"min\", \"dom\", \"maj\", \"maj\", \"min\", \"dom\"],\n/scale/0/y : [0, 2, 4, 7, 9, 11],\n/scale/1/y : [-8, -5, -3, -2, 0, 2],\n/scale/2/y : [-2, 0, 1, 3, 5, 7, 9],\n/scale/0/x : [0, 1, 2, 3, 4, 5],\n/scale/1/x : [0, 1, 2, 3, 4, 5],\n/scale/2/x : [0, 1, 2, 3, 4, 5, 6],\n/chord/index/y : [0, 1, 0, 1, 0, 0, 2, 1, 0, 1, 0, 1, 0, 0, 2, 1, 0, 0, 2, 1, 0, 0, 2, 1, 0, 0, 2, 1, 0, 0, 2, 1],\n/chord/index/x : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31],\n/midi : [71., 50., 43., 46., 51., 51., 45., 50., 43., 58., 39., 42., 59., 59., 41., 58., 39., 39., 45., 50., 43., 43., 37., 42., 47., 47., 41., 58., 39., 39., 37., 42.],\n/prog/y : [71., 50., 43., 46., 51., 51., 45., 50., 43., 58., 39., 42., 59., 59., 41., 58., 39., 39., 45., 50., 43., 43., 37., 42., 47., 47., 41., 58., 39., 39., 37., 42.],\n/prog/x : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31],\n/beatsPerChord : 2,\n/dur : 12929.3",
-													"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-												}
-
-											}
-, 											{
-												"box" : 												{
 													"id" : "obj-17",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
@@ -3216,7 +3199,7 @@
 ,
 													"style" : "",
 													"text" : "pattrstorage @outputmode 1 @notifymode 1",
-													"varname" : "u009013946"
+													"varname" : "u598009352"
 												}
 
 											}
@@ -3483,15 +3466,6 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-1", 0 ],
-													"disabled" : 0,
-													"hidden" : 0,
-													"source" : [ "obj-2", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
-													"destination" : [ "obj-24", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
 													"source" : [ "obj-2", 0 ]
@@ -4145,7 +4119,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 7.0, 50.0, 326.0, 87.0 ],
+									"patching_rect" : [ 7.0, 50.0, 327.0, 87.0 ],
 									"style" : "",
 									"text" : "This example is the same as ex 4, but with the addition of a delay for the click timing. Using this you can offset the time that a beat is preformed from the presice beat grid produced by the m158.phase~ clock.  Other uses of this could be to have a probability based timing variation, which might be more \"human\" sounding?"
 								}
@@ -14180,7 +14154,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 432.0, 396.0, 113.0, 78.0 ],
+									"patching_rect" : [ 432.0, 396.0, 115.0, 78.0 ],
 									"style" : "",
 									"text" : "use sah~ to sample the output of noise~ to get a random enough number."
 								}
@@ -14259,7 +14233,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 360.0, 251.0, 113.0, 78.0 ],
+									"patching_rect" : [ 360.0, 251.0, 115.0, 78.0 ],
 									"style" : "",
 									"text" : "use sah~ to sample the output of noise~ to get a random enough number."
 								}
@@ -15339,13 +15313,11 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-8",
-									"linecount" : 4,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 570.0, 333.0, 502.0, 75.0 ],
-									"text" : "/random : [0.690336, 0.273271, 0.616032, 0.125296, 0.95647],\n/nrand : 5.1,\n/example : \"If you give o.random a /nrand value it will give you that many random numbers (rounding down)\"",
+									"patching_rect" : [ 570.0, 333.0, 502.0, 34.0 ],
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -15636,7 +15608,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 53.0, 436.5, 164.0, 37.0 ],
-									"presentation_rect" : [ 54.0, 442.5, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "try clicking here if it doesn't play right away"
 								}
@@ -22991,7 +22962,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 905.333252, 75.5, 245.0, 42.0 ],
+									"patching_rect" : [ 905.333252, 75.5, 248.0, 42.0 ],
 									"style" : "",
 									"text" : "/rest/prob sets the probability that a subdivision beat will be a rest."
 								}
@@ -24346,7 +24317,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u074013783"
+									"varname" : "u039023597"
 								}
 
 							}
@@ -25712,7 +25683,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u143004602"
+									"varname" : "u000024001"
 								}
 
 							}
@@ -26555,7 +26526,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u931004751"
+									"varname" : "u610024144"
 								}
 
 							}
