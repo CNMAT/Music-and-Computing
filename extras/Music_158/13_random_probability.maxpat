@@ -15295,6 +15295,83 @@
 						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 0,
+									"patcher" : 									{
+										"fileversion" : 1,
+										"appversion" : 										{
+											"major" : 7,
+											"minor" : 3,
+											"revision" : 1,
+											"architecture" : "x64",
+											"modernui" : 1
+										}
+,
+										"rect" : [ 63.0, 104.0, 640.0, 480.0 ],
+										"bglocked" : 0,
+										"openinpresentation" : 0,
+										"default_fontsize" : 12.0,
+										"default_fontface" : 0,
+										"default_fontname" : "Arial",
+										"gridonopen" : 1,
+										"gridsize" : [ 15.0, 15.0 ],
+										"gridsnaponopen" : 1,
+										"objectsnaponopen" : 1,
+										"statusbarvisible" : 2,
+										"toolbarvisible" : 1,
+										"lefttoolbarpinned" : 0,
+										"toptoolbarpinned" : 0,
+										"righttoolbarpinned" : 0,
+										"bottomtoolbarpinned" : 0,
+										"toolbars_unpinned_last_save" : 0,
+										"tallnewobj" : 0,
+										"boxanimatetime" : 200,
+										"enablehscroll" : 1,
+										"enablevscroll" : 1,
+										"devicewidth" : 0.0,
+										"description" : "",
+										"digest" : "",
+										"tags" : "",
+										"style" : "",
+										"subpatcher_template" : "Default Max 7",
+										"boxes" : [ 											{
+												"box" : 												{
+													"fontface" : 0,
+													"fontsize" : 12.0,
+													"id" : "obj-7",
+													"linecount" : 40,
+													"maxclass" : "o.expr.codebox",
+													"numinlets" : 1,
+													"numoutlets" : 2,
+													"outlettype" : [ "FullPacket", "FullPacket" ],
+													"patching_rect" : [ 50.0, 100.0, 757.0, 562.0 ],
+													"text" : "/bpm = 300,\n/beatMsec = (60000. / /bpm),\n/nbeats = 8,\n\n# beat probability     \n/beat/nums =            [0,   1,   2,   3,   4,   5,   6,   7  ], \n\n/prob/beat/snare =      [0.0, 0.0, 0.0, 0.0, 0.8, 0.2, 0.0, 0.0],\n/prob/beat/open_hh =    [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.8],\n/prob/beat/cl_hihat =   [1.0, 1.0, 1.0, 0.5, 0.5, 0.2, 1.0, 0.0],\n/prob/beat/rimshot =    [0.0, 0.0, 0.0, 0.0, 0.5, 0.2, 0.0, 0.1],\n\n/prob/beat/maracas =    [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.1],\n/prob/beat/kick2 =      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1],\n/prob/beat/handclap =   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.2],\n\n/prob/beat/cowbell =    [0.0, 0.1, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0],\n/prob/beat/claves =     [0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n\n/prob/beat/crashcym =   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.05, 0.0],\n\n/prob/beat/conga1 =     [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n/prob/beat/tom1 =       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n/prob/beat/kick1 =      [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n/prob/beat/hightom =    [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n/prob/beat/hi_conga =   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n\n\n# names in o.granubuf~ buffer index order:\n/namelist = [\"cl_hihat\", \"claves\", \"conga1\", \"cowbell\", \"crashcym\", \"handclap\", \"hi_conga\", \"hightom\", \"kick1\", \"kick2\", \"maracas\", \"open_hh\", \"rimshot\", \"snare\", \"tom1\"],\n\n# re-assign names to indexes for o.random.weighted~ matching the buffer index\nmap(\n  lambda([i],\n    assign(\"/sampler/\"+i+\"/buffer/index\", i ),\n    assign(\"/sampler/\"+i+\"/beat/prob/y\", value(\"/prob/beat/\" + /namelist[[ i ]]) ),\n    assign(\"/sampler/\"+i+\"/beat/prob/x\", /beat/nums )\n  ), aseq(0, length(/namelist)-1)\n)",
+													"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+												}
+
+											}
+ ],
+										"lines" : [  ]
+									}
+,
+									"patching_rect" : [ 37.0, 196.0, 37.0, 22.0 ],
+									"saved_object_attributes" : 									{
+										"description" : "",
+										"digest" : "",
+										"globalpatchername" : "",
+										"style" : "",
+										"tags" : ""
+									}
+,
+									"style" : "",
+									"text" : "p old"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"fontface" : 3,
 									"fontsize" : 18.0,
 									"id" : "obj-29",
@@ -21839,13 +21916,13 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-1",
-									"linecount" : 40,
+									"linecount" : 43,
 									"maxclass" : "o.expr.codebox",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 328.0, 17.5, 757.0, 562.0 ],
-									"text" : "/bpm = 300,\n/beatMsec = (60000. / /bpm),\n/nbeats = 8,\n\n# beat probability     \n/beat/nums =            [0,   1,   2,   3,   4,   5,   6,   7  ], \n\n/prob/beat/snare =      [0.0, 0.0, 0.0, 0.0, 0.8, 0.2, 0.0, 0.0],\n/prob/beat/open_hh =    [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.8],\n/prob/beat/cl_hihat =   [1.0, 1.0, 1.0, 0.5, 0.5, 0.2, 1.0, 0.0],\n/prob/beat/rimshot =    [0.0, 0.0, 0.0, 0.0, 0.5, 0.2, 0.0, 0.1],\n\n/prob/beat/maracas =    [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.1],\n/prob/beat/kick2 =      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1],\n/prob/beat/handclap =   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.2],\n\n/prob/beat/cowbell =    [0.0, 0.1, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0],\n/prob/beat/claves =     [0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n\n/prob/beat/crashcym =   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.05, 0.0],\n\n/prob/beat/conga1 =     [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n/prob/beat/tom1 =       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n/prob/beat/kick1 =      [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n/prob/beat/hightom =    [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n/prob/beat/hi_conga =   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n\n\n# names in o.granubuf~ buffer index order:\n/namelist = [\"cl_hihat\", \"claves\", \"conga1\", \"cowbell\", \"crashcym\", \"handclap\", \"hi_conga\", \"hightom\", \"kick1\", \"kick2\", \"maracas\", \"open_hh\", \"rimshot\", \"snare\", \"tom1\"],\n\n# re-assign names to indexes for o.random.weighted~ matching the buffer index\nmap(\n  lambda([i],\n    assign(\"/sampler/\"+i+\"/buffer/index\", i ),\n    assign(\"/sampler/\"+i+\"/beat/prob/y\", value(\"/prob/beat/\" + /namelist[[ i ]]) ),\n    assign(\"/sampler/\"+i+\"/beat/prob/x\", /beat/nums )\n  ), aseq(0, length(/namelist)-1)\n)",
+									"patching_rect" : [ 371.0, 21.0, 757.0, 603.0 ],
+									"text" : "/bpm = 300,\n/beatMsec = (60000. / /bpm),\n/nbeats = 8,\n\n# beat probability     \n/beat/nums =    [0,   1,   2,   3,   4,   5,   6,   7  ], \n#tom1\n/prob/beat/14 = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n#snare\n/prob/beat/13 = [0.0, 0.0, 0.0, 0.0, 0.8, 0.2, 0.0, 0.0],\n#rimshot\n/prob/beat/12 = [0.0, 0.0, 0.0, 0.0, 0.5, 0.2, 0.0, 0.1],\n#open_hh\n/prob/beat/11 = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.8],\n#maracas\n/prob/beat/10 = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.1],\n#kick2\n/prob/beat/9 =  [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1],\n#kick1\n/prob/beat/8 =  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n#hightom\n/prob/beat/7 =  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n#hi_conga\n/prob/beat/6 =  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n#handclap\n/prob/beat/5 =  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.2],\n#crashcym\n/prob/beat/4 =  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.05, 0.0],\n#cowbell\n/prob/beat/3 =  [0.0, 0.1, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0],\n#conga1\n/prob/beat/2 =  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n#claves\n/prob/beat/1 =  [0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n#cl_hihat\n/prob/beat/0 =  [1.0, 1.0, 1.0, 0.5, 0.5, 0.2, 1.0, 0.0],\n\n\nmap(\n  lambda([i],\n    assign(\"/sampler/\"+i+\"/buffer/index\", i )\n  ), aseq(0, 14)\n)",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -22109,7 +22186,7 @@
 									"destination" : [ "obj-1", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 1117.5, 81.0, 1095.0, 81.0, 1095.0, 10.0, 337.5, 10.0 ],
+									"midpoints" : [ 1117.5, 81.0, 1095.0, 81.0, 1095.0, 10.0, 380.5, 10.0 ],
 									"source" : [ "obj-8", 0 ]
 								}
 
@@ -22567,8 +22644,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 481.333252, 142.0, 403.0, 440.0 ],
-									"text" : "#subdivision probability:   0    1    2    3    4\n#tom1\n/prob/subdiv/14 =         [0.0, 0.8, 0.0, 0.2, 0.0],\n#snare\n/prob/subdiv/13 =         [0.0, 0.5, 0.1, 0.3, 0.1],\n#rimshot\n/prob/subdiv/12 =         [0.0, 0.8, 0.0, 0.2, 0.0],\n#open_hh\n/prob/subdiv/11 =         [0.0, 0.8, 0.0, 0.2, 0.0],\n#maracas\n/prob/subdiv/10 =         [0.0, 0.8, 0.0, 0.2, 0.0],\n#kick2\n/prob/subdiv/9 =          [0.0, 0.5, 0.5, 0.0, 0.0],\n#kick1\n/prob/subdiv/8 =          [0.0, 0.5, 0.0, 0.5, 0.0],\n#hightom\n/prob/subdiv/7 =          [0.0, 0.8, 0.0, 0.2, 0.0],\n#hi_conga\n/prob/subdiv/6 =          [0.0, 0.8, 0.0, 0.2, 0.0],\n#handclap\n/prob/subdiv/5 =          [0.0, 0.8, 0.0, 0.2, 0.0],\n#crashcym\n/prob/subdiv/4 =          [0.0, 0.8, 0.0, 0.2, 0.0],\n#cowbell\n/prob/subdiv/3 =          [0.0, 0.8, 0.0, 0.2, 0.0],\n#conga1\n/prob/subdiv/2 =          [0.0, 0.8, 0.0, 0.2, 0.0],\n#claves\n/prob/subdiv/1 =          [0.0, 0.8, 0.0, 0.2, 0.0],\n#cl_hihat\n/prob/subdiv/0 =          [0.0, 0.8, 0.0, 0.2, 0.0]",
+									"patching_rect" : [ 481.333252, 142.0, 380.0, 440.0 ],
+									"text" : "#subdivision probability: 0    1    2    3    4\n#tom1\n/weights/subdiv/14 =    [0.0, 0.8, 0.0, 0.2, 0.0],\n#snare\n/weights/subdiv/13 =    [0.0, 0.5, 0.1, 0.3, 0.1],\n#rimshot\n/weights/subdiv/12 =    [0.0, 0.8, 0.0, 0.2, 0.0],\n#open_hh\n/weights/subdiv/11 =    [0.0, 0.8, 0.0, 0.2, 0.0],\n#maracas\n/weights/subdiv/10 =    [0.0, 0.8, 0.0, 0.2, 0.0],\n#kick2\n/weights/subdiv/9 =     [0.0, 0.5, 0.5, 0.0, 0.0],\n#kick1\n/weights/subdiv/8 =     [0.0, 0.5, 0.0, 0.5, 0.0],\n#hightom\n/weights/subdiv/7 =     [0.0, 0.8, 0.0, 0.2, 0.0],\n#hi_conga\n/weights/subdiv/6 =     [0.0, 0.8, 0.0, 0.2, 0.0],\n#handclap\n/weights/subdiv/5 =     [0.0, 0.8, 0.0, 0.2, 0.0],\n#crashcym\n/weights/subdiv/4 =     [0.0, 0.8, 0.0, 0.2, 0.0],\n#cowbell\n/weights/subdiv/3 =     [0.0, 0.8, 0.0, 0.2, 0.0],\n#conga1\n/weights/subdiv/2 =     [0.0, 0.8, 0.0, 0.2, 0.0],\n#claves\n/weights/subdiv/1 =     [0.0, 0.8, 0.0, 0.2, 0.0],\n#cl_hihat\n/weights/subdiv/0 =     [0.0, 0.8, 0.0, 0.2, 0.0]",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -23045,9 +23122,9 @@
 													"numinlets" : 3,
 													"numoutlets" : 3,
 													"outlettype" : [ "signal", "signal", "" ],
-													"patching_rect" : [ 228.768005, 326.0, 224.0, 22.0 ],
+													"patching_rect" : [ 228.768005, 326.0, 219.071991, 22.0 ],
 													"style" : "",
-													"text" : "o.random.weighted~ /prob/subdiv"
+													"text" : "o.random.weighted~ /weights/subdiv"
 												}
 
 											}
@@ -23161,7 +23238,7 @@
 													"destination" : [ "obj-41", 1 ],
 													"disabled" : 0,
 													"hidden" : 0,
-													"midpoints" : [ 79.5, 268.0, 340.768005, 268.0 ],
+													"midpoints" : [ 79.5, 268.0, 338.304001, 268.0 ],
 													"source" : [ "obj-2", 0 ]
 												}
 
@@ -23281,7 +23358,7 @@
 													"destination" : [ "obj-13", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
-													"midpoints" : [ 443.268005, 565.5, 57.0, 565.5 ],
+													"midpoints" : [ 438.339996, 565.5, 57.0, 565.5 ],
 													"source" : [ "obj-41", 2 ]
 												}
 
@@ -23825,14 +23902,14 @@
 								"box" : 								{
 									"bubble" : 1,
 									"id" : "obj-35",
-									"linecount" : 3,
+									"linecount" : 5,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 840.333252, 145.0, 225.0, 51.0 ],
+									"patching_rect" : [ 835.333252, 145.5, 285.0, 78.0 ],
 									"presentation_rect" : [ 872.333252, 191.0, 0.0, 0.0 ],
 									"style" : "",
-									"text" : "Here we define the probabilites that each subdivision will happen for that sample."
+									"text" : "Here we define the probabilites that each subdivision will happen for that sample. These indexed lists are sent the o.random.weighted~ allowing us to switch between them as sample rate (like the indexes of m158.o.points.buffer~)"
 								}
 
 							}
@@ -24380,9 +24457,9 @@
 													"numinlets" : 3,
 													"numoutlets" : 3,
 													"outlettype" : [ "signal", "signal", "" ],
-													"patching_rect" : [ 228.768005, 336.0, 224.0, 22.0 ],
+													"patching_rect" : [ 228.768005, 336.0, 219.071991, 22.0 ],
 													"style" : "",
-													"text" : "o.random.weighted~ /prob/subdiv"
+													"text" : "o.random.weighted~ /weights/subdiv"
 												}
 
 											}
@@ -24487,7 +24564,7 @@
 													"destination" : [ "obj-41", 1 ],
 													"disabled" : 0,
 													"hidden" : 0,
-													"midpoints" : [ 79.5, 268.0, 340.768005, 268.0 ],
+													"midpoints" : [ 79.5, 268.0, 338.304001, 268.0 ],
 													"source" : [ "obj-2", 0 ]
 												}
 
@@ -24938,8 +25015,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 453.333252, 131.5, 403.0, 440.0 ],
-									"text" : "#subdivision probability:   0    1    2    3    4\n#tom1\n/prob/subdiv/14 =         [0.0, 0.8, 0.0, 0.2, 0.0],\n#snare\n/prob/subdiv/13 =         [0.0, 0.5, 0.1, 0.3, 0.1],\n#rimshot\n/prob/subdiv/12 =         [0.0, 0.8, 0.0, 0.2, 0.0],\n#open_hh\n/prob/subdiv/11 =         [0.0, 0.8, 0.0, 0.2, 0.0],\n#maracas\n/prob/subdiv/10 =         [0.0, 0.8, 0.0, 0.2, 0.0],\n#kick2\n/prob/subdiv/9 =          [0.0, 0.5, 0.5, 0.0, 0.0],\n#kick1\n/prob/subdiv/8 =          [0.0, 0.5, 0.0, 0.5, 0.0],\n#hightom\n/prob/subdiv/7 =          [0.0, 0.8, 0.0, 0.2, 0.0],\n#hi_conga\n/prob/subdiv/6 =          [0.0, 0.8, 0.0, 0.2, 0.0],\n#handclap\n/prob/subdiv/5 =          [0.0, 0.8, 0.0, 0.2, 0.0],\n#crashcym\n/prob/subdiv/4 =          [0.0, 0.8, 0.0, 0.2, 0.0],\n#cowbell\n/prob/subdiv/3 =          [0.0, 0.8, 0.0, 0.2, 0.0],\n#conga1\n/prob/subdiv/2 =          [0.0, 0.8, 0.0, 0.2, 0.0],\n#claves\n/prob/subdiv/1 =          [0.0, 0.8, 0.0, 0.2, 0.0],\n#cl_hihat\n/prob/subdiv/0 =          [0.0, 0.8, 0.0, 0.2, 0.0]",
+									"patching_rect" : [ 453.333252, 131.5, 380.0, 440.0 ],
+									"text" : "#subdivision probability: 0    1    2    3    4\n#tom1\n/weights/subdiv/14 =    [0.0, 0.8, 0.0, 0.2, 0.0],\n#snare\n/weights/subdiv/13 =    [0.0, 0.5, 0.1, 0.3, 0.1],\n#rimshot\n/weights/subdiv/12 =    [0.0, 0.8, 0.0, 0.2, 0.0],\n#open_hh\n/weights/subdiv/11 =    [0.0, 0.8, 0.0, 0.2, 0.0],\n#maracas\n/weights/subdiv/10 =    [0.0, 0.8, 0.0, 0.2, 0.0],\n#kick2\n/weights/subdiv/9 =     [0.0, 0.5, 0.5, 0.0, 0.0],\n#kick1\n/weights/subdiv/8 =     [0.0, 0.5, 0.0, 0.5, 0.0],\n#hightom\n/weights/subdiv/7 =     [0.0, 0.8, 0.0, 0.2, 0.0],\n#hi_conga\n/weights/subdiv/6 =     [0.0, 0.8, 0.0, 0.2, 0.0],\n#handclap\n/weights/subdiv/5 =     [0.0, 0.8, 0.0, 0.2, 0.0],\n#crashcym\n/weights/subdiv/4 =     [0.0, 0.8, 0.0, 0.2, 0.0],\n#cowbell\n/weights/subdiv/3 =     [0.0, 0.8, 0.0, 0.2, 0.0],\n#conga1\n/weights/subdiv/2 =     [0.0, 0.8, 0.0, 0.2, 0.0],\n#claves\n/weights/subdiv/1 =     [0.0, 0.8, 0.0, 0.2, 0.0],\n#cl_hihat\n/weights/subdiv/0 =     [0.0, 0.8, 0.0, 0.2, 0.0]",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
