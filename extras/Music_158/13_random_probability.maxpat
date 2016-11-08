@@ -3216,7 +3216,7 @@
 ,
 													"style" : "",
 													"text" : "pattrstorage @outputmode 1 @notifymode 1",
-													"varname" : "u698026061"
+													"varname" : "u757018034"
 												}
 
 											}
@@ -15276,7 +15276,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 904.0, 95.5, 267.0, 47.0 ],
-									"presentation_rect" : [ 866.0, 436.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "Here we set the phase clock speed and set the sampler buffer index (they should all have the 808 sample folder loaded)."
 								}
@@ -15293,7 +15292,6 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 868.0, 149.0, 217.0, 255.0 ],
-									"presentation_rect" : [ 615.0, 571.0, 0.0, 0.0 ],
 									"text" : "/bpm = 300,\n/beatMsec = (60000. / /bpm),\n/nbeats = 8,\n\n/sampler/0/buffer/index = 0,\n/sampler/1/buffer/index = 1,\n/sampler/2/buffer/index = 2,\n/sampler/3/buffer/index = 3,\n/sampler/4/buffer/index = 4,\n/sampler/5/buffer/index = 5,\n/sampler/6/buffer/index = 6,\n/sampler/7/buffer/index = 7,\n/sampler/8/buffer/index = 8,\n/sampler/9/buffer/index = 9,\n/sampler/10/buffer/index = 10,\n/sampler/11/buffer/index = 11,\n/sampler/12/buffer/index = 12,\n/sampler/13/buffer/index = 13,\n/sampler/14/buffer/index = 14",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
@@ -22226,8 +22224,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 362.0, 11.5, 468.0, 591.0 ],
-									"text" : "# beat probabilities stored in an array of m158.o.points.buffer~s\n#tom1\n/sampler/14/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/14/beat/prob/y = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n#snare\n/sampler/13/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/13/beat/prob/y = [0.0, 0.0, 0.0, 0.0, 0.8, 0.2, 0.0, 0.0],\n#rimshot\n/sampler/12/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/12/beat/prob/y = [0.0, 0.0, 0.0, 0.0, 0.5, 0.2, 0.0, 0.1],\n#open_hh\n/sampler/11/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/11/beat/prob/y = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.8],\n#maracas\n/sampler/10/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/10/beat/prob/y = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.1],\n#kick2\n/sampler/9/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/9/beat/prob/y = [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1],\n#kick1\n/sampler/8/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/8/beat/prob/y = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n#hightom\n/sampler/7/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/7/beat/prob/y = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n#hi_conga\n/sampler/6/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/6/beat/prob/y = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n#handclap\n/sampler/5/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/5/beat/prob/y = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.2],\n#crashcym\n/sampler/4/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/4/beat/prob/y = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.05, 0.0],\n#cowbell\n/sampler/3/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/3/beat/prob/y = [0.0, 0.1, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0],\n#conga1\n/sampler/2/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/2/beat/prob/y = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n#claves\n/sampler/1/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/1/beat/prob/y = [0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n#cl_hihat\n/sampler/0/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/0/beat/prob/y = [1.0, 1.0, 1.0, 0.5, 0.5, 0.2, 1.0, 0.0]",
+									"patching_rect" : [ 362.0, 11.5, 476.0, 591.0 ],
+									"text" : "# beat probabilities stored in an array of m158.o.points.buffer~s\n#tom1\n/sampler/14/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/14/beat/prob/y = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n#snare\n/sampler/13/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/13/beat/prob/y = [0.0, 0.0, 0.0, 0.0, 0.8, 0.2, 0.0, 0.0],\n#rimshot\n/sampler/12/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/12/beat/prob/y = [0.0, 0.0, 0.0, 0.0, 0.5, 0.2, 0.0, 0.1],\n#open_hh\n/sampler/11/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/11/beat/prob/y = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.8],\n#maracas\n/sampler/10/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/10/beat/prob/y = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.1],\n#kick2\n/sampler/9/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/9/beat/prob/y =  [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1],\n#kick1\n/sampler/8/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/8/beat/prob/y =  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n#hightom\n/sampler/7/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/7/beat/prob/y =  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n#hi_conga\n/sampler/6/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/6/beat/prob/y =  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n#handclap\n/sampler/5/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/5/beat/prob/y =  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.2],\n#crashcym\n/sampler/4/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/4/beat/prob/y =  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.05, 0.0],\n#cowbell\n/sampler/3/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/3/beat/prob/y =  [0.0, 0.1, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0],\n#conga1\n/sampler/2/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/2/beat/prob/y =  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n#claves\n/sampler/1/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/1/beat/prob/y =  [0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n#cl_hihat\n/sampler/0/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/0/beat/prob/y =  [1.0, 1.0, 1.0, 0.5, 0.5, 0.2, 1.0, 0.0]",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -23931,7 +23929,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u865001482"
+									"varname" : "u250030832"
 								}
 
 							}
@@ -25297,7 +25295,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u406001915"
+									"varname" : "u276030289"
 								}
 
 							}
@@ -26140,7 +26138,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u280020978"
+									"varname" : "u246030142"
 								}
 
 							}
