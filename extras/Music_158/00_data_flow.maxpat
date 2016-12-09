@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 2,
-			"revision" : 4,
+			"minor" : 3,
+			"revision" : 1,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 169.0, 79.0, 1163.0, 774.0 ],
+		"rect" : [ 60.0, 92.0, 1163.0, 774.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -48,8 +48,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 4,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -88,8 +88,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 489.0, 392.0, 83.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 489.0, 392.0, 43.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "matrix"
 								}
 
@@ -183,8 +183,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 489.0, 432.799988, 83.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 489.0, 432.799988, 79.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "odot bundles"
 								}
 
@@ -195,8 +195,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 489.0, 344.600006, 83.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 489.0, 344.600006, 55.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "symbols"
 								}
 
@@ -207,8 +207,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 489.0, 307.399994, 83.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 489.0, 307.399994, 29.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "ints"
 								}
 
@@ -219,8 +219,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 489.0, 270.200012, 83.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 489.0, 270.200012, 39.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "floats"
 								}
 
@@ -231,29 +231,48 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 489.0, 233.0, 83.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 489.0, 233.0, 31.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "lists"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 1,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 20.0,
 									"id" : "obj-79",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 298.0, 160.0, 256.0, 30.0 ],
-									"style" : "",
+									"patching_rect" : [ 298.0, 160.0, 256.0, 29.0 ],
+									"style" : "titles",
 									"text" : "Types of data in Max"
 								}
 
 							}
  ],
-						"lines" : [  ]
+						"lines" : [  ],
+						"styles" : [ 							{
+								"name" : "section info reg",
+								"default" : 								{
+									"fontsize" : [ 12.0 ],
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "titles",
+								"default" : 								{
+									"fontface" : [ 1 ],
+									"fontsize" : [ 20.0 ],
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+ ]
 					}
 ,
 					"patching_rect" : [ 316.0, 155.0, 96.0, 22.0 ],
@@ -280,8 +299,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 4,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -316,30 +335,26 @@
 						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-1",
 									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 212.0, 92.0, 397.0, 48.0 ],
-									"style" : "",
+									"patching_rect" : [ 212.0, 83.0, 394.0, 47.0 ],
+									"style" : "section info reg",
 									"text" : "There are two modes involved in the user experience of patcher design.\n1. patching mode (edit / unlocked).  In this mode, you are programming.\n2. usage mode (locked).  In this mode, you are using your program."
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-4",
 									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 212.0, 45.0, 389.0, 34.0 ],
-									"style" : "",
+									"patching_rect" : [ 212.0, 45.0, 395.0, 33.0 ],
+									"style" : "section info reg",
 									"text" : "Max's main window is called a \"patch\", which can be edited and used to create sounds and control pretty much anything you can imagine."
 								}
 
@@ -347,116 +362,97 @@
 , 							{
 								"box" : 								{
 									"bubble" : 1,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-44",
-									"linecount" : 4,
+									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 561.0, 642.147095, 345.0, 66.0 ],
-									"style" : "",
+									"patching_rect" : [ 551.0, 612.147095, 401.0, 51.0 ],
+									"style" : "bubble text",
 									"text" : "Lock the patch, and use your mouse to interact with the GUI objects... You can also interact with objects from an unlocked patch, by holding down ⌘ (or Ctrl on Windows) while clicking on a GUI object."
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 3,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 16.0,
 									"id" : "obj-17",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 212.0, 586.0, 107.0, 26.0 ],
-									"style" : "",
+									"patching_rect" : [ 212.0, 563.0, 101.0, 23.0 ],
+									"style" : "section dividers",
 									"text" : "GUI Objects:"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 3,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 16.0,
 									"id" : "obj-14",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 212.0, 474.0, 98.0, 26.0 ],
-									"style" : "",
+									"patching_rect" : [ 212.0, 455.0, 90.0, 23.0 ],
+									"style" : "section dividers",
 									"text" : "Max / MSP:"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 3,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 16.0,
 									"id" : "obj-13",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 212.0, 329.0, 65.0, 26.0 ],
-									"style" : "",
+									"patching_rect" : [ 212.0, 313.0, 64.0, 23.0 ],
+									"style" : "section dividers",
 									"text" : "Basics:"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-60",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 362.0, 705.441162, 165.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 362.0, 675.441162, 81.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "Message (m)"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-59",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 362.0, 677.294128, 165.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 362.0, 647.294128, 165.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "Floating-point number box (f)"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-58",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 362.0, 649.147095, 165.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 362.0, 619.147095, 129.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "Integer number box (i)"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-57",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 362.0, 621.0, 165.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 362.0, 591.0, 132.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "Button (aka \"bang\") (b)"
 								}
 
@@ -470,7 +466,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 212.0, 705.441162, 36.0, 22.0 ],
+									"patching_rect" : [ 212.0, 675.441162, 36.0, 22.0 ],
 									"style" : "",
 									"text" : "hello"
 								}
@@ -487,7 +483,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 212.0, 677.294128, 50.0, 22.0 ],
+									"patching_rect" : [ 212.0, 647.294128, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -502,7 +498,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 212.0, 649.147095, 50.0, 22.0 ],
+									"patching_rect" : [ 212.0, 619.147095, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -514,7 +510,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 212.0, 621.0, 20.0, 20.0 ],
+									"patching_rect" : [ 212.0, 591.0, 20.0, 20.0 ],
 									"style" : ""
 								}
 
@@ -528,7 +524,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 212.0, 539.0, 46.0, 22.0 ],
+									"patching_rect" : [ 212.0, 509.0, 46.0, 22.0 ],
 									"style" : "",
 									"text" : "cycle~"
 								}
@@ -543,7 +539,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 212.0, 510.0, 38.0, 22.0 ],
+									"patching_rect" : [ 212.0, 480.0, 38.0, 22.0 ],
 									"style" : "",
 									"text" : "cycle"
 								}
@@ -551,14 +547,12 @@
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-32",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 362.0, 433.420563, 165.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 362.0, 403.420563, 100.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "comment box (c)"
 								}
 
@@ -572,7 +566,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 212.0, 433.420563, 120.0, 20.0 ],
+									"patching_rect" : [ 212.0, 403.420563, 120.0, 20.0 ],
 									"style" : "",
 									"text" : "(comment)"
 								}
@@ -580,14 +574,12 @@
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-29",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 362.0, 401.710266, 165.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 362.0, 371.710266, 103.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "message box (m)"
 								}
 
@@ -601,7 +593,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 212.0, 401.710266, 50.0, 22.0 ],
+									"patching_rect" : [ 212.0, 371.710266, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -615,86 +607,76 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 212.0, 370.0, 100.0, 22.0 ],
+									"patching_rect" : [ 212.0, 340.0, 100.0, 22.0 ],
 									"style" : ""
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-16",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 362.0, 539.0, 214.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 362.0, 509.0, 213.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "MSP (audio) object - note the tilde! (~)"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-7",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 362.0, 510.0, 165.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 362.0, 480.0, 69.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "Max object"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-26",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 362.0, 370.0, 165.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 362.0, 340.0, 83.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "object box (n)"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 1,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-8",
 									"linecount" : 6,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 645.5, 375.710266, 25.0, 92.0 ],
-									"style" : "",
+									"patching_rect" : [ 645.5, 346.710266, 26.0, 87.0 ],
+									"style" : "section info emph-1",
 									"text" : "n\nm\ni\nf\nb\nt"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-18",
 									"linecount" : 7,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 645.5, 363.710266, 332.0, 104.0 ],
-									"style" : "",
+									"patching_rect" : [ 645.5, 333.710266, 328.0, 100.0 ],
+									"style" : "section info reg",
 									"text" : "For this lesson, use the following keyboard shortcuts:\n      to create a new object\n      to create a new message\n      to create a number box for an integer\n      to create a number box for a floating-point number\n      to create a button\n      to create a toggle"
 								}
 
 							}
 , 							{
 								"box" : 								{
+									"autofit" : 1,
 									"data" : [ 451, "png", "IBkSG0fBZn....PCIgDQRA...PA....EHX....PiI1QC....DLmPIQEBHf.B7g.YHB..AnWRDEDU3zXqR9qhBCDDG9aioHFhfchVa50RwTXinDwBK70vm.KrPrvNeYBJArPDrSDqErwZahHBAydEGl6fM4NOO+UM6ry7M+gAdyR7vnc61xfffWBRtb4X974B.z.v008kgAPPP.tttxXf+GXeGJ.5+VflllToREDBA62u+WK9OBzwwggCGx4ymIJJhBEJvzoSw22+uCrXwhLZzHlLYBKWtD.pUqFiGOlCGNvwiGSLOsz.1qWO1tcaLL.1rYCqVsh986mZGlJvFMZftt5.nooQ850+YfRoLwOSxuTJQHDoFapc3qJA.NNNxGUnZ0pLXv.JUpDgggJmIVVVXXXvoSmX1rYra2tOAIDrd8ZgxRpa2tXaaG+Ne97I1I111zoSmXfOjxHqo87agLYxn36suCU.FEE8zIe+9cEeJ6POOOJWtLFFFeFftNYylE.tc6Fgggw1dddJ.E.zpUK4kKWd5NKIYYYwhEK95BsYylxqWu9RvLMMw22W8Z+cnO.CRpX52jWpfC....PRE4DQtJDXBB" ],
 									"embed" : 1,
 									"id" : "obj-19",
@@ -702,13 +684,14 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_matrix" ],
-									"patching_rect" : [ 308.0, 210.0, 20.0, 20.0 ],
+									"patching_rect" : [ 307.0, 206.666656, 16.0, 16.0 ],
 									"pic" : "lock2.png"
 								}
 
 							}
 , 							{
 								"box" : 								{
+									"autofit" : 1,
 									"data" : [ 452, "png", "IBkSG0fBZn....PCIgDQRA...PA....EHX....PiI1QC....DLmPIQEBHf.B7g.YHB..ArWRDEDU3zXqT1ipBCDEE9K5SXv+Hjd6TvVsxMfnDQrPvEfK.qrTDwcfVptBz9f+THoxVWBtBrHinoPcdUJ3Kwm4EdmpYNL2ON26vLv+rzdrnZ0pJoTFJHoRkhkKWpAPD.LMMCML.jRIlllJ.95gwOkggAsa2lhEKxkKWX850rXwBte+9ag9Lg+T555Lc5Tz00Y73wLe9bZznACGN7io8K+La0pEGNbfd858za2tczsaWRmNMNNN+Mf4ymGaa6W7bbbne+9eLg91xRoDCCiOVbfAZaaSylMIQhDgCnRodwb61sHDBFLXPfA8fguIToTLYxDJUpDYxj4OkPOWJEJTfNc5fPH350qLa1LNd7nmBcccYznQre+9eGX850IWtbO2GKVr2NKqUqlGfdZ4HQ7cJ3qhFMpGufWc.kGfu6spe51sad77LCsrrHa1rHDheElqqKVVVd70.nRkJpSmNE3j4mRlLIqVsR64GrkKWVc974PAKd73rYyFsOexPnuAE.KgTV98QRH.....IUjSD4pPfIH" ],
 									"embed" : 1,
 									"id" : "obj-20",
@@ -716,45 +699,115 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_matrix" ],
-									"patching_rect" : [ 347.0, 210.0, 20.0, 20.0 ],
+									"patching_rect" : [ 348.666656, 206.666656, 16.0, 16.0 ],
 									"pic" : "lock.png"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 1,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-22",
 									"linecount" : 10,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 212.0, 150.0, 374.0, 149.0 ],
-									"style" : "",
-									"text" : "To enter EDIT MODE, either:\n\n     * Use the ⌘-E (Ctrl-E on Windows) keyboard shortcut\n     * ⌘-click on the white space in the patch\n     * Toggle the         to         in the lower-left corner\n     * Right-click and select \"Edit\" from the menu\n\nOnce in EDIT MODE, you can create objects and connect them with patch cords. A LOCKED PATCH allows you to interact with objects.",
-									"textcolor" : [ 0.0, 0.0, 0.501961, 1.0 ]
+									"patching_rect" : [ 212.0, 150.0, 373.0, 141.0 ],
+									"style" : "instruct patch",
+									"text" : "To enter EDIT MODE, either:\n\n     * Use the ⌘-E (Ctrl-E on Windows) keyboard shortcut\n     * ⌘-click on the white space in the patch\n     * Toggle the         to         in the lower-left corner\n     * Right-click and select \"Edit\" from the menu\n\nOnce in EDIT MODE, you can create objects and connect them with patch cords. A LOCKED PATCH allows you to interact with objects."
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 3,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 18.0,
 									"id" : "obj-23",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 194.0, 13.0, 101.0, 28.0 ],
-									"style" : "",
+									"patching_rect" : [ 46.0, 33.0, 112.0, 29.0 ],
+									"style" : "titles",
 									"text" : "Hello Max!"
 								}
 
 							}
  ],
-						"lines" : [  ]
+						"lines" : [  ],
+						"styles" : [ 							{
+								"name" : "bubble text",
+								"default" : 								{
+									"fontsize" : [ 12.0 ],
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "instruct patch",
+								"default" : 								{
+									"fontface" : [ 1 ],
+									"textcolor" : [ 0.746281, 0.409081, 0.773204, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "section dividers",
+								"default" : 								{
+									"fontface" : [ 3 ],
+									"fontsize" : [ 15.0 ],
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "section info emph",
+								"default" : 								{
+									"fontface" : [ 1 ],
+									"fontsize" : [ 12.0 ],
+									"fontname" : [ "Helvetica Neue" ],
+									"textcolor" : [ 0.225893, 0.506614, 0.765943, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "section info emph-1",
+								"default" : 								{
+									"fontface" : [ 1 ],
+									"fontsize" : [ 12.0 ],
+									"fontname" : [ "Arial" ],
+									"textcolor" : [ 0.225893, 0.506614, 0.765943, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "section info reg",
+								"default" : 								{
+									"fontsize" : [ 12.0 ],
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "titles",
+								"default" : 								{
+									"fontface" : [ 1 ],
+									"fontsize" : [ 20.0 ],
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+ ]
 					}
 ,
 					"patching_rect" : [ 248.0, 107.0, 111.0, 22.0 ],
@@ -781,8 +834,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 4,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -818,15 +871,13 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"bubble" : 1,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-8",
 									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 576.5, 373.0, 360.0, 38.0 ],
-									"style" : "",
+									"patching_rect" : [ 576.5, 373.0, 355.0, 37.0 ],
+									"style" : "bubble text",
 									"text" : "If you send a float into an object that deals only with integers, the float will be \"truncated\", cutting off all decimal values!"
 								}
 
@@ -876,14 +927,12 @@
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-3",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 597.5, 348.0, 321.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 597.5, 348.0, 317.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "so... what happens if you send a float into an integer box?"
 								}
 
@@ -933,14 +982,12 @@
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-233",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 707.0, 177.0, 307.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 707.0, 177.0, 302.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "is \"X\" a valid datatype for this object? How can we tell?"
 								}
 
@@ -992,14 +1039,12 @@
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-231",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 647.0, 103.0, 319.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 647.0, 103.0, 313.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "What's wrong with this?"
 								}
 
@@ -1020,44 +1065,36 @@
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 3,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 16.0,
 									"id" : "obj-293",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 647.0, 58.0, 53.0, 26.0 ],
-									"style" : "",
+									"patching_rect" : [ 647.0, 58.0, 52.0, 23.0 ],
+									"style" : "section dividers",
 									"text" : "Try it!"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 3,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 16.0,
 									"id" : "obj-128",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 212.0, 58.0, 211.0, 26.0 ],
-									"style" : "",
+									"patching_rect" : [ 212.0, 68.0, 198.0, 23.0 ],
+									"style" : "section dividers",
 									"text" : "Creation Arguments"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-109",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 310.5, 574.0, 135.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 310.5, 574.0, 131.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "\"hidden state\" problem"
 								}
 
@@ -1121,43 +1158,37 @@
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-114",
 									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 201.0, 474.0, 354.0, 48.0 ],
-									"style" : "",
+									"patching_rect" : [ 201.0, 474.0, 350.0, 47.0 ],
+									"style" : "section info reg",
 									"text" : "Beware - changing the operator value in the right inlet will not change the displayed creation agrument. This leads to cases were reading your patch may give you false information."
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-66",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 379.0, 343.0, 82.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 379.0, 343.0, 79.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "floating-point"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-115",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 259.5, 343.0, 47.0, 20.0 ],
-									"style" : "",
+									"style" : "section info reg",
 									"text" : "integer"
 								}
 
@@ -1239,28 +1270,24 @@
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-122",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 212.0, 268.0, 315.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 212.0, 268.0, 313.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "These values may also define the way the object works:"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-123",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 272.0, 177.0, 150.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 272.0, 177.0, 148.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "\"5\" is a creation argument"
 								}
 
@@ -1312,14 +1339,12 @@
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-127",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 212.0, 103.0, 315.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 212.0, 103.0, 310.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "Objects allow you to specify default values:"
 								}
 
@@ -1469,6 +1494,38 @@
 								}
 
 							}
+ ],
+						"styles" : [ 							{
+								"name" : "bubble text",
+								"default" : 								{
+									"fontsize" : [ 12.0 ],
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "section dividers",
+								"default" : 								{
+									"fontface" : [ 3 ],
+									"fontsize" : [ 15.0 ],
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "section info reg",
+								"default" : 								{
+									"fontsize" : [ 12.0 ],
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
  ]
 					}
 ,
@@ -1496,8 +1553,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 4,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -1538,21 +1595,19 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 412.5, 519.0, 327.0, 141.0 ],
-									"style" : "",
+									"style" : "section info reg",
 									"text" : "Max allows you to save patches and load them in to other patches (this is called an abstraction, and we'll be covering this later).\n\nBecause of this feature, if you have a patch with the same name as an object (or help patch), Max might load that patch instead of the object. That is bad!\n\nMake sure the names you give to patches when you save are unique and descriptive of the contents."
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Arial Bold Italic",
-									"fontsize" : 12.0,
 									"id" : "obj-24",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 388.5, 497.0, 347.0, 20.0 ],
-									"style" : "",
+									"style" : "section info emph",
 									"text" : "2 - Don't save your patch with the same name as an object"
 								}
 
@@ -1565,7 +1620,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 412.5, 416.0, 306.0, 60.0 ],
-									"style" : "",
+									"style" : "section info reg",
 									"text" : "If you want to do experiments with the contents of a help patch, good practice is to create a new patch ⌘-N / Ctrl-N and then copy the contents of the help patch into your new patch."
 								}
 
@@ -1578,20 +1633,19 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 412.5, 358.0, 283.0, 47.0 ],
-									"style" : "",
+									"style" : "section info reg",
 									"text" : "Help patches are for your reference, from the developers of Max. You want to keep them just as they are."
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Arial Bold Italic",
 									"id" : "obj-20",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 388.5, 336.0, 324.0, 20.0 ],
-									"style" : "",
+									"style" : "section info emph",
 									"text" : "1 -  Don't save changes you make to Help Patches!"
 								}
 
@@ -1602,37 +1656,34 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 334.0, 304.0, 259.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 308.0, 301.0, 347.0, 23.0 ],
+									"style" : "section dividers",
 									"text" : "A few points to remember about help patches:"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Arial Bold",
 									"id" : "obj-18",
 									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 603.5, 202.0, 138.0, 33.0 ],
-									"style" : "",
+									"patching_rect" : [ 574.5, 228.0, 138.0, 33.0 ],
+									"style" : "instruct key",
 									"text" : "Option-Click (Mac)\nAlt-Click (Win)"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 1,
 									"id" : "obj-17",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 437.0, 202.0, 406.0, 20.0 ],
-									"style" : "",
-									"text" : "With the patch in Edit Mode,                                   on the cycle~ object.",
-									"textcolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ]
+									"patching_rect" : [ 408.0, 228.0, 406.0, 20.0 ],
+									"style" : "instruct patch",
+									"text" : "With the patch in Edit Mode,                                   on the cycle~ object."
 								}
 
 							}
@@ -1642,52 +1693,45 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 457.0, 169.0, 343.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 408.0, 202.0, 343.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "The first place to check for questions is always the help patch!"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Arial Italic",
-									"fontsize" : 13.0,
 									"id" : "obj-15",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 437.0, 149.0, 265.0, 21.0 ],
-									"style" : "",
+									"patching_rect" : [ 193.0, 166.0, 226.0, 19.0 ],
+									"style" : "caption text",
 									"text" : "\"What does the number mean after cycle~?\""
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-127",
 									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 314.5, 88.0, 315.0, 34.0 ],
-									"style" : "",
+									"patching_rect" : [ 314.5, 88.0, 313.0, 33.0 ],
+									"style" : "section info reg",
 									"text" : "There are many things to remember in Max, so it's important to know where to look to find help."
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 3,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 16.0,
 									"id" : "obj-128",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 314.5, 57.0, 107.0, 26.0 ],
-									"style" : "",
+									"patching_rect" : [ 48.5, 34.0, 134.0, 29.0 ],
+									"style" : "titles",
 									"text" : "Finding Help"
 								}
 
@@ -1699,14 +1743,89 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 334.0, 174.0, 68.0, 22.0 ],
+									"patching_rect" : [ 193.0, 139.0, 68.0, 22.0 ],
 									"style" : "",
 									"text" : "cycle~ 100"
 								}
 
 							}
  ],
-						"lines" : [  ]
+						"lines" : [  ],
+						"styles" : [ 							{
+								"name" : "caption text",
+								"default" : 								{
+									"fontface" : [ 2 ],
+									"fontsize" : [ 11.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "instruct key",
+								"default" : 								{
+									"fontname" : [ "Arial Bold" ],
+									"textcolor" : [ 0.261802, 0.646774, 0.650603, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "instruct patch",
+								"default" : 								{
+									"fontface" : [ 1 ],
+									"textcolor" : [ 0.746281, 0.409081, 0.773204, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "section dividers",
+								"default" : 								{
+									"fontface" : [ 3 ],
+									"fontsize" : [ 15.0 ],
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "section info emph",
+								"default" : 								{
+									"fontface" : [ 1 ],
+									"fontsize" : [ 12.0 ],
+									"fontname" : [ "Arial" ],
+									"textcolor" : [ 0.225893, 0.506614, 0.765943, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "section info reg",
+								"default" : 								{
+									"fontsize" : [ 12.0 ],
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "titles",
+								"default" : 								{
+									"fontface" : [ 1 ],
+									"fontsize" : [ 20.0 ],
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+ ]
 					}
 ,
 					"patching_rect" : [ 410.0, 42.0, 96.0, 22.0 ],
@@ -1733,13 +1852,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 4,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 169.0, 105.0, 1163.0, 748.0 ],
+						"rect" : [ 60.0, 118.0, 1163.0, 748.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1776,7 +1895,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 572.75, 459.0, 139.0, 22.0 ],
+									"patching_rect" : [ 572.75, 444.0, 139.0, 22.0 ],
 									"style" : "",
 									"text" : "a list of things and 1 2 3"
 								}
@@ -1789,7 +1908,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 809.25, 395.0, 50.0, 22.0 ],
+									"patching_rect" : [ 809.25, 380.0, 50.0, 22.0 ],
 									"style" : "",
 									"text" : "symbol"
 								}
@@ -1802,7 +1921,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 628.75, 359.0, 139.0, 22.0 ],
+									"patching_rect" : [ 628.75, 344.0, 139.0, 22.0 ],
 									"style" : "",
 									"text" : "a list of things and 1 2 3"
 								}
@@ -1817,22 +1936,19 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 738.25, 389.0, 50.0, 22.0 ],
+									"patching_rect" : [ 738.25, 374.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 1,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-11",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 624.75, 325.5, 405.0, 21.0 ],
-									"style" : "",
+									"patching_rect" : [ 624.75, 310.5, 407.0, 20.0 ],
+									"style" : "section info emph",
 									"text" : "\"l\" stands for list, but all other data types can be sent through as well"
 								}
 
@@ -1846,7 +1962,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 628.75, 425.0, 20.0, 22.0 ],
+									"patching_rect" : [ 628.75, 410.0, 20.0, 22.0 ],
 									"style" : "",
 									"text" : "t l"
 								}
@@ -1862,7 +1978,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 654.25, 388.0, 50.0, 22.0 ],
+									"patching_rect" : [ 654.25, 373.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -1871,30 +1987,25 @@
 								"box" : 								{
 									"bubble" : 1,
 									"bubbleside" : 3,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-298",
-									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 441.0, 585.0, 105.0, 38.0 ],
-									"style" : "",
+									"patching_rect" : [ 401.0, 578.0, 158.0, 24.0 ],
+									"style" : "bubble text",
 									"text" : "insert your trigger here..."
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-285",
 									"linecount" : 4,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 67.0, 678.0, 315.0, 62.0 ],
-									"style" : "",
+									"patching_rect" : [ 67.0, 648.0, 313.0, 60.0 ],
+									"style" : "section info reg",
 									"text" : "Use trigger whenever you need your patch to execute a sequence of steps. You may also use it whenever you need to make sure that a specific order of operations is respected."
 								}
 
@@ -1908,7 +2019,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 79.0, 642.0, 50.0, 22.0 ],
+									"patching_rect" : [ 79.0, 612.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -1922,7 +2033,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 167.0, 642.0, 50.0, 22.0 ],
+									"patching_rect" : [ 167.0, 612.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -1936,7 +2047,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 255.0, 642.0, 50.0, 22.0 ],
+									"patching_rect" : [ 255.0, 612.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -1950,7 +2061,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "float", "float", "hello" ],
-									"patching_rect" : [ 110.0, 603.0, 195.0, 22.0 ],
+									"patching_rect" : [ 110.0, 573.0, 195.0, 22.0 ],
 									"style" : "",
 									"text" : "t 0. 1. hello"
 								}
@@ -1963,36 +2074,32 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 110.0, 566.0, 20.0, 20.0 ],
+									"patching_rect" : [ 110.0, 536.0, 20.0, 20.0 ],
 									"style" : ""
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-291",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 73.5, 537.0, 161.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 73.5, 507.0, 161.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "You may also trigger values:"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-284",
 									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 771.75, 625.0, 165.0, 34.0 ],
-									"style" : "",
+									"patching_rect" : [ 771.75, 610.0, 164.0, 33.0 ],
+									"style" : "section info reg",
 									"text" : "You are not allowed to move these message boxes...."
 								}
 
@@ -2006,7 +2113,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 715.25, 655.0, 43.0, 22.0 ],
+									"patching_rect" : [ 715.25, 640.0, 43.0, 22.0 ],
 									"style" : "",
 									"text" : "music"
 								}
@@ -2021,7 +2128,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 697.5, 625.0, 32.5, 22.0 ],
+									"patching_rect" : [ 697.5, 610.0, 32.5, 22.0 ],
 									"style" : "",
 									"text" : "dad"
 								}
@@ -2036,7 +2143,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 655.25, 655.0, 32.5, 22.0 ],
+									"patching_rect" : [ 655.25, 640.0, 32.5, 22.0 ],
 									"style" : "",
 									"text" : "to"
 								}
@@ -2051,7 +2158,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 637.5, 625.0, 45.0, 22.0 ],
+									"patching_rect" : [ 637.5, 610.0, 45.0, 22.0 ],
 									"style" : "",
 									"text" : "listens"
 								}
@@ -2066,7 +2173,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 580.75, 655.0, 32.5, 22.0 ],
+									"patching_rect" : [ 580.75, 640.0, 32.5, 22.0 ],
 									"style" : "",
 									"text" : "GSI"
 								}
@@ -2081,7 +2188,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 561.75, 625.0, 32.5, 22.0 ],
+									"patching_rect" : [ 561.75, 610.0, 32.5, 22.0 ],
 									"style" : "",
 									"text" : "Our"
 								}
@@ -2094,7 +2201,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 568.0, 566.0, 20.0, 20.0 ],
+									"patching_rect" : [ 561.75, 551.0, 20.0, 20.0 ],
 									"style" : ""
 								}
 
@@ -2107,7 +2214,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 561.75, 700.0, 35.0, 22.0 ],
+									"patching_rect" : [ 561.75, 685.0, 35.0, 22.0 ],
 									"style" : "",
 									"text" : "print"
 								}
@@ -2115,30 +2222,24 @@
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-273",
-									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 628.75, 534.0, 337.0, 34.0 ],
-									"style" : "",
+									"patching_rect" : [ 618.75, 519.0, 371.0, 20.0 ],
+									"style" : "instruct patch",
 									"text" : "Create a trigger object that will print out the sentence correctly."
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 3,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 16.0,
 									"id" : "obj-274",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 555.0, 534.0, 53.0, 26.0 ],
-									"style" : "",
+									"patching_rect" : [ 555.0, 519.0, 52.0, 23.0 ],
+									"style" : "section dividers",
 									"text" : "Try it!"
 								}
 
@@ -2152,7 +2253,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 327.0, 372.0, 37.0, 22.0 ],
+									"patching_rect" : [ 327.0, 357.0, 37.0, 22.0 ],
 									"style" : "",
 									"text" : "Click"
 								}
@@ -2167,22 +2268,19 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 327.0, 453.0, 76.0, 22.0 ],
+									"patching_rect" : [ 327.0, 438.0, 76.0, 22.0 ],
 									"style" : ""
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 1,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-247",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 371.5, 408.0, 196.0, 21.0 ],
-									"style" : "",
+									"patching_rect" : [ 371.5, 393.0, 198.0, 20.0 ],
+									"style" : "section info emph",
 									"text" : "\"s\" will trigger a symbol"
 								}
 
@@ -2196,7 +2294,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 327.0, 408.0, 24.0, 22.0 ],
+									"patching_rect" : [ 327.0, 393.0, 24.0, 22.0 ],
 									"style" : "",
 									"text" : "t s"
 								}
@@ -2204,15 +2302,13 @@
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-249",
 									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 307.0, 332.0, 228.0, 34.0 ],
-									"style" : "",
+									"patching_rect" : [ 307.0, 317.0, 223.0, 33.0 ],
+									"style" : "section info reg",
 									"text" : "It is up to you to specify what the trigger object will send out of its outlets:"
 								}
 
@@ -2224,7 +2320,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 138.0, 433.0, 20.0, 20.0 ],
+									"patching_rect" : [ 138.0, 418.0, 20.0, 20.0 ],
 									"style" : ""
 								}
 
@@ -2236,7 +2332,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 110.0, 433.0, 20.0, 20.0 ],
+									"patching_rect" : [ 110.0, 418.0, 20.0, 20.0 ],
 									"style" : ""
 								}
 
@@ -2248,7 +2344,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 82.0, 433.0, 20.0, 20.0 ],
+									"patching_rect" : [ 82.0, 418.0, 20.0, 20.0 ],
 									"style" : ""
 								}
 
@@ -2260,7 +2356,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 82.0, 369.0, 20.0, 20.0 ],
+									"patching_rect" : [ 82.0, 354.0, 20.0, 20.0 ],
 									"style" : ""
 								}
 
@@ -2274,7 +2370,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "bang", "bang", "bang" ],
-									"patching_rect" : [ 82.0, 400.0, 75.0, 22.0 ],
+									"patching_rect" : [ 82.0, 385.0, 75.0, 22.0 ],
 									"style" : "",
 									"text" : "t b b b"
 								}
@@ -2282,88 +2378,72 @@
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-255",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 67.0, 339.0, 191.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 67.0, 324.0, 188.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "You may abbreviate trigger as \"t\":"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-242",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 572.75, 58.0, 346.0, 20.0 ],
-									"style" : "",
-									"text" : "What happens when we add more bangs to the trigger object?"
+									"patching_rect" : [ 572.75, 57.0, 410.0, 20.0 ],
+									"style" : "instruct patch",
+									"text" : "Try adding more bangs to the trigger object.  What happens?"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 3,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 16.0,
 									"id" : "obj-243",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 487.0, 18.0, 53.0, 26.0 ],
-									"style" : "",
+									"patching_rect" : [ 466.0, 21.0, 52.0, 23.0 ],
+									"style" : "section dividers",
 									"text" : "Try it!"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 3,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 16.0,
 									"id" : "obj-221",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 67.0, 21.0, 117.0, 26.0 ],
-									"style" : "",
+									"patching_rect" : [ 67.0, 47.0, 114.0, 23.0 ],
+									"style" : "section dividers",
 									"text" : "Trigger"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 1,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-206",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 159.0, 258.0, 238.0, 21.0 ],
-									"style" : "",
+									"patching_rect" : [ 159.0, 243.0, 235.0, 20.0 ],
+									"style" : "section info emph",
 									"text" : "Notice that trigger outputs right-to-left!"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 1,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-207",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 159.0, 228.0, 429.0, 21.0 ],
-									"style" : "",
+									"patching_rect" : [ 159.0, 213.0, 431.0, 20.0 ],
+									"style" : "section info emph",
 									"text" : "\"b\" will trigger a bang, \"i\" will trigger an integer, and \"f\" will trigger a float"
 								}
 
@@ -2376,7 +2456,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 97.0, 273.0, 35.0, 22.0 ],
+									"patching_rect" : [ 97.0, 258.0, 35.0, 22.0 ],
 									"style" : "",
 									"text" : "print"
 								}
@@ -2391,7 +2471,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "int", "float", "bang" ],
-									"patching_rect" : [ 72.0, 228.0, 69.0, 22.0 ],
+									"patching_rect" : [ 72.0, 213.0, 69.0, 22.0 ],
 									"style" : "",
 									"text" : "trigger i f b"
 								}
@@ -2407,21 +2487,19 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 72.0, 194.0, 50.0, 22.0 ],
+									"patching_rect" : [ 72.0, 179.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-211",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 67.0, 172.0, 123.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 67.0, 157.0, 120.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "Not limited to bangs:"
 								}
 
@@ -2523,30 +2601,25 @@
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 1,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-219",
 									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 67.0, 69.0, 315.0, 35.0 ],
-									"style" : "",
+									"patching_rect" : [ 67.0, 92.0, 318.0, 33.0 ],
+									"style" : "section info emph",
 									"text" : "     (a) Specify the order of operations;\n     (b) Trigger multiple events from a single event."
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-220",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 67.0, 49.0, 315.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 67.0, 72.0, 315.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "Trigger allows you to:"
 								}
 
@@ -2840,6 +2913,60 @@
 								}
 
 							}
+ ],
+						"styles" : [ 							{
+								"name" : "bubble text",
+								"default" : 								{
+									"fontsize" : [ 12.0 ],
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "instruct patch",
+								"default" : 								{
+									"fontface" : [ 1 ],
+									"textcolor" : [ 0.746281, 0.409081, 0.773204, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "section dividers",
+								"default" : 								{
+									"fontface" : [ 3 ],
+									"fontsize" : [ 15.0 ],
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "section info emph",
+								"default" : 								{
+									"fontface" : [ 1 ],
+									"fontsize" : [ 12.0 ],
+									"fontname" : [ "Arial" ],
+									"textcolor" : [ 0.225893, 0.506614, 0.765943, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "section info reg",
+								"default" : 								{
+									"fontsize" : [ 12.0 ],
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
  ]
 					}
 ,
@@ -2867,8 +2994,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 4,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -2903,15 +3030,91 @@
 						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
+									"id" : "obj-6",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 554.0, 262.0, 19.0, 20.0 ],
+									"presentation_rect" : [ 553.5, 232.0, 0.0, 0.0 ],
+									"style" : "section info emph",
+									"text" : "3"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-5",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 554.0, 292.0, 19.0, 20.0 ],
+									"presentation_rect" : [ 554.5, 262.0, 0.0, 0.0 ],
+									"style" : "section info emph",
+									"text" : "2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 554.0, 323.0, 19.0, 20.0 ],
+									"presentation_rect" : [ 554.0, 291.5, 0.0, 0.0 ],
+									"style" : "section info emph",
+									"text" : "1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 238.0, 186.0, 19.0, 20.0 ],
+									"presentation_rect" : [ 276.0, 137.0, 0.0, 0.0 ],
+									"style" : "section info emph",
+									"text" : "3"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 298.0, 186.0, 19.0, 20.0 ],
+									"presentation_rect" : [ 336.0, 132.0, 0.0, 0.0 ],
+									"style" : "section info emph",
+									"text" : "2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 358.0, 186.0, 19.0, 20.0 ],
+									"presentation_rect" : [ 397.0, 113.0, 0.0, 0.0 ],
+									"style" : "section info emph",
+									"text" : "1"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-204",
 									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 641.0, 630.0, 337.0, 34.0 ],
-									"style" : "",
+									"patching_rect" : [ 641.0, 626.0, 334.0, 33.0 ],
+									"style" : "instruct patch",
 									"text" : "It's in your best interest not to cheat - write down your hypothesis in a comment box (c) or a message box (m)."
 								}
 
@@ -2924,7 +3127,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 657.0, 585.0, 35.0, 22.0 ],
+									"patching_rect" : [ 657.0, 583.0, 35.0, 22.0 ],
 									"style" : "",
 									"text" : "print"
 								}
@@ -2939,7 +3142,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 781.0, 540.0, 57.0, 22.0 ],
+									"patching_rect" : [ 781.0, 538.0, 57.0, 22.0 ],
 									"style" : "",
 									"text" : "$3 $3 $3"
 								}
@@ -2954,7 +3157,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 717.0, 540.0, 41.0, 22.0 ],
+									"patching_rect" : [ 717.0, 538.0, 41.0, 22.0 ],
 									"style" : "",
 									"text" : "$2 $2"
 								}
@@ -2969,7 +3172,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 657.0, 540.0, 32.5, 22.0 ],
+									"patching_rect" : [ 657.0, 538.0, 32.5, 22.0 ],
 									"style" : "",
 									"text" : "$1"
 								}
@@ -2984,7 +3187,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 657.0, 495.0, 37.0, 22.0 ],
+									"patching_rect" : [ 657.0, 493.0, 37.0, 22.0 ],
 									"style" : "",
 									"text" : "1 2 3"
 								}
@@ -2992,61 +3195,51 @@
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-193",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 641.0, 450.0, 337.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 641.0, 450.0, 330.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "What is the output of the following construction?"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 3,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 16.0,
 									"id" : "obj-194",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 641.0, 405.0, 53.0, 26.0 ],
-									"style" : "",
+									"patching_rect" : [ 641.0, 420.0, 52.0, 23.0 ],
+									"style" : "section dividers",
 									"text" : "Try it!"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-90",
-									"linecount" : 3,
+									"linecount" : 4,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 244.0, 366.0, 327.0, 48.0 ],
-									"style" : "",
+									"patching_rect" : [ 278.5, 413.0, 240.0, 60.0 ],
+									"style" : "section info reg",
 									"text" : "This functionality will make more sense as we will explore complex objects in Max. There may be many cases, however, when this is undesirable. "
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 1,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 20.0,
 									"id" : "obj-89",
 									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 627.0, 160.0, 178.0, 78.0 ],
-									"style" : "",
-									"text" : "RIGHT TO LEFT\n\nBOTTOM TO TOP"
+									"patching_rect" : [ 520.0, 93.5, 135.0, 57.0 ],
+									"style" : "section dividers",
+									"text" : "RIGHT TO LEFT,\n\nBOTTOM TO TOP"
 								}
 
 							}
@@ -3058,7 +3251,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 394.0, 323.0, 35.0, 22.0 ],
+									"patching_rect" : [ 394.0, 353.0, 35.0, 22.0 ],
 									"style" : "",
 									"text" : "print"
 								}
@@ -3071,7 +3264,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 394.0, 203.0, 20.0, 20.0 ],
+									"patching_rect" : [ 424.5, 232.0, 20.0, 20.0 ],
 									"style" : ""
 								}
 
@@ -3085,7 +3278,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 499.0, 232.0, 32.5, 22.0 ],
+									"patching_rect" : [ 499.0, 262.0, 50.0, 22.0 ],
 									"style" : "",
 									"text" : "top"
 								}
@@ -3100,7 +3293,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 499.0, 262.0, 32.5, 22.0 ],
+									"patching_rect" : [ 499.0, 292.0, 50.0, 22.0 ],
 									"style" : "",
 									"text" : "to"
 								}
@@ -3115,7 +3308,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 499.0, 293.0, 50.0, 22.0 ],
+									"patching_rect" : [ 499.0, 323.0, 50.0, 22.0 ],
 									"style" : "",
 									"text" : "Bottom"
 								}
@@ -3129,7 +3322,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 259.0, 202.0, 35.0, 22.0 ],
+									"patching_rect" : [ 259.0, 232.0, 35.0, 22.0 ],
 									"style" : "",
 									"text" : "print"
 								}
@@ -3144,7 +3337,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 259.0, 156.0, 32.5, 22.0 ],
+									"patching_rect" : [ 259.0, 186.0, 32.5, 22.0 ],
 									"style" : "",
 									"text" : "left"
 								}
@@ -3159,7 +3352,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 319.0, 156.0, 32.5, 22.0 ],
+									"patching_rect" : [ 319.0, 186.0, 32.5, 22.0 ],
 									"style" : "",
 									"text" : "to"
 								}
@@ -3174,7 +3367,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 379.0, 156.0, 39.0, 22.0 ],
+									"patching_rect" : [ 379.0, 186.0, 39.0, 22.0 ],
 									"style" : "",
 									"text" : "Right"
 								}
@@ -3187,36 +3380,31 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 259.0, 112.0, 20.0, 20.0 ],
+									"patching_rect" : [ 259.0, 142.0, 20.0, 20.0 ],
 									"style" : ""
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-191",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 244.0, 82.0, 317.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 201.0, 112.0, 316.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "The order of operations is defined visually. The order is:"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 1,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 20.0,
 									"id" : "obj-192",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 244.0, 37.0, 206.0, 30.0 ],
-									"style" : "",
+									"patching_rect" : [ 29.0, 25.0, 208.0, 29.0 ],
+									"style" : "titles",
 									"text" : "Order of Operations:"
 								}
 
@@ -3384,6 +3572,61 @@
 								}
 
 							}
+ ],
+						"styles" : [ 							{
+								"name" : "instruct patch",
+								"default" : 								{
+									"fontface" : [ 1 ],
+									"textcolor" : [ 0.746281, 0.409081, 0.773204, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "section dividers",
+								"default" : 								{
+									"fontface" : [ 3 ],
+									"fontsize" : [ 15.0 ],
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "section info emph",
+								"default" : 								{
+									"fontface" : [ 1 ],
+									"fontsize" : [ 12.0 ],
+									"fontname" : [ "Arial" ],
+									"textcolor" : [ 0.225893, 0.506614, 0.765943, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "section info reg",
+								"default" : 								{
+									"fontsize" : [ 12.0 ],
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "titles",
+								"default" : 								{
+									"fontface" : [ 1 ],
+									"fontsize" : [ 20.0 ],
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
  ]
 					}
 ,
@@ -3411,8 +3654,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 4,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -3454,7 +3697,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 156.0, 176.0, 57.0, 22.0 ],
+									"patching_rect" : [ 156.0, 190.0, 57.0, 22.0 ],
 									"style" : "",
 									"text" : "$2 $1 $3"
 								}
@@ -3469,7 +3712,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 440.5, 448.0, 157.0, 22.0 ],
+									"patching_rect" : [ 237.5, 426.0, 157.0, 22.0 ],
 									"style" : "",
 									"text" : "$1 $2 $3 $4 $5 $6 $7 $8 $9"
 								}
@@ -3478,43 +3721,37 @@
 , 							{
 								"box" : 								{
 									"bubble" : 1,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-1",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 353.0, 152.0, 278.0, 24.0 ],
-									"style" : "",
+									"patching_rect" : [ 353.0, 166.0, 278.0, 24.0 ],
+									"style" : "bubble text",
 									"text" : " You can have other data in the same message"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-18",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 304.0, 696.5, 72.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 309.0, 648.0, 67.0, 19.0 ],
+									"style" : "caption text",
 									"text" : "(multislider)"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-186",
 									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 712.0, 430.0, 343.0, 34.0 ],
-									"style" : "",
+									"patching_rect" : [ 712.0, 415.0, 339.0, 33.0 ],
+									"style" : "section info reg",
 									"text" : "Make sure you're using the correct inlets & outlets of the messages in your construction above!"
 								}
 
@@ -3522,14 +3759,12 @@
 , 							{
 								"box" : 								{
 									"bubble" : 1,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-185",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 847.0, 619.0, 134.0, 24.0 ],
-									"style" : "",
+									"patching_rect" : [ 847.0, 582.0, 133.0, 24.0 ],
+									"style" : "bubble text",
 									"text" : "fill out this message"
 								}
 
@@ -3543,7 +3778,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 712.0, 622.0, 76.0, 22.0 ],
+									"patching_rect" : [ 712.0, 585.0, 76.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -3557,7 +3792,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 712.0, 710.0, 405.0, 22.0 ],
+									"patching_rect" : [ 712.0, 659.0, 405.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -3571,7 +3806,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 712.0, 665.0, 278.0, 22.0 ],
+									"patching_rect" : [ 712.0, 614.0, 278.0, 22.0 ],
 									"style" : "",
 									"text" : "My name is $2 and the name of my neighbor is $1"
 								}
@@ -3579,60 +3814,50 @@
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-178",
 									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 712.0, 562.0, 337.0, 34.0 ],
-									"style" : "",
+									"patching_rect" : [ 712.0, 542.0, 301.0, 33.0 ],
+									"style" : "instruct patch",
 									"text" : "Create a message that will make the output of the following make sense:"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 3,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 16.0,
 									"id" : "obj-179",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 712.0, 511.0, 53.0, 26.0 ],
-									"style" : "",
+									"patching_rect" : [ 712.0, 512.0, 52.0, 23.0 ],
+									"style" : "section dividers",
 									"text" : "Try it!"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-176",
 									"linecount" : 4,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 712.0, 201.0, 375.0, 62.0 ],
-									"style" : "",
+									"patching_rect" : [ 712.0, 201.0, 379.0, 60.0 ],
+									"style" : "instruct patch",
 									"text" : "Create a message box containing your full name (or any other data, if you would like - at least three elements). Use another message box with $ substitution elements to rearrange (format) the data in a different order."
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 3,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 16.0,
 									"id" : "obj-177",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 712.0, 156.0, 53.0, 26.0 ],
-									"style" : "",
+									"patching_rect" : [ 712.0, 171.0, 52.0, 23.0 ],
+									"style" : "section dividers",
 									"text" : "Try it!"
 								}
 
@@ -3646,22 +3871,20 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 255.0, 645.0, 50.0, 22.0 ],
+									"patching_rect" : [ 255.0, 617.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-161",
 									"linecount" : 5,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 329.5, 600.0, 331.0, 76.0 ],
-									"style" : "",
+									"patching_rect" : [ 325.5, 562.0, 325.0, 74.0 ],
+									"style" : "section info reg",
 									"text" : "In this case, the second value that is required by the \"line\" object is constant, but any value n we would provide to the \"$1 1000\" message would become \"n 1000\"\n\n(We will cover the details of how [line] works later.)"
 								}
 
@@ -3669,14 +3892,12 @@
 , 							{
 								"box" : 								{
 									"bubble" : 1,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-162",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 237.5, 552.0, 85.0, 24.0 ],
-									"style" : "",
+									"patching_rect" : [ 237.5, 532.0, 84.0, 24.0 ],
+									"style" : "bubble text",
 									"text" : "click these"
 								}
 
@@ -3689,7 +3910,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 175.0, 690.0, 129.0, 33.0 ],
+									"patching_rect" : [ 175.0, 648.0, 129.0, 33.0 ],
 									"setminmax" : [ 0.0, 1.0 ],
 									"setstyle" : 3,
 									"style" : ""
@@ -3705,7 +3926,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 175.0, 645.0, 59.0, 22.0 ],
+									"patching_rect" : [ 175.0, 617.0, 59.0, 22.0 ],
 									"style" : "",
 									"text" : "line 0. 20"
 								}
@@ -3720,7 +3941,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 175.0, 600.0, 54.0, 22.0 ],
+									"patching_rect" : [ 175.0, 580.0, 54.0, 22.0 ],
 									"style" : "",
 									"text" : "$1 1000"
 								}
@@ -3735,7 +3956,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 205.0, 555.0, 32.5, 22.0 ],
+									"patching_rect" : [ 205.0, 535.0, 32.5, 22.0 ],
 									"style" : "",
 									"text" : "1."
 								}
@@ -3750,7 +3971,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 145.0, 555.0, 32.5, 22.0 ],
+									"patching_rect" : [ 145.0, 535.0, 32.5, 22.0 ],
 									"style" : "",
 									"text" : "0."
 								}
@@ -3758,15 +3979,13 @@
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-167",
 									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 129.0, 495.0, 338.0, 48.0 ],
-									"style" : "",
+									"patching_rect" : [ 129.0, 475.0, 336.0, 47.0 ],
+									"style" : "section info reg",
 									"text" : "The $ arguments in the message allow us to trigger complex behaviors from single value inputs. Consider the following example, which uses $1 substitution:"
 								}
 
@@ -3780,7 +3999,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 266.0, 152.0, 80.0, 22.0 ],
+									"patching_rect" : [ 266.0, 166.0, 80.0, 22.0 ],
 									"style" : "",
 									"text" : "frequency $1"
 								}
@@ -3795,7 +4014,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 218.0, 152.0, 41.0, 22.0 ],
+									"patching_rect" : [ 218.0, 166.0, 41.0, 22.0 ],
 									"style" : "",
 									"text" : "$2 $4"
 								}
@@ -3803,18 +4022,14 @@
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 1,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 16.0,
 									"id" : "obj-148",
 									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 134.0, 402.0, 541.0, 64.0 ],
-									"style" : "",
-									"text" : "A $n argument in a message is substituted with the nth member of a list sent to the left inlet of the message.  You can use up to changeable arguments for substitution",
-									"textcolor" : [ 0.0, 0.0, 0.501961, 1.0 ]
+									"patching_rect" : [ 149.0, 389.0, 471.0, 47.0 ],
+									"style" : "section info emph",
+									"text" : "A $n argument in a message is substituted with the nth member of a list sent to the left inlet of the message.  You can use up to changeable arguments for substitution"
 								}
 
 							}
@@ -3914,7 +4129,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 302.0, 252.0, 109.0, 22.0 ],
+									"patching_rect" : [ 302.0, 266.0, 109.0, 22.0 ],
 									"style" : "",
 									"text" : "First Second Third"
 								}
@@ -3922,15 +4137,13 @@
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-155",
 									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 286.5, 208.0, 315.0, 34.0 ],
-									"style" : "",
+									"patching_rect" : [ 302.0, 228.0, 312.0, 33.0 ],
+									"style" : "section info reg",
 									"text" : "These numbers correspond to elements of an incoming list. Consider a list with descriptive members:"
 								}
 
@@ -3944,7 +4157,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 156.0, 152.0, 57.0, 22.0 ],
+									"patching_rect" : [ 156.0, 166.0, 57.0, 22.0 ],
 									"style" : "",
 									"text" : "$1 $2 $3"
 								}
@@ -3952,44 +4165,37 @@
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-157",
 									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 145.0, 80.0, 694.0, 48.0 ],
-									"style" : "",
+									"patching_rect" : [ 145.0, 105.0, 686.0, 47.0 ],
+									"style" : "section info reg",
 									"text" : "Dollar sign arguments (e.g. $1) specify placeholders that allow input list elements to occupy.  This process is called \"selection\".  The $ argument is replaced by the input element (whether it be the first [$1] second [$2] etc), and the formatted list is output.  The order is determined by the order you format the message with."
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 3,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 16.0,
 									"id" : "obj-46",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 129.0, 6.0, 117.0, 26.0 ],
-									"style" : "",
+									"patching_rect" : [ 33.5, 17.0, 144.0, 29.0 ],
+									"style" : "titles",
 									"text" : "$-substitution"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-158",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 145.0, 48.0, 708.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 145.0, 78.0, 700.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "One of the most important features of messages comes from specifying changeable arguments that can be occupied by variables."
 								}
 
@@ -4112,6 +4318,81 @@
 								}
 
 							}
+ ],
+						"styles" : [ 							{
+								"name" : "bubble text",
+								"default" : 								{
+									"fontsize" : [ 12.0 ],
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "caption text",
+								"default" : 								{
+									"fontface" : [ 2 ],
+									"fontsize" : [ 11.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "instruct patch",
+								"default" : 								{
+									"fontface" : [ 1 ],
+									"textcolor" : [ 0.746281, 0.409081, 0.773204, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "section dividers",
+								"default" : 								{
+									"fontface" : [ 3 ],
+									"fontsize" : [ 15.0 ],
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "section info emph",
+								"default" : 								{
+									"fontface" : [ 1 ],
+									"fontsize" : [ 12.0 ],
+									"fontname" : [ "Arial" ],
+									"textcolor" : [ 0.225893, 0.506614, 0.765943, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "section info reg",
+								"default" : 								{
+									"fontsize" : [ 12.0 ],
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "titles",
+								"default" : 								{
+									"fontface" : [ 1 ],
+									"fontsize" : [ 20.0 ],
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
  ]
 					}
 ,
@@ -4139,8 +4420,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 4,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -4181,7 +4462,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 68.0, 213.0, 35.0, 22.0 ],
+									"patching_rect" : [ 187.0, 232.0, 35.0, 22.0 ],
 									"style" : "",
 									"text" : "print"
 								}
@@ -4189,45 +4470,38 @@
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 3,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 16.0,
 									"id" : "obj-224",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 495.0, 539.0, 53.0, 26.0 ],
-									"style" : "",
+									"patching_rect" : [ 720.0, 539.0, 52.0, 23.0 ],
+									"style" : "section dividers",
 									"text" : "Try it!"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-225",
 									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 495.0, 582.0, 319.0, 48.0 ],
-									"style" : "",
+									"patching_rect" : [ 720.0, 575.0, 316.0, 47.0 ],
+									"style" : "section info reg",
 									"text" : "Since we know that a message box will display whatever is sent to its right inlet, find out what sort of a command does a button (b) object send? Toggle (t)?"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-45",
 									"linecount" : 4,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 164.0, 672.0, 225.0, 62.0 ],
-									"style" : "",
+									"patching_rect" : [ 390.0, 640.0, 223.0, 60.0 ],
+									"style" : "section info reg",
 									"text" : "Although this doesn't quite fix the hidden state issue, it stresses the fact that the instantiation argument \"5\" is overwritten."
 								}
 
@@ -4242,7 +4516,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 68.0, 712.0, 50.0, 22.0 ],
+									"patching_rect" : [ 294.0, 680.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -4257,7 +4531,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 131.5, 627.0, 50.0, 22.0 ],
+									"patching_rect" : [ 357.5, 595.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -4272,7 +4546,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 68.0, 627.0, 50.0, 22.0 ],
+									"patching_rect" : [ 294.0, 595.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -4286,7 +4560,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 68.0, 672.0, 32.5, 22.0 ],
+									"patching_rect" : [ 294.0, 640.0, 32.5, 22.0 ],
 									"style" : "",
 									"text" : "+ 5"
 								}
@@ -4301,22 +4575,20 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 106.5, 672.0, 44.0, 22.0 ],
+									"patching_rect" : [ 332.5, 640.0, 44.0, 22.0 ],
 									"style" : ""
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-133",
 									"linecount" : 6,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 131.0, 526.0, 252.0, 90.0 ],
-									"style" : "",
+									"patching_rect" : [ 354.5, 498.0, 249.0, 87.0 ],
+									"style" : "section info reg",
 									"text" : "the right inlet of the message box sets the message without causing output;\n\nthis may be quite useful for monitoring data, and is often more convenient than using the \"print\" object"
 								}
 
@@ -4330,7 +4602,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 68.0, 571.0, 50.0, 22.0 ],
+									"patching_rect" : [ 294.0, 539.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -4345,108 +4617,92 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 68.0, 526.0, 50.0, 22.0 ],
+									"patching_rect" : [ 294.0, 498.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 3,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 16.0,
 									"id" : "obj-136",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 68.0, 492.0, 135.0, 26.0 ],
-									"style" : "",
+									"patching_rect" : [ 294.0, 460.0, 127.0, 23.0 ],
+									"style" : "section dividers",
 									"text" : "Visual Feedback"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 3,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 16.0,
 									"id" : "obj-295",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 495.0, 54.0, 53.0, 26.0 ],
-									"style" : "",
+									"patching_rect" : [ 720.0, 54.0, 52.0, 23.0 ],
+									"style" : "section dividers",
 									"text" : "Try it!"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-296",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 495.0, 91.0, 319.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 720.0, 86.0, 340.0, 20.0 ],
+									"style" : "instruct patch",
 									"text" : "Create a message box (m) and fill it with some data:"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-175",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 68.0, 85.0, 315.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 187.0, 100.0, 311.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "A message box can be used to store lists of data:"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-168",
 									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 193.0, 185.0, 205.0, 34.0 ],
-									"style" : "",
+									"patching_rect" : [ 312.0, 196.0, 203.0, 33.0 ],
+									"style" : "section info reg",
 									"text" : "commas separate different lists in the same message box"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-169",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 193.0, 152.0, 207.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 312.0, 164.0, 205.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "may contain different types"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-170",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 193.0, 119.0, 207.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 312.0, 134.0, 206.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "different values separated by spaces"
 								}
 
@@ -4460,7 +4716,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 99.0, 185.0, 67.0, 22.0 ],
+									"patching_rect" : [ 218.0, 196.0, 67.0, 22.0 ],
 									"style" : "",
 									"text" : "0, 1. 1000."
 								}
@@ -4475,7 +4731,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 91.0, 152.0, 89.0, 22.0 ],
+									"patching_rect" : [ 210.0, 164.0, 89.0, 22.0 ],
 									"style" : "",
 									"text" : "1 2. 3.3 4 bass"
 								}
@@ -4490,7 +4746,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 68.0, 119.0, 57.0, 22.0 ],
+									"patching_rect" : [ 187.0, 134.0, 57.0, 22.0 ],
 									"style" : "",
 									"text" : "1 2 3 4 5"
 								}
@@ -4498,44 +4754,36 @@
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 3,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 16.0,
 									"id" : "obj-174",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 68.0, 54.0, 46.0, 26.0 ],
-									"style" : "",
+									"patching_rect" : [ 187.0, 69.0, 46.0, 23.0 ],
+									"style" : "section dividers",
 									"text" : "Lists"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 1,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 20.0,
 									"id" : "obj-146",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 68.0, 13.0, 256.0, 30.0 ],
-									"style" : "",
-									"text" : "Messages:"
+									"patching_rect" : [ 34.0, 20.0, 146.0, 29.0 ],
+									"style" : "titles",
+									"text" : "Meet Message"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-22",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 218.0, 406.0, 170.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 337.0, 407.0, 172.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "a queue of lists (use commas)"
 								}
 
@@ -4549,7 +4797,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 113.0, 406.0, 84.0, 22.0 ],
+									"patching_rect" : [ 232.0, 407.0, 84.0, 22.0 ],
 									"style" : "",
 									"text" : "0 1, 2 9, 3 4 5"
 								}
@@ -4563,7 +4811,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 68.0, 436.0, 35.0, 22.0 ],
+									"patching_rect" : [ 187.0, 437.0, 35.0, 22.0 ],
 									"style" : "",
 									"text" : "print"
 								}
@@ -4571,14 +4819,12 @@
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-139",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 218.0, 378.0, 109.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 337.0, 379.0, 107.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "lists of mixed data"
 								}
 
@@ -4592,7 +4838,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 99.0, 378.0, 102.0, 22.0 ],
+									"patching_rect" : [ 218.0, 379.0, 102.0, 22.0 ],
 									"style" : "",
 									"text" : "freq 440 amp 0.8"
 								}
@@ -4600,14 +4846,12 @@
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-9",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 218.0, 349.0, 32.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 337.0, 350.0, 32.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "lists"
 								}
 
@@ -4621,22 +4865,20 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 83.0, 349.0, 34.0, 22.0 ],
+									"patching_rect" : [ 202.0, 350.0, 85.0, 22.0 ],
 									"style" : "",
-									"text" : "440."
+									"text" : "440. 330. 220."
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-142",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 218.0, 319.0, 136.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 337.0, 320.0, 136.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "words (symbols) & data"
 								}
 
@@ -4650,7 +4892,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 68.0, 319.0, 64.0, 22.0 ],
+									"patching_rect" : [ 187.0, 320.0, 64.0, 22.0 ],
 									"style" : "",
 									"text" : "frequency"
 								}
@@ -4658,29 +4900,24 @@
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 3,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 16.0,
 									"id" : "obj-144",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 68.0, 261.0, 86.0, 26.0 ],
-									"style" : "",
+									"patching_rect" : [ 187.0, 264.0, 81.0, 23.0 ],
+									"style" : "section dividers",
 									"text" : "Container"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-145",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 68.0, 289.0, 315.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 187.0, 292.0, 314.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "A message box has many other uses:"
 								}
 
@@ -4794,6 +5031,49 @@
 								}
 
 							}
+ ],
+						"styles" : [ 							{
+								"name" : "instruct patch",
+								"default" : 								{
+									"fontface" : [ 1 ],
+									"textcolor" : [ 0.746281, 0.409081, 0.773204, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "section dividers",
+								"default" : 								{
+									"fontface" : [ 3 ],
+									"fontsize" : [ 15.0 ],
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "section info reg",
+								"default" : 								{
+									"fontsize" : [ 12.0 ],
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "titles",
+								"default" : 								{
+									"fontface" : [ 1 ],
+									"fontsize" : [ 20.0 ],
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
  ]
 					}
 ,
@@ -4821,8 +5101,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 4,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -4863,7 +5143,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 341.0, 636.0, 82.0, 33.0 ],
-									"style" : "",
+									"style" : "section info reg",
 									"text" : "then click on this button"
 								}
 
@@ -4887,7 +5167,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 214.0, 605.0, 114.0, 20.0 ],
-									"style" : "",
+									"style" : "section info reg",
 									"text" : "enter in a number..."
 								}
 
@@ -4908,44 +5188,37 @@
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-48",
 									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 91.0, 50.0, 479.0, 48.0 ],
-									"style" : "",
+									"patching_rect" : [ 91.0, 50.0, 471.0, 47.0 ],
+									"style" : "section info reg",
 									"text" : "Max comes with a massive library of objects. In Max 7, you can view this library by unlocking the patch and clicking the rectangular icon on the left toolbar (third from the top) to open the Object Explorer to see a list of what's available. "
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 3,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 16.0,
 									"id" : "obj-203",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 793.0, 623.0, 53.0, 26.0 ],
-									"style" : "",
+									"patching_rect" : [ 800.0, 614.0, 52.0, 23.0 ],
+									"style" : "section dividers",
 									"text" : "Try it!"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-106",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 349.0, 167.0, 319.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 349.0, 167.0, 316.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "The name of an object defines its functionality."
 								}
 
@@ -5071,15 +5344,12 @@
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 3,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 16.0,
 									"id" : "obj-97",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 117.0, 119.0, 211.0, 26.0 ],
-									"style" : "",
+									"patching_rect" : [ 117.0, 119.0, 196.0, 23.0 ],
+									"style" : "section dividers",
 									"text" : "Object Name"
 								}
 
@@ -5103,15 +5373,13 @@
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-95",
 									"linecount" : 4,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 793.0, 657.0, 342.0, 62.0 ],
-									"style" : "",
+									"patching_rect" : [ 800.0, 642.0, 344.0, 60.0 ],
+									"style" : "section info reg",
 									"text" : "To get the data out of the [float] object on the left, connect a button (b) to its hot inlet and activate the button - extra points if you remember how to interact with GUI objects from an unlocked patch!"
 								}
 
@@ -5133,15 +5401,13 @@
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-93",
 									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 117.0, 261.0, 336.0, 48.0 ],
-									"style" : "",
+									"patching_rect" : [ 117.0, 261.0, 333.0, 47.0 ],
+									"style" : "section info reg",
 									"text" : "Note the colors of the rings around inlets when you hover your mouse over them in an unlocked patch. Red inlets are referred to as \"hot\" and blue inlets are referred to as \"cold.\""
 								}
 
@@ -5193,15 +5459,13 @@
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-63",
 									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 117.0, 550.0, 393.0, 48.0 ],
-									"style" : "",
+									"patching_rect" : [ 117.0, 543.0, 396.0, 47.0 ],
+									"style" : "section info reg",
 									"text" : "A cold inlet does not generate output (although the object still stores the data). This is especially useful when you want objects to \"hang on\" to data until later use."
 								}
 
@@ -5253,44 +5517,36 @@
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 1,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 20.0,
 									"id" : "obj-79",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 13.0, 15.0, 256.0, 30.0 ],
-									"style" : "",
+									"patching_rect" : [ 91.0, 22.0, 193.0, 23.0 ],
+									"style" : "section dividers",
 									"text" : "Features of a Max Object:"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-80",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 117.0, 401.0, 315.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 117.0, 397.0, 310.0, 20.0 ],
+									"style" : "section info reg",
 									"text" : "A hot inlet causes the object to generate output:"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 3,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 16.0,
 									"id" : "obj-50",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 117.0, 226.0, 211.0, 26.0 ],
-									"style" : "",
+									"patching_rect" : [ 117.0, 236.0, 200.0, 23.0 ],
+									"style" : "section dividers",
 									"text" : "Inlets & Outlets"
 								}
 
@@ -5341,6 +5597,39 @@
 								}
 
 							}
+ ],
+						"styles" : [ 							{
+								"name" : "section dividers",
+								"default" : 								{
+									"fontface" : [ 3 ],
+									"fontsize" : [ 15.0 ],
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "section info reg",
+								"default" : 								{
+									"fontsize" : [ 12.0 ],
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "titles",
+								"default" : 								{
+									"fontface" : [ 1 ],
+									"fontsize" : [ 20.0 ],
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
  ]
 					}
 ,
@@ -5368,8 +5657,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 4,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -5404,15 +5693,26 @@
 						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
-									"id" : "obj-159",
-									"linecount" : 3,
+									"id" : "obj-1",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 98.0, 169.0, 404.0, 48.0 ],
-									"style" : "",
+									"patching_rect" : [ 42.5, 38.0, 132.0, 29.0 ],
+									"presentation_rect" : [ 34.0, 23.0, 0.0, 0.0 ],
+									"style" : "titles",
+									"text" : "Connections"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-159",
+									"linecount" : 6,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 226.0, 313.5, 220.0, 87.0 ],
+									"style" : "instruct patch",
 									"text" : "With a patch unlocked, click on the left inlet of any object to access links to everything that object can understand, along with useful links to the help and references area of that object."
 								}
 
@@ -5421,17 +5721,13 @@
 								"box" : 								{
 									"bubble" : 1,
 									"bubblepoint" : 0.22,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-41",
-									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 143.157898, 351.0, 71.0, 38.0 ],
-									"style" : "",
-									"text" : "patch cord",
-									"textjustification" : 1
+									"patching_rect" : [ 104.5, 268.0, 84.0, 24.0 ],
+									"style" : "bubble text",
+									"text" : "patch cord"
 								}
 
 							}
@@ -5554,75 +5850,63 @@
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-69",
 									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 98.0, 486.0, 381.0, 34.0 ],
-									"style" : "",
+									"patching_rect" : [ 98.0, 486.0, 377.0, 33.0 ],
+									"style" : "section info reg",
 									"text" : "The PRINT object prints data sent to its inlet to the Max window (you may use the ⌘-m / Command-Shift-m keyboard shortcut to see it)."
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 3,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 16.0,
 									"id" : "obj-68",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 98.0, 456.0, 47.0, 26.0 ],
-									"style" : "",
+									"patching_rect" : [ 98.0, 456.0, 45.0, 23.0 ],
+									"style" : "section dividers",
 									"text" : "Print"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-40",
 									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 643.0, 395.0, 337.0, 34.0 ],
-									"style" : "",
+									"patching_rect" : [ 643.0, 395.0, 352.0, 33.0 ],
+									"style" : "instruct patch",
 									"text" : "Once you're done, LOCK YOUR PATCH, and click on the message."
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-38",
 									"linecount" : 4,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 643.0, 327.0, 377.0, 62.0 ],
-									"style" : "",
+									"patching_rect" : [ 643.0, 327.0, 382.0, 60.0 ],
+									"style" : "instruct patch",
 									"text" : "Create a message box, enter a message of your choosing. First, unlock your patch.  Then, create an object box, type in \"print\" (without the quotation marks). Connect the outlet of the message to the inlet of the print object."
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 3,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 16.0,
 									"id" : "obj-37",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 643.0, 294.0, 53.0, 26.0 ],
-									"style" : "",
+									"patching_rect" : [ 643.0, 294.0, 52.0, 23.0 ],
+									"style" : "section dividers",
 									"text" : "Try it!"
 								}
 
@@ -5637,7 +5921,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 128.0, 411.0, 50.0, 22.0 ],
+									"patching_rect" : [ 86.5, 320.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -5652,25 +5936,21 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 128.0, 291.0, 50.0, 22.0 ],
+									"patching_rect" : [ 86.5, 230.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 1,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-30",
 									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 98.0, 224.0, 354.0, 49.0 ],
-									"style" : "",
-									"text" : "Objects may be connected to each other by clicking on an outlet, mousing elsewhere, and connecting the resultant patch cord to another object's inlet.",
-									"textcolor" : [ 0.0, 0.0, 0.501961, 1.0 ]
+									"patching_rect" : [ 165.0, 118.328857, 365.0, 47.0 ],
+									"style" : "section info reg",
+									"text" : "Objects may be connected to each other by clicking on an outlet, mousing elsewhere, and connecting the resultant patch cord to another object's inlet."
 								}
 
 							}
@@ -5679,16 +5959,13 @@
 									"bubble" : 1,
 									"bubblepoint" : 0.77,
 									"bubbleside" : 0,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-28",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 127.842102, 122.328857, 45.0, 39.0 ],
-									"style" : "",
-									"text" : "outlet",
-									"textjustification" : 1
+									"patching_rect" : [ 261.842102, 252.328857, 42.0, 39.0 ],
+									"style" : "bubble text",
+									"text" : "outlet"
 								}
 
 							}
@@ -5697,16 +5974,13 @@
 									"bubble" : 1,
 									"bubblepoint" : 0.22,
 									"bubbleside" : 2,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-27",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 225.342163, 65.328857, 45.0, 39.0 ],
-									"style" : "",
-									"text" : "inlet",
-									"textjustification" : 1
+									"patching_rect" : [ 359.342163, 188.328857, 35.0, 39.0 ],
+									"style" : "bubble text",
+									"text" : "inlet"
 								}
 
 							}
@@ -5715,16 +5989,13 @@
 									"bubble" : 1,
 									"bubblepoint" : 0.77,
 									"bubbleside" : 2,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-25",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 127.842102, 65.328857, 45.0, 39.0 ],
-									"style" : "",
-									"text" : "inlet",
-									"textjustification" : 1
+									"patching_rect" : [ 263.842102, 188.328857, 35.0, 39.0 ],
+									"style" : "bubble text",
+									"text" : "inlet"
 								}
 
 							}
@@ -5737,7 +6008,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 150.657898, 104.328857, 98.0, 22.0 ],
+									"patching_rect" : [ 280.657898, 229.328857, 98.0, 22.0 ],
 									"style" : "",
 									"text" : "i am a message!"
 								}
@@ -5745,17 +6016,13 @@
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 1,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
 									"id" : "obj-20",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 98.0, 21.0, 332.0, 21.0 ],
-									"style" : "",
-									"text" : "Objects in Max have INLETS and OUTLETS:",
-									"textcolor" : [ 0.0, 0.0, 0.501961, 1.0 ]
+									"patching_rect" : [ 165.0, 87.5, 322.0, 23.0 ],
+									"style" : "section dividers",
+									"text" : "Objects in Max have INLETS and OUTLETS:"
 								}
 
 							}
@@ -5832,6 +6099,59 @@
 								}
 
 							}
+ ],
+						"styles" : [ 							{
+								"name" : "bubble text",
+								"default" : 								{
+									"fontsize" : [ 12.0 ],
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "instruct patch",
+								"default" : 								{
+									"fontface" : [ 1 ],
+									"textcolor" : [ 0.746281, 0.409081, 0.773204, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "section dividers",
+								"default" : 								{
+									"fontface" : [ 3 ],
+									"fontsize" : [ 15.0 ],
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "section info reg",
+								"default" : 								{
+									"fontsize" : [ 12.0 ],
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "titles",
+								"default" : 								{
+									"fontface" : [ 1 ],
+									"fontsize" : [ 20.0 ],
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
  ]
 					}
 ,
@@ -5859,8 +6179,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 4,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -5895,14 +6215,12 @@
 						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
-									"fontname" : "Arial Italic",
-									"fontsize" : 10.0,
 									"id" : "obj-13",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 556.357178, 450.240021, 456.0, 18.0 ],
-									"style" : "",
+									"patching_rect" : [ 573.357178, 453.240021, 462.0, 19.0 ],
+									"style" : "caption text",
 									"text" : "Screenshot of an old Max patch, credited to the band Autechre, who are famous Max users."
 								}
 
@@ -5920,8 +6238,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 4,
+											"minor" : 3,
+											"revision" : 1,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -6019,7 +6337,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 216.0, 529.59375, 19.0, 22.0 ],
+									"patching_rect" : [ 216.0, 544.59375, 19.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -6045,7 +6363,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 237.0, 529.59375, 258.25, 21.40625 ],
+									"patching_rect" : [ 237.0, 544.59375, 258.25, 21.40625 ],
 									"presentation_rect" : [ 244.595703, 521.59375, 258.25, 21.40625 ],
 									"style" : "",
 									"text" : "Click here to open the Cycling '74 website.",
@@ -6066,7 +6384,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_matrix" ],
-									"patching_rect" : [ 494.0, 57.0, 580.714294, 390.240021 ],
+									"patching_rect" : [ 514.0, 57.0, 580.714294, 390.240021 ],
 									"pic" : "/Users/r/Downloads/ae2.jpg"
 								}
 
@@ -6084,8 +6402,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 4,
+											"minor" : 3,
+											"revision" : 1,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -6183,7 +6501,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 216.0, 502.0, 19.0, 22.0 ],
+									"patching_rect" : [ 216.0, 517.0, 19.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -6209,7 +6527,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 237.0, 502.0, 223.404297, 21.40625 ],
+									"patching_rect" : [ 237.0, 517.0, 223.404297, 21.40625 ],
 									"presentation_rect" : [ 15.0, 15.0, 223.404297, 21.40625 ],
 									"style" : "",
 									"text" : "Click here to see a cool Max project!",
@@ -6227,23 +6545,20 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 36.0, 57.0, 456.0, 435.0 ],
-									"style" : "",
+									"patching_rect" : [ 36.0, 72.0, 462.0, 435.0 ],
+									"style" : "section info reg",
 									"text" : "In Music 158A we will be introducing you to a refined approach to working in Max which has been developing at CNMAT over many years. But to begin, let's get to know the basics of Max.\n\nThe developers of Max have created nice Max Tour that introduces the essential pieces that we'll be using.\n\nTo open the tour, find the Help menu at the top of the screen, and select Max Tour. Take a few minutes to go through the tour and then come back to this page. Don't worry to much about remembering what all the objects do for now!\n\nOk, we'll wait for you while you go through the tour.\n\n[A few minutes later]\n\nWelcome back!  As you might have seen at the end of the tour, the Max developers have also created an extensive set of documentation and tutorials that will help you get to know Max in depth.\n\nWe will be focusing on the CNMAT-M158 approach to working in Max, but learning traditional Max will definitely help you as you start to branch out on your own into uncharted territories. \n\nTo get to the tutorials, open the Help menu, and select Reference.\n\nThere is also a thriving online community of Max users, and a forum where users share ideas, and get advice on their work. You can find the forum on the www.cycling74.com website or by going to the Help menu and selecting \"Max Community\".\n\nIn the Max Community, you can also find some interesting projects using Max to give you an idea of what kinds of things are possible."
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 3,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 18.0,
 									"id" : "obj-5",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 18.0, 15.0, 175.0, 28.0 ],
-									"style" : "",
+									"patching_rect" : [ 36.0, 22.0, 194.0, 29.0 ],
+									"style" : "titles",
 									"text" : "A Brief Tour of Max"
 								}
 
@@ -6266,6 +6581,49 @@
 									"source" : [ "obj-37", 0 ]
 								}
 
+							}
+ ],
+						"styles" : [ 							{
+								"name" : "caption text",
+								"default" : 								{
+									"fontface" : [ 2 ],
+									"fontsize" : [ 11.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "section dividers",
+								"default" : 								{
+									"fontface" : [ 3 ],
+									"fontsize" : [ 15.0 ],
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "section info reg",
+								"default" : 								{
+									"fontsize" : [ 12.0 ],
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "titles",
+								"default" : 								{
+									"fontface" : [ 1 ],
+									"fontsize" : [ 20.0 ],
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
 							}
  ]
 					}
@@ -6350,8 +6708,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 4,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -6386,29 +6744,25 @@
 						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
-									"fontface" : 3,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 16.0,
 									"id" : "obj-6",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 103.0, 419.5, 149.0, 26.0 ],
-									"style" : "",
+									"patching_rect" : [ 61.0, 443.5, 141.0, 23.0 ],
+									"style" : "section dividers",
 									"text" : "Table of Contents:"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontsize" : 12.0,
 									"id" : "obj-13",
 									"linecount" : 4,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 103.0, 352.0, 435.0, 60.0 ],
-									"style" : "",
+									"style" : "section info reg",
 									"text" : "At the top of this window you should see a row of tabs -- \nclicking on a tab brings the corresponding view into focus. Each tab is a chapter – or module – focusing on a particular topic.  The topics are arraged in order from left to right."
 								}
 
@@ -6426,8 +6780,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 4,
+											"minor" : 3,
+											"revision" : 1,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -6575,8 +6929,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 4,
+											"minor" : 3,
+											"revision" : 1,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -6713,13 +7067,12 @@
 							}
 , 							{
 								"box" : 								{
-									"fontsize" : 12.0,
 									"id" : "obj-8",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 569.0, 447.5, 427.0, 20.0 ],
-									"style" : "",
+									"patching_rect" : [ 602.197266, 447.5, 399.0, 19.0 ],
+									"style" : "caption text",
 									"text" : "Max was named after computer music pioneer Max Matthews (pictured above)"
 								}
 
@@ -6741,58 +7094,50 @@
 							}
 , 							{
 								"box" : 								{
-									"fontsize" : 14.0,
 									"id" : "obj-5",
 									"linecount" : 10,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 103.0, 447.5, 210.0, 163.0 ],
-									"style" : "",
+									"patching_rect" : [ 61.0, 469.5, 183.0, 141.0 ],
+									"style" : "section info reg",
 									"text" : "0) Max Tour\n1) Hello Max!\n2) Conneting Things\n3) Max Objects\n4) Object Arguments\n5) Finding Help\n6) Meet Message\n7) $ Substitution\n8) Order of Operations\n9) Controlling Order"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontsize" : 12.0,
 									"id" : "obj-4",
 									"linecount" : 12,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 103.0, 136.0, 441.0, 167.0 ],
-									"style" : "",
+									"patching_rect" : [ 61.0, 108.0, 441.0, 167.0 ],
+									"style" : "section info reg",
 									"text" : "Welcome to Max! In this introduction, we will be walking through some of the fundamentals of working in Max.\n\nMax (a.k.a. Max/MSP) is a powerful and extremely flexible piece of software that has remained one of the most popular platforms in computer music since its creation in the late 1980s.\n\nIn Music 158A we will be introducing a refined approach to working in Max based on many years of research at UC Berkeley's Center for New Music and Audio Technologies (CNMAT).\n\n... ok, let's get started!"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 1,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 20.0,
 									"id" : "obj-3",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 103.0, 102.0, 198.0, 30.0 ],
-									"style" : "",
+									"patching_rect" : [ 61.0, 82.0, 151.0, 23.0 ],
+									"style" : "section dividers",
 									"text" : "Introduction to Max"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 3,
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 16.0,
 									"id" : "obj-2",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 103.0, 74.0, 98.0, 26.0 ],
-									"style" : "",
+									"patching_rect" : [ 61.0, 36.0, 122.0, 29.0 ],
+									"style" : "titles",
 									"text" : "Music 158A"
 								}
 
@@ -6815,6 +7160,49 @@
 									"source" : [ "obj-37", 0 ]
 								}
 
+							}
+ ],
+						"styles" : [ 							{
+								"name" : "caption text",
+								"default" : 								{
+									"fontface" : [ 2 ],
+									"fontsize" : [ 11.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "section dividers",
+								"default" : 								{
+									"fontface" : [ 3 ],
+									"fontsize" : [ 15.0 ],
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "section info reg",
+								"default" : 								{
+									"fontsize" : [ 12.0 ],
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "titles",
+								"default" : 								{
+									"fontface" : [ 1 ],
+									"fontsize" : [ 20.0 ],
+									"fontname" : [ "Arial" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
 							}
  ]
 					}
