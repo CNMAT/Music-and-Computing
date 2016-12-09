@@ -1,0 +1,10 @@
+{
+	"default" : 	{
+		"textcolor" : [ 0.261802, 0.646774, 0.650603, 1.0 ],
+		"fontname" : [ "Arial Bold" ]
+	}
+,
+	"parentstyle" : "",
+	"name" : "instruct key",
+	"multi" : 0
+}

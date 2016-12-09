@@ -1,0 +1,12 @@
+{
+	"default" : 	{
+		"textcolor" : [ 0.225893, 0.506614, 0.765943, 1.0 ],
+		"fontface" : [ 1 ],
+		"fontsize" : [ 12.0 ],
+		"fontname" : [ "Helvetica Neue" ]
+	}
+,
+	"parentstyle" : "",
+	"name" : "section info emph",
+	"multi" : 0
+}

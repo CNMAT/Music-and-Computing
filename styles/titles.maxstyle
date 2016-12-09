@@ -1,0 +1,11 @@
+{
+	"default" : 	{
+		"fontface" : [ 1 ],
+		"fontsize" : [ 20.0 ],
+		"fontname" : [ "Arial" ]
+	}
+,
+	"parentstyle" : "",
+	"name" : "titles",
+	"multi" : 0
+}

@@ -1,0 +1,11 @@
+{
+	"default" : 	{
+		"fontface" : [ 3 ],
+		"fontsize" : [ 15.0 ],
+		"fontname" : [ "Arial" ]
+	}
+,
+	"parentstyle" : "",
+	"name" : "section dividers",
+	"multi" : 0
+}

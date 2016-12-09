@@ -1,0 +1,10 @@
+{
+	"default" : 	{
+		"fontface" : [ 2 ],
+		"fontsize" : [ 11.0 ]
+	}
+,
+	"parentstyle" : "",
+	"name" : "caption text",
+	"multi" : 0
+}

@@ -1,0 +1,10 @@
+{
+	"default" : 	{
+		"fontsize" : [ 12.0 ],
+		"fontname" : [ "Arial" ]
+	}
+,
+	"parentstyle" : "",
+	"name" : "section info reg",
+	"multi" : 0
+}
