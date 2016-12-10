@@ -39,6 +39,91 @@
 		"subpatcher_template" : "<none>",
 		"boxes" : [ 			{
 				"box" : 				{
+					"arrows" : 1,
+					"border" : 2.0,
+					"id" : "obj-11",
+					"justification" : 3,
+					"linecolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ],
+					"maxclass" : "live.line",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 630.0, 124.331627, 80.0, 80.0 ],
+					"presentation_rect" : [ 441.0, 340.0, 0.0, 0.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"arrows" : 3,
+					"border" : 2.0,
+					"id" : "obj-10",
+					"linecolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ],
+					"maxclass" : "live.line",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 630.0, 244.331635, 80.0, 10.0 ],
+					"presentation_rect" : [ 442.0, 318.0, 0.0, 0.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"arrows" : 2,
+					"border" : 2.0,
+					"id" : "obj-9",
+					"linecolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ],
+					"maxclass" : "live.line",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 630.0, 224.331635, 80.0, 10.0 ],
+					"presentation_rect" : [ 444.0, 301.0, 0.0, 0.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"arrows" : 1,
+					"border" : 2.0,
+					"id" : "obj-8",
+					"linecolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ],
+					"maxclass" : "live.line",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 630.0, 204.331635, 80.0, 10.0 ],
+					"presentation_rect" : [ 439.0, 284.0, 0.0, 0.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 11.0,
+					"id" : "obj-5",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 648.0, 25.331627, 44.0, 19.0 ],
+					"presentation_rect" : [ 479.0, 340.40625, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "arrows"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"arrows" : 1,
+					"border" : 2.0,
+					"id" : "obj-4",
+					"justification" : 4,
+					"linecolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ],
+					"maxclass" : "live.line",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 630.0, 46.331627, 80.0, 80.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -180,8 +265,8 @@
 		"styles" : [ 			{
 				"name" : "bubble text",
 				"default" : 				{
-					"fontsize" : [ 12.0 ],
-					"fontname" : [ "Arial" ]
+					"fontname" : [ "Arial" ],
+					"fontsize" : [ 12.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -210,8 +295,8 @@
 , 			{
 				"name" : "instruct patch",
 				"default" : 				{
-					"fontface" : [ 1 ],
-					"textcolor" : [ 0.746281, 0.409081, 0.773204, 1.0 ]
+					"textcolor" : [ 0.746281, 0.409081, 0.773204, 1.0 ],
+					"fontface" : [ 1 ]
 				}
 ,
 				"parentstyle" : "",
@@ -220,9 +305,9 @@
 , 			{
 				"name" : "section dividers",
 				"default" : 				{
+					"fontname" : [ "Arial" ],
 					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"fontname" : [ "Arial" ]
+					"fontsize" : [ 15.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -231,10 +316,10 @@
 , 			{
 				"name" : "section info emph",
 				"default" : 				{
-					"fontface" : [ 1 ],
-					"fontsize" : [ 12.0 ],
 					"fontname" : [ "Arial" ],
-					"textcolor" : [ 0.225893, 0.506614, 0.765943, 1.0 ]
+					"textcolor" : [ 0.225893, 0.506614, 0.765943, 1.0 ],
+					"fontface" : [ 1 ],
+					"fontsize" : [ 12.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -243,8 +328,8 @@
 , 			{
 				"name" : "section info reg",
 				"default" : 				{
-					"fontsize" : [ 12.0 ],
-					"fontname" : [ "Arial" ]
+					"fontname" : [ "Arial" ],
+					"fontsize" : [ 12.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -253,9 +338,9 @@
 , 			{
 				"name" : "titles",
 				"default" : 				{
+					"fontname" : [ "Arial" ],
 					"fontface" : [ 1 ],
-					"fontsize" : [ 20.0 ],
-					"fontname" : [ "Arial" ]
+					"fontsize" : [ 20.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -276,10 +361,10 @@
 , 			{
 				"name" : "urls",
 				"default" : 				{
-					"fontface" : [ 3 ],
 					"color" : [ 0.941176, 0.690196, 0.196078, 1.0 ],
-					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
-					"selectioncolor" : [ 0.960784, 0.827451, 0.156863, 1.0 ]
+					"selectioncolor" : [ 0.960784, 0.827451, 0.156863, 1.0 ],
+					"fontface" : [ 3 ],
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ]
 				}
 ,
 				"parentstyle" : "",
