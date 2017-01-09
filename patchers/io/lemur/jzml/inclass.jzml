@@ -1,0 +1,74 @@
+<JZML>
+<PROJECT version="5200" width="1024" height="724" osc_target="-1" midi_target="-1" kbmouse_target="-1" skin="Pixel"/>
+<WINDOW class="JAZZINTERFACE" text="Default" x="0" y="0" width="1024" height="724" state="1" group="0" font="tahoma,11,0" >
+<WINDOW class="Canvas" text="Canvas" x="0" y="0" width="1024" height="724" state="5" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" capture="1" redrawMode="0" touchSupport="1">
+<VARIABLE name="finger_x=" value="0" send="1" osc_target="0" osc_trigger="1" osc_message="/Canvas/finger_x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="-24784,12336,-208" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="finger_y=" value="0" send="1" osc_target="0" osc_trigger="1" osc_message="/Canvas/finger_y" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="finger_state=" value="0" send="1" osc_target="0" osc_trigger="1" osc_message="/Canvas/finger_state" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<SCRIPT name="my_on_load()" script="decl c = getobject();
+decl rect = getattribute(c, 'rect');
+
+// canvas_refresh(c);
+
+decl str = 'rectangle x ' +rect[0]+ ' y ' +rect[1]+ ' w ' +rect[2]+ ' h ' +rect[3];
+
+setattribute(Text, 'content', str);
+" trigger_script="" trigger_type="5" trigger="1" clock="0" clock_div="4" osc_message="/Canvas/my_on_load" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+<SCRIPT name="draw()" script="decl c = getobject();
+decl rect = getattribute(c, 'rect');
+
+decl w = rect[2];
+decl h = rect[3];
+decl r = 10;
+
+canvas_clear(c);
+
+if( finger_state == 1 )
+{
+	canvas_beginPath(c);
+	canvas_arc(c, finger_x, finger_y, r, 0, 6.283185307179586, 0);
+	canvas_setLineWidth(c, 2);
+	canvas_setStrokeStyle(c, {0.7,1,1,1});
+	canvas_stroke(c);
+	canvas_setFillStyle(c, {0.5,0,1,1});
+	canvas_fill(c);
+
+	decl i;
+	decl numLines = 100;
+
+	for( i = 0; i < numLines; i++ )
+	{
+		canvas_beginPath(c);
+		decl thisX = (finger_x / numLines) * i;
+		canvas_moveTo(c, thisX, 0);
+		canvas_lineTo(c, thisX, h);
+		canvas_stroke(c);
+	}
+
+}
+
+decl str = 'rectangle x ' +rect[0]+ ' y ' +rect[1]+ ' w ' +rect[2]+ ' h ' +rect[3];
+
+setattribute(Text, 'content', str);
+" trigger_script="" trigger_type="255" trigger_name="onRedraw" trigger="1" clock="0" clock_div="4" osc_message="/Canvas/draw" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+<SCRIPT name="finger_down(cursor,hit,x,y)" script="finger_x = x;
+finger_y = y;
+finger_state = 1;" trigger_script="" trigger_type="255" trigger_name="onCursorDown" trigger="1" clock="0" clock_div="4" osc_message="/Canvas/finger_down" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+<SCRIPT name="finger_move(cursor,hit,x,y)" script="finger_x = x;
+finger_y = y;
+finger_state = 1;
+
+decl address = '/finger/move';
+oscout(0, address+'/x', finger_x);
+oscout(0, address+'/y', finger_y);
+oscout(0, '/done', 'bang');
+" trigger_script="" trigger_type="255" trigger_name="onCursorMove" trigger="1" clock="0" clock_div="4" osc_message="/Canvas/finger_move" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+<SCRIPT name="finger_up(cursor,hit,x,y)" script="finger_x = x;
+finger_y = y;
+finger_state = 0;" trigger_script="" trigger_type="255" trigger_name="onCursorUp" trigger="1" clock="0" clock_div="4" osc_message="/Canvas/finger_up" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+</WINDOW>
+<WINDOW class="Text" text="Text" x="236" y="128" width="322" height="48" id="1" state="241" group="0" font="tahoma,14,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="1596013" content="rectangle x 0 y 0 w 1024 h 724">
+<VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/Text/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+</WINDOW>
+</WINDOW>
+</JZML>

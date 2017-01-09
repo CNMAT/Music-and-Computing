@@ -1,0 +1,358 @@
+<JZML>
+<PROJECT version="5200" width="1024" height="724" osc_target="-1" midi_target="-1" kbmouse_target="-1" skin="Pixel"/>
+<WINDOW class="JAZZINTERFACE" text="rbfi" x="0" y="0" width="1024" height="724" state="1" group="0" font="tahoma,11,0" >
+<WINDOW class="CustomButton" text="button" x="0" y="4" width="57" height="659" id="3" state="241" group="0" font="tahoma,20,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" behavior="1" bitmap="0,0" capture="0" color="3342449,6366079" label_off="" label_on="" outline="1">
+<PARAM name="x=" value="0.000000" send="25" osc_target="0" osc_trigger="1" osc_message="/button/state" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="light=1" send="0" osc_target="0" osc_trigger="1" osc_message="/button/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<SCRIPT name="init()" script="decl address = '/button/state';
+oscout (0, address, 1);
+oscout (0, address, 0);" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/button/init" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+</WINDOW>
+<WINDOW class="CustomButton" text="button2" x="968" y="4" width="57" height="659" id="5" state="241" group="0" font="tahoma,20,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" behavior="1" bitmap="0,0" capture="0" color="2424940,6106495" label_off="" label_on="" outline="1">
+<PARAM name="x=" value="0.000000" send="25" osc_target="0" osc_trigger="1" osc_message="/button/state" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="light=1" send="0" osc_target="0" osc_trigger="1" osc_message="/button2/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<SCRIPT name="init()" script="decl address = '/button/state';
+oscout (0, address, 1);
+oscout (0, address, 0);" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/button2/init" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+</WINDOW>
+<WINDOW class="CustomButton" text="res_button" x="50" y="663" width="926" height="61" id="4" state="241" group="0" font="tahoma,20,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" behavior="1" bitmap="0,0" capture="1" color="865343,1596013" label_off="" label_on="" outline="1">
+<PARAM name="x=" value="0.000000" send="25" osc_target="0" osc_trigger="1" osc_message="/res_button/state" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/res_button/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<SCRIPT name="init()" script="decl address = '/res_button/state';
+oscout (0, address, 1);
+oscout (0, address, 0);" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/res_button/init" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+</WINDOW>
+<WINDOW class="Canvas" text="finger_canvas" x="57" y="0" width="912" height="663" id="2" state="5" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" capture="1" redrawMode="1" touchSupport="2">
+<VARIABLE name="fingerPath=" value="0" send="0" osc_target="0" osc_trigger="1" osc_message="/finger_canvas/fingerPath" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="nfingers=0" send="0" osc_target="0" osc_trigger="1" osc_message="/finger_canvas/nfingers" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="finger_ids=" value="0,0,0,0,0,0,0,0,0,0,0" send="0" osc_target="0" osc_trigger="1" osc_message="/finger_canvas/finger_ids" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="29806,25931,19321" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="finger_x=" value="0,0,0,0,0,0,0,0,0,0,0" send="0" osc_target="0" osc_trigger="1" osc_message="/finger_canvas/finger_x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="19,1,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="finger_y=" value="663,663,663,663,663,663,663,663,663,663,663" send="0" osc_target="0" osc_trigger="1" osc_message="/finger_canvas/finger_y" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="centroidXY=" value="0" send="0" osc_target="0" osc_trigger="1" osc_message="/finger_canvas/centroidXY" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="-20454,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="finger_stack=" value="0" send="0" osc_target="0" osc_trigger="1" osc_message="/finger_canvas/finger_stack" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="19,7,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="radius=" value="0" send="0" osc_target="0" osc_trigger="1" osc_message="/finger_canvas/radius" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="19,2,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="phi=" value="0" send="0" osc_target="0" osc_trigger="1" osc_message="/finger_canvas/phi" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="19,3,0" kbmouse_scale="0,1,0,1"/>
+<SCRIPT name="draw_finger()" script="decl c = getobject();
+decl r = 40;
+decl rect = getattribute(c, 'rect');
+
+canvas_clear(c);
+
+
+if( nfingers == 0)
+{
+	canvas_rect(c, 0, 0, rect[2], rect[3]);
+	canvas_setFillStyle(c, {0.875, 0., 0., 0.});
+	canvas_fill(c);
+}
+else if( nfingers > 1)
+{
+	canvas_rect(c, 0, 0, rect[2], rect[3]);
+	canvas_setFillStyle(c, {0.6, 1., 0., 1.});
+	canvas_fill(c);
+}
+
+if( nfingers == 1 )
+{
+	canvas_beginPath(c);
+	canvas_arc(c, finger_x[finger_stack[0]], finger_y[finger_stack[0]], r, 0, 6.283185307179586, 0);
+	canvas_setLineWidth(c, 2);
+	canvas_setStrokeStyle(c, {0.7,1,1,1});
+	canvas_stroke(c);
+	canvas_setFillStyle(c, {0.5,0,1,1});
+	canvas_fill(c);
+}
+else if ( nfingers > 0 )
+{
+	canvas_beginPath(c);
+	canvas_arc(c, centroidXY[0], centroidXY[1], radius, 0, 6.283185307179586, 0);
+	canvas_setLineWidth(c, 2);
+	canvas_setStrokeStyle(c, {0.2,0,1,1});
+	canvas_stroke(c);
+	canvas_setFillStyle(c, {0.5,0,1,1});
+	canvas_fill(c);
+	decl i;
+	for( i = 0; i < sizeof(finger_stack); i++)
+	{
+		canvas_beginPath(c);
+		canvas_moveTo(c, centroidXY[0], centroidXY[1]);
+		canvas_lineTo(c, finger_x[finger_stack[i]], finger_y[finger_stack[i]]);
+		canvas_setLineWidth(c, 1);
+		canvas_setStrokeStyle(c, {0.7,1,1,1});
+		canvas_stroke(c);
+		canvas_beginPath(c);
+		canvas_arc(c, finger_x[finger_stack[i]], finger_y[finger_stack[i]], r/2, 0, 6.283185307179586, 0);
+		canvas_stroke(c);
+		canvas_setFillStyle(c, {0.5,0,1,1});
+		canvas_fill(c);
+	}
+}
+" trigger_script="" trigger_type="255" trigger_name="onRedraw" trigger="1" clock="0" clock_div="4" osc_message="/finger_canvas/draw_finger" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+<SCRIPT name="cursor_down(cursor,hit,x,y)" script="// get the canvas object, and rectangle coordinates
+decl c = getobject();
+decl rect = getattribute(c, 'rect');
+
+/* 
+	iterate until we find a free slot in the finger_ids array
+	once we find a free slot, store the unique cursor id, x, and y values
+	if the current number of fingers (nfingers) is zero, it will be the only value of the finger stack
+	otherwise, if nfingers  is more than one, then append the index number to the finger stack array
+	after storing the values in the free slot, break the for loop iteration
+*/ 
+decl i;
+for( i = 0; i < 10; i++)
+{
+	if( finger_ids[i] == 0 )
+	{
+		finger_ids[i] = cursor;
+		finger_x[i] = x;
+		finger_y[i] = y;
+
+		if( nfingers == 0 )
+		{
+			finger_stack = i;
+		}
+		else
+		{
+			finger_stack = {finger_stack, i};
+		}
+
+		break;
+	}
+}
+// add the new finger to the count of fingers
+nfingers++;
+
+// send OSC report on new finger down:
+decl name = getattribute(c, 'name');
+decl address = '/'+name+'/touch/down/x';
+oscout (0, address, finger_x / rect[2]);
+
+address = '/'+name+'/touch/down/y';
+oscout (0, address, 1 - (finger_y / rect[3]));
+
+address = '/'+name+'/touch/state';
+oscout (0, address, (finger_ids > 0));
+
+address = '/'+name+'/touch/finger_stack';
+oscout (0, address, finger_stack);
+
+address = '/'+name+'/bang';
+oscout (0, address, 'bang');
+
+decl str = 'down id: '+cursor+' root '+i;
+setattribute(Text, 'content', str);
+
+canvas_refresh(c);
+" trigger_script="" trigger_type="255" trigger_name="onCursorDown" trigger="1" clock="0" clock_div="4" osc_message="/finger_canvas/cursor_down" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+<SCRIPT name="cursor_move(cursor,hit,x,y)" script="// get canvas object
+decl c = getobject();
+
+// get canvas rect
+decl rect = getattribute(c, 'rect');
+
+// iterate finger ids to find the current cursor
+decl i;
+for( i = 0; i < 10; i++)
+{
+	if( finger_ids[i] == cursor )
+	{
+		// if we find the cursor, log the xy coordinates, and stop iteration
+		// i will equal the current cursor index in the finger
+		finger_x[i] = x;
+		finger_y[i] = y;		
+		break;
+	}
+}
+
+/*
+	if there is more than one finger down, we can calculate the centroid, radius, and relative angle 
+*/
+if( nfingers > 1 )
+{	
+	decl sumx = 0;
+	decl sumy = 0;
+	for( i = 0; i < sizeof(finger_stack); i++)
+	{
+		sumx += finger_x[finger_stack[i]];
+		sumy += finger_y[finger_stack[i]];
+	}
+	
+	centroidXY[0] = sumx / (sizeof(finger_stack) );
+	centroidXY[1] = sumy / (sizeof(finger_stack) );
+
+	radius = sqrt( pow(finger_x - centroidXY[0], 2) + pow(finger_y - centroidXY[1], 2));
+	phi = angle(finger_x - centroidXY[0], -(finger_y - centroidXY[1]));
+
+}
+else
+	phi = 0;
+
+
+// send OSC with this finger updated
+decl name = getattribute(c, 'name');
+
+decl address = '/'+name+'/touch/move/x';
+oscout (0, address, finger_x / rect[2]);
+
+address = '/'+name+'/touch/move/y';
+oscout (0, address, 1 - (finger_y / rect[3]) );
+
+address = '/'+name+'/touch/state';
+oscout (0, address, (finger_ids > 0));
+
+address = '/'+name+'/touch/radius';
+oscout (0, address, radius / rect[3]);
+
+address = '/'+name+'/touch/angle';
+oscout (0, address, phi );
+
+address = '/'+name+'/touch/centroid';
+oscout (0, address, { centroidXY[0] / rect[2], 1 - (centroidXY[1] / rect[3]) } );
+
+address = '/'+name+'/bang';
+oscout (0, address, 'bang');
+
+// send debug info to the Text object on the Lemur screen
+decl str = 'move id: '+i+' '+x+' '+radius[0];
+setattribute(Text, 'content', str);
+
+// draw with updated data
+canvas_refresh(c);
+" trigger_script="" trigger_type="255" trigger_name="onCursorMove" trigger="1" clock="0" clock_div="4" osc_message="/finger_canvas/cursor_move" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+<SCRIPT name="cursor_up(cursor,hit,x,y)" script="// get the canvas object, and rectangle coordinates
+decl c = getobject();
+decl rect = getattribute(c, 'rect');
+
+// reduce the number of fingers
+nfingers--;
+
+/* 
+	iterate until we find the matching finger_id for this cursor
+	when we find it, set the id slot to 0 indicating that it is free to be used again
+	still set the finger xy coordinates since we're 
+*/ 
+
+decl i, j, tmp;
+for( i = 0; i < 10; i++)
+{
+	if( finger_ids[i] == cursor )
+	{
+		finger_ids[i] = 0;
+		finger_x[i] = x;
+		finger_y[i] = y;
+
+		if( nfingers == 0 )
+		{
+			finger_stack = -1;
+		}
+		else
+		{
+			for( j = 0; j < sizeof(finger_stack); j++)
+			{
+				if( finger_stack[j] == i )
+				{
+					while( (j+1) < sizeof(finger_stack))
+					{
+						tmp[j] = finger_stack[j+1];
+						j++;
+					}
+					break;
+				}
+				else
+					tmp[j] = finger_stack[j];
+
+			}
+			finger_stack = tmp;
+			
+		}
+
+	}
+}
+decl name = getattribute(c, 'name');
+decl address = '/'+name+'/touch/up/x';
+oscout (0, address, finger_x / rect[2]);
+
+address = '/'+name+'/touch/up/y';
+oscout (0, address, 1 - (finger_y / rect[3]) );
+
+address = '/'+name+'/touch/state';
+oscout (0, address, (finger_ids > 0));
+
+address = '/'+name+'/touch/finger_stack';
+oscout (0, address, finger_stack);
+
+address = '/'+name+'/bang';
+oscout (0, address, 'bang');
+
+// send debug info to the Text object on the Lemur screen
+decl str = 'up id: '+cursor+' '+x+' '+y+' root '+i;
+setattribute(Text, 'content', str);
+
+// redraw with updated data
+canvas_refresh(c);
+" trigger_script="" trigger_type="255" trigger_name="onCursorUp" trigger="1" clock="0" clock_div="4" osc_message="/finger_canvas/cursor_up" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+<SCRIPT name="init()" script="// initialize number of fingers to zero
+nfingers = 0;
+
+//get canvas rectangle
+decl rect = getattribute(getobject(), 'rect');
+decl i,f;
+for (i = 0; i < 11; i++)
+{
+	// init storage arrays
+	finger_ids[i] = 0;
+	finger_x[i] = 0;
+	finger_y[i] = rect[3];
+}
+
+// send default values on load, these values are kind of abitrary
+decl name = getattribute(getobject(), 'name');
+decl address = '/' + name + '/touch/move/x';
+oscout (0, address, finger_x / rect[2]);
+
+address = '/'+name+'/touch/move/y';
+oscout (0, address, 1 - (finger_y / rect[3]) );
+
+address = '/'+name+'/touch/state';
+oscout (0, address, (finger_ids > 0));
+
+address = '/'+name+'/touch/centroid';
+oscout (0, address, { centroidXY[0] / rect[2], 1 - (centroidXY[1] / rect[3]) } );
+
+address = '/'+name+'/touch/angle';
+oscout (0, address, phi );
+
+address = '/'+name+'/touch/finger_stack';
+oscout (0, address, finger_stack);
+
+address = '/'+name+'/bang';
+oscout (0, address, 'bang');
+" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/finger_canvas/init" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+<SCRIPT name="force_init(OSC_ARGS)" script="init();
+decl c = getobject();
+
+decl str = 'reset';
+setattribute(Text, 'content', str);
+canvas_refresh(c);" trigger_script="" trigger_type="2" trigger="1" clock="0" clock_div="4" osc_message="/finger_canvas/force_init" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+<SCRIPT name="on_load()" script="init();" trigger_script="" trigger_type="5" trigger="1" clock="0" clock_div="4" osc_message="/finger_canvas/on_load" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+</WINDOW>
+<WINDOW class="Text" text="Text" x="643" y="35" width="254" height="48" id="1" state="245" group="0" font="tahoma,14,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="1596013" content="last pont: id 9">
+<VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/Text/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+</WINDOW>
+<WINDOW class="CustomButton" text="s_button_l" x="3" y="666" width="50" height="52" id="6" state="241" group="0" font="tahoma,20,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" behavior="1" bitmap="0,0" capture="1" color="14939,8126464" label_off="" label_on="" outline="1">
+<PARAM name="x=" value="0.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/s_button_l/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/s_button_l/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<SCRIPT name="init()" script="decl address = '/s_button_l/x';
+oscout (0, address, 1);
+oscout (0, address, 0);" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/s_button_l/init" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+</WINDOW>
+<WINDOW class="CustomButton" text="s_button_r" x="973" y="664" width="50" height="52" id="7" state="241" group="0" font="tahoma,20,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" behavior="1" bitmap="0,0" capture="1" color="14939,8126464" label_off="" label_on="" outline="1">
+<PARAM name="x=" value="0.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/s_button_r/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/s_button_r/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<SCRIPT name="init()" script="decl address = '/s_button_r/x';
+oscout (0, address, 1);
+oscout (0, address, 0);" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/s_button_r/init" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+</WINDOW>
+</WINDOW>
+</JZML>
