@@ -1,0 +1,1 @@
+Requires the zsa.descriptors package.

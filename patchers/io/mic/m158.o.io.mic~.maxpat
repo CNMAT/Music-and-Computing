@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 2,
-			"revision" : 0,
+			"minor" : 3,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 545.0, 336.0, 640.0, 480.0 ],
+		"rect" : [ 337.0, 207.0, 1021.0, 560.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,27 +38,121 @@
 		"subpatcher_template" : "no-menus",
 		"boxes" : [ 			{
 				"box" : 				{
-					"comment" : "",
-					"id" : "obj-10",
-					"maxclass" : "outlet",
+					"id" : "obj-16",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 428.0, 368.0, 50.0, 22.0 ],
+					"style" : "",
+					"text" : "1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 102.0, 334.0, 30.0, 30.0 ],
-					"presentation_rect" : [ 6.0, 229.0, 0.0, 0.0 ],
+					"patching_rect" : [ 596.5, 478.0, 118.0, 20.0 ],
+					"style" : "",
+					"text" : "rama gottfried, 2016"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 575.5, 453.0, 114.0, 20.0 ],
+					"style" : "",
+					"text" : "m158.o.io.mic~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 459.0, 316.0, 57.0, 22.0 ],
+					"style" : "",
+					"text" : "zl.slice 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-20",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 459.0, 233.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-9",
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-12",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 497.0, 353.0, 381.0, 22.0 ],
+					"style" : "",
+					"text" : "prepend script replace pfft newex 0 0 200 14 pfft~ m158.o.io.zsa.pfft"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-13",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 102.0, 76.0, 100.0, 22.0 ],
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 497.0, 385.0, 69.0, 22.0 ],
+					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"style" : "",
-					"text" : "o.route /channel"
+					"text" : "thispatcher"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-14",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 459.0, 265.0, 124.0, 22.0 ],
+					"style" : "",
+					"text" : "patcherargs 1 1024 8"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "",
+					"id" : "obj-10",
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 72.0, 372.0, 30.0, 30.0 ],
+					"style" : ""
 				}
 
 			}
@@ -70,7 +164,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 244.0, 121.0, 30.0, 30.0 ],
+					"patching_rect" : [ 148.0, 90.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -78,12 +172,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-8",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 452.0, 66.0, 150.0, 20.0 ],
+					"patching_rect" : [ 456.5, 56.0, 330.0, 33.0 ],
 					"style" : "",
-					"text" : "argument 1: input channel"
+					"text" : "argument 1: input channel (default 1)\noptional arguments 2 & 3: FFT size, and number of overlaps"
 				}
 
 			}
@@ -94,9 +189,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 102.0, 112.0, 54.0, 22.0 ],
+					"patching_rect" : [ 72.0, 131.0, 54.0, 22.0 ],
 					"style" : "",
-					"text" : "adc~ #1"
+					"text" : "adc~ 1"
 				}
 
 			}
@@ -107,7 +202,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 148.0, 334.0, 30.0, 30.0 ],
+					"patching_rect" : [ 148.0, 364.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -119,7 +214,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 493.0, 159.0, 100.0, 22.0 ],
+					"patching_rect" : [ 459.0, 139.0, 100.0, 22.0 ],
 					"style" : "",
 					"text" : "loadmess 1"
 				}
@@ -132,7 +227,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "int" ],
-					"patching_rect" : [ 493.0, 195.0, 109.0, 22.0 ],
+					"patching_rect" : [ 459.0, 175.0, 109.0, 22.0 ],
 					"style" : "",
 					"text" : "adstatus overdrive"
 				}
@@ -145,7 +240,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 148.0, 195.0, 179.0, 22.0 ],
+					"patching_rect" : [ 148.0, 201.0, 188.0, 22.0 ],
 					"style" : "",
 					"text" : "routepass signal FullPacket"
 				}
@@ -153,15 +248,17 @@
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 18.0,
+					"fontname" : "Arial",
+					"fontsize" : 14.0,
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 148.0, 255.0, 254.0, 29.0 ],
+					"patching_rect" : [ 148.0, 255.0, 200.0, 24.0 ],
 					"style" : "",
-					"text" : "pfft~ m158.o.io.zsa.pfft 1024 8"
+					"text" : "pfft~ m158.o.io.zsa.pfft 1024 8",
+					"varname" : "pfft"
 				}
 
 			}
@@ -177,9 +274,56 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-15", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 468.5, 348.0, 419.0, 348.0, 419.0, 58.0, 81.5, 58.0 ],
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 242.0, 235.5, 338.5, 235.5 ],
 					"source" : [ "obj-2", 1 ]
 				}
 
@@ -195,11 +339,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
+					"destination" : [ "obj-14", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 237.5, 227.0, 351.5, 227.0, 351.5, 57.0, 111.5, 57.0 ],
-					"source" : [ "obj-2", 1 ]
+					"source" : [ "obj-20", 0 ]
 				}
 
 			}
@@ -239,104 +382,7 @@
 				}
 
 			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-9", 0 ]
-				}
-
-			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "m158.o.io.zsa.pfft.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/158b-spring16-o.wrappers/mic",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.io.attr.get.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/158b-spring16-o.wrappers/z_o.io.support/Helpers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.io.attr.set.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/158b-spring16-o.wrappers/z_o.io.support/Helpers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.route.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.pack.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.expr.codebox.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.collect.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.prepend.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.display.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.atomize.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "zsa.flux~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.union.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.select.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "zsa.freqpeak~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "zsa.bark~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "zsa.fund.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "zsa.roughness.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "zsa.centroid~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "zsa.energy~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "zsa.spread~.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0,
 		"bgfillcolor_type" : "gradient",
 		"bgfillcolor_color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 		"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
