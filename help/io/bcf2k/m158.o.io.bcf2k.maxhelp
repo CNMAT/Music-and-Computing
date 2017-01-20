@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 1,
-			"revision" : 0,
+			"minor" : 3,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 41.0, 68.0, 1057.0, 681.0 ],
+		"rect" : [ 193.0, 45.0, 1020.0, 769.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,16 +38,78 @@
 		"subpatcher_template" : "no-menus",
 		"boxes" : [ 			{
 				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-1",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 72.5, 635.0, 424.0, 51.0 ],
+					"style" : "",
+					"text" : "Use the UI output to set values on the BCF, and/or for prototyping values without a BCF in hand (i.e. when no BCF is enabled, the sliders are still updated in the m158.o.io.bcf2k wrapper abstraction)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 206.5, 111.5, 145.0, 20.0 ],
+					"style" : "",
+					"text" : "select MIDI BCF I/O port:"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 631.5, 66.0, 257.0, 20.0 ],
+					"style" : "",
+					"text" : "OSC wrapper for the Behringer BCF2000"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold Italic",
+					"fontsize" : 18.0,
+					"id" : "obj-4",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 631.5, 37.0, 147.0, 27.0 ],
+					"style" : "",
+					"text" : "m158.o.io.bcf2k"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 601.5, 147.0, 257.0, 20.0 ],
+					"style" : "",
+					"text" : "<< unlabeled MIDI information comes out here"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-14",
-					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 370.0, 121.0, 200.0, 48.0 ],
-					"text" : "/unlabeled/midi/cc/91 : 127",
+					"patching_rect" : [ 386.0, 140.0, 207.0, 34.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -59,7 +121,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 180.0, 82.5, 209.0, 22.0 ],
+					"patching_rect" : [ 196.0, 84.5, 209.0, 22.0 ],
 					"style" : "",
 					"text" : "o.select /portinfo"
 				}
@@ -80,34 +142,8 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 180.0, 114.5, 177.0, 47.0 ],
+					"patching_rect" : [ 196.0, 133.5, 177.0, 47.0 ],
 					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubble" : 1,
-					"id" : "obj-6",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 42.0, 569.0, 262.0, 24.0 ],
-					"style" : "",
-					"text" : "use the UI to send data back to the device"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-3",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 23.5, 82.5, 66.5, 22.0 ],
-					"style" : "",
-					"text" : "t l l"
 				}
 
 			}
@@ -116,34 +152,12 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-5",
-					"linecount" : 10,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 706.0, 242.0, 328.0, 156.0 ],
-					"text" : "/midi/channel : 1,\n/footcontoller : 118,\n/fader/2 : 63,\n/fader/3 : 76,\n/fader/1 : 87,\n/fader/4 : 121,\n/fader/6 : 90,\n/fader/5 : 114,\n/fader/8 : 67,\n/fader/7 : 80",
+					"patching_rect" : [ 432.0, 235.0, 185.0, 34.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-1",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "m158.o.io.bcf2k.ui.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 376.5, 187.0, 312.0, 378.0 ],
-					"viewvisibility" : 1
 				}
 
 			}
@@ -154,21 +168,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 71.0, 114.5, 95.0, 22.0 ],
+					"patching_rect" : [ 57.5, 152.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "m158.o.io.bcf2k"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-47",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 61.5, 9.0, 72.0, 20.0 ],
-					"style" : "",
-					"text" : "recall to bcf"
 				}
 
 			}
@@ -179,7 +181,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 23.5, 7.0, 24.0, 24.0 ],
+					"patching_rect" : [ 57.5, 37.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -196,8 +198,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 1,
-							"revision" : 0,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -294,7 +296,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 23.5, 52.5, 85.0, 22.0 ],
+					"patching_rect" : [ 57.5, 71.5, 85.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -323,109 +325,8 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 23.5, 187.0, 312.0, 378.0 ],
+					"patching_rect" : [ 57.5, 246.0, 312.0, 378.0 ],
 					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-59",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patcher" : 					{
-						"fileversion" : 1,
-						"appversion" : 						{
-							"major" : 7,
-							"minor" : 1,
-							"revision" : 0,
-							"architecture" : "x64",
-							"modernui" : 1
-						}
-,
-						"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
-						"bglocked" : 0,
-						"openinpresentation" : 0,
-						"default_fontsize" : 12.0,
-						"default_fontface" : 0,
-						"default_fontname" : "Arial",
-						"gridonopen" : 1,
-						"gridsize" : [ 15.0, 15.0 ],
-						"gridsnaponopen" : 1,
-						"objectsnaponopen" : 1,
-						"statusbarvisible" : 2,
-						"toolbarvisible" : 1,
-						"lefttoolbarpinned" : 0,
-						"toptoolbarpinned" : 0,
-						"righttoolbarpinned" : 0,
-						"bottomtoolbarpinned" : 0,
-						"toolbars_unpinned_last_save" : 0,
-						"tallnewobj" : 0,
-						"boxanimatetime" : 200,
-						"enablehscroll" : 1,
-						"enablevscroll" : 1,
-						"devicewidth" : 0.0,
-						"description" : "",
-						"digest" : "",
-						"tags" : "",
-						"style" : "",
-						"subpatcher_template" : "no-menus",
-						"boxes" : [ 							{
-								"box" : 								{
-									"comment" : "",
-									"id" : "obj-1",
-									"maxclass" : "inlet",
-									"numinlets" : 0,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 432.0, 31.0, 30.0, 30.0 ],
-									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontface" : 0,
-									"fontsize" : 12.0,
-									"id" : "obj-30",
-									"linecount" : 12,
-									"maxclass" : "o.compose",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 37.0, 85.0, 414.0, 174.0 ],
-									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 28, 47, 109, 105, 100, 105, 47, 99, 104, 97, 110, 110, 101, 108, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 1, 63, -5, -31, 101, 0, 0, 0, 28, 47, 102, 111, 111, 116, 99, 111, 110, 116, 111, 108, 108, 101, 114, 0, 0, 44, 105, 0, 0, 0, 0, 0, 118, 1, 0, 0, 0, 0, 0, 0, 20, 47, 102, 97, 100, 101, 114, 47, 50, 0, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 63, 0, 0, 0, 20, 47, 102, 97, 100, 101, 114, 47, 51, 0, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 76, 0, 0, 0, 20, 47, 102, 97, 100, 101, 114, 47, 49, 0, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 87, 0, 0, 0, 20, 47, 102, 97, 100, 101, 114, 47, 52, 0, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 121, 0, 0, 0, 20, 47, 102, 97, 100, 101, 114, 47, 54, 0, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 90, 0, 0, 0, 20, 47, 102, 97, 100, 101, 114, 47, 53, 0, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 114, 0, 0, 0, 20, 47, 102, 97, 100, 101, 114, 47, 56, 0, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 67, 0, 0, 0, 20, 47, 102, 97, 100, 101, 114, 47, 55, 0, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 80 ],
-									"saved_bundle_length" : 272,
-									"text" : "/midi/channel : 1,\n/grp/a/encoder/1 : 91,\n/grp/a/encoder/2 : 73,\n/grp/b/encoder/3 : 82,\n/grp/c/encbutton/1 : 127,\n/grp/c/encoder/3 : 45,\n/grp/c/encoder/2 : 70,\n/grp/c/encoder/1 : 38,\n/grp/a/encoder/3 : 89,\n/grp/a/encoder/4 : 85,\n/grp/c/encoder/4 : 25,\n/grp/a/encbutton/3 : 0",
-									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
-								}
-
-							}
- ],
-						"lines" : [ 							{
-								"patchline" : 								{
-									"destination" : [ "obj-30", 1 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-1", 0 ]
-								}
-
-							}
- ]
-					}
-,
-					"patching_rect" : [ 722.5, 207.5, 61.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"description" : "",
-						"digest" : "",
-						"globalpatchername" : "",
-						"style" : "",
-						"tags" : ""
-					}
-,
-					"style" : "",
-					"text" : "p capture"
 				}
 
 			}
@@ -435,9 +336,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 120.5, 52.5, 77.0, 20.0 ],
+					"patching_rect" : [ 88.5, 37.0, 123.0, 20.0 ],
 					"style" : "",
-					"text" : "make preset"
+					"text" : "initialize bcf to preset"
 				}
 
 			}
@@ -448,7 +349,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 690.0, 23.0, 277.0, 141.0 ],
+					"patching_rect" : [ 641.5, 479.0, 277.0, 141.0 ],
 					"style" : "",
 					"text" : "programming from bcf2000:\n\nenc1 - midi data type\nenc2 - ch\nenc3 - cc num (parameter)\nenc4 - min val\nenc5 - max val\nenc6 - controller mode (abs)\nenc7 - controller option - 1d (1 led on and rest off)\nenc8 - display value on/off"
 				}
@@ -484,24 +385,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-89", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-3", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-92", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-3", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-41", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -511,7 +394,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
+					"destination" : [ "obj-92", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-41", 0 ]
@@ -523,7 +406,7 @@
 					"destination" : [ "obj-92", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 33.0, 589.0, 15.5, 589.0, 15.5, 119.0, 80.5, 119.0 ],
+					"midpoints" : [ 67.0, 665.0, 35.5, 665.0, 35.5, 133.0, 67.0, 133.0 ],
 					"source" : [ "obj-89", 0 ]
 				}
 
@@ -542,17 +425,7 @@
 					"destination" : [ "obj-5", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 80.5, 179.5, 715.5, 179.5 ],
-					"source" : [ "obj-92", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-59", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"midpoints" : [ 80.5, 171.25, 732.0, 171.25 ],
+					"midpoints" : [ 67.0, 221.5, 441.5, 221.5 ],
 					"source" : [ "obj-92", 0 ]
 				}
 
@@ -569,55 +442,51 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "m158.o.io.bcf2k.ui.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/158b-spring16-o.wrappers/bcf2000/abstractions",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/io/bcf2000/abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "m158.o.io.bcf2k.ui.encarray.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/158b-spring16-o.wrappers/bcf2000/abstractions",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/io/bcf2000/abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "m158.o.io.bcf2k.ui.butarray.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/158b-spring16-o.wrappers/bcf2000/abstractions",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/io/bcf2000/abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "m158.o.io.bcf2k.ui.fadearray.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/158b-spring16-o.wrappers/bcf2000/abstractions",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/io/bcf2000/abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "m158.o.io.bcf2k.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/158b-spring16-o.wrappers/bcf2000",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/io/bcf2000",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.midi.flat.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/158b-spring16-o.wrappers/z_o.io.support/Protocols/midi",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/io/Protocols/midi",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.righttoleft.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/odot/patchers/ordering",
+				"bootpath" : "~/Documents/dev-lib/CNMAT-odot/patchers/ordering",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.midi.panel.maxpat",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/158b-spring16-o.wrappers/z_o.io.support/Protocols/midi",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/io/Protocols/midi",
 				"type" : "JSON",
 				"implicit" : 1
-			}
-, 			{
-				"name" : "o.compose.mxo",
-				"type" : "iLaX"
 			}
 , 			{
 				"name" : "o.route.mxo",
@@ -637,6 +506,10 @@
 			}
 , 			{
 				"name" : "o.expr.codebox.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.compose.mxo",
 				"type" : "iLaX"
 			}
 , 			{
