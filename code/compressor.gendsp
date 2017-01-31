@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 273.0, 79.0, 884.0, 678.0 ],
+		"rect" : [ 285.0, 79.0, 884.0, 678.0 ],
 		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -38,6 +38,19 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 586.0, 363.0, 150.0, 60.0 ],
+					"style" : "",
+					"text" : "gen~ version of komp-ballistics.maxpat\n\nrama gottfried, 2016"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-15",
 					"maxclass" : "newobj",
@@ -78,7 +91,7 @@
 			}
 , 			{
 				"box" : 				{
-					"code" : "gain = atodb(in1); //amplitude\r\nthresh = in2;\r\nknee = abs(in3);\r\nratio = fixnan(1.0 / in4);\r\n\r\nslide_up = mstosamps(in5);\r\nslide_down = mstosamps(in6);\r\n\r\ngain_offset = gain - thresh;\r\n\r\namp = 1; // unchanged if below threshold\r\nif( gain_offset >= knee )\r\n{\r\n\tamp = ratio;\r\n}\r\nelse if( gain_offset >= -knee )\r\n{\r\n\tamp = 1.0 + (gain_offset + knee) * ((ratio - 1.0) / (2 * knee));\r\n}\r\n\t\r\n\r\nout1 = slide( amp, slide_up, slide_down );",
+					"code" : "gain = atodb(in1); // rms averaged input level\r\nthresh = in2; // in dB\r\nknee = abs(in3); // size in dB\r\nratio = fixnan(1.0 / in4);\r\n\r\nslide_up = mstosamps(in5);\r\nslide_down = mstosamps(in6);\r\n\r\ngain_offset = gain - thresh;\r\n\r\namp = 1; // unchanged if below threshold\r\nif( gain_offset >= knee )\r\n{\r\n\tamp = ratio;\r\n}\r\nelse if( gain_offset >= -knee )\r\n{\r\n\tamp = 1.0 + (gain_offset + knee) * ((ratio - 1.0) / (2 * knee));\r\n}\r\n\t\r\n\r\nout1 = slide( amp, slide_up, slide_down );",
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -208,8 +221,7 @@
 				}
 
 			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
