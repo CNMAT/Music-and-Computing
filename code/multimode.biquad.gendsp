@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 2,
-			"revision" : 5,
+			"minor" : 3,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 640.0, 79.0, 766.0, 787.0 ],
+		"rect" : [ 87.0, 79.0, 663.0, 787.0 ],
 		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -39,11 +39,24 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-40",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 139.0, 720.0, 411.0, 47.0 ],
+					"style" : "",
+					"text" : "rama gottfried, 2016\nbiquad with coefficents from robert bristow-johnson's Audio EQ Cookbook:  http://www.musicdsp.org/files/Audio-EQ-Cookbook.txt"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-14",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 497.333313, 705.0, 37.0, 22.0 ],
+					"patching_rect" : [ 521.0, 689.0, 37.0, 22.0 ],
 					"style" : "",
 					"text" : "out 7"
 				}
@@ -56,7 +69,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 50.0, 712.0, 29.5, 22.0 ],
+					"patching_rect" : [ 52.0, 710.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "*"
 				}
@@ -68,7 +81,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 414.333313, 705.0, 37.0, 22.0 ],
+					"patching_rect" : [ 407.0, 689.0, 37.0, 22.0 ],
 					"style" : "",
 					"text" : "out 6"
 				}
@@ -80,7 +93,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 362.5, 705.0, 37.0, 22.0 ],
+					"patching_rect" : [ 341.166687, 689.0, 37.0, 22.0 ],
 					"style" : "",
 					"text" : "out 5"
 				}
@@ -92,7 +105,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 321.5, 705.0, 37.0, 22.0 ],
+					"patching_rect" : [ 275.166687, 689.0, 37.0, 22.0 ],
 					"style" : "",
 					"text" : "out 4"
 				}
@@ -104,7 +117,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 269.5, 705.0, 37.0, 22.0 ],
+					"patching_rect" : [ 206.0, 689.0, 37.0, 22.0 ],
 					"style" : "",
 					"text" : "out 3"
 				}
@@ -116,7 +129,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 226.0, 705.0, 37.0, 22.0 ],
+					"patching_rect" : [ 139.0, 689.0, 37.0, 22.0 ],
 					"style" : "",
 					"text" : "out 2"
 				}
@@ -129,7 +142,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 526.0, 52.0, 121.0, 22.0 ],
+					"patching_rect" : [ 521.0, 50.0, 121.0, 22.0 ],
 					"style" : "",
 					"text" : "in 5 @comment type"
 				}
@@ -142,7 +155,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 386.666656, 52.0, 107.0, 22.0 ],
+					"patching_rect" : [ 387.0, 50.0, 107.0, 22.0 ],
 					"style" : "",
 					"text" : "in 4 @comment Q"
 				}
@@ -155,7 +168,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 253.333328, 52.0, 113.0, 22.0 ],
+					"patching_rect" : [ 253.0, 50.0, 113.0, 22.0 ],
 					"style" : "",
 					"text" : "in 3 @comment dB"
 				}
@@ -168,7 +181,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 117.0, 52.0, 124.0, 22.0 ],
+					"patching_rect" : [ 119.0, 50.0, 124.0, 22.0 ],
 					"style" : "",
 					"text" : "in 2 @comment hz"
 				}
@@ -176,7 +189,7 @@
 			}
 , 			{
 				"box" : 				{
-					"code" : "hz = clip(abs(in1), 1, SAMPLERATE / 2);\r\ndBgain = in2;\r\nQ = abs(in3);\r\ntype = in4;\r\n\r\nif( Q == 0 ){\r\n\tQ = 0.0000001;\r\n}\r\n\r\nA = fastpow(10., dBgain/40.);\r\nomega = TWOPI * hz / SAMPLERATE;\r\nsin0 = fastsin( omega );\r\ncos0 = fastcos( omega );\r\nalpha = sin0 / (2*Q);\r\nbeta  = sqrt(A) / Q;\r\n\r\nb0 = 0;\r\nb1 = 0;\r\nb2 = 0;\r\na0 = 1;\r\na1 = 0;\r\na2 = 0;\r\n\r\na0inv = 1;\r\namp = 1;\r\n\r\nif( type == 0 ) \r\n{\t// lowpass\r\n\tb0 =  (1 - cos0)/2;\r\tb1 =   1 - cos0;\r\tb2 =  (1 - cos0)/2;\r\ta0 =  1 + alpha;\r\ta1 =  -2*cos0;\r\ta2 =   1 - alpha;\r\n\t\r\n\tamp = A;\r\n} \r\nelse if( type == 1 ) \r\n{\t// highpass\r\n\tb0 =  (1 + cos0)/2;\r\tb1 =   -(1 + cos0);\r\tb2 =  (1 + cos0)/2;\r\ta0 =  1 + alpha;\r\ta1 =  -2*cos0;\r\ta2 =   1 - alpha;\r\n\t\r\n\tamp = A;\r\n}\r\nelse if( type == 2 ) \r\n{\t// BPF (constant skirt gain)\r\n\tb0 =   Q*alpha;\r    b1 =   0;\r    b2 =  -Q*alpha;\r    a0 =   1 + alpha;\r    a1 =  -2*cos0;\r    a2 =   1 - alpha;\r\n\r\n\tamp = A;\r\n}\r\nelse if( type == 3 ) \r\n{\t// BPF (constant peak gain)\r\n\tb0 =   alpha;\r    b1 =   0;\r    b2 =  -alpha;\r    a0 =   1 + alpha;\r    a1 =  -2*cos0;\r    a2 =   1 - alpha;\r\n\r\n\tamp = A;\r\n}\r\nelse if( type == 4 )\r\n{\t// notch\r\n\tb0 =   1;\r    b1 =  -2*cos0;\r    b2 =   1;\r    a0 =   1 + alpha;\r    a1 =  -2*cos0;\r    a2 =   1 - alpha;\r\n\tamp = A;\r\n}\r\nelse if( type == 5 )\r\n{\t// allpass\r\n\tb0 =   1 - alpha;\r    b1 =  -2*cos0;\r    b2 =   1 + alpha;\r    a0 =   1 + alpha;\r    a1 =  -2*cos0;\r    a2 =   1 - alpha;\r\n\tamp = A;\r\n}\r\nelse if( type == 6 )\r\n{\t// peakingEQ\r\n\tb0 =   1 + alpha*A;\r    b1 =  -2*cos0;\r    b2 =   1 - alpha*A;\r    a0 =   1 + alpha/A;\r    a1 =  -2*cos0;\r    a2 =   1 - alpha/A;\r\n\tamp = 1;\r\n}\r\nelse if( type == 7 )\r\n{\t// lowshelf\r\n\tb0 =    A*( (A+1) - (A-1)*cos0 + beta*sin0 \t);\r    b1 =  2*A*( (A-1) - (A+1)*cos0              );\r    b2 =    A*( (A+1) - (A-1)*cos0 - beta*sin0\t);\r    a0 =        (A+1) + (A-1)*cos0 + beta*sin0;\r    a1 =   -2*( (A-1) + (A+1)*cos0            \t);\r    a2 =        (A+1) + (A-1)*cos0 - beta*sin0;\r\n\tamp = 1;\r\n}\r\nelse if( type == 8 )\r\n{\t// highshelf\r\n\tb0 =    A*( (A+1) + (A-1)*cos0 + beta*sin0\t);\r    b1 = -2*A*( (A-1) + (A+1)*cos0            \t);\r    b2 =    A*( (A+1) + (A-1)*cos0 - beta*sin0 \t);\r    a0 =        (A+1) - (A-1)*cos0 + beta*sin0;\r    a1 =    2*( (A-1) - (A+1)*cos0            \t);\r    a2 =        (A+1) - (A-1)*cos0 - beta*sin0;\r\n\tamp = 1;\r\n}\r\n\r\na0inv = 1 / a0;\r\nout1 = b0 * a0inv;\r\nout2 = b1 * a0inv;\r\nout3 = b2 * a0inv;\r\nout4 = a1 * a0inv;\r\nout5 = a2 * a0inv;\r\nout6 = amp;\r\nout7 = type;\r\n",
+					"code" : "hz = clip(abs(in1), 1, SAMPLERATE / 2);\r\ndBgain = in2;\r\nQ = abs(in3);\r\ntype = in4;\r\n\r\nif( Q == 0 ){\r\n\tQ = 0.0000001;\r\n}\r\n\r\nomega = TWOPI * hz / SAMPLERATE;\r\nsin0 = sin( omega );\r\ncos0 = cos( omega );\r\nalpha = sin0 / (2*Q);\r\n\r\nb0 = 0;\r\nb1 = 0;\r\nb2 = 0;\r\na0 = 1;\r\na1 = 0;\r\na2 = 0;\r\n\r\na0inv = 1;\r\namp = 1;\r\n\r\nif( type == 0 ) \r\n{\t// lowpass\r\n\tb0 =  (1 - cos0)/2;\r\tb1 =   1 - cos0;\r\tb2 =  (1 - cos0)/2;\r\ta0 =  1 + alpha;\r\ta1 =  -2*cos0;\r\ta2 =   1 - alpha;\r\n\t\t\r\n\tamp = sqrt( fastpow(10., dBgain/20.) );;\r\n} \r\nelse if( type == 1 ) \r\n{\t// highpass\r\n\tb0 =  (1 + cos0)/2;\r\tb1 =   -(1 + cos0);\r\tb2 =  (1 + cos0)/2;\r\ta0 =  1 + alpha;\r\ta1 =  -2*cos0;\r\ta2 =   1 - alpha;\r\n\t\r\n\tamp = sqrt( fastpow(10., dBgain/20.) );\r\n}\r\nelse if( type == 2 ) \r\n{\t// BPF (constant skirt gain)\r\n\tb0 =   Q*alpha;\r    b1 =   0;\r    b2 =  -Q*alpha;\r    a0 =   1 + alpha;\r    a1 =  -2*cos0;\r    a2 =   1 - alpha;\r\n\r\n\tamp = sqrt( fastpow(10., dBgain/20.) );\r\n}\r\nelse if( type == 3 ) \r\n{\t// BPF (constant peak gain)\r\n\t\r\n\tb0 =   alpha;\r    b1 =   0;\r    b2 =  -alpha;\r    a0 =   1 + alpha;\r    a1 =  -2*cos0;\r    a2 =   1 - alpha;\r\n\r\n\tamp = sqrt( fastpow(10., dBgain/20.) );\r\n;\r\n}\r\nelse if( type == 4 )\r\n{\t// notch\r\n\tb0 =   1;\r    b1 =  -2*cos0;\r    b2 =   1;\r    a0 =   1 + alpha;\r    a1 =  -2*cos0;\r    a2 =   1 - alpha;\r\n\tamp = sqrt( fastpow(10., dBgain/20.) );\r\n}\r\nelse if( type == 5 )\r\n{\t// allpass\r\n\tb0 =   1 - alpha;\r    b1 =  -2*cos0;\r    b2 =   1 + alpha;\r    a0 =   1 + alpha;\r    a1 =  -2*cos0;\r    a2 =   1 - alpha;\r\n\tamp = sqrt( fastpow(10., dBgain/20.) );\r\n}\r\nelse if( type == 6 )\r\n{\t// peakingEQ\r\n\t\r\n\tA = fastpow( 10., dBgain/40.);\r\n\t\r\n\tb0 =   1 + alpha*A;\r    b1 =  -2*cos0;\r    b2 =   1 - alpha*A;\r    a0 =   1 + alpha/A;\r    a1 =  -2*cos0;\r    a2 =   1 - alpha/A;\r\n\tamp = 1;\r\n}\r\nelse if( type == 7 )\r\n{\t// lowshelf\r\n\tA = fastpow( 10., dBgain/40.);\r\n\tbeta  = sqrt(A) / Q;\r\n\t\r\n\tb0 =    A*( (A+1) - (A-1)*cos0 + beta*sin0 \t);\r    b1 =  2*A*( (A-1) - (A+1)*cos0              );\r    b2 =    A*( (A+1) - (A-1)*cos0 - beta*sin0\t);\r    a0 =        (A+1) + (A-1)*cos0 + beta*sin0;\r    a1 =   -2*( (A-1) + (A+1)*cos0            \t);\r    a2 =        (A+1) + (A-1)*cos0 - beta*sin0;\r\n\tamp = 1;\r\n}\r\nelse if( type == 8 )\r\n{\t// highshelf\r\n\tA = fastpow( 10., dBgain/40.);\r\n\tbeta  = sqrt(A) / Q;\r\n\r\n\tb0 =    A*( (A+1) + (A-1)*cos0 + beta*sin0\t);\r    b1 = -2*A*( (A-1) + (A+1)*cos0            \t);\r    b2 =    A*( (A+1) + (A-1)*cos0 - beta*sin0 \t);\r    a0 =        (A+1) - (A-1)*cos0 + beta*sin0;\r    a1 =    2*( (A-1) - (A+1)*cos0            \t);\r    a2 =        (A+1) - (A-1)*cos0 - beta*sin0;\r\n\tamp = 1;\r\n}\r\n\r\na0inv = 1 / a0;\r\nout1 = b0 * a0inv;\r\nout2 = b1 * a0inv;\r\nout3 = b2 * a0inv;\r\nout4 = a1 * a0inv;\r\nout5 = a2 * a0inv;\r\nout6 = amp;\r\nout7 = type;\r\n",
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -185,7 +198,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 7,
 					"outlettype" : [ "", "", "", "", "", "", "" ],
-					"patching_rect" : [ 117.0, 91.0, 428.0, 543.0 ],
+					"patching_rect" : [ 119.0, 93.0, 421.0, 539.0 ],
 					"style" : ""
 				}
 
@@ -197,7 +210,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 50.0, 14.0, 124.0, 22.0 ],
+					"patching_rect" : [ 52.0, 12.0, 124.0, 22.0 ],
 					"style" : "",
 					"text" : "in 1 @comment input"
 				}
@@ -214,8 +227,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 5,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -505,7 +518,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 52.75, 505.0, 32.5, 23.0 ],
+									"patching_rect" : [ 52.75, 493.0, 32.5, 23.0 ],
 									"style" : "",
 									"text" : "-"
 								}
@@ -804,7 +817,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 50.0, 650.0, 354.0, 22.0 ],
+					"patching_rect" : [ 52.0, 648.0, 354.0, 22.0 ],
 					"style" : "",
 					"text" : "gen"
 				}
@@ -816,7 +829,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 50.0, 747.0, 37.0, 22.0 ],
+					"patching_rect" : [ 52.0, 745.0, 37.0, 22.0 ],
 					"style" : "",
 					"text" : "out 1"
 				}
@@ -954,7 +967,7 @@
 					"destination" : [ "obj-32", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 467.333333, 685.5, 70.0, 685.5 ],
+					"midpoints" : [ 463.5, 678.5, 72.0, 678.5 ],
 					"source" : [ "obj-5", 5 ]
 				}
 
@@ -995,8 +1008,7 @@
 				}
 
 			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
