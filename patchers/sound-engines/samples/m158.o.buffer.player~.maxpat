@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 2,
-			"revision" : 5,
+			"minor" : 3,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 137.0, 186.0, 771.0, 554.0 ],
+		"rect" : [ 183.0, 186.0, 771.0, 554.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -43,7 +43,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 260.0, 397.0, 30.0, 30.0 ],
+					"patching_rect" : [ 272.0, 397.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -55,7 +55,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 190.0, 78.0, 83.0, 22.0 ],
+					"patching_rect" : [ 208.0, 78.0, 83.0, 22.0 ],
 					"style" : "",
 					"text" : "o.doc.handler"
 				}
@@ -66,13 +66,13 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-12",
-					"linecount" : 4,
+					"linecount" : 3,
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 190.0, 163.0, 329.0, 73.0 ],
-					"text" : "/selected/start ??= 0,\n/selected/end ??= 1,\n/scale/from = [0,1],\n/scale/to = [/selected/start, /selected/end]",
+					"patching_rect" : [ 208.0, 148.0, 329.0, 59.0 ],
+					"text" : "/selected/start ??= 0,\n/selected/end ??= 1,\n/scale/to = [/selected/start, /selected/end]",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -84,7 +84,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 190.0, 128.0, 100.0, 22.0 ],
+					"patching_rect" : [ 208.0, 113.0, 100.0, 22.0 ],
 					"style" : "",
 					"text" : "o.route /buffer"
 				}
@@ -110,9 +110,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 54.0, 258.0, 155.0, 22.0 ],
+					"patching_rect" : [ 54.0, 258.0, 173.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.scale~"
+					"text" : "m158.o.phase.scale~ /scale/to"
 				}
 
 			}
@@ -123,7 +123,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 54.0, 293.0, 155.0, 22.0 ],
+					"patching_rect" : [ 54.0, 293.0, 173.0, 22.0 ],
 					"style" : "",
 					"text" : "m158.o.wave~"
 				}
@@ -136,7 +136,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 50.0, 40.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -149,8 +149,8 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 190.0, 29.0, 30.0, 30.0 ],
+					"outlettype" : [ "FullPacket" ],
+					"patching_rect" : [ 208.0, 29.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -267,57 +267,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "m158.o.wave~.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/sound-engines/samples",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "m158.o.scale~.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.doc.handler.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "m158.hp~.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/sound-engines/filter",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.route.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.cond.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.pack.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.expr.codebox.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.prepend.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.union.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
