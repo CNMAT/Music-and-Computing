@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 2,
-			"revision" : 5,
-			"architecture" : "x86",
+			"minor" : 3,
+			"revision" : 2,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 51.0, 85.0, 595.0, 371.0 ],
+		"rect" : [ 142.0, 111.0, 722.0, 571.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -52,13 +52,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-1",
-					"linecount" : 14,
+					"linecount" : 15,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 285.0, 67.0, 283.0, 194.0 ],
+					"patching_rect" : [ 285.0, 66.0, 410.0, 208.0 ],
 					"style" : "",
-					"text" : "conditionally execute < arg2 > or optional <arg 3> based on the result of < arg1 >.\nin other words, branch a program's execution based on the logical evaluation of the first argument.\n\narguments:\n\n1. if\n2. then\n3. (optional) else\n\nnote:  function can be used inline or can be assigned to a variable."
+					"text" : "test the boolean expression specified in < arg1 >; \nif true (or non-zero) execute and return the expression < arg2 >;\nif false (or zero) execute and return the expression <arg 3>.\n\narguments:\n\n1. if\n2. then\n3. (optional) else\n\nnote 1: a value is always \"returned\" from the function which may be assigned to an address if desired.\n\nnote 2: to evaluate multi-line expressions in for the true or false cases, see the progn() function."
 				}
 
 			}
@@ -103,8 +103,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 32.0, 270.0, 204.0, 58.0 ],
-					"text" : "/input : 1.,\n/threshold/exceeded : false,\n/result : false",
+					"patching_rect" : [ 32.0, 372.0, 204.0, 58.0 ],
+					"text" : "/input : 0.627,\n/trigger : true,\n/result : \"no\"",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -114,13 +114,13 @@
 					"fontface" : 0,
 					"fontsize" : 11.0,
 					"id" : "obj-3",
-					"linecount" : 11,
+					"linecount" : 17,
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 32.0, 101.0, 217.0, 156.0 ],
-					"text" : "if(\n  /input > 0.5, \n  /threshold/exceeded = true, \n  /threshold/exceeded = false\n),\n\n/result = if(\n  /input < 0.5, \n  /threshold/exceeded = true, \n  /threshold/exceeded = false\n)",
+					"patching_rect" : [ 32.0, 114.0, 217.0, 230.0 ],
+					"text" : "if( /input > 0.5, \n  /trigger = true, \n  /thru/input = /input\n),\n\n/result = if( /input < 0.25, \n  \"yes\", \n  \"no\"\n),\n\nif( /input > 0.75,\n  progn(\n    /foo = 1,\n    /bar = 2,\n    /steve = 3\n  )\n)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
