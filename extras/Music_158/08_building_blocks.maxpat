@@ -111,7 +111,6 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "float" ],
 									"patching_rect" : [ 248.5, 592.5, 56.0, 22.0 ],
-									"presentation_rect" : [ 248.5, 592.5, 0.0, 0.0 ],
 									"sig" : 0.0,
 									"style" : ""
 								}
@@ -277,7 +276,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 63.0, 35.0, 198.0, 27.0 ],
 									"style" : "",
-									"text" : "scale building block 2"
+									"text" : "scale building block 3"
 								}
 
 							}
@@ -394,7 +393,7 @@
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 177.5, 109.0, 63.0, 22.0 ],
 									"style" : "",
-									"text" : "sig~ 1000"
+									"text" : "sig~ 750"
 								}
 
 							}
@@ -685,7 +684,6 @@
 					}
 ,
 					"patching_rect" : [ 554.5, 469.0, 114.0, 22.0 ],
-					"presentation_rect" : [ 554.5, 469.0, 0.0, 0.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -5470,6 +5468,12 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "phase.points.gendsp",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/code",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "o.doc.handler.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
 				"type" : "JSON",
@@ -5509,12 +5513,6 @@
 				"name" : "m158.o.step.scale~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "phase.points.gendsp",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/code",
-				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
