@@ -45,7 +45,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 838.75, 265.5, 122.0, 22.0 ],
-					"presentation_rect" : [ 870.75, 273.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "OSC passthrough"
 				}
@@ -60,7 +59,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 871.75, 214.0, 30.0, 30.0 ],
-					"presentation_rect" : [ 641.75, 408.5, 0.0, 0.0 ],
 					"style" : ""
 				}
 

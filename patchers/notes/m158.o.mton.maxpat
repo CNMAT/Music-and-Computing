@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 2,
-			"revision" : 5,
+			"minor" : 3,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 15.0, 62.0, 427.0, 464.0 ],
+		"rect" : [ 726.0, 157.0, 600.0, 457.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,19 @@
 		"subpatcher_template" : "no-menus",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-9",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 231.0, 251.0, 332.0, 47.0 ],
+					"style" : "",
+					"text" : "required argument: name of address to use for note parsing\n\nv.2 -- now assigns the midi note to the same addresses"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-2",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -54,7 +67,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 229.0, 299.0, 185.0, 20.0 ],
+					"patching_rect" : [ 231.0, 222.0, 185.0, 20.0 ],
 					"style" : "",
 					"text" : "MIDI number to note conversion."
 				}
@@ -68,7 +81,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 229.0, 267.0, 122.0, 27.0 ],
+					"patching_rect" : [ 231.0, 190.0, 122.0, 27.0 ],
 					"style" : "",
 					"text" : "m158.o.mton"
 				}
@@ -85,13 +98,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 5,
+							"minor" : 3,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"rect" : [ 497.0, 99.0, 737.0, 695.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -123,13 +136,13 @@
 									"fontface" : 0,
 									"fontsize" : 11.0,
 									"id" : "obj-2",
-									"linecount" : 30,
+									"linecount" : 35,
 									"maxclass" : "o.expr.codebox",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 50.0, 100.0, 813.0, 392.0 ],
-									"text" : "/midi ??= 60.6,\n/names/lower/flats = [\"c\", \"db\", \"d\", \"eb\", \"e\", \"f\", \"gb\", \"g\", \"ab\", \"a\", \"bb\", \"b\" ],\t\n/names/lower/sharps = [\"c\", \"c#\",\"d\", \"d#\", \"e\", \"f\", \"f#\", \"g\", \"g#\", \"a\", \"a#\", \"b\" ],\n\n/notes = map(\n  lambda(m, \n    /float/step = ( m % 12 ),\n    /floor/step = floor( /float/step ),\n    /float/cents = /float/step - /floor/step,\n    /oct = 0,\n\n    if( /float/cents >= 0.5, \n      progn(\n        /step = (/floor/step + 1) % 12,\n        /oct =  int32( (/floor/step + 1) / 12 ),\n        /cents = \"-\" + (100. * (1 - /float/cents))\n      ),\n      progn(\n        /step = /floor/step,\n        /cents = \"+\" + (100. * /float/cents)\n      )\n    ),\n    /oct += int32( m / 12 ) - 1,\n\n    if( /float/cents != 0, \n      /names/lower/sharps[[ /step ]]+\":\"+string(/oct) + /cents,\n      /names/lower/sharps[[ /step ]]+\":\"+string(/oct)\n    )\n  ), /midi\n)",
+									"patching_rect" : [ 50.0, 100.0, 607.0, 454.0 ],
+									"text" : "/addrs = getaddresses(),\n\n/names/lower/flats = [\"c\", \"db\", \"d\", \"eb\", \"e\", \"f\", \"gb\", \"g\", \"ab\", \"a\", \"bb\", \"b\" ],\t\n/names/lower/sharps = [\"c\", \"c#\",\"d\", \"d#\", \"e\", \"f\", \"f#\", \"g\", \"g#\", \"a\", \"a#\", \"b\" ],\n\nmap( \n  lambda([a],\n    assign(a, map(\n      lambda(m, \n        /float/step = ( m % 12 ),\n        /floor/step = floor( /float/step ),\n        /float/cents = /float/step - /floor/step,\n        /oct = 0,\n        \n        if( /float/cents >= 0.5, \n          progn(\n            /step = (/floor/step + 1) % 12,\n            /oct =  int32( (/floor/step + 1) / 12 ),\n            /cents = \"-\" + (100. * (1 - /float/cents))\n          ),\n          progn(\n            /step = /floor/step,\n            /cents = \"+\" + (100. * /float/cents)\n          )\n        ),\n        /oct += int32( m / 12 ) - 1,\n        \n        if( /float/cents != 0, \n          /names/lower/sharps[[ /step ]]+\":\"+string(/oct) + /cents,\n          /names/lower/sharps[[ /step ]]+\":\"+string(/oct)\n        )\n      ), value(a)\n     ))\n  ), /addrs\n)",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -138,6 +151,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-9",
+									"index" : 1,
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
@@ -151,10 +165,11 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-10",
+									"index" : 1,
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 552.0, 30.0, 30.0 ],
+									"patching_rect" : [ 50.0, 585.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -199,6 +214,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-4",
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -226,7 +242,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 194.0, 57.0, 93.0, 22.0 ],
 					"style" : "",
 					"text" : "m158.loadbang"
@@ -244,8 +260,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 5,
+							"minor" : 3,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -281,6 +297,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-2",
+									"index" : 1,
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
@@ -293,10 +310,11 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-1",
+									"index" : 1,
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 28.0, 4.0, 30.0, 30.0 ],
 									"style" : ""
 								}
@@ -387,10 +405,10 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 78.5, 226.0, 100.0, 22.0 ],
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 78.5, 226.0, 100.5, 22.0 ],
 					"style" : "",
-					"text" : "o.select /midi"
+					"text" : "o.select  #1"
 				}
 
 			}
@@ -412,11 +430,11 @@
 					"id" : "obj-14",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 78.5, 287.0, 88.0, 22.0 ],
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 78.5, 287.0, 97.5, 22.0 ],
 					"style" : "",
-					"text" : "o.select /notes"
+					"text" : "o.select #1"
 				}
 
 			}
@@ -437,10 +455,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-19",
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "FullPacket" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 53.0, 55.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -450,6 +469,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-20",
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -528,15 +548,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-18", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-18", 1 ]
 				}
 
 			}
