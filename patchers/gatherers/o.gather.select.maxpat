@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 2,
-			"revision" : 5,
-			"architecture" : "x86",
+			"minor" : 3,
+			"revision" : 3,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 432.0, 100.0, 600.0, 509.0 ],
+		"rect" : [ 283.0, 99.0, 600.0, 509.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,12 +38,41 @@
 		"subpatcher_template" : "no-menus",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-7",
+					"id" : "obj-43",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 211.0, 141.0, 57.0, 22.0 ],
+					"style" : "",
+					"text" : "route set"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-40",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 340.5, 58.0, 50.0, 35.0 ],
+					"presentation_rect" : [ 340.5, 58.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "/foo /bar"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 53.0, 409.0, 110.0, 22.0 ],
+					"patching_rect" : [ 242.0, 386.0, 110.0, 22.0 ],
+					"presentation_rect" : [ 242.0, 386.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "o.if !emptybundle()"
 				}
@@ -60,13 +89,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 5,
-							"architecture" : "x86",
+							"minor" : 3,
+							"revision" : 3,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"rect" : [ 29.0, 70.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -229,6 +258,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-27",
+									"index" : 1,
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
@@ -242,6 +272,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-28",
+									"index" : 1,
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
@@ -301,6 +332,7 @@
 									"destination" : [ "obj-14", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 0,
 									"source" : [ "obj-18", 0 ]
 								}
 
@@ -310,6 +342,7 @@
 									"destination" : [ "obj-19", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 1,
 									"source" : [ "obj-18", 0 ]
 								}
 
@@ -437,12 +470,12 @@
 				"box" : 				{
 					"id" : "obj-9",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 53.0, 103.0, 141.0, 22.0 ],
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 53.0, 103.0, 177.0, 22.0 ],
 					"style" : "",
-					"text" : "routepass FullPacket"
+					"text" : "routepass FullPacket dictionary"
 				}
 
 			}
@@ -463,14 +496,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-11",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 210.5, 40.0, 50.0, 35.0 ],
+					"patching_rect" : [ 210.5, 40.0, 74.0, 22.0 ],
 					"style" : "",
-					"text" : "/foo /bar"
+					"text" : "set /foo /bar"
 				}
 
 			}
@@ -478,6 +510,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-6",
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -491,6 +524,7 @@
 				"box" : 				{
 					"comment" : "(FullPacket) outgoing bundle",
 					"id" : "obj-5",
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -516,10 +550,11 @@
 				"box" : 				{
 					"comment" : "(anything) FullPacket or scripting instructions",
 					"id" : "obj-3",
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "FullPacket" ],
 					"patching_rect" : [ 53.0, 49.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -532,11 +567,11 @@
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 64.0, 198.0, 75.0, 22.0 ],
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "FullPacket" ],
+					"patching_rect" : [ 64.0, 198.0, 200.0, 22.0 ],
 					"style" : "",
-					"text" : "o.select /foo",
+					"text" : "o.select /bar /foo",
 					"varname" : "sel"
 				}
 
@@ -607,7 +642,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
+					"destination" : [ "obj-5", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-25", 0 ]
@@ -652,16 +687,25 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
+					"destination" : [ "obj-29", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-7", 0 ]
+					"source" : [ "obj-40", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-29", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-43", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-9", 1 ]
@@ -677,27 +721,16 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "m158.loadbang.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
-				"type" : "JSON",
-				"implicit" : 1
-			}
 , 			{
-				"name" : "o.select.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.collect.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.if.mxo",
-				"type" : "iLaX"
+				"patchline" : 				{
+					"destination" : [ "obj-43", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-9", 2 ]
+				}
+
 			}
  ],
-		"autosave" : 0,
 		"bgfillcolor_type" : "gradient",
 		"bgfillcolor_color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 		"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
