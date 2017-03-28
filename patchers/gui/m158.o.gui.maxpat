@@ -210,7 +210,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 798.0, 64.0, 118.0, 20.0 ],
+					"patching_rect" : [ 688.5, 665.0, 118.0, 20.0 ],
 					"style" : "",
 					"text" : "rama gottfried, 2016"
 				}
@@ -222,7 +222,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 798.0, 47.0, 88.0, 20.0 ],
+					"patching_rect" : [ 688.5, 648.0, 88.0, 20.0 ],
 					"style" : "",
 					"text" : "m158.o.gui"
 				}
@@ -230,6 +230,7 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.439216, 0.74902, 0.254902, 1.0 ],
 					"id" : "obj-3",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -274,12 +275,13 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-1",
+									"linecount" : 6,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 68.5, 160.0, 175.0, 20.0 ],
+									"patching_rect" : [ 68.5, 160.0, 186.0, 87.0 ],
 									"style" : "",
-									"text" : "to do: evaluate getstate routine"
+									"text" : "to do:\ncheck for updates after a new client is added or removed, right now the output is not fully refreshed after resolving name conflicts"
 								}
 
 							}
@@ -300,7 +302,7 @@
 						"lines" : [  ]
 					}
 ,
-					"patching_rect" : [ 594.5, 554.0, 73.0, 22.0 ],
+					"patching_rect" : [ 602.0, 648.0, 73.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -3537,7 +3539,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-10",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -3629,7 +3631,7 @@
 				"box" : 				{
 					"comment" : "(anything) to pattrstorage",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -3642,11 +3644,11 @@
 				"box" : 				{
 					"comment" : "(anything) configure o.gui",
 					"id" : "obj-101",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 230.0, 22.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -3656,7 +3658,7 @@
 				"box" : 				{
 					"comment" : "(FullPacket) outgoing bundle",
 					"id" : "obj-102",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -4216,51 +4218,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "m158.loadbang.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/EnvelopForLive/patchers/util",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.collect.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.atomize.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.prepend.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.route.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.union.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.pack.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.var.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.change.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.timetag.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }

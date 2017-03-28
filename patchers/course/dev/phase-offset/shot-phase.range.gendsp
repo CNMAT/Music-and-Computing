@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 273.0, 79.0, 985.0, 787.0 ],
+		"rect" : [ 358.0, 79.0, 985.0, 787.0 ],
 		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -140,7 +140,7 @@
 			}
 , 			{
 				"box" : 				{
-					"code" : "History busy, count, durSamps, inc, pc(-1), prev, prev_start(0), prev_end(1);\r\nParam phasecycle(0);\r\nParam hzmode(0);\r\n\r\nms = (hzmode == 0) ? abs(in1) : (1000. / abs(in1));\r\nstartIn = clip(in2, 0, 1);\r\nendIn = clip(in3, 0, 1);\r\nreset = abs(in4);\r\n\r\nstart = min(startIn, endIn);\r\nend = max(startIn, endIn);\r\n\r\ndelegate = 0;\r\n\r\nif( phasecycle && (in1 != prev || start != prev_start || end != prev_end || reset > 0) )\r\n{\r\n\tdurSamps = mstosamps(ms);\r\n\trange = abs(end - start);\t\r\n\tinc = sign(in1) * (range / durSamps);\r\n\t\t\r\n\tif( busy == 0 || reset > 0 )\r\n\t{\r\n\t\tpc = (inc > 0) ? start : end - inc;\r\n\t}\r\n\t\r\n}\r\nelse\r\n{\r\n\tif( (busy == 0 || reset > 0) && ms > 0 )\r\n\t{\r\n\t\tdurSamps = mstosamps(ms);\r\n\t\trange = end - start;\r\n\t\tinc = sign(in1) * (range / durSamps);\r\n\t\tpc = (inc > 0) ? start : end - inc;\r\n\t}\r\n\telse\r\n\t\tdelegate = in1;\r\n}\r\n\r\nbusy = (pc >= start) && (pc <= end); //<< check the end, might need to be < end\r\n\r\nout1 = clip( pc, start, end );\r\nout2 = busy;\r\nout3 = delegate;\r\n\r\npc = wrap(pc + inc, start, end);\r\n\r\nprev = in1;\r\nprev_start = start;\r\nprev_end = end;",
+					"code" : "History busy, count, durSamps, inc, pc(-1), prev, prev_start(0), prev_end(1);\r\nParam phasecycle(0);\r\nParam hzmode(0);\r\n\r\nms = (hzmode == 0) ? abs(in1) : (1000. / abs(in1));\r\nstartIn = clip(in2, 0, 1);\r\nendIn = clip(in3, 0, 1);\r\nreset = abs(in4);\r\n\r\nstart = min(startIn, endIn);\r\nend = max(startIn, endIn);\r\n\r\ndelegate = 0;\r\n\r\nif( phasecycle && (in1 != prev || start != prev_start || end != prev_end || reset > 0) )\r\n{\r\n\tdurSamps = mstosamps(ms);\r\n\trange = abs(end - start);\t\r\n\tinc = sign(in1) * (range / durSamps);\r\n\t\t\r\n\tif( busy == 0 || reset > 0 )\r\n\t{\r\n\t\tpc = (inc > 0) ? start : end - inc;\r\n\t}\r\n\t\r\n}\r\nelse\r\n{\r\n\tif( (busy == 0 || reset > 0) && ms > 0 )\r\n\t{\r\n\t\tdurSamps = mstosamps(ms);\r\n\t\trange = abs(end - start);\t\r\n\t\tinc = sign(in1) * (range / durSamps);\r\n\t\tpc = (inc > 0) ? start : end - inc;\r\n\t}\r\n\telse\r\n\t\tdelegate = in1;\r\n}\r\n\r\nbusy = (pc >= start) && (pc <= end); //<< check the end, might need to be < end\r\n\r\nout1 = clip( pc, start, end );\r\nout2 = busy;\r\nout3 = delegate;\r\n\r\nif( phasecycle )\r\n\tpc = wrap(pc + inc, start, end);\r\nelse\r\n\tpc += inc;\r\n\t\r\nprev = in1;\r\nprev_start = start;\r\nprev_end = end;",
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -230,7 +230,8 @@
 				}
 
 			}
- ]
+ ],
+		"autosave" : 0
 	}
 
 }
