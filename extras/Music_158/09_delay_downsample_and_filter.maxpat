@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 2,
-			"revision" : 5,
-			"architecture" : "x64",
+			"minor" : 3,
+			"revision" : 3,
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 277.0, 99.0, 919.0, 740.0 ],
+		"rect" : [ 78.0, 94.0, 919.0, 740.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -48,13 +48,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 5,
-							"architecture" : "x64",
+							"minor" : 3,
+							"revision" : 3,
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 277.0, 125.0, 919.0, 714.0 ],
+						"rect" : [ 0.0, 26.0, 919.0, 714.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -151,9 +151,9 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 5,
-											"architecture" : "x64",
+											"minor" : 3,
+											"revision" : 3,
+											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
@@ -214,6 +214,7 @@
 												"box" : 												{
 													"comment" : "",
 													"id" : "obj-14",
+													"index" : 1,
 													"maxclass" : "inlet",
 													"numinlets" : 0,
 													"numoutlets" : 1,
@@ -227,6 +228,7 @@
 												"box" : 												{
 													"comment" : "",
 													"id" : "obj-23",
+													"index" : 2,
 													"maxclass" : "inlet",
 													"numinlets" : 0,
 													"numoutlets" : 1,
@@ -240,6 +242,7 @@
 												"box" : 												{
 													"comment" : "",
 													"id" : "obj-24",
+													"index" : 1,
 													"maxclass" : "outlet",
 													"numinlets" : 1,
 													"numoutlets" : 0,
@@ -314,7 +317,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "float" ],
 									"patching_rect" : [ 254.199997, 173.0, 66.0, 22.0 ],
-									"sig" : 39.0,
+									"sig" : 0.0,
 									"style" : ""
 								}
 
@@ -369,21 +372,21 @@
 												"filekind" : "audiofile",
 												"loop" : 1,
 												"content_state" : 												{
-													"formant" : [ 1.0 ],
-													"slurtime" : [ 0.0 ],
-													"play" : [ 0 ],
-													"originaltempo" : [ 120.0 ],
-													"pitchshift" : [ 1.0 ],
-													"mode" : [ "basic" ],
-													"originallength" : [ 0.0, "ticks" ],
-													"timestretch" : [ 0 ],
 													"speed" : [ 1.0 ],
-													"quality" : [ "basic" ],
+													"slurtime" : [ 0.0 ],
 													"basictuning" : [ 440 ],
+													"quality" : [ "basic" ],
+													"originaltempo" : [ 120.0 ],
 													"pitchcorrection" : [ 0 ],
+													"pitchshift" : [ 1.0 ],
 													"followglobaltempo" : [ 0 ],
+													"originallength" : [ 0.0, "ticks" ],
+													"mode" : [ "basic" ],
 													"originallengthms" : [ 0.0 ],
-													"formantcorrection" : [ 0 ]
+													"formant" : [ 1.0 ],
+													"timestretch" : [ 0 ],
+													"formantcorrection" : [ 0 ],
+													"play" : [ 0 ]
 												}
 
 											}
@@ -479,7 +482,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "float" ],
 									"patching_rect" : [ 213.199997, 293.5, 56.0, 22.0 ],
-									"sig" : 164.0,
+									"sig" : 100.0,
 									"style" : ""
 								}
 
@@ -508,9 +511,9 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 5,
-											"architecture" : "x64",
+											"minor" : 3,
+											"revision" : 3,
+											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
@@ -752,6 +755,7 @@
 													"destination" : [ "obj-4", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
+													"order" : 1,
 													"source" : [ "obj-8", 0 ]
 												}
 
@@ -761,6 +765,7 @@
 													"destination" : [ "obj-5", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
+													"order" : 0,
 													"source" : [ "obj-8", 0 ]
 												}
 
@@ -1037,6 +1042,7 @@
 									"destination" : [ "obj-4", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 0,
 									"source" : [ "obj-3", 0 ]
 								}
 
@@ -1046,6 +1052,7 @@
 									"destination" : [ "obj-4", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 1,
 									"source" : [ "obj-3", 0 ]
 								}
 
@@ -1073,6 +1080,7 @@
 									"destination" : [ "obj-17", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 1,
 									"source" : [ "obj-37", 0 ]
 								}
 
@@ -1082,6 +1090,7 @@
 									"destination" : [ "obj-19", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 0,
 									"source" : [ "obj-37", 0 ]
 								}
 
@@ -1136,6 +1145,7 @@
 									"destination" : [ "obj-31", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 0,
 									"source" : [ "obj-9", 0 ]
 								}
 
@@ -1145,6 +1155,7 @@
 									"destination" : [ "obj-37", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 1,
 									"source" : [ "obj-9", 0 ]
 								}
 
@@ -1153,7 +1164,6 @@
 					}
 ,
 					"patching_rect" : [ 341.0, 301.0, 153.0, 22.0 ],
-					"presentation_rect" : [ 342.0, 301.0, 0.0, 0.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1178,9 +1188,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 5,
-							"architecture" : "x64",
+							"minor" : 3,
+							"revision" : 3,
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -1234,7 +1244,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_matrix" ],
-									"patching_rect" : [ 212.0, 196.0, 623.32074, 355.225798 ],
+									"patching_rect" : [ 212.0, 196.0, 623.32074, 355.2258 ],
 									"pic" : "/Users/r/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/lecture-notes/week-3/images/delay-chart.gif"
 								}
 
@@ -1248,7 +1258,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 35.0, 101.5, 323.0, 27.0 ],
-									"presentation_rect" : [ 35.0, 77.5, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "Intro to delay, downsample and filter"
 								}
@@ -1273,7 +1282,6 @@
 					}
 ,
 					"patching_rect" : [ 88.0, 67.0, 49.0, 22.0 ],
-					"presentation_rect" : [ 88.0, 67.0, 0.0, 0.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1297,9 +1305,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 5,
-							"architecture" : "x64",
+							"minor" : 3,
+							"revision" : 3,
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -1400,9 +1408,9 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 5,
-											"architecture" : "x64",
+											"minor" : 3,
+											"revision" : 3,
+											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
@@ -1463,6 +1471,7 @@
 												"box" : 												{
 													"comment" : "",
 													"id" : "obj-14",
+													"index" : 1,
 													"maxclass" : "inlet",
 													"numinlets" : 0,
 													"numoutlets" : 1,
@@ -1476,6 +1485,7 @@
 												"box" : 												{
 													"comment" : "",
 													"id" : "obj-23",
+													"index" : 2,
 													"maxclass" : "inlet",
 													"numinlets" : 0,
 													"numoutlets" : 1,
@@ -1489,6 +1499,7 @@
 												"box" : 												{
 													"comment" : "",
 													"id" : "obj-24",
+													"index" : 1,
 													"maxclass" : "outlet",
 													"numinlets" : 1,
 													"numoutlets" : 0,
@@ -1563,7 +1574,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "float" ],
 									"patching_rect" : [ 253.5, 225.0, 66.0, 22.0 ],
-									"sig" : 21.0,
+									"sig" : 0.0,
 									"style" : ""
 								}
 
@@ -1618,21 +1629,21 @@
 												"filekind" : "audiofile",
 												"loop" : 1,
 												"content_state" : 												{
-													"formant" : [ 1.0 ],
-													"slurtime" : [ 0.0 ],
-													"play" : [ 0 ],
-													"originaltempo" : [ 120.0 ],
-													"pitchshift" : [ 1.0 ],
-													"mode" : [ "basic" ],
-													"originallength" : [ 0.0, "ticks" ],
-													"timestretch" : [ 0 ],
 													"speed" : [ 1.0 ],
-													"quality" : [ "basic" ],
+													"slurtime" : [ 0.0 ],
 													"basictuning" : [ 440 ],
+													"quality" : [ "basic" ],
+													"originaltempo" : [ 120.0 ],
 													"pitchcorrection" : [ 0 ],
+													"pitchshift" : [ 1.0 ],
 													"followglobaltempo" : [ 0 ],
+													"originallength" : [ 0.0, "ticks" ],
+													"mode" : [ "basic" ],
 													"originallengthms" : [ 0.0 ],
-													"formantcorrection" : [ 0 ]
+													"formant" : [ 1.0 ],
+													"timestretch" : [ 0 ],
+													"formantcorrection" : [ 0 ],
+													"play" : [ 0 ]
 												}
 
 											}
@@ -1728,7 +1739,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "float" ],
 									"patching_rect" : [ 239.300003, 498.0, 56.0, 22.0 ],
-									"sig" : 78.0,
+									"sig" : 100.0,
 									"style" : ""
 								}
 
@@ -1757,9 +1768,9 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 5,
-											"architecture" : "x64",
+											"minor" : 3,
+											"revision" : 3,
+											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
@@ -2001,6 +2012,7 @@
 													"destination" : [ "obj-4", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
+													"order" : 1,
 													"source" : [ "obj-8", 0 ]
 												}
 
@@ -2010,6 +2022,7 @@
 													"destination" : [ "obj-5", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
+													"order" : 0,
 													"source" : [ "obj-8", 0 ]
 												}
 
@@ -2105,7 +2118,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "float" ],
 									"patching_rect" : [ 428.5, 204.0, 66.0, 22.0 ],
-									"sig" : 11.0,
+									"sig" : 50.0,
 									"style" : ""
 								}
 
@@ -2286,6 +2299,7 @@
 									"destination" : [ "obj-4", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 0,
 									"source" : [ "obj-3", 0 ]
 								}
 
@@ -2295,6 +2309,7 @@
 									"destination" : [ "obj-4", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 1,
 									"source" : [ "obj-3", 0 ]
 								}
 
@@ -2322,6 +2337,7 @@
 									"destination" : [ "obj-17", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 1,
 									"source" : [ "obj-37", 0 ]
 								}
 
@@ -2331,6 +2347,7 @@
 									"destination" : [ "obj-19", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 0,
 									"source" : [ "obj-37", 0 ]
 								}
 
@@ -2385,6 +2402,7 @@
 									"destination" : [ "obj-31", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 0,
 									"source" : [ "obj-9", 0 ]
 								}
 
@@ -2394,6 +2412,7 @@
 									"destination" : [ "obj-37", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 1,
 									"source" : [ "obj-9", 0 ]
 								}
 
@@ -2426,9 +2445,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 5,
-							"architecture" : "x64",
+							"minor" : 3,
+							"revision" : 3,
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -2461,6 +2480,73 @@
 						"subpatcher_template" : "Default Max 7",
 						"showontab" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-24",
+									"maxclass" : "toggle",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 40.0, 139.5, 24.0, 24.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-18",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 40.0, 166.5, 43.0, 22.0 ],
+									"style" : "",
+									"text" : "sig~ 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-17",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "float", "bang" ],
+									"patching_rect" : [ 150.5, 599.5, 167.0, 22.0 ],
+									"style" : "",
+									"text" : "buffer~ moan moanin.aiff -1 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-15",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 2,
+									"outlettype" : [ "signal", "signal" ],
+									"patching_rect" : [ 40.0, 208.5, 88.0, 22.0 ],
+									"saved_object_attributes" : 									{
+										"basictuning" : 440,
+										"followglobaltempo" : 0,
+										"formantcorrection" : 0,
+										"loopend" : [ 0.0, "ms" ],
+										"loopstart" : [ 0.0, "ms" ],
+										"mode" : "basic",
+										"originallength" : [ 9245.800781, "ticks" ],
+										"originaltempo" : 119.999992,
+										"phase" : [ 0.0, "ticks" ],
+										"pitchcorrection" : 0,
+										"quality" : "basic",
+										"timestretch" : [ 0 ]
+									}
+,
+									"style" : "",
+									"text" : "groove~ moan"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-2",
 									"maxclass" : "newobj",
@@ -2498,9 +2584,9 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 5,
-											"architecture" : "x64",
+											"minor" : 3,
+											"revision" : 3,
+											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
@@ -2561,6 +2647,7 @@
 												"box" : 												{
 													"comment" : "",
 													"id" : "obj-17",
+													"index" : 1,
 													"maxclass" : "inlet",
 													"numinlets" : 0,
 													"numoutlets" : 1,
@@ -2574,6 +2661,7 @@
 												"box" : 												{
 													"comment" : "",
 													"id" : "obj-18",
+													"index" : 2,
 													"maxclass" : "inlet",
 													"numinlets" : 0,
 													"numoutlets" : 1,
@@ -2587,6 +2675,7 @@
 												"box" : 												{
 													"comment" : "",
 													"id" : "obj-20",
+													"index" : 1,
 													"maxclass" : "outlet",
 													"numinlets" : 1,
 													"numoutlets" : 0,
@@ -2787,46 +2876,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "float" ],
 									"patching_rect" : [ 196.300003, 357.0, 56.0, 22.0 ],
-									"sig" : 73.0,
-									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"data" : 									{
-										"clips" : [ 											{
-												"filename" : "Macintosh HD:/Users/r/Documents/Max 7/Packages/CNMAT-M158/media/moanin.aiff",
-												"filekind" : "audiofile",
-												"loop" : 1,
-												"content_state" : 												{
-													"formant" : [ 1.0 ],
-													"slurtime" : [ 0.0 ],
-													"play" : [ 0 ],
-													"originaltempo" : [ 120.0 ],
-													"pitchshift" : [ 1.0 ],
-													"mode" : [ "basic" ],
-													"originallength" : [ 0.0, "ticks" ],
-													"timestretch" : [ 0 ],
-													"speed" : [ 1.0 ],
-													"quality" : [ "basic" ],
-													"basictuning" : [ 440 ],
-													"pitchcorrection" : [ 0 ],
-													"followglobaltempo" : [ 0 ],
-													"originallengthms" : [ 0.0 ],
-													"formantcorrection" : [ 0 ]
-												}
-
-											}
- ]
-									}
-,
-									"id" : "obj-43",
-									"maxclass" : "playlist~",
-									"numinlets" : 1,
-									"numoutlets" : 5,
-									"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-									"patching_rect" : [ 150.5, 136.5, 150.0, 30.0 ],
+									"sig" : 0.0,
 									"style" : ""
 								}
 
@@ -2933,6 +2983,20 @@
 								}
 
 							}
+, 							{
+								"box" : 								{
+									"attr" : "loop",
+									"id" : "obj-20",
+									"maxclass" : "attrui",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 100.0, 166.5, 77.0, 22.0 ],
+									"style" : "",
+									"text_width" : 55.0
+								}
+
+							}
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
@@ -2972,10 +3036,37 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-21", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-15", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-15", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-18", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-6", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-15", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-20", 0 ]
 								}
 
 							}
@@ -2990,9 +3081,19 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-18", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-24", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-4", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 0,
 									"source" : [ "obj-3", 0 ]
 								}
 
@@ -3002,16 +3103,8 @@
 									"destination" : [ "obj-4", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 1,
 									"source" : [ "obj-3", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-21", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-43", 0 ]
 								}
 
 							}
@@ -3029,6 +3122,7 @@
 									"destination" : [ "obj-10", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 0,
 									"source" : [ "obj-58", 0 ]
 								}
 
@@ -3038,6 +3132,7 @@
 									"destination" : [ "obj-3", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 1,
 									"source" : [ "obj-58", 0 ]
 								}
 
@@ -3106,9 +3201,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 5,
-							"architecture" : "x64",
+							"minor" : 3,
+							"revision" : 3,
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -3250,21 +3345,21 @@
 												"filekind" : "audiofile",
 												"loop" : 1,
 												"content_state" : 												{
-													"formant" : [ 1.0 ],
-													"slurtime" : [ 0.0 ],
-													"play" : [ 0 ],
-													"originaltempo" : [ 120.0 ],
-													"pitchshift" : [ 1.0 ],
-													"mode" : [ "basic" ],
-													"originallength" : [ 0.0, "ticks" ],
-													"timestretch" : [ 0 ],
 													"speed" : [ 1.0 ],
-													"quality" : [ "basic" ],
+													"slurtime" : [ 0.0 ],
 													"basictuning" : [ 440 ],
+													"quality" : [ "basic" ],
+													"originaltempo" : [ 120.0 ],
 													"pitchcorrection" : [ 0 ],
+													"pitchshift" : [ 1.0 ],
 													"followglobaltempo" : [ 0 ],
+													"originallength" : [ 0.0, "ticks" ],
+													"mode" : [ "basic" ],
 													"originallengthms" : [ 0.0 ],
-													"formantcorrection" : [ 0 ]
+													"formant" : [ 1.0 ],
+													"timestretch" : [ 0 ],
+													"formantcorrection" : [ 0 ],
+													"play" : [ 0 ]
 												}
 
 											}
@@ -3458,7 +3553,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "float" ],
 									"patching_rect" : [ 226.033325, 366.0, 56.0, 22.0 ],
-									"sig" : 90.0,
+									"sig" : 82.0,
 									"style" : ""
 								}
 
@@ -3614,6 +3709,7 @@
 									"destination" : [ "obj-4", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 0,
 									"source" : [ "obj-3", 0 ]
 								}
 
@@ -3623,6 +3719,7 @@
 									"destination" : [ "obj-4", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 1,
 									"source" : [ "obj-3", 0 ]
 								}
 
@@ -3677,6 +3774,7 @@
 									"destination" : [ "obj-11", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 1,
 									"source" : [ "obj-9", 0 ]
 								}
 
@@ -3686,6 +3784,7 @@
 									"destination" : [ "obj-58", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 0,
 									"source" : [ "obj-9", 0 ]
 								}
 
@@ -3717,13 +3816,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 5,
-							"architecture" : "x64",
+							"minor" : 3,
+							"revision" : 3,
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 919.0, 714.0 ],
+						"rect" : [ 78.0, 120.0, 919.0, 714.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3753,6 +3852,74 @@
 						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-24",
+									"maxclass" : "toggle",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 182.5, 170.5, 24.0, 24.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 182.5, 197.5, 43.0, 22.0 ],
+									"style" : "",
+									"text" : "sig~ 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-15",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 2,
+									"outlettype" : [ "signal", "signal" ],
+									"patching_rect" : [ 182.5, 239.5, 88.0, 22.0 ],
+									"saved_object_attributes" : 									{
+										"basictuning" : 440,
+										"followglobaltempo" : 0,
+										"formantcorrection" : 0,
+										"loopend" : [ 0.0, "ms" ],
+										"loopstart" : [ 0.0, "ms" ],
+										"mode" : "basic",
+										"originallength" : [ 9245.800781, "ticks" ],
+										"originaltempo" : 119.999992,
+										"phase" : [ 0.0, "ticks" ],
+										"pitchcorrection" : 0,
+										"quality" : "basic",
+										"timestretch" : [ 0 ]
+									}
+,
+									"style" : "",
+									"text" : "groove~ moan"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"attr" : "loop",
+									"id" : "obj-20",
+									"maxclass" : "attrui",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 242.5, 197.5, 77.0, 22.0 ],
+									"style" : "",
+									"text_width" : 55.0
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"fontname" : "Arial Bold Italic",
 									"fontsize" : 18.0,
 									"id" : "obj-19",
@@ -3775,9 +3942,9 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 5,
-											"architecture" : "x64",
+											"minor" : 3,
+											"revision" : 3,
+											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
@@ -3901,6 +4068,7 @@
 													"destination" : [ "obj-6", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
+													"order" : 1,
 													"source" : [ "obj-7", 0 ]
 												}
 
@@ -3910,6 +4078,7 @@
 													"destination" : [ "obj-9", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
+													"order" : 0,
 													"source" : [ "obj-7", 0 ]
 												}
 
@@ -3935,7 +4104,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 490.5, 402.5, 227.0, 22.0 ],
+									"patching_rect" : [ 505.5, 442.5, 227.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -3957,7 +4126,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 257.5, 298.5, 291.0, 51.0 ],
+									"patching_rect" : [ 272.5, 338.5, 291.0, 51.0 ],
 									"style" : "",
 									"text" : "m158.hp~ is a simple highpass filter, that takes a frequency in Hertz as an argument. We use this as a safety to avoid damaging speakers."
 								}
@@ -3970,7 +4139,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 167.5, 309.0, 81.0, 22.0 ],
+									"patching_rect" : [ 182.5, 349.0, 81.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.hp~ 20"
 								}
@@ -3991,51 +4160,12 @@
 							}
 , 							{
 								"box" : 								{
-									"data" : 									{
-										"clips" : [ 											{
-												"filename" : "Macintosh HD:/Users/r/Documents/Max 7/Packages/CNMAT-M158/media/moanin.aiff",
-												"filekind" : "audiofile",
-												"loop" : 1,
-												"content_state" : 												{
-													"formant" : [ 1.0 ],
-													"slurtime" : [ 0.0 ],
-													"play" : [ 0 ],
-													"originaltempo" : [ 120.0 ],
-													"pitchshift" : [ 1.0 ],
-													"mode" : [ "basic" ],
-													"originallength" : [ 0.0, "ticks" ],
-													"timestretch" : [ 0 ],
-													"speed" : [ 1.0 ],
-													"quality" : [ "basic" ],
-													"basictuning" : [ 440 ],
-													"pitchcorrection" : [ 0 ],
-													"followglobaltempo" : [ 0 ],
-													"originallengthms" : [ 0.0 ],
-													"formantcorrection" : [ 0 ]
-												}
-
-											}
- ]
-									}
-,
-									"id" : "obj-43",
-									"maxclass" : "playlist~",
-									"numinlets" : 1,
-									"numoutlets" : 5,
-									"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-									"patching_rect" : [ 167.5, 178.5, 150.0, 30.0 ],
-									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-2",
 									"maxclass" : "spectroscope~",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 207.0, 399.0, 238.0, 70.0 ],
+									"patching_rect" : [ 222.0, 439.0, 238.0, 70.0 ],
 									"style" : ""
 								}
 
@@ -4051,8 +4181,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "float" ],
-									"patching_rect" : [ 224.5, 237.0, 56.0, 22.0 ],
-									"sig" : -27.0,
+									"patching_rect" : [ 239.5, 277.0, 56.0, 22.0 ],
+									"sig" : 0.0,
 									"style" : ""
 								}
 
@@ -4064,7 +4194,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 295.0, 483.0, 33.0, 22.0 ],
+									"patching_rect" : [ 310.0, 523.0, 33.0, 22.0 ],
 									"style" : "",
 									"text" : "stop"
 								}
@@ -4077,7 +4207,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 207.0, 483.0, 74.0, 22.0 ],
+									"patching_rect" : [ 222.0, 523.0, 74.0, 22.0 ],
 									"style" : "",
 									"text" : "startwindow"
 								}
@@ -4089,7 +4219,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 167.5, 527.0, 37.0, 22.0 ],
+									"patching_rect" : [ 182.5, 567.0, 37.0, 22.0 ],
 									"style" : "",
 									"text" : "dac~"
 								}
@@ -4103,7 +4233,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 167.5, 420.0, 22.0, 85.0 ],
+									"patching_rect" : [ 182.5, 460.0, 22.0, 85.0 ],
 									"style" : ""
 								}
 
@@ -4115,7 +4245,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 167.5, 273.5, 76.0, 22.0 ],
+									"patching_rect" : [ 182.5, 313.5, 76.0, 22.0 ],
 									"style" : "",
 									"text" : "downsamp~"
 								}
@@ -4151,9 +4281,37 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-58", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-15", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-15", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-20", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-24", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-4", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 0,
 									"source" : [ "obj-3", 0 ]
 								}
 
@@ -4163,16 +4321,8 @@
 									"destination" : [ "obj-4", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 1,
 									"source" : [ "obj-3", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-58", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-43", 0 ]
 								}
 
 							}
@@ -4181,6 +4331,7 @@
 									"destination" : [ "obj-2", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 0,
 									"source" : [ "obj-5", 0 ]
 								}
 
@@ -4190,6 +4341,7 @@
 									"destination" : [ "obj-3", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 1,
 									"source" : [ "obj-5", 0 ]
 								}
 
@@ -4200,6 +4352,15 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-58", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-15", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-6", 0 ]
 								}
 
 							}
@@ -4230,9 +4391,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 5,
-							"architecture" : "x64",
+							"minor" : 3,
+							"revision" : 3,
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -4272,7 +4433,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 498.0, 335.0, 352.0, 114.0 ],
-									"presentation_rect" : [ 494.0, 104.5, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "If the feedback is < 1 the delays fade over time, > 0.9 you will start to hear a ringing sound, somewhat like a string vibration at the frequency of the delay.\n\nVery small delays, begin to become so small they are heard as frequencies.\n\nTry a feedback of ~ 0.95 and a delay time between 0 and 20."
 								}
@@ -4417,21 +4577,21 @@
 												"filekind" : "audiofile",
 												"loop" : 1,
 												"content_state" : 												{
-													"formant" : [ 1.0 ],
-													"slurtime" : [ 0.0 ],
-													"play" : [ 0 ],
-													"originaltempo" : [ 120.0 ],
-													"pitchshift" : [ 1.0 ],
-													"mode" : [ "basic" ],
-													"originallength" : [ 0.0, "ticks" ],
-													"timestretch" : [ 0 ],
 													"speed" : [ 1.0 ],
-													"quality" : [ "basic" ],
+													"slurtime" : [ 0.0 ],
 													"basictuning" : [ 440 ],
+													"quality" : [ "basic" ],
+													"originaltempo" : [ 120.0 ],
 													"pitchcorrection" : [ 0 ],
+													"pitchshift" : [ 1.0 ],
 													"followglobaltempo" : [ 0 ],
+													"originallength" : [ 0.0, "ticks" ],
+													"mode" : [ "basic" ],
 													"originallengthms" : [ 0.0 ],
-													"formantcorrection" : [ 0 ]
+													"formant" : [ 1.0 ],
+													"timestretch" : [ 0 ],
+													"formantcorrection" : [ 0 ],
+													"play" : [ 0 ]
 												}
 
 											}
@@ -4518,9 +4678,9 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 5,
-											"architecture" : "x64",
+											"minor" : 3,
+											"revision" : 3,
+											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
@@ -4762,6 +4922,7 @@
 													"destination" : [ "obj-4", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
+													"order" : 1,
 													"source" : [ "obj-8", 0 ]
 												}
 
@@ -4771,6 +4932,7 @@
 													"destination" : [ "obj-5", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
+													"order" : 0,
 													"source" : [ "obj-8", 0 ]
 												}
 
@@ -4826,6 +4988,7 @@
 									"destination" : [ "obj-4", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 0,
 									"source" : [ "obj-3", 0 ]
 								}
 
@@ -4835,6 +4998,7 @@
 									"destination" : [ "obj-4", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 1,
 									"source" : [ "obj-3", 0 ]
 								}
 
@@ -4901,18 +5065,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "delay1.GIF",
-				"bootpath" : "~/Downloads",
-				"type" : "GIFf",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "moanin.aiff",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/media",
-				"type" : "AIFF",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "m158.hp~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/sound-engines/filter",
 				"type" : "JSON",
@@ -4946,12 +5098,6 @@
 				"name" : "jongly.aif",
 				"bootpath" : "C74:/media/msp",
 				"type" : "AIFF",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "delay-chart.gif",
-				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/lecture-notes/week-3/images",
-				"type" : "GIFf",
 				"implicit" : 1
 			}
 , 			{
