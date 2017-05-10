@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 283.0, 99.0, 600.0, 509.0 ],
+		"rect" : [ 38.0, 79.0, 753.0, 531.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -25,7 +25,7 @@
 		"toptoolbarpinned" : 0,
 		"righttoolbarpinned" : 0,
 		"bottomtoolbarpinned" : 0,
-		"toolbars_unpinned_last_save" : 7,
+		"toolbars_unpinned_last_save" : 0,
 		"tallnewobj" : 0,
 		"boxanimatetime" : 200,
 		"enablehscroll" : 1,
@@ -35,18 +35,17 @@
 		"digest" : "",
 		"tags" : "",
 		"style" : "",
-		"subpatcher_template" : "no-menus",
+		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-8",
-					"linecount" : 2,
+					"id" : "obj-7",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 320.5, 103.0, 50.0, 35.0 ],
+					"patching_rect" : [ 130.5, 26.0, 55.0, 22.0 ],
 					"style" : "",
-					"text" : "/bob /steve"
+					"text" : "/foo /bar"
 				}
 
 			}
@@ -57,7 +56,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 211.0, 133.0, 57.0, 22.0 ],
+					"patching_rect" : [ 211.0, 141.0, 57.0, 22.0 ],
 					"style" : "",
 					"text" : "route set"
 				}
@@ -71,7 +70,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 333.5, 40.0, 50.0, 35.0 ],
+					"patching_rect" : [ 340.5, 58.0, 50.0, 35.0 ],
 					"style" : "",
 					"text" : "/foo /bar"
 				}
@@ -425,7 +424,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 412.0, 179.0, 49.0, 22.0 ],
+					"patching_rect" : [ 412.0, 145.0, 49.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -522,7 +521,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-6",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -536,7 +535,7 @@
 				"box" : 				{
 					"comment" : "(FullPacket) outgoing bundle",
 					"id" : "obj-5",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -562,7 +561,7 @@
 				"box" : 				{
 					"comment" : "(anything) FullPacket or scripting instructions",
 					"id" : "obj-3",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -608,7 +607,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 412.0, 213.0, 69.0, 22.0 ],
+					"patching_rect" : [ 412.0, 179.0, 69.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"style" : "",
 					"text" : "thispatcher"
@@ -708,10 +707,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-29", 0 ],
+					"destination" : [ "obj-9", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-43", 1 ]
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
@@ -720,16 +719,8 @@
 					"destination" : [ "obj-29", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-43", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-29", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-8", 0 ]
+					"order" : 0,
+					"source" : [ "obj-9", 2 ]
 				}
 
 			}
@@ -756,11 +747,32 @@
 					"destination" : [ "obj-43", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-9", 2 ]
 				}
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "m158.loadbang.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/EnvelopForLive/patchers/util",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.select.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.collect.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.if.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0,
 		"bgfillcolor_type" : "gradient",
 		"bgfillcolor_color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 		"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
