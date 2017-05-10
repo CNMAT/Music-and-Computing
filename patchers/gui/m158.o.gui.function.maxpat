@@ -3,9 +3,9 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 2,
-			"revision" : 5,
-			"architecture" : "x86",
+			"minor" : 3,
+			"revision" : 3,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
@@ -60,9 +60,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 5,
-							"architecture" : "x86",
+							"minor" : 3,
+							"revision" : 3,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -97,6 +97,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-2",
+									"index" : 2,
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
@@ -151,6 +152,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-27",
+									"index" : 1,
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
@@ -164,6 +166,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-28",
+									"index" : 1,
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
@@ -239,6 +242,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-17",
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -258,9 +262,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 5,
-							"architecture" : "x86",
+							"minor" : 3,
+							"revision" : 3,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -313,6 +317,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-31",
+									"index" : 1,
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
@@ -326,6 +331,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-32",
+									"index" : 1,
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
@@ -445,9 +451,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 5,
-							"architecture" : "x86",
+							"minor" : 3,
+							"revision" : 3,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -498,6 +504,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-9",
+									"index" : 1,
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
@@ -511,6 +518,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-13",
+									"index" : 1,
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
@@ -640,7 +648,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "FullPacket", "" ],
+					"outlettype" : [ "", "FullPacket" ],
 					"patching_rect" : [ 63.5, 262.0, 190.0, 22.0 ],
 					"style" : "",
 					"text" : "o.gather.select"
@@ -703,6 +711,7 @@
 				"box" : 				{
 					"comment" : "(FullPacket) incoming bundle containing pattrstorage data",
 					"id" : "obj-29",
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -716,6 +725,7 @@
 				"box" : 				{
 					"comment" : "(FullPacket) outgoing bundle containing bpf data",
 					"id" : "obj-30",
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -848,6 +858,7 @@
 					"destination" : [ "obj-18", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-23", 0 ]
 				}
 
@@ -857,6 +868,7 @@
 					"destination" : [ "obj-33", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-23", 0 ]
 				}
 
@@ -978,67 +990,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "o.gather.select.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gatherers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "m158.loadbang.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.doc.handler.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.route.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.collect.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.select.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.if.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.pack.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.union.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.expr.codebox.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.cond.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.prepend.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.compose.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }

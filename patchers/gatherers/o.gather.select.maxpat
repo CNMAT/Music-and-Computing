@@ -38,12 +38,26 @@
 		"subpatcher_template" : "no-menus",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-8",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 320.5, 103.0, 50.0, 35.0 ],
+					"style" : "",
+					"text" : "/bob /steve"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-43",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 211.0, 141.0, 57.0, 22.0 ],
+					"patching_rect" : [ 211.0, 133.0, 57.0, 22.0 ],
 					"style" : "",
 					"text" : "route set"
 				}
@@ -57,8 +71,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 340.5, 58.0, 50.0, 35.0 ],
-					"presentation_rect" : [ 340.5, 58.0, 0.0, 0.0 ],
+					"patching_rect" : [ 333.5, 40.0, 50.0, 35.0 ],
 					"style" : "",
 					"text" : "/foo /bar"
 				}
@@ -72,7 +85,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 242.0, 386.0, 110.0, 22.0 ],
-					"presentation_rect" : [ 242.0, 386.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "o.if !emptybundle()"
 				}
@@ -413,7 +425,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 412.0, 145.0, 49.0, 22.0 ],
+					"patching_rect" : [ 412.0, 179.0, 49.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -554,7 +566,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "FullPacket" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 53.0, 49.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -567,11 +579,11 @@
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "FullPacket" ],
-					"patching_rect" : [ 64.0, 198.0, 200.0, 22.0 ],
+					"numoutlets" : 2,
+					"outlettype" : [ "", "FullPacket" ],
+					"patching_rect" : [ 64.0, 198.0, 85.0, 22.0 ],
 					"style" : "",
-					"text" : "o.select /bar /foo",
+					"text" : "o.select /temp",
 					"varname" : "sel"
 				}
 
@@ -596,7 +608,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 412.0, 179.0, 69.0, 22.0 ],
+					"patching_rect" : [ 412.0, 213.0, 69.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"style" : "",
 					"text" : "thispatcher"
@@ -699,7 +711,25 @@
 					"destination" : [ "obj-29", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"source" : [ "obj-43", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
 					"source" : [ "obj-43", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-8", 0 ]
 				}
 
 			}
