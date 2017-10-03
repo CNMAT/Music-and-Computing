@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 3,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -38,30 +38,43 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
-					"fontface" : 0,
-					"fontsize" : 12.0,
-					"id" : "obj-2",
-					"linecount" : 6,
-					"maxclass" : "o.expr.codebox",
+					"id" : "obj-28",
+					"maxclass" : "button",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 468.0, 623.0, 387.0, 100.0 ],
-					"text" : "/selected/start ??= 0,\n/selected/end ??= 1,\n/ms ??= 0,\n\n/selected/length = /selected/end - /selected/start,\n/selected/ms = /selected/length * /ms",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 459.0, 394.0, 24.0, 24.0 ],
+					"style" : ""
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-36",
-					"linecount" : 4,
-					"maxclass" : "comment",
+					"id" : "obj-20",
+					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 475.0, 489.0, 156.0, 60.0 ],
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 449.0, 429.0, 41.0, 22.0 ],
 					"style" : "",
-					"text" : "dev note: probably m158.o.buffer.player shouldn't have the scaling internally anymore..."
+					"text" : "click~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-4",
+					"maxclass" : "number~",
+					"mode" : 2,
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "float" ],
+					"patching_rect" : [ 294.0, 508.0, 56.0, 22.0 ],
+					"sig" : 0.0,
+					"style" : ""
 				}
 
 			}
@@ -77,7 +90,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 176.0, 340.0, 56.0, 22.0 ],
-					"sig" : 0.0,
+					"sig" : 5.7,
 					"style" : ""
 				}
 
@@ -105,8 +118,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 503.0, 340.0, 235.0, 145.0 ],
-					"text" : "/file/name : \"drumloop.aif\",\n/buffer/hopsize : 256,\n/buffer/fftsize : 1024,\n/buffer/name : \"1396-buffer\",\n/buffer/nsamples : 153400,\n/buffer/ms : 3478.46,\n/buffer/samplerate : 44100.,\n/buffer/selected/start : 0,\n/buffer/selected/end : 1,\n/buffer/selected/length : 1,\n/buffer/trigger : 0",
+					"patching_rect" : [ 527.0, 351.0, 235.0, 145.0 ],
+					"text" : "/file/name : \"drumloop.aif\",\n/buffer/hopsize : 256,\n/buffer/fftsize : 1024,\n/buffer/name : \"1012-buffer\",\n/buffer/nsamples : 153400,\n/buffer/ms : 3478.46,\n/buffer/samplerate : 44100.,\n/buffer/selected/start : 0,\n/buffer/selected/end : 1,\n/buffer/selected/length : 1,\n/buffer/trigger : 0",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -144,7 +157,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 248.0, 513.0, 179.0, 22.0 ],
+					"patching_rect" : [ 248.0, 548.0, 179.0, 22.0 ],
 					"style" : "",
 					"text" : "m158.o.buffer.player~"
 				}
@@ -168,7 +181,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 384.5, 676.0, 33.0, 22.0 ],
+					"patching_rect" : [ 384.5, 696.0, 33.0, 22.0 ],
 					"style" : "",
 					"text" : "stop"
 				}
@@ -181,7 +194,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 305.5, 676.0, 74.0, 22.0 ],
+					"patching_rect" : [ 305.5, 696.0, 74.0, 22.0 ],
 					"style" : "",
 					"text" : "startwindow"
 				}
@@ -265,17 +278,17 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 248.0, 560.0, 48.0, 138.0 ],
+					"patching_rect" : [ 248.0, 580.0, 48.0, 138.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.gain~",
-							"parameter_shortname" : "live.gain~",
-							"parameter_type" : 0,
-							"parameter_mmin" : -70.0,
 							"parameter_mmax" : 6.0,
+							"parameter_shortname" : "live.gain~",
+							"parameter_unitstyle" : 4,
+							"parameter_type" : 0,
 							"parameter_initial_enable" : 1,
-							"parameter_initial" : [ -100 ],
-							"parameter_unitstyle" : 4
+							"parameter_mmin" : -70.0,
+							"parameter_longname" : "live.gain~",
+							"parameter_initial" : [ -100 ]
 						}
 
 					}
@@ -291,7 +304,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 248.0, 716.0, 37.0, 22.0 ],
+					"patching_rect" : [ 248.0, 736.0, 37.0, 22.0 ],
 					"style" : "",
 					"text" : "dac~"
 				}
@@ -303,7 +316,7 @@
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 305.5, 568.0, 143.5, 89.0 ],
+					"patching_rect" : [ 305.5, 588.0, 143.5, 89.0 ],
 					"style" : ""
 				}
 
@@ -344,7 +357,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 276.5, 158.5, 235.0, 156.0 ],
-					"text" : "/file/name : \"drumloop.aif\",\n/buffer/hopsize : 256,\n/buffer/fftsize : 1024,\n/buffer/name : \"1396-buffer\",\n/buffer/nsamples : 153400,\n/buffer/ms : 3478.46,\n/buffer/samplerate : 44100.,\n/buffer/selected/start : 0,\n/buffer/selected/end : 1,\n/buffer/selected/length : 1,\n/buffer/selected/ms : 3478.46,\n/buffer/trigger : 0",
+					"text" : "/file/name : \"drumloop.aif\",\n/buffer/hopsize : 256,\n/buffer/fftsize : 1024,\n/buffer/name : \"1012-buffer\",\n/buffer/nsamples : 153400,\n/buffer/ms : 3478.46,\n/buffer/samplerate : 44100.,\n/buffer/selected/start : 0,\n/buffer/selected/end : 1,\n/buffer/selected/length : 1,\n/buffer/selected/ms : 3478.46,\n/buffer/trigger : 0",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -400,17 +413,20 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-1", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -418,8 +434,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-22", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-10", 1 ]
 				}
 
@@ -427,8 +441,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 2 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-11", 1 ]
 				}
 
@@ -436,8 +448,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-11", 0 ]
 				}
 
@@ -445,8 +455,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-14", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 0,
 					"source" : [ "obj-15", 0 ]
 				}
@@ -455,8 +463,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 1,
 					"source" : [ "obj-15", 0 ]
 				}
@@ -465,8 +471,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-16", 0 ]
 				}
 
@@ -474,8 +478,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 0,
 					"source" : [ "obj-18", 1 ]
 				}
@@ -484,8 +486,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 1,
 					"source" : [ "obj-18", 1 ]
 				}
@@ -494,8 +494,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-18", 0 ]
 				}
 
@@ -503,17 +501,20 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-19", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 3 ],
+					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 0,
 					"source" : [ "obj-22", 0 ]
 				}
@@ -522,8 +523,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 1,
 					"source" : [ "obj-22", 0 ]
 				}
@@ -532,8 +531,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-25", 0 ]
 				}
 
@@ -541,17 +538,20 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-26", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"source" : [ "obj-28", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-3", 0 ]
 				}
 
@@ -559,8 +559,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-25", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-31", 0 ]
 				}
 
@@ -568,8 +566,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -577,8 +573,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 1,
 					"source" : [ "obj-6", 1 ]
 				}
@@ -587,8 +581,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 0,
 					"source" : [ "obj-6", 1 ]
 				}
@@ -597,8 +589,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-25", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -606,8 +596,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -619,67 +607,78 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "m158.phase.range~.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/course/dev/phase-offset",
+				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/course/dev/phase-offset",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "shot-phase.range.gendsp",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/course/dev/phase-offset",
+				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/course/dev/phase-offset",
+				"patcherrelativepath" : ".",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "m158.loadbang.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/internal",
+				"patcherrelativepath" : "../../../internal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.doc.handler.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/internal",
+				"patcherrelativepath" : "../../../internal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "m158.o.buffer~.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/sound-engines/samples",
+				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/sound-engines/samples",
+				"patcherrelativepath" : "../../../sound-engines/samples",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.deferlow.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/internal",
+				"patcherrelativepath" : "../../../internal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "m158.o.gui.dropfile.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gui",
+				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/gui",
+				"patcherrelativepath" : "../../../gui",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "m158.o.buffer.player~.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/sound-engines/samples",
+				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/sound-engines/samples",
+				"patcherrelativepath" : "../../../sound-engines/samples",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "m158.o.wave~.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/sound-engines/samples",
+				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/sound-engines/samples",
+				"patcherrelativepath" : "../../../sound-engines/samples",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "m158.o.phase.scale~.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
+				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/signal",
+				"patcherrelativepath" : "../../../signal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "m158.hp~.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/sound-engines/filter",
+				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/sound-engines/filter",
+				"patcherrelativepath" : "../../../sound-engines/filter",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -728,7 +727,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "jit.-.mxo",
+				"name" : "jit.*.mxo",
 				"type" : "iLaX"
 			}
 , 			{
