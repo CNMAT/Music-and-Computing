@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 97.0, 66.0, 1160.0, 757.0 ],
+		"rect" : [ 97.0, 66.0, 1148.0, 766.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -54,7 +54,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 97.0, 92.0, 1160.0, 731.0 ],
+						"rect" : [ 0.0, 26.0, 1148.0, 740.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -344,7 +344,6 @@
 					}
 ,
 					"patching_rect" : [ 424.0, 240.776978, 132.0, 22.0 ],
-					"presentation_rect" : [ 363.0, 212.776978, 0.0, 0.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -375,7 +374,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1160.0, 731.0 ],
+						"rect" : [ 97.0, 92.0, 1148.0, 740.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -405,13 +404,45 @@
 						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-10",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 138.0, 36.5, 269.0, 20.0 ],
+									"presentation_rect" : [ 522.0, 52.5, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "note that the duration is separate from the points"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 0,
+									"fontsize" : 12.0,
+									"id" : "obj-5",
+									"linecount" : 3,
+									"maxclass" : "o.compose",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 307.0, 65.5, 203.0, 51.0 ],
+									"presentation_rect" : [ 313.0, 37.0, 0.0, 0.0 ],
+									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 36, 47, 112, 111, 105, 110, 116, 115, 47, 120, 0, 0, 0, 44, 105, 100, 105, 0, 0, 0, 0, 0, 0, 0, 0, 63, -32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 32, 47, 112, 111, 105, 110, 116, 115, 47, 121, 0, 0, 0, 44, 105, 105, 105, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 20, 47, 100, 117, 114, 97, 116, 105, 111, 110, 0, 0, 0, 44, 105, 0, 0, 0, 0, 1, 44 ],
+									"saved_bundle_length" : 116,
+									"text" : "/points/x : [0, 0.5, 1],\n/points/y : [0, 1, 0],\n/duration : 300",
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"bubble" : 1,
 									"id" : "obj-19",
 									"linecount" : 6,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 735.0, 140.5, 405.0, 91.0 ],
+									"patching_rect" : [ 726.0, 176.5, 405.0, 91.0 ],
 									"style" : "",
 									"text" : "to convert from points to line~ format, we need to find the delta between points and then multiply by the duration (since line~ doesn't have lookup capabilites like m158.o.points.buffer~ does).\n\nlambda() returns the last value in it's sequence to map, which then makes a new list out of the results."
 								}
@@ -423,7 +454,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 308.5, 68.0, 256.0, 20.0 ],
+									"patching_rect" : [ 357.0, 126.5, 256.0, 20.0 ],
 									"style" : "",
 									"text" : "example of how to convert from points to line~"
 								}
@@ -434,13 +465,13 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-21",
-									"linecount" : 11,
+									"linecount" : 9,
 									"maxclass" : "o.expr.codebox",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 84.0, 93.0, 676.0, 168.0 ],
-									"text" : "/duration = 1000,\n\n/idx = aseq(1, length(/points/x) - 1),\n\n# get deltas between each point\n/delta_ms = map( lambda([i], (/points/x[[i]] - /points/x[[i-1]]) * /duration ), /idx),\n\n# add a zero to the beginning (since there's no interploation time to get there)\n/delta_ms = [0, /delta_ms],\n\n/line = interleave(/points/y, /delta_ms)",
+									"patching_rect" : [ 75.0, 151.5, 676.0, 141.0 ],
+									"text" : "/idx = aseq(1, length(/points/x) - 1),\n\n# get deltas between each point\n/delta_ms = map( lambda([i], (/points/x[[i]] - /points/x[[i-1]]) * /duration ), /idx),\n\n# add a zero to the beginning (since there's no interploation time to get there)\n/delta_ms = [0, /delta_ms],\n\n/line = interleave(/points/y, /delta_ms)",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -451,7 +482,7 @@
 									"maxclass" : "scope~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 84.0, 457.723022, 130.0, 130.0 ],
+									"patching_rect" : [ 75.0, 493.723022, 130.0, 130.0 ],
 									"style" : ""
 								}
 
@@ -462,7 +493,7 @@
 									"maxclass" : "scope~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 414.0, 457.723022, 130.0, 130.0 ],
+									"patching_rect" : [ 405.0, 493.723022, 130.0, 130.0 ],
 									"style" : ""
 								}
 
@@ -474,7 +505,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 550.0, 417.723022, 24.0, 24.0 ],
+									"patching_rect" : [ 541.0, 453.723022, 24.0, 24.0 ],
 									"style" : ""
 								}
 
@@ -486,7 +517,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "FullPacket" ],
-									"patching_rect" : [ 414.0, 292.723022, 100.0, 22.0 ],
+									"patching_rect" : [ 405.0, 328.723022, 100.0, 22.0 ],
 									"style" : "",
 									"text" : "o.route /line"
 								}
@@ -499,7 +530,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 316.0, 408.723022, 24.0, 24.0 ],
+									"patching_rect" : [ 307.0, 444.723022, 24.0, 24.0 ],
 									"style" : ""
 								}
 
@@ -511,7 +542,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "bang" ],
-									"patching_rect" : [ 105.666672, 363.723022, 44.0, 22.0 ],
+									"patching_rect" : [ 96.666672, 399.723022, 44.0, 22.0 ],
 									"style" : "",
 									"text" : "edge~"
 								}
@@ -524,7 +555,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "" ],
-									"patching_rect" : [ 84.0, 288.723022, 165.0, 22.0 ],
+									"patching_rect" : [ 75.0, 324.723022, 165.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.click~ /duration"
 								}
@@ -537,7 +568,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "signal", "signal", "signal", "" ],
-									"patching_rect" : [ 84.0, 330.723022, 84.0, 22.0 ],
+									"patching_rect" : [ 75.0, 366.723022, 84.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.phase~"
 								}
@@ -553,7 +584,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 617.5, 314.723022, 338.0, 92.0 ],
+									"patching_rect" : [ 608.5, 350.723022, 338.0, 92.0 ],
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 36, 47, 112, 111, 105, 110, 116, 115, 47, 120, 0, 0, 0, 44, 105, 100, 105, 0, 0, 0, 0, 0, 0, 0, 0, 63, -32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 32, 47, 112, 111, 105, 110, 116, 115, 47, 121, 0, 0, 0, 44, 105, 105, 105, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 20, 47, 100, 117, 114, 97, 116, 105, 111, 110, 0, 0, 0, 44, 105, 0, 0, 0, 0, 3, -24, 0, 0, 0, 20, 47, 105, 100, 120, 0, 0, 0, 0, 44, 105, 105, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 40, 47, 100, 101, 108, 116, 97, 95, 109, 115, 0, 0, 0, 44, 105, 100, 100, 0, 0, 0, 0, 0, 0, 0, 0, 64, 127, 64, 0, 0, 0, 0, 0, 64, 127, 64, 0, 0, 0, 0, 0, 0, 0, 0, 48, 47, 108, 105, 110, 101, 0, 0, 0, 44, 105, 105, 105, 100, 105, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 64, 127, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64, 127, 64, 0, 0, 0, 0, 0 ],
 									"saved_bundle_length" : 236,
 									"text" : "/points/x : [0, 0.5, 1],\n/points/y : [0, 1, 0],\n/duration : 1000,\n/idx : [1, 2],\n/delta_ms : [0, 500., 500.],\n/line : [0, 0, 1, 500., 0, 500.]",
@@ -566,15 +597,15 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-13",
-									"linecount" : 2,
+									"linecount" : 3,
 									"maxclass" : "o.compose",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 84.0, 39.0, 203.0, 38.0 ],
-									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 36, 47, 112, 111, 105, 110, 116, 115, 47, 120, 0, 0, 0, 44, 105, 100, 105, 0, 0, 0, 0, 0, 0, 0, 0, 63, -32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 32, 47, 112, 111, 105, 110, 116, 115, 47, 121, 0, 0, 0, 44, 105, 105, 105, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0 ],
-									"saved_bundle_length" : 92,
-									"text" : "/points/x : [0, 0.5, 1],\n/points/y : [0, 1, 0]",
+									"patching_rect" : [ 75.0, 65.5, 203.0, 51.0 ],
+									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 36, 47, 112, 111, 105, 110, 116, 115, 47, 120, 0, 0, 0, 44, 105, 100, 105, 0, 0, 0, 0, 0, 0, 0, 0, 63, -32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 32, 47, 112, 111, 105, 110, 116, 115, 47, 121, 0, 0, 0, 44, 105, 105, 105, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 20, 47, 100, 117, 114, 97, 116, 105, 111, 110, 0, 0, 0, 44, 105, 0, 0, 0, 0, 3, -24 ],
+									"saved_bundle_length" : 116,
+									"text" : "/points/x : [0, 0.5, 1],\n/points/y : [0, 1, 0],\n/duration : 1000",
 									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
@@ -586,7 +617,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "bang" ],
-									"patching_rect" : [ 414.0, 331.723022, 36.0, 22.0 ],
+									"patching_rect" : [ 405.0, 367.723022, 36.0, 22.0 ],
 									"style" : "",
 									"text" : "line~"
 								}
@@ -599,7 +630,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 6,
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
-									"patching_rect" : [ 84.0, 417.723022, 165.0, 22.0 ],
+									"patching_rect" : [ 75.0, 453.723022, 165.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.points.buffer~ /points"
 								}
@@ -612,7 +643,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 892.0, 473.723022, 33.0, 22.0 ],
+									"patching_rect" : [ 883.0, 509.723022, 33.0, 22.0 ],
 									"style" : "",
 									"text" : "stop"
 								}
@@ -625,7 +656,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 811.0, 473.723022, 74.0, 22.0 ],
+									"patching_rect" : [ 802.0, 509.723022, 74.0, 22.0 ],
 									"style" : "",
 									"text" : "startwindow"
 								}
@@ -637,7 +668,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 811.0, 515.723022, 37.0, 22.0 ],
+									"patching_rect" : [ 802.0, 551.723022, 37.0, 22.0 ],
 									"style" : "",
 									"text" : "dac~"
 								}
@@ -651,7 +682,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 762.5, 29.5, 308.0, 27.0 ],
+									"patching_rect" : [ 749.5, 47.5, 308.0, 27.0 ],
 									"style" : "",
 									"text" : "absolute vs relative x (time) values"
 								}
@@ -747,6 +778,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-21", 0 ],
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-18", 2 ],
 									"source" : [ "obj-7", 1 ]
 								}
@@ -770,7 +808,6 @@
 					}
 ,
 					"patching_rect" : [ 389.0, 209.776978, 132.0, 22.0 ],
-					"presentation_rect" : [ 328.0, 181.776978, 0.0, 0.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -801,7 +838,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1160.0, 731.0 ],
+						"rect" : [ 0.0, 26.0, 1148.0, 740.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1221,7 +1258,6 @@
 					}
 ,
 					"patching_rect" : [ 359.0, 174.776978, 116.0, 22.0 ],
-					"presentation_rect" : [ 298.0, 146.776978, 0.0, 0.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1252,7 +1288,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1160.0, 731.0 ],
+						"rect" : [ 0.0, 26.0, 1148.0, 740.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1856,7 +1892,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u919004319"
+									"varname" : "u406003483"
 								}
 
 							}
@@ -2167,7 +2203,6 @@
 					}
 ,
 					"patching_rect" : [ 272.0, 111.776978, 49.0, 22.0 ],
-					"presentation_rect" : [ 272.0, 111.776978, 0.0, 0.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2198,7 +2233,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1160.0, 731.0 ],
+						"rect" : [ 0.0, 26.0, 1148.0, 740.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2582,7 +2617,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u007003782"
+									"varname" : "u065003722"
 								}
 
 							}
