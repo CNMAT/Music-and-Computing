@@ -54,7 +54,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1148.0, 740.0 ],
+						"rect" : [ 97.0, 92.0, 1148.0, 740.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -102,9 +102,9 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 395.5, 128.0, 307.0, 20.0 ],
+									"patching_rect" : [ 371.0, 132.0, 387.0, 20.0 ],
 									"style" : "",
-									"text" : "quick example of using relative times with points.buffer~"
+									"text" : "quick example of using line~ esque durational times with points.buffer~"
 								}
 
 							}
@@ -374,7 +374,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 97.0, 92.0, 1148.0, 740.0 ],
+						"rect" : [ 0.0, 26.0, 1148.0, 740.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -409,7 +409,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 138.0, 36.5, 269.0, 20.0 ],
-									"presentation_rect" : [ 522.0, 52.5, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "note that the duration is separate from the points"
 								}
@@ -426,7 +425,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 307.0, 65.5, 203.0, 51.0 ],
-									"presentation_rect" : [ 313.0, 37.0, 0.0, 0.0 ],
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 36, 47, 112, 111, 105, 110, 116, 115, 47, 120, 0, 0, 0, 44, 105, 100, 105, 0, 0, 0, 0, 0, 0, 0, 0, 63, -32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 32, 47, 112, 111, 105, 110, 116, 115, 47, 121, 0, 0, 0, 44, 105, 105, 105, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 20, 47, 100, 117, 114, 97, 116, 105, 111, 110, 0, 0, 0, 44, 105, 0, 0, 0, 0, 1, 44 ],
 									"saved_bundle_length" : 116,
 									"text" : "/points/x : [0, 0.5, 1],\n/points/y : [0, 1, 0],\n/duration : 300",
@@ -1892,7 +1890,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u406003483"
+									"varname" : "u112005095"
 								}
 
 							}
@@ -2617,7 +2615,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u065003722"
+									"varname" : "u047005334"
 								}
 
 							}
