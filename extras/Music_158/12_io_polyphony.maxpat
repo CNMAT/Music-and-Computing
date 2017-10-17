@@ -621,7 +621,7 @@
 																					"numoutlets" : 0,
 																					"patching_rect" : [ 499.0, 396.5, 252.0, 51.0 ],
 																					"style" : "",
-																					"text" : "The note on and note off envlope shapes are different, so we look them up with this points.buffer~ with the index inlet."
+																					"text" : "The note on and note off envlope shapes are different, so we look them up with this phase.points~ with the index inlet."
 																				}
 
 																			}
@@ -635,7 +635,7 @@
 																					"numoutlets" : 0,
 																					"patching_rect" : [ 499.0, 233.0, 228.0, 51.0 ],
 																					"style" : "",
-																					"text" : "The note on and note off durations are different, so we look them up with this points.buffer~ set to @normal_x 0"
+																					"text" : "The note on and note off durations are different, so we look them up with this phase.points~ set to @normal_x 0"
 																				}
 
 																			}
@@ -3150,7 +3150,7 @@
 																					"numoutlets" : 0,
 																					"patching_rect" : [ 499.0, 396.5, 252.0, 51.0 ],
 																					"style" : "",
-																					"text" : "The note on and note off envlope shapes are different, so we look them up with this points.buffer~ with the index inlet."
+																					"text" : "The note on and note off envlope shapes are different, so we look them up with this phase.points~ with the index inlet."
 																				}
 
 																			}
@@ -3164,7 +3164,7 @@
 																					"numoutlets" : 0,
 																					"patching_rect" : [ 499.0, 233.0, 228.0, 51.0 ],
 																					"style" : "",
-																					"text" : "The note on and note off durations are different, so we look them up with this points.buffer~ set to @normal_x 0"
+																					"text" : "The note on and note off durations are different, so we look them up with this phase.points~ set to @normal_x 0"
 																				}
 
 																			}
@@ -5679,7 +5679,7 @@
 																					"numoutlets" : 0,
 																					"patching_rect" : [ 499.0, 396.5, 252.0, 51.0 ],
 																					"style" : "",
-																					"text" : "The note on and note off envlope shapes are different, so we look them up with this points.buffer~ with the index inlet."
+																					"text" : "The note on and note off envlope shapes are different, so we look them up with this phase.points~ with the index inlet."
 																				}
 
 																			}
@@ -5693,7 +5693,7 @@
 																					"numoutlets" : 0,
 																					"patching_rect" : [ 499.0, 233.0, 228.0, 51.0 ],
 																					"style" : "",
-																					"text" : "The note on and note off durations are different, so we look them up with this points.buffer~ set to @normal_x 0"
+																					"text" : "The note on and note off durations are different, so we look them up with this phase.points~ set to @normal_x 0"
 																				}
 
 																			}
@@ -8208,7 +8208,7 @@
 																					"numoutlets" : 0,
 																					"patching_rect" : [ 499.0, 396.5, 252.0, 51.0 ],
 																					"style" : "",
-																					"text" : "The note on and note off envlope shapes are different, so we look them up with this points.buffer~ with the index inlet."
+																					"text" : "The note on and note off envlope shapes are different, so we look them up with this phase.points~ with the index inlet."
 																				}
 
 																			}
@@ -8222,7 +8222,7 @@
 																					"numoutlets" : 0,
 																					"patching_rect" : [ 499.0, 233.0, 228.0, 51.0 ],
 																					"style" : "",
-																					"text" : "The note on and note off durations are different, so we look them up with this points.buffer~ set to @normal_x 0"
+																					"text" : "The note on and note off durations are different, so we look them up with this phase.points~ set to @normal_x 0"
 																				}
 
 																			}
@@ -10737,7 +10737,7 @@
 																					"numoutlets" : 0,
 																					"patching_rect" : [ 499.0, 396.5, 252.0, 51.0 ],
 																					"style" : "",
-																					"text" : "The note on and note off envlope shapes are different, so we look them up with this points.buffer~ with the index inlet."
+																					"text" : "The note on and note off envlope shapes are different, so we look them up with this phase.points~ with the index inlet."
 																				}
 
 																			}
@@ -10751,7 +10751,7 @@
 																					"numoutlets" : 0,
 																					"patching_rect" : [ 499.0, 233.0, 228.0, 51.0 ],
 																					"style" : "",
-																					"text" : "The note on and note off durations are different, so we look them up with this points.buffer~ set to @normal_x 0"
+																					"text" : "The note on and note off durations are different, so we look them up with this phase.points~ set to @normal_x 0"
 																				}
 
 																			}
@@ -100415,7 +100415,7 @@
 													"numoutlets" : 0,
 													"patching_rect" : [ 499.0, 396.5, 252.0, 51.0 ],
 													"style" : "",
-													"text" : "The note on and note off envlope shapes are different, so we look them up with this points.buffer~ with the index inlet."
+													"text" : "The note on and note off envlope shapes are different, so we look them up with this phase.points~ with the index inlet."
 												}
 
 											}
@@ -100429,7 +100429,7 @@
 													"numoutlets" : 0,
 													"patching_rect" : [ 499.0, 233.0, 228.0, 51.0 ],
 													"style" : "",
-													"text" : "The note on and note off durations are different, so we look them up with this points.buffer~ set to @normal_x 0"
+													"text" : "The note on and note off durations are different, so we look them up with this phase.points~ set to @normal_x 0"
 												}
 
 											}
@@ -101368,7 +101368,7 @@
 													"numoutlets" : 0,
 													"patching_rect" : [ 499.0, 396.5, 252.0, 51.0 ],
 													"style" : "",
-													"text" : "The note on and note off envlope shapes are different, so we look them up with this points.buffer~ with the index inlet."
+													"text" : "The note on and note off envlope shapes are different, so we look them up with this phase.points~ with the index inlet."
 												}
 
 											}
@@ -101382,7 +101382,7 @@
 													"numoutlets" : 0,
 													"patching_rect" : [ 499.0, 233.0, 228.0, 51.0 ],
 													"style" : "",
-													"text" : "The note on and note off durations are different, so we look them up with this points.buffer~ set to @normal_x 0"
+													"text" : "The note on and note off durations are different, so we look them up with this phase.points~ set to @normal_x 0"
 												}
 
 											}
@@ -102321,7 +102321,7 @@
 													"numoutlets" : 0,
 													"patching_rect" : [ 499.0, 396.5, 252.0, 51.0 ],
 													"style" : "",
-													"text" : "The note on and note off envlope shapes are different, so we look them up with this points.buffer~ with the index inlet."
+													"text" : "The note on and note off envlope shapes are different, so we look them up with this phase.points~ with the index inlet."
 												}
 
 											}
@@ -102335,7 +102335,7 @@
 													"numoutlets" : 0,
 													"patching_rect" : [ 499.0, 233.0, 228.0, 51.0 ],
 													"style" : "",
-													"text" : "The note on and note off durations are different, so we look them up with this points.buffer~ set to @normal_x 0"
+													"text" : "The note on and note off durations are different, so we look them up with this phase.points~ set to @normal_x 0"
 												}
 
 											}
@@ -103274,7 +103274,7 @@
 													"numoutlets" : 0,
 													"patching_rect" : [ 499.0, 396.5, 252.0, 51.0 ],
 													"style" : "",
-													"text" : "The note on and note off envlope shapes are different, so we look them up with this points.buffer~ with the index inlet."
+													"text" : "The note on and note off envlope shapes are different, so we look them up with this phase.points~ with the index inlet."
 												}
 
 											}
@@ -103288,7 +103288,7 @@
 													"numoutlets" : 0,
 													"patching_rect" : [ 499.0, 233.0, 228.0, 51.0 ],
 													"style" : "",
-													"text" : "The note on and note off durations are different, so we look them up with this points.buffer~ set to @normal_x 0"
+													"text" : "The note on and note off durations are different, so we look them up with this phase.points~ set to @normal_x 0"
 												}
 
 											}
@@ -104227,7 +104227,7 @@
 													"numoutlets" : 0,
 													"patching_rect" : [ 499.0, 396.5, 252.0, 51.0 ],
 													"style" : "",
-													"text" : "The note on and note off envlope shapes are different, so we look them up with this points.buffer~ with the index inlet."
+													"text" : "The note on and note off envlope shapes are different, so we look them up with this phase.points~ with the index inlet."
 												}
 
 											}
@@ -104241,7 +104241,7 @@
 													"numoutlets" : 0,
 													"patching_rect" : [ 499.0, 233.0, 228.0, 51.0 ],
 													"style" : "",
-													"text" : "The note on and note off durations are different, so we look them up with this points.buffer~ set to @normal_x 0"
+													"text" : "The note on and note off durations are different, so we look them up with this phase.points~ set to @normal_x 0"
 												}
 
 											}

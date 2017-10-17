@@ -107,7 +107,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 321.0, 204.766693, 370.0, 342.0 ],
 					"style" : "",
-					"text" : "The @interp 0 attribute makes o.points.buffer~ behave differently:\n\nThe points are no longer smoothly interpolated. Instead of sloping lines, we end up with flat lines that hold the point value for the duration of each note.\n\nThis is useful when we are trying to set values that should remain constant for the duration of the event.\n\nThis is subtly different from @step 1. The @step mode treats all of the points as step sequencer instructions, making the last point last for the duration corresponding to the time value in /x.\n\nThe @interp 0 disregards the last point. This occurs because the last point's x value is looked up when phase~ outputs 1. Phase wraps around immediately when 1 is reached. Therefore, the last point's y-value will exist for 0 samples, making it effectively disregarded.\n\nNote that when @interp 1 is set (default operation), the behavior is similar for the last value. However, because we are interpolating between values, the resulting output will approach 0.5 (or 0.9 in the bottom-right example).\n\nThe rest of the operation is already covered in the introduction."
+					"text" : "The @interp 0 attribute makes o.phase.points~ behave differently:\n\nThe points are no longer smoothly interpolated. Instead of sloping lines, we end up with flat lines that hold the point value for the duration of each note.\n\nThis is useful when we are trying to set values that should remain constant for the duration of the event.\n\nThis is subtly different from @step 1. The @step mode treats all of the points as step sequencer instructions, making the last point last for the duration corresponding to the time value in /x.\n\nThe @interp 0 disregards the last point. This occurs because the last point's x value is looked up when phase~ outputs 1. Phase wraps around immediately when 1 is reached. Therefore, the last point's y-value will exist for 0 samples, making it effectively disregarded.\n\nNote that when @interp 1 is set (default operation), the behavior is similar for the last value. However, because we are interpolating between values, the resulting output will approach 0.5 (or 0.9 in the bottom-right example).\n\nThe rest of the operation is already covered in the introduction."
 				}
 
 			}
@@ -239,7 +239,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 33.0, 30.666656, 265.0, 27.0 ],
 					"style" : "",
-					"text" : "m158 review: o.points.buffer~"
+					"text" : "m158 review: o.phase.points~"
 				}
 
 			}

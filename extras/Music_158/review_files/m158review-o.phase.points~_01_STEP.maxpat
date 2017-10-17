@@ -88,7 +88,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 322.0, 204.766693, 335.0, 208.0 ],
 					"style" : "",
-					"text" : "The @step 1 attribute makes o.points.buffer~ behave differently:\n\nThe points are no longer smoothly interpolated. Instead of sloping lines, we end up with flat lines that hold the point value for the duration of each note.\n\nThis is useful when we are trying to set values that should remain constant for the duration of the event.\n\nNote that specifying @step 0 is identical to the default operation of o.points.buffer~.\n\nThe rest of the operation is already covered in the introduction."
+					"text" : "The @step 1 attribute makes o.phase.points~ behave differently:\n\nThe points are no longer smoothly interpolated. Instead of sloping lines, we end up with flat lines that hold the point value for the duration of each note.\n\nThis is useful when we are trying to set values that should remain constant for the duration of the event.\n\nNote that specifying @step 0 is identical to the default operation of o.phase.points~.\n\nThe rest of the operation is already covered in the introduction."
 				}
 
 			}
@@ -220,7 +220,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 33.0, 30.666656, 265.0, 27.0 ],
 					"style" : "",
-					"text" : "m158 review: o.points.buffer~"
+					"text" : "m158 review: o.phase.points~"
 				}
 
 			}

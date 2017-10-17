@@ -45,7 +45,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 560.0, 343.0, 267.0, 60.0 ],
 					"style" : "",
-					"text" : "by using the same phase to drive the buffer.player~ and points.buffer~ the two will be ensured to start and stop at exactly the same time."
+					"text" : "by using the same phase to drive the buffer.player~ and phase.points~ the two will be ensured to start and stop at exactly the same time."
 				}
 
 			}

@@ -1133,7 +1133,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 253.0, 607.0, 103.0, 20.0 ],
 					"style" : "",
-					"text" : "o.points.phase~"
+					"text" : "o.phase.points~"
 				}
 
 			}

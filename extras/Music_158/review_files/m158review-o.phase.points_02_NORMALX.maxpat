@@ -415,7 +415,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 319.0, 250.0, 321.0, 181.0 ],
 					"style" : "",
-					"text" : "The @normal_x attribute makes o.points.buffer~ behave differently:\n\nWhen o.points.buffer~ gets a number value encoded in audio signal, it treats it as an /x value.\n\nIt looks up the corresponding /y value from /whatever/y and sends it out as a click with the appropriate value.\n\nNote that in this mode, relative phase timing is used to generate interpolated y values whenever /x values are undefined. Click on the bundle containing /my/address/x : [0, 4, 5] and click on various indices."
+					"text" : "The @normal_x attribute makes o.phase.points~ behave differently:\n\nWhen o.phase.points~ gets a number value encoded in audio signal, it treats it as an /x value.\n\nIt looks up the corresponding /y value from /whatever/y and sends it out as a click with the appropriate value.\n\nNote that in this mode, relative phase timing is used to generate interpolated y values whenever /x values are undefined. Click on the bundle containing /my/address/x : [0, 4, 5] and click on various indices."
 				}
 
 			}
@@ -495,7 +495,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 33.0, 30.666656, 265.0, 27.0 ],
 					"style" : "",
-					"text" : "m158 review: o.points.buffer~"
+					"text" : "m158 review: o.phase.points~"
 				}
 
 			}

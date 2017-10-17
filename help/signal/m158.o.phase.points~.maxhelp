@@ -104,7 +104,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 371.0, 132.0, 387.0, 20.0 ],
 									"style" : "",
-									"text" : "quick example of using line~ esque durational times with points.buffer~"
+									"text" : "quick example of using line~ esque durational times with phase.points~"
 								}
 
 							}
@@ -899,7 +899,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 480.0, 217.5, 371.0, 91.0 ],
 									"style" : "",
-									"text" : "To make m158.points.buffer~ interpret line~ format messages, you need to convert the delta times to absolute times. Here we iterate through the list and accumulate the delta times.\n\nlambda() returns the last value in it's sequence to map, which then makes a new list out of the results."
+									"text" : "To make m158.o.phase.points~ interpret line~ format messages, you need to convert the delta times to absolute times. Here we iterate through the list and accumulate the delta times.\n\nlambda() returns the last value in it's sequence to map, which then makes a new list out of the results."
 								}
 
 							}
@@ -1125,7 +1125,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 667.5, 65.5, 364.0, 74.0 ],
 									"style" : "",
-									"text" : "m158.points.buffer~ uses *absolute* x values (which often is used to represent time points), whereas line~ uses *relative* x values. \n\nFor line~, the format is an interleaved list of target values (Y) and the time to take to get there (delta X)."
+									"text" : "m158.o.phase.points~ uses *absolute* x values (which often is used to represent time points), whereas line~ uses *relative* x values. \n\nFor line~, the format is an interleaved list of target values (Y) and the time to take to get there (delta X)."
 								}
 
 							}

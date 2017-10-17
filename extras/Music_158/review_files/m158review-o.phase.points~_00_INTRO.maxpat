@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 2,
-			"revision" : 5,
+			"minor" : 3,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -55,8 +55,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 41.666656, 383.766693, 266.0, 141.0 ],
-					"presentation_rect" : [ 44.0, 383.766693, 0.0, 0.0 ],
+					"patching_rect" : [ 41.666656, 383.766693, 269.0, 141.0 ],
 					"style" : "",
 					"text" : "On the left, you see the result. On the right, you can see \"relative phase,\" which are phase ramps generated for the duration of each point.\n\nIn practice, we can use the relative phase to drive the timing of each individual event. We can use o.phase.click~ to generate clicks once each event completes. We can also use the phase to drive other things: sub-sequences, timbre shapes, etc."
 				}
@@ -73,7 +72,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 436.666656, 153.0, 217.0, 38.0 ],
-					"presentation_rect" : [ 291.666656, 97.0, 0.0, 0.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 36, 47, 109, 121, 47, 97, 100, 100, 114, 101, 115, 115, 47, 120, 0, 0, 0, 44, 105, 105, 105, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 5, 0, 0, 0, 40, 47, 109, 121, 47, 97, 100, 100, 114, 101, 115, 115, 47, 121, 0, 0, 0, 44, 105, 105, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 63, -32, 0, 0, 0, 0, 0, 0 ],
 					"saved_bundle_length" : 100,
 					"text" : "/my/address/x : [0, 4, 5],\n/my/address/y : [0, 1, 0.5]",
@@ -88,7 +86,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 322.0, 427.766693, 330.0, 154.0 ],
+					"patching_rect" : [ 322.0, 427.766693, 330.0, 141.0 ],
 					"style" : "",
 					"text" : "Those points may be written by hand (see above).\n\nThose points may be given to us by o.gui.* objects:\n\n* m158.o.gui.function\n* m158.o.gui.live.grid\n* m158.o.gui.table\n\nRegardless of where the points come from, their final representation will always yield an /x & /y subaddresses.\n"
 				}
@@ -103,7 +101,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 322.0, 204.766693, 330.0, 221.0 ],
 					"style" : "",
-					"text" : "m158.o.phase.points~ is used to retrieve point values from collections of x & y points.\n\nThe collection /something is represented by two addresses:\n\n/something/x -- contains TIME values\n/something/y -- contains DATA values\n\nBy default, points.buffer~ will smoothly change from one y-value to another y-value.\n\nThe x-values, by default, are converted to proportions of the total time. Above, /x : [0, 1, 2] means that 0, 1, and 0.5 will be equidistant from each other. On the other hand, /x : [0, 4, 5] means that the resulting ramp will take 4 times as long to get from 0 to 1 as it would to get from 1 to 0.5."
+					"text" : "m158.o.phase.points~ is used to retrieve point values from collections of x & y points.\n\nThe collection /something is represented by two addresses:\n\n/something/x -- contains TIME values\n/something/y -- contains DATA values\n\nBy default, phase.points~ will smoothly change from one y-value to another y-value.\n\nThe x-values, by default, are converted to proportions of the total time. Above, /x : [0, 1, 2] means that 0, 1, and 0.5 will be equidistant from each other. On the other hand, /x : [0, 4, 5] means that the resulting ramp will take 4 times as long to get from 0 to 1 as it would to get from 1 to 0.5."
 				}
 
 			}
@@ -128,7 +126,6 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 177.666656, 245.0, 130.0, 130.0 ],
-					"presentation_rect" : [ 177.666656, 200.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -220,7 +217,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 6,
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
-					"patching_rect" : [ 41.666656, 204.766693, 195.0, 22.0 ],
+					"patching_rect" : [ 41.666656, 204.766693, 197.0, 22.0 ],
 					"style" : "",
 					"text" : "m158.o.phase.points~ /my/address"
 				}
@@ -236,7 +233,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 33.0, 30.666656, 265.0, 27.0 ],
 					"style" : "",
-					"text" : "m158 review: o.points.buffer~"
+					"text" : "m158 review: o.phase.points~"
 				}
 
 			}
@@ -244,8 +241,6 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-14", 0 ]
 				}
 
@@ -253,8 +248,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 2 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-19", 0 ]
 				}
 
@@ -262,8 +255,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 2 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -271,8 +262,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -280,8 +269,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -289,8 +276,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-7", 0 ]
 				}
 
@@ -298,8 +283,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-7", 1 ]
 				}
 
@@ -307,8 +290,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -316,37 +297,43 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "m158.o.phase.points~.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
+				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/signal",
+				"patcherrelativepath" : "../../../patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "m158.loadbang.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/internal",
+				"patcherrelativepath" : "../../../patchers/internal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "phase.points.gendsp",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/code",
+				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/code",
+				"patcherrelativepath" : "../../../code",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.doc.handler.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/internal",
+				"patcherrelativepath" : "../../../patchers/internal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "m158.phase~.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
+				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/signal",
+				"patcherrelativepath" : "../../../patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "shot-ms-phasor.gendsp",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/code",
+				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/code",
+				"patcherrelativepath" : "../../../code",
 				"type" : "gDSP",
 				"implicit" : 1
 			}

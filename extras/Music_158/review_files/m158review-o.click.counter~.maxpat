@@ -393,7 +393,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 544.0, 230.0, 377.0, 114.0 ],
 					"style" : "",
-					"text" : "m158.o.click.counter~ is often used with:\n\n1. m158.points.buffer~\n    the number click.counter~ outputs is quite useful for table lookup\n2. m158.o.granubuf~\n    the number click.counter~ outputs can be used to select a sample\n\nUse it when you want to increment a number by some step."
+					"text" : "m158.o.click.counter~ is often used with:\n\n1. m158.o.phase.points~\n    the number click.counter~ outputs is quite useful for table lookup\n2. m158.o.granubuf~\n    the number click.counter~ outputs can be used to select a sample\n\nUse it when you want to increment a number by some step."
 				}
 
 			}
