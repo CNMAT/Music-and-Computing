@@ -787,7 +787,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 904.5, 209.0, 184.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.buffer~ /seq/step"
+													"text" : "m158.o.points.phase~ /seq/step"
 												}
 
 											}
@@ -800,7 +800,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 773.5, 286.0, 315.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.buffer~ /seq/step @step 1 @normal_x 0"
+													"text" : "m158.o.points.phase~ /seq/step @step 1 @normal_x 0"
 												}
 
 											}
@@ -839,7 +839,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 904.5, 378.0, 184.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.buffer~ /seq/scale"
+													"text" : "m158.o.points.phase~ /seq/scale"
 												}
 
 											}
@@ -852,7 +852,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 773.5, 466.0, 315.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.buffer~ /seq/scale @step 1 @normal_x 0"
+													"text" : "m158.o.points.phase~ /seq/scale @step 1 @normal_x 0"
 												}
 
 											}
@@ -878,7 +878,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 369.200012, 202.0, 171.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.buffer~ /seq/div"
+													"text" : "m158.o.points.phase~ /seq/div"
 												}
 
 											}
@@ -891,7 +891,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 245.200012, 286.0, 295.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.buffer~ /seq/div @step 1 @normal_x 0"
+													"text" : "m158.o.points.phase~ /seq/div @step 1 @normal_x 0"
 												}
 
 											}
@@ -1499,7 +1499,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 498.0, 456.0, 155.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.points.buffer~ /time"
+									"text" : "m158.o.points.phase~ /time"
 								}
 
 							}
@@ -2365,7 +2365,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 435.000031, 293.266693, 205.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.points.buffer~ modes"
+									"text" : "m158.o.points.phase~ modes"
 								}
 
 							}
@@ -2444,7 +2444,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 451.666656, 555.366699, 149.0, 35.0 ],
 									"style" : "",
-									"text" : "m158.o.points.buffer~ /list @step 1 @normal_x 0"
+									"text" : "m158.o.points.phase~ /list @step 1 @normal_x 0"
 								}
 
 							}
@@ -2484,7 +2484,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 445.000031, 433.866699, 180.333313, 35.0 ],
 									"style" : "",
-									"text" : "m158.o.points.buffer~ /seq @step 1"
+									"text" : "m158.o.points.phase~ /seq @step 1"
 								}
 
 							}
@@ -2545,7 +2545,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 451.666656, 359.766693, 158.333313, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.points.buffer~ /func"
+									"text" : "m158.o.points.phase~ /func"
 								}
 
 							}
@@ -2881,7 +2881,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 376.5, 267.5, 139.399994, 49.0 ],
 									"style" : "",
-									"text" : "m158.o.points.buffer~ /seq/subdiv @step 1 @normal_x 0"
+									"text" : "m158.o.points.phase~ /seq/subdiv @step 1 @normal_x 0"
 								}
 
 							}
@@ -3002,7 +3002,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 235.5, 207.0, 209.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.points.buffer~ /seq/time"
+									"text" : "m158.o.points.phase~ /seq/time"
 								}
 
 							}
@@ -3415,7 +3415,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 441.166626, 123.0, 235.0, 160.0 ],
 									"style" : "",
-									"text" : "notice that in standard \"function\" mode, m158.o.points.buffer~ never reaches the end index point, rather it is interpolating between points.\n\nsince we know that /seq/subdiv is the same length as the /beat/pattern we can use the /seq/time index number to lookup the value in /seq/subdiv to subdivide the correct duration."
+									"text" : "notice that in standard \"function\" mode, m158.o.points.phase~ never reaches the end index point, rather it is interpolating between points.\n\nsince we know that /seq/subdiv is the same length as the /beat/pattern we can use the /seq/time index number to lookup the value in /seq/subdiv to subdivide the correct duration."
 								}
 
 							}
@@ -3468,7 +3468,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 545.0, 327.5, 139.399994, 49.0 ],
 									"style" : "",
-									"text" : "m158.o.points.buffer~ /seq/subdiv @step 1 @normal_x 0"
+									"text" : "m158.o.points.phase~ /seq/subdiv @step 1 @normal_x 0"
 								}
 
 							}
@@ -3545,7 +3545,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 396.0, 436.5, 153.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.points.buffer~ /env"
+									"text" : "m158.o.points.phase~ /env"
 								}
 
 							}
@@ -3668,7 +3668,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 144.0, 218.5, 209.0, 35.0 ],
 									"style" : "",
-									"text" : "m158.o.points.buffer~ /seq/time @interp 0"
+									"text" : "m158.o.points.phase~ /seq/time @interp 0"
 								}
 
 							}
@@ -4172,7 +4172,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 349.0, 453.0, 153.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.points.buffer~ /env"
+									"text" : "m158.o.points.phase~ /env"
 								}
 
 							}
@@ -4300,7 +4300,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 22.0, 47.5, 385.0, 87.0 ],
 									"style" : "",
-									"text" : "Sometimes, people like to specify a phrase with rhythm described as duration of beats.\n\nIn this examle, a set of durations is specified in /beat/pattern, we then need to convert the beats to x axis points so we can use m158.o.points.buffer~ as a lookup table."
+									"text" : "Sometimes, people like to specify a phrase with rhythm described as duration of beats.\n\nIn this examle, a set of durations is specified in /beat/pattern, we then need to convert the beats to x axis points so we can use m158.o.points.phase~ as a lookup table."
 								}
 
 							}
@@ -4314,7 +4314,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 170.0, 310.0, 209.0, 35.0 ],
 									"style" : "",
-									"text" : "m158.o.points.buffer~ /seq/time @interp 0"
+									"text" : "m158.o.points.phase~ /seq/time @interp 0"
 								}
 
 							}
@@ -4744,7 +4744,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.points.buffer~.maxpat",
+				"name" : "m158.o.points.phase~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1

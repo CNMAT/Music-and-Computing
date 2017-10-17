@@ -5099,7 +5099,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 393.5, 190.0, 184.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.buffer~ /env/mod"
+													"text" : "m158.o.points.phase~ /env/mod"
 												}
 
 											}
@@ -5151,7 +5151,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 599.5, 193.5, 179.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.buffer~ /env/amp"
+													"text" : "m158.o.points.phase~ /env/amp"
 												}
 
 											}
@@ -7469,7 +7469,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 393.5, 190.0, 184.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.buffer~ /env/mod"
+													"text" : "m158.o.points.phase~ /env/mod"
 												}
 
 											}
@@ -7521,7 +7521,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 599.5, 193.5, 179.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.buffer~ /env/amp"
+													"text" : "m158.o.points.phase~ /env/amp"
 												}
 
 											}
@@ -8686,7 +8686,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 393.5, 190.0, 184.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.buffer~ /env/mod"
+													"text" : "m158.o.points.phase~ /env/mod"
 												}
 
 											}
@@ -8749,7 +8749,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 599.5, 274.0, 179.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.buffer~ /env/amp"
+													"text" : "m158.o.points.phase~ /env/amp"
 												}
 
 											}
@@ -10898,7 +10898,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.points.buffer~.maxpat",
+				"name" : "m158.o.points.phase~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1

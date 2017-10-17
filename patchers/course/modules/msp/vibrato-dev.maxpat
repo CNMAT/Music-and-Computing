@@ -163,7 +163,7 @@
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 					"patching_rect" : [ 258.0, 462.0, 142.0, 35.0 ],
 					"style" : "",
-					"text" : "m158.o.points.buffer~ /env/tremolo/depth"
+					"text" : "m158.o.points.phase~ /env/tremolo/depth"
 				}
 
 			}
@@ -177,7 +177,7 @@
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 					"patching_rect" : [ 111.0, 462.0, 132.0, 35.0 ],
 					"style" : "",
-					"text" : "m158.o.points.buffer~ /env/tremolo/rate"
+					"text" : "m158.o.points.phase~ /env/tremolo/rate"
 				}
 
 			}
@@ -191,7 +191,7 @@
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 					"patching_rect" : [ 412.0, 462.0, 136.0, 35.0 ],
 					"style" : "",
-					"text" : "m158.o.points.buffer~ /env/amplitude"
+					"text" : "m158.o.points.phase~ /env/amplitude"
 				}
 
 			}
@@ -1079,7 +1079,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.points.buffer~.maxpat",
+				"name" : "m158.o.points.phase~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/signal",
 				"patcherrelativepath" : "../../../signal",
 				"type" : "JSON",

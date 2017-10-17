@@ -449,7 +449,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 593.833374, 309.5, 132.666626, 35.0 ],
 									"style" : "",
-									"text" : "m158.o.points.buffer~ /scale"
+									"text" : "m158.o.points.phase~ /scale"
 								}
 
 							}
@@ -540,7 +540,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 440.166687, 416.0, 287.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.points.buffer~ /scale @step 1 @normal_x 0"
+									"text" : "m158.o.points.phase~ /scale @step 1 @normal_x 0"
 								}
 
 							}
@@ -1096,7 +1096,7 @@
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 					"patching_rect" : [ 1076.574951, 515.5, 166.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.points.buffer~ /mod"
+					"text" : "m158.o.points.phase~ /mod"
 				}
 
 			}
@@ -1867,7 +1867,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.points.buffer~.maxpat",
+				"name" : "m158.o.points.phase~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1

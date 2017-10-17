@@ -930,7 +930,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 591.5, 267.0, 132.0, 35.0 ],
 									"style" : "",
-									"text" : "m158.o.points.buffer~ /seq/sample @step 1"
+									"text" : "m158.o.points.phase~ /seq/sample @step 1"
 								}
 
 							}
@@ -1000,7 +1000,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 381.5, 105.0, 244.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.buffer~ /seq/filter/baseMIDI"
+													"text" : "m158.o.points.phase~ /seq/filter/baseMIDI"
 												}
 
 											}
@@ -1027,7 +1027,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 246.5, 238.5, 244.0, 35.0 ],
 													"style" : "",
-													"text" : "m158.o.points.buffer~ /seq/filter/baseMIDI @step 1 @normal_x 0"
+													"text" : "m158.o.points.phase~ /seq/filter/baseMIDI @step 1 @normal_x 0"
 												}
 
 											}
@@ -1434,7 +1434,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 539.5, 203.0, 244.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.buffer~ /seq/delay/baseMIDI"
+													"text" : "m158.o.points.phase~ /seq/delay/baseMIDI"
 												}
 
 											}
@@ -1461,7 +1461,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 383.0, 307.5, 244.0, 35.0 ],
 													"style" : "",
-													"text" : "m158.o.points.buffer~ /seq/delay/baseMIDI @step 1 @normal_x 0"
+													"text" : "m158.o.points.phase~ /seq/delay/baseMIDI @step 1 @normal_x 0"
 												}
 
 											}
@@ -1499,7 +1499,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 409.0, 515.0, 205.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.buffer~ /env/feedback"
+													"text" : "m158.o.points.phase~ /env/feedback"
 												}
 
 											}
@@ -2098,7 +2098,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 273.0, 122.0, 214.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.buffer~ /env/downsamp"
+													"text" : "m158.o.points.phase~ /env/downsamp"
 												}
 
 											}
@@ -2287,7 +2287,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 383.0, 163.0, 244.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.buffer~ /seq/delay/baseMIDI"
+													"text" : "m158.o.points.phase~ /seq/delay/baseMIDI"
 												}
 
 											}
@@ -2314,7 +2314,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 383.0, 307.5, 244.0, 35.0 ],
 													"style" : "",
-													"text" : "m158.o.points.buffer~ /seq/delay/baseMIDI @step 1 @normal_x 0"
+													"text" : "m158.o.points.phase~ /seq/delay/baseMIDI @step 1 @normal_x 0"
 												}
 
 											}
@@ -2352,7 +2352,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 327.5, 516.0, 205.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.buffer~ /env/feedback"
+													"text" : "m158.o.points.phase~ /env/feedback"
 												}
 
 											}
@@ -2951,7 +2951,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 273.0, 122.0, 214.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.buffer~ /env/downsamp"
+													"text" : "m158.o.points.phase~ /env/downsamp"
 												}
 
 											}
@@ -4068,7 +4068,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 320.0, 100.0, 184.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.buffer~ /seq/scale"
+													"text" : "m158.o.points.phase~ /seq/scale"
 												}
 
 											}
@@ -4081,7 +4081,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 189.0, 188.0, 315.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.buffer~ /seq/scale @step 1 @normal_x 0"
+													"text" : "m158.o.points.phase~ /seq/scale @step 1 @normal_x 0"
 												}
 
 											}
@@ -4341,7 +4341,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 174.0, 142.0, 171.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.buffer~ /seq/div"
+													"text" : "m158.o.points.phase~ /seq/div"
 												}
 
 											}
@@ -4354,7 +4354,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 50.0, 226.0, 295.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.buffer~ /seq/div @step 1 @normal_x 0"
+													"text" : "m158.o.points.phase~ /seq/div @step 1 @normal_x 0"
 												}
 
 											}
@@ -4524,7 +4524,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 133.0, 100.0, 315.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.points.buffer~ /seq/step @step 1"
+									"text" : "m158.o.points.phase~ /seq/step @step 1"
 								}
 
 							}
@@ -4810,7 +4810,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 93.0, 120.5, 184.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.points.buffer~ /seq/step"
+									"text" : "m158.o.points.phase~ /seq/step"
 								}
 
 							}
@@ -5214,7 +5214,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.points.buffer~.maxpat",
+				"name" : "m158.o.points.phase~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1

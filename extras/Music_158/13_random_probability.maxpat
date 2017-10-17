@@ -91,7 +91,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 617.0, 493.0, 470.0, 47.0 ],
 									"style" : "",
-									"text" : "In a way o.random.weighted~ is the opposite of m158.o.points.buffer~: instead of outputting the Y value for a given X, o.random.weighted~ gives you an X value based on the probability set by the Y value."
+									"text" : "In a way o.random.weighted~ is the opposite of m158.o.points.phase~: instead of outputting the Y value for a given X, o.random.weighted~ gives you an X value based on the probability set by the Y value."
 								}
 
 							}
@@ -1695,7 +1695,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 184.0, 193.0, 206.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.buffer~ /prog @step 1"
+													"text" : "m158.o.points.phase~ /prog @step 1"
 												}
 
 											}
@@ -1734,7 +1734,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 453.51001, 340.0, 200.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.buffer~ /seq @step 1"
+													"text" : "m158.o.points.phase~ /seq @step 1"
 												}
 
 											}
@@ -2065,7 +2065,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 474.5, 168.0, 161.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.buffer~ /scale"
+																	"text" : "m158.o.points.phase~ /scale"
 																}
 
 															}
@@ -2093,7 +2093,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 413.5, 301.0, 222.0, 35.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.buffer~ /scale @step 1 @normal_x 0"
+																	"text" : "m158.o.points.phase~ /scale @step 1 @normal_x 0"
 																}
 
 															}
@@ -2308,7 +2308,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 401.25, 193.0, 292.76001, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.buffer~ /chord/index @step 1"
+													"text" : "m158.o.points.phase~ /chord/index @step 1"
 												}
 
 											}
@@ -4093,7 +4093,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 475.0, 12.0, 427.0, 709.0 ],
-									"text" : "# beat probabilities stored in an array of m158.o.points.buffer~s\n#tom1\n/sampler/14/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/14/beat/prob/y = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n/sampler/14/delay = 0,\n#snare\n/sampler/13/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/13/beat/prob/y = [0.0, 0.0, 0.0, 0.0, 0.8, 0.2, 0.0, 0.0],\n/sampler/13/delay = 2,\n#rimshot\n/sampler/12/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/12/beat/prob/y = [0.0, 0.0, 0.0, 0.0, 0.5, 0.2, 0.0, 0.1],\n/sampler/12/delay = 10,\n#open_hh\n/sampler/11/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/11/beat/prob/y = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.8],\n/sampler/11/delay = 0,\n#maracas\n/sampler/10/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/10/beat/prob/y = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.1],\n/sampler/10/delay = 0,\n#kick2\n/sampler/9/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/9/beat/prob/y =  [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1],\n/sampler/9/delay = 10,\n#kick1\n/sampler/8/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/8/beat/prob/y =  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n/sampler/8/delay = 0,\n#hightom\n/sampler/7/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/7/beat/prob/y =  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n/sampler/7/delay = 0,\n#hi_conga\n/sampler/6/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/6/beat/prob/y =  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n/sampler/6/delay = 0,\n#handclap\n/sampler/5/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/5/beat/prob/y =  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.2],\n/sampler/5/delay = 0,\n#crashcym\n/sampler/4/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/4/beat/prob/y =  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.05, 0.0],\n/sampler/4/delay = 0,\n#cowbell\n/sampler/3/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/3/beat/prob/y =  [0.0, 0.1, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0],\n/sampler/3/delay = 0,\n#conga1\n/sampler/2/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/2/beat/prob/y =  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n/sampler/2/delay = 0,\n#claves\n/sampler/1/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/1/beat/prob/y =  [0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n/sampler/1/delay = 5,\n#cl_hihat\n/sampler/0/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/0/beat/prob/y =  [1.0, 1.0, 1.0, 0.5, 0.5, 0.2, 1.0, 0.0],\n/sampler/0/delay = 0",
+									"text" : "# beat probabilities stored in an array of m158.o.points.phase~s\n#tom1\n/sampler/14/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/14/beat/prob/y = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n/sampler/14/delay = 0,\n#snare\n/sampler/13/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/13/beat/prob/y = [0.0, 0.0, 0.0, 0.0, 0.8, 0.2, 0.0, 0.0],\n/sampler/13/delay = 2,\n#rimshot\n/sampler/12/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/12/beat/prob/y = [0.0, 0.0, 0.0, 0.0, 0.5, 0.2, 0.0, 0.1],\n/sampler/12/delay = 10,\n#open_hh\n/sampler/11/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/11/beat/prob/y = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.8],\n/sampler/11/delay = 0,\n#maracas\n/sampler/10/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/10/beat/prob/y = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.1],\n/sampler/10/delay = 0,\n#kick2\n/sampler/9/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/9/beat/prob/y =  [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1],\n/sampler/9/delay = 10,\n#kick1\n/sampler/8/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/8/beat/prob/y =  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n/sampler/8/delay = 0,\n#hightom\n/sampler/7/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/7/beat/prob/y =  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n/sampler/7/delay = 0,\n#hi_conga\n/sampler/6/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/6/beat/prob/y =  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n/sampler/6/delay = 0,\n#handclap\n/sampler/5/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/5/beat/prob/y =  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.2],\n/sampler/5/delay = 0,\n#crashcym\n/sampler/4/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/4/beat/prob/y =  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.05, 0.0],\n/sampler/4/delay = 0,\n#cowbell\n/sampler/3/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/3/beat/prob/y =  [0.0, 0.1, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0],\n/sampler/3/delay = 0,\n#conga1\n/sampler/2/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/2/beat/prob/y =  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n/sampler/2/delay = 0,\n#claves\n/sampler/1/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/1/beat/prob/y =  [0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n/sampler/1/delay = 5,\n#cl_hihat\n/sampler/0/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/0/beat/prob/y =  [1.0, 1.0, 1.0, 0.5, 0.5, 0.2, 1.0, 0.0],\n/sampler/0/delay = 0",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -4650,7 +4650,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 163.0, 259.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.buffer~ /beat/prob @normal_x 0"
+																	"text" : "m158.o.points.phase~ /beat/prob @normal_x 0"
 																}
 
 															}
@@ -5241,7 +5241,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 163.0, 259.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.buffer~ /beat/prob @normal_x 0"
+																	"text" : "m158.o.points.phase~ /beat/prob @normal_x 0"
 																}
 
 															}
@@ -5832,7 +5832,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 163.0, 259.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.buffer~ /beat/prob @normal_x 0"
+																	"text" : "m158.o.points.phase~ /beat/prob @normal_x 0"
 																}
 
 															}
@@ -6423,7 +6423,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 163.0, 259.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.buffer~ /beat/prob @normal_x 0"
+																	"text" : "m158.o.points.phase~ /beat/prob @normal_x 0"
 																}
 
 															}
@@ -7014,7 +7014,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 163.0, 259.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.buffer~ /beat/prob @normal_x 0"
+																	"text" : "m158.o.points.phase~ /beat/prob @normal_x 0"
 																}
 
 															}
@@ -7605,7 +7605,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 163.0, 259.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.buffer~ /beat/prob @normal_x 0"
+																	"text" : "m158.o.points.phase~ /beat/prob @normal_x 0"
 																}
 
 															}
@@ -8196,7 +8196,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 163.0, 259.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.buffer~ /beat/prob @normal_x 0"
+																	"text" : "m158.o.points.phase~ /beat/prob @normal_x 0"
 																}
 
 															}
@@ -8787,7 +8787,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 163.0, 259.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.buffer~ /beat/prob @normal_x 0"
+																	"text" : "m158.o.points.phase~ /beat/prob @normal_x 0"
 																}
 
 															}
@@ -9378,7 +9378,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 163.0, 259.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.buffer~ /beat/prob @normal_x 0"
+																	"text" : "m158.o.points.phase~ /beat/prob @normal_x 0"
 																}
 
 															}
@@ -9969,7 +9969,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 163.0, 259.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.buffer~ /beat/prob @normal_x 0"
+																	"text" : "m158.o.points.phase~ /beat/prob @normal_x 0"
 																}
 
 															}
@@ -10560,7 +10560,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 163.0, 259.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.buffer~ /beat/prob @normal_x 0"
+																	"text" : "m158.o.points.phase~ /beat/prob @normal_x 0"
 																}
 
 															}
@@ -11151,7 +11151,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 163.0, 259.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.buffer~ /beat/prob @normal_x 0"
+																	"text" : "m158.o.points.phase~ /beat/prob @normal_x 0"
 																}
 
 															}
@@ -11742,7 +11742,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 163.0, 259.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.buffer~ /beat/prob @normal_x 0"
+																	"text" : "m158.o.points.phase~ /beat/prob @normal_x 0"
 																}
 
 															}
@@ -12333,7 +12333,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 163.0, 259.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.buffer~ /beat/prob @normal_x 0"
+																	"text" : "m158.o.points.phase~ /beat/prob @normal_x 0"
 																}
 
 															}
@@ -12924,7 +12924,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 163.0, 259.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.buffer~ /beat/prob @normal_x 0"
+																	"text" : "m158.o.points.phase~ /beat/prob @normal_x 0"
 																}
 
 															}
@@ -15425,7 +15425,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 7.0, 50.0, 353.0, 194.0 ],
 									"style" : "",
-									"text" : "In this example, there are 15 samplers (o.granubuf~) synchronized to a click counter clock. For each click the sampler looks up in their m158.o.points.buffer~ to get the probability that it should play or not.\n\nIn each sampler patch, there is a noise~ object sending random numbers and an >~ object to perform the probability test. \n\nNOTE:\nUnlike the previous examples using o.random.weighted~ to provide us with a *relative* index choice weight, in this case, EACH BEAT has its own probability separate from the others stored in a m158.o.points.buffer~ which is use as that beat's probability threshold."
+									"text" : "In this example, there are 15 samplers (o.granubuf~) synchronized to a click counter clock. For each click the sampler looks up in their m158.o.points.phase~ to get the probability that it should play or not.\n\nIn each sampler patch, there is a noise~ object sending random numbers and an >~ object to perform the probability test. \n\nNOTE:\nUnlike the previous examples using o.random.weighted~ to provide us with a *relative* index choice weight, in this case, EACH BEAT has its own probability separate from the others stored in a m158.o.points.phase~ which is use as that beat's probability threshold."
 								}
 
 							}
@@ -15903,7 +15903,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 163.0, 259.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.buffer~ /beat/prob @normal_x 0"
+																	"text" : "m158.o.points.phase~ /beat/prob @normal_x 0"
 																}
 
 															}
@@ -16298,7 +16298,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 163.0, 259.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.buffer~ /beat/prob @normal_x 0"
+																	"text" : "m158.o.points.phase~ /beat/prob @normal_x 0"
 																}
 
 															}
@@ -16693,7 +16693,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 163.0, 259.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.buffer~ /beat/prob @normal_x 0"
+																	"text" : "m158.o.points.phase~ /beat/prob @normal_x 0"
 																}
 
 															}
@@ -17088,7 +17088,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 163.0, 259.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.buffer~ /beat/prob @normal_x 0"
+																	"text" : "m158.o.points.phase~ /beat/prob @normal_x 0"
 																}
 
 															}
@@ -17483,7 +17483,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 163.0, 259.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.buffer~ /beat/prob @normal_x 0"
+																	"text" : "m158.o.points.phase~ /beat/prob @normal_x 0"
 																}
 
 															}
@@ -17878,7 +17878,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 163.0, 259.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.buffer~ /beat/prob @normal_x 0"
+																	"text" : "m158.o.points.phase~ /beat/prob @normal_x 0"
 																}
 
 															}
@@ -18273,7 +18273,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 163.0, 259.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.buffer~ /beat/prob @normal_x 0"
+																	"text" : "m158.o.points.phase~ /beat/prob @normal_x 0"
 																}
 
 															}
@@ -18668,7 +18668,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 163.0, 259.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.buffer~ /beat/prob @normal_x 0"
+																	"text" : "m158.o.points.phase~ /beat/prob @normal_x 0"
 																}
 
 															}
@@ -19063,7 +19063,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 163.0, 259.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.buffer~ /beat/prob @normal_x 0"
+																	"text" : "m158.o.points.phase~ /beat/prob @normal_x 0"
 																}
 
 															}
@@ -19458,7 +19458,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 163.0, 259.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.buffer~ /beat/prob @normal_x 0"
+																	"text" : "m158.o.points.phase~ /beat/prob @normal_x 0"
 																}
 
 															}
@@ -19853,7 +19853,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 163.0, 259.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.buffer~ /beat/prob @normal_x 0"
+																	"text" : "m158.o.points.phase~ /beat/prob @normal_x 0"
 																}
 
 															}
@@ -20248,7 +20248,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 163.0, 259.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.buffer~ /beat/prob @normal_x 0"
+																	"text" : "m158.o.points.phase~ /beat/prob @normal_x 0"
 																}
 
 															}
@@ -20643,7 +20643,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 163.0, 259.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.buffer~ /beat/prob @normal_x 0"
+																	"text" : "m158.o.points.phase~ /beat/prob @normal_x 0"
 																}
 
 															}
@@ -21038,7 +21038,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 163.0, 259.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.buffer~ /beat/prob @normal_x 0"
+																	"text" : "m158.o.points.phase~ /beat/prob @normal_x 0"
 																}
 
 															}
@@ -21433,7 +21433,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 163.0, 259.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.buffer~ /beat/prob @normal_x 0"
+																	"text" : "m158.o.points.phase~ /beat/prob @normal_x 0"
 																}
 
 															}
@@ -22330,7 +22330,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 362.0, 11.5, 476.0, 591.0 ],
-									"text" : "# beat probabilities stored in an array of m158.o.points.buffer~s\n#tom1\n/sampler/14/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/14/beat/prob/y = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n#snare\n/sampler/13/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/13/beat/prob/y = [0.0, 0.0, 0.0, 0.0, 0.8, 0.2, 0.0, 0.0],\n#rimshot\n/sampler/12/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/12/beat/prob/y = [0.0, 0.0, 0.0, 0.0, 0.5, 0.2, 0.0, 0.1],\n#open_hh\n/sampler/11/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/11/beat/prob/y = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.8],\n#maracas\n/sampler/10/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/10/beat/prob/y = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.1],\n#kick2\n/sampler/9/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/9/beat/prob/y =  [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1],\n#kick1\n/sampler/8/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/8/beat/prob/y =  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n#hightom\n/sampler/7/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/7/beat/prob/y =  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n#hi_conga\n/sampler/6/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/6/beat/prob/y =  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n#handclap\n/sampler/5/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/5/beat/prob/y =  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.2],\n#crashcym\n/sampler/4/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/4/beat/prob/y =  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.05, 0.0],\n#cowbell\n/sampler/3/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/3/beat/prob/y =  [0.0, 0.1, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0],\n#conga1\n/sampler/2/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/2/beat/prob/y =  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n#claves\n/sampler/1/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/1/beat/prob/y =  [0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n#cl_hihat\n/sampler/0/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/0/beat/prob/y =  [1.0, 1.0, 1.0, 0.5, 0.5, 0.2, 1.0, 0.0]",
+									"text" : "# beat probabilities stored in an array of m158.o.points.phase~s\n#tom1\n/sampler/14/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/14/beat/prob/y = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n#snare\n/sampler/13/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/13/beat/prob/y = [0.0, 0.0, 0.0, 0.0, 0.8, 0.2, 0.0, 0.0],\n#rimshot\n/sampler/12/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/12/beat/prob/y = [0.0, 0.0, 0.0, 0.0, 0.5, 0.2, 0.0, 0.1],\n#open_hh\n/sampler/11/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/11/beat/prob/y = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.8],\n#maracas\n/sampler/10/beat/prob/x = [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/10/beat/prob/y = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.1],\n#kick2\n/sampler/9/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/9/beat/prob/y =  [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1],\n#kick1\n/sampler/8/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/8/beat/prob/y =  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n#hightom\n/sampler/7/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/7/beat/prob/y =  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n#hi_conga\n/sampler/6/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/6/beat/prob/y =  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n#handclap\n/sampler/5/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/5/beat/prob/y =  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.2],\n#crashcym\n/sampler/4/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/4/beat/prob/y =  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.05, 0.0],\n#cowbell\n/sampler/3/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/3/beat/prob/y =  [0.0, 0.1, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0],\n#conga1\n/sampler/2/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/2/beat/prob/y =  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n#claves\n/sampler/1/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/1/beat/prob/y =  [0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],\n#cl_hihat\n/sampler/0/beat/prob/x =  [0,   1,   2,   3,   4,   5,   6,   7  ], \n/sampler/0/beat/prob/y =  [1.0, 1.0, 1.0, 0.5, 0.5, 0.2, 1.0, 0.0]",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -23621,7 +23621,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 50.0, 184.0, 397.839996, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.buffer~ /g/seq/samps @step 1"
+													"text" : "m158.o.points.phase~ /g/seq/samps @step 1"
 												}
 
 											}
@@ -24352,7 +24352,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 835.333252, 145.5, 285.0, 78.0 ],
 									"style" : "",
-									"text" : "Here we define the probabilities that each subdivision will happen for that sample. These indexed lists are sent the o.random.weighted~ allowing us to switch between them as sample rate (like the indexes of m158.o.points.buffer~) "
+									"text" : "Here we define the probabilities that each subdivision will happen for that sample. These indexed lists are sent the o.random.weighted~ allowing us to switch between them as sample rate (like the indexes of m158.o.points.phase~) "
 								}
 
 							}
@@ -24770,7 +24770,7 @@
 													"numoutlets" : 0,
 													"patching_rect" : [ 447.0, 330.0, 264.0, 91.0 ],
 													"style" : "",
-													"text" : "o.random.weighted~ gives us a weighted random choice which we then use to set out phase divider. We use a click generated by the the realtive phase output from m158.o.points.buffer~ to get a sample and hold value from o.random.weighted~"
+													"text" : "o.random.weighted~ gives us a weighted random choice which we then use to set out phase divider. We use a click generated by the the realtive phase output from m158.o.points.phase~ to get a sample and hold value from o.random.weighted~"
 												}
 
 											}
@@ -24954,7 +24954,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 50.0, 184.0, 397.839996, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.buffer~ /g/seq/samps @step 1"
+													"text" : "m158.o.points.phase~ /g/seq/samps @step 1"
 												}
 
 											}
@@ -25727,7 +25727,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 895.0, 313.5, 269.0, 91.0 ],
 									"style" : "",
-									"text" : "o.random.weighted~ gives us a weighted random choice which we then use to set out phase divider. We use a click generated by the the relative phase output from m158.o.points.buffer~ to get a sample and hold value from o.random.weighted~ "
+									"text" : "o.random.weighted~ gives us a weighted random choice which we then use to set out phase divider. We use a click generated by the the relative phase output from m158.o.points.phase~ to get a sample and hold value from o.random.weighted~ "
 								}
 
 							}
@@ -26419,7 +26419,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 492.333252, 265.0, 397.839996, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.points.buffer~ /g/seq/samps @step 1"
+									"text" : "m158.o.points.phase~ /g/seq/samps @step 1"
 								}
 
 							}
@@ -26828,7 +26828,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.points.buffer~.maxpat",
+				"name" : "m158.o.points.phase~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1

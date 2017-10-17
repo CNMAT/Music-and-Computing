@@ -91,7 +91,7 @@
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 					"patching_rect" : [ 323.5, 377.0, 201.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.points.buffer~ /seq @step 1"
+					"text" : "m158.o.points.phase~ /seq @step 1"
 				}
 
 			}
@@ -855,7 +855,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.points.buffer~.maxpat",
+				"name" : "m158.o.points.phase~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1

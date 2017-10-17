@@ -213,7 +213,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 121.0, 394.723022, 165.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.points.buffer~ /points"
+									"text" : "m158.o.points.phase~ /points"
 								}
 
 							}
@@ -442,7 +442,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 726.0, 176.5, 405.0, 91.0 ],
 									"style" : "",
-									"text" : "to convert from points to line~ format, we need to find the delta between points and then multiply by the duration (since line~ doesn't have lookup capabilites like m158.o.points.buffer~ does).\n\nlambda() returns the last value in it's sequence to map, which then makes a new list out of the results."
+									"text" : "to convert from points to line~ format, we need to find the delta between points and then multiply by the duration (since line~ doesn't have lookup capabilites like m158.o.points.phase~ does).\n\nlambda() returns the last value in it's sequence to map, which then makes a new list out of the results."
 								}
 
 							}
@@ -630,7 +630,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 75.0, 453.723022, 165.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.points.buffer~ /points"
+									"text" : "m158.o.points.phase~ /points"
 								}
 
 							}
@@ -1074,7 +1074,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 50.0, 475.723022, 165.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.points.buffer~ /points"
+									"text" : "m158.o.points.phase~ /points"
 								}
 
 							}
@@ -1773,7 +1773,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 111.0, 383.5, 207.5, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.points.buffer~ /func"
+									"text" : "m158.o.points.phase~ /func"
 								}
 
 							}
@@ -1987,7 +1987,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 667.5, 26.5, 199.0, 27.0 ],
 									"style" : "",
-									"text" : "m158.o.points.buffer~"
+									"text" : "m158.o.points.phase~"
 								}
 
 							}
@@ -2333,7 +2333,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 140.0, 275.5, 156.0, 35.0 ],
 									"style" : "",
-									"text" : "m158.o.points.buffer~ /seq @step 1 @beats 1"
+									"text" : "m158.o.points.phase~ /seq @step 1 @beats 1"
 								}
 
 							}
@@ -2403,7 +2403,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 437.0, 275.5, 157.0, 35.0 ],
 									"style" : "",
-									"text" : "m158.o.points.buffer~ /seq @step 1 @beats 0"
+									"text" : "m158.o.points.phase~ /seq @step 1 @beats 0"
 								}
 
 							}
@@ -2828,7 +2828,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.points.buffer~.maxpat",
+				"name" : "m158.o.points.phase~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/signal",
 				"patcherrelativepath" : "../../patchers/signal",
 				"type" : "JSON",
