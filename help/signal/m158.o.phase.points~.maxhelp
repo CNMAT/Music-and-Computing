@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 5,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -49,12 +49,12 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 5,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 97.0, 92.0, 1148.0, 740.0 ],
+						"rect" : [ 0.0, 26.0, 1148.0, 740.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -211,7 +211,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 6,
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
-									"patching_rect" : [ 121.0, 394.723022, 165.0, 22.0 ],
+									"patching_rect" : [ 121.0, 394.723022, 167.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.phase.points~ /points"
 								}
@@ -369,7 +369,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 5,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -628,7 +628,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 6,
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
-									"patching_rect" : [ 75.0, 453.723022, 165.0, 22.0 ],
+									"patching_rect" : [ 75.0, 453.723022, 167.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.phase.points~ /points"
 								}
@@ -831,7 +831,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 5,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1072,7 +1072,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 6,
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
-									"patching_rect" : [ 50.0, 475.723022, 165.0, 22.0 ],
+									"patching_rect" : [ 50.0, 475.723022, 167.0, 22.0 ],
 									"style" : "",
 									"text" : "m158.o.phase.points~ /points"
 								}
@@ -1123,7 +1123,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 667.5, 65.5, 364.0, 74.0 ],
+									"patching_rect" : [ 667.5, 65.5, 370.0, 74.0 ],
 									"style" : "",
 									"text" : "m158.o.phase.points~ uses *absolute* x values (which often is used to represent time points), whereas line~ uses *relative* x values. \n\nFor line~, the format is an interleaved list of target values (Y) and the time to take to get there (delta X)."
 								}
@@ -1281,12 +1281,12 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 5,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1148.0, 740.0 ],
+						"rect" : [ 97.0, 92.0, 1148.0, 740.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1326,12 +1326,12 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 3,
-											"revision" : 5,
+											"revision" : 4,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+										"rect" : [ 29.0, 70.0, 640.0, 480.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -1360,6 +1360,19 @@
 										"subpatcher_template" : "no-menus",
 										"boxes" : [ 											{
 												"box" : 												{
+													"id" : "obj-1",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 50.0, 134.0, 56.0, 22.0 ],
+													"style" : "",
+													"text" : "deferlow"
+												}
+
+											}
+, 											{
+												"box" : 												{
 													"id" : "obj-31",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
@@ -1381,7 +1394,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 50.0, 129.723022, 157.0, 34.0 ],
+													"patching_rect" : [ 50.0, 165.723022, 157.0, 34.0 ],
 													"style" : "",
 													"text" : "window size 97 66 1245 832, window exec"
 												}
@@ -1403,6 +1416,13 @@
  ],
 										"lines" : [ 											{
 												"patchline" : 												{
+													"destination" : [ "obj-30", 0 ],
+													"source" : [ "obj-1", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-33", 0 ],
 													"source" : [ "obj-30", 0 ]
 												}
@@ -1410,7 +1430,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-30", 0 ],
+													"destination" : [ "obj-1", 0 ],
 													"source" : [ "obj-31", 0 ]
 												}
 
@@ -1640,11 +1660,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-17",
+									"linecount" : 2,
 									"maxclass" : "newobj",
-									"numinlets" : 4,
+									"numinlets" : 3,
 									"numoutlets" : 4,
 									"outlettype" : [ "signal", "signal", "signal", "" ],
-									"patching_rect" : [ 128.5, 305.723022, 190.0, 22.0 ],
+									"patching_rect" : [ 128.5, 305.723022, 190.0, 35.0 ],
 									"style" : "",
 									"text" : "m158.o.click.counter~ /func/count"
 								}
@@ -1890,7 +1911,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u112005095"
+									"varname" : "u033004221"
 								}
 
 							}
@@ -2051,7 +2072,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-17", 3 ],
+									"destination" : [ "obj-17", 2 ],
 									"source" : [ "obj-19", 2 ]
 								}
 
@@ -2226,7 +2247,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 5,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2615,7 +2636,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage @outputmode 1 @notifymode 1",
-									"varname" : "u047005334"
+									"varname" : "u780003973"
 								}
 
 							}
@@ -2815,8 +2836,8 @@
 			}
 , 			{
 				"name" : "o.gather.select.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/gatherers",
-				"patcherrelativepath" : "../../patchers/gatherers",
+				"bootpath" : "~/Documents/dev-lib/CNMAT-odot/patchers/namespace",
+				"patcherrelativepath" : "../../../../../dev-lib/CNMAT-odot/patchers/namespace",
 				"type" : "JSON",
 				"implicit" : 1
 			}

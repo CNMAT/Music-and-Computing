@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 2,
-			"revision" : 5,
+			"minor" : 3,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -39,13 +39,13 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-52",
-					"linecount" : 3,
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 697.0, 642.0, 156.0, 47.0 ],
+					"patching_rect" : [ 752.0, 221.0, 195.0, 60.0 ],
 					"style" : "",
-					"text" : "you may also set the wrap-around value with an audio signal (e.g. o.num~)"
+					"text" : "with m158.click.counter~ (not o.)\nyou may also set the wrap-around value with an audio signal (e.g. o.num~)"
 				}
 
 			}
@@ -56,7 +56,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 697.0, 691.0, 43.0, 22.0 ],
+					"patching_rect" : [ 824.0, 180.0, 43.0, 22.0 ],
 					"style" : "",
 					"text" : "sig~ 4"
 				}
@@ -71,8 +71,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 478.0, 614.0, 175.0, 24.0 ],
-					"presentation_rect" : [ 689.0, 617.0, 0.0, 0.0 ],
+					"patching_rect" : [ 605.0, 103.0, 175.0, 24.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 28, 47, 115, 111, 109, 101, 47, 97, 100, 100, 114, 101, 115, 115, 0, 0, 0, 44, 100, 0, 0, 63, -48, 0, 0, 0, 0, 0, 0 ],
 					"saved_bundle_length" : 48,
 					"text" : "/some/address : 0.25",
@@ -91,8 +90,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 617.0, 903.0, 56.0, 22.0 ],
-					"presentation_rect" : [ 640.0, 878.0, 0.0, 0.0 ],
+					"patching_rect" : [ 744.0, 392.0, 56.0, 22.0 ],
 					"sig" : 0.0,
 					"style" : ""
 				}
@@ -105,8 +103,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 479.0, 691.0, 190.0, 22.0 ],
-					"presentation_rect" : [ 502.0, 666.0, 0.0, 0.0 ],
+					"patching_rect" : [ 606.0, 180.0, 190.0, 22.0 ],
 					"style" : "",
 					"text" : "m158.o.click~ /some/address"
 				}
@@ -121,8 +118,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 493.0, 642.0, 160.0, 24.0 ],
-					"presentation_rect" : [ 502.0, 617.0, 0.0, 0.0 ],
+					"patching_rect" : [ 620.0, 131.0, 160.0, 24.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 47, 115, 111, 109, 101, 47, 97, 100, 100, 114, 101, 115, 115, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 1 ],
 					"saved_bundle_length" : 44,
 					"text" : "/some/address : 1",
@@ -136,8 +132,7 @@
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 479.0, 814.0, 130.0, 130.0 ],
-					"presentation_rect" : [ 502.0, 789.0, 0.0, 0.0 ],
+					"patching_rect" : [ 606.0, 303.0, 130.0, 130.0 ],
 					"range" : [ -1.0, 4.0 ],
 					"style" : ""
 				}
@@ -151,8 +146,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 493.0, 781.0, 130.0, 22.0 ],
-					"presentation_rect" : [ 516.0, 756.0, 0.0, 0.0 ],
+					"patching_rect" : [ 620.0, 270.0, 130.0, 22.0 ],
 					"style" : "",
 					"text_width" : 54.0
 				}
@@ -162,12 +156,12 @@
 				"box" : 				{
 					"id" : "obj-47",
 					"maxclass" : "newobj",
-					"numinlets" : 4,
-					"numoutlets" : 4,
-					"outlettype" : [ "signal", "signal", "signal", "" ],
-					"patching_rect" : [ 479.0, 741.0, 190.0, 22.0 ],
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "signal", "signal", "signal" ],
+					"patching_rect" : [ 606.0, 230.0, 118.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.click.counter~"
+					"text" : "m158.click.counter~"
 				}
 
 			}
@@ -178,7 +172,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 399.0, 483.0, 522.0, 74.0 ],
+					"patching_rect" : [ 424.0, 615.0, 522.0, 74.0 ],
 					"style" : "",
 					"text" : "REMEMBER: the click.counter~ is actually an accumulator. The wrap-around value is the value at which the numbers will wrap around.\n\n(You can guarantee that the /max/count will correspond to the click count if each click~ encodes the value of 1.)"
 				}
@@ -195,7 +189,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 219.0, 483.0, 175.0, 38.0 ],
-					"presentation_rect" : [ 261.0, 480.0, 0.0, 0.0 ],
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 28, 47, 115, 111, 109, 101, 47, 97, 100, 100, 114, 101, 115, 115, 0, 0, 0, 44, 100, 0, 0, 63, -48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 47, 109, 97, 120, 47, 99, 111, 117, 110, 116, 0, 0, 44, 105, 0, 0, 0, 0, 0, 4 ],
 					"saved_bundle_length" : 72,
 					"text" : "/some/address : 0.25,\n/max/count : 4",
@@ -228,7 +221,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
 					"patching_rect" : [ 32.0, 532.0, 190.0, 22.0 ],
-					"presentation_rect" : [ 341.0, 542.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "m158.o.click~ /some/address"
 				}
@@ -259,7 +251,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 224.0, 582.0, 251.0, 20.0 ],
-					"presentation_rect" : [ 112.0, 532.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "an optional argument controls \"wrap-around\":"
 				}
@@ -309,7 +300,6 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 32.0, 655.0, 130.0, 130.0 ],
-					"presentation_rect" : [ 229.0, 252.0, 0.0, 0.0 ],
 					"range" : [ -1.0, 4.0 ],
 					"style" : ""
 				}
@@ -324,7 +314,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 46.0, 622.0, 130.0, 22.0 ],
-					"presentation_rect" : [ 243.0, 219.0, 0.0, 0.0 ],
 					"style" : "",
 					"text_width" : 54.0
 				}
@@ -333,11 +322,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-9",
+					"linecount" : 2,
 					"maxclass" : "newobj",
-					"numinlets" : 4,
+					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "signal", "signal", "signal", "" ],
-					"patching_rect" : [ 32.0, 582.0, 190.0, 22.0 ],
+					"patching_rect" : [ 32.0, 582.0, 190.0, 35.0 ],
 					"style" : "",
 					"text" : "m158.o.click.counter~ /max/count"
 				}
@@ -364,12 +354,12 @@
 				"box" : 				{
 					"id" : "obj-4",
 					"maxclass" : "newobj",
-					"numinlets" : 4,
-					"numoutlets" : 4,
-					"outlettype" : [ "signal", "signal", "signal", "" ],
-					"patching_rect" : [ 32.0, 230.0, 166.0, 22.0 ],
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "signal", "signal", "signal" ],
+					"patching_rect" : [ 32.0, 230.0, 118.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.click.counter~"
+					"text" : "m158.click.counter~"
 				}
 
 			}
@@ -391,7 +381,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 544.0, 230.0, 377.0, 114.0 ],
+					"patching_rect" : [ 490.0, 463.0, 377.0, 114.0 ],
 					"style" : "",
 					"text" : "m158.o.click.counter~ is often used with:\n\n1. m158.o.phase.points~\n    the number click.counter~ outputs is quite useful for table lookup\n2. m158.o.granubuf~\n    the number click.counter~ outputs can be used to select a sample\n\nUse it when you want to increment a number by some step."
 				}
@@ -442,13 +432,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-7",
-					"linecount" : 7,
+					"linecount" : 13,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 235.0, 230.0, 280.0, 100.0 ],
+					"patching_rect" : [ 235.0, 230.0, 300.0, 181.0 ],
 					"style" : "",
-					"text" : "* m158.o.click.counter~ takes a click as its input.\n\n* The value of the sample at the click is added to the running total.\n\n* The running total is output as a sample-stream (similar to m158.o.num~)"
+					"text" : "* m158.click.counter~ takes a click as its input.\n\n* The value of the sample at the click is added to the running total.\n\n* The running total is output as a sample-stream (similar to m158.o.num~)\n\n* if a maximum count limit is set the counter will reset to zero when it reaches the maximum. \n\nm158.o.click.counter~ has a required argument of an address used to set the maximum count."
 				}
 
 			}
@@ -457,13 +447,11 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-5",
-					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 203.0, 655.0, 193.0, 48.0 ],
-					"text" : "/some/address : 1,\n/max/count : 4",
+					"patching_rect" : [ 203.0, 655.0, 193.0, 34.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -506,9 +494,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 32.0, 31.666656, 266.0, 27.0 ],
+					"patching_rect" : [ 32.0, 31.666656, 430.0, 27.0 ],
 					"style" : "",
-					"text" : "m158 review: o.click.counter~"
+					"text" : "m158 review: click.counter~ and o.click.counter~"
 				}
 
 			}
@@ -529,18 +517,7 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 3 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-1", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -548,8 +525,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-11", 0 ]
 				}
 
@@ -557,8 +532,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-23", 0 ]
 				}
 
@@ -566,8 +539,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-25", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-24", 0 ]
 				}
 
@@ -575,8 +546,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-25", 0 ]
 				}
 
@@ -584,8 +553,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-28", 0 ]
 				}
 
@@ -593,8 +560,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-3", 0 ]
 				}
 
@@ -602,17 +567,13 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-34", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-33", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 3 ],
-					"disabled" : 0,
-					"hidden" : 0,
+					"destination" : [ "obj-9", 2 ],
 					"source" : [ "obj-34", 1 ]
 				}
 
@@ -620,8 +581,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-34", 0 ]
 				}
 
@@ -629,8 +588,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-34", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-36", 0 ]
 				}
 
@@ -638,8 +595,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -647,8 +603,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -656,26 +611,13 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-42", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-40", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-47", 3 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-42", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-47", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-42", 0 ]
 				}
 
@@ -683,8 +625,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-42", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-43", 0 ]
 				}
 
@@ -692,8 +632,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-45", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-46", 0 ]
 				}
 
@@ -701,8 +639,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-41", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-47", 0 ]
 				}
 
@@ -710,8 +647,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-45", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-47", 0 ]
 				}
 
@@ -719,8 +655,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-47", 2 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-50", 0 ]
 				}
 
@@ -728,8 +662,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -737,8 +670,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-35", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -746,8 +678,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-9", 3 ]
 				}
 
@@ -755,31 +685,43 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "m158.o.click~.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
+				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/signal",
+				"patcherrelativepath" : "../../../patchers/signal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "m158.click.counter~.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/signal",
+				"patcherrelativepath" : "../../../patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "m158.o.click.counter~.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
+				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/signal",
+				"patcherrelativepath" : "../../../patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "m158.o.num~.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
+				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/signal",
+				"patcherrelativepath" : "../../../patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.doc.handler.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/internal",
+				"patcherrelativepath" : "../../../patchers/internal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "m158.loadbang.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
+				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/internal",
+				"patcherrelativepath" : "../../../patchers/internal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
