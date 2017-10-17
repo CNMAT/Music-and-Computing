@@ -170,7 +170,7 @@
 									"outlettype" : [ "signal", "signal", "" ],
 									"patching_rect" : [ 140.0, 275.5, 162.0, 35.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /seq @step 1 @beats 1"
+									"text" : "m158.o.phase.points~ /seq @step 1 @beats 1"
 								}
 
 							}
@@ -195,7 +195,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 648.0, 249.5, 336.0, 100.0 ],
 									"style" : "",
-									"text" : "With @step 1, m158.o.points.phase~ is non-interpolating, and instead holds its value for the duration of the index in the sequence.\n\nIn @beat 0 mode, m158.o.points.phase~ repeated notes are joined together in order to creates a relative phase that goes from 0 to 1 over the course of the held event."
+									"text" : "With @step 1, m158.o.phase.points~ is non-interpolating, and instead holds its value for the duration of the index in the sequence.\n\nIn @beat 0 mode, m158.o.phase.points~ repeated notes are joined together in order to creates a relative phase that goes from 0 to 1 over the course of the held event."
 								}
 
 							}
@@ -222,7 +222,7 @@
 									"outlettype" : [ "signal", "signal", "" ],
 									"patching_rect" : [ 437.0, 275.5, 171.0, 35.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /seq @step 1 @beats 0"
+									"text" : "m158.o.phase.points~ /seq @step 1 @beats 0"
 								}
 
 							}
@@ -685,7 +685,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 667.5, 431.223022, 402.0, 127.0 ],
 									"style" : "",
-									"text" : "left inlet: signal rate phase value 0-1\nright inlet: OSC\n\nleft outlet: signal rate Y value with or without interpolation\nmiddle outlet: signal rate relative phase\nright outlet: OSC\n\nnote: m158.o.points.phase~ is the same as m158.o.phase.points~ except that the left and middle outlets are switched."
+									"text" : "left inlet: signal rate phase value 0-1\nright inlet: OSC\n\nleft outlet: signal rate Y value with or without interpolation\nmiddle outlet: signal rate relative phase\nright outlet: OSC\n\nnote: m158.o.phase.points~ is the same as m158.o.phase.points~ except that the left and middle outlets are switched."
 								}
 
 							}
@@ -725,7 +725,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 667.5, 26.5, 199.0, 27.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~"
+									"text" : "m158.o.phase.points~"
 								}
 
 							}
@@ -876,7 +876,7 @@
 									"outlettype" : [ "signal", "signal", "" ],
 									"patching_rect" : [ 370.0, 361.0, 180.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /func/2"
+									"text" : "m158.o.phase.points~ /func/2"
 								}
 
 							}
@@ -952,7 +952,7 @@
 									"outlettype" : [ "signal", "signal", "" ],
 									"patching_rect" : [ 53.0, 361.0, 180.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /func/1"
+									"text" : "m158.o.phase.points~ /func/1"
 								}
 
 							}
@@ -1316,7 +1316,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.points.phase~.maxpat",
+				"name" : "m158.o.phase.points~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1

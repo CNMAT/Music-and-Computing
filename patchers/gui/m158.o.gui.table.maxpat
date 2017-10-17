@@ -839,7 +839,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 58.5, 559.0, 469.0, 33.0 ],
 					"style" : "",
-					"text" : "v2 -- removed direct mode and normalize mode, which are now in m158.o.points.phase~"
+					"text" : "v2 -- removed direct mode and normalize mode, which are now in m158.o.phase.points~"
 				}
 
 			}

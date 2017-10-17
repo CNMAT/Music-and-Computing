@@ -320,7 +320,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 210.5, 86.0, 226.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.phase~ /seq/midi @step 1"
+													"text" : "m158.o.phase.points~ /seq/midi @step 1"
 												}
 
 											}
@@ -411,7 +411,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 603.5, 98.0, 184.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.phase~ /bpf/mod"
+													"text" : "m158.o.phase.points~ /bpf/mod"
 												}
 
 											}
@@ -437,7 +437,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 289.299988, 324.0, 179.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.phase~ /bpf/amp"
+													"text" : "m158.o.phase.points~ /bpf/amp"
 												}
 
 											}
@@ -3335,7 +3335,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.points.phase~.maxpat",
+				"name" : "m158.o.phase.points~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/signal",
 				"patcherrelativepath" : "../../../signal",
 				"type" : "JSON",

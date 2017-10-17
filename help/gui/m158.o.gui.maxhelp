@@ -2242,7 +2242,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 266.0, 432.776978, 186.0, 35.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /tab @interp 0"
+									"text" : "m158.o.phase.points~ /tab @interp 0"
 								}
 
 							}
@@ -2287,7 +2287,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 64.0, 439.276978, 182.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /func"
+									"text" : "m158.o.phase.points~ /func"
 								}
 
 							}
@@ -3138,7 +3138,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.points.phase~.maxpat",
+				"name" : "m158.o.phase.points~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/signal",
 				"patcherrelativepath" : "../../patchers/signal",
 				"type" : "JSON",

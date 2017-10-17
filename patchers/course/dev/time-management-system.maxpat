@@ -86,7 +86,7 @@
 					"patching_rect" : [ 523.466675, 342.266693, 205.0, 22.0 ],
 					"presentation_rect" : [ 459.466644, 352.266693, 0.0, 0.0 ],
 					"style" : "",
-					"text" : "m158.o.points.phase~ modes"
+					"text" : "m158.o.phase.points~ modes"
 				}
 
 			}
@@ -167,7 +167,7 @@
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 					"patching_rect" : [ 540.133301, 604.366699, 149.0, 35.0 ],
 					"style" : "",
-					"text" : "m158.o.points.phase~ /list @step 1 @normal_x 0"
+					"text" : "m158.o.phase.points~ /list @step 1 @normal_x 0"
 				}
 
 			}
@@ -207,7 +207,7 @@
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 					"patching_rect" : [ 533.466675, 482.866699, 180.333313, 35.0 ],
 					"style" : "",
-					"text" : "m158.o.points.phase~ /seq @step 1"
+					"text" : "m158.o.phase.points~ /seq @step 1"
 				}
 
 			}
@@ -268,7 +268,7 @@
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 					"patching_rect" : [ 540.133301, 408.766693, 158.333313, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.points.phase~ /func"
+					"text" : "m158.o.phase.points~ /func"
 				}
 
 			}
@@ -414,7 +414,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.points.phase~.maxpat",
+				"name" : "m158.o.phase.points~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1

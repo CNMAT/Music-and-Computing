@@ -1191,7 +1191,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 215.0, 411.0, 272.0, 22.0 ],
 																					"style" : "",
-																					"text" : "m158.o.points.phase~ /env/note"
+																					"text" : "m158.o.phase.points~ /env/note"
 																				}
 
 																			}
@@ -1218,7 +1218,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 278.0, 249.5, 208.0, 35.0 ],
 																					"style" : "",
-																					"text" : "m158.o.points.phase~ /onoff/duration @normal_x 0"
+																					"text" : "m158.o.phase.points~ /onoff/duration @normal_x 0"
 																				}
 
 																			}
@@ -1577,7 +1577,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 223.5, 181.5, 129.0, 35.0 ],
 																					"style" : "",
-																					"text" : "m158.o.points.phase~ /seq/pitches"
+																					"text" : "m158.o.phase.points~ /seq/pitches"
 																				}
 
 																			}
@@ -1906,7 +1906,7 @@
 																									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																									"patching_rect" : [ 474.5, 168.0, 161.0, 22.0 ],
 																									"style" : "",
-																									"text" : "m158.o.points.phase~ /scale"
+																									"text" : "m158.o.phase.points~ /scale"
 																								}
 
 																							}
@@ -1934,7 +1934,7 @@
 																									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																									"patching_rect" : [ 413.5, 288.0, 222.0, 35.0 ],
 																									"style" : "",
-																									"text" : "m158.o.points.phase~ /scale @step 1 @normal_x 0"
+																									"text" : "m158.o.phase.points~ /scale @step 1 @normal_x 0"
 																								}
 
 																							}
@@ -2154,7 +2154,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 130.5, 272.0, 222.0, 35.0 ],
 																					"style" : "",
-																					"text" : "m158.o.points.phase~ /seq/pitches @step 1 @normal_x 0"
+																					"text" : "m158.o.phase.points~ /seq/pitches @step 1 @normal_x 0"
 																				}
 
 																			}
@@ -3720,7 +3720,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 215.0, 411.0, 272.0, 22.0 ],
 																					"style" : "",
-																					"text" : "m158.o.points.phase~ /env/note"
+																					"text" : "m158.o.phase.points~ /env/note"
 																				}
 
 																			}
@@ -3747,7 +3747,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 278.0, 249.5, 208.0, 35.0 ],
 																					"style" : "",
-																					"text" : "m158.o.points.phase~ /onoff/duration @normal_x 0"
+																					"text" : "m158.o.phase.points~ /onoff/duration @normal_x 0"
 																				}
 
 																			}
@@ -4106,7 +4106,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 223.5, 181.5, 129.0, 35.0 ],
 																					"style" : "",
-																					"text" : "m158.o.points.phase~ /seq/pitches"
+																					"text" : "m158.o.phase.points~ /seq/pitches"
 																				}
 
 																			}
@@ -4435,7 +4435,7 @@
 																									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																									"patching_rect" : [ 474.5, 168.0, 161.0, 22.0 ],
 																									"style" : "",
-																									"text" : "m158.o.points.phase~ /scale"
+																									"text" : "m158.o.phase.points~ /scale"
 																								}
 
 																							}
@@ -4463,7 +4463,7 @@
 																									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																									"patching_rect" : [ 413.5, 288.0, 222.0, 35.0 ],
 																									"style" : "",
-																									"text" : "m158.o.points.phase~ /scale @step 1 @normal_x 0"
+																									"text" : "m158.o.phase.points~ /scale @step 1 @normal_x 0"
 																								}
 
 																							}
@@ -4683,7 +4683,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 130.5, 272.0, 222.0, 35.0 ],
 																					"style" : "",
-																					"text" : "m158.o.points.phase~ /seq/pitches @step 1 @normal_x 0"
+																					"text" : "m158.o.phase.points~ /seq/pitches @step 1 @normal_x 0"
 																				}
 
 																			}
@@ -6249,7 +6249,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 215.0, 411.0, 272.0, 22.0 ],
 																					"style" : "",
-																					"text" : "m158.o.points.phase~ /env/note"
+																					"text" : "m158.o.phase.points~ /env/note"
 																				}
 
 																			}
@@ -6276,7 +6276,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 278.0, 249.5, 208.0, 35.0 ],
 																					"style" : "",
-																					"text" : "m158.o.points.phase~ /onoff/duration @normal_x 0"
+																					"text" : "m158.o.phase.points~ /onoff/duration @normal_x 0"
 																				}
 
 																			}
@@ -6635,7 +6635,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 223.5, 181.5, 129.0, 35.0 ],
 																					"style" : "",
-																					"text" : "m158.o.points.phase~ /seq/pitches"
+																					"text" : "m158.o.phase.points~ /seq/pitches"
 																				}
 
 																			}
@@ -6964,7 +6964,7 @@
 																									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																									"patching_rect" : [ 474.5, 168.0, 161.0, 22.0 ],
 																									"style" : "",
-																									"text" : "m158.o.points.phase~ /scale"
+																									"text" : "m158.o.phase.points~ /scale"
 																								}
 
 																							}
@@ -6992,7 +6992,7 @@
 																									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																									"patching_rect" : [ 413.5, 288.0, 222.0, 35.0 ],
 																									"style" : "",
-																									"text" : "m158.o.points.phase~ /scale @step 1 @normal_x 0"
+																									"text" : "m158.o.phase.points~ /scale @step 1 @normal_x 0"
 																								}
 
 																							}
@@ -7212,7 +7212,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 130.5, 272.0, 222.0, 35.0 ],
 																					"style" : "",
-																					"text" : "m158.o.points.phase~ /seq/pitches @step 1 @normal_x 0"
+																					"text" : "m158.o.phase.points~ /seq/pitches @step 1 @normal_x 0"
 																				}
 
 																			}
@@ -8778,7 +8778,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 215.0, 411.0, 272.0, 22.0 ],
 																					"style" : "",
-																					"text" : "m158.o.points.phase~ /env/note"
+																					"text" : "m158.o.phase.points~ /env/note"
 																				}
 
 																			}
@@ -8805,7 +8805,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 278.0, 249.5, 208.0, 35.0 ],
 																					"style" : "",
-																					"text" : "m158.o.points.phase~ /onoff/duration @normal_x 0"
+																					"text" : "m158.o.phase.points~ /onoff/duration @normal_x 0"
 																				}
 
 																			}
@@ -9164,7 +9164,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 223.5, 181.5, 129.0, 35.0 ],
 																					"style" : "",
-																					"text" : "m158.o.points.phase~ /seq/pitches"
+																					"text" : "m158.o.phase.points~ /seq/pitches"
 																				}
 
 																			}
@@ -9493,7 +9493,7 @@
 																									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																									"patching_rect" : [ 474.5, 168.0, 161.0, 22.0 ],
 																									"style" : "",
-																									"text" : "m158.o.points.phase~ /scale"
+																									"text" : "m158.o.phase.points~ /scale"
 																								}
 
 																							}
@@ -9521,7 +9521,7 @@
 																									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																									"patching_rect" : [ 413.5, 288.0, 222.0, 35.0 ],
 																									"style" : "",
-																									"text" : "m158.o.points.phase~ /scale @step 1 @normal_x 0"
+																									"text" : "m158.o.phase.points~ /scale @step 1 @normal_x 0"
 																								}
 
 																							}
@@ -9741,7 +9741,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 130.5, 272.0, 222.0, 35.0 ],
 																					"style" : "",
-																					"text" : "m158.o.points.phase~ /seq/pitches @step 1 @normal_x 0"
+																					"text" : "m158.o.phase.points~ /seq/pitches @step 1 @normal_x 0"
 																				}
 
 																			}
@@ -11307,7 +11307,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 215.0, 411.0, 272.0, 22.0 ],
 																					"style" : "",
-																					"text" : "m158.o.points.phase~ /env/note"
+																					"text" : "m158.o.phase.points~ /env/note"
 																				}
 
 																			}
@@ -11334,7 +11334,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 278.0, 249.5, 208.0, 35.0 ],
 																					"style" : "",
-																					"text" : "m158.o.points.phase~ /onoff/duration @normal_x 0"
+																					"text" : "m158.o.phase.points~ /onoff/duration @normal_x 0"
 																				}
 
 																			}
@@ -11693,7 +11693,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 223.5, 181.5, 129.0, 35.0 ],
 																					"style" : "",
-																					"text" : "m158.o.points.phase~ /seq/pitches"
+																					"text" : "m158.o.phase.points~ /seq/pitches"
 																				}
 
 																			}
@@ -12022,7 +12022,7 @@
 																									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																									"patching_rect" : [ 474.5, 168.0, 161.0, 22.0 ],
 																									"style" : "",
-																									"text" : "m158.o.points.phase~ /scale"
+																									"text" : "m158.o.phase.points~ /scale"
 																								}
 
 																							}
@@ -12050,7 +12050,7 @@
 																									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																									"patching_rect" : [ 413.5, 288.0, 222.0, 35.0 ],
 																									"style" : "",
-																									"text" : "m158.o.points.phase~ /scale @step 1 @normal_x 0"
+																									"text" : "m158.o.phase.points~ /scale @step 1 @normal_x 0"
 																								}
 
 																							}
@@ -12270,7 +12270,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 130.5, 272.0, 222.0, 35.0 ],
 																					"style" : "",
-																					"text" : "m158.o.points.phase~ /seq/pitches @step 1 @normal_x 0"
+																					"text" : "m158.o.phase.points~ /seq/pitches @step 1 @normal_x 0"
 																				}
 
 																			}
@@ -15744,7 +15744,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 595.416626, 342.5, 184.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/mod"
+																	"text" : "m158.o.phase.points~ /env/mod"
 																}
 
 															}
@@ -15783,7 +15783,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 205.416656, 438.5, 179.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/amp"
+																	"text" : "m158.o.phase.points~ /env/amp"
 																}
 
 															}
@@ -16864,7 +16864,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 595.416626, 342.5, 184.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/mod"
+																	"text" : "m158.o.phase.points~ /env/mod"
 																}
 
 															}
@@ -16903,7 +16903,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 205.416656, 438.5, 179.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/amp"
+																	"text" : "m158.o.phase.points~ /env/amp"
 																}
 
 															}
@@ -17984,7 +17984,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 595.416626, 342.5, 184.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/mod"
+																	"text" : "m158.o.phase.points~ /env/mod"
 																}
 
 															}
@@ -18023,7 +18023,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 205.416656, 438.5, 179.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/amp"
+																	"text" : "m158.o.phase.points~ /env/amp"
 																}
 
 															}
@@ -19104,7 +19104,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 595.416626, 342.5, 184.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/mod"
+																	"text" : "m158.o.phase.points~ /env/mod"
 																}
 
 															}
@@ -19143,7 +19143,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 205.416656, 438.5, 179.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/amp"
+																	"text" : "m158.o.phase.points~ /env/amp"
 																}
 
 															}
@@ -20224,7 +20224,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 595.416626, 342.5, 184.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/mod"
+																	"text" : "m158.o.phase.points~ /env/mod"
 																}
 
 															}
@@ -20263,7 +20263,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 205.416656, 438.5, 179.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/amp"
+																	"text" : "m158.o.phase.points~ /env/amp"
 																}
 
 															}
@@ -21344,7 +21344,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 595.416626, 342.5, 184.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/mod"
+																	"text" : "m158.o.phase.points~ /env/mod"
 																}
 
 															}
@@ -21383,7 +21383,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 205.416656, 438.5, 179.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/amp"
+																	"text" : "m158.o.phase.points~ /env/amp"
 																}
 
 															}
@@ -22477,7 +22477,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 595.416626, 342.5, 184.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/mod"
+																	"text" : "m158.o.phase.points~ /env/mod"
 																}
 
 															}
@@ -22516,7 +22516,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 205.416656, 438.5, 179.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/amp"
+																	"text" : "m158.o.phase.points~ /env/amp"
 																}
 
 															}
@@ -23597,7 +23597,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 595.416626, 342.5, 184.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/mod"
+																	"text" : "m158.o.phase.points~ /env/mod"
 																}
 
 															}
@@ -23636,7 +23636,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 205.416656, 438.5, 179.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/amp"
+																	"text" : "m158.o.phase.points~ /env/amp"
 																}
 
 															}
@@ -24717,7 +24717,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 595.416626, 342.5, 184.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/mod"
+																	"text" : "m158.o.phase.points~ /env/mod"
 																}
 
 															}
@@ -24756,7 +24756,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 205.416656, 438.5, 179.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/amp"
+																	"text" : "m158.o.phase.points~ /env/amp"
 																}
 
 															}
@@ -25837,7 +25837,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 595.416626, 342.5, 184.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/mod"
+																	"text" : "m158.o.phase.points~ /env/mod"
 																}
 
 															}
@@ -25876,7 +25876,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 205.416656, 438.5, 179.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/amp"
+																	"text" : "m158.o.phase.points~ /env/amp"
 																}
 
 															}
@@ -26957,7 +26957,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 595.416626, 342.5, 184.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/mod"
+																	"text" : "m158.o.phase.points~ /env/mod"
 																}
 
 															}
@@ -26996,7 +26996,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 205.416656, 438.5, 179.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/amp"
+																	"text" : "m158.o.phase.points~ /env/amp"
 																}
 
 															}
@@ -28077,7 +28077,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 595.416626, 342.5, 184.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/mod"
+																	"text" : "m158.o.phase.points~ /env/mod"
 																}
 
 															}
@@ -28116,7 +28116,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 205.416656, 438.5, 179.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/amp"
+																	"text" : "m158.o.phase.points~ /env/amp"
 																}
 
 															}
@@ -31191,7 +31191,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 595.416626, 338.5, 213.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/mod"
+																	"text" : "m158.o.phase.points~ /env/mod"
 																}
 
 															}
@@ -31230,7 +31230,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 205.416656, 438.5, 179.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/amp"
+																	"text" : "m158.o.phase.points~ /env/amp"
 																}
 
 															}
@@ -32147,7 +32147,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 595.416626, 338.5, 184.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/mod"
+																	"text" : "m158.o.phase.points~ /env/mod"
 																}
 
 															}
@@ -32186,7 +32186,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 205.416656, 438.5, 179.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/amp"
+																	"text" : "m158.o.phase.points~ /env/amp"
 																}
 
 															}
@@ -33103,7 +33103,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 595.416626, 338.5, 184.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/mod"
+																	"text" : "m158.o.phase.points~ /env/mod"
 																}
 
 															}
@@ -33142,7 +33142,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 205.416656, 438.5, 179.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/amp"
+																	"text" : "m158.o.phase.points~ /env/amp"
 																}
 
 															}
@@ -34059,7 +34059,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 595.416626, 338.5, 184.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/mod"
+																	"text" : "m158.o.phase.points~ /env/mod"
 																}
 
 															}
@@ -34098,7 +34098,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 205.416656, 438.5, 179.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/amp"
+																	"text" : "m158.o.phase.points~ /env/amp"
 																}
 
 															}
@@ -35015,7 +35015,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 595.416626, 338.5, 184.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/mod"
+																	"text" : "m158.o.phase.points~ /env/mod"
 																}
 
 															}
@@ -35054,7 +35054,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 205.416656, 438.5, 179.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/amp"
+																	"text" : "m158.o.phase.points~ /env/amp"
 																}
 
 															}
@@ -35971,7 +35971,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 595.416626, 338.5, 184.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/mod"
+																	"text" : "m158.o.phase.points~ /env/mod"
 																}
 
 															}
@@ -36010,7 +36010,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 205.416656, 438.5, 179.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/amp"
+																	"text" : "m158.o.phase.points~ /env/amp"
 																}
 
 															}
@@ -36940,7 +36940,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 595.416626, 338.5, 213.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/mod"
+																	"text" : "m158.o.phase.points~ /env/mod"
 																}
 
 															}
@@ -36979,7 +36979,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 205.416656, 438.5, 179.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/amp"
+																	"text" : "m158.o.phase.points~ /env/amp"
 																}
 
 															}
@@ -37896,7 +37896,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 595.416626, 338.5, 184.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/mod"
+																	"text" : "m158.o.phase.points~ /env/mod"
 																}
 
 															}
@@ -37935,7 +37935,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 205.416656, 438.5, 179.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/amp"
+																	"text" : "m158.o.phase.points~ /env/amp"
 																}
 
 															}
@@ -38852,7 +38852,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 595.416626, 338.5, 184.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/mod"
+																	"text" : "m158.o.phase.points~ /env/mod"
 																}
 
 															}
@@ -38891,7 +38891,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 205.416656, 438.5, 179.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/amp"
+																	"text" : "m158.o.phase.points~ /env/amp"
 																}
 
 															}
@@ -39808,7 +39808,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 595.416626, 338.5, 184.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/mod"
+																	"text" : "m158.o.phase.points~ /env/mod"
 																}
 
 															}
@@ -39847,7 +39847,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 205.416656, 438.5, 179.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/amp"
+																	"text" : "m158.o.phase.points~ /env/amp"
 																}
 
 															}
@@ -40764,7 +40764,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 595.416626, 338.5, 184.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/mod"
+																	"text" : "m158.o.phase.points~ /env/mod"
 																}
 
 															}
@@ -40803,7 +40803,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 205.416656, 438.5, 179.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/amp"
+																	"text" : "m158.o.phase.points~ /env/amp"
 																}
 
 															}
@@ -41720,7 +41720,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 595.416626, 338.5, 184.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/mod"
+																	"text" : "m158.o.phase.points~ /env/mod"
 																}
 
 															}
@@ -41759,7 +41759,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 205.416656, 438.5, 179.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/amp"
+																	"text" : "m158.o.phase.points~ /env/amp"
 																}
 
 															}
@@ -44011,7 +44011,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 931.5, 453.0, 130.0, 35.0 ],
 													"style" : "",
-													"text" : "m158.o.points.phase~ /env/amp"
+													"text" : "m158.o.phase.points~ /env/amp"
 												}
 
 											}
@@ -44411,7 +44411,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 510.5, 412.5, 130.0, 35.0 ],
 													"style" : "",
-													"text" : "m158.o.points.phase~ /env/amp"
+													"text" : "m158.o.phase.points~ /env/amp"
 												}
 
 											}
@@ -44927,7 +44927,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 80.5, 369.0, 146.0, 35.0 ],
 													"style" : "",
-													"text" : "m158.o.points.phase~ /env/amp"
+													"text" : "m158.o.phase.points~ /env/amp"
 												}
 
 											}
@@ -86697,7 +86697,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 595.416626, 338.5, 184.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/mod"
+																	"text" : "m158.o.phase.points~ /env/mod"
 																}
 
 															}
@@ -86736,7 +86736,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 205.416656, 438.5, 179.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/amp"
+																	"text" : "m158.o.phase.points~ /env/amp"
 																}
 
 															}
@@ -87653,7 +87653,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 595.416626, 338.5, 184.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/mod"
+																	"text" : "m158.o.phase.points~ /env/mod"
 																}
 
 															}
@@ -87692,7 +87692,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 205.416656, 438.5, 179.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/amp"
+																	"text" : "m158.o.phase.points~ /env/amp"
 																}
 
 															}
@@ -88609,7 +88609,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 595.416626, 338.5, 184.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/mod"
+																	"text" : "m158.o.phase.points~ /env/mod"
 																}
 
 															}
@@ -88648,7 +88648,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 205.416656, 438.5, 179.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/amp"
+																	"text" : "m158.o.phase.points~ /env/amp"
 																}
 
 															}
@@ -89565,7 +89565,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 595.416626, 338.5, 184.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/mod"
+																	"text" : "m158.o.phase.points~ /env/mod"
 																}
 
 															}
@@ -89604,7 +89604,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 205.416656, 438.5, 179.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/amp"
+																	"text" : "m158.o.phase.points~ /env/amp"
 																}
 
 															}
@@ -90521,7 +90521,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 595.416626, 338.5, 184.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/mod"
+																	"text" : "m158.o.phase.points~ /env/mod"
 																}
 
 															}
@@ -90560,7 +90560,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 205.416656, 438.5, 179.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/amp"
+																	"text" : "m158.o.phase.points~ /env/amp"
 																}
 
 															}
@@ -91477,7 +91477,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 595.416626, 338.5, 184.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/mod"
+																	"text" : "m158.o.phase.points~ /env/mod"
 																}
 
 															}
@@ -91516,7 +91516,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 205.416656, 438.5, 179.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/amp"
+																	"text" : "m158.o.phase.points~ /env/amp"
 																}
 
 															}
@@ -92446,7 +92446,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 595.416626, 338.5, 184.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/mod"
+																	"text" : "m158.o.phase.points~ /env/mod"
 																}
 
 															}
@@ -92485,7 +92485,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 205.416656, 438.5, 179.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/amp"
+																	"text" : "m158.o.phase.points~ /env/amp"
 																}
 
 															}
@@ -93402,7 +93402,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 595.416626, 338.5, 184.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/mod"
+																	"text" : "m158.o.phase.points~ /env/mod"
 																}
 
 															}
@@ -93441,7 +93441,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 205.416656, 438.5, 179.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/amp"
+																	"text" : "m158.o.phase.points~ /env/amp"
 																}
 
 															}
@@ -94358,7 +94358,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 595.416626, 338.5, 184.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/mod"
+																	"text" : "m158.o.phase.points~ /env/mod"
 																}
 
 															}
@@ -94397,7 +94397,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 205.416656, 438.5, 179.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/amp"
+																	"text" : "m158.o.phase.points~ /env/amp"
 																}
 
 															}
@@ -95314,7 +95314,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 595.416626, 338.5, 184.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/mod"
+																	"text" : "m158.o.phase.points~ /env/mod"
 																}
 
 															}
@@ -95353,7 +95353,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 205.416656, 438.5, 179.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/amp"
+																	"text" : "m158.o.phase.points~ /env/amp"
 																}
 
 															}
@@ -96270,7 +96270,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 595.416626, 338.5, 184.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/mod"
+																	"text" : "m158.o.phase.points~ /env/mod"
 																}
 
 															}
@@ -96309,7 +96309,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 205.416656, 438.5, 179.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/amp"
+																	"text" : "m158.o.phase.points~ /env/amp"
 																}
 
 															}
@@ -97226,7 +97226,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 595.416626, 338.5, 184.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/mod"
+																	"text" : "m158.o.phase.points~ /env/mod"
 																}
 
 															}
@@ -97265,7 +97265,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 205.416656, 438.5, 179.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.o.points.phase~ /env/amp"
+																	"text" : "m158.o.phase.points~ /env/amp"
 																}
 
 															}
@@ -100998,7 +100998,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 215.0, 411.0, 272.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.phase~ /env/note"
+													"text" : "m158.o.phase.points~ /env/note"
 												}
 
 											}
@@ -101025,7 +101025,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 278.0, 249.5, 208.0, 35.0 ],
 													"style" : "",
-													"text" : "m158.o.points.phase~ /onoff/duration @normal_x 0"
+													"text" : "m158.o.phase.points~ /onoff/duration @normal_x 0"
 												}
 
 											}
@@ -101951,7 +101951,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 215.0, 411.0, 272.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.phase~ /env/note"
+													"text" : "m158.o.phase.points~ /env/note"
 												}
 
 											}
@@ -101978,7 +101978,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 278.0, 249.5, 208.0, 35.0 ],
 													"style" : "",
-													"text" : "m158.o.points.phase~ /onoff/duration @normal_x 0"
+													"text" : "m158.o.phase.points~ /onoff/duration @normal_x 0"
 												}
 
 											}
@@ -102904,7 +102904,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 215.0, 411.0, 272.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.phase~ /env/note"
+													"text" : "m158.o.phase.points~ /env/note"
 												}
 
 											}
@@ -102931,7 +102931,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 278.0, 249.5, 208.0, 35.0 ],
 													"style" : "",
-													"text" : "m158.o.points.phase~ /onoff/duration @normal_x 0"
+													"text" : "m158.o.phase.points~ /onoff/duration @normal_x 0"
 												}
 
 											}
@@ -103857,7 +103857,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 215.0, 411.0, 272.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.phase~ /env/note"
+													"text" : "m158.o.phase.points~ /env/note"
 												}
 
 											}
@@ -103884,7 +103884,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 278.0, 249.5, 208.0, 35.0 ],
 													"style" : "",
-													"text" : "m158.o.points.phase~ /onoff/duration @normal_x 0"
+													"text" : "m158.o.phase.points~ /onoff/duration @normal_x 0"
 												}
 
 											}
@@ -104810,7 +104810,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 215.0, 411.0, 272.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.phase~ /env/note"
+													"text" : "m158.o.phase.points~ /env/note"
 												}
 
 											}
@@ -104837,7 +104837,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 278.0, 249.5, 208.0, 35.0 ],
 													"style" : "",
-													"text" : "m158.o.points.phase~ /onoff/duration @normal_x 0"
+													"text" : "m158.o.phase.points~ /onoff/duration @normal_x 0"
 												}
 
 											}
@@ -105534,7 +105534,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.points.phase~.maxpat",
+				"name" : "m158.o.phase.points~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1

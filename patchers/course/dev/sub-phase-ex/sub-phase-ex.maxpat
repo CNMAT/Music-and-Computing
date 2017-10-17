@@ -249,7 +249,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 549.0, 215.0, 546.0, 47.0 ],
 									"style" : "",
-									"text" : "note: \ninternally m158.o.points.phase~ normalizes the X to be 0-1 but :\nif the duration and the max X value are the same, then your X values are absolute time values."
+									"text" : "note: \ninternally m158.o.phase.points~ normalizes the X to be 0-1 but :\nif the duration and the max X value are the same, then your X values are absolute time values."
 								}
 
 							}
@@ -475,7 +475,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 50.0, 101.0, 193.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.phase~ /amp"
+													"text" : "m158.o.phase.points~ /amp"
 												}
 
 											}
@@ -639,7 +639,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 50.0, 100.0, 193.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.phase~ /rate"
+													"text" : "m158.o.phase.points~ /rate"
 												}
 
 											}
@@ -803,7 +803,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 50.0, 100.0, 215.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.phase~ /triggerrate"
+													"text" : "m158.o.phase.points~ /triggerrate"
 												}
 
 											}
@@ -1694,7 +1694,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 415.0, 283.0, 154.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /rate"
+									"text" : "m158.o.phase.points~ /rate"
 								}
 
 							}
@@ -1907,7 +1907,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 163.5, 290.5, 197.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /events"
+									"text" : "m158.o.phase.points~ /events"
 								}
 
 							}
@@ -2390,7 +2390,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 347.0, 276.5, 178.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /rate"
+									"text" : "m158.o.phase.points~ /rate"
 								}
 
 							}
@@ -2403,7 +2403,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 732.5, 276.5, 178.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /samples"
+									"text" : "m158.o.phase.points~ /samples"
 								}
 
 							}
@@ -2616,7 +2616,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 162.5, 276.5, 169.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /events"
+									"text" : "m158.o.phase.points~ /events"
 								}
 
 							}
@@ -3171,7 +3171,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 163.5, 287.0, 169.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /events"
+									"text" : "m158.o.phase.points~ /events"
 								}
 
 							}
@@ -3391,7 +3391,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.points.phase~.maxpat",
+				"name" : "m158.o.phase.points~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/signal",
 				"patcherrelativepath" : "../../../signal",
 				"type" : "JSON",

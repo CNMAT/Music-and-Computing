@@ -277,7 +277,7 @@
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 					"patching_rect" : [ 502.75, 214.0, 161.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.points.phase~ #1"
+					"text" : "m158.o.phase.points~ #1"
 				}
 
 			}
@@ -305,7 +305,7 @@
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 					"patching_rect" : [ 441.75, 335.0, 222.0, 35.0 ],
 					"style" : "",
-					"text" : "m158.o.points.phase~ #1 @step 1 @normal_x 0"
+					"text" : "m158.o.phase.points~ #1 @step 1 @normal_x 0"
 				}
 
 			}

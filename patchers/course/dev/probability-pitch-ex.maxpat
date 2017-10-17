@@ -90,7 +90,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 55.0, 99.0, 354.0, 141.0 ],
 					"style" : "",
-					"text" : "Arpeggios are \"notes of a chord played in succession\" -- we can also think of them as patterns within a clearly defined pitch grid.\n\nIn this example, we use the index parameter of m158.o.points.phase~ to switch between pitch collections or scales, so that the /step pattern articulates the pitches with its melodic contour.\n\nSee the \"pitches\" subpatch for more details on how we wrap the step numbers to be within the pitch collection."
+					"text" : "Arpeggios are \"notes of a chord played in succession\" -- we can also think of them as patterns within a clearly defined pitch grid.\n\nIn this example, we use the index parameter of m158.o.phase.points~ to switch between pitch collections or scales, so that the /step pattern articulates the pitches with its melodic contour.\n\nSee the \"pitches\" subpatch for more details on how we wrap the step numbers to be within the pitch collection."
 				}
 
 			}
@@ -449,7 +449,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 593.833374, 309.5, 132.666626, 35.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /scale"
+									"text" : "m158.o.phase.points~ /scale"
 								}
 
 							}
@@ -540,7 +540,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 440.166687, 416.0, 287.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /scale @step 1 @normal_x 0"
+									"text" : "m158.o.phase.points~ /scale @step 1 @normal_x 0"
 								}
 
 							}
@@ -1096,7 +1096,7 @@
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 					"patching_rect" : [ 1076.574951, 515.5, 166.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.points.phase~ /mod"
+					"text" : "m158.o.phase.points~ /mod"
 				}
 
 			}
@@ -1867,7 +1867,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.points.phase~.maxpat",
+				"name" : "m158.o.phase.points~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1

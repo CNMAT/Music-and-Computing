@@ -103,7 +103,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 322.0, 204.766693, 330.0, 221.0 ],
 					"style" : "",
-					"text" : "m158.o.points.phase~ is used to retrieve point values from collections of x & y points.\n\nThe collection /something is represented by two addresses:\n\n/something/x -- contains TIME values\n/something/y -- contains DATA values\n\nBy default, points.buffer~ will smoothly change from one y-value to another y-value.\n\nThe x-values, by default, are converted to proportions of the total time. Above, /x : [0, 1, 2] means that 0, 1, and 0.5 will be equidistant from each other. On the other hand, /x : [0, 4, 5] means that the resulting ramp will take 4 times as long to get from 0 to 1 as it would to get from 1 to 0.5."
+					"text" : "m158.o.phase.points~ is used to retrieve point values from collections of x & y points.\n\nThe collection /something is represented by two addresses:\n\n/something/x -- contains TIME values\n/something/y -- contains DATA values\n\nBy default, points.buffer~ will smoothly change from one y-value to another y-value.\n\nThe x-values, by default, are converted to proportions of the total time. Above, /x : [0, 1, 2] means that 0, 1, and 0.5 will be equidistant from each other. On the other hand, /x : [0, 4, 5] means that the resulting ramp will take 4 times as long to get from 0 to 1 as it would to get from 1 to 0.5."
 				}
 
 			}
@@ -222,7 +222,7 @@
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 					"patching_rect" : [ 41.666656, 204.766693, 195.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.points.phase~ /my/address"
+					"text" : "m158.o.phase.points~ /my/address"
 				}
 
 			}
@@ -315,7 +315,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "m158.o.points.phase~.maxpat",
+				"name" : "m158.o.phase.points~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1

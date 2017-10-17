@@ -97,7 +97,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 777.0, 634.0, 257.0, 20.0 ],
 					"style" : "",
-					"text" : "see also the m158.o.points.phase~ help file "
+					"text" : "see also the m158.o.phase.points~ help file "
 				}
 
 			}
@@ -110,7 +110,7 @@
 					"outlettype" : [ "signal", "signal", "" ],
 					"patching_rect" : [ 777.0, 659.0, 141.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.points.phase~"
+					"text" : "m158.o.phase.points~"
 				}
 
 			}
@@ -447,7 +447,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.points.phase~.maxpat",
+				"name" : "m158.o.phase.points~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1

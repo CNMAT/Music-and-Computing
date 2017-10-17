@@ -420,7 +420,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 177.5, 191.0, 133.0, 35.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /seq @step 1"
+									"text" : "m158.o.phase.points~ /seq @step 1"
 								}
 
 							}
@@ -996,7 +996,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 601.0, 315.0, 157.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /bar"
+									"text" : "m158.o.phase.points~ /bar"
 								}
 
 							}
@@ -1023,7 +1023,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 570.0, 422.0, 188.0, 35.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /bar @normal_x 0 @step 1"
+									"text" : "m158.o.phase.points~ /bar @normal_x 0 @step 1"
 								}
 
 							}
@@ -1206,7 +1206,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 103.0, 363.0, 153.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /foo"
+									"text" : "m158.o.phase.points~ /foo"
 								}
 
 							}
@@ -1747,7 +1747,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 167.0, 257.0, 154.0, 35.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /seq @step 1"
+									"text" : "m158.o.phase.points~ /seq @step 1"
 								}
 
 							}
@@ -2182,7 +2182,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 171.0, 321.0, 150.0, 35.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /seq @step 1"
+									"text" : "m158.o.phase.points~ /seq @step 1"
 								}
 
 							}
@@ -2482,7 +2482,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 628.0, 306.0, 157.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /bar"
+									"text" : "m158.o.phase.points~ /bar"
 								}
 
 							}
@@ -2509,7 +2509,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 597.0, 413.0, 188.0, 35.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /bar @normal_x 0 @step 1"
+									"text" : "m158.o.phase.points~ /bar @normal_x 0 @step 1"
 								}
 
 							}
@@ -2576,7 +2576,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 134.0, 306.0, 157.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /bar"
+									"text" : "m158.o.phase.points~ /bar"
 								}
 
 							}
@@ -2603,7 +2603,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 103.0, 413.0, 188.0, 35.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /bar @normal_x 0 @step 1"
+									"text" : "m158.o.phase.points~ /bar @normal_x 0 @step 1"
 								}
 
 							}
@@ -3081,7 +3081,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 531.0, 306.0, 157.0, 35.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /bar @step 1"
+									"text" : "m158.o.phase.points~ /bar @step 1"
 								}
 
 							}
@@ -3212,7 +3212,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 103.0, 295.0, 153.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /foo"
+									"text" : "m158.o.phase.points~ /foo"
 								}
 
 							}
@@ -5456,7 +5456,7 @@
  ],
 		"lines" : [  ],
 		"dependency_cache" : [ 			{
-				"name" : "m158.o.points.phase~.maxpat",
+				"name" : "m158.o.phase.points~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1

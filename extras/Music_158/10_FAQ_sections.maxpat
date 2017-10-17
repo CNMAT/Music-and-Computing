@@ -200,7 +200,7 @@
 									"patching_rect" : [ 45.5, 54.5, 254.0, 60.0 ],
 									"presentation_rect" : [ 40.5, 53.5, 0.0, 0.0 ],
 									"style" : "",
-									"text" : "In cases where we want have different phrases for one synthesizer or processing component, we can use the index inlet of m158.o.points.phase~ to switch phrases."
+									"text" : "In cases where we want have different phrases for one synthesizer or processing component, we can use the index inlet of m158.o.phase.points~ to switch phrases."
 								}
 
 							}
@@ -361,7 +361,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 400.0, 440.0, 207.0, 35.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /loop/dur @normal_x 0"
+									"text" : "m158.o.phase.points~ /loop/dur @normal_x 0"
 								}
 
 							}
@@ -388,7 +388,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 400.0, 544.0, 207.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /pitch @step 1"
+									"text" : "m158.o.phase.points~ /pitch @step 1"
 								}
 
 							}
@@ -444,7 +444,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 400.0, 365.0, 207.0, 35.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /events @interp 0"
+									"text" : "m158.o.phase.points~ /events @interp 0"
 								}
 
 							}
@@ -955,7 +955,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 50.0, 181.0, 243.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.phase~ /synth/seq/1 @step 1"
+													"text" : "m158.o.phase.points~ /synth/seq/1 @step 1"
 												}
 
 											}
@@ -1099,7 +1099,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 588.0, 472.5, 201.0, 35.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /synth/1/active @normal_x 0"
+									"text" : "m158.o.phase.points~ /synth/1/active @normal_x 0"
 								}
 
 							}
@@ -1235,7 +1235,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 50.0, 181.0, 243.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.phase~ /synth/seq/0 @step 1"
+													"text" : "m158.o.phase.points~ /synth/seq/0 @step 1"
 												}
 
 											}
@@ -1377,7 +1377,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 289.0, 472.5, 201.0, 35.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /synth/0/active @normal_x 0"
+									"text" : "m158.o.phase.points~ /synth/0/active @normal_x 0"
 								}
 
 							}
@@ -1463,7 +1463,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 289.0, 401.0, 201.0, 35.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /events @interp 0"
+									"text" : "m158.o.phase.points~ /events @interp 0"
 								}
 
 							}
@@ -1791,7 +1791,7 @@
 									"patching_rect" : [ 661.5, 284.5, 424.0, 37.0 ],
 									"presentation_rect" : [ 570.5, 294.0, 0.0, 0.0 ],
 									"style" : "",
-									"text" : "Not used in this example, but second outlet of m158.o.points.phase~ is the relative phase for the section."
+									"text" : "Not used in this example, but second outlet of m158.o.phase.points~ is the relative phase for the section."
 								}
 
 							}
@@ -1985,7 +1985,7 @@
 									"patching_rect" : [ 711.0, 552.0, 173.0, 35.0 ],
 									"presentation_rect" : [ 629.0, 554.0, 0.0, 0.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /seq/1 @step 1"
+									"text" : "m158.o.phase.points~ /seq/1 @step 1"
 								}
 
 							}
@@ -2074,7 +2074,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 375.0, 552.0, 173.0, 35.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /seq/1 @step 1"
+									"text" : "m158.o.phase.points~ /seq/1 @step 1"
 								}
 
 							}
@@ -2147,7 +2147,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 296.0, 320.0, 173.0, 35.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /events @interp 0"
+									"text" : "m158.o.phase.points~ /events @interp 0"
 								}
 
 							}
@@ -2415,7 +2415,7 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "m158.o.points.phase~.maxpat",
+				"name" : "m158.o.phase.points~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1

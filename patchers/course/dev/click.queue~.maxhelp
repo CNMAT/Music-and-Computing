@@ -315,7 +315,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 313.0, 200.0, 219.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /trigger/envelope"
+									"text" : "m158.o.phase.points~ /trigger/envelope"
 								}
 
 							}
@@ -8606,7 +8606,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.points.phase~.maxpat",
+				"name" : "m158.o.phase.points~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/signal",
 				"patcherrelativepath" : "../../signal",
 				"type" : "JSON",

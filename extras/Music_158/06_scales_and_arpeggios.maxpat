@@ -278,7 +278,7 @@
 													"numoutlets" : 0,
 													"patching_rect" : [ 50.0, 33.0, 305.0, 154.0 ],
 													"style" : "",
-													"text" : "We want to keep the beat lengths the same, no matter how long the phrase is, so we need to know how many beats are in the phrase. However, in order to do this, we need to data from the m158.o.points.phase~ object to control the click count that drives it. This is feedback, which is not allowed in DSP (it would cause an infinite loop). To get around this limitation, we can use send~ and receive~ to send the length back up to the counter. Using send/receive~ adds one vector size of delay, but if your vector size is not too large this is okay. Try a vector size of 32."
+													"text" : "We want to keep the beat lengths the same, no matter how long the phrase is, so we need to know how many beats are in the phrase. However, in order to do this, we need to data from the m158.o.phase.points~ object to control the click count that drives it. This is feedback, which is not allowed in DSP (it would cause an infinite loop). To get around this limitation, we can use send~ and receive~ to send the length back up to the counter. Using send/receive~ adds one vector size of delay, but if your vector size is not too large this is okay. Try a vector size of 32."
 												}
 
 											}
@@ -505,7 +505,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 704.500061, 466.5, 132.666626, 35.0 ],
 													"style" : "",
-													"text" : "m158.o.points.phase~ /scale"
+													"text" : "m158.o.phase.points~ /scale"
 												}
 
 											}
@@ -596,7 +596,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 550.166687, 607.0, 287.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.phase~ /scale @step 1 @normal_x 0"
+													"text" : "m158.o.phase.points~ /scale @step 1 @normal_x 0"
 												}
 
 											}
@@ -609,7 +609,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 375.666656, 381.5, 245.312439, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.phase~ /steps @step 1"
+													"text" : "m158.o.phase.points~ /steps @step 1"
 												}
 
 											}
@@ -1177,7 +1177,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 883.099976, 415.0, 145.099976, 35.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /mod"
+									"text" : "m158.o.phase.points~ /mod"
 								}
 
 							}
@@ -1938,7 +1938,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 55.0, 99.0, 354.0, 141.0 ],
 									"style" : "",
-									"text" : "Arpeggios are \"notes of a chord played in succession\" -- we can also think of them as patterns within a clearly defined pitch grid.\n\nIn this example, we use the index parameter of m158.o.points.phase~ to switch between pitch collections or scales, so that the /step pattern articulates the pitches with its melodic contour.\n\nSee the \"pitches\" subpatch for more details on how we wrap the step numbers to be within the pitch collection."
+									"text" : "Arpeggios are \"notes of a chord played in succession\" -- we can also think of them as patterns within a clearly defined pitch grid.\n\nIn this example, we use the index parameter of m158.o.phase.points~ to switch between pitch collections or scales, so that the /step pattern articulates the pitches with its melodic contour.\n\nSee the \"pitches\" subpatch for more details on how we wrap the step numbers to be within the pitch collection."
 								}
 
 							}
@@ -2051,7 +2051,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 78.0, 133.0, 186.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.phase~ /steps"
+													"text" : "m158.o.phase.points~ /steps"
 												}
 
 											}
@@ -2451,7 +2451,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 593.833374, 309.5, 132.666626, 35.0 ],
 													"style" : "",
-													"text" : "m158.o.points.phase~ /scale"
+													"text" : "m158.o.phase.points~ /scale"
 												}
 
 											}
@@ -2542,7 +2542,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 440.166687, 416.0, 287.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.phase~ /scale @step 1 @normal_x 0"
+													"text" : "m158.o.phase.points~ /scale @step 1 @normal_x 0"
 												}
 
 											}
@@ -2555,7 +2555,7 @@
 													"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 													"patching_rect" : [ 335.0, 281.0, 219.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.points.phase~ /steps @step 1"
+													"text" : "m158.o.phase.points~ /steps @step 1"
 												}
 
 											}
@@ -3070,7 +3070,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 1089.699951, 417.5, 166.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.points.phase~ /mod"
+									"text" : "m158.o.phase.points~ /mod"
 								}
 
 							}
@@ -4145,7 +4145,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.points.phase~.maxpat",
+				"name" : "m158.o.phase.points~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1
