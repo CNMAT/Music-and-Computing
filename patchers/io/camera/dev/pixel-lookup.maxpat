@@ -4655,7 +4655,7 @@
 					"id" : "obj-62",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "m158.grab.bp.maxpat",
+					"name" : "cnmat.grab.bp.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
@@ -4965,7 +4965,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "m158.grab.bp.maxpat",
+				"name" : "cnmat.grab.bp.maxpat",
 				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/158b-spring16-o.wrappers/camera/abstractions",
 				"type" : "JSON",
 				"implicit" : 1

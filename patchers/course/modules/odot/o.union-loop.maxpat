@@ -637,7 +637,7 @@
 																	"outlettype" : [ "signal", "bang", "" ],
 																	"patching_rect" : [ 253.333344, 498.0, 131.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.num~ /baseMIDI"
+																	"text" : "cnmat.o.num~ /baseMIDI"
 																}
 
 															}
@@ -776,7 +776,7 @@
 																	"outlettype" : [ "signal", "" ],
 																	"patching_rect" : [ 142.0, 245.0, 210.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.click~ /duration"
+																	"text" : "cnmat.o.click~ /duration"
 																}
 
 															}
@@ -1053,7 +1053,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 474.5, 168.0, 161.0, 22.0 ],
 																					"style" : "",
-																					"text" : "m158.o.phase.points~ /scale"
+																					"text" : "cnmat.o.phase.points~ /scale"
 																				}
 
 																			}
@@ -1081,7 +1081,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 413.5, 288.0, 222.0, 35.0 ],
 																					"style" : "",
-																					"text" : "m158.o.phase.points~ /scale @step 1 @normal_x 0"
+																					"text" : "cnmat.o.phase.points~ /scale @step 1 @normal_x 0"
 																				}
 
 																			}
@@ -1258,7 +1258,7 @@
 																	"outlettype" : [ "signal", "FullPacket" ],
 																	"patching_rect" : [ 142.0, 610.0, 232.333344, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.harmonics.shape~"
+																	"text" : "cnmat.o.harmonics.shape~"
 																}
 
 															}
@@ -1271,7 +1271,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 277.0, 77.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.phase~"
+																	"text" : "cnmat.phase~"
 																}
 
 															}
@@ -1284,7 +1284,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 453.0, 210.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.phase.points~ /arpeggio @step 1"
+																	"text" : "cnmat.o.phase.points~ /arpeggio @step 1"
 																}
 
 															}
@@ -1297,7 +1297,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 402.0, 614.0, 141.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.phase.points~ /env"
+																	"text" : "cnmat.o.phase.points~ /env"
 																}
 
 															}
@@ -1754,7 +1754,7 @@
 																	"outlettype" : [ "signal", "bang", "" ],
 																	"patching_rect" : [ 253.333344, 498.0, 131.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.num~ /baseMIDI"
+																	"text" : "cnmat.o.num~ /baseMIDI"
 																}
 
 															}
@@ -1893,7 +1893,7 @@
 																	"outlettype" : [ "signal", "" ],
 																	"patching_rect" : [ 142.0, 245.0, 210.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.click~ /duration"
+																	"text" : "cnmat.o.click~ /duration"
 																}
 
 															}
@@ -2170,7 +2170,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 474.5, 168.0, 161.0, 22.0 ],
 																					"style" : "",
-																					"text" : "m158.o.phase.points~ /scale"
+																					"text" : "cnmat.o.phase.points~ /scale"
 																				}
 
 																			}
@@ -2198,7 +2198,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 413.5, 288.0, 222.0, 35.0 ],
 																					"style" : "",
-																					"text" : "m158.o.phase.points~ /scale @step 1 @normal_x 0"
+																					"text" : "cnmat.o.phase.points~ /scale @step 1 @normal_x 0"
 																				}
 
 																			}
@@ -2375,7 +2375,7 @@
 																	"outlettype" : [ "signal", "FullPacket" ],
 																	"patching_rect" : [ 142.0, 610.0, 242.333344, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.harmonics.shape~"
+																	"text" : "cnmat.o.harmonics.shape~"
 																}
 
 															}
@@ -2388,7 +2388,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 277.0, 77.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.phase~"
+																	"text" : "cnmat.phase~"
 																}
 
 															}
@@ -2401,7 +2401,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 438.0, 210.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.phase.points~ /arpeggio @step 1"
+																	"text" : "cnmat.o.phase.points~ /arpeggio @step 1"
 																}
 
 															}
@@ -2414,7 +2414,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 498.0, 615.0, 141.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.phase.points~ /env"
+																	"text" : "cnmat.o.phase.points~ /env"
 																}
 
 															}
@@ -2865,7 +2865,7 @@
 																	"outlettype" : [ "signal", "bang", "" ],
 																	"patching_rect" : [ 253.333344, 498.0, 131.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.num~ /baseMIDI"
+																	"text" : "cnmat.o.num~ /baseMIDI"
 																}
 
 															}
@@ -3004,7 +3004,7 @@
 																	"outlettype" : [ "signal", "" ],
 																	"patching_rect" : [ 142.0, 245.0, 210.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.click~ /duration"
+																	"text" : "cnmat.o.click~ /duration"
 																}
 
 															}
@@ -3281,7 +3281,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 474.5, 168.0, 161.0, 22.0 ],
 																					"style" : "",
-																					"text" : "m158.o.phase.points~ /scale"
+																					"text" : "cnmat.o.phase.points~ /scale"
 																				}
 
 																			}
@@ -3309,7 +3309,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 413.5, 288.0, 222.0, 35.0 ],
 																					"style" : "",
-																					"text" : "m158.o.phase.points~ /scale @step 1 @normal_x 0"
+																					"text" : "cnmat.o.phase.points~ /scale @step 1 @normal_x 0"
 																				}
 
 																			}
@@ -3486,7 +3486,7 @@
 																	"outlettype" : [ "signal", "FullPacket" ],
 																	"patching_rect" : [ 142.0, 610.0, 242.333344, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.harmonics.shape~"
+																	"text" : "cnmat.o.harmonics.shape~"
 																}
 
 															}
@@ -3499,7 +3499,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 277.0, 77.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.phase~"
+																	"text" : "cnmat.phase~"
 																}
 
 															}
@@ -3512,7 +3512,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 438.0, 210.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.phase.points~ /arpeggio @step 1"
+																	"text" : "cnmat.o.phase.points~ /arpeggio @step 1"
 																}
 
 															}
@@ -3525,7 +3525,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 498.0, 615.0, 141.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.phase.points~ /env"
+																	"text" : "cnmat.o.phase.points~ /env"
 																}
 
 															}
@@ -3976,7 +3976,7 @@
 																	"outlettype" : [ "signal", "bang", "" ],
 																	"patching_rect" : [ 253.333344, 498.0, 131.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.num~ /baseMIDI"
+																	"text" : "cnmat.o.num~ /baseMIDI"
 																}
 
 															}
@@ -4115,7 +4115,7 @@
 																	"outlettype" : [ "signal", "" ],
 																	"patching_rect" : [ 142.0, 245.0, 210.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.click~ /duration"
+																	"text" : "cnmat.o.click~ /duration"
 																}
 
 															}
@@ -4392,7 +4392,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 474.5, 168.0, 161.0, 22.0 ],
 																					"style" : "",
-																					"text" : "m158.o.phase.points~ /scale"
+																					"text" : "cnmat.o.phase.points~ /scale"
 																				}
 
 																			}
@@ -4420,7 +4420,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 413.5, 288.0, 222.0, 35.0 ],
 																					"style" : "",
-																					"text" : "m158.o.phase.points~ /scale @step 1 @normal_x 0"
+																					"text" : "cnmat.o.phase.points~ /scale @step 1 @normal_x 0"
 																				}
 
 																			}
@@ -4597,7 +4597,7 @@
 																	"outlettype" : [ "signal", "FullPacket" ],
 																	"patching_rect" : [ 142.0, 610.0, 242.333344, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.harmonics.shape~"
+																	"text" : "cnmat.o.harmonics.shape~"
 																}
 
 															}
@@ -4610,7 +4610,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 277.0, 77.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.phase~"
+																	"text" : "cnmat.phase~"
 																}
 
 															}
@@ -4623,7 +4623,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 438.0, 210.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.phase.points~ /arpeggio @step 1"
+																	"text" : "cnmat.o.phase.points~ /arpeggio @step 1"
 																}
 
 															}
@@ -4636,7 +4636,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 498.0, 615.0, 141.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.phase.points~ /env"
+																	"text" : "cnmat.o.phase.points~ /env"
 																}
 
 															}
@@ -5087,7 +5087,7 @@
 																	"outlettype" : [ "signal", "bang", "" ],
 																	"patching_rect" : [ 253.333344, 498.0, 131.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.num~ /baseMIDI"
+																	"text" : "cnmat.o.num~ /baseMIDI"
 																}
 
 															}
@@ -5226,7 +5226,7 @@
 																	"outlettype" : [ "signal", "" ],
 																	"patching_rect" : [ 142.0, 245.0, 210.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.click~ /duration"
+																	"text" : "cnmat.o.click~ /duration"
 																}
 
 															}
@@ -5503,7 +5503,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 474.5, 168.0, 161.0, 22.0 ],
 																					"style" : "",
-																					"text" : "m158.o.phase.points~ /scale"
+																					"text" : "cnmat.o.phase.points~ /scale"
 																				}
 
 																			}
@@ -5531,7 +5531,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 413.5, 288.0, 222.0, 35.0 ],
 																					"style" : "",
-																					"text" : "m158.o.phase.points~ /scale @step 1 @normal_x 0"
+																					"text" : "cnmat.o.phase.points~ /scale @step 1 @normal_x 0"
 																				}
 
 																			}
@@ -5708,7 +5708,7 @@
 																	"outlettype" : [ "signal", "FullPacket" ],
 																	"patching_rect" : [ 142.0, 610.0, 242.333344, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.harmonics.shape~"
+																	"text" : "cnmat.o.harmonics.shape~"
 																}
 
 															}
@@ -5721,7 +5721,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 277.0, 77.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.phase~"
+																	"text" : "cnmat.phase~"
 																}
 
 															}
@@ -5734,7 +5734,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 438.0, 210.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.phase.points~ /arpeggio @step 1"
+																	"text" : "cnmat.o.phase.points~ /arpeggio @step 1"
 																}
 
 															}
@@ -5747,7 +5747,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 498.0, 615.0, 141.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.phase.points~ /env"
+																	"text" : "cnmat.o.phase.points~ /env"
 																}
 
 															}
@@ -6198,7 +6198,7 @@
 																	"outlettype" : [ "signal", "bang", "" ],
 																	"patching_rect" : [ 253.333344, 498.0, 131.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.num~ /baseMIDI"
+																	"text" : "cnmat.o.num~ /baseMIDI"
 																}
 
 															}
@@ -6337,7 +6337,7 @@
 																	"outlettype" : [ "signal", "" ],
 																	"patching_rect" : [ 142.0, 245.0, 210.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.click~ /duration"
+																	"text" : "cnmat.o.click~ /duration"
 																}
 
 															}
@@ -6614,7 +6614,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 474.5, 168.0, 161.0, 22.0 ],
 																					"style" : "",
-																					"text" : "m158.o.phase.points~ /scale"
+																					"text" : "cnmat.o.phase.points~ /scale"
 																				}
 
 																			}
@@ -6642,7 +6642,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 413.5, 288.0, 222.0, 35.0 ],
 																					"style" : "",
-																					"text" : "m158.o.phase.points~ /scale @step 1 @normal_x 0"
+																					"text" : "cnmat.o.phase.points~ /scale @step 1 @normal_x 0"
 																				}
 
 																			}
@@ -6819,7 +6819,7 @@
 																	"outlettype" : [ "signal", "FullPacket" ],
 																	"patching_rect" : [ 142.0, 610.0, 242.333344, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.harmonics.shape~"
+																	"text" : "cnmat.o.harmonics.shape~"
 																}
 
 															}
@@ -6832,7 +6832,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 277.0, 77.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.phase~"
+																	"text" : "cnmat.phase~"
 																}
 
 															}
@@ -6845,7 +6845,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 438.0, 210.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.phase.points~ /arpeggio @step 1"
+																	"text" : "cnmat.o.phase.points~ /arpeggio @step 1"
 																}
 
 															}
@@ -6858,7 +6858,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 498.0, 615.0, 141.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.phase.points~ /env"
+																	"text" : "cnmat.o.phase.points~ /env"
 																}
 
 															}
@@ -7309,7 +7309,7 @@
 																	"outlettype" : [ "signal", "bang", "" ],
 																	"patching_rect" : [ 253.333344, 498.0, 131.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.num~ /baseMIDI"
+																	"text" : "cnmat.o.num~ /baseMIDI"
 																}
 
 															}
@@ -7448,7 +7448,7 @@
 																	"outlettype" : [ "signal", "" ],
 																	"patching_rect" : [ 142.0, 245.0, 210.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.click~ /duration"
+																	"text" : "cnmat.o.click~ /duration"
 																}
 
 															}
@@ -7725,7 +7725,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 474.5, 168.0, 161.0, 22.0 ],
 																					"style" : "",
-																					"text" : "m158.o.phase.points~ /scale"
+																					"text" : "cnmat.o.phase.points~ /scale"
 																				}
 
 																			}
@@ -7753,7 +7753,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 413.5, 288.0, 222.0, 35.0 ],
 																					"style" : "",
-																					"text" : "m158.o.phase.points~ /scale @step 1 @normal_x 0"
+																					"text" : "cnmat.o.phase.points~ /scale @step 1 @normal_x 0"
 																				}
 
 																			}
@@ -7930,7 +7930,7 @@
 																	"outlettype" : [ "signal", "FullPacket" ],
 																	"patching_rect" : [ 142.0, 610.0, 242.333344, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.harmonics.shape~"
+																	"text" : "cnmat.o.harmonics.shape~"
 																}
 
 															}
@@ -7943,7 +7943,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 277.0, 77.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.phase~"
+																	"text" : "cnmat.phase~"
 																}
 
 															}
@@ -7956,7 +7956,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 438.0, 210.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.phase.points~ /arpeggio @step 1"
+																	"text" : "cnmat.o.phase.points~ /arpeggio @step 1"
 																}
 
 															}
@@ -7969,7 +7969,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 498.0, 615.0, 141.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.phase.points~ /env"
+																	"text" : "cnmat.o.phase.points~ /env"
 																}
 
 															}
@@ -8420,7 +8420,7 @@
 																	"outlettype" : [ "signal", "bang", "" ],
 																	"patching_rect" : [ 253.333344, 498.0, 131.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.num~ /baseMIDI"
+																	"text" : "cnmat.o.num~ /baseMIDI"
 																}
 
 															}
@@ -8559,7 +8559,7 @@
 																	"outlettype" : [ "signal", "" ],
 																	"patching_rect" : [ 142.0, 245.0, 210.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.click~ /duration"
+																	"text" : "cnmat.o.click~ /duration"
 																}
 
 															}
@@ -8836,7 +8836,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 474.5, 168.0, 161.0, 22.0 ],
 																					"style" : "",
-																					"text" : "m158.o.phase.points~ /scale"
+																					"text" : "cnmat.o.phase.points~ /scale"
 																				}
 
 																			}
@@ -8864,7 +8864,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 413.5, 288.0, 222.0, 35.0 ],
 																					"style" : "",
-																					"text" : "m158.o.phase.points~ /scale @step 1 @normal_x 0"
+																					"text" : "cnmat.o.phase.points~ /scale @step 1 @normal_x 0"
 																				}
 
 																			}
@@ -9041,7 +9041,7 @@
 																	"outlettype" : [ "signal", "FullPacket" ],
 																	"patching_rect" : [ 142.0, 610.0, 242.333344, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.harmonics.shape~"
+																	"text" : "cnmat.o.harmonics.shape~"
 																}
 
 															}
@@ -9054,7 +9054,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 277.0, 77.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.phase~"
+																	"text" : "cnmat.phase~"
 																}
 
 															}
@@ -9067,7 +9067,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 438.0, 210.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.phase.points~ /arpeggio @step 1"
+																	"text" : "cnmat.o.phase.points~ /arpeggio @step 1"
 																}
 
 															}
@@ -9080,7 +9080,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 498.0, 615.0, 141.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.phase.points~ /env"
+																	"text" : "cnmat.o.phase.points~ /env"
 																}
 
 															}
@@ -9531,7 +9531,7 @@
 																	"outlettype" : [ "signal", "bang", "" ],
 																	"patching_rect" : [ 253.333344, 498.0, 131.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.num~ /baseMIDI"
+																	"text" : "cnmat.o.num~ /baseMIDI"
 																}
 
 															}
@@ -9670,7 +9670,7 @@
 																	"outlettype" : [ "signal", "" ],
 																	"patching_rect" : [ 142.0, 245.0, 210.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.click~ /duration"
+																	"text" : "cnmat.o.click~ /duration"
 																}
 
 															}
@@ -9947,7 +9947,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 474.5, 168.0, 161.0, 22.0 ],
 																					"style" : "",
-																					"text" : "m158.o.phase.points~ /scale"
+																					"text" : "cnmat.o.phase.points~ /scale"
 																				}
 
 																			}
@@ -9975,7 +9975,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 413.5, 288.0, 222.0, 35.0 ],
 																					"style" : "",
-																					"text" : "m158.o.phase.points~ /scale @step 1 @normal_x 0"
+																					"text" : "cnmat.o.phase.points~ /scale @step 1 @normal_x 0"
 																				}
 
 																			}
@@ -10152,7 +10152,7 @@
 																	"outlettype" : [ "signal", "FullPacket" ],
 																	"patching_rect" : [ 142.0, 610.0, 242.333344, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.harmonics.shape~"
+																	"text" : "cnmat.o.harmonics.shape~"
 																}
 
 															}
@@ -10165,7 +10165,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 277.0, 77.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.phase~"
+																	"text" : "cnmat.phase~"
 																}
 
 															}
@@ -10178,7 +10178,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 438.0, 210.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.phase.points~ /arpeggio @step 1"
+																	"text" : "cnmat.o.phase.points~ /arpeggio @step 1"
 																}
 
 															}
@@ -10191,7 +10191,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 498.0, 615.0, 141.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.phase.points~ /env"
+																	"text" : "cnmat.o.phase.points~ /env"
 																}
 
 															}
@@ -10642,7 +10642,7 @@
 																	"outlettype" : [ "signal", "bang", "" ],
 																	"patching_rect" : [ 253.333344, 498.0, 131.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.num~ /baseMIDI"
+																	"text" : "cnmat.o.num~ /baseMIDI"
 																}
 
 															}
@@ -10781,7 +10781,7 @@
 																	"outlettype" : [ "signal", "" ],
 																	"patching_rect" : [ 142.0, 245.0, 210.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.click~ /duration"
+																	"text" : "cnmat.o.click~ /duration"
 																}
 
 															}
@@ -11058,7 +11058,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 474.5, 168.0, 161.0, 22.0 ],
 																					"style" : "",
-																					"text" : "m158.o.phase.points~ /scale"
+																					"text" : "cnmat.o.phase.points~ /scale"
 																				}
 
 																			}
@@ -11086,7 +11086,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 413.5, 288.0, 222.0, 35.0 ],
 																					"style" : "",
-																					"text" : "m158.o.phase.points~ /scale @step 1 @normal_x 0"
+																					"text" : "cnmat.o.phase.points~ /scale @step 1 @normal_x 0"
 																				}
 
 																			}
@@ -11263,7 +11263,7 @@
 																	"outlettype" : [ "signal", "FullPacket" ],
 																	"patching_rect" : [ 142.0, 610.0, 242.333344, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.harmonics.shape~"
+																	"text" : "cnmat.o.harmonics.shape~"
 																}
 
 															}
@@ -11276,7 +11276,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 277.0, 77.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.phase~"
+																	"text" : "cnmat.phase~"
 																}
 
 															}
@@ -11289,7 +11289,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 438.0, 210.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.phase.points~ /arpeggio @step 1"
+																	"text" : "cnmat.o.phase.points~ /arpeggio @step 1"
 																}
 
 															}
@@ -11302,7 +11302,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 498.0, 615.0, 141.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.phase.points~ /env"
+																	"text" : "cnmat.o.phase.points~ /env"
 																}
 
 															}
@@ -11753,7 +11753,7 @@
 																	"outlettype" : [ "signal", "bang", "" ],
 																	"patching_rect" : [ 253.333344, 498.0, 131.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.num~ /baseMIDI"
+																	"text" : "cnmat.o.num~ /baseMIDI"
 																}
 
 															}
@@ -11892,7 +11892,7 @@
 																	"outlettype" : [ "signal", "" ],
 																	"patching_rect" : [ 142.0, 245.0, 210.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.click~ /duration"
+																	"text" : "cnmat.o.click~ /duration"
 																}
 
 															}
@@ -12169,7 +12169,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 474.5, 168.0, 161.0, 22.0 ],
 																					"style" : "",
-																					"text" : "m158.o.phase.points~ /scale"
+																					"text" : "cnmat.o.phase.points~ /scale"
 																				}
 
 																			}
@@ -12197,7 +12197,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 413.5, 288.0, 222.0, 35.0 ],
 																					"style" : "",
-																					"text" : "m158.o.phase.points~ /scale @step 1 @normal_x 0"
+																					"text" : "cnmat.o.phase.points~ /scale @step 1 @normal_x 0"
 																				}
 
 																			}
@@ -12374,7 +12374,7 @@
 																	"outlettype" : [ "signal", "FullPacket" ],
 																	"patching_rect" : [ 142.0, 610.0, 242.333344, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.harmonics.shape~"
+																	"text" : "cnmat.o.harmonics.shape~"
 																}
 
 															}
@@ -12387,7 +12387,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 277.0, 77.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.phase~"
+																	"text" : "cnmat.phase~"
 																}
 
 															}
@@ -12400,7 +12400,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 438.0, 210.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.phase.points~ /arpeggio @step 1"
+																	"text" : "cnmat.o.phase.points~ /arpeggio @step 1"
 																}
 
 															}
@@ -12413,7 +12413,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 498.0, 615.0, 141.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.phase.points~ /env"
+																	"text" : "cnmat.o.phase.points~ /env"
 																}
 
 															}
@@ -12864,7 +12864,7 @@
 																	"outlettype" : [ "signal", "bang", "" ],
 																	"patching_rect" : [ 253.333344, 498.0, 131.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.num~ /baseMIDI"
+																	"text" : "cnmat.o.num~ /baseMIDI"
 																}
 
 															}
@@ -13003,7 +13003,7 @@
 																	"outlettype" : [ "signal", "" ],
 																	"patching_rect" : [ 142.0, 245.0, 210.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.click~ /duration"
+																	"text" : "cnmat.o.click~ /duration"
 																}
 
 															}
@@ -13280,7 +13280,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 474.5, 168.0, 161.0, 22.0 ],
 																					"style" : "",
-																					"text" : "m158.o.phase.points~ /scale"
+																					"text" : "cnmat.o.phase.points~ /scale"
 																				}
 
 																			}
@@ -13308,7 +13308,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 413.5, 288.0, 222.0, 35.0 ],
 																					"style" : "",
-																					"text" : "m158.o.phase.points~ /scale @step 1 @normal_x 0"
+																					"text" : "cnmat.o.phase.points~ /scale @step 1 @normal_x 0"
 																				}
 
 																			}
@@ -13485,7 +13485,7 @@
 																	"outlettype" : [ "signal", "FullPacket" ],
 																	"patching_rect" : [ 142.0, 610.0, 242.333344, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.harmonics.shape~"
+																	"text" : "cnmat.o.harmonics.shape~"
 																}
 
 															}
@@ -13498,7 +13498,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 277.0, 77.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.phase~"
+																	"text" : "cnmat.phase~"
 																}
 
 															}
@@ -13511,7 +13511,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 438.0, 210.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.phase.points~ /arpeggio @step 1"
+																	"text" : "cnmat.o.phase.points~ /arpeggio @step 1"
 																}
 
 															}
@@ -13524,7 +13524,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 498.0, 615.0, 141.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.phase.points~ /env"
+																	"text" : "cnmat.o.phase.points~ /env"
 																}
 
 															}
@@ -14000,7 +14000,7 @@
 																	"outlettype" : [ "signal", "bang", "" ],
 																	"patching_rect" : [ 253.333344, 498.0, 131.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.num~ /baseMIDI"
+																	"text" : "cnmat.o.num~ /baseMIDI"
 																}
 
 															}
@@ -14139,7 +14139,7 @@
 																	"outlettype" : [ "signal", "" ],
 																	"patching_rect" : [ 142.0, 245.0, 210.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.click~ /duration"
+																	"text" : "cnmat.o.click~ /duration"
 																}
 
 															}
@@ -14416,7 +14416,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 474.5, 168.0, 161.0, 22.0 ],
 																					"style" : "",
-																					"text" : "m158.o.phase.points~ /scale"
+																					"text" : "cnmat.o.phase.points~ /scale"
 																				}
 
 																			}
@@ -14444,7 +14444,7 @@
 																					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																					"patching_rect" : [ 413.5, 288.0, 222.0, 35.0 ],
 																					"style" : "",
-																					"text" : "m158.o.phase.points~ /scale @step 1 @normal_x 0"
+																					"text" : "cnmat.o.phase.points~ /scale @step 1 @normal_x 0"
 																				}
 
 																			}
@@ -14621,7 +14621,7 @@
 																	"outlettype" : [ "signal", "FullPacket" ],
 																	"patching_rect" : [ 142.0, 610.0, 242.333344, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.harmonics.shape~"
+																	"text" : "cnmat.o.harmonics.shape~"
 																}
 
 															}
@@ -14634,7 +14634,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 277.0, 77.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.phase~"
+																	"text" : "cnmat.phase~"
 																}
 
 															}
@@ -14647,7 +14647,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 142.0, 438.0, 210.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.phase.points~ /arpeggio @step 1"
+																	"text" : "cnmat.o.phase.points~ /arpeggio @step 1"
 																}
 
 															}
@@ -14660,7 +14660,7 @@
 																	"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 																	"patching_rect" : [ 498.0, 615.0, 141.0, 21.0 ],
 																	"style" : "",
-																	"text" : "m158.o.phase.points~ /env"
+																	"text" : "cnmat.o.phase.points~ /env"
 																}
 
 															}
@@ -15215,7 +15215,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 307.0, 113.0, 116.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.io.keyboard"
+									"text" : "cnmat.o.io.keyboard"
 								}
 
 							}
@@ -15228,7 +15228,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 189.0, 113.0, 103.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.io.mouse"
+									"text" : "cnmat.o.io.mouse"
 								}
 
 							}
@@ -16391,7 +16391,7 @@
 													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 700.0, 569.5, 203.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.gui.function /seq/*/env"
+													"text" : "cnmat.o.gui.function /seq/*/env"
 												}
 
 											}
@@ -16404,7 +16404,7 @@
 													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 700.0, 536.5, 187.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.gui.table /seq/*/arp"
+													"text" : "cnmat.o.gui.table /seq/*/arp"
 												}
 
 											}
@@ -16502,7 +16502,7 @@
 													"outlettype" : [ "FullPacket", "dump" ],
 													"patching_rect" : [ 866.0, 175.5, 70.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.o.gui"
+													"text" : "cnmat.o.gui"
 												}
 
 											}
@@ -17250,7 +17250,7 @@
 													"numoutlets" : 0,
 													"patching_rect" : [ 149.0, 472.0, 419.0, 20.0 ],
 													"style" : "",
-													"text" : "note that these presets assume the presence of the m158.o.io.mouse bundle"
+													"text" : "note that these presets assume the presence of the cnmat.o.io.mouse bundle"
 												}
 
 											}
@@ -17353,7 +17353,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 307.0, 65.0, 116.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.io.keyboard"
+									"text" : "cnmat.o.io.keyboard"
 								}
 
 							}
@@ -17366,7 +17366,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 189.0, 65.0, 103.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.io.mouse"
+									"text" : "cnmat.o.io.mouse"
 								}
 
 							}
@@ -19697,31 +19697,31 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.io.mouse.maxpat",
+				"name" : "cnmat.o.io.mouse.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/io",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.loadbang.maxpat",
+				"name" : "cnmat.loadbang.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/EnvelopForLive/patchers/util",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.io.keyboard.maxpat",
+				"name" : "cnmat.o.io.keyboard.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/io",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.gui.maxpat",
+				"name" : "cnmat.o.gui.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gui",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.gui.table.maxpat",
+				"name" : "cnmat.o.gui.table.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gui",
 				"type" : "JSON",
 				"implicit" : 1
@@ -19739,13 +19739,13 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.gui.function.maxpat",
+				"name" : "cnmat.o.gui.function.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gui",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.phase.points~.maxpat",
+				"name" : "cnmat.o.phase.points~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1
@@ -19757,7 +19757,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.phase~.maxpat",
+				"name" : "cnmat.phase~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1
@@ -19769,7 +19769,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.harmonics.shape~.maxpat",
+				"name" : "cnmat.o.harmonics.shape~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/sound-engines/additive-synth",
 				"type" : "JSON",
 				"implicit" : 1
@@ -19787,13 +19787,13 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.click~.maxpat",
+				"name" : "cnmat.o.click~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.num~.maxpat",
+				"name" : "cnmat.o.num~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1

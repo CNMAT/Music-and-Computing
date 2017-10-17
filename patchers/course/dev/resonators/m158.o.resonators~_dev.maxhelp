@@ -46,7 +46,7 @@
 					"outlettype" : [ "signal", "FullPacket" ],
 					"patching_rect" : [ 223.0, 460.0, 100.0, 35.0 ],
 					"style" : "",
-					"text" : "m158.o.resonators~"
+					"text" : "cnmat.o.resonators~"
 				}
 
 			}
@@ -332,7 +332,7 @@
 					"outlettype" : [ "signal", "" ],
 					"patching_rect" : [ 215.5, 211.5, 144.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.resonators~_dev"
+					"text" : "cnmat.o.resonators~_dev"
 				}
 
 			}
@@ -515,7 +515,7 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "m158.o.resonators~_dev.maxpat",
+				"name" : "cnmat.o.resonators~_dev.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/course/dev/resonators",
 				"type" : "JSON",
 				"implicit" : 1
@@ -533,7 +533,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.resonators~.maxpat",
+				"name" : "cnmat.o.resonators~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/sound-engines/resonators",
 				"type" : "JSON",
 				"implicit" : 1

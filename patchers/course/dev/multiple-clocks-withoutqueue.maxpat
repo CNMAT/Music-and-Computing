@@ -208,7 +208,7 @@
 					"id" : "obj-11",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "m158.o.gui.dropfile.maxpat",
+					"name" : "cnmat.o.gui.dropfile.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
@@ -352,7 +352,7 @@
 					"patching_rect" : [ 502.0, 172.0, 110.0, 22.0 ],
 					"presentation_rect" : [ 502.0, 172.0, 0.0, 0.0 ],
 					"style" : "",
-					"text" : "m158.phase.click~"
+					"text" : "cnmat.phase.click~"
 				}
 
 			}
@@ -366,7 +366,7 @@
 					"patching_rect" : [ 502.0, 141.0, 84.0, 22.0 ],
 					"presentation_rect" : [ 502.0, 141.0, 0.0, 0.0 ],
 					"style" : "",
-					"text" : "m158.phase~"
+					"text" : "cnmat.phase~"
 				}
 
 			}
@@ -555,7 +555,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 68.0, 184.0, 110.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.phase.click~"
+					"text" : "cnmat.phase.click~"
 				}
 
 			}
@@ -568,7 +568,7 @@
 					"outlettype" : [ "signal", "signal", "signal", "" ],
 					"patching_rect" : [ 68.0, 153.0, 84.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.phase~"
+					"text" : "cnmat.phase~"
 				}
 
 			}
@@ -926,7 +926,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.loadbang.maxpat",
+				"name" : "cnmat.loadbang.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/internal",
 				"patcherrelativepath" : "../../internal",
 				"type" : "JSON",
@@ -940,7 +940,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.phase~.maxpat",
+				"name" : "cnmat.phase~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/signal",
 				"patcherrelativepath" : "../../signal",
 				"type" : "JSON",
@@ -954,7 +954,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.phase.click~.maxpat",
+				"name" : "cnmat.phase.click~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/signal",
 				"patcherrelativepath" : "../../signal",
 				"type" : "JSON",
@@ -968,7 +968,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.gui.dropfile.maxpat",
+				"name" : "cnmat.o.gui.dropfile.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/gui",
 				"patcherrelativepath" : "../../gui",
 				"type" : "JSON",

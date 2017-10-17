@@ -312,7 +312,7 @@
 					"outlettype" : [ "FullPacket" ],
 					"patching_rect" : [ 329.0, 19.0, 107.0, 21.0 ],
 					"style" : "",
-					"text" : "m158.o.io.keyboard"
+					"text" : "cnmat.o.io.keyboard"
 				}
 
 			}
@@ -15376,7 +15376,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 211.0, 19.0, 95.0, 21.0 ],
 					"style" : "",
-					"text" : "m158.o.io.mouse"
+					"text" : "cnmat.o.io.mouse"
 				}
 
 			}
@@ -16200,13 +16200,13 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.io.mouse.maxpat",
+				"name" : "cnmat.o.io.mouse.maxpat",
 				"bootpath" : "~/Documents/dev-lib/CNMAT-Internal/personal/rama/m158-dev",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.io.keyboard.maxpat",
+				"name" : "cnmat.o.io.keyboard.maxpat",
 				"bootpath" : "~/Documents/dev-lib/CNMAT-Internal/personal/rama/m158-dev",
 				"type" : "JSON",
 				"implicit" : 1

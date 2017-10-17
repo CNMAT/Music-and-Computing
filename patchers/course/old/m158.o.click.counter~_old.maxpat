@@ -344,7 +344,7 @@
 					"outlettype" : [ "signal", "" ],
 					"patching_rect" : [ 287.0, 115.0, 118.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.click~ /reset"
+					"text" : "cnmat.o.click~ /reset"
 				}
 
 			}
@@ -382,7 +382,7 @@
 					"outlettype" : [ "signal", "bang", "" ],
 					"patching_rect" : [ 386.0, 164.0, 145.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.num~ #1"
+					"text" : "cnmat.o.num~ #1"
 				}
 
 			}

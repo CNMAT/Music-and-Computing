@@ -146,7 +146,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 206.0, 150.0, 116.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.io.keyboard"
+					"text" : "cnmat.o.io.keyboard"
 				}
 
 			}
@@ -159,7 +159,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 338.0, 229.0, 141.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.gui.function /env"
+					"text" : "cnmat.o.gui.function /env"
 				}
 
 			}
@@ -198,7 +198,7 @@
 					"outlettype" : [ "FullPacket", "dump" ],
 					"patching_rect" : [ 338.0, 134.5, 70.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.gui"
+					"text" : "cnmat.o.gui"
 				}
 
 			}
@@ -395,19 +395,19 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "m158.o.gui.maxpat",
+				"name" : "cnmat.o.gui.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gui",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.loadbang.maxpat",
+				"name" : "cnmat.loadbang.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.gui.function.maxpat",
+				"name" : "cnmat.o.gui.function.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gui",
 				"type" : "JSON",
 				"implicit" : 1
@@ -425,7 +425,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.io.keyboard.maxpat",
+				"name" : "cnmat.o.io.keyboard.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/io",
 				"type" : "JSON",
 				"implicit" : 1

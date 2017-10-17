@@ -1581,7 +1581,7 @@
 					"id" : "obj-32",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "m158.grab.bp.maxpat",
+					"name" : "cnmat.grab.bp.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
@@ -7454,7 +7454,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "m158.grab.bp.maxpat",
+				"name" : "cnmat.grab.bp.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/io/camera/abstractions",
 				"type" : "JSON",
 				"implicit" : 1

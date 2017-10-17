@@ -166,7 +166,7 @@
 					"outlettype" : [ "FullPacket", "dump" ],
 					"patching_rect" : [ 315.0, 114.5, 70.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.gui"
+					"text" : "cnmat.o.gui"
 				}
 
 			}
@@ -289,7 +289,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "m158.o.gui.maxpat",
+				"name" : "cnmat.o.gui.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gui",
 				"type" : "JSON",
 				"implicit" : 1

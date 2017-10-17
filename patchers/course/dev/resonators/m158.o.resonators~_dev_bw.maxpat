@@ -707,7 +707,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 91.0, 180.0, 111.0, 20.0 ],
 					"style" : "",
-					"text" : "m158.o.sinusoids~"
+					"text" : "cnmat.o.sinusoids~"
 				}
 
 			}

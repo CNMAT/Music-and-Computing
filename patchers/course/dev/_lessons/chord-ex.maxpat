@@ -57,7 +57,7 @@
 					"outlettype" : [ "signal", "signal", "signal", "" ],
 					"patching_rect" : [ 98.0, 285.0, 84.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.phase~"
+					"text" : "cnmat.phase~"
 				}
 
 			}
@@ -70,7 +70,7 @@
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 					"patching_rect" : [ 98.0, 341.0, 239.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.phase.points~ /chord/prog @step 1"
+					"text" : "cnmat.o.phase.points~ /chord/prog @step 1"
 				}
 
 			}
@@ -148,7 +148,7 @@
 					"outlettype" : [ "signal", "bang", "" ],
 					"patching_rect" : [ 98.0, 246.0, 120.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.num~ /loopit"
+					"text" : "cnmat.o.num~ /loopit"
 				}
 
 			}
@@ -176,7 +176,7 @@
 					"patching_rect" : [ 609.0, 494.0, 152.0, 22.0 ],
 					"presentation_rect" : [ 603.0, 374.0, 0.0, 0.0 ],
 					"style" : "",
-					"text" : "m158.o.num~ /baseMIDI"
+					"text" : "cnmat.o.num~ /baseMIDI"
 				}
 
 			}
@@ -190,7 +190,7 @@
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 					"patching_rect" : [ 544.0, 435.0, 161.0, 35.0 ],
 					"style" : "",
-					"text" : "m158.o.phase.points~ /chord/voice/3 @normal_x 0"
+					"text" : "cnmat.o.phase.points~ /chord/voice/3 @normal_x 0"
 				}
 
 			}
@@ -217,7 +217,7 @@
 					"patching_rect" : [ 544.0, 625.0, 152.0, 22.0 ],
 					"presentation_rect" : [ 538.0, 505.0, 0.0, 0.0 ],
 					"style" : "",
-					"text" : "m158.o.harmonics.shape~"
+					"text" : "cnmat.o.harmonics.shape~"
 				}
 
 			}
@@ -245,7 +245,7 @@
 					"patching_rect" : [ 376.0, 494.0, 152.0, 22.0 ],
 					"presentation_rect" : [ 368.0, 374.0, 0.0, 0.0 ],
 					"style" : "",
-					"text" : "m158.o.num~ /baseMIDI"
+					"text" : "cnmat.o.num~ /baseMIDI"
 				}
 
 			}
@@ -259,7 +259,7 @@
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 					"patching_rect" : [ 311.0, 435.0, 161.0, 35.0 ],
 					"style" : "",
-					"text" : "m158.o.phase.points~ /chord/voice/2 @normal_x 0"
+					"text" : "cnmat.o.phase.points~ /chord/voice/2 @normal_x 0"
 				}
 
 			}
@@ -285,7 +285,7 @@
 					"outlettype" : [ "signal", "bang", "" ],
 					"patching_rect" : [ 163.0, 494.0, 152.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.num~ /baseMIDI"
+					"text" : "cnmat.o.num~ /baseMIDI"
 				}
 
 			}
@@ -299,7 +299,7 @@
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 					"patching_rect" : [ 98.0, 435.0, 163.0, 35.0 ],
 					"style" : "",
-					"text" : "m158.o.phase.points~ /chord/voice/1 @normal_x 0"
+					"text" : "cnmat.o.phase.points~ /chord/voice/1 @normal_x 0"
 				}
 
 			}
@@ -342,7 +342,7 @@
 					"patching_rect" : [ 311.0, 625.0, 152.0, 22.0 ],
 					"presentation_rect" : [ 309.0, 283.0, 0.0, 0.0 ],
 					"style" : "",
-					"text" : "m158.o.harmonics.shape~"
+					"text" : "cnmat.o.harmonics.shape~"
 				}
 
 			}
@@ -368,7 +368,7 @@
 					"outlettype" : [ "signal", "FullPacket" ],
 					"patching_rect" : [ 98.0, 625.0, 152.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.harmonics.shape~"
+					"text" : "cnmat.o.harmonics.shape~"
 				}
 
 			}
@@ -681,7 +681,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "m158.o.harmonics.shape~.maxpat",
+				"name" : "cnmat.o.harmonics.shape~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/sound-engines/additive-synth",
 				"type" : "JSON",
 				"implicit" : 1
@@ -693,7 +693,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.loadbang.maxpat",
+				"name" : "cnmat.loadbang.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
 				"type" : "JSON",
 				"implicit" : 1
@@ -711,7 +711,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.phase.points~.maxpat",
+				"name" : "cnmat.o.phase.points~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1
@@ -723,13 +723,13 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.num~.maxpat",
+				"name" : "cnmat.o.num~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.phase~.maxpat",
+				"name" : "cnmat.phase~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1

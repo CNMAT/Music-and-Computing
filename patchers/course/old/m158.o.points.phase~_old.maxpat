@@ -505,7 +505,7 @@
 													"numoutlets" : 0,
 													"patching_rect" : [ 115.0, 229.946045, 158.0, 22.0 ],
 													"style" : "",
-													"text" : "print m158.o.points.lookup~"
+													"text" : "print cnmat.o.points.lookup~"
 												}
 
 											}
@@ -1120,7 +1120,7 @@
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 601.0, 140.0, 93.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.loadbang"
+					"text" : "cnmat.loadbang"
 				}
 
 			}
@@ -1296,7 +1296,7 @@
 					"outlettype" : [ "signal", "" ],
 					"patching_rect" : [ 222.0, 442.0, 190.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.points.interp~"
+					"text" : "cnmat.o.points.interp~"
 				}
 
 			}
@@ -1309,7 +1309,7 @@
 					"outlettype" : [ "signal", "signal", "" ],
 					"patching_rect" : [ 222.0, 396.0, 190.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.points.lookup~"
+					"text" : "cnmat.o.points.lookup~"
 				}
 
 			}

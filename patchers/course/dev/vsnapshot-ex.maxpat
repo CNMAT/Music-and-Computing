@@ -253,7 +253,7 @@
 					"outlettype" : [ "signal", "signal", "signal", "" ],
 					"patching_rect" : [ 215.0, 165.0, 84.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.phase~"
+					"text" : "cnmat.phase~"
 				}
 
 			}
@@ -378,7 +378,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.loadbang.maxpat",
+				"name" : "cnmat.loadbang.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/EnvelopLive/patchers/util",
 				"type" : "JSON",
 				"implicit" : 1
@@ -390,7 +390,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.phase~.maxpat",
+				"name" : "cnmat.phase~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1

@@ -289,7 +289,7 @@
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 663.0, 21.0, 93.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.loadbang"
+					"text" : "cnmat.loadbang"
 				}
 
 			}
@@ -625,7 +625,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "m158.loadbang.maxpat",
+				"name" : "cnmat.loadbang.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
 				"type" : "JSON",
 				"implicit" : 1

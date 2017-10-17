@@ -1,4 +1,4 @@
-# CNMAT-M158 Max Package
+# CNMAT Music-and-Computing Max Package
 
 ## to install:
 

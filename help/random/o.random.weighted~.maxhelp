@@ -256,7 +256,7 @@
 									"outlettype" : [ "FullPacket", "dump" ],
 									"patching_rect" : [ 574.0, 310.0, 70.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.gui"
+									"text" : "cnmat.o.gui"
 								}
 
 							}
@@ -356,7 +356,7 @@
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 287.0, 264.5, 110.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.phase.click~"
+									"text" : "cnmat.phase.click~"
 								}
 
 							}
@@ -369,7 +369,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 287.0, 228.5, 84.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.phase~"
+									"text" : "cnmat.phase~"
 								}
 
 							}
@@ -859,7 +859,7 @@
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 127.0, 224.5, 110.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.phase.click~"
+									"text" : "cnmat.phase.click~"
 								}
 
 							}
@@ -872,7 +872,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 127.0, 188.5, 100.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.phase~"
+									"text" : "cnmat.phase~"
 								}
 
 							}
@@ -1379,7 +1379,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.loadbang.maxpat",
+				"name" : "cnmat.loadbang.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/EnvelopForLive/patchers/util",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1391,7 +1391,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.phase~.maxpat",
+				"name" : "cnmat.phase~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1403,7 +1403,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.phase.click~.maxpat",
+				"name" : "cnmat.phase.click~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1415,7 +1415,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.gui.maxpat",
+				"name" : "cnmat.o.gui.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gui",
 				"type" : "JSON",
 				"implicit" : 1

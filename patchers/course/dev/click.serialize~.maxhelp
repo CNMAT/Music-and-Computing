@@ -368,7 +368,7 @@
 					"id" : "obj-11",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "m158.o.gui.dropfile.maxpat",
+					"name" : "cnmat.o.gui.dropfile.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
@@ -758,7 +758,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.loadbang.maxpat",
+				"name" : "cnmat.loadbang.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/internal",
 				"patcherrelativepath" : "../../internal",
 				"type" : "JSON",
@@ -772,7 +772,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.gui.dropfile.maxpat",
+				"name" : "cnmat.o.gui.dropfile.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/gui",
 				"patcherrelativepath" : "../../gui",
 				"type" : "JSON",

@@ -45,7 +45,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 837.5, 433.5, 122.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.phase.divider~"
+					"text" : "cnmat.phase.divider~"
 				}
 
 			}
@@ -90,7 +90,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 55.0, 99.0, 354.0, 141.0 ],
 					"style" : "",
-					"text" : "Arpeggios are \"notes of a chord played in succession\" -- we can also think of them as patterns within a clearly defined pitch grid.\n\nIn this example, we use the index parameter of m158.o.phase.points~ to switch between pitch collections or scales, so that the /step pattern articulates the pitches with its melodic contour.\n\nSee the \"pitches\" subpatch for more details on how we wrap the step numbers to be within the pitch collection."
+					"text" : "Arpeggios are \"notes of a chord played in succession\" -- we can also think of them as patterns within a clearly defined pitch grid.\n\nIn this example, we use the index parameter of cnmat.o.phase.points~ to switch between pitch collections or scales, so that the /step pattern articulates the pitches with its melodic contour.\n\nSee the \"pitches\" subpatch for more details on how we wrap the step numbers to be within the pitch collection."
 				}
 
 			}
@@ -225,7 +225,7 @@
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 330.0, 93.0, 110.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.phase.click~"
+									"text" : "cnmat.phase.click~"
 								}
 
 							}
@@ -267,7 +267,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 387.666687, 535.0, 372.0, 20.0 ],
 									"style" : "",
-									"text" : "<< convert midi to frequency for use with m158.o.harmonics.shape~"
+									"text" : "<< convert midi to frequency for use with cnmat.o.harmonics.shape~"
 								}
 
 							}
@@ -393,7 +393,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 507.5, 142.0, 219.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.click.counter~ /repeats"
+									"text" : "cnmat.o.click.counter~ /repeats"
 								}
 
 							}
@@ -406,7 +406,7 @@
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 507.5, 103.0, 110.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.phase.click~"
+									"text" : "cnmat.phase.click~"
 								}
 
 							}
@@ -420,7 +420,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 574.166687, 180.0, 152.333313, 35.0 ],
 									"style" : "",
-									"text" : "m158.o.click.counter~ /scale/count"
+									"text" : "cnmat.o.click.counter~ /scale/count"
 								}
 
 							}
@@ -434,7 +434,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 593.833374, 309.5, 132.666626, 35.0 ],
 									"style" : "",
-									"text" : "m158.o.phase.points~ /scale"
+									"text" : "cnmat.o.phase.points~ /scale"
 								}
 
 							}
@@ -473,7 +473,7 @@
 									"outlettype" : [ "signal", "bang", "" ],
 									"patching_rect" : [ 708.166687, 484.0, 143.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.num~ /baseMIDI"
+									"text" : "cnmat.o.num~ /baseMIDI"
 								}
 
 							}
@@ -525,7 +525,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 440.166687, 416.0, 287.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.phase.points~ /scale @step 1 @normal_x 0"
+									"text" : "cnmat.o.phase.points~ /scale @step 1 @normal_x 0"
 								}
 
 							}
@@ -893,7 +893,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 337.0, 116.0, 135.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.gui.table /steps"
+									"text" : "cnmat.o.gui.table /steps"
 								}
 
 							}
@@ -919,7 +919,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 50.0, 158.0, 145.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.gui.function /mod"
+									"text" : "cnmat.o.gui.function /mod"
 								}
 
 							}
@@ -998,7 +998,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 837.5, 227.5, 134.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.gui.table /scale"
+					"text" : "cnmat.o.gui.table /scale"
 				}
 
 			}
@@ -1024,7 +1024,7 @@
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 					"patching_rect" : [ 1076.574951, 515.5, 166.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.phase.points~ /mod"
+					"text" : "cnmat.o.phase.points~ /mod"
 				}
 
 			}
@@ -1113,7 +1113,7 @@
 					"outlettype" : [ "signal", "FullPacket" ],
 					"patching_rect" : [ 824.375, 578.5, 334.25, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.harmonics.shape~"
+					"text" : "cnmat.o.harmonics.shape~"
 				}
 
 			}
@@ -1299,7 +1299,7 @@
 					"outlettype" : [ "FullPacket", "dump" ],
 					"patching_rect" : [ 837.5, 52.0, 70.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.gui"
+					"text" : "cnmat.o.gui"
 				}
 
 			}
@@ -1386,7 +1386,7 @@
 					"outlettype" : [ "signal", "bang", "" ],
 					"patching_rect" : [ 865.5, 297.0, 186.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.num~ /num/beats"
+					"text" : "cnmat.o.num~ /num/beats"
 				}
 
 			}
@@ -1399,7 +1399,7 @@
 					"outlettype" : [ "signal", "bang", "" ],
 					"patching_rect" : [ 837.5, 262.5, 214.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.num~ /beat/ms"
+					"text" : "cnmat.o.num~ /beat/ms"
 				}
 
 			}
@@ -1413,7 +1413,7 @@
 					"outlettype" : [ "signal", "signal", "signal", "" ],
 					"patching_rect" : [ 837.5, 367.0, 98.0, 35.0 ],
 					"style" : "",
-					"text" : "m158.phase~ @phasecycle 1"
+					"text" : "cnmat.phase~ @phasecycle 1"
 				}
 
 			}
@@ -1680,7 +1680,7 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "m158.phase~.maxpat",
+				"name" : "cnmat.phase~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/signal",
 				"patcherrelativepath" : "../../signal",
 				"type" : "JSON",
@@ -1694,7 +1694,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.loadbang.maxpat",
+				"name" : "cnmat.loadbang.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/internal",
 				"patcherrelativepath" : "../../internal",
 				"type" : "JSON",
@@ -1708,21 +1708,21 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.num~.maxpat",
+				"name" : "cnmat.o.num~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/signal",
 				"patcherrelativepath" : "../../signal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.gui.maxpat",
+				"name" : "cnmat.o.gui.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/gui",
 				"patcherrelativepath" : "../../gui",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.harmonics.shape~.maxpat",
+				"name" : "cnmat.o.harmonics.shape~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/sound-engines/additive-synth",
 				"patcherrelativepath" : "../../sound-engines/additive-synth",
 				"type" : "JSON",
@@ -1743,7 +1743,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.phase.points~.maxpat",
+				"name" : "cnmat.o.phase.points~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/signal",
 				"patcherrelativepath" : "../../signal",
 				"type" : "JSON",
@@ -1757,7 +1757,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.gui.table.maxpat",
+				"name" : "cnmat.o.gui.table.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/gui",
 				"patcherrelativepath" : "../../gui",
 				"type" : "JSON",
@@ -1771,7 +1771,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.gui.function.maxpat",
+				"name" : "cnmat.o.gui.function.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/gui",
 				"patcherrelativepath" : "../../gui",
 				"type" : "JSON",
@@ -1792,21 +1792,21 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.click.counter~.maxpat",
+				"name" : "cnmat.o.click.counter~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/signal",
 				"patcherrelativepath" : "../../signal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.click~.maxpat",
+				"name" : "cnmat.o.click~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/signal",
 				"patcherrelativepath" : "../../signal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.phase.click~.maxpat",
+				"name" : "cnmat.phase.click~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/signal",
 				"patcherrelativepath" : "../../signal",
 				"type" : "JSON",
@@ -1820,7 +1820,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.phase.divider~.maxpat",
+				"name" : "cnmat.phase.divider~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/signal",
 				"patcherrelativepath" : "../../signal",
 				"type" : "JSON",

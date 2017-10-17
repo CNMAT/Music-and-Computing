@@ -1,5 +1,5 @@
 {
 	"name" : "CNMAT",
 	"type" : "filelist",
-	"contents" : [ "m158.o.gui.maxsnip" ]
+	"contents" : [ "cnmat.o.gui.maxsnip" ]
 }

@@ -360,7 +360,7 @@
 					"outlettype" : [ "signal", "" ],
 					"patching_rect" : [ 110.0, 97.0, 100.0, 35.0 ],
 					"style" : "",
-					"text" : "m158.o.sinusoids~"
+					"text" : "cnmat.o.sinusoids~"
 				}
 
 			}
@@ -1024,7 +1024,7 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "m158.o.sinusoids~.maxpat",
+				"name" : "cnmat.o.sinusoids~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/sound-engines/additive-synth",
 				"patcherrelativepath" : "../../../../../../../Max 7/Packages/CNMAT-M158/patchers/sound-engines/additive-synth",
 				"type" : "JSON",

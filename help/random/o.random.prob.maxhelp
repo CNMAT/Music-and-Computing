@@ -288,7 +288,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 41.0, 216.0, 81.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.ntom"
+					"text" : "cnmat.o.ntom"
 				}
 
 			}
@@ -440,7 +440,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.ntom.maxpat",
+				"name" : "cnmat.o.ntom.maxpat",
 				"bootpath" : "~/Documents/dev-lib/CNMAT-Pedagogy/Music-158B-Spring2016/158b-spring16-o.wrappers/notes",
 				"type" : "JSON",
 				"implicit" : 1

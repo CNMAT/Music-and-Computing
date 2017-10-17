@@ -129,7 +129,7 @@
 					"outlettype" : [ "signal", "signal", "signal", "" ],
 					"patching_rect" : [ 19.0, 116.879028, 120.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.phase~ /hz"
+					"text" : "cnmat.o.phase~ /hz"
 				}
 
 			}

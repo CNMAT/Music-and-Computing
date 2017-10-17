@@ -86,7 +86,7 @@
 					"patching_rect" : [ 523.466675, 342.266693, 205.0, 22.0 ],
 					"presentation_rect" : [ 459.466644, 352.266693, 0.0, 0.0 ],
 					"style" : "",
-					"text" : "m158.o.phase.points~ modes"
+					"text" : "cnmat.o.phase.points~ modes"
 				}
 
 			}
@@ -140,7 +140,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 471.133331, 42.666656, 375.0, 27.0 ],
 					"style" : "",
-					"text" : "m158 audio rate time management system"
+					"text" : "Music-and-Computing audio rate time management system"
 				}
 
 			}
@@ -167,7 +167,7 @@
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 					"patching_rect" : [ 540.133301, 604.366699, 149.0, 35.0 ],
 					"style" : "",
-					"text" : "m158.o.phase.points~ /list @step 1 @normal_x 0"
+					"text" : "cnmat.o.phase.points~ /list @step 1 @normal_x 0"
 				}
 
 			}
@@ -207,7 +207,7 @@
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 					"patching_rect" : [ 533.466675, 482.866699, 180.333313, 35.0 ],
 					"style" : "",
-					"text" : "m158.o.phase.points~ /seq @step 1"
+					"text" : "cnmat.o.phase.points~ /seq @step 1"
 				}
 
 			}
@@ -268,7 +268,7 @@
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 					"patching_rect" : [ 540.133301, 408.766693, 158.333313, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.phase.points~ /func"
+					"text" : "cnmat.o.phase.points~ /func"
 				}
 
 			}
@@ -282,7 +282,7 @@
 					"outlettype" : [ "signal", "signal", "signal", "" ],
 					"patching_rect" : [ 863.0, 216.666672, 132.0, 35.0 ],
 					"style" : "",
-					"text" : "m158.o.click.counter~ /maxcount"
+					"text" : "cnmat.o.click.counter~ /maxcount"
 				}
 
 			}
@@ -295,7 +295,7 @@
 					"outlettype" : [ "signal", "signal", "signal" ],
 					"patching_rect" : [ 863.0, 181.666672, 118.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.click.counter~"
+					"text" : "cnmat.click.counter~"
 				}
 
 			}
@@ -308,7 +308,7 @@
 					"outlettype" : [ "signal", "" ],
 					"patching_rect" : [ 160.800003, 220.333328, 120.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.click~ /steve"
+					"text" : "cnmat.o.click~ /steve"
 				}
 
 			}
@@ -321,7 +321,7 @@
 					"outlettype" : [ "signal", "bang", "" ],
 					"patching_rect" : [ 160.800003, 183.333328, 111.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.num~ /bob"
+					"text" : "cnmat.o.num~ /bob"
 				}
 
 			}
@@ -334,7 +334,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 650.0, 191.0, 110.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.phase.click~"
+					"text" : "cnmat.phase.click~"
 				}
 
 			}
@@ -347,14 +347,14 @@
 					"outlettype" : [ "signal", "signal", "signal", "" ],
 					"patching_rect" : [ 433.666656, 183.333328, 84.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.phase~"
+					"text" : "cnmat.phase~"
 				}
 
 			}
  ],
 		"lines" : [  ],
 		"dependency_cache" : [ 			{
-				"name" : "m158.phase~.maxpat",
+				"name" : "cnmat.phase~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1
@@ -366,7 +366,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.loadbang.maxpat",
+				"name" : "cnmat.loadbang.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
 				"type" : "JSON",
 				"implicit" : 1
@@ -378,7 +378,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.phase.click~.maxpat",
+				"name" : "cnmat.phase.click~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1
@@ -390,31 +390,31 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.num~.maxpat",
+				"name" : "cnmat.o.num~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.click~.maxpat",
+				"name" : "cnmat.o.click~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.click.counter~.maxpat",
+				"name" : "cnmat.click.counter~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.click.counter~.maxpat",
+				"name" : "cnmat.o.click.counter~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.phase.points~.maxpat",
+				"name" : "cnmat.o.phase.points~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1

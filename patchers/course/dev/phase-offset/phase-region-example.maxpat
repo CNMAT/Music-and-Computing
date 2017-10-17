@@ -229,7 +229,7 @@
 									"outlettype" : [ "signal", "" ],
 									"patching_rect" : [ 150.0, 403.0, 170.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.click~ /phase/duration"
+									"text" : "cnmat.o.click~ /phase/duration"
 								}
 
 							}
@@ -367,7 +367,7 @@
 									"outlettype" : [ "FullPacket", "dump" ],
 									"patching_rect" : [ 382.0, 144.0, 70.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.gui"
+									"text" : "cnmat.o.gui"
 								}
 
 							}
@@ -459,7 +459,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 150.0, 516.0, 143.5, 22.0 ],
 									"style" : "",
-									"text" : "m158.phase.range~"
+									"text" : "cnmat.phase.range~"
 								}
 
 							}
@@ -701,7 +701,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 170.5, 474.0, 171.0, 47.0 ],
 									"style" : "",
-									"text" : "m158.o.phase.scale~ sclaes the phase to be between the list stored in /playpoints"
+									"text" : "cnmat.o.phase.scale~ sclaes the phase to be between the list stored in /playpoints"
 								}
 
 							}
@@ -824,7 +824,7 @@
 									"outlettype" : [ "signal", "" ],
 									"patching_rect" : [ 150.0, 357.0, 191.5, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.click~ /play/duration"
+									"text" : "cnmat.o.click~ /play/duration"
 								}
 
 							}
@@ -837,7 +837,7 @@
 									"outlettype" : [ "signal", "signal", "signal", "" ],
 									"patching_rect" : [ 150.0, 403.0, 100.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.phase~"
+									"text" : "cnmat.phase~"
 								}
 
 							}
@@ -922,7 +922,7 @@
 									"outlettype" : [ "FullPacket", "dump" ],
 									"patching_rect" : [ 452.0, 71.5, 70.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.gui"
+									"text" : "cnmat.o.gui"
 								}
 
 							}
@@ -992,7 +992,7 @@
 									"outlettype" : [ "signal", "" ],
 									"patching_rect" : [ 150.0, 444.0, 191.5, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.phase.scale~ /playpoints"
+									"text" : "cnmat.o.phase.scale~ /playpoints"
 								}
 
 							}
@@ -1150,7 +1150,7 @@
  ],
 		"lines" : [  ],
 		"dependency_cache" : [ 			{
-				"name" : "m158.o.phase.scale~.maxpat",
+				"name" : "cnmat.o.phase.scale~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/signal",
 				"patcherrelativepath" : "../../../signal",
 				"type" : "JSON",
@@ -1164,21 +1164,21 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.gui.maxpat",
+				"name" : "cnmat.o.gui.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/gui",
 				"patcherrelativepath" : "../../../gui",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.loadbang.maxpat",
+				"name" : "cnmat.loadbang.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/internal",
 				"patcherrelativepath" : "../../../internal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.phase~.maxpat",
+				"name" : "cnmat.phase~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/signal",
 				"patcherrelativepath" : "../../../signal",
 				"type" : "JSON",
@@ -1192,14 +1192,14 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.click~.maxpat",
+				"name" : "cnmat.o.click~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/signal",
 				"patcherrelativepath" : "../../../signal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.phase.range~.maxpat",
+				"name" : "cnmat.phase.range~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/course/dev/phase-offset",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

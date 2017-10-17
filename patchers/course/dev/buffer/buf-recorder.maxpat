@@ -90,7 +90,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 621.5, 118.0, 150.0, 33.0 ],
 									"style" : "",
-									"text" : "m158.o.points.record~\nrama gottfried, 2016"
+									"text" : "cnmat.o.points.record~\nrama gottfried, 2016"
 								}
 
 							}
@@ -189,7 +189,7 @@
 													"outlettype" : [ "bang" ],
 													"patching_rect" : [ 665.0, 170.0, 100.0, 22.0 ],
 													"style" : "",
-													"text" : "m158.loadbang"
+													"text" : "cnmat.loadbang"
 												}
 
 											}
@@ -906,7 +906,7 @@
 									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 362.0, 250.0, 100.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.loadbang"
+									"text" : "cnmat.loadbang"
 								}
 
 							}
@@ -1190,7 +1190,7 @@
 					"outlettype" : [ "signal", "" ],
 					"patching_rect" : [ 287.0, 168.0, 114.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.click~ /click"
+					"text" : "cnmat.o.click~ /click"
 				}
 
 			}
@@ -1219,7 +1219,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 287.0, 64.0, 103.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.io.mouse"
+					"text" : "cnmat.o.io.mouse"
 				}
 
 			}
@@ -1245,7 +1245,7 @@
 					"outlettype" : [ "signal", "signal", "signal", "" ],
 					"patching_rect" : [ 311.333344, 238.5, 84.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.phase~"
+					"text" : "cnmat.phase~"
 				}
 
 			}
@@ -1360,7 +1360,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "m158.phase~.maxpat",
+				"name" : "cnmat.phase~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1372,7 +1372,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.loadbang.maxpat",
+				"name" : "cnmat.loadbang.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1384,13 +1384,13 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.io.mouse.maxpat",
+				"name" : "cnmat.o.io.mouse.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/io",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.click~.maxpat",
+				"name" : "cnmat.o.click~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1

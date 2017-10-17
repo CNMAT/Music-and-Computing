@@ -238,7 +238,7 @@
 					"outlettype" : [ "signal", "" ],
 					"patching_rect" : [ 52.0, 407.0, 116.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.harmonics~"
+					"text" : "cnmat.o.harmonics~"
 				}
 
 			}
@@ -374,7 +374,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "m158.o.harmonics~.maxpat",
+				"name" : "cnmat.o.harmonics~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/sound-engines/additive-synth",
 				"type" : "JSON",
 				"implicit" : 1

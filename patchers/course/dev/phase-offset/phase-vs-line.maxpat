@@ -118,7 +118,7 @@
 					"outlettype" : [ "signal", "" ],
 					"patching_rect" : [ 98.0, 345.0, 165.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.click~ /duration"
+					"text" : "cnmat.o.click~ /duration"
 				}
 
 			}
@@ -131,7 +131,7 @@
 					"outlettype" : [ "signal", "signal", "signal", "" ],
 					"patching_rect" : [ 98.0, 387.0, 84.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.phase~"
+					"text" : "cnmat.phase~"
 				}
 
 			}
@@ -209,7 +209,7 @@
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 					"patching_rect" : [ 98.0, 474.0, 165.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.phase.points~ /points"
+					"text" : "cnmat.o.phase.points~ /points"
 				}
 
 			}
@@ -310,14 +310,14 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "m158.o.phase.points~.maxpat",
+				"name" : "cnmat.o.phase.points~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/signal",
 				"patcherrelativepath" : "../../../signal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.loadbang.maxpat",
+				"name" : "cnmat.loadbang.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/internal",
 				"patcherrelativepath" : "../../../internal",
 				"type" : "JSON",
@@ -338,7 +338,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.phase~.maxpat",
+				"name" : "cnmat.phase~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/signal",
 				"patcherrelativepath" : "../../../signal",
 				"type" : "JSON",
@@ -352,7 +352,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.click~.maxpat",
+				"name" : "cnmat.o.click~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/signal",
 				"patcherrelativepath" : "../../../signal",
 				"type" : "JSON",

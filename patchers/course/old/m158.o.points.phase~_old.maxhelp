@@ -170,7 +170,7 @@
 									"outlettype" : [ "signal", "signal", "" ],
 									"patching_rect" : [ 140.0, 275.5, 162.0, 35.0 ],
 									"style" : "",
-									"text" : "m158.o.phase.points~ /seq @step 1 @beats 1"
+									"text" : "cnmat.o.phase.points~ /seq @step 1 @beats 1"
 								}
 
 							}
@@ -182,7 +182,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 709.0, 382.223022, 306.0, 20.0 ],
 									"style" : "",
-									"text" : "see the m158.o.gui.table help patch for a fuller example"
+									"text" : "see the cnmat.o.gui.table help patch for a fuller example"
 								}
 
 							}
@@ -195,7 +195,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 648.0, 249.5, 336.0, 100.0 ],
 									"style" : "",
-									"text" : "With @step 1, m158.o.phase.points~ is non-interpolating, and instead holds its value for the duration of the index in the sequence.\n\nIn @beat 0 mode, m158.o.phase.points~ repeated notes are joined together in order to creates a relative phase that goes from 0 to 1 over the course of the held event."
+									"text" : "With @step 1, cnmat.o.phase.points~ is non-interpolating, and instead holds its value for the duration of the index in the sequence.\n\nIn @beat 0 mode, cnmat.o.phase.points~ repeated notes are joined together in order to creates a relative phase that goes from 0 to 1 over the course of the held event."
 								}
 
 							}
@@ -222,7 +222,7 @@
 									"outlettype" : [ "signal", "signal", "" ],
 									"patching_rect" : [ 437.0, 275.5, 171.0, 35.0 ],
 									"style" : "",
-									"text" : "m158.o.phase.points~ /seq @step 1 @beats 0"
+									"text" : "cnmat.o.phase.points~ /seq @step 1 @beats 0"
 								}
 
 							}
@@ -382,7 +382,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 575.0, 206.223022, 125.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.gui.table /seq"
+									"text" : "cnmat.o.gui.table /seq"
 								}
 
 							}
@@ -447,7 +447,7 @@
 									"outlettype" : [ "FullPacket", "dump" ],
 									"patching_rect" : [ 575.0, 148.223022, 70.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.gui"
+									"text" : "cnmat.o.gui"
 								}
 
 							}
@@ -685,7 +685,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 667.5, 431.223022, 402.0, 127.0 ],
 									"style" : "",
-									"text" : "left inlet: signal rate phase value 0-1\nright inlet: OSC\n\nleft outlet: signal rate Y value with or without interpolation\nmiddle outlet: signal rate relative phase\nright outlet: OSC\n\nnote: m158.o.phase.points~ is the same as m158.o.phase.points~ except that the left and middle outlets are switched."
+									"text" : "left inlet: signal rate phase value 0-1\nright inlet: OSC\n\nleft outlet: signal rate Y value with or without interpolation\nmiddle outlet: signal rate relative phase\nright outlet: OSC\n\nnote: cnmat.o.phase.points~ is the same as cnmat.o.phase.points~ except that the left and middle outlets are switched."
 								}
 
 							}
@@ -698,7 +698,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 667.5, 122.223022, 420.0, 288.0 ],
 									"style" : "",
-									"text" : "Required argument: the base address name for lookup, where /x, and /y will be found as sub-addresses (typically generated with the m158.o.gui.function utility).\n\nA basename of /foo indicates that /foo/x and /foo/y should be found in the bundle. If a sub-address /curve is found, curved interpolation will be used (using the same algorithm as curve~).\n\nOptional attribute:\n\n@step -- if set to 1 the y point values will be held until the next point is reached in time, useful for discrete sequencing (internally, an end point is created for the final step).\n\n@beats -- if @step is 1, @beats 0 specifies that repeated y values should be interpreted as one note of a longer value.  @beats 1 (default) indicates that each step is an individual event.\n\n@normal_x -- if set to 1, the x point values are normalized to be 0-1 to work with m158.phase~ (default 1). If set to 0, x points remain at their original values."
+									"text" : "Required argument: the base address name for lookup, where /x, and /y will be found as sub-addresses (typically generated with the cnmat.o.gui.function utility).\n\nA basename of /foo indicates that /foo/x and /foo/y should be found in the bundle. If a sub-address /curve is found, curved interpolation will be used (using the same algorithm as curve~).\n\nOptional attribute:\n\n@step -- if set to 1 the y point values will be held until the next point is reached in time, useful for discrete sequencing (internally, an end point is created for the final step).\n\n@beats -- if @step is 1, @beats 0 specifies that repeated y values should be interpreted as one note of a longer value.  @beats 1 (default) indicates that each step is an individual event.\n\n@normal_x -- if set to 1, the x point values are normalized to be 0-1 to work with cnmat.phase~ (default 1). If set to 0, x points remain at their original values."
 								}
 
 							}
@@ -725,7 +725,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 667.5, 26.5, 199.0, 27.0 ],
 									"style" : "",
-									"text" : "m158.o.phase.points~"
+									"text" : "cnmat.o.phase.points~"
 								}
 
 							}
@@ -876,7 +876,7 @@
 									"outlettype" : [ "signal", "signal", "" ],
 									"patching_rect" : [ 370.0, 361.0, 180.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.phase.points~ /func/2"
+									"text" : "cnmat.o.phase.points~ /func/2"
 								}
 
 							}
@@ -952,7 +952,7 @@
 									"outlettype" : [ "signal", "signal", "" ],
 									"patching_rect" : [ 53.0, 361.0, 180.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.phase.points~ /func/1"
+									"text" : "cnmat.o.phase.points~ /func/1"
 								}
 
 							}
@@ -992,7 +992,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 214.0, 284.223022, 145.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.gui.function /func"
+									"text" : "cnmat.o.gui.function /func"
 								}
 
 							}
@@ -1057,7 +1057,7 @@
 									"outlettype" : [ "FullPacket", "dump" ],
 									"patching_rect" : [ 214.0, 226.223022, 70.0, 22.0 ],
 									"style" : "",
-									"text" : "m158.o.gui"
+									"text" : "cnmat.o.gui"
 								}
 
 							}
@@ -1286,19 +1286,19 @@
  ],
 		"lines" : [  ],
 		"dependency_cache" : [ 			{
-				"name" : "m158.o.gui.maxpat",
+				"name" : "cnmat.o.gui.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gui",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.loadbang.maxpat",
+				"name" : "cnmat.loadbang.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.gui.function.maxpat",
+				"name" : "cnmat.o.gui.function.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gui",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1316,13 +1316,13 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.phase.points~.maxpat",
+				"name" : "cnmat.o.phase.points~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.points.lookup~.maxpat",
+				"name" : "cnmat.o.points.lookup~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1334,7 +1334,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.points.interp~.maxpat",
+				"name" : "cnmat.o.points.interp~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1346,7 +1346,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.gui.table.maxpat",
+				"name" : "cnmat.o.gui.table.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gui",
 				"type" : "JSON",
 				"implicit" : 1

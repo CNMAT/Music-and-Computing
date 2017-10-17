@@ -157,7 +157,7 @@
 					"outlettype" : [ "signal", "" ],
 					"patching_rect" : [ 150.25, 580.0, 97.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.biquad~"
+					"text" : "cnmat.o.biquad~"
 				}
 
 			}
@@ -473,7 +473,7 @@
 					"outlettype" : [ "FullPacket", "dump" ],
 					"patching_rect" : [ 348.5, 213.5, 70.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.gui"
+					"text" : "cnmat.o.gui"
 				}
 
 			}
@@ -678,7 +678,7 @@
 					"outlettype" : [ "signal", "" ],
 					"patching_rect" : [ 222.5, 326.0, 145.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.compressor~"
+					"text" : "cnmat.o.compressor~"
 				}
 
 			}
@@ -1045,7 +1045,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "m158.o.compressor~.maxpat",
+				"name" : "cnmat.o.compressor~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/sound-engines/compressor",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1063,19 +1063,19 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.gui.maxpat",
+				"name" : "cnmat.o.gui.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gui",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.loadbang.maxpat",
+				"name" : "cnmat.loadbang.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.biquad~.maxpat",
+				"name" : "cnmat.o.biquad~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/sound-engines/filter",
 				"type" : "JSON",
 				"implicit" : 1

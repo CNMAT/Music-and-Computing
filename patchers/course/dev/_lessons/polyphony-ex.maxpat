@@ -72,7 +72,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 859.0, 377.0, 122.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.phase.divider~"
+					"text" : "cnmat.phase.divider~"
 				}
 
 			}
@@ -114,7 +114,7 @@
 					"patching_rect" : [ 859.0, 418.0, 167.0, 35.0 ],
 					"presentation_rect" : [ 858.0, 418.0, 0.0, 0.0 ],
 					"style" : "",
-					"text" : "m158.o.phase.points~ /seq/1 @step 1"
+					"text" : "cnmat.o.phase.points~ /seq/1 @step 1"
 				}
 
 			}
@@ -156,7 +156,7 @@
 					"patching_rect" : [ 859.0, 554.0, 152.0, 22.0 ],
 					"presentation_rect" : [ 858.0, 554.0, 0.0, 0.0 ],
 					"style" : "",
-					"text" : "m158.o.harmonics.shape~"
+					"text" : "cnmat.o.harmonics.shape~"
 				}
 
 			}
@@ -251,7 +251,7 @@
 					"patching_rect" : [ 616.0, 418.0, 167.0, 35.0 ],
 					"presentation_rect" : [ 605.0, 514.0, 0.0, 0.0 ],
 					"style" : "",
-					"text" : "m158.o.phase.points~ /seq/1 @step 1"
+					"text" : "cnmat.o.phase.points~ /seq/1 @step 1"
 				}
 
 			}
@@ -293,7 +293,7 @@
 					"patching_rect" : [ 616.0, 554.0, 152.0, 22.0 ],
 					"presentation_rect" : [ 605.0, 645.0, 0.0, 0.0 ],
 					"style" : "",
-					"text" : "m158.o.harmonics.shape~"
+					"text" : "cnmat.o.harmonics.shape~"
 				}
 
 			}
@@ -356,7 +356,7 @@
 					"outlettype" : [ "signal", "FullPacket" ],
 					"patching_rect" : [ 399.0, 554.0, 152.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.harmonics.shape~"
+					"text" : "cnmat.o.harmonics.shape~"
 				}
 
 			}
@@ -409,7 +409,7 @@
 					"outlettype" : [ "signal", "" ],
 					"patching_rect" : [ 399.0, 284.0, 167.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.click~ /duration/1"
+					"text" : "cnmat.o.click~ /duration/1"
 				}
 
 			}
@@ -422,7 +422,7 @@
 					"outlettype" : [ "signal", "signal", "signal", "" ],
 					"patching_rect" : [ 399.0, 329.0, 84.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.phase~"
+					"text" : "cnmat.phase~"
 				}
 
 			}
@@ -436,7 +436,7 @@
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
 					"patching_rect" : [ 399.0, 421.0, 167.0, 35.0 ],
 					"style" : "",
-					"text" : "m158.o.phase.points~ /seq/1 @step 1"
+					"text" : "cnmat.o.phase.points~ /seq/1 @step 1"
 				}
 
 			}
@@ -449,7 +449,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 584.0, 160.0, 125.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.gui.table /seq"
+					"text" : "cnmat.o.gui.table /seq"
 				}
 
 			}
@@ -526,7 +526,7 @@
 					"outlettype" : [ "FullPacket", "dump" ],
 					"patching_rect" : [ 584.0, 82.5, 70.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.gui"
+					"text" : "cnmat.o.gui"
 				}
 
 			}
@@ -991,19 +991,19 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "m158.o.gui.maxpat",
+				"name" : "cnmat.o.gui.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gui",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.loadbang.maxpat",
+				"name" : "cnmat.loadbang.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.gui.table.maxpat",
+				"name" : "cnmat.o.gui.table.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/gui",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1021,7 +1021,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.phase.points~.maxpat",
+				"name" : "cnmat.o.phase.points~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1033,7 +1033,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.phase~.maxpat",
+				"name" : "cnmat.phase~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1045,13 +1045,13 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.click~.maxpat",
+				"name" : "cnmat.o.click~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.o.harmonics.shape~.maxpat",
+				"name" : "cnmat.o.harmonics.shape~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/sound-engines/additive-synth",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1069,7 +1069,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.phase.divider~.maxpat",
+				"name" : "cnmat.phase.divider~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1

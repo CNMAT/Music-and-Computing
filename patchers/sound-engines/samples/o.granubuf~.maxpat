@@ -653,7 +653,7 @@
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 672.489746, 24.5, 93.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.loadbang"
+					"text" : "cnmat.loadbang"
 				}
 
 			}
@@ -4143,7 +4143,7 @@
 																	"outlettype" : [ "bang" ],
 																	"patching_rect" : [ 50.0, 100.0, 93.0, 22.0 ],
 																	"style" : "",
-																	"text" : "m158.loadbang"
+																	"text" : "cnmat.loadbang"
 																}
 
 															}

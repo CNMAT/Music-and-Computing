@@ -68,7 +68,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 663.0, 323.0, 110.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.phase.click~"
+					"text" : "cnmat.phase.click~"
 				}
 
 			}
@@ -111,7 +111,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 627.0, 285.0, 122.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.phase.divider~"
+					"text" : "cnmat.phase.divider~"
 				}
 
 			}
@@ -124,7 +124,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 166.0, 155.0, 300.0, 167.0 ],
 					"style" : "",
-					"text" : "duration -> delta -> x\n\nduration / subdivision as a way of creating more beats\n--> m158.phase.divider~\n\nsah~\n\nweighted probability\n\n\nrate as frequency multiplier 2^(n/12)\n\n"
+					"text" : "duration -> delta -> x\n\nduration / subdivision as a way of creating more beats\n--> cnmat.phase.divider~\n\nsah~\n\nweighted probability\n\n\nrate as frequency multiplier 2^(n/12)\n\n"
 				}
 
 			}
@@ -176,13 +176,13 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "m158.phase.divider~.maxpat",
+				"name" : "cnmat.phase.divider~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.phase.click~.maxpat",
+				"name" : "cnmat.phase.click~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/signal",
 				"type" : "JSON",
 				"implicit" : 1

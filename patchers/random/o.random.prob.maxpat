@@ -289,7 +289,7 @@
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 663.0, 33.0, 93.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.loadbang"
+					"text" : "cnmat.loadbang"
 				}
 
 			}
@@ -441,7 +441,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 228.5, 89.0, 81.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.o.ntom"
+					"text" : "cnmat.o.ntom"
 				}
 
 			}
@@ -674,7 +674,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "m158.o.ntom.maxpat",
+				"name" : "cnmat.o.ntom.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/notes",
 				"type" : "JSON",
 				"implicit" : 1
@@ -686,7 +686,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m158.loadbang.maxpat",
+				"name" : "cnmat.loadbang.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-M158/patchers/internal",
 				"type" : "JSON",
 				"implicit" : 1

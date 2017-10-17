@@ -374,7 +374,7 @@
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 777.489746, 62.5, 93.0, 22.0 ],
 					"style" : "",
-					"text" : "m158.loadbang"
+					"text" : "cnmat.loadbang"
 				}
 
 			}

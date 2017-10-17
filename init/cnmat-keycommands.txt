@@ -1,0 +1,2 @@
+max definecommandinstructions patcher _ “cnmat object";
+max definecommand _ patcher inserttextobj cnmat.;
