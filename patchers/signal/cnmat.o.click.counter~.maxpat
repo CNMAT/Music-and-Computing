@@ -38,18 +38,6 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-16",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 244.0, 361.0, 319.0, 20.0 ],
-					"style" : "",
-					"text" : "note: the third inlet should be removed after this semester."
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-15",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -102,7 +90,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "(signal) count",
+					"comment" : "(signal) carry count",
 					"id" : "obj-3",
 					"index" : 3,
 					"maxclass" : "outlet",
@@ -302,7 +290,8 @@
 								}
 
 							}
- ]
+ ],
+						"autosave" : 0
 					}
 ,
 					"patching_rect" : [ 88.666664, 205.0, 154.0, 22.0 ],
@@ -332,7 +321,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 156.166656, 78.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -399,7 +388,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 88.666664, 78.0, 30.0, 30.0 ],
 					"style" : ""
 				}

@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 100.0, 100.0, 869.0, 565.0 ],
+		"rect" : [ 100.0, 100.0, 860.0, 616.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,80 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-13",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 90.0, 523.0, 516.0, 24.0 ],
+					"presentation_rect" : [ 108.0, 486.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "sometimes number~'s refresh rate hides the count -- minmax~ can help see the count range"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 28.333328, 490.0, 50.0, 22.0 ],
+					"style" : "",
+					"text" : "reset"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-6",
+					"maxclass" : "number~",
+					"mode" : 2,
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "float" ],
+					"patching_rect" : [ 28.333328, 565.0, 91.0, 22.0 ],
+					"sig" : 0.0,
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-8",
+					"maxclass" : "number~",
+					"mode" : 2,
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "float" ],
+					"patching_rect" : [ 124.0, 565.0, 91.0, 22.0 ],
+					"sig" : 0.0,
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 4,
+					"outlettype" : [ "signal", "signal", "float", "float" ],
+					"patching_rect" : [ 28.333328, 523.0, 60.0, 22.0 ],
+					"style" : "",
+					"text" : "minmax~"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-40",
 					"maxclass" : "scope~",
 					"numinlets" : 2,
@@ -50,13 +124,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-39",
-					"linecount" : 9,
+					"linecount" : 8,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 470.5, 141.5, 321.0, 127.0 ],
+					"patching_rect" : [ 470.5, 141.5, 321.0, 114.0 ],
 					"style" : "",
-					"text" : "inlet 1: click to count\ninlet 2: click to reset\ninlet 3: sets number of steps\ninlet 4: OSC input\n\noutlet 1: current count (starting from zero)\noutlet 2: click at maximum\noutlet 3: how many times the maximum has been reached\noutlet 4: OSC passthrough"
+					"text" : "inlet 1: click to count\ninlet 2: click to reset\ninlet 2: OSC input\n\noutlet 1: current count (starting from zero)\noutlet 2: click at maximum\noutlet 3: how many times the maximum has been reached\noutlet 4: OSC passthrough"
 				}
 
 			}
@@ -92,7 +166,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 470.5, 47.0, 199.0, 27.0 ],
+					"patching_rect" : [ 470.5, 47.0, 205.0, 27.0 ],
 					"style" : "",
 					"text" : "cnmat.o.click.counter~"
 				}
@@ -117,7 +191,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 168.5, 238.0, 108.0, 33.0 ],
+					"patching_rect" : [ 178.0, 242.0, 108.0, 33.0 ],
 					"style" : "",
 					"text" : "click in second inlet resets count"
 				}
@@ -130,7 +204,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 186.333328, 279.0, 24.0, 24.0 ],
+					"patching_rect" : [ 211.5, 277.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -142,7 +216,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 186.333328, 308.0, 41.0, 22.0 ],
+					"patching_rect" : [ 211.5, 308.0, 41.0, 22.0 ],
 					"style" : "",
 					"text" : "click~"
 				}
@@ -154,7 +228,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 295.0, 383.0, 70.0, 20.0 ],
+					"patching_rect" : [ 296.333313, 383.0, 70.0, 20.0 ],
 					"style" : "",
 					"text" : "carry count"
 				}
@@ -166,7 +240,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 114.0, 444.0, 64.0, 20.0 ],
+					"patching_rect" : [ 113.333336, 437.0, 64.0, 20.0 ],
 					"style" : "",
 					"text" : "carry click"
 				}
@@ -195,7 +269,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 234.666672, 383.0, 50.0, 22.0 ],
+					"patching_rect" : [ 236.0, 383.0, 50.0, 22.0 ],
 					"sig" : 0.0,
 					"style" : ""
 				}
@@ -207,7 +281,7 @@
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 186.333328, 423.0, 105.0, 76.0 ],
+					"patching_rect" : [ 185.666672, 416.0, 105.0, 76.0 ],
 					"style" : ""
 				}
 
@@ -350,7 +424,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "dump" ],
-					"patching_rect" : [ 138.0, 45.5, 70.0, 22.0 ],
+					"patching_rect" : [ 138.0, 45.5, 72.0, 22.0 ],
 					"style" : "",
 					"text" : "cnmat.o.gui"
 				}
@@ -374,7 +448,7 @@
 ,
 					"style" : "",
 					"text" : "pattrstorage @outputmode 1 @notifymode 1",
-					"varname" : "u944001253"
+					"varname" : "u657000952"
 				}
 
 			}
@@ -402,7 +476,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "bang", "" ],
-					"patching_rect" : [ 138.0, 128.0, 164.0, 22.0 ],
+					"patching_rect" : [ 138.0, 128.0, 166.0, 22.0 ],
 					"style" : "",
 					"text" : "cnmat.o.num~ /ms"
 				}
@@ -428,7 +502,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 138.0, 191.0, 110.0, 22.0 ],
+					"patching_rect" : [ 138.0, 191.0, 112.0, 22.0 ],
 					"style" : "",
 					"text" : "cnmat.phase.click~"
 				}
@@ -437,12 +511,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-1",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "signal", "signal", "signal", "" ],
-					"patching_rect" : [ 138.0, 342.0, 164.0, 35.0 ],
+					"patching_rect" : [ 138.0, 342.0, 166.0, 22.0 ],
 					"style" : "",
 					"text" : "cnmat.o.click.counter~ /count"
 				}
@@ -450,6 +523,14 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"order" : 1,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
 					"source" : [ "obj-1", 1 ]
@@ -466,6 +547,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
+					"order" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -488,6 +570,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"source" : [ "obj-103", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-11", 1 ]
 				}
 
 			}
@@ -574,6 +670,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
