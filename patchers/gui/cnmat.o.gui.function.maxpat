@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 3,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -61,7 +61,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 3,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -130,8 +130,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 50.0, 127.0, 308.0, 46.0 ],
-									"text" : "/sel = [/args[[0]], \"/gui\"+/args[[0]] ],\n/name = /args[[0]]",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"text" : "/sel = [/args[[0]], \"/gui\"+/args[[0]] ],\n/name = /args[[0]]"
 								}
 
 							}
@@ -179,8 +178,6 @@
 						"lines" : [ 							{
 								"patchline" : 								{
 									"destination" : [ "obj-2", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-1", 1 ]
 								}
 
@@ -188,8 +185,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-28", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-1", 0 ]
 								}
 
@@ -197,8 +192,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-24", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-22", 0 ]
 								}
 
@@ -206,8 +199,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-24", 0 ]
 								}
 
@@ -215,8 +206,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-22", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-27", 0 ]
 								}
 
@@ -263,7 +252,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 3,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -308,8 +297,7 @@
 									"patching_rect" : [ 50.0, 100.0, 721.0, 133.0 ],
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 47, 110, 97, 109, 101, 0, 0, 0, 44, 115, 0, 0, 109, 49, 53, 56, 46, 111, 46, 103, 117, 105, 46, 102, 117, 110, 99, 116, 105, 111, 110, 0, 0, 0, 0, 96, 47, 100, 101, 115, 99, 0, 0, 0, 44, 115, 0, 0, 99, 111, 110, 118, 101, 114, 116, 115, 32, 97, 32, 71, 85, 73, 32, 100, 97, 116, 97, 32, 115, 116, 111, 114, 97, 103, 101, 32, 102, 111, 114, 109, 97, 116, 32, 116, 111, 32, 120, 32, 97, 110, 100, 32, 121, 32, 112, 97, 114, 97, 109, 101, 116, 101, 114, 115, 32, 111, 102, 32, 116, 104, 101, 32, 97, 115, 115, 111, 99, 105, 97, 116, 101, 100, 32, 102, 117, 110, 99, 116, 105, 111, 110, 0, 0, 0, 0, 24, 47, 112, 97, 114, 97, 109, 101, 116, 101, 114, 115, 0, 44, 115, 0, 0, 110, 111, 110, 101, 0, 0, 0, 0, 0, 0, 0, 96, 47, 97, 114, 103, 117, 109, 101, 110, 116, 115, 0, 0, 44, 46, 0, 0, 0, 0, 0, 76, 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 56, 47, 49, 0, 0, 44, 115, 0, 0, 114, 101, 113, 117, 105, 114, 101, 100, 58, 32, 110, 97, 109, 101, 32, 111, 102, 32, 97, 115, 115, 111, 99, 105, 97, 116, 101, 100, 32, 102, 117, 110, 99, 116, 105, 111, 110, 32, 111, 98, 106, 101, 99, 116, 0, 0, 0, 0, 0, 0, 0, -116, 47, 97, 116, 116, 114, 105, 98, 117, 116, 101, 115, 0, 44, 46, 0, 0, 0, 0, 0, 120, 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 47, 110, 111, 114, 109, 97, 108, 95, 120, 0, 0, 0, 44, 115, 0, 0, 110, 111, 114, 109, 97, 108, 105, 122, 101, 115, 32, 116, 104, 101, 32, 120, 32, 97, 120, 105, 115, 32, 111, 102, 32, 116, 104, 101, 32, 102, 117, 110, 99, 116, 105, 111, 110, 39, 115, 32, 118, 97, 108, 117, 101, 115, 32, 40, 101, 110, 97, 98, 108, 101, 100, 32, 98, 121, 32, 100, 101, 102, 97, 117, 108, 116, 44, 32, 119, 104, 105, 99, 104, 32, 105, 115, 32, 49, 46, 48, 41, 0, 0, 0 ],
 									"saved_bundle_length" : 424,
-									"text" : "/name : \"cnmat.o.gui.function\",\n/desc : \"converts a GUI data storage format to x and y parameters of the associated function\",\n/parameters : \"none\",\n/arguments : {\n\t/1 : \"required: name of associated function object\"\n},\n/attributes : {\n\t/normal_x : \"normalizes the x axis of the function's values (enabled by default, which is 1.0)\"\n}",
-									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
+									"text" : "/name : \"cnmat.o.gui.function\",\n/desc : \"converts a GUI data storage format to x and y parameters of the associated function\",\n/parameters : \"none\",\n/arguments : {\n\t/1 : \"required: name of associated function object\"\n},\n/attributes : {\n\t/normal_x : \"normalizes the x axis of the function's values (enabled by default, which is 1.0)\"\n}"
 								}
 
 							}
@@ -344,8 +332,6 @@
 						"lines" : [ 							{
 								"patchline" : 								{
 									"destination" : [ "obj-32", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-17", 0 ]
 								}
 
@@ -353,8 +339,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-17", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-31", 0 ]
 								}
 
@@ -395,7 +379,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 244.5, 27.0, 93.0, 22.0 ],
+					"patching_rect" : [ 244.5, 27.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "cnmat.loadbang"
 				}
@@ -452,7 +436,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 3,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -495,8 +479,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 115.0, 25.0, 523.0, 811.0 ],
-									"text" : "/_/norm ??= 0,\n/_/xdelta ??= 1,\n\n/~/x2delta = \"lambda([xlist],\n  prog2(\n    /_/prev = 0,\n    map(\n      lambda([x],\n        prog1(\n          x - /_/prev,\n          /_/prev = x\n        )\n      ), xlist\n    ),\n    delete(/_/count)\n  )\n)\",\n\nmap(\n  lambda([a],\n    progn(\n      /_/pattrf = value(a),\n#      assign(\"/out\"+a+\"/type\", last(/_/pattrf)),\n#      assign(\"/out\"+a+\"/duration\", /_/pattrf[[0]]),\n#      assign(\"/out\"+a+\"/min\", /_/pattrf[[1]]),\n#      assign(\"/out\"+a+\"/max\", /_/pattrf[[2]]),\n\n      /_/len = length(/_/pattrf),\n      if( /_/len > 4,\n        if( last(/_/pattrf) == \"linear\",\n          progn(\n            /_/pts = /_/pattrf[[ aseq(3, /_/len - 2) ]],\n            /_/npts = length(/_/pts) - 1,\n            /_/x = /_/pts[[ aseq(0, /_/npts, 3) ]] / (/_/norm ? /_/pattrf[[0]] : 1),\n            if( /_/xdelta,\n              assign(\"/out\"+a+\"/delta\", /~/x2delta( /_/x ) ),       \n              assign(\"/out\"+a+\"/x\", /_/x )\n            ),\n\n            /_/y = /_/pts[[ aseq(1, /_/npts, 3) ]],\n            assign(\"/out\"+a+\"/y\", /_/y)#,\n\n#            /_/sus = /_/pts[[ aseq(2, /_/npts, 3) ]],\n#            assign(\"/out\"+a+\"/sustain\", /_/sus)\n          ),\n          progn(\n            /_/pts = /_/pattrf[[ aseq(3, /_/len - 2) ]],\n            /_/npts = length(/_/pts) - 1,\n\n            /_/x = /_/pts[[ aseq(0, /_/npts, 4) ]] / (/_/norm ? /_/pattrf[[0]] : 1),\n            if( /_/xdelta,\n              assign(\"/out\"+a+\"/delta\", /~/x2delta( /_/x ) ),       \n              assign(\"/out\"+a+\"/x\", /_/x )\n            ),\n            /_/y = /_/pts[[ aseq(1, /_/npts, 4) ]],\n            assign(\"/out\"+a+\"/y\", /_/y),\n            /_/curve = /_/pts[[ aseq(3, /_/npts, 4) ]],\n            assign(\"/out\"+a+\"/curve\", /_/curve)#,\n\n#            /_/sus = /_/pts[[ aseq(2, /_/npts, 4) ]],\n#            assign(\"/out\"+a+\"/sustain\", /_/sus),\n\n          )\n        )\n      )\n    )\n  ), /_/addr\n),\nif( typetags(/name) != 'i',\n  assign(\"/out\"+/name+\"/count\", length(/_/addr)))",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"text" : "/_/norm ??= 0,\n/_/xdelta ??= 1,\n\n/~/x2delta = \"lambda([xlist],\n  prog2(\n    /_/prev = 0,\n    map(\n      lambda([x],\n        prog1(\n          x - /_/prev,\n          /_/prev = x\n        )\n      ), xlist\n    ),\n    delete(/_/count)\n  )\n)\",\n\nmap(\n  lambda([a],\n    progn(\n      /_/pattrf = value(a),\n#      assign(\"/out\"+a+\"/type\", last(/_/pattrf)),\n#      assign(\"/out\"+a+\"/duration\", /_/pattrf[[0]]),\n#      assign(\"/out\"+a+\"/min\", /_/pattrf[[1]]),\n#      assign(\"/out\"+a+\"/max\", /_/pattrf[[2]]),\n\n      /_/len = length(/_/pattrf),\n      if( /_/len > 4,\n        if( last(/_/pattrf) == \"linear\",\n          progn(\n            /_/pts = /_/pattrf[[ aseq(3, /_/len - 2) ]],\n            /_/npts = length(/_/pts) - 1,\n            /_/x = /_/pts[[ aseq(0, /_/npts, 3) ]] / (/_/norm ? /_/pattrf[[0]] : 1),\n            if( /_/xdelta,\n              assign(\"/out\"+a+\"/delta\", /~/x2delta( /_/x ) ),       \n              assign(\"/out\"+a+\"/x\", /_/x )\n            ),\n\n            /_/y = /_/pts[[ aseq(1, /_/npts, 3) ]],\n            assign(\"/out\"+a+\"/y\", /_/y)#,\n\n#            /_/sus = /_/pts[[ aseq(2, /_/npts, 3) ]],\n#            assign(\"/out\"+a+\"/sustain\", /_/sus)\n          ),\n          progn(\n            /_/pts = /_/pattrf[[ aseq(3, /_/len - 2) ]],\n            /_/npts = length(/_/pts) - 1,\n\n            /_/x = /_/pts[[ aseq(0, /_/npts, 4) ]] / (/_/norm ? /_/pattrf[[0]] : 1),\n            if( /_/xdelta,\n              assign(\"/out\"+a+\"/delta\", /~/x2delta( /_/x ) ),       \n              assign(\"/out\"+a+\"/x\", /_/x )\n            ),\n            /_/y = /_/pts[[ aseq(1, /_/npts, 4) ]],\n            assign(\"/out\"+a+\"/y\", /_/y),\n            /_/curve = /_/pts[[ aseq(3, /_/npts, 4) ]],\n            assign(\"/out\"+a+\"/curve\", /_/curve)#,\n\n#            /_/sus = /_/pts[[ aseq(2, /_/npts, 4) ]],\n#            assign(\"/out\"+a+\"/sustain\", /_/sus),\n\n          )\n        )\n      )\n    )\n  ), /_/addr\n),\nif( typetags(/name) != 'i',\n  assign(\"/out\"+/name+\"/count\", length(/_/addr)))"
 								}
 
 							}
@@ -531,8 +514,6 @@
 						"lines" : [ 							{
 								"patchline" : 								{
 									"destination" : [ "obj-13", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-10", 0 ]
 								}
 
@@ -540,8 +521,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-10", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-9", 0 ]
 								}
 
@@ -573,8 +552,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 63.5, 336.0, 157.0, 30.0 ],
-					"text" : "/_/addr = getaddresses()",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"text" : "/_/addr = getaddresses()"
 				}
 
 			}
@@ -738,8 +716,6 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -747,8 +723,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -756,8 +730,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-10", 1 ]
 				}
 
@@ -765,8 +737,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -774,8 +744,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-11", 0 ]
 				}
 
@@ -783,8 +751,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-12", 1 ]
 				}
 
@@ -792,8 +758,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-25", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-14", 0 ]
 				}
 
@@ -801,8 +765,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-16", 0 ]
 				}
 
@@ -810,8 +772,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"midpoints" : [ 244.0, 582.0, 40.5, 582.0 ],
 					"source" : [ "obj-16", 1 ]
 				}
@@ -820,8 +780,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-18", 0 ]
 				}
 
@@ -829,8 +787,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-2", 2 ]
 				}
 
@@ -838,8 +794,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-2", 1 ]
 				}
 
@@ -847,8 +801,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -856,8 +808,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 0,
 					"source" : [ "obj-23", 0 ]
 				}
@@ -866,8 +816,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-33", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 1,
 					"source" : [ "obj-23", 0 ]
 				}
@@ -876,8 +824,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-25", 0 ]
 				}
 
@@ -885,8 +831,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -894,8 +838,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-3", 1 ]
 				}
 
@@ -903,8 +845,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-3", 0 ]
 				}
 
@@ -912,8 +852,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-31", 0 ]
 				}
 
@@ -921,8 +859,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 2 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-31", 1 ]
 				}
 
@@ -930,8 +866,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-33", 0 ]
 				}
 
@@ -939,8 +873,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -948,8 +880,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -957,8 +887,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -966,8 +894,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-6", 1 ]
 				}
 
@@ -975,8 +901,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -984,8 +908,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-9", 0 ]
 				}
 
