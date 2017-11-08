@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 535.0, 86.0, 688.0, 553.0 ],
+		"rect" : [ 301.0, 131.0, 1037.0, 729.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,12 +38,130 @@
 		"subpatcher_template" : "no-menus",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-26",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 495.0, 102.0, 50.0, 22.0 ],
+					"style" : "",
+					"text" : "#2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 130.0, 191.0, 30.0, 22.0 ],
+					"style" : "",
+					"text" : "t b l"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 130.0, 396.0, 55.0, 22.0 ],
+					"style" : "",
+					"text" : "o.collect"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-22",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "FullPacket" ],
+					"patching_rect" : [ 172.0, 237.0, 103.0, 22.0 ],
+					"style" : "",
+					"text" : "o.messageiterate"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 172.0, 306.0, 123.0, 22.0 ],
+					"style" : "",
+					"text" : "routepass FullPacket"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "FullPacket" ],
+					"patching_rect" : [ 276.0, 342.0, 100.0, 22.0 ],
+					"style" : "",
+					"text" : "o.pack #1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-25",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "FullPacket" ],
+					"patching_rect" : [ 172.0, 270.0, 100.0, 22.0 ],
+					"style" : "",
+					"text" : "o.route #1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-20",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 399.0, 102.0, 50.0, 22.0 ],
+					"style" : "",
+					"text" : "#1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontsize" : 12.0,
+					"id" : "obj-10",
+					"maxclass" : "o.expr.codebox",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "FullPacket", "FullPacket" ],
+					"patching_rect" : [ 130.0, 437.0, 178.0, 32.0 ],
+					"text" : "/addrs = getaddresses()"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-19",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 343.0, 344.0, 332.0, 33.0 ],
+					"patching_rect" : [ 481.0, 385.0, 332.0, 33.0 ],
 					"style" : "",
 					"text" : "arg 1: base address to look for notes\narg 2: output prefix, default: /midi "
 				}
@@ -56,7 +174,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 121.0, 244.0, 100.0, 22.0 ],
+					"patching_rect" : [ 130.0, 486.0, 288.0, 22.0 ],
 					"style" : "",
 					"text" : "o.union"
 				}
@@ -66,25 +184,12 @@
 				"box" : 				{
 					"id" : "obj-16",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 343.0, 152.0, 100.0, 22.0 ],
-					"style" : "",
-					"text" : "o.pack /prefix"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-12",
-					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 343.0, 111.0, 50.0, 22.0 ],
+					"outlettype" : [ "FullPacket" ],
+					"patching_rect" : [ 399.0, 136.0, 115.0, 22.0 ],
 					"style" : "",
-					"text" : "#2"
+					"text" : "o.pack /base /prefix"
 				}
 
 			}
@@ -95,7 +200,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 337.0, 273.0, 332.0, 47.0 ],
+					"patching_rect" : [ 475.0, 314.0, 332.0, 47.0 ],
 					"style" : "",
 					"text" : "required argument: name of address to use for note parsing\n\nv.3 now uses user assignable prefix for result output"
 				}
@@ -107,7 +212,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 407.5, 420.0, 118.0, 20.0 ],
+					"patching_rect" : [ 545.5, 461.0, 118.0, 20.0 ],
 					"style" : "",
 					"text" : "rama gottfried, 2016"
 				}
@@ -119,7 +224,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 337.0, 240.0, 185.0, 20.0 ],
+					"patching_rect" : [ 475.0, 281.0, 185.0, 20.0 ],
 					"style" : "",
 					"text" : "note to MIDI number conversion."
 				}
@@ -133,7 +238,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 337.0, 208.0, 128.0, 27.0 ],
+					"patching_rect" : [ 475.0, 249.0, 128.0, 27.0 ],
 					"style" : "",
 					"text" : "cnmat.o.ntom"
 				}
@@ -147,7 +252,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 258.0, 348.0, 30.0, 30.0 ],
+					"patching_rect" : [ 258.0, 160.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -182,7 +287,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 82.0, 298.0, 894.0, 787.0 ],
+						"rect" : [ 308.0, 79.0, 1098.0, 774.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -214,13 +319,13 @@
 									"fontface" : 0,
 									"fontsize" : 11.0,
 									"id" : "obj-2",
-									"linecount" : 55,
+									"linecount" : 56,
 									"maxclass" : "o.expr.codebox",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 50.0, 61.0, 765.0, 704.0 ],
-									"text" : "/addrs = getaddresses(),\n/prefix = (typetags(/prefix) != 's') ? \"/midi\" : /prefix,\n\n/names/lower = [\"c\", \"c#\", \"db\", \"d\", \"d#\", \"eb\", \"e\", \"f\", \"f#\", \"gb\", \"g\", \"g#\", \"ab\", \"a\", \"a#\", \"bb\", \"b\" ],\t\n/names/upper = [\"C\", \"C#\", \"Db\", \"D\", \"D#\", \"Eb\", \"E\", \"F\", \"F#\", \"Gb\", \"G\", \"G#\", \"Ab\", \"A\", \"A#\", \"Bb\", \"B\" ],\t\n/names/step = [0, 1, 1, 2, 3, 3, 4, 5, 6, 6, 7, 8, 8, 9, 10, 10, 11],\n/n = aseq(1, length(/names/step)),\n\nmap(\n  lambda([a],\n   assign(\"/_/__/___\"+/prefix+a,  \n    map(\n      lambda([n], \n        /tok = split(\":\", n ),\n        /letter = /tok[[0]],\n        /lower/test = /letter == /names/lower,\n        if( sum(/lower/test) > 0,\n          /step = /names/step[[ sum( /lower/test * /n ) - 1 ]],\n          progn(\n            /upper/test = /letter == /names/upper,\n            if( sum(/upper/test) > 0,\n              /step = /names/step[[ sum( /upper/test * /n ) - 1 ]]\n            )\n          )\n        ),\n        \n        if( length(/tok) == 2,\n          progn(\n            /minus = split(\"-\", /tok[[1]]),\n            if( length(/minus) == 2,\n              progn( \n                /oct = float32(/minus[[0]]), \n                /cents = float32(\"-\"+/minus[[1]])\n              ),\n              progn(\n                /plus = split(\"+\", /tok[[1]]),\n                if( length(/plus) == 2,\n                  progn( \n                    /oct = float32(/plus[[0]]), \n                    /cents = float32(/plus[[1]])\n                  ),\n                  progn( \n                    /oct = float32(/tok[[1]]),\n                    /cents = 0\n                  )\n                )\n              )\n            )\n          )\n        ),\n        [/step + (12*(/oct+1)) + (/cents * 0.01) ]\n      ), value(a)\n    ))\n  ), /addrs\n)"
+									"patching_rect" : [ 50.0, 61.0, 765.0, 716.0 ],
+									"text" : "/base = (typetags(/prefix) != 's') ? \"/notes\" : /base ,\n/prefix = (typetags(/prefix) != 's') ? \"/midi\" : /prefix,\n\n/names/lower = [\"c\", \"c#\", \"db\", \"d\", \"d#\", \"eb\", \"e\", \"f\", \"f#\", \"gb\", \"g\", \"g#\", \"ab\", \"a\", \"a#\", \"bb\", \"b\" ],\t\n/names/upper = [\"C\", \"C#\", \"Db\", \"D\", \"D#\", \"Eb\", \"E\", \"F\", \"F#\", \"Gb\", \"G\", \"G#\", \"Ab\", \"A\", \"A#\", \"Bb\", \"B\" ],\t\n/names/step = [0, 1, 1, 2, 3, 3, 4, 5, 6, 6, 7, 8, 8, 9, 10, 10, 11],\n/n = aseq(1, length(/names/step)),\n\nmap(\n  lambda([a],\n   /outaddr = if( !strcmp(a, /base), /prefix, /prefix + a ),\n   assign(\"/_/__/___\"+/outaddr,  \n    map(\n      lambda([n], \n        /tok = split(\":\", n ),\n        /letter = /tok[[0]],\n        /lower/test = /letter == /names/lower,\n        if( sum(/lower/test) > 0,\n          /step = /names/step[[ sum( /lower/test * /n ) - 1 ]],\n          progn(\n            /upper/test = /letter == /names/upper,\n            if( sum(/upper/test) > 0,\n              /step = /names/step[[ sum( /upper/test * /n ) - 1 ]]\n            )\n          )\n        ),\n        \n        if( length(/tok) == 2,\n          progn(\n            /minus = split(\"-\", /tok[[1]]),\n            if( length(/minus) == 2,\n              progn( \n                /oct = float32(/minus[[0]]), \n                /cents = float32(\"-\"+/minus[[1]])\n              ),\n              progn(\n                /plus = split(\"+\", /tok[[1]]),\n                if( length(/plus) == 2,\n                  progn( \n                    /oct = float32(/plus[[0]]), \n                    /cents = float32(/plus[[1]])\n                  ),\n                  progn( \n                    /oct = float32(/tok[[1]]),\n                    /cents = 0\n                  )\n                )\n              )\n            )\n          )\n        ),\n        [/step + (12*(/oct+1)) + (/cents * 0.01) ]\n      ), value(a)\n    ))\n  ), /addrs\n)"
 								}
 
 							}
@@ -269,7 +374,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 121.0, 279.0, 44.0, 22.0 ],
+					"patching_rect" : [ 130.0, 521.0, 44.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -436,7 +541,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 58.0, 398.0, 55.0, 22.0 ],
+					"patching_rect" : [ 67.0, 607.0, 55.0, 22.0 ],
 					"style" : "",
 					"text" : "o.collect"
 				}
@@ -477,21 +582,8 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 58.0, 430.0, 30.0, 30.0 ],
+					"patching_rect" : [ 67.0, 639.0, 30.0, 30.0 ],
 					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-18",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 121.0, 195.5, 102.0, 22.0 ],
-					"style" : "",
-					"text" : "o.select #1"
 				}
 
 			}
@@ -502,7 +594,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 121.0, 319.0, 102.0, 22.0 ],
+					"patching_rect" : [ 130.0, 561.0, 102.0, 22.0 ],
 					"style" : "",
 					"text" : "o.route /_/__/___"
 				}
@@ -518,8 +610,29 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-16", 0 ],
-					"source" : [ "obj-12", 0 ]
+					"destination" : [ "obj-17", 0 ],
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"source" : [ "obj-11", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-13", 1 ]
 				}
 
 			}
@@ -534,13 +647,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"source" : [ "obj-13", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-18", 0 ],
-					"source" : [ "obj-13", 1 ]
 				}
 
 			}
@@ -574,8 +680,57 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-17", 0 ],
-					"source" : [ "obj-18", 0 ]
+					"destination" : [ "obj-16", 0 ],
+					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"source" : [ "obj-21", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"source" : [ "obj-23", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-23", 0 ],
+					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 1 ],
+					"source" : [ "obj-26", 0 ]
 				}
 
 			}
@@ -602,7 +757,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-12", 0 ],
+					"destination" : [ "obj-20", 0 ],
+					"order" : 1,
+					"source" : [ "obj-39", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-26", 0 ],
 					"order" : 0,
 					"source" : [ "obj-39", 0 ]
 				}
@@ -611,7 +774,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-38", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-39", 0 ]
 				}
 
