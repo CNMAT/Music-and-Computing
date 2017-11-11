@@ -2066,7 +2066,7 @@
 				"box" : 				{
 					"comment" : "number of steps in phrase",
 					"id" : "obj-25",
-					"index" : 0,
+					"index" : 5,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -2117,7 +2117,7 @@
 				"box" : 				{
 					"comment" : "step index",
 					"id" : "obj-22",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -2130,7 +2130,7 @@
 				"box" : 				{
 					"comment" : "x delta (duration)",
 					"id" : "obj-8",
-					"index" : 0,
+					"index" : 4,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -2155,7 +2155,7 @@
 				"box" : 				{
 					"comment" : "OSC",
 					"id" : "obj-19",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -2518,7 +2518,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 75.0, 45.0, 1420.0, 821.0 ],
+						"rect" : [ 20.0, 45.0, 1386.0, 821.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2547,12 +2547,44 @@
 						"subpatcher_template" : "no-menus",
 						"boxes" : [ 							{
 								"box" : 								{
+									"fontface" : 0,
+									"fontsize" : 12.0,
+									"id" : "obj-5",
+									"linecount" : 27,
+									"maxclass" : "o.compose",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 875.0, 709.0, 404.0, 377.0 ],
+									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 47, 120, 0, 0, 44, 105, 105, 105, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 28, 47, 121, 0, 0, 44, 105, 105, 105, 105, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 3, 0, 0, 0, 20, 47, 99, 117, 114, 118, 101, 0, 0, 44, 105, 105, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, -40, 47, 126, 47, 115, 111, 114, 116, 65, 100, 106, 117, 115, 116, 0, 0, 0, 44, 115, 0, 0, 108, 97, 109, 98, 100, 97, 40, 91, 120, 44, 121, 44, 99, 93, 44, 10, 32, 32, 47, 104, 97, 115, 95, 99, 117, 114, 118, 101, 32, 61, 32, 108, 101, 110, 103, 116, 104, 40, 99, 41, 32, 62, 32, 48, 44, 10, 32, 32, 105, 102, 40, 47, 104, 97, 115, 95, 99, 117, 114, 118, 101, 44, 10, 32, 32, 32, 32, 112, 114, 111, 103, 110, 40, 10, 32, 32, 32, 32, 32, 32, 47, 114, 101, 115, 105, 122, 101, 47, 105, 100, 120, 32, 61, 32, 97, 115, 101, 113, 40, 48, 44, 32, 109, 105, 110, 40, 32, 91, 108, 101, 110, 103, 116, 104, 40, 120, 41, 44, 32, 108, 101, 110, 103, 116, 104, 40, 121, 41, 44, 32, 108, 101, 110, 103, 116, 104, 40, 99, 41, 93, 32, 41, 32, 45, 32, 49, 41, 44, 10, 32, 32, 32, 32, 32, 32, 47, 95, 47, 99, 117, 114, 118, 101, 32, 61, 32, 99, 91, 91, 47, 114, 101, 115, 105, 122, 101, 47, 105, 100, 120, 93, 93, 10, 32, 32, 32, 32, 41, 44, 10, 32, 32, 32, 32, 47, 116, 109, 112, 47, 105, 100, 120, 32, 61, 32, 97, 115, 101, 113, 40, 48, 44, 32, 109, 105, 110, 40, 32, 91, 108, 101, 110, 103, 116, 104, 40, 120, 41, 44, 32, 108, 101, 110, 103, 116, 104, 40, 121, 41, 93, 32, 41, 32, 45, 32, 49, 32, 41, 10, 32, 32, 41, 44, 10, 32, 32, 47, 95, 47, 120, 32, 61, 32, 120, 91, 91, 47, 114, 101, 115, 105, 122, 101, 47, 105, 100, 120, 93, 93, 44, 10, 32, 32, 47, 95, 47, 121, 32, 61, 32, 121, 91, 91, 47, 114, 101, 115, 105, 122, 101, 47, 105, 100, 120, 93, 93, 44, 10, 32, 32, 47, 95, 47, 115, 111, 114, 116, 105, 100, 120, 32, 61, 32, 115, 111, 114, 116, 105, 100, 120, 40, 47, 95, 47, 120, 41, 44, 10, 32, 32, 47, 95, 47, 120, 32, 61, 32, 47, 95, 47, 120, 91, 91, 47, 95, 47, 115, 111, 114, 116, 105, 100, 120, 93, 93, 44, 10, 32, 32, 47, 95, 47, 121, 32, 61, 32, 47, 95, 47, 121, 91, 91, 47, 95, 47, 115, 111, 114, 116, 105, 100, 120, 93, 93, 44, 10, 32, 32, 105, 102, 40, 32, 47, 104, 97, 115, 95, 99, 117, 114, 118, 101, 44, 32, 47, 95, 47, 99, 117, 114, 118, 101, 32, 61, 32, 47, 95, 47, 99, 117, 114, 118, 101, 91, 91, 47, 95, 47, 115, 111, 114, 116, 105, 100, 120, 93, 93, 32, 41, 10, 41, 0, 0, 0, 0, 16, 47, 104, 97, 115, 95, 99, 117, 114, 118, 101, 0, 0, 44, 84, 0, 0, 0, 0, 0, 24, 47, 114, 101, 115, 105, 122, 101, 47, 105, 100, 120, 0, 44, 105, 105, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 24, 47, 95, 47, 99, 117, 114, 118, 101, 0, 0, 0, 0, 44, 105, 105, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 20, 47, 95, 47, 120, 0, 0, 0, 0, 44, 105, 105, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 20, 47, 95, 47, 121, 0, 0, 0, 0, 44, 105, 105, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 24, 47, 95, 47, 115, 111, 114, 116, 105, 100, 120, 0, 0, 44, 105, 105, 0, 0, 0, 0, 1, 0, 0, 0, 0 ],
+									"saved_bundle_length" : 728,
+									"text" : "/x : [1, 0, 4],\n/y : [0, 1, 2, 3],\n/curve : [1, 0],\n/~/sortAdjust : \"lambda([x,y,c],\n  /has_curve = length(c) > 0,\n  if(/has_curve,\n    progn(\n      /resize/idx = aseq(0, min( [length(x), length(y), length(c)] ) - 1),\n      /_/curve = c[[/resize/idx]]\n    ),\n    /tmp/idx = aseq(0, min( [length(x), length(y)] ) - 1 )\n  ),\n  /_/x = x[[/resize/idx]],\n  /_/y = y[[/resize/idx]],\n  /_/sortidx = sortidx(/_/x),\n  /_/x = /_/x[[/_/sortidx]],\n  /_/y = /_/y[[/_/sortidx]],\n  if( /has_curve, /_/curve = /_/curve[[/_/sortidx]] )\n)\",\n/has_curve : true,\n/resize/idx : [0, 1],\n/_/curve : [0, 1],\n/_/x : [0, 1],\n/_/y : [1, 0],\n/_/sortidx : [1, 0]"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 0,
+									"fontsize" : 12.0,
+									"id" : "obj-4",
+									"linecount" : 32,
+									"maxclass" : "o.expr.codebox",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "FullPacket", "FullPacket" ],
+									"patching_rect" : [ 875.0, 128.0, 554.0, 453.0 ],
+									"text" : "/x = [1,0,4],\n/y = [0,1,2,3],\n/curve = [1,0],\n\n/~/sortAdjustXY = \"lambda([x,y],\n  /resize/idx = aseq(0, min( [length(x), length(y)] ) - 1 )\n  /_/x = x[[/resize/idx]],\n  /_/y = y[[/resize/idx]],\n  /_/sortidx = sortidx(/_/x),\n  /_/x = /_/x[[/_/sortidx]],\n  /_/y = /_/y[[/_/sortidx]]\n)\",\n\n/~/sortAdjustXYC = \"lambda([x,y,c],\n  /has_curve = length(c) > 0,\n  if(/has_curve,\n    progn(\n      /resize/idx = aseq(0, min( [length(x), length(y), length(c)] ) - 1),\n      /_/curve = c[[/resize/idx]]\n    ),\n    /tmp/idx = aseq(0, min( [length(x), length(y)] ) - 1 )\n  ),\n  /_/x = x[[/resize/idx]],\n  /_/y = y[[/resize/idx]],\n  /_/sortidx = sortidx(/_/x),\n  /_/x = /_/x[[/_/sortidx]],\n  /_/y = /_/y[[/_/sortidx]],\n  if( /has_curve, /_/curve = /_/curve[[/_/sortidx]] )\n)\",\n\n#/tmp/idx = aseq(0, min( [length(/x), length(/y), length(/curve)] ) - 1)\n/~/sortAdjust(/x, /y, /curve)"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-3",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "FullPacket" ],
-									"patching_rect" : [ 114.0, 2580.0, 100.0, 22.0 ],
+									"patching_rect" : [ 82.0, 2810.0, 100.0, 22.0 ],
 									"style" : "",
 									"text" : "o.select /count"
 								}
@@ -2578,7 +2610,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "FullPacket" ],
-									"patching_rect" : [ 56.0, 2544.0, 77.0, 22.0 ],
+									"patching_rect" : [ 24.0, 2774.0, 77.0, 22.0 ],
 									"style" : "",
 									"text" : "o.route /out"
 								}
@@ -2589,13 +2621,13 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-7",
-									"linecount" : 180,
+									"linecount" : 192,
 									"maxclass" : "o.expr.codebox",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 56.0, 74.0, 770.0, 2464.0 ],
-									"text" : "/count ??= 0,\n/_/stepmode ??= 0,\n/_/norm ??= 1,\n/_/beats ??= 1,\n/_/baseAddr ??= \"\",\n\n/_/x = value(/_/baseAddr+\"/x\"),\n/_/y = value(/_/baseAddr+\"/y\"),\n/_/curve = value(/_/baseAddr+\"/curve\"),\n\n/planecount = 0,\n/maxlen = 0,\n\nif( bound(/_/x) && bound(/_/y),\n  if( /_/stepmode == 1,\n    progn(\n      if( /_/beats == 1,\n        progn(\n          /_/sortidx = sortidx(/_/x),\n          /_/x = /_/x[[ /_/sortidx ]],\n          /_/y = /_/y[[ /_/sortidx ]],\n          /_/y = [/_/y, last(/_/y)],\n          /_/x = [/_/x, last(/_/x)+1],\n          if( /_/norm == 1, \n            /_/x = scale(/_/x, min(/_/x), max(/_/x), 0., 1.)\n          ),\n          /len = length(/_/x),  #assumes the user has the right length for y\n          /maxlen = /len+1,\n          assign(\"/out/x/fill/0\", [/len, /_/x, 0] ),\n          assign(\"/out/y/fill/0\", [/len, /_/y, 0] ),\n          /planecount = 1\n        ),\n        progn(\n          /_/sortidx = sortidx(/_/x),\n          /_/x = /_/x[[ /_/sortidx ]],\n          /_/y = /_/y[[ /_/sortidx ]],\n          /_/tab = /_/y,\n          /_/step = /_/x,\n          /_/len = length(/_/tab),\n          /_/x = [],\n          /_/y = [],\n          map(\n            lambda([y,x],\n              if( !bound(/_/prev) || y != /_/prev,\n                progn(\n                  /_/y = [/_/y, y],\n                  /_/x = [/_/x, x]\n                )\n              ),\n              /_/prev = y\n            ), /_/tab, /_/step\n          ),\n          /_/y = [/_/y, last(/_/y)],\n          /_/x = [/_/x, /_/len],\n          if( /_/norm == 1, \n            /_/x = scale(/_/x, min(/_/x), max(/_/x), 0., 1.)\n          ),\n          /len = length(/_/x),  #assumes the user has the right length for y\n          /maxlen = /len+1,\n          assign(\"/out/x/fill/0\", [/len, /_/x, 0] ),\n          assign(\"/out/y/fill/0\", [/len, /_/y, 0] ),\n          /planecount = 1\n        )\n      )\n    ),\n    progn(\n      /_/sortidx = sortidx(/_/x),\n      /_/x = /_/x[[ /_/sortidx ]],\n      /_/y = /_/y[[ /_/sortidx ]],\n      if( /_/norm == 1, \n        /_/x = scale(/_/x, min(/_/x), max(/_/x), 0., 1.)\n      ),\n      /len = length(/_/x),  #assumes the user has the right length for y\n      /maxlen = max([/len+1, /maxlen]),\n      assign(\"/out/x/fill/0\", [/len, /_/x, 0] ),\n      assign(\"/out/y/fill/0\", [/len, /_/y, 0] ),\n      if( bound(/_/curve),\n        progn(\n          /_/curve = /_/curve[[ /_/sortidx ]],\n          /_/curve = clip( (abs(/_/curve) > 0.001) * /_/curve, -1., 1. ),\n          /hp = sign(/_/curve) * pow((abs(/_/curve) + (sign(/_/curve)*1e-20)) * 1.2, 0.41) * 0.91,\n          /fp = /hp / (1. - abs(/hp)),\n          assign(\"/out/curve/fill/0\", [/len, /fp, 0] )\n        )\n      ),\n      /planecount = 1\n    )    \n  ),\n  map(\n    lambda(i,\n      /_/x = value(/_/baseAddr+\"/\"+i+\"/x\"),\n      /_/y = value(/_/baseAddr+\"/\"+i+\"/y\"),\n      /_/curve = value(/_/baseAddr+\"/\"+i+\"/curve\"),\n      if( bound(/_/x) && bound(/_/y),\n        if( /_/stepmode == 1,\n          if( /_/beats == 1,\n            progn(\n              /_/sortidx = sortidx(/_/x),\n              /_/x = /_/x[[ /_/sortidx ]],\n              /_/y = /_/y[[ /_/sortidx ]],\n              /_/y = [/_/y, last(/_/y)],\n              /_/x = [/_/x, last(/_/x)+1],\n              if( /_/norm == 1, \n                /_/x = scale(/_/x, min(/_/x), max(/_/x), 0., 1.)\n              ),\n              /len = length(/_/x),  #assumes the user has the right length for y\n              /maxlen = max([/len+1, /maxlen]),\n              assign(\"/out/x/fill/\"+/planecount, [/len, /_/x, /planecount] ),\n              assign(\"/out/y/fill/\"+/planecount, [/len, /_/y, /planecount] ),\n              /planecount++\n            ),\n            progn(\n              /_/sortidx = sortidx(/_/x),\n              /_/x = /_/x[[ /_/sortidx ]],\n              /_/y = /_/y[[ /_/sortidx ]],\n              /_/tab = /_/y,\n              /_/step = /_/x,\n              /_/x = [], /_/y = [],\n              /_/len = length(/_/tab),\n              /_/prev = [],\n              map(\n                lambda([y,x],\n                  if( !bound(/_/prev) || y != /_/prev,\n                    progn(\n                      /_/y = [/_/y, y],\n                      /_/x = [/_/x, x]\n                    )\n                  ),\n                  /_/prev = y\n                ), /_/tab, /_/step\n              ),\n              /_/y = [/_/y, last(/_/y)],\n              /_/x = [/_/x, /_/len],\n              if( /_/norm == 1, \n                /_/x = scale(/_/x, min(/_/x), max(/_/x), 0., 1.)\n              ),\n              /len = length(/_/x),  #assumes the user has the right length for y\n              /maxlen = max([/len+1, /maxlen]),\n              assign(\"/out/x/fill/\"+/planecount, [/len, /_/x, /planecount] ),\n              assign(\"/out/y/fill/\"+/planecount, [/len, /_/y, /planecount] ),\n              /planecount++\n            )\n          ),\n          #function mode\n          progn(\n            /_/sortidx = sortidx(/_/x),\n            /_/x = /_/x[[ /_/sortidx ]],\n            /_/y = /_/y[[ /_/sortidx ]],\n            if( /_/norm == 1, \n                /_/x = scale(/_/x, min(/_/x), max(/_/x), 0., 1.)\n            ),\n            /len = length(/_/x),  #assumes the user has the right length for y\n            /maxlen = max([/len+1, /maxlen]),\n            assign(\"/out/x/fill/\"+/planecount, [/len, /_/x, /planecount] ),\n            assign(\"/out/y/fill/\"+/planecount, [/len, /_/y, /planecount] ),\n            if( bound(/_/curve),\n              progn(\n                /_/curve = /_/curve[[ /_/sortidx ]],\n                /_/curve = clip( (abs(/_/curve) > 0.001) * /_/curve, -1., 1. ),\n                /hp = sign(/_/curve) * pow((abs(/_/curve) + (sign(/_/curve)*1e-20)) * 1.2, 0.41) * 0.91,\n                /fp = /hp / (1. - abs(/hp)),\n                assign(\"/out/curve/fill/\"+/planecount, [/len, /fp, /planecount] )\n              )\n            ),\n            /planecount++\n          )\n        )    \n      )\n    ), aseq(0, length(/addrs)-1)\n  )\n),\n\n/out/x/dim = [/maxlen, /planecount],\n/out/y/dim = /out/x/dim,\n/out/curve/dim = /out/x/dim,\n/out/x/setbuf = /unique + \"-xbuf\" + /count,\n/out/y/setbuf = /unique + \"-ybuf\" + /count,\n/out/curve/setbuf = /unique + \"-cbuf\" + /count,\n/out/count = /count,\n/count = (/count + 1) % 2"
+									"patching_rect" : [ 56.0, 73.0, 770.0, 2627.0 ],
+									"text" : "/count ??= 0,\n/_/stepmode ??= 0,\n/_/norm ??= 1,\n/_/beats ??= 1,\n/_/baseAddr ??= \"\",\n\n/_/x = value(/_/baseAddr+\"/x\"),\n/_/y = value(/_/baseAddr+\"/y\"),\n/_/curve = value(/_/baseAddr+\"/curve\"),\n\n/planecount = 0,\n/maxlen = 0,\n\n/~/sortAdjustXY = \"lambda([x,y],\n  /resize/idx = aseq(0, min( [length(x), length(y)] ) - 1 ),\n  /_/x = x[[/resize/idx]],\n  /_/y = y[[/resize/idx]],\n  /_/sortidx = sortidx(/_/x),\n  /_/x = /_/x[[/_/sortidx]],\n  /_/y = /_/y[[/_/sortidx]]\n)\",\n\n/~/sortAdjustXYC = \"lambda([x,y,c],\n  /has_curve = length(c) > 0,\n  if(/has_curve,\n    progn(\n      /resize/idx = aseq(0, min( [length(x), length(y), length(c)] ) - 1),\n      /_/curve = c[[/resize/idx]]\n    ),\n    /resize/idx = aseq(0, min( [length(x), length(y)] ) - 1 )\n  ),\n  /_/x = x[[/resize/idx]],\n  /_/y = y[[/resize/idx]],\n  /_/sortidx = sortidx(/_/x),\n  /_/x = /_/x[[/_/sortidx]],\n  /_/y = /_/y[[/_/sortidx]],\n  if( /has_curve, /_/curve = /_/curve[[/_/sortidx]] )\n)\",\n\nif( bound(/_/x) && bound(/_/y),\n  if( /_/stepmode == 1,\n    progn(\n      if( /_/beats == 1,\n        progn(\n          /~/sortAdjustXY(/_/x, /_/y),\n          /_/y = [/_/y, last(/_/y)],\n          /_/x = [/_/x, last(/_/x)+1],\n          if( /_/norm == 1, \n            /_/x = scale(/_/x, min(/_/x), max(/_/x), 0., 1.)\n          ),\n          /len = length(/_/x),\n          /maxlen = /len+1,\n          assign(\"/out/x/fill/0\", [/len, /_/x, 0] ),\n          assign(\"/out/y/fill/0\", [/len, /_/y, 0] ),\n          /planecount = 1\n        ),\n        progn(\n          /~/sortAdjustXY(/_/x, /_/y),\n          /_/tab = /_/y,\n          /_/step = /_/x,\n          /_/len = length(/_/tab),\n          /_/x = [],\n          /_/y = [],\n          map(\n            lambda([y,x],\n              if( !bound(/_/prev) || y != /_/prev,\n                progn(\n                  /_/y = [/_/y, y],\n                  /_/x = [/_/x, x]\n                )\n              ),\n              /_/prev = y\n            ), /_/tab, /_/step\n          ),\n          /_/y = [/_/y, last(/_/y)],\n          /_/x = [/_/x, /_/len],\n          if( /_/norm == 1, \n            /_/x = scale(/_/x, min(/_/x), max(/_/x), 0., 1.)\n          ),\n          /len = length(/_/x),\n          /maxlen = /len+1,\n          assign(\"/out/x/fill/0\", [/len, /_/x, 0] ),\n          assign(\"/out/y/fill/0\", [/len, /_/y, 0] ),\n          /planecount = 1\n        )\n      )\n    ),\n    progn(\n      /~/sortAdjustXYC(/_/x, /_/y, /_/curve),\n      if( /_/norm == 1, \n        /_/x = scale(/_/x, min(/_/x), max(/_/x), 0., 1.)\n      ),\n      /len = length(/_/x),  #assumes the user has the right length for y\n      /maxlen = max([/len+1, /maxlen]),\n      assign(\"/out/x/fill/0\", [/len, /_/x, 0] ),\n      assign(\"/out/y/fill/0\", [/len, /_/y, 0] ),\n      if( bound(/_/curve),\n        progn(\n          /_/curve = clip( (abs(/_/curve) > 0.001) * /_/curve, -1., 1. ),\n          /hp = sign(/_/curve) * pow((abs(/_/curve) + (sign(/_/curve)*1e-20)) * 1.2, 0.41) * 0.91,\n          /fp = /hp / (1. - abs(/hp)),\n          assign(\"/out/curve/fill/0\", [/len, /fp, 0] )\n        )\n      ),\n      /planecount = 1\n    )    \n  ),\n  map(\n    lambda(i,\n      /_/x = value(/_/baseAddr+\"/\"+i+\"/x\"),\n      /_/y = value(/_/baseAddr+\"/\"+i+\"/y\"),\n      /_/curve = value(/_/baseAddr+\"/\"+i+\"/curve\"),\n      if( bound(/_/x) && bound(/_/y),\n        if( /_/stepmode == 1,\n          if( /_/beats == 1,\n            progn(\n              /~/sortAdjustXY(/_/x, /_/y),\n              /_/y = [/_/y, last(/_/y)],\n              /_/x = [/_/x, last(/_/x)+1],\n              if( /_/norm == 1, \n                /_/x = scale(/_/x, min(/_/x), max(/_/x), 0., 1.)\n              ),\n              /len = length(/_/x),  #assumes the user has the right length for y\n              /maxlen = max([/len+1, /maxlen]),\n              assign(\"/out/x/fill/\"+/planecount, [/len, /_/x, /planecount] ),\n              assign(\"/out/y/fill/\"+/planecount, [/len, /_/y, /planecount] ),\n              /planecount++\n            ),\n            progn(\n              /~/sortAdjustXY(/_/x, /_/y),\n              /_/tab = /_/y,\n              /_/step = /_/x,\n              /_/x = [], /_/y = [],\n              /_/len = length(/_/tab),\n              /_/prev = [],\n              map(\n                lambda([y,x],\n                  if( !bound(/_/prev) || y != /_/prev,\n                    progn(\n                      /_/y = [/_/y, y],\n                      /_/x = [/_/x, x]\n                    )\n                  ),\n                  /_/prev = y\n                ), /_/tab, /_/step\n              ),\n              /_/y = [/_/y, last(/_/y)],\n              /_/x = [/_/x, /_/len],\n              if( /_/norm == 1, \n                /_/x = scale(/_/x, min(/_/x), max(/_/x), 0., 1.)\n              ),\n              /len = length(/_/x),  #assumes the user has the right length for y\n              /maxlen = max([/len+1, /maxlen]),\n              assign(\"/out/x/fill/\"+/planecount, [/len, /_/x, /planecount] ),\n              assign(\"/out/y/fill/\"+/planecount, [/len, /_/y, /planecount] ),\n              /planecount++\n            )\n          ),\n          #function mode\n          progn(\n            /~/sortAdjustXYC(/_/x, /_/y, /_/curve),\n            if( /_/norm == 1, \n                /_/x = scale(/_/x, min(/_/x), max(/_/x), 0., 1.)\n            ),\n            /len = length(/_/x),  #assumes the user has the right length for y\n            /maxlen = max([/len+1, /maxlen]),\n            assign(\"/out/x/fill/\"+/planecount, [/len, /_/x, /planecount] ),\n            assign(\"/out/y/fill/\"+/planecount, [/len, /_/y, /planecount] ),\n            if( bound(/_/curve),\n              progn(\n                /_/curve = clip( (abs(/_/curve) > 0.001) * /_/curve, -1., 1. ),\n                /hp = sign(/_/curve) * pow((abs(/_/curve) + (sign(/_/curve)*1e-20)) * 1.2, 0.41) * 0.91,\n                /fp = /hp / (1. - abs(/hp)),\n                assign(\"/out/curve/fill/\"+/planecount, [/len, /fp, /planecount] )\n              )\n            ),\n            /planecount++\n          )\n        )    \n      )\n    ), aseq(0, length(/addrs)-1)\n  )\n),\n\n/out/x/dim = [/maxlen, /planecount],\n/out/y/dim = /out/x/dim,\n/out/curve/dim = /out/x/dim,\n/out/x/setbuf = /unique + \"-xbuf\" + /count,\n/out/y/setbuf = /unique + \"-ybuf\" + /count,\n/out/curve/setbuf = /unique + \"-cbuf\" + /count,\n/out/count = /count,\n/count = (/count + 1) % 2"
 								}
 
 							}
@@ -2621,7 +2653,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 56.0, 2580.0, 30.0, 30.0 ],
+									"patching_rect" : [ 24.0, 2810.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -2651,8 +2683,15 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-2", 1 ],
-									"midpoints" : [ 123.5, 2611.0, 941.0, 2611.0, 941.0, 26.0, 146.5, 26.0 ],
+									"midpoints" : [ 91.5, 2842.0, 864.0, 2842.0, 864.0, 26.0, 146.5, 26.0 ],
 									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-5", 1 ],
+									"source" : [ "obj-4", 0 ]
 								}
 
 							}
@@ -2730,7 +2769,7 @@
 				"box" : 				{
 					"comment" : "relative x phase",
 					"id" : "obj-3",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -2781,7 +2820,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 6,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -2794,11 +2833,11 @@
 				"box" : 				{
 					"comment" : "x phase (signal)",
 					"id" : "obj-47",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 189.0, 122.305542, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -2808,7 +2847,7 @@
 				"box" : 				{
 					"comment" : "index",
 					"id" : "obj-48",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -2822,7 +2861,7 @@
 				"box" : 				{
 					"comment" : "y value",
 					"id" : "obj-49",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -3215,65 +3254,6 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "cnmat.loadbang.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/internal",
-				"patcherrelativepath" : "../internal",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "phase.points.gendsp",
-				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/code",
-				"patcherrelativepath" : "../../code",
-				"type" : "gDSP",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.doc.handler.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/internal",
-				"patcherrelativepath" : "../internal",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.expr.codebox.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.collect.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.if.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.route.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.union.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.select.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.pack.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.cond.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.prepend.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0,
 		"bgfillcolor_type" : "gradient",
 		"bgfillcolor_color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 		"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
