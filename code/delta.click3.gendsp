@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 244.0, 117.0, 702.0, 340.0 ],
+		"rect" : [ 405.0, 79.0, 1001.0, 787.0 ],
 		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -39,16 +39,40 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"code" : "History prevDir, x1;\r\n\r\ndir = sign(delta(in1));\r\n\r\nclick = (dir != prevDir) && (x1 != 1);\r\nout1 = click;\r\n\r\nx1 = click;\r\nprevDir = dir;",
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 354.0, 742.0, 37.0, 22.0 ],
+					"style" : "",
+					"text" : "out 3"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 238.0, 742.0, 37.0, 22.0 ],
+					"style" : "",
+					"text" : "out 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"code" : "History prevDir,x1,x2,x3,mu,sq,var;\r\nParam mode(0);\r\nParam var_len(3);\r\nDelay del(samplerate);\r\n\r\nclick = 0;\r\n\r\nif( mode == 0 ) // direction\r\n{\r\n\tdir = sign(delta(in1));\r\n\tclick = (dir != prevDir) && (x1 != 1);\t\r\n\r\n\tx1 = click;\r\n\tprevDir = dir;\r\n}\r\nelse if( mode == 1) //down\r\n{\r\n\tclick = delta(in1) < 0;\r\n}\r\nelse if( mode == 2) //up\r\n{\r\n\tclick = delta(in1) > 0;\r\n}\r\nelse if( mode == 3) //varience\r\n{\r\n\tdx = delta(in1);\r\n\tmdx = dx - mu; // difference from mean\r\n\tclick = (mdx*mdx) > var;\r\n\t\r\n\t//remove old values\r\n//\tx = x3;\r\n\tx = del.read(var_len);\r\n\tmuOld = (var_len * mu - x) / (var_len-1);\r\n\tsq = sq - (x - mu) * (x - muOld);\r\n\tmu = muOld;\r\n\t\r\n\t//add in1\r\n\tmuNew = mu + ((dx - mu) / var_len);\r\n\tsq = sq + (dx - mu) * (dx - muNew);\r\n\tmu = muNew;\r\n\r\n\t//update varience\r\n\tvar = sq / (var_len-1);\r\n\t\r\n//\tx3 = x2;\r\n//\tx2 = x1;\r\n//\tx1 = dx;\r\n\t\r\n\tdel.write(dx);\r\n}\r\n\r\n\r\nout1 = click;\r\nout2 = mu;\r\nout3 = var;\r\n",
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-2",
 					"maxclass" : "codebox",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 50.0, 43.0, 508.0, 185.0 ],
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 50.0, 55.0, 379.0, 678.0 ],
 					"style" : ""
 				}
 
@@ -72,7 +96,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 50.0, 252.0, 37.0, 22.0 ],
+					"patching_rect" : [ 50.0, 742.0, 37.0, 22.0 ],
 					"style" : "",
 					"text" : "out 1"
 				}
@@ -88,8 +112,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-2", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-2", 2 ]
 				}
 
 			}
