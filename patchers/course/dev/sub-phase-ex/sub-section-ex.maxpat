@@ -79,7 +79,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "Default Max 7",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"bubble" : 1,
@@ -88,7 +87,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 1017.0, 543.0, 182.0, 24.0 ],
-									"presentation_rect" : [ 1018.0, 539.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "number of beats in sequence"
 								}
@@ -102,7 +100,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 857.0, 543.0, 95.0, 24.0 ],
-									"presentation_rect" : [ 855.416626, 545.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "beat number"
 								}
@@ -110,13 +107,14 @@
 							}
 , 							{
 								"box" : 								{
+									"bubble" : 1,
 									"id" : "obj-75",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 844.416626, 42.0, 249.0, 20.0 ],
+									"patching_rect" : [ 797.516602, 40.0, 321.0, 24.0 ],
 									"style" : "",
-									"text" : "click on these for different sequence patterns"
+									"text" : "click on these for different sequence patterns examples"
 								}
 
 							}
@@ -128,7 +126,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 754.916626, 40.0, 24.0, 24.0 ],
-									"presentation_rect" : [ 754.916626, 38.0, 0.0, 0.0 ],
 									"style" : ""
 								}
 
@@ -240,7 +237,6 @@
 									}
 ,
 									"patching_rect" : [ 754.916626, 73.0, 101.0, 22.0 ],
-									"presentation_rect" : [ 754.916626, 71.0, 0.0, 0.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -373,7 +369,6 @@
 									}
 ,
 									"patching_rect" : [ 691.916626, 73.0, 58.0, 22.0 ],
-									"presentation_rect" : [ 711.916626, 73.0, 0.0, 0.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -1629,31 +1624,48 @@
 						"subpatcher_template" : "Default Max 7",
 						"boxes" : [ 							{
 								"box" : 								{
-									"bubble" : 1,
-									"id" : "obj-8",
-									"linecount" : 3,
-									"maxclass" : "comment",
+									"id" : "obj-4",
+									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 888.416626, 107.0, 202.0, 51.0 ],
-									"presentation_rect" : [ 869.416626, 67.5, 0.0, 0.0 ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "FullPacket" ],
+									"patching_rect" : [ 639.916626, 595.0, 87.0, 22.0 ],
 									"style" : "",
-									"text" : " rhythm in terms of subdivision\n e.g. an eighth note is 1/2 a beat\n triplets are 1/3 of a beat "
+									"text" : "o.select /seq/x"
 								}
 
 							}
 , 							{
 								"box" : 								{
 									"bubble" : 1,
+									"bubbleside" : 3,
+									"fontsize" : 14.0,
+									"id" : "obj-8",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 30.416626, 133.0, 263.0, 57.0 ],
+									"style" : "",
+									"text" : "We notate the rhythm in terms of subdivision e.g. an eighth note is 1/2 a beat triplets are 1/3 of a beat "
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bubble" : 1,
+									"bubblepoint" : 0.0,
+									"bubbleside" : 0,
+									"fontname" : "Arial",
+									"fontsize" : 14.0,
 									"id" : "obj-7",
 									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 608.916626, 460.0, 334.0, 37.0 ],
-									"presentation_rect" : [ 587.916626, 456.0, 0.0, 0.0 ],
+									"patching_rect" : [ 508.0, 469.0, 360.0, 57.0 ],
 									"style" : "",
-									"text" : "then we multiply the number of accumulated beats by the beat duration to get the total phrase duration"
+									"text" : "Then we multiply the number of accumulated beats by the beat duration to get the total phrase duration"
 								}
 
 							}
@@ -1664,7 +1676,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 414.0, 708.0, 33.0, 22.0 ],
+									"patching_rect" : [ 508.0, 738.0, 33.0, 22.0 ],
 									"style" : "",
 									"text" : "stop"
 								}
@@ -1677,7 +1689,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 414.0, 676.0, 74.0, 22.0 ],
+									"patching_rect" : [ 508.0, 706.0, 74.0, 22.0 ],
 									"style" : "",
 									"text" : "startwindow"
 								}
@@ -1689,7 +1701,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 233.516632, 725.0, 37.0, 22.0 ],
+									"patching_rect" : [ 327.516632, 755.0, 37.0, 22.0 ],
 									"style" : "",
 									"text" : "dac~"
 								}
@@ -1703,7 +1715,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 233.516632, 687.0, 151.0, 21.0 ],
+									"patching_rect" : [ 327.516632, 717.0, 151.0, 21.0 ],
 									"style" : ""
 								}
 
@@ -1723,7 +1735,7 @@
 									"numoutlets" : 1,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "FullPacket" ],
-									"patching_rect" : [ 68.916626, 577.0, 117.0, 46.0 ],
+									"patching_rect" : [ 473.916626, 599.0, 117.0, 46.0 ],
 									"viewvisibility" : 1
 								}
 
@@ -1851,7 +1863,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 68.916626, 548.0, 43.0, 22.0 ],
+									"patching_rect" : [ 473.916626, 650.0, 43.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -1872,7 +1884,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 234.516632, 605.0, 117.0, 22.0 ],
+									"patching_rect" : [ 328.516632, 635.0, 117.0, 22.0 ],
 									"style" : "",
 									"text" : "cnmat.phase.click~"
 								}
@@ -1885,7 +1897,7 @@
 									"numinlets" : 9,
 									"numoutlets" : 4,
 									"outlettype" : [ "signal", "signal", "signal", "FullPacket" ],
-									"patching_rect" : [ 233.516632, 651.0, 103.0, 22.0 ],
+									"patching_rect" : [ 327.516632, 681.0, 103.0, 22.0 ],
 									"style" : "",
 									"text" : "o.granubuf~"
 								}
@@ -1894,11 +1906,14 @@
 , 							{
 								"box" : 								{
 									"bubble" : 1,
+									"bubblepoint" : 0.1,
+									"fontname" : "Arial",
+									"fontsize" : 14.0,
 									"id" : "obj-25",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 608.916626, 434.0, 334.0, 24.0 ],
+									"patching_rect" : [ 553.916626, 437.5, 408.0, 26.0 ],
 									"style" : "",
 									"text" : "to keep it simple for now we'll just set all the /y values to 1"
 								}
@@ -1911,7 +1926,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "signal", "bang", "" ],
-									"patching_rect" : [ 204.916626, 504.0, 163.0, 22.0 ],
+									"patching_rect" : [ 298.916626, 534.0, 163.0, 22.0 ],
 									"style" : "",
 									"text" : "cnmat.o.num~ /total/duration"
 								}
@@ -1925,7 +1940,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "signal", "signal", "signal", "" ],
-									"patching_rect" : [ 204.916626, 533.0, 91.0, 35.0 ],
+									"patching_rect" : [ 298.916626, 563.0, 91.0, 35.0 ],
 									"style" : "",
 									"text" : "cnmat.phase~ @phasecycle 1"
 								}
@@ -1938,7 +1953,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 6,
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
-									"patching_rect" : [ 205.916626, 576.0, 162.0, 22.0 ],
+									"patching_rect" : [ 299.916626, 606.0, 162.0, 22.0 ],
 									"style" : "",
 									"text" : "cnmat.o.phase.points~ /seq"
 								}
@@ -1951,7 +1966,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 204.916626, 12.0, 60.0, 22.0 ],
+									"patching_rect" : [ 298.916626, 29.0, 60.0, 22.0 ],
 									"style" : "",
 									"text" : "loadbang"
 								}
@@ -1960,42 +1975,50 @@
 , 							{
 								"box" : 								{
 									"bubble" : 1,
+									"bubbleside" : 2,
+									"fontname" : "Arial",
+									"fontsize" : 14.0,
 									"id" : "obj-19",
-									"linecount" : 6,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 1097.916626, 668.5, 248.0, 91.0 ],
-									"style" : "",
-									"text" : "/x values for start times in terms of accumulated beats. Note that the last beat is 16 -- we are not using @step in this patch, so the last point is the end point which in this case is where the phase loops back to the beginning."
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bubble" : 1,
-									"id" : "obj-18",
 									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 608.916626, 381.0, 522.0, 51.0 ],
+									"patching_rect" : [ 639.916626, 530.0, 620.0, 72.0 ],
 									"style" : "",
-									"text" : "to get the start times, we can use the map() function to iterate over the /seq/dur list, using the lambda() we can create our own function that gets called by map for each element of /seq/dur. The start time for the first beat is 0, and each beat follows after the duration."
+									"text" : "Here are the /x start time values in terms of accumulated beats. Note that the last beat is 16 -- we are not using @step in this patch, so the last point is the end point which in this case is where the phase loops back to the beginning."
 								}
 
 							}
 , 							{
 								"box" : 								{
 									"bubble" : 1,
-									"id" : "obj-17",
-									"linecount" : 2,
+									"bubbleside" : 3,
+									"fontname" : "Arial",
+									"fontsize" : 14.0,
+									"id" : "obj-18",
+									"linecount" : 8,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 921.916626, 314.5, 270.0, 37.0 ],
+									"patching_rect" : [ 34.416626, 356.0, 259.0, 136.0 ],
 									"style" : "",
-									"text" : "here is our list of beat durations, however o.phase.points~ needs the x start times."
+									"text" : "To get the start times, we can use the map() function to iterate over the /seq/dur list. map() applies a functo to each element, in this case we are defining our own function using lambda(). The start time for the first beat is 0, and each beat follows after the duration."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bubble" : 1,
+									"bubbleside" : 3,
+									"fontsize" : 14.0,
+									"id" : "obj-17",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 30.416626, 293.0, 267.5, 57.0 ],
+									"style" : "",
+									"text" : "Here is our list of beat durations /seq/dur, however, o.phase.points~ needs the *x start times* not durations."
 								}
 
 							}
@@ -2009,7 +2032,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 229.416626, 251.5, 698.0, 116.0 ],
+									"patching_rect" : [ 314.416626, 244.0, 698.0, 116.0 ],
 									"text" : "/bpm : 120,\n/ms : 500,\n/dur/0 : [0.666667, 0.333333, 1, 1, 1],\n/dur/1 : [1, 1, 0.666667, 0.333333, 1],\n/dur/2 : [0.666667, 0.333333, 0.666667, 0.333333, 1, 0.666667, 0.333333],\n/seq/dur : [0.666667, 0.333333, 1, 1, 1, 0.666667, 0.333333, 1, 1, 1, 1, 1, 0.666667, 0.333333, 1, 0.666667, 0.333333, 0.666667, 0.333333, 1, 0.666667, 0.333333]"
 								}
 
@@ -2024,7 +2047,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 204.916626, 388.0, 402.0, 86.0 ],
+									"patching_rect" : [ 298.916626, 381.0, 402.0, 86.0 ],
 									"text" : "/seq/delta = [0, /seq/dur],\n/accum = 0,\n/seq/x = map( lambda([d], /accum += d ), /seq/delta),\n/seq/y = nfill(length(/seq/x), 1),\n/total/duration = /accum * /ms"
 								}
 
@@ -2032,12 +2055,14 @@
 , 							{
 								"box" : 								{
 									"bubble" : 1,
+									"fontname" : "Arial",
+									"fontsize" : 14.0,
 									"id" : "obj-5",
 									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 884.416626, 160.0, 315.0, 51.0 ],
+									"patching_rect" : [ 967.916626, 145.0, 345.0, 57.0 ],
 									"style" : "",
 									"text" : "Don't forget to use floats when dividing! Note also that in o.expr.codebox you need a space after the \"/\" sign, since that is also used for OSC addresses."
 								}
@@ -2050,7 +2075,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 204.916626, 39.0, 24.0, 24.0 ],
+									"patching_rect" : [ 298.916626, 56.0, 24.0, 24.0 ],
 									"style" : ""
 								}
 
@@ -2060,13 +2085,13 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-16",
-									"linecount" : 11,
+									"linecount" : 10,
 									"maxclass" : "o.expr.codebox",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 204.916626, 72.5, 675.0, 168.0 ],
-									"text" : "/bpm = 120,\n/ms = (60000 / /bpm),\n\n# beat     1----------------   2----------------  3----------------   4------------------\n/dur/0 = [(2. / 3), (1. / 3),  1,                 1,                  1                  ],\n/dur/1 = [ 1,                  1,                (2. / 3), (1. / 3),  1                  ],\n/dur/2 = [(2. / 3), (1. / 3), (2. / 3), (1. / 3), 1,                 (2. / 3), (1. / 3)  ],\n\n\n# put it together into one sequence to play\n/seq/dur = [/dur/0, /dur/0, /dur/1, /dur/2]"
+									"patching_rect" : [ 298.916626, 82.0, 675.0, 154.0 ],
+									"text" : "/bpm = 120,\n/ms = (60000 / /bpm),\n\n# beat     1----------------   2----------------  3----------------   4------------------\n/dur/0 = [(2. / 3), (1. / 3),  1,                 1,                  1                  ],\n/dur/1 = [ 1,                  1,                (2. / 3), (1. / 3),  1                  ],\n/dur/2 = [(2. / 3), (1. / 3), (2. / 3), (1. / 3), 1,                 (2. / 3), (1. / 3)  ],\n\n# put it together into one sequence to play\n/seq/dur = [/dur/0, /dur/0, /dur/1, /dur/2]"
 								}
 
 							}
@@ -2075,13 +2100,13 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-20",
-									"linecount" : 16,
+									"linecount" : 2,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 498.916626, 515.0, 616.0, 238.0 ],
-									"text" : "/bpm : 120,\n/ms : 500,\n/dur/0 : [0.666667, 0.333333, 1, 1, 1],\n/dur/1 : [1, 1, 0.666667, 0.333333, 1],\n/dur/2 : [0.666667, 0.333333, 0.666667, 0.333333, 1, 0.666667, 0.333333],\n/seq/dur : [0.666667, 0.333333, 1, 1, 1, 0.666667, 0.333333, 1, 1, 1, 1, 1, 0.666667, 0.333333, 1, 0.666667, 0.333333, 0.666667, 0.333333, 1, 0.666667, 0.333333],\n/seq/delta : [0, 0.666667, 0.333333, 1, 1, 1, 0.666667, 0.333333, 1, 1, 1, 1, 1, 0.666667, 0.333333, 1, 0.666667, 0.333333, 0.666667, 0.333333, 1, 0.666667, 0.333333],\n/accum : 16.,\n/seq/x : [0, 0.666667, 1., 2., 3., 4., 4.66667, 5., 6., 7., 8., 9., 10., 10.6667, 11., 12., 12.6667, 13., 13.6667, 14., 15., 15.6667, 16.],\n/seq/y : [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],\n/total/duration : 8000."
+									"patching_rect" : [ 639.916626, 622.0, 616.0, 48.0 ],
+									"text" : "/seq/x : [0, 0.666667, 1., 2., 3., 4., 4.66667, 5., 6., 7., 8., 9., 10., 10.6667, 11., 12., 12.6667, 13., 13.6667, 14., 15., 15.6667, 16.]"
 								}
 
 							}
@@ -2212,8 +2237,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-20", 0 ],
-									"order" : 0,
-									"source" : [ "obj-6", 0 ]
+									"source" : [ "obj-4", 0 ]
 								}
 
 							}
@@ -2221,6 +2245,14 @@
 								"patchline" : 								{
 									"destination" : [ "obj-24", 0 ],
 									"order" : 1,
+									"source" : [ "obj-6", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"order" : 0,
 									"source" : [ "obj-6", 0 ]
 								}
 
