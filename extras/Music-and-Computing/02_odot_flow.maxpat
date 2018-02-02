@@ -54,7 +54,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 48.0, 110.0, 1057.0, 761.0 ],
+						"rect" : [ 0.0, 26.0, 1057.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -105,7 +105,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 436.5, 102.5, 127.0, 22.0 ],
-									"presentation_rect" : [ 765.0, 117.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "varname /numPitches"
 								}
@@ -233,7 +232,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 267.5, 402.0, 717.0, 108.0 ],
-									"text" : "/baseMIDI : 82.,\n/numPitches : 3,\n/id : [0, 1, 2],\n/baseHz : 932.328,\n/hz : [932.328, 1042.33, 1152.33],\n/scaledAmp : 0.333333,\n/amp : [0.333333, 0.333333, 0.333333]"
+									"text" : "/numPitches : 3,\n/baseMIDI : 0.05,\n/id : [0, 1, 2],\n/baseHz : 8.19945,\n/hz : [8.19945, 118.199, 228.199],\n/scaledAmp : 0.333333,\n/amp : [0.333333, 0.333333, 0.333333]"
 								}
 
 							}
@@ -371,7 +370,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 126.5, 171.0, 293.0, 48.0 ],
-									"text" : "/baseMIDI : 82.,\n/numPitches : 3"
+									"text" : "/numPitches : 3,\n/baseMIDI : 0.05"
 								}
 
 							}
@@ -381,8 +380,8 @@
 									"id" : "obj-103",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "FullPacket" ],
+									"numoutlets" : 3,
+									"outlettype" : [ "FullPacket", "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 103.5, 124.5, 73.0, 22.0 ],
 									"style" : "",
 									"text" : "o.gui.attach"
@@ -487,8 +486,8 @@
 						"styles" : [ 							{
 								"name" : "bubble text",
 								"default" : 								{
-									"fontsize" : [ 12.0 ],
-									"fontname" : [ "Arial" ]
+									"fontname" : [ "Arial" ],
+									"fontsize" : [ 12.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -507,9 +506,9 @@
 , 							{
 								"name" : "section dividers",
 								"default" : 								{
+									"fontname" : [ "Arial" ],
 									"fontface" : [ 3 ],
-									"fontsize" : [ 15.0 ],
-									"fontname" : [ "Arial" ]
+									"fontsize" : [ 15.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -518,8 +517,8 @@
 , 							{
 								"name" : "section info reg",
 								"default" : 								{
-									"fontsize" : [ 12.0 ],
-									"fontname" : [ "Arial" ]
+									"fontname" : [ "Arial" ],
+									"fontsize" : [ 12.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -589,6 +588,21 @@
 						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"fontface" : 0,
+									"fontsize" : 12.0,
+									"id" : "obj-6",
+									"maxclass" : "o.compose",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 100.0, 498.0, 64.0, 24.0 ],
+									"saved_bundle_data" : [  ],
+									"saved_bundle_length" : 0
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"hidden" : 1,
 									"id" : "obj-42",
 									"maxclass" : "message",
@@ -649,7 +663,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 732.5, 504.0, 222.0, 64.0 ],
-									"presentation_rect" : [ 540.0, 646.5, 0.0, 0.0 ],
 									"style" : "section info emph",
 									"text" : "Note: you have to click once to send the varname message to the GUI object, once you save the patch, the varname will be set on reopening."
 								}
@@ -664,7 +677,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 597.0, 457.5, 347.0, 37.0 ],
-									"presentation_rect" : [ 695.5, 480.5, 0.0, 0.0 ],
 									"style" : "section info reg",
 									"text" : "use a message to set the GUI object's varname, this way the name is always readily visible."
 								}
@@ -678,7 +690,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 502.5, 465.0, 87.0, 22.0 ],
-									"presentation_rect" : [ 518.5, 493.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "varname /list"
 								}
@@ -692,7 +703,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 386.5, 469.0, 87.0, 22.0 ],
-									"presentation_rect" : [ 423.5, 493.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "varname /amp"
 								}
@@ -870,7 +880,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 60.0, 582.0, 409.0, 75.0 ],
-									"text" : "/amp : 1.4,\n/hz : 0.23,\n/list : [0.769231, 0.415385, 0.323077, 0.476923, 0.707692, 1., 0.184615, 0.553846, 0.907692, 0.461538]"
+									"text" : "/hz : 0.28,\n/amp : 0.14,\n/list : [0., 0.384615, 0.646154, 0.784615, 0.261538, 0.261538, 0.338462, 0.353846, 0.338462, 0.]"
 								}
 
 							}
@@ -880,8 +890,8 @@
 									"id" : "obj-103",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "FullPacket" ],
+									"numoutlets" : 3,
+									"outlettype" : [ "FullPacket", "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 60.0, 537.5, 73.0, 22.0 ],
 									"style" : "",
 									"text" : "o.gui.attach"
@@ -1186,6 +1196,13 @@
 								}
 
 							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-103", 0 ],
+									"source" : [ "obj-6", 0 ]
+								}
+
+							}
  ],
 						"styles" : [ 							{
 								"name" : "caption text",
@@ -1210,9 +1227,9 @@
 , 							{
 								"name" : "section dividers",
 								"default" : 								{
+									"fontname" : [ "Arial" ],
 									"fontface" : [ 3 ],
-									"fontsize" : [ 15.0 ],
-									"fontname" : [ "Arial" ]
+									"fontsize" : [ 15.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1221,10 +1238,10 @@
 , 							{
 								"name" : "section info emph",
 								"default" : 								{
+									"fontname" : [ "Helvetica Neue" ],
 									"textcolor" : [ 0.225893, 0.506614, 0.765943, 1.0 ],
 									"fontface" : [ 1 ],
-									"fontsize" : [ 12.0 ],
-									"fontname" : [ "Helvetica Neue" ]
+									"fontsize" : [ 12.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1233,8 +1250,8 @@
 , 							{
 								"name" : "section info reg",
 								"default" : 								{
-									"fontsize" : [ 12.0 ],
-									"fontname" : [ "Arial" ]
+									"fontname" : [ "Arial" ],
+									"fontsize" : [ 12.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1544,10 +1561,10 @@
 						"styles" : [ 							{
 								"name" : "section info emph",
 								"default" : 								{
+									"fontname" : [ "Helvetica Neue" ],
 									"textcolor" : [ 0.225893, 0.506614, 0.765943, 1.0 ],
 									"fontface" : [ 1 ],
-									"fontsize" : [ 12.0 ],
-									"fontname" : [ "Helvetica Neue" ]
+									"fontsize" : [ 12.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1556,8 +1573,8 @@
 , 							{
 								"name" : "section info reg",
 								"default" : 								{
-									"fontsize" : [ 12.0 ],
-									"fontname" : [ "Arial" ]
+									"fontname" : [ "Arial" ],
+									"fontsize" : [ 12.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2134,8 +2151,8 @@
 						"styles" : [ 							{
 								"name" : "bubble text",
 								"default" : 								{
-									"fontsize" : [ 12.0 ],
-									"fontname" : [ "Arial" ]
+									"fontname" : [ "Arial" ],
+									"fontsize" : [ 12.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2154,9 +2171,9 @@
 , 							{
 								"name" : "section dividers",
 								"default" : 								{
+									"fontname" : [ "Arial" ],
 									"fontface" : [ 3 ],
-									"fontsize" : [ 15.0 ],
-									"fontname" : [ "Arial" ]
+									"fontsize" : [ 15.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2165,8 +2182,8 @@
 , 							{
 								"name" : "section info reg",
 								"default" : 								{
-									"fontsize" : [ 12.0 ],
-									"fontname" : [ "Arial" ]
+									"fontname" : [ "Arial" ],
+									"fontsize" : [ 12.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2692,8 +2709,8 @@
 						"styles" : [ 							{
 								"name" : "bubble text",
 								"default" : 								{
-									"fontsize" : [ 12.0 ],
-									"fontname" : [ "Arial" ]
+									"fontname" : [ "Arial" ],
+									"fontsize" : [ 12.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2722,9 +2739,9 @@
 , 							{
 								"name" : "section dividers",
 								"default" : 								{
+									"fontname" : [ "Arial" ],
 									"fontface" : [ 3 ],
-									"fontsize" : [ 15.0 ],
-									"fontname" : [ "Arial" ]
+									"fontsize" : [ 15.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2733,10 +2750,10 @@
 , 							{
 								"name" : "section info emph",
 								"default" : 								{
+									"fontname" : [ "Helvetica Neue" ],
 									"textcolor" : [ 0.225893, 0.506614, 0.765943, 1.0 ],
 									"fontface" : [ 1 ],
-									"fontsize" : [ 12.0 ],
-									"fontname" : [ "Helvetica Neue" ]
+									"fontsize" : [ 12.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2745,8 +2762,8 @@
 , 							{
 								"name" : "section info reg",
 								"default" : 								{
-									"fontsize" : [ 12.0 ],
-									"fontname" : [ "Arial" ]
+									"fontname" : [ "Arial" ],
+									"fontsize" : [ 12.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2885,7 +2902,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 532.0, 238.0, 265.0, 170.0 ],
-									"text" : "/ascii : \"delete\",\n/keystate : \"up\",\n/keynum : -7,\n/numKeysDown : 0,\n/fingerIndex : 1,\n/shift : \"up\",\n/capslock : \"up\",\n/option : \"up\",\n/control : \"up\",\n/command : \"up\",\n/time : 2017-11-08T15:56:11.050481Z"
+									"text" : "/ascii : \"n\",\n/keystate : \"up\",\n/keynum : 110,\n/numKeysDown : 0,\n/fingerIndex : 1,\n/shift : \"up\",\n/capslock : \"up\",\n/option : \"up\",\n/control : \"up\",\n/command : \"up\",\n/time : 2017-12-13T17:29:29.520460Z"
 								}
 
 							}
@@ -2913,7 +2930,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 223.0, 238.0, 265.0, 333.0 ],
-									"text" : "/horizontal : 969,\n/vertical : 98,\n/delta/horizontal : 0,\n/delta/vertical : 0,\n/screenDim : [1440, 900],\n/middle : [720., 450.],\n/button/is : \"down\",\n/x : 249.,\n/y : 352.,\n/distance : 431.167,\n/angle : 54.7249,\n/delta/distance : 0.,\n/delta/angle : 0.,\n/shift : \"up\",\n/capslock : \"up\",\n/option : \"up\",\n/control : \"up\",\n/command : \"up\",\n/time : 2017-11-08T15:56:14.462821Z,\n/state : \"moving\",\n/pixPerSec : 0.,\n/relative/pixPerSec : 0."
+									"text" : "/horizontal : 66,\n/vertical : 99,\n/delta/horizontal : 1,\n/delta/vertical : 1,\n/screenDim : [1440, 900],\n/middle : [720., 450.],\n/button/is : \"down\",\n/x : -654.,\n/y : 351.,\n/distance : 742.238,\n/angle : 151.778,\n/delta/distance : 1.41421,\n/delta/angle : -45.,\n/shift : \"up\",\n/capslock : \"up\",\n/option : \"up\",\n/control : \"up\",\n/command : \"up\",\n/time : 2017-12-13T17:30:02.621019Z,\n/state : \"moving\",\n/pixPerSec : 64.9671,\n/relative/pixPerSec : 0.045116"
 								}
 
 							}
@@ -2959,9 +2976,9 @@
 , 							{
 								"name" : "section dividers",
 								"default" : 								{
+									"fontname" : [ "Arial" ],
 									"fontface" : [ 3 ],
-									"fontsize" : [ 15.0 ],
-									"fontname" : [ "Arial" ]
+									"fontsize" : [ 15.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2970,8 +2987,8 @@
 , 							{
 								"name" : "section info reg",
 								"default" : 								{
-									"fontsize" : [ 12.0 ],
-									"fontname" : [ "Arial" ]
+									"fontname" : [ "Arial" ],
+									"fontsize" : [ 12.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3273,9 +3290,9 @@
 						"styles" : [ 							{
 								"name" : "section dividers",
 								"default" : 								{
+									"fontname" : [ "Arial" ],
 									"fontface" : [ 3 ],
-									"fontsize" : [ 15.0 ],
-									"fontname" : [ "Arial" ]
+									"fontsize" : [ 15.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3284,10 +3301,10 @@
 , 							{
 								"name" : "section info emph",
 								"default" : 								{
+									"fontname" : [ "Helvetica Neue" ],
 									"textcolor" : [ 0.225893, 0.506614, 0.765943, 1.0 ],
 									"fontface" : [ 1 ],
-									"fontsize" : [ 12.0 ],
-									"fontname" : [ "Helvetica Neue" ]
+									"fontsize" : [ 12.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3296,8 +3313,8 @@
 , 							{
 								"name" : "section info reg",
 								"default" : 								{
-									"fontsize" : [ 12.0 ],
-									"fontname" : [ "Arial" ]
+									"fontname" : [ "Arial" ],
+									"fontsize" : [ 12.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3392,7 +3409,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 1057.0, 761.0 ],
+						"rect" : [ 48.0, 110.0, 1057.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3529,9 +3546,9 @@
 						"styles" : [ 							{
 								"name" : "section dividers",
 								"default" : 								{
+									"fontname" : [ "Arial" ],
 									"fontface" : [ 3 ],
-									"fontsize" : [ 15.0 ],
-									"fontname" : [ "Arial" ]
+									"fontsize" : [ 15.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3540,8 +3557,8 @@
 , 							{
 								"name" : "section info reg",
 								"default" : 								{
-									"fontsize" : [ 12.0 ],
-									"fontname" : [ "Arial" ]
+									"fontname" : [ "Arial" ],
+									"fontsize" : [ 12.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3550,9 +3567,9 @@
 , 							{
 								"name" : "titles",
 								"default" : 								{
+									"fontname" : [ "Arial" ],
 									"fontface" : [ 1 ],
-									"fontsize" : [ 20.0 ],
-									"fontname" : [ "Arial" ]
+									"fontsize" : [ 20.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3943,9 +3960,9 @@
 , 							{
 								"name" : "section dividers",
 								"default" : 								{
+									"fontname" : [ "Arial" ],
 									"fontface" : [ 3 ],
-									"fontsize" : [ 15.0 ],
-									"fontname" : [ "Arial" ]
+									"fontsize" : [ 15.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3954,10 +3971,10 @@
 , 							{
 								"name" : "section info emph",
 								"default" : 								{
+									"fontname" : [ "Helvetica Neue" ],
 									"textcolor" : [ 0.225893, 0.506614, 0.765943, 1.0 ],
 									"fontface" : [ 1 ],
-									"fontsize" : [ 12.0 ],
-									"fontname" : [ "Helvetica Neue" ]
+									"fontsize" : [ 12.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3966,8 +3983,8 @@
 , 							{
 								"name" : "section info reg",
 								"default" : 								{
-									"fontsize" : [ 12.0 ],
-									"fontname" : [ "Arial" ]
+									"fontname" : [ "Arial" ],
+									"fontsize" : [ 12.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -4012,9 +4029,9 @@
  ],
 		"lines" : [  ],
 		"parameters" : 		{
-			"obj-4::obj-2" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-5::obj-6" : [ "live.gain~[1]", "live.gain~", 0 ],
-			"obj-14::obj-15" : [ "live.gain~[2]", "live.gain~", 0 ]
+			"obj-14::obj-15" : [ "live.gain~[2]", "live.gain~", 0 ],
+			"obj-4::obj-2" : [ "live.gain~", "live.gain~", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
