@@ -231,7 +231,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-17",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -473,13 +473,13 @@
 									"fontface" : 0,
 									"fontsize" : 10.0,
 									"id" : "obj-10",
-									"linecount" : 70,
+									"linecount" : 74,
 									"maxclass" : "o.expr.codebox",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 115.0, 25.0, 523.0, 811.0 ],
-									"text" : "/_/norm ??= 0,\n/_/xdelta ??= 1,\n\n/~/x2delta = \"lambda([xlist],\n  prog2(\n    /_/prev = 0,\n    map(\n      lambda([x],\n        prog1(\n          x - /_/prev,\n          /_/prev = x\n        )\n      ), xlist\n    ),\n    delete(/_/count)\n  )\n)\",\n\nmap(\n  lambda([a],\n    progn(\n      /_/pattrf = value(a),\n#      assign(\"/out\"+a+\"/type\", last(/_/pattrf)),\n#      assign(\"/out\"+a+\"/duration\", /_/pattrf[[0]]),\n#      assign(\"/out\"+a+\"/min\", /_/pattrf[[1]]),\n#      assign(\"/out\"+a+\"/max\", /_/pattrf[[2]]),\n\n      /_/len = length(/_/pattrf),\n      if( /_/len > 4,\n        if( last(/_/pattrf) == \"linear\",\n          progn(\n            /_/pts = /_/pattrf[[ aseq(3, /_/len - 2) ]],\n            /_/npts = length(/_/pts) - 1,\n            /_/x = /_/pts[[ aseq(0, /_/npts, 3) ]] / (/_/norm ? /_/pattrf[[0]] : 1),\n            if( /_/xdelta,\n              assign(\"/out\"+a+\"/delta\", /~/x2delta( /_/x ) ),       \n              assign(\"/out\"+a+\"/x\", /_/x )\n            ),\n\n            /_/y = /_/pts[[ aseq(1, /_/npts, 3) ]],\n            assign(\"/out\"+a+\"/y\", /_/y)#,\n\n#            /_/sus = /_/pts[[ aseq(2, /_/npts, 3) ]],\n#            assign(\"/out\"+a+\"/sustain\", /_/sus)\n          ),\n          progn(\n            /_/pts = /_/pattrf[[ aseq(3, /_/len - 2) ]],\n            /_/npts = length(/_/pts) - 1,\n\n            /_/x = /_/pts[[ aseq(0, /_/npts, 4) ]] / (/_/norm ? /_/pattrf[[0]] : 1),\n            if( /_/xdelta,\n              assign(\"/out\"+a+\"/delta\", /~/x2delta( /_/x ) ),       \n              assign(\"/out\"+a+\"/x\", /_/x )\n            ),\n            /_/y = /_/pts[[ aseq(1, /_/npts, 4) ]],\n            assign(\"/out\"+a+\"/y\", /_/y),\n            /_/curve = /_/pts[[ aseq(3, /_/npts, 4) ]],\n            assign(\"/out\"+a+\"/curve\", /_/curve)#,\n\n#            /_/sus = /_/pts[[ aseq(2, /_/npts, 4) ]],\n#            assign(\"/out\"+a+\"/sustain\", /_/sus),\n\n          )\n        )\n      )\n    )\n  ), /_/addr\n),\nif( typetags(/name) != 'i',\n  assign(\"/out\"+/name+\"/count\", length(/_/addr)))"
+									"patching_rect" : [ 114.0, -25.0, 523.0, 856.0 ],
+									"text" : "/_/norm ??= 0,\n/_/xdelta ??= 1,\n\n/~/x2delta = \"lambda([xlist],\n  prog2(\n    /_/prev = 0,\n    map(\n      lambda([x],\n        prog1(\n          x - /_/prev,\n          /_/prev = x\n        )\n      ), xlist\n    ),\n    delete(/_/count)\n  )\n)\",\n\nmap(\n  lambda([a],\n    progn(\n      /_/pattrf = value(a),\n#      assign(\"/out\"+a+\"/type\", last(/_/pattrf)),\n#      assign(\"/out\"+a+\"/duration\", /_/pattrf[[0]]),\n#      assign(\"/out\"+a+\"/min\", /_/pattrf[[1]]),\n#      assign(\"/out\"+a+\"/max\", /_/pattrf[[2]]),\n\n      /_/len = length(/_/pattrf),\n      if( /_/len > 4,\n        if( last(/_/pattrf) == \"linear\",\n          progn(\n            /_/pts = /_/pattrf[[ aseq(3, /_/len - 2) ]],\n            /_/npts = length(/_/pts) - 1,\n            /_/x = /_/pts[[ aseq(0, /_/npts, 3) ]] / (/_/norm ? /_/pattrf[[0]] : 1),\n            if( /_/xdelta,\n              assign(\"/out\"+a+\"/delta\", /~/x2delta( /_/x ) ),       \n              assign(\"/out\"+a+\"/x\", /_/x )\n            ),\n\n            /_/y = /_/pts[[ aseq(1, /_/npts, 3) ]],\n            assign(\"/out\"+a+\"/y\", /_/y)#,\n\n#            /_/sus = /_/pts[[ aseq(2, /_/npts, 3) ]],\n#            assign(\"/out\"+a+\"/sustain\", /_/sus)\n          ),\n          progn(\n            /_/pts = /_/pattrf[[ aseq(3, /_/len - 2) ]],\n            /_/npts = length(/_/pts) - 1,\n\n            /_/x = /_/pts[[ aseq(0, /_/npts, 4) ]] / (/_/norm ? /_/pattrf[[0]] : 1),\n            if( /_/xdelta,\n              assign(\"/out\"+a+\"/delta\", /~/x2delta( /_/x ) ),       \n              assign(\"/out\"+a+\"/x\", /_/x )\n            ),\n            /_/y = /_/pts[[ aseq(1, /_/npts, 4) ]],\n            assign(\"/out\"+a+\"/y\", /_/y),\n            /_/curve = /_/pts[[ aseq(3, /_/npts, 4) ]],\n            assign(\"/out\"+a+\"/curve\", /_/curve)#,\n\n#            /_/sus = /_/pts[[ aseq(2, /_/npts, 4) ]],\n#            assign(\"/out\"+a+\"/sustain\", /_/sus),\n\n          )\n        )\n      )\n    )\n  ), /_/addr\n),\nif( typetags(/name) != 'i',\n  if( /name == \"/*\", \n    assign(\"/out\"+\"/count\", length(/_/addr) ),\n    assign( \"/out\"+/name+\"/count\", length(/_/addr) )\n  )\n)"
 								}
 
 							}
@@ -505,7 +505,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 795.0, 30.0, 30.0 ],
+									"patching_rect" : [ 28.0, 839.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -626,7 +626,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "", "FullPacket" ],
+					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 63.5, 262.0, 190.0, 22.0 ],
 					"style" : "",
 					"text" : "o.gather.select"
@@ -689,7 +689,7 @@
 				"box" : 				{
 					"comment" : "(FullPacket) incoming bundle containing pattrstorage data",
 					"id" : "obj-29",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -703,7 +703,7 @@
 				"box" : 				{
 					"comment" : "(FullPacket) outgoing bundle containing bpf data",
 					"id" : "obj-30",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -912,7 +912,70 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "o.gather.select.maxpat",
+				"bootpath" : "~/Documents/dev-lib/CNMAT-odot/patchers/namespace",
+				"patcherrelativepath" : "../../../../../dev-lib/CNMAT-odot/patchers/namespace",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.doc.handler.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/internal",
+				"patcherrelativepath" : "../internal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "cnmat.loadbang.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/internal",
+				"patcherrelativepath" : "../internal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.route.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.collect.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.select.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.if.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.pack.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.union.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.expr.codebox.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.cond.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.prepend.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.compose.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
