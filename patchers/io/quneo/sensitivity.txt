@@ -1,0 +1,12 @@
+If you are having issues "pressing hard enough" with the QuNeo device, try the following:
+
+Download the QuNeo Editor software, found here:  ___
+Click on a pad (basic tab)
+Raise Global sensitivity to maximum
+Click on the advanced tab
+Choose "dynamic" for the velocity table that all pads use
+
+command-<left arrow> to move FWD to a new sensor
+command-<right arrow> to move BWD to a new sensor
+
+Repeat same basic process for each pad
