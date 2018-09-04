@@ -5,7 +5,7 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 5,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
@@ -84,7 +84,7 @@
 					"outlettype" : [ "FullPacket" ],
 					"patching_rect" : [ 284.833313, 181.0, 180.0, 22.0 ],
 					"style" : "",
-					"text" : "o.pack #1/right/location"
+					"text" : "o.pack #1/second/location"
 				}
 
 			}
@@ -134,9 +134,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 242.5, 147.0, 186.0, 22.0 ],
+					"patching_rect" : [ 232.5, 147.0, 186.0, 22.0 ],
 					"style" : "",
-					"text" : "o.pack #1/left/location"
+					"text" : "o.pack #1/first/location"
 				}
 
 			}
