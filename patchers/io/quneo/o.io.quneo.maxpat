@@ -5,7 +5,7 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 5,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
@@ -42,14 +42,14 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
+					"outlettype" : [ "FullPacket", "", "" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 5,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -86,7 +86,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"outlettype" : [ "FullPacket", "", "" ],
 									"patching_rect" : [ 42.5, 133.0, 256.0, 22.0 ],
 									"style" : "",
 									"text" : "o.io.quneo.h.rslider /rslider"
@@ -110,11 +110,11 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-19",
-									"index" : 2,
+									"index" : 1,
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 338.0, 245.0, 30.0, 30.0 ],
+									"patching_rect" : [ 42.5, 253.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -123,11 +123,11 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-3",
-									"index" : 1,
+									"index" : 2,
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 145.0, 248.0, 30.0, 30.0 ],
+									"patching_rect" : [ 161.0, 253.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -232,14 +232,14 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
+					"outlettype" : [ "FullPacket", "", "" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 5,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -314,7 +314,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"outlettype" : [ "FullPacket", "", "" ],
 									"patching_rect" : [ 50.0, 100.0, 181.0, 22.0 ],
 									"style" : "",
 									"text" : "o.io.quneo.h.transport /transport"
@@ -421,14 +421,14 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
+					"outlettype" : [ "FullPacket", "", "" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 5,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -465,7 +465,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"outlettype" : [ "FullPacket", "", "" ],
 									"patching_rect" : [ 151.5, 137.0, 222.0, 22.0 ],
 									"style" : "",
 									"text" : "o.io.quneo.h.udarrow /arrow/updown/02"
@@ -516,7 +516,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"outlettype" : [ "FullPacket", "", "" ],
 									"patching_rect" : [ 50.0, 100.0, 222.0, 22.0 ],
 									"style" : "",
 									"text" : "o.io.quneo.h.udarrow /arrow/updown/01"
@@ -644,14 +644,14 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
+					"outlettype" : [ "FullPacket", "", "" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 5,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -688,7 +688,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"outlettype" : [ "FullPacket", "", "" ],
 									"patching_rect" : [ 231.5, 203.0, 213.0, 22.0 ],
 									"style" : "",
 									"text" : "o.io.quneo.h.lrarrow /arrow/leftright/04"
@@ -701,7 +701,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"outlettype" : [ "FullPacket", "", "" ],
 									"patching_rect" : [ 185.0, 167.0, 213.0, 22.0 ],
 									"style" : "",
 									"text" : "o.io.quneo.h.lrarrow /arrow/leftright/03"
@@ -714,7 +714,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"outlettype" : [ "FullPacket", "", "" ],
 									"patching_rect" : [ 133.0, 133.0, 213.0, 22.0 ],
 									"style" : "",
 									"text" : "o.io.quneo.h.lrarrow /arrow/leftright/02"
@@ -765,7 +765,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"outlettype" : [ "FullPacket", "", "" ],
 									"patching_rect" : [ 50.0, 100.0, 213.0, 22.0 ],
 									"style" : "",
 									"text" : "o.io.quneo.h.lrarrow /arrow/leftright/01"
@@ -935,14 +935,14 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
+					"outlettype" : [ "FullPacket", "", "" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 5,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -992,7 +992,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"outlettype" : [ "FullPacket", "", "" ],
 									"patching_rect" : [ 133.0, 135.352524, 148.0, 22.0 ],
 									"style" : "",
 									"text" : "o.io.quneo.h.rot /rotary/02"
@@ -1030,7 +1030,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"outlettype" : [ "FullPacket", "", "" ],
 									"patching_rect" : [ 50.0, 100.0, 148.0, 22.0 ],
 									"style" : "",
 									"text" : "o.io.quneo.h.rot /rotary/01"
@@ -1158,14 +1158,14 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
+					"outlettype" : [ "FullPacket", "", "" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 5,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -1202,7 +1202,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"outlettype" : [ "FullPacket", "", "" ],
 									"patching_rect" : [ 292.0, 206.057556, 186.0, 22.0 ],
 									"style" : "",
 									"text" : "o.io.quneo.h.vslide /slider/vert/04"
@@ -1215,7 +1215,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"outlettype" : [ "FullPacket", "", "" ],
 									"patching_rect" : [ 212.5, 170.705032, 186.0, 22.0 ],
 									"style" : "",
 									"text" : "o.io.quneo.h.vslide /slider/vert/03"
@@ -1241,7 +1241,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"outlettype" : [ "FullPacket", "", "" ],
 									"patching_rect" : [ 133.0, 135.352524, 186.0, 22.0 ],
 									"style" : "",
 									"text" : "o.io.quneo.h.vslide /slider/vert/02"
@@ -1279,7 +1279,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"outlettype" : [ "FullPacket", "", "" ],
 									"patching_rect" : [ 50.0, 100.0, 186.0, 22.0 ],
 									"style" : "",
 									"text" : "o.io.quneo.h.vslide /slider/vert/01"
@@ -1449,14 +1449,14 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
+					"outlettype" : [ "FullPacket", "", "" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 5,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -1493,7 +1493,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"outlettype" : [ "FullPacket", "", "" ],
 									"patching_rect" : [ 311.0, 220.0, 193.0, 22.0 ],
 									"style" : "",
 									"text" : "o.io.quneo.h.hslide /slider/horiz/04"
@@ -1506,7 +1506,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"outlettype" : [ "FullPacket", "", "" ],
 									"patching_rect" : [ 224.0, 180.0, 193.0, 22.0 ],
 									"style" : "",
 									"text" : "o.io.quneo.h.hslide /slider/horiz/03"
@@ -1532,7 +1532,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"outlettype" : [ "FullPacket", "", "" ],
 									"patching_rect" : [ 137.0, 138.0, 193.0, 22.0 ],
 									"style" : "",
 									"text" : "o.io.quneo.h.hslide /slider/horiz/02"
@@ -1570,7 +1570,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"outlettype" : [ "FullPacket", "", "" ],
 									"patching_rect" : [ 50.0, 100.0, 193.0, 22.0 ],
 									"style" : "",
 									"text" : "o.io.quneo.h.hslide /slider/horiz/01"
@@ -1740,14 +1740,14 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
+					"outlettype" : [ "FullPacket", "", "" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 5,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -1810,7 +1810,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"outlettype" : [ "FullPacket", "", "" ],
 									"patching_rect" : [ 236.0, 574.544983, 143.0, 22.0 ],
 									"style" : "",
 									"text" : "o.io.quneo.h.pad /pad/16"
@@ -1823,7 +1823,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"outlettype" : [ "FullPacket", "", "" ],
 									"patching_rect" : [ 174.0, 544.242004, 143.0, 22.0 ],
 									"style" : "",
 									"text" : "o.io.quneo.h.pad /pad/15"
@@ -1836,7 +1836,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"outlettype" : [ "FullPacket", "", "" ],
 									"patching_rect" : [ 112.0, 513.938965, 143.0, 22.0 ],
 									"style" : "",
 									"text" : "o.io.quneo.h.pad /pad/14"
@@ -1849,7 +1849,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"outlettype" : [ "FullPacket", "", "" ],
 									"patching_rect" : [ 50.0, 483.636017, 143.0, 22.0 ],
 									"style" : "",
 									"text" : "o.io.quneo.h.pad /pad/13"
@@ -1862,7 +1862,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"outlettype" : [ "FullPacket", "", "" ],
 									"patching_rect" : [ 235.5, 454.332977, 143.0, 22.0 ],
 									"style" : "",
 									"text" : "o.io.quneo.h.pad /pad/12"
@@ -1875,7 +1875,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"outlettype" : [ "FullPacket", "", "" ],
 									"patching_rect" : [ 174.0, 424.029999, 142.0, 22.0 ],
 									"style" : "",
 									"text" : "o.io.quneo.h.pad /pad/11"
@@ -1888,7 +1888,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"outlettype" : [ "FullPacket", "", "" ],
 									"patching_rect" : [ 112.0, 393.72699, 143.0, 22.0 ],
 									"style" : "",
 									"text" : "o.io.quneo.h.pad /pad/10"
@@ -1901,7 +1901,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"outlettype" : [ "FullPacket", "", "" ],
 									"patching_rect" : [ 50.0, 363.423981, 143.0, 22.0 ],
 									"style" : "",
 									"text" : "o.io.quneo.h.pad /pad/09"
@@ -1914,7 +1914,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"outlettype" : [ "FullPacket", "", "" ],
 									"patching_rect" : [ 236.0, 317.121002, 143.0, 22.0 ],
 									"style" : "",
 									"text" : "o.io.quneo.h.pad /pad/08"
@@ -1927,7 +1927,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"outlettype" : [ "FullPacket", "", "" ],
 									"patching_rect" : [ 174.0, 290.817993, 143.0, 22.0 ],
 									"style" : "",
 									"text" : "o.io.quneo.h.pad /pad/07"
@@ -1940,7 +1940,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"outlettype" : [ "FullPacket", "", "" ],
 									"patching_rect" : [ 112.0, 260.514984, 143.0, 22.0 ],
 									"style" : "",
 									"text" : "o.io.quneo.h.pad /pad/06"
@@ -1953,7 +1953,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"outlettype" : [ "FullPacket", "", "" ],
 									"patching_rect" : [ 50.0, 227.21199, 143.0, 22.0 ],
 									"style" : "",
 									"text" : "o.io.quneo.h.pad /pad/05"
@@ -1966,7 +1966,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"outlettype" : [ "FullPacket", "", "" ],
 									"patching_rect" : [ 236.0, 190.908997, 143.0, 22.0 ],
 									"style" : "",
 									"text" : "o.io.quneo.h.pad /pad/04"
@@ -1979,7 +1979,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"outlettype" : [ "FullPacket", "", "" ],
 									"patching_rect" : [ 174.0, 163.606003, 143.0, 22.0 ],
 									"style" : "",
 									"text" : "o.io.quneo.h.pad /pad/03"
@@ -2004,7 +2004,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"outlettype" : [ "FullPacket", "", "" ],
 									"patching_rect" : [ 112.0, 130.302994, 143.0, 22.0 ],
 									"style" : "",
 									"text" : "o.io.quneo.h.pad /pad/02"
@@ -2017,7 +2017,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"outlettype" : [ "FullPacket", "", "" ],
 									"patching_rect" : [ 50.0, 100.0, 143.0, 22.0 ],
 									"style" : "",
 									"text" : "o.io.quneo.h.pad /pad/01"
@@ -2445,7 +2445,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 5,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -3398,66 +3398,62 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "o.io.quneo.h.pad.maxpat",
-				"bootpath" : "~/Documents/CNMAT/pedagogy/MUS_159/lib_for_migration/io_quneo",
+				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.h.hslide.maxpat",
-				"bootpath" : "~/Documents/CNMAT/pedagogy/MUS_159/lib_for_migration/io_quneo",
+				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.h.vslide.maxpat",
-				"bootpath" : "~/Documents/CNMAT/pedagogy/MUS_159/lib_for_migration/io_quneo",
+				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.h.rot.maxpat",
-				"bootpath" : "~/Documents/CNMAT/pedagogy/MUS_159/lib_for_migration/io_quneo",
+				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.h.lrarrow.maxpat",
-				"bootpath" : "~/Documents/CNMAT/pedagogy/MUS_159/lib_for_migration/io_quneo",
+				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.h.udarrow.maxpat",
-				"bootpath" : "~/Documents/CNMAT/pedagogy/MUS_159/lib_for_migration/io_quneo",
+				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.h.transport.maxpat",
-				"bootpath" : "~/Documents/CNMAT/pedagogy/MUS_159/lib_for_migration/io_quneo",
+				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.h.rslider.maxpat",
-				"bootpath" : "~/Documents/CNMAT/pedagogy/MUS_159/lib_for_migration/io_quneo",
+				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.pack.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.union.mxo",
 				"type" : "iLaX"
 			}
  ],
