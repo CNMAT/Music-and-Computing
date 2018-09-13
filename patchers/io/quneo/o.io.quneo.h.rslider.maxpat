@@ -84,7 +84,7 @@
 					"outlettype" : [ "FullPacket" ],
 					"patching_rect" : [ 284.833313, 181.0, 180.0, 22.0 ],
 					"style" : "",
-					"text" : "o.pack #1/second/location"
+					"text" : "o.pack #1/width"
 				}
 
 			}
@@ -110,7 +110,7 @@
 					"outlettype" : [ "FullPacket" ],
 					"patching_rect" : [ 232.5, 147.0, 186.0, 22.0 ],
 					"style" : "",
-					"text" : "o.pack #1/first/location"
+					"text" : "o.pack #1/position"
 				}
 
 			}
