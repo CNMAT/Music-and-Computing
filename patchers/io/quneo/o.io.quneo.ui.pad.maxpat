@@ -51,15 +51,15 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Monaco",
-					"fontsize" : 8.0,
+					"fontname" : "Arial",
+					"fontsize" : 9.0,
 					"id" : "obj-13",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 360.0, 260.0, 124.0, 16.0 ],
+					"patching_rect" : [ 360.0, 260.0, 132.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 67.0, 16.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 72.0, 17.0 ],
 					"style" : "",
 					"text" : "#1",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]

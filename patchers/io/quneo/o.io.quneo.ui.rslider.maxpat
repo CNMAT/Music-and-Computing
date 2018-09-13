@@ -155,22 +155,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-7",
-					"listmode" : 1,
-					"maxclass" : "rslider",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 370.0, 210.0, 300.0, 30.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 220.0, 30.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-4",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -392,6 +376,22 @@
 					"patching_rect" : [ 370.0, 350.0, 91.0, 22.0 ],
 					"style" : "",
 					"text" : "o.pack /clicklist"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"listmode" : 1,
+					"maxclass" : "rslider",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 370.0, 210.0, 300.0, 30.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 0.0, 220.0, 30.0 ],
+					"style" : ""
 				}
 
 			}
