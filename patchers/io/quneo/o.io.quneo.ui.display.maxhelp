@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 53.0, 96.0, 1302.0, 755.0 ],
+		"rect" : [ 100.0, 100.0, 1302.0, 755.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -41,13 +41,13 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-11",
-					"linecount" : 4,
+					"linecount" : 3,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 600.0, 245.0, 75.0 ],
-					"text" : "/pad/13/velocity : 0,\n/pad/13/x : 50,\n/pad/13/y : 26,\n/pad/13/z : 87"
+					"patching_rect" : [ 25.0, 600.0, 245.0, 61.0 ],
+					"text" : "/rslider/velocity : 0,\n/rslider/position : 23,\n/rslider/width : 39."
 				}
 
 			}
@@ -67,7 +67,6 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "FullPacket" ],
 					"patching_rect" : [ 685.0, 265.0, 590.0, 455.0 ],
-					"presentation_rect" : [ 685.0, 267.0, 0.0, 0.0 ],
 					"viewvisibility" : 1
 				}
 

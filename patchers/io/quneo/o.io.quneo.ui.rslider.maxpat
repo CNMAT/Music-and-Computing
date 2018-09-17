@@ -361,8 +361,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 370.0, 480.0, 323.0, 59.0 ],
-					"text" : "/position = /clicklist[[0]], \n/width = /clicklist[[1]],\ndelete(/clicklist)"
+					"patching_rect" : [ 370.0, 480.0, 367.0, 59.0 ],
+					"text" : "/position = /clicklist[[0]], \n/width = abs(/clicklist[[1]] - /clicklist[[0]]),\ndelete(/clicklist)"
 				}
 
 			}
