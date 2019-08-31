@@ -2,14 +2,15 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 5,
+			"major" : 8,
+			"minor" : 0,
+			"revision" : 6,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 100.0, 100.0, 1302.0, 755.0 ],
+		"classnamespace" : "box",
+		"rect" : [ 55.0, 259.0, 972.0, 755.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -41,13 +42,13 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-11",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 600.0, 245.0, 61.0 ],
-					"text" : "/rslider/velocity : 0,\n/rslider/position : 23,\n/rslider/width : 39."
+					"patching_rect" : [ 25.0, 600.0, 245.0, 48.0 ],
+					"text" : "/rhombus/velocity : 0,\n/rhombus/pressure : 51"
 				}
 
 			}
@@ -98,7 +99,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 758.0, 112.0, 185.0, 20.0 ],
-					"style" : "",
 					"text" : "view raw (atomized) osc bundles"
 				}
 
@@ -111,8 +111,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 658.0, 65.0, 24.0, 24.0 ],
-					"style" : ""
+					"patching_rect" : [ 658.0, 65.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -124,7 +123,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 658.0, 110.0, 81.0, 22.0 ],
-					"style" : "",
 					"text" : "gate"
 				}
 
@@ -150,7 +148,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
 					"patching_rect" : [ 25.0, 20.0, 114.0, 22.0 ],
-					"style" : "",
 					"text" : "o.io.quneo QUNEO"
 				}
 
@@ -205,126 +202,126 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "o.io.quneo.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
+				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.h.pad.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
+				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.h.hslide.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
+				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.h.vslide.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
+				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.h.rot.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
+				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.h.lrarrow.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
+				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.h.udarrow.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
+				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.h.transport.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
+				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.h.rslider.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
+				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.ui.display.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
+				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.ui.pad.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
+				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.ui.mfilter.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
+				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.ui.vslide.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
+				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.ui.arrow.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
+				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.ui.hslide.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
+				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.ui.rot.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
+				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.ui.rpressure.js",
-				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
+				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.ui.rslider.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/io/quneo",
+				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -358,13 +355,7 @@
 				"type" : "iLaX"
 			}
  ],
-		"autosave" : 0,
-		"bgfillcolor_type" : "gradient",
-		"bgfillcolor_color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
-		"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-		"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-		"bgfillcolor_angle" : 270.0,
-		"bgfillcolor_proportion" : 0.39
+		"autosave" : 0
 	}
 
 }
